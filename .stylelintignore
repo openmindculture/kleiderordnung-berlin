@@ -1,0 +1,5 @@
+**/*.js
+**/*.liquid
+vendor/**/*.css
+dist/**/*.*
+dist_en/**/*.*

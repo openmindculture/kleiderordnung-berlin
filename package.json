@@ -1,0 +1,22 @@
+{
+  "name": "kleiderordnung-berlin",
+  "version": "1.0.0",
+  "description": "portfolio website for sustainable stylist Tina Steinke",
+  "main": "dist/index.html",
+  "scripts": {
+    "stylelint": "stylelint src/*.css src/_includes/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmindculture/kleiderordnung-berlin.git"
+  },
+  "author": "Ingo Steinke",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/openmindculture/kleiderordnung-berlin/issues"
+  },
+  "homepage": "https://github.com/openmindculture/kleiderordnung-berlin#readme",
+  "devDependencies": {
+    "stylelint": "^14.11.0"
+  }
+}
