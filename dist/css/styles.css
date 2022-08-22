@@ -13,10 +13,14 @@
   --pale-rose: #fef5f8; /* Design Shack Typography Trends 2018 - 2022 */
   --pale-beige-rose: #f3ebde; /* San Diego Design Week / Julie's Dream von Little Greene */
 
+  --default-white: #ffffff;
+
   /* Export Theme Colors */
 
   --primary-backround: var(--pale-beige-rose);
   --primary-foreground: var(--tar);
+
+  --neutral-background: var(--default-white);
 }
 
 /* TODO use PostCSS to convert to color definitions for better backwards compatibility */
@@ -99,23 +103,63 @@ select {
 
 /* TODO response fluid font size using css clamp */
 
-body, p, article, section {
+body {
+  background: var(--neutral-background);
+}
+
+main, .main, p, article, section {
   background-color: var(--primary-backround);
   color: var(--primary-foreground);
   font-family: "Neue Haas", Helvetica, sans-serif;
 }
 
+.header {
+  height: 10rem;
+  background: var(--neutral-background);
+
+}
+
 /* Wikipedia: Die Helvetica, ursprünglich Neue Haas Grotesk, ist eine serifenlose Linear-Antiqua, auch Grotesk oder Endstrichlose genannt. Sie wurde 1957 von der Haas’schen Schriftgiesserei AG in Münchenstein bei Basel auf den Markt gebracht. */
 
 .herz-und-faden {
-  position: fixed;
+  position: absolute;
   right: 0;
+  min-width: 900px;
   width: 200vw;
-  max-width: unset;
+  max-width: 999px;
 }
 
-nav {
+@media (min-width: 544px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .herz-und-faden {
+    right: 5%;
+  }
+  .header {
+    margin-right: 15%;
+    position: relative;
+  }
+}
+
+@media (min-width: 775px) {
+  body {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  .main {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+nav, #lightbox-wrapper {
   display: none;
 }
+
+
+
 
 /* TODO add styles, effects, and animations from customized Colorway Barber Shop Template */
