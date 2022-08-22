@@ -97,6 +97,8 @@ select {
   }
 }
 
+/* TODO response fluid font size using css clamp */
+
 body, p, article, section {
   background-color: var(--primary-backround);
   color: var(--primary-foreground);
