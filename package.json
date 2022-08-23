@@ -4,8 +4,10 @@
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "main": "dist/index.html",
   "scripts": {
+    "build": "rm -rf dist/* && cp -r src/* dist && echo 'cleanup finished' && npm run postCSS",
     "dev": "npm run serve",
     "eslint": "eslint --ext .js dist",
+    "postCSS": "postcss --verbose src/**/*.css --base src --dir dist",
     "serve": "npx http-server dist  -p 1234 --cors",
     "stylelint": "stylelint 'dist/**/*.css'",
     "test": "npm run eslint && npm run stylelint",
@@ -25,6 +27,12 @@
     "eslint": "^8.22.0",
     "eslint-plugin-es5": "^1.5.0",
     "http-server": "^14.1.1",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "postcss-css-variables": "^0.18.0",
+    "postcss-import": "^14.1.0",
+    "postcss-minify": "^1.1.0",
+    "postcss-preset-env": "^7.8.0",
     "stylelint": "^14.10.0",
     "stylelint-config-recommended": "^9.0.0"
   },

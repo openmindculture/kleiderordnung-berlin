@@ -1,0 +1,9 @@
+{
+  "plugins":
+    [
+      "postcss-preset-env",
+      "postcss-import",
+      "postcss-minify","
+      "postcss-css-variables""
+    ]
+}

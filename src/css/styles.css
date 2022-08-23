@@ -1,0 +1,180 @@
+@import 'animate.css';
+@import '../node_modules/animate.css/animate.css';
+@import '/node_modules/animate.css/animate.min.css';
+/* TODO fix using an unsurprising modern import using a css loader when adding postCSS */
+
+:root {
+
+  /* Color Palette Inspiration */
+
+  --tar: #535353; /* California Collection CC1 Tar */
+  --sand: #e2d7c1; /* California Collection CC2 Sand */
+  --citrona: #dbcc7c; /* California Collection CC3 Citrona */
+  --palm: #c3cfbb; /* California Collection CC4 Palm */
+  --faded-terracotta: #dfb797; /* California Collection CC8 Faded Terracotta */
+
+  --dark-heart-rose: #ebc8c9;
+  --light-heart-rose: #f6e7e6;
+  --pale-rose: #fef5f8; /* Design Shack Typography Trends 2018 - 2022 */
+  --pale-beige-rose: #f3ebde; /* San Diego Design Week / Julie's Dream von Little Greene */
+
+  --default-white: #ffffff;
+
+  /* Export Theme Colors */
+
+  --primary-backround: var(--pale-beige-rose);
+  --primary-foreground: var(--tar);
+
+  --neutral-background: var(--default-white);
+  --default-border-color: var(--dark-heart-rose);
+
+  /* animate.css library: this changes all the animations globally https://animate.style  */
+
+  --animate-duration: 2ms; /* duration like "slow animation" in colorway elementor theme fade in */
+  --animate-delay: 0.9s;
+
+}
+
+/* TODO use PostCSS to convert to color definitions for better backwards compatibility */
+/* TODO minify CSS and HTML files */
+
+/* TODO use optimized local font files and acquire licenses if necessary */
+/* Neue Haaas Linotype - 300 - latin */
+@font-face {
+  font-family: "Neue Haas";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/NeueHaasL.woff2") format("woff2");
+}
+
+html, body {
+  font: inherit;
+  font-size: 100%;
+}
+
+
+/* reset styles, see https://piccalil.li/blog/a-modern-css-reset/ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img, picture, svg {
+  border: none;
+  max-width: 100%;
+  max-width: 99vw;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* TODO response fluid font size using css clamp */
+
+body {
+  background: var(--neutral-background);
+}
+
+main, .main, p, article, section {
+  background-color: var(--primary-backround);
+  color: var(--primary-foreground);
+  font-family: "Neue Haas", Helvetica, sans-serif;
+}
+
+.header {
+  height: auto;
+  min-height: 2rem;
+  margin: 0;
+  background: var(--neutral-background);
+  overflow: visible;
+  max-height: 5rem;
+  /* TODO dynamic height matching the image */
+}
+
+/* Wikipedia: Die Helvetica, ursprünglich Neue Haas Grotesk, ist eine serifenlose Linear-Antiqua, auch Grotesk oder Endstrichlose genannt. Sie wurde 1957 von der Haas’schen Schriftgiesserei AG in Münchenstein bei Basel auf den Markt gebracht. */
+
+.herz-und-faden {
+  height: auto;
+}
+
+nav, #lightbox-wrapper {
+  display: none;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.feature__container {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.feature__box {
+  flex-basis: 30%;
+  width: 30%;
+  max-width: 100%;
+  max-width: 99vw;
+  min-height: 300px;
+  border: solid 1px gray;
+  border-color: var(--default-border-color);
+}
+
+@media (max-width: 768px) {
+  .feature__container {
+    flex-direction: column;
+  }
+}
+
+/* TODO add styles, effects, and animations from customized Colorway Barber Shop Template */
+
+.animate--on-visibility {
+  /* class will be used by JS intersection observer */
+}

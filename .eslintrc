@@ -1,5 +1,8 @@
 {
   "plugins": [
     "es5"
+  ],
+  "ignorePatterns": [
+    "node_modules/**/*.js"
   ]
 }
