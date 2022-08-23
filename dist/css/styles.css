@@ -1,3 +1,8 @@
+@import 'animate.css';
+@import '../node_modules/animate.css/animate.css';
+@import '/node_modules/animate.css/animate.min.css';
+/* TODO fix using an unsurprising modern import using a css loader when adding postCSS */
+
 :root {
 
   /* Color Palette Inspiration */
@@ -21,6 +26,7 @@
   --primary-foreground: var(--tar);
 
   --neutral-background: var(--default-white);
+  --default-border-color: var(--dark-heart-rose);
 
   /* animate.css library: this changes all the animations globally https://animate.style  */
 
@@ -47,7 +53,7 @@ html, body {
 }
 
 
-/* TODO add reset styles, see https://piccalil.li/blog/a-modern-css-reset/ */
+/* reset styles, see https://piccalil.li/blog/a-modern-css-reset/ */
 
 *,
 *::before,
@@ -65,8 +71,7 @@ blockquote {
   margin: 0;
 }
 
-/* Set core root defaults */
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 
@@ -139,61 +144,37 @@ nav, #lightbox-wrapper {
   display: none;
 }
 
-
-
-
-/* TODO add styles, effects, and animations from customized Colorway Barber Shop Template */
-
-/* entering element class names
- * elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f98a976
- * animated-slow animated fadeInUp
- * im 3er Layout drei Blöcke die unterschiedliche einfaden:
- * fadeInLeft fadeInUp fadeInRight
- * do they have the class names from the beginning or do they get added by javascript?
- * aber nicht mit josh.js
- * reload and check page source ...
- * anfangs scheinbar nicht: <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f98a976 animated-slow elementor-invisible" data-id="f98a976" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-3e95687 elementor-widget elementor-widget-image" data-id="3e95687" data-element_type="widget" data-widget_type="image.default">
-  TODO optimize: if we only use very little animations, we can put the definitions here
- */
-
-.animated {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translate3d(0,0,0);
-  opacity: 1;
+.main {
+  margin: 0 auto;
+  max-width: 600px;
 }
 
-.fadeInUp {
-  /* is this (like) animate.css ? see other project */
-  animation-name: fadeInUp;
+.feature__container {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-@media only screen and (max-width: 767px) {
-  .animated {
-    opacity: 1;
+.feature__box {
+  flex-basis: 30%;
+  width: 30%;
+  max-width: 100%;
+  max-width: 99vw;
+  min-height: 300px;
+  border: solid 1px gray;
+  border-color: var(--default-border-color);
+}
+
+@media (max-width: 768px) {
+  .feature__container {
+    flex-direction: column;
   }
 }
 
-.animated {
-  -webkit-animation-duration: 1.25s;
-  animation-duration: 1.25s;
-}
+/* TODO add styles, effects, and animations from customized Colorway Barber Shop Template */
 
-.animated.animated-slow {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-}
-
-.animated-on-visibility {
+.animate--on-visibility {
   /* class will be used by JS intersection observer */
-}
-
-
-/* inside entering element */
-.elementor-element-populated {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
