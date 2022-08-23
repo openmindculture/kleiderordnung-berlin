@@ -2,6 +2,11 @@
 @import '../node_modules/animate.css/animate.css';
 @import '/node_modules/animate.css/animate.min.css';
 /* TODO fix using an unsurprising modern import using a css loader when adding postCSS */
+/* TODO postCSS configuration
+ * minify all files
+ * include content from imported files
+ * replace root variables (custom properties) in subsequent style definitions
+ */
 
 :root {
 

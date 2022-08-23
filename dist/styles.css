@@ -1,0 +1,187 @@
+@import 'animate.css';
+@import '../node_modules/animate.css/animate.css';
+@import '/node_modules/animate.css/animate.min.css';
+/* TODO fix using an unsurprising modern import using a css loader when adding postCSS */
+/* TODO postCSS configuration
+ * minify all files
+ * include content from imported files
+ * replace root variables (custom properties) in subsequent style definitions
+ */
+
+:root {
+
+  /* Color Palette Inspiration */
+
+  --tar: #535353; /* California Collection CC1 Tar */
+  --sand: #e2d7c1; /* California Collection CC2 Sand */
+  --citrona: #dbcc7c; /* California Collection CC3 Citrona */
+  --palm: #c3cfbb; /* California Collection CC4 Palm */
+  --faded-terracotta: #dfb797; /* California Collection CC8 Faded Terracotta */
+
+  --dark-heart-rose: #ebc8c9;
+  --light-heart-rose: #f6e7e6;
+  --pale-rose: #fef5f8; /* Design Shack Typography Trends 2018 - 2022 */
+  --pale-beige-rose: #f3ebde; /* San Diego Design Week / Julie's Dream von Little Greene */
+
+  --default-white: #ffffff;
+
+  /* Export Theme Colors */
+
+  --primary-backround: var(--pale-beige-rose);
+  --primary-foreground: var(--tar);
+
+  --neutral-background: var(--default-white);
+  --default-border-color: var(--dark-heart-rose);
+
+  /* animate.css library: this changes all the animations globally https://animate.style  */
+
+  --animate-duration: 2ms; /* duration like "slow animation" in colorway elementor theme fade in */
+  --animate-delay: 0.9s;
+
+}
+
+/* TODO use PostCSS to convert to color definitions for better backwards compatibility */
+/* TODO minify CSS and HTML files */
+
+/* TODO use optimized local font files and acquire licenses if necessary */
+/* Neue Haaas Linotype - 300 - latin */
+@font-face {
+  font-family: "Neue Haas";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/NeueHaasL.woff2") format("woff2");
+}
+
+html, body {
+  font: inherit;
+  font-size: 100%;
+}
+
+
+/* reset styles, see https://piccalil.li/blog/a-modern-css-reset/ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img, picture, svg {
+  border: none;
+  max-width: 100%;
+  max-width: 99vw;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* TODO response fluid font size using css clamp */
+
+body {
+  background: var(--neutral-background);
+}
+
+main, .main, p, article, section {
+  background-color: var(--primary-backround);
+  color: var(--primary-foreground);
+  font-family: "Neue Haas", Helvetica, sans-serif;
+}
+
+.header {
+  height: auto;
+  min-height: 2rem;
+  margin: 0;
+  background: var(--neutral-background);
+  overflow: visible;
+  max-height: 5rem;
+  /* TODO dynamic height matching the image */
+}
+
+/* Wikipedia: Die Helvetica, ursprünglich Neue Haas Grotesk, ist eine serifenlose Linear-Antiqua, auch Grotesk oder Endstrichlose genannt. Sie wurde 1957 von der Haas’schen Schriftgiesserei AG in Münchenstein bei Basel auf den Markt gebracht. */
+
+.herz-und-faden {
+  height: auto;
+}
+
+nav, #lightbox-wrapper {
+  display: none;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.feature__container {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.feature__box {
+  flex-basis: 30%;
+  width: 30%;
+  max-width: 100%;
+  max-width: 99vw;
+  min-height: 300px;
+  border: solid 1px gray;
+  border-color: var(--default-border-color);
+}
+
+@media (max-width: 768px) {
+  .feature__container {
+    flex-direction: column;
+  }
+}
+
+/* TODO add styles, effects, and animations from customized Colorway Barber Shop Template */
+
+.animate--on-visibility {
+  /* class will be used by JS intersection observer */
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9jc3Mvc3R5bGVzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAnYW5pbWF0ZS5jc3MnO1xuQGltcG9ydCAnLi4vbm9kZV9tb2R1bGVzL2FuaW1hdGUuY3NzL2FuaW1hdGUuY3NzJztcbkBpbXBvcnQgJy9ub2RlX21vZHVsZXMvYW5pbWF0ZS5jc3MvYW5pbWF0ZS5taW4uY3NzJztcbi8qIFRPRE8gZml4IHVzaW5nIGFuIHVuc3VycHJpc2luZyBtb2Rlcm4gaW1wb3J0IHVzaW5nIGEgY3NzIGxvYWRlciB3aGVuIGFkZGluZyBwb3N0Q1NTICovXG4vKiBUT0RPIHBvc3RDU1MgY29uZmlndXJhdGlvblxuICogbWluaWZ5IGFsbCBmaWxlc1xuICogaW5jbHVkZSBjb250ZW50IGZyb20gaW1wb3J0ZWQgZmlsZXNcbiAqIHJlcGxhY2Ugcm9vdCB2YXJpYWJsZXMgKGN1c3RvbSBwcm9wZXJ0aWVzKSBpbiBzdWJzZXF1ZW50IHN0eWxlIGRlZmluaXRpb25zXG4gKi9cblxuOnJvb3Qge1xuXG4gIC8qIENvbG9yIFBhbGV0dGUgSW5zcGlyYXRpb24gKi9cblxuICAtLXRhcjogIzUzNTM1MzsgLyogQ2FsaWZvcm5pYSBDb2xsZWN0aW9uIENDMSBUYXIgKi9cbiAgLS1zYW5kOiAjZTJkN2MxOyAvKiBDYWxpZm9ybmlhIENvbGxlY3Rpb24gQ0MyIFNhbmQgKi9cbiAgLS1jaXRyb25hOiAjZGJjYzdjOyAvKiBDYWxpZm9ybmlhIENvbGxlY3Rpb24gQ0MzIENpdHJvbmEgKi9cbiAgLS1wYWxtOiAjYzNjZmJiOyAvKiBDYWxpZm9ybmlhIENvbGxlY3Rpb24gQ0M0IFBhbG0gKi9cbiAgLS1mYWRlZC10ZXJyYWNvdHRhOiAjZGZiNzk3OyAvKiBDYWxpZm9ybmlhIENvbGxlY3Rpb24gQ0M4IEZhZGVkIFRlcnJhY290dGEgKi9cblxuICAtLWRhcmstaGVhcnQtcm9zZTogI2ViYzhjOTtcbiAgLS1saWdodC1oZWFydC1yb3NlOiAjZjZlN2U2O1xuICAtLXBhbGUtcm9zZTogI2ZlZjVmODsgLyogRGVzaWduIFNoYWNrIFR5cG9ncmFwaHkgVHJlbmRzIDIwMTggLSAyMDIyICovXG4gIC0tcGFsZS1iZWlnZS1yb3NlOiAjZjNlYmRlOyAvKiBTYW4gRGllZ28gRGVzaWduIFdlZWsgLyBKdWxpZSdzIERyZWFtIHZvbiBMaXR0bGUgR3JlZW5lICovXG5cbiAgLS1kZWZhdWx0LXdoaXRlOiAjZmZmZmZmO1xuXG4gIC8qIEV4cG9ydCBUaGVtZSBDb2xvcnMgKi9cblxuICAtLXByaW1hcnktYmFja3JvdW5kOiB2YXIoLS1wYWxlLWJlaWdlLXJvc2UpO1xuICAtLXByaW1hcnktZm9yZWdyb3VuZDogdmFyKC0tdGFyKTtcblxuICAtLW5ldXRyYWwtYmFja2dyb3VuZDogdmFyKC0tZGVmYXVsdC13aGl0ZSk7XG4gIC0tZGVmYXVsdC1ib3JkZXItY29sb3I6IHZhcigtLWRhcmstaGVhcnQtcm9zZSk7XG5cbiAgLyogYW5pbWF0ZS5jc3MgbGlicmFyeTogdGhpcyBjaGFuZ2VzIGFsbCB0aGUgYW5pbWF0aW9ucyBnbG9iYWxseSBodHRwczovL2FuaW1hdGUuc3R5bGUgICovXG5cbiAgLS1hbmltYXRlLWR1cmF0aW9uOiAybXM7IC8qIGR1cmF0aW9uIGxpa2UgXCJzbG93IGFuaW1hdGlvblwiIGluIGNvbG9yd2F5IGVsZW1lbnRvciB0aGVtZSBmYWRlIGluICovXG4gIC0tYW5pbWF0ZS1kZWxheTogMC45cztcblxufVxuXG4vKiBUT0RPIHVzZSBQb3N0Q1NTIHRvIGNvbnZlcnQgdG8gY29sb3IgZGVmaW5pdGlvbnMgZm9yIGJldHRlciBiYWNrd2FyZHMgY29tcGF0aWJpbGl0eSAqL1xuLyogVE9ETyBtaW5pZnkgQ1NTIGFuZCBIVE1MIGZpbGVzICovXG5cbi8qIFRPRE8gdXNlIG9wdGltaXplZCBsb2NhbCBmb250IGZpbGVzIGFuZCBhY3F1aXJlIGxpY2Vuc2VzIGlmIG5lY2Vzc2FyeSAqL1xuLyogTmV1ZSBIYWFhcyBMaW5vdHlwZSAtIDMwMCAtIGxhdGluICovXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwiTmV1ZSBIYWFzXCI7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgc3JjOiBsb2NhbChcIlwiKSwgdXJsKFwiLi4vZm9udHMvTmV1ZUhhYXNMLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xufVxuXG5odG1sLCBib2R5IHtcbiAgZm9udDogaW5oZXJpdDtcbiAgZm9udC1zaXplOiAxMDAlO1xufVxuXG5cbi8qIHJlc2V0IHN0eWxlcywgc2VlIGh0dHBzOi8vcGljY2FsaWwubGkvYmxvZy9hLW1vZGVybi1jc3MtcmVzZXQvICovXG5cbiosXG4qOjpiZWZvcmUsXG4qOjphZnRlciB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59XG5cbmJvZHksXG5oMSxcbmgyLFxuaDMsXG5oNCxcbnAsXG5ibG9ja3F1b3RlIHtcbiAgbWFyZ2luOiAwO1xufVxuXG5odG1sIHtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG59XG5cbi8qIFNldCBjb3JlIGJvZHkgZGVmYXVsdHMgKi9cbmJvZHkge1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgdGV4dC1yZW5kZXJpbmc6IG9wdGltaXplU3BlZWQ7XG4gIGxpbmUtaGVpZ2h0OiAxLjU7XG59XG5cbmltZywgcGljdHVyZSwgc3ZnIHtcbiAgYm9yZGVyOiBub25lO1xuICBtYXgtd2lkdGg6IDEwMCU7XG4gIG1heC13aWR0aDogOTl2dztcbn1cblxuLyogSW5oZXJpdCBmb250cyBmb3IgaW5wdXRzIGFuZCBidXR0b25zICovXG5pbnB1dCxcbmJ1dHRvbixcbnRleHRhcmVhLFxuc2VsZWN0IHtcbiAgZm9udDogaW5oZXJpdDtcbn1cblxuLyogUmVtb3ZlIGFsbCBhbmltYXRpb25zLCB0cmFuc2l0aW9ucyBhbmQgc21vb3RoIHNjcm9sbCBmb3IgcGVvcGxlIHRoYXQgcHJlZmVyIG5vdCB0byBzZWUgdGhlbSAqL1xuQG1lZGlhIChwcmVmZXJzLXJlZHVjZWQtbW90aW9uOiByZWR1Y2UpIHtcbiAgaHRtbDpmb2N1cy13aXRoaW4ge1xuICAgIHNjcm9sbC1iZWhhdmlvcjogYXV0bztcbiAgfVxuXG4gICosXG4gICo6OmJlZm9yZSxcbiAgKjo6YWZ0ZXIge1xuICAgIGFuaW1hdGlvbi1kdXJhdGlvbjogMC4wMW1zICFpbXBvcnRhbnQ7XG4gICAgYW5pbWF0aW9uLWl0ZXJhdGlvbi1jb3VudDogMSAhaW1wb3J0YW50O1xuICAgIHRyYW5zaXRpb24tZHVyYXRpb246IDAuMDFtcyAhaW1wb3J0YW50O1xuICAgIHNjcm9sbC1iZWhhdmlvcjogYXV0byAhaW1wb3J0YW50O1xuICB9XG59XG5cbi8qIFRPRE8gcmVzcG9uc2UgZmx1aWQgZm9udCBzaXplIHVzaW5nIGNzcyBjbGFtcCAqL1xuXG5ib2R5IHtcbiAgYmFja2dyb3VuZDogdmFyKC0tbmV1dHJhbC1iYWNrZ3JvdW5kKTtcbn1cblxubWFpbiwgLm1haW4sIHAsIGFydGljbGUsIHNlY3Rpb24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1wcmltYXJ5LWJhY2tyb3VuZCk7XG4gIGNvbG9yOiB2YXIoLS1wcmltYXJ5LWZvcmVncm91bmQpO1xuICBmb250LWZhbWlseTogXCJOZXVlIEhhYXNcIiwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmO1xufVxuXG4uaGVhZGVyIHtcbiAgaGVpZ2h0OiBhdXRvO1xuICBtaW4taGVpZ2h0OiAycmVtO1xuICBtYXJnaW46IDA7XG4gIGJhY2tncm91bmQ6IHZhcigtLW5ldXRyYWwtYmFja2dyb3VuZCk7XG4gIG92ZXJmbG93OiB2aXNpYmxlO1xuICBtYXgtaGVpZ2h0OiA1cmVtO1xuICAvKiBUT0RPIGR5bmFtaWMgaGVpZ2h0IG1hdGNoaW5nIHRoZSBpbWFnZSAqL1xufVxuXG4vKiBXaWtpcGVkaWE6IERpZSBIZWx2ZXRpY2EsIHVyc3Byw7xuZ2xpY2ggTmV1ZSBIYWFzIEdyb3Rlc2ssIGlzdCBlaW5lIHNlcmlmZW5sb3NlIExpbmVhci1BbnRpcXVhLCBhdWNoIEdyb3Rlc2sgb2RlciBFbmRzdHJpY2hsb3NlIGdlbmFubnQuIFNpZSB3dXJkZSAxOTU3IHZvbiBkZXIgSGFhc+KAmXNjaGVuIFNjaHJpZnRnaWVzc2VyZWkgQUcgaW4gTcO8bmNoZW5zdGVpbiBiZWkgQmFzZWwgYXVmIGRlbiBNYXJrdCBnZWJyYWNodC4gKi9cblxuLmhlcnotdW5kLWZhZGVuIHtcbiAgaGVpZ2h0OiBhdXRvO1xufVxuXG5uYXYsICNsaWdodGJveC13cmFwcGVyIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxuLm1haW4ge1xuICBtYXJnaW46IDAgYXV0bztcbiAgbWF4LXdpZHRoOiA2MDBweDtcbn1cblxuLmZlYXR1cmVfX2NvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIG1heC13aWR0aDogMTAwJTtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgZmxleC13cmFwOiB3cmFwO1xuICBnYXA6IDFyZW07XG59XG5cbi5mZWF0dXJlX19ib3gge1xuICBmbGV4LWJhc2lzOiAzMCU7XG4gIHdpZHRoOiAzMCU7XG4gIG1heC13aWR0aDogMTAwJTtcbiAgbWF4LXdpZHRoOiA5OXZ3O1xuICBtaW4taGVpZ2h0OiAzMDBweDtcbiAgYm9yZGVyOiBzb2xpZCAxcHggZ3JheTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kZWZhdWx0LWJvcmRlci1jb2xvcik7XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA3NjhweCkge1xuICAuZmVhdHVyZV9fY29udGFpbmVyIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB9XG59XG5cbi8qIFRPRE8gYWRkIHN0eWxlcywgZWZmZWN0cywgYW5kIGFuaW1hdGlvbnMgZnJvbSBjdXN0b21pemVkIENvbG9yd2F5IEJhcmJlciBTaG9wIFRlbXBsYXRlICovXG5cbi5hbmltYXRlLS1vbi12aXNpYmlsaXR5IHtcbiAgLyogY2xhc3Mgd2lsbCBiZSB1c2VkIGJ5IEpTIGludGVyc2VjdGlvbiBvYnNlcnZlciAqL1xufVxuIl19 */

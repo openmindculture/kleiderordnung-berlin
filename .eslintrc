@@ -3,6 +3,7 @@
     "es5"
   ],
   "ignorePatterns": [
+    ".postcss.config.js",
     "node_modules/**/*.js"
   ]
 }
