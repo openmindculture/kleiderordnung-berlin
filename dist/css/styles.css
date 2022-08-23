@@ -21,6 +21,12 @@
   --primary-foreground: var(--tar);
 
   --neutral-background: var(--default-white);
+
+  /* animate.css library: this changes all the animations globally https://animate.style  */
+
+  --animate-duration: 2ms; /* duration like "slow animation" in colorway elementor theme fade in */
+  --animate-delay: 0.9s;
+
 }
 
 /* TODO use PostCSS to convert to color definitions for better backwards compatibility */
@@ -36,8 +42,8 @@
 }
 
 html, body {
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
 }
 
 
@@ -71,7 +77,7 @@ body {
   line-height: 1.5;
 }
 
-img, picture {
+img, picture, svg {
   border: none;
   max-width: 100%;
   max-width: 99vw;
@@ -114,45 +120,19 @@ main, .main, p, article, section {
 }
 
 .header {
-  height: 10rem;
+  height: auto;
+  min-height: 2rem;
+  margin: 0;
   background: var(--neutral-background);
-
+  overflow: visible;
+  max-height: 5rem;
+  /* TODO dynamic height matching the image */
 }
 
 /* Wikipedia: Die Helvetica, ursprünglich Neue Haas Grotesk, ist eine serifenlose Linear-Antiqua, auch Grotesk oder Endstrichlose genannt. Sie wurde 1957 von der Haas’schen Schriftgiesserei AG in Münchenstein bei Basel auf den Markt gebracht. */
 
 .herz-und-faden {
-  position: absolute;
-  right: 0;
-  min-width: 900px;
-  width: 200vw;
-  max-width: 999px;
-}
-
-@media (min-width: 544px) {
-  body {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .herz-und-faden {
-    right: 5%;
-  }
-  .header {
-    margin-right: 15%;
-    position: relative;
-  }
-}
-
-@media (min-width: 775px) {
-  body {
-    margin-left: 48px;
-    margin-right: 48px;
-  }
-  .main {
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  height: auto;
 }
 
 nav, #lightbox-wrapper {
@@ -163,3 +143,57 @@ nav, #lightbox-wrapper {
 
 
 /* TODO add styles, effects, and animations from customized Colorway Barber Shop Template */
+
+/* entering element class names
+ * elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f98a976
+ * animated-slow animated fadeInUp
+ * im 3er Layout drei Blöcke die unterschiedliche einfaden:
+ * fadeInLeft fadeInUp fadeInRight
+ * do they have the class names from the beginning or do they get added by javascript?
+ * aber nicht mit josh.js
+ * reload and check page source ...
+ * anfangs scheinbar nicht: <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f98a976 animated-slow elementor-invisible" data-id="f98a976" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3e95687 elementor-widget elementor-widget-image" data-id="3e95687" data-element_type="widget" data-widget_type="image.default">
+  TODO optimize: if we only use very little animations, we can put the definitions here
+ */
+
+.animated {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  opacity: 1;
+}
+
+.fadeInUp {
+  /* is this (like) animate.css ? see other project */
+  animation-name: fadeInUp;
+}
+
+@media only screen and (max-width: 767px) {
+  .animated {
+    opacity: 1;
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+}
+
+.animated.animated-slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated-on-visibility {
+  /* class will be used by JS intersection observer */
+}
+
+
+/* inside entering element */
+.elementor-element-populated {
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}

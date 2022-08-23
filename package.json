@@ -4,7 +4,10 @@
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "main": "dist/index.html",
   "scripts": {
-    "stylelint": "stylelint src/*.css src/_includes/*.css"
+    "test": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --ext .js dist",
+    "stylelint": "stylelint 'dist/**/*.css'",
+    "TODO": "update to use src folder, TODO add codecept tests"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,12 @@
   },
   "homepage": "https://github.com/openmindculture/kleiderordnung-berlin#readme",
   "devDependencies": {
-    "stylelint": "^14.11.0"
+    "eslint": "^8.22.0",
+    "eslint-plugin-es5": "^1.5.0",
+    "stylelint": "^14.10.0",
+    "stylelint-config-recommended": "^9.0.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }
