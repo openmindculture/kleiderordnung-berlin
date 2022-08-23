@@ -4,9 +4,11 @@
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "main": "dist/index.html",
   "scripts": {
-    "test": "npm run eslint && npm run stylelint",
+    "dev": "npm run serve",
     "eslint": "eslint --ext .js dist",
+    "serve": "npx http-server dist  -p 1234 --cors",
     "stylelint": "stylelint 'dist/**/*.css'",
+    "test": "npm run eslint && npm run stylelint",
     "TODO": "update to use src folder, TODO add codecept tests"
   },
   "repository": {
@@ -22,6 +24,7 @@
   "devDependencies": {
     "eslint": "^8.22.0",
     "eslint-plugin-es5": "^1.5.0",
+    "http-server": "^14.1.1",
     "stylelint": "^14.10.0",
     "stylelint-config-recommended": "^9.0.0"
   },
