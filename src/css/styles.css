@@ -1,6 +1,4 @@
-@import 'animate.css';
-@import '../node_modules/animate.css/animate.css';
-@import '/node_modules/animate.css/animate.min.css';
+@import './animate.min.css';
 /* TODO fix using an unsurprising modern import using a css loader when adding postCSS */
 /* TODO postCSS configuration
  * minify all files
@@ -168,7 +166,9 @@ nav, #lightbox-wrapper {
   max-width: 100%;
   max-width: 99vw;
   min-height: 300px;
-  border: solid 1px gray;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
   border-color: var(--default-border-color);
 }
 
