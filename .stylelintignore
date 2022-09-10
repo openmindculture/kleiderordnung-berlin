@@ -2,3 +2,4 @@
 **/*.liquid
 vendor/**/*.css
 node_modules/**/*.*
+dist/**/*.*

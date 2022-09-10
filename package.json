@@ -4,14 +4,16 @@
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "main": "dist/index.html",
   "scripts": {
-    "build": "rm -rf dist/* && cp -r src/* dist && cp node_modules/animate.css/animate.min.css dist/css && echo 'cleanup finished' && npm run postCSS",
+    "build": "rm -rf dist/* && cp -r src/* dist && cp node_modules/animate.css/animate.min.css dist/css && npm run postCSS",
+    "codeceptjs": "codeceptjs run --steps",
     "dev": "npm run serve",
     "eslint": "eslint --ext .js dist",
     "postCSS": "postcss --verbose src/css/*.css --dir dist",
     "serve": "npx http-server dist  -p 1234 --cors",
-    "stylelint": "stylelint 'dist/**/*.css'",
-    "test": "npm run eslint && npm run stylelint",
-    "TODO": "update to use src folder, TODO add codecept tests"
+    "stylelint": "stylelint 'src/**/*.css'",
+    "pretest": "npm run eslint && npm run stylelint && npm run build && npm run serve",
+    "test": "npm run codeceptjs",
+    "posttest": "pkill -f http-server"
   },
   "repository": {
     "type": "git",
@@ -24,9 +26,14 @@
   },
   "homepage": "https://github.com/openmindculture/kleiderordnung-berlin#readme",
   "devDependencies": {
+    "@codeceptjs/configure": "^0.8.0",
+    "@testomatio/reporter": "^0.6.6",
+    "codeceptjs": "^3.3.5",
+    "codeceptjs-resemblehelper": "^1.9.6",
     "eslint": "^8.22.0",
     "eslint-plugin-es5": "^1.5.0",
     "http-server": "^14.1.1",
+    "playwright": "^1.25.2",
     "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0",
     "postcss-css-variables": "^0.18.0",
@@ -34,6 +41,7 @@
     "postcss-import": "^14.1.0",
     "postcss-minify": "^1.1.0",
     "postcss-preset-env": "^7.8.0",
+    "puppeteer": "^17.1.3",
     "stylelint": "^14.10.0",
     "stylelint-config-recommended": "^9.0.0"
   },
