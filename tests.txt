@@ -1,3 +1,0 @@
-I see the page.
-I see text rendered in one of the expected font families.
-I scroll down and see animated feature boxes.
