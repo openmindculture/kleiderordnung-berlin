@@ -126,6 +126,7 @@ main, .main, p, article, section {
   color: var(--primary-foreground);
   font-family: "Neue Haas", Helvetica, sans-serif;
   letter-spacing: 0.025rem;
+  padding: 0.5rem;
 }
 
 .header {
@@ -140,7 +141,7 @@ main, .main, p, article, section {
 
 /* Wikipedia: Die Helvetica, ursprünglich Neue Haas Grotesk, ist eine serifenlose Linear-Antiqua, auch Grotesk oder Endstrichlose genannt. Sie wurde 1957 von der Haas’schen Schriftgiesserei AG in Münchenstein bei Basel auf den Markt gebracht. */
 
-.herz-und-faden {
+.heart-and-thread {
   height: auto;
 }
 
