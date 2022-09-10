@@ -33,7 +33,7 @@
 
   /* animate.css library: this changes all the animations globally https://animate.style  */
 
-  --animate-duration: 2ms; /* duration like "slow animation" in colorway elementor theme fade in */
+  --animate-duration: 2s; /* --animate-duration: 2ms; duration like "slow animation" in colorway elementor theme fade in */
   --animate-delay: 0.9s;
 
 }
@@ -125,6 +125,7 @@ main, .main, p, article, section {
   background-color: var(--primary-backround);
   color: var(--primary-foreground);
   font-family: "Neue Haas", Helvetica, sans-serif;
+  letter-spacing: 0.025rem;
 }
 
 .header {
