@@ -1,0 +1,6 @@
+# exclude from search in vscode
+[search.exclude]
+node_modules
+dist
+package.json
+package-lock.json

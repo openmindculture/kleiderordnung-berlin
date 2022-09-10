@@ -160,6 +160,8 @@ nav, #lightbox-wrapper {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .feature__box {
@@ -170,8 +172,10 @@ nav, #lightbox-wrapper {
   min-height: 300px;
   border-style: solid;
   border-width: 1px;
+  background-color: antiquewhite;
   border-color: gray;
   border-color: var(--default-border-color);
+  padding: 0.5em;
 }
 
 @media (max-width: 768px) {
