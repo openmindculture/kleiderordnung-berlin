@@ -121,7 +121,7 @@ body {
   background: var(--neutral-background);
 }
 
-main, .main, p, article, section {
+main, .main, p, article, section, .footer {
   background-color: var(--primary-backround);
   color: var(--primary-foreground);
   font-family: "Neue Haas", Helvetica, sans-serif;
@@ -150,8 +150,14 @@ nav, #lightbox-wrapper {
 }
 
 .main {
-  margin: 0 auto;
+  margin: 0 1em 0 auto;
   max-width: 600px;
+}
+
+.footer {
+  text-align: center;
+  margin: 2em 0 0 0;
+  padding: 0.5em;
 }
 
 .feature__container {
@@ -178,6 +184,21 @@ nav, #lightbox-wrapper {
   padding: 0.5em;
 }
 
+a, a:link, a:visited, a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: var(--primary-foreground);
+}
+
+.social a + a {
+  margin-left: 0.5em;
+}
+
+.social svg {
+  height: 2em;
+  width: auto;
+  border-radius: 0.125em;
+}
+
 @media (max-width: 768px) {
   .feature__container {
     flex-direction: column;
@@ -185,6 +206,17 @@ nav, #lightbox-wrapper {
 }
 
 /* TODO add styles, effects, and animations from customized Colorway Barber Shop Template */
+/* TODO technical SEO and content SEM:
+  - [ ] meaningful, unique heading content (not just "about me" or "imprint")
+  - [ ] printable as pdf
+  - [ ] mobile-friendly
+  - [ ] accessible / screen reader friendly / tab navigateable
+  - [ ] vcard download option?
+  - [ ] ...
+  - [ ] configure additional performance and security headers using .htaccess only if necessary
+  - [ ] configure colors that provide necessary contrast to comply with WCAG 2.0 (might as well customize theme for the client?)
+  - [ ] ^ this would be OK to be specific for the chosen font(s) for Kleiderordnung
+ */
 
 .animate--on-visibility {
   /* class will be used by JS intersection observer */
