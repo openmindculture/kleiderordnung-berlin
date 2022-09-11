@@ -217,6 +217,25 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   - [ ] configure colors that provide necessary contrast to comply with WCAG 2.0 (might as well customize theme for the client?)
   - [ ] ^ this would be OK to be specific for the chosen font(s) for Kleiderordnung
  */
+/* TODO possible decoration ideas
+  - [ ] no centered column layout
+  - [ ] pieces of cloth
+  - [ ] micro animations
+  - [ ] subtle text effects / gradients (see below)
+ */
+/* TODO use some cutting edge modern CSS and web dev features, just because, and with fallbacks of course:
+ - [ ] :has()
+ - [ ] container-type / @container see [CSS Container Query Syntax Update 2022: container-type](https://dev.to/ingosteinke/css-container-query-syntax-update-5cg5)
+ - [ ] advanced color space see [Taking colors to the next (CSS) level](https://dev.to/ingosteinke/ccs4-colors-5bj2)
+ - [ ] mix-blend-mode see [Color blending with CSS blend-modes] => subtle text gradient effects like ISD / [Animated Gradient Text Color](https://dev.to/ingosteinke/animated-gradient-text-color-25hi)(https://dev.to/ingosteinke/color-blending-with-css-blend-modes-34h3)
+ - [ ] aspect-ratio
+ - [ ] calc()
+ - [ ] clamp()
+ - [ ] grid fr minmax || flex || float
+ - [ ] image source set with sizes, formats (webp), and lazy loading => local library instead of manual tinkering?
+ - [ ] use git based deployment (with or without netlify)
+ - [ ] deployment should possibly also cover tests
+ */
 
 .animate--on-visibility {
   /* class will be used by JS intersection observer */

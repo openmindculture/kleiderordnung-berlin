@@ -15,13 +15,22 @@ var observerOptions = {
 /**
  * Observe .animated-on-visibility adding animation class when they become visible
  * @param {Array} intersectingEntries
- * @param {IntersectionObserver=} observer
+ * param {IntersectionObserver=} observer @optional= TODO how to note optional?
  */
 function intersectionCallback(intersectingEntries) {
   for (var j = 0; j < intersectingEntries.length; j++) {
     if (intersectingEntries[j].isIntersecting && intersectingEntries[j].intersectionRatio > observerOptions.threshold) {
       if (intersectingEntries[j].target && intersectingEntries[j].target.classList) {
-        var animationClassName = intersectingEntries[j].target.dataset.animationclass;
+        var datakey = 'animationclass'; // or if parent style flexDirection column
+        console.log('intersectingEntries[j].target.parentElement', intersectingEntries[j].target.parentElement);
+        console.log('style.flexDirection', intersectingEntries[j].target.parentElement.style.flexDirection);
+        if (intersectingEntries[j].target.parentElement
+          && intersectingEntries[j].target.parentElement.style.flexDirection === 'column') {
+          datakey = 'animationclassincolumn';
+          console.log('use column datakey');
+        }
+        var animationClassName = intersectingEntries[j].target.dataset[datakey];
+        console.log(`set animationClassName on intersecting entry ${j}`);
         intersectingEntries[j].target.classList.add(animatingClassName, animationClassName);
       }
     }
