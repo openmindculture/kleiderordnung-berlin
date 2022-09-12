@@ -23,17 +23,13 @@ function intersectionCallback(intersectingEntries) {
       if (intersectingEntries[j].target && intersectingEntries[j].target.classList) {
         var datakey = 'animationclass'; // or if parent style flexDirection column
         var flexContainer = intersectingEntries[j].target.parentElement;
-        console.log('intersectingEntries[j].target.parentElement', intersectingEntries[j].target.parentElement);
-        console.log('style.flexDirection', intersectingEntries[j].target.parentElement.style.flexDirection);
         if (flexContainer) {
           var flexDirection = window.getComputedStyle(flexContainer).flexDirection;
           if (flexDirection === 'column') {
             datakey = 'animationclassincolumn';
-            console.log('use column datakey');
           }
         }
         var animationClassName = intersectingEntries[j].target.dataset[datakey];
-        console.log(`set animationClassName on intersecting entry ${j}`);
         intersectingEntries[j].target.classList.add(animatingClassName, animationClassName);
       }
     }

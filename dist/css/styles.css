@@ -224,6 +224,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   - [ ] subtle text effects / gradients (see below)
  */
 /* TODO use some cutting edge modern CSS and web dev features, just because, and with fallbacks of course:
+ - [ ] content-visibility as potential visibility query and upgrade to intersection observer? thanks to schepp!
  - [ ] :has()
  - [ ] container-type / @container see [CSS Container Query Syntax Update 2022: container-type](https://dev.to/ingosteinke/css-container-query-syntax-update-5cg5)
  - [ ] advanced color space see [Taking colors to the next (CSS) level](https://dev.to/ingosteinke/ccs4-colors-5bj2)
