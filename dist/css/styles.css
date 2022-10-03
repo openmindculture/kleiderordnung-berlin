@@ -25,10 +25,10 @@
 
   /* Export Theme Colors */
 
-  --primary-backround: var(--pale-beige-rose);
+  --primary-backround: var(--default-white);
   --primary-foreground: var(--tar);
 
-  --neutral-background: var(--default-white);
+  --neutral-background: transparent;
   --default-border-color: var(--dark-heart-rose);
 
   /* animate.css library: this changes all the animations globally https://animate.style  */
@@ -64,6 +64,7 @@ html, body {
   box-sizing: border-box;
 }
 
+/* todo remove what gets overwritten anyway */
 body,
 h1,
 h2,
@@ -126,20 +127,24 @@ main, .main, p, article, section, .footer {
   color: var(--primary-foreground);
   font-family: "Neue Haas", Helvetica, sans-serif;
   letter-spacing: 0.025rem;
-  padding: 0.5rem;
+  padding: 0 0.5em 0.5em 0;
 }
 
 .header {
   height: auto;
-  min-height: 2rem;
   margin: 0;
   background: var(--neutral-background);
-  overflow: visible;
-  max-height: 5rem;
-  /* TODO dynamic height matching the image */
+  /* TODO dynamic height matching the pseudo image (representing the text part of the logo) */
 }
 
 /* Wikipedia: Die Helvetica, ursprünglich Neue Haas Grotesk, ist eine serifenlose Linear-Antiqua, auch Grotesk oder Endstrichlose genannt. Sie wurde 1957 von der Haas’schen Schriftgiesserei AG in Münchenstein bei Basel auf den Markt gebracht. */
+
+.logo-wrapper {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: visible;
+}
 
 .heart-and-thread {
   height: auto;
@@ -150,8 +155,91 @@ nav, #lightbox-wrapper {
 }
 
 .main {
-  margin: 0 1em 0 auto;
-  max-width: 600px;
+  margin: 0 1em 0 1em;
+}
+
+/* TODO extract critical CSS and improve height handling to prevent unnecessary layout shift */
+/* TODO prefer percentages or (r)em units */
+.main__images {
+  position: relative;
+  margin: 0 auto 2em auto;
+}
+
+.main__image {
+  max-width: 60%;
+  height: auto;
+  z-index: 3;
+}
+
+.main__image--beside {
+  max-width: 40%;
+  height: auto;
+  margin-left: -2em;
+  margin-bottom: -1em;
+  z-index: 1;
+}
+
+.main__image--below {
+  display: block;
+  float: left;
+  max-width: 33%;
+  height: auto;
+  margin-top: 1em;
+  margin-left: 4em;
+  z-index: 2;
+}
+
+.main__intro {
+  display: inline-block;
+  max-width: 50%;
+  padding: 4em;
+  font-size: 120%;
+}
+
+.main__images:after {
+  content: " ";
+  clear: left;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .main__images {
+    max-width: 1080px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .main__image {
+    max-width: 600px;
+  }
+  .main__image--beside {
+    max-width: 500px;
+  }
+  .main__image--below {
+    max-width: 400px;
+  }
+  .main__intro {
+    max-width: 550px;
+  }
+}
+
+.testimonials figure {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+
+.testimonials figure > *:first-child {
+  float: left;
+}
+
+.testimonials figure figcaption {
+  max-width: 40%;
+  padding: 4em;
+  font-size: 120%;
+}
+
+.testimonials img  {
+  max-width: 50%;
 }
 
 .footer {
@@ -197,6 +285,10 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   height: 2em;
   width: auto;
   border-radius: 0.125em;
+}
+
+.vcard h2 {
+  font-family: handwritten, script;
 }
 
 @media (max-width: 768px) {

@@ -21,7 +21,7 @@ function intersectionCallback(intersectingEntries) {
   for (var j = 0; j < intersectingEntries.length; j++) {
     if (intersectingEntries[j].isIntersecting && intersectingEntries[j].intersectionRatio > observerOptions.threshold) {
       if (intersectingEntries[j].target && intersectingEntries[j].target.classList) {
-        var datakey = 'animationclass'; // or if parent style flexDirection column
+        var datakey = 'animationclass';
         var flexContainer = intersectingEntries[j].target.parentElement;
         if (flexContainer) {
           var flexDirection = window.getComputedStyle(flexContainer).flexDirection;
