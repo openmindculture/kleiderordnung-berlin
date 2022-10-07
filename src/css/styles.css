@@ -23,6 +23,10 @@
 
   --default-white: #ffffff;
 
+  /* Kleiderordnung Düsseldorf Colors */
+  --dusseldorf-blue: #222cd4;
+  --dusseldorf-red: #f14051;
+
   /* Export Theme Colors */
 
   --primary-backround: var(--default-white);
@@ -137,16 +141,33 @@ h1, h2, h3, h4, h5 {
   /* TODO Handwritten LiebeFont by Ulrike Rausch or similar */
   font-family: "Oooh Baby", Handwritten, sans-serif;
   font-weight: 400;
+  font-size: 36px;
+}
+
+.font__family--baby {
+  font-family: "Oooh Baby", sans-serif !important;
+  font-size: 26px;
+}
+
+h1.font__family--baby, h1 > .font__family--baby {
+  font-size: 38px;
 }
 
 .font__family--kalam {
   font-family: "Kalam", sans-serif !important;
 }
 
-.font__family--kalam {
+.font__family--mali {
   font-family: "Mali", sans-serif !important;
 }
 
+.color--dusseldorf-blue {
+  color: var(--dusseldorf-blue);
+}
+
+.color--dusseldorf-red {
+  color: var(--dusseldorf-red);
+}
 
 /* reset styles, see https://piccalil.li/blog/a-modern-css-reset/ */
 
