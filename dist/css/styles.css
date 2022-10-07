@@ -23,10 +23,6 @@
 
   --default-white: #ffffff;
 
-  /* Kleiderordnung Düsseldorf Colors */
-  --dusseldorf-blue: #222cd4;
-  --dusseldorf-red: #f14051;
-
   /* Export Theme Colors */
 
   --primary-backround: var(--default-white);
@@ -413,12 +409,19 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
 }
 
 .vcard {
-  padding: 1em;
+  padding: 2.5em 1em 1.5em 1em;
   background-color: var(--palm);
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .vcard h2 {
   font-family: handwritten, script;
+}
+
+.card .social {
+  margin: 2em 0 0 0;
 }
 
 @media (max-width: 768px) {
