@@ -24,6 +24,8 @@ nav {
   grid-row: 2;
   padding-top: 1em;
   padding-bottom: 2em;
+  max-width: 96%;
+  width: 96%;
 }
 .main img.main__image--beside,
 .main img.main__image--below {
