@@ -157,14 +157,6 @@ h1.font__family--baby, h1 > .font__family--baby {
   font-family: "Mali", sans-serif !important;
 }
 
-.color--dusseldorf-blue {
-  color: var(--dusseldorf-blue);
-}
-
-.color--dusseldorf-red {
-  color: var(--dusseldorf-red);
-}
-
 .background-color--sand {
   background-color: var(--sand) !important;
 }
@@ -255,10 +247,9 @@ main, .main, p, article, section, .footer {
   height: auto;
   margin: 0;
   background: var(--neutral-background);
-  /* TODO dynamic height matching the pseudo image (representing the text part of the logo) */
+  padding: 1em;
 }
 
-/* Wikipedia: Die Helvetica, ursprünglich Neue Haas Grotesk, ist eine serifenlose Linear-Antiqua, auch Grotesk oder Endstrichlose genannt. Sie wurde 1957 von der Haas’schen Schriftgiesserei AG in Münchenstein bei Basel auf den Markt gebracht. */
 
 .logo-wrapper {
   margin: 0;
@@ -292,6 +283,13 @@ nav, #lightbox-wrapper {
   z-index: 3;
 }
 
+.main__intro {
+  display: inline-block;
+  max-width: 50%;
+  padding: 4em;
+  font-size: 120%;
+}
+
 .main__image--beside {
   max-width: 40%;
   height: auto;
@@ -310,18 +308,85 @@ nav, #lightbox-wrapper {
   z-index: 2;
 }
 
-.main__intro {
-  display: inline-block;
-  max-width: 50%;
-  padding: 4em;
-  font-size: 120%;
-}
+
 
 .main__images:after {
   content: " ";
   clear: left;
   display: block;
 }
+
+.testimonials figure {
+  clear: both;
+  padding: 0;
+  margin: 0 0 1em 0;
+  display: flex;
+}
+
+.testimonials figure > *:first-child {
+  float: left;
+}
+
+.testimonials figure figcaption {
+  max-width: 40%;
+  padding: 4em;
+  font-size: 120%;
+}
+
+.testimonials img  {
+  max-width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .main .main__intro {
+    padding: 2em;
+    max-width: 55%;
+  }
+  .main .testimonials figure {
+    flex-direction: column;
+  }
+  .main .testimonials figure:has(> img:first-child),
+  .main .testimonials__figure--reverse {
+    flex-direction: column-reverse;
+  }
+  .main .testimonials figure figcaption,
+  .main .testimonials figure img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  img.main__image {
+    max-width: 96%;
+  }
+  img.main__image--beside {
+    max-width: 58%;
+  }
+  img.main__image--below {
+    max-width: 42%;
+    margin-left: 2%;
+  }
+  .main .main__intro {
+    padding: 2em 0 0 0;
+    margin: 0 auto 0 0;
+    max-width: 77%;
+    font-size: 120%;
+    display: block;
+  }
+
+  .main h1, h2, h3, h4, h5 {
+    line-height: 1.25;
+    margin-bottom: 0.325em;
+  }
+  .main p {
+    font-size: 110%;
+    margin-bottom: 2em;
+  }
+  .main p:has(+ p) {
+    margin-bottom: 1em;
+  }
+}
+
 
 @media (min-width: 1200px) {
   .main__images {
@@ -341,26 +406,6 @@ nav, #lightbox-wrapper {
   .main__intro {
     max-width: 550px;
   }
-}
-
-.testimonials figure {
-  clear: both;
-  padding: 0;
-  margin: 0;
-}
-
-.testimonials figure > *:first-child {
-  float: left;
-}
-
-.testimonials figure figcaption {
-  max-width: 40%;
-  padding: 4em;
-  font-size: 120%;
-}
-
-.testimonials img  {
-  max-width: 50%;
 }
 
 .footer {
@@ -398,8 +443,14 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   color: var(--primary-foreground);
 }
 
+.contact h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
 .social a + a {
-  margin-left: 0.5em;
+  margin-left: 1em;
 }
 
 .social svg {
@@ -414,19 +465,20 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
+  font-size: 110%;
 }
 
-.vcard h2 {
-  font-family: handwritten, script;
-}
-
-.card .social {
+.vcard .social {
   margin: 2em 0 0 0;
 }
 
 @media (max-width: 768px) {
   .feature__container {
     flex-direction: column;
+  }
+  .feature__container .feature__box {
+    width: 90%;
+    flex-basis: 90%;
   }
 }
 
