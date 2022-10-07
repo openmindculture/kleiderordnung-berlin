@@ -310,11 +310,7 @@ nav, #lightbox-wrapper {
 
 
 
-.main__images:after {
-  content: " ";
-  clear: left;
-  display: block;
-}
+
 
 .testimonials figure {
   clear: both;
@@ -387,10 +383,47 @@ nav, #lightbox-wrapper {
   }
 }
 
+@media (max-width: 576px) {
+  /* change item order to display intro text below first image */
+  .main .main__images {
+    display: grid;
+  }
+  .main .main__intro {
+    grid-row: 2;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  .main img.main__image--beside,
+  .main img.main__image--below {
+    max-width: 96%;
+    margin: auto;
+  }
+  .main img.main__image--below {
+    margin-top: 1em;
+  }
+}
+
+.main__images:after {
+  content: " ";
+  clear: left;
+  display: block;
+}
+
+article {
+  max-width: 1021px;
+}
+
+article.testimonials {
+  max-width: 1668px;
+}
 
 @media (min-width: 1200px) {
+  .main article,
+  .main article.testimonials {
+    margin: 0 auto;
+  }
   .main__images {
-    max-width: 1080px;
+    max-width: 1668px;
     margin-right: 0;
     margin-left: auto;
   }
@@ -405,6 +438,22 @@ nav, #lightbox-wrapper {
   }
   .main__intro {
     max-width: 550px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header,
+  .header h1 {
+    text-align: right;
+  }
+  .main .main__intro {
+    max-width: 1000px;
+    font-size: 150%;
+    float: none;
+    clear: both;
+    text-align: right;
+    margin: 0 0 0 auto;
+    display: block;
   }
 }
 
@@ -481,6 +530,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     flex-basis: 90%;
   }
 }
+
+
 
 /* TODO add styles, effects, and animations from customized Colorway Barber Shop Template */
 /* TODO technical SEO and content SEM:
