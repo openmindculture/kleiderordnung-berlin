@@ -591,6 +591,7 @@ a:focus, a:hover {
   max-width: 500px;
   margin: 0 auto;
   font-size: 110%;
+  font-style: normal;
 }
 
 .vcard .social {
