@@ -242,7 +242,7 @@ body {
 main, .main, p, article, section, .footer {
   background-color: var(--primary-backround);
   color: var(--primary-foreground);
-  font-family: "Neue Haas", Helvetica, sans-serif;
+  font-size: 103%;
   letter-spacing: 0.025rem;
   padding: 0 0.5em 0.5em 0;
 }
@@ -531,12 +531,20 @@ article.testimonials {
 }
 
 a, a:link, a:visited, a:hover, a:active, a:focus {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--primary-foreground);
 }
 
 a:focus, a:hover {
   text-decoration-color: #f5df4d;
+}
+
+.vcard a.email, .vcard a.email:link, .vcard a.email:visited,
+.vcard a.telephone, .vcard a.telephone:link, .vcard a.telephone:visited,
+.vcard a.url, .vcard a.url:link, .vcard a.url:visited,
+.footer a, .footer a:link, .foter a:visited,
+.vcard .social a, .vcard .social a:link, .vcard .social a:visited {
+  text-decoration: none;
 }
 
 /* TODO animated color link hover, TODO define marked text color */
@@ -587,6 +595,7 @@ a:focus, a:hover {
 
 .vcard .social {
   margin: 2em 0 0 0;
+  opacity: 0.75;
 }
 
 @media (max-width: 768px) {
