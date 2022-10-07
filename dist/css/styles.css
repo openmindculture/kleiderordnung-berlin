@@ -116,6 +116,10 @@ html, body {
   font-weight: 400;
 }
 
+body {
+  overflow-x: hidden; /* TODO ensure content visibility */
+}
+
 body, p /* TODO add web form elements etc. if needed */ {
   font-family: Figtree, Helvetica, sans-serif;
   font-weight: 400;
@@ -441,7 +445,7 @@ article.testimonials {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1550px) {
   .header,
   .header h1 {
     text-align: right;
@@ -461,6 +465,11 @@ article.testimonials {
   text-align: center;
   margin: 2em 0 0 0;
   padding: 0.5em;
+}
+
+.footer p {
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .feature__container {
@@ -491,6 +500,30 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   text-decoration: none;
   color: var(--primary-foreground);
 }
+
+a:focus, a:hover {
+  text-decoration-color: #f5df4d;
+}
+
+/* TODO animated color link hover, TODO define marked text color */
+/*
+@supports (background-image:linear-gradient(#222b40,#222b40)) and (transition:all 2s linear) {
+  a, a:link, a:visited, a:active {
+    background-image: linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#f5df4d,#f5df4d);
+    background-size: 100% 100%,50% 100%,100% 100%;
+    transition: background-size .25s ease-in,color .25s ease-in;
+  }
+
+  a:focus, a:hover {
+    background-position: 0 0,100% 0,0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%,50% 100%,100% 100%;
+    transition: background-size .25s ease-in,color .25s ease-in;
+    background-image: linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#f5df4d,#f5df4d);
+    text-decoration-style: dotted;
+    text-decoration-thickness: 0.1em;
+  }
+} */
 
 .contact h2 {
   text-align: center;
