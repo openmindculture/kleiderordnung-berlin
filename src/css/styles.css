@@ -169,6 +169,18 @@ h1.font__family--baby, h1 > .font__family--baby {
   color: var(--dusseldorf-red);
 }
 
+.background-color--sand {
+  background-color: var(--sand) !important;
+}
+
+.background-color--citrona {
+  background-color: var(--citrona) !important;
+}
+
+.background-color--palm {
+  background-color: var(--palm) !important;
+}
+
 /* reset styles, see https://piccalil.li/blog/a-modern-css-reset/ */
 
 *,
@@ -398,6 +410,11 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   height: 2em;
   width: auto;
   border-radius: 0.125em;
+}
+
+.vcard {
+  padding: 1em;
+  background-color: var(--palm);
 }
 
 .vcard h2 {
