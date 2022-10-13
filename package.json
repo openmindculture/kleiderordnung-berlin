@@ -4,7 +4,7 @@
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "main": "dist/index.html",
   "scripts": {
-    "build": "rm -rf dist/* && cp -r src/* dist && cp node_modules/animate.css/animate.min.css dist/css && npm run postCSS",
+    "build": "rm -rf dist/* && cp -r src/* dist && cp node_modules/animate.css/animate.min.css dist/css && npm run postCSS && node_modules/html-minifier-cli/bin/htmlmin -o dist/index.html src/index.html",
     "codeceptjs": "codeceptjs run --steps",
     "dev": "npm run serve",
     "eslint": "eslint --ext .js dist",
@@ -32,6 +32,7 @@
     "codeceptjs-resemblehelper": "^1.9.6",
     "eslint": "^8.22.0",
     "eslint-plugin-es5": "^1.5.0",
+    "html-minifier-cli": "^0.1.0",
     "http-server": "^14.1.1",
     "playwright": "^1.25.2",
     "postcss": "^8.4.16",
