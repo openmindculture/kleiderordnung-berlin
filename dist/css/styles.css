@@ -460,7 +460,7 @@ article.testimonials {
   }
 }
 
-@media (min-width: 1550px) {
+@media (min-width: 1600px) {
   .header,
   .header h1 {
     text-align: right;
