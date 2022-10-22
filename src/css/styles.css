@@ -1,4 +1,4 @@
-@import './animate.min.css';
+@import url("./animate.min.css") screen;
 /* TODO fix using an unsurprising modern import using a css loader when adding postCSS */
 /* TODO postCSS configuration
  * minify all files
@@ -42,15 +42,8 @@
 /* TODO minify CSS and HTML files */
 
 /* TODO use optimized local font files and acquire licenses if necessary */
-/* oooh-baby-regular - latin */
-@font-face {
-  font-family: 'Oooh Baby';
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-  url("../fonts/oooh-baby-v3-latin-regular.woff2") format("woff2"),
-  url("../fonts/oooh-baby-v3-latin-regular.woff") format("woff");
-}
+
+/** Figtree and Kalam web fonts are licensed under the SIL Open Font License 1.1 */
 
 /* figtree-regular - latin */
 @font-face {
@@ -62,6 +55,7 @@
   url("../fonts/figtree-v1-latin-regular.woff") format("woff");
   font-display: swap;
 }
+
 /* figtree-700 - latin */
 @font-face {
   font-family: 'Figtree';
@@ -79,35 +73,18 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-  url('../fonts/kalam-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../fonts/kalam-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url('../fonts/kalam-v16-latin-regular.woff2') format("woff2"),
+  url('../fonts/kalam-v16-latin-regular.woff') format("woff");
 }
+
 /* kalam-700 - latin */
 @font-face {
   font-family: 'Kalam';
   font-style: normal;
   font-weight: 700;
   src: local(''),
-  url('../fonts/kalam-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../fonts/kalam-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* mali-regular - latin */
-@font-face {
-  font-family: 'Mali';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-  url('../fonts/mali-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../fonts/mali-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* mali-700 - latin */
-@font-face {
-  font-family: 'Mali';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-  url('../fonts/mali-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../fonts/mali-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url('../fonts/kalam-v16-latin-700.woff2') format("woff2"),
+  url('../fonts/kalam-v16-latin-700.woff') format("woff");
 }
 
 html, body {
@@ -137,28 +114,15 @@ b, strong, .bold {
   font-size: 28px;
 }
 
-h1, h2, h3, h4, h5 {
-  /* TODO Handwritten LiebeFont by Ulrike Rausch or similar */
-  font-family: "Oooh Baby", Handwritten, sans-serif;
+h1, h2, h3, h4, h5, .main__intro {
+  font-family: "Kalam", Handwritten, sans-serif;
   font-weight: 400;
   font-size: 36px;
 }
 
-.font__family--baby {
-  font-family: "Oooh Baby", sans-serif !important;
-  font-size: 26px;
-}
-
-h1.font__family--baby, h1 > .font__family--baby {
-  font-size: 38px;
-}
-
-.font__family--kalam {
-  font-family: "Kalam", sans-serif !important;
-}
-
-.font__family--mali {
-  font-family: "Mali", sans-serif !important;
+h1 {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .background-color--sand {
@@ -291,7 +255,9 @@ nav, #lightbox-wrapper {
   display: inline-block;
   max-width: 50%;
   padding: 4em;
-  font-size: 120%;
+  font-size: 130%;
+  font-family: "Kalam", Handwritten, sans-serif;
+  font-weight: 400;
 }
 
 .main__image--beside {
@@ -460,7 +426,7 @@ article.testimonials {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1599px) {
   .header,
   .header h1 {
     text-align: right;
