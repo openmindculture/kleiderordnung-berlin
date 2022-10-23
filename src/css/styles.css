@@ -278,27 +278,50 @@ nav, #lightbox-wrapper {
   z-index: 2;
 }
 
+article {
+  max-width: 1021px;
+}
+
+article.testimonials {
+  max-width: 1024px;
+}
+
 .testimonials__container {
   display: flex;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 100%);
-  grid-template-columns: repeat(auto-fit, min(10em, 100%));
-  grid-template-rows: masonry;
+  grid-template-columns: 10fr 8fr;
   justify-content: center;
   grid-gap: .5em;
   padding: .5em;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-.testimonials__container > * {
-  float: left;
-  width: 49%;
-  width: min(10em, 100%);
+/* fixed placement for pseudo masonry layout mixing portraint and landscape blocks */
+.testimonials__text--vivien {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
 }
-
-@supports (grid-template-rows: masonry) {
-  .testimonials__container {
-    grid-template-rows: masonry;
-  }
+.testimonials__picture--vivien {
+  grid-column: 2 / 2;
+  grid-row: 1 / span 2;
+}
+.testimonials__text--katja {
+  grid-column: 1 / 1;
+  grid-row: 3 / 3;
+}
+.testimonials__picture--katja {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+  align-self: end;
+}
+.testimonials__text--kathrin {
+  grid-column: 1 / 1;
+  grid-row: 4 / 4;
+}
+.testimonials__picture--kathrin {
+  grid-column: 2 / 2;
+  grid-row: 3 / span 4;
 }
 
 .testimonials .testimonials__image  {
@@ -336,9 +359,34 @@ nav, #lightbox-wrapper {
 }
 
 @media (max-width: 768px) {
-  .testimonials .testimonials__picture {
-    max-width: unset;
+  .testimonials .testimonials__container {
+    grid-template-columns: 1fr;
+    max-width: 482px;
   }
+  .testimonials .testimonials__picture,
+  .testimonials .testimonials__text {
+    max-width: unset;
+    grid-column: 1 / 1;
+  }
+  .testimonials .testimonials__picture--vivien {
+    grid-row: 1 / 1;
+  }
+  .testimonials .testimonials__text--vivien {
+    grid-row: 2 / 2;
+  }
+  .testimonials .testimonials__picture--katja {
+    grid-row: 3 / 3;
+  }
+  .testimonials .testimonials__text--katja {
+    grid-row: 4 / 4;
+  }
+  .testimonials .testimonials__picture--kathrin {
+    grid-row: 5 / 5;
+  }
+  .testimonials .testimonials__text--kathrin {
+    grid-row: 6 / 6;
+  }
+
   img.main__image {
     max-width: 96%;
   }
@@ -409,14 +457,6 @@ nav, #lightbox-wrapper {
   content: " ";
   clear: left;
   display: block;
-}
-
-article {
-  max-width: 1021px;
-}
-
-article.testimonials {
-  max-width: 1668px;
 }
 
 @media (min-width: 1200px) {
