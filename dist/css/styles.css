@@ -181,6 +181,11 @@ select {
   font: inherit;
 }
 
+li {
+  margin-bottom: 1em;
+  font-size: 110%;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -349,20 +354,15 @@ article.testimonials {
     padding: 2em;
     max-width: 55%;
   }
-  .main .testimonials figure {
-    flex-direction: column;
-  }
-  .main .testimonials figure:has(> img:first-child),
-  .main .testimonials__figure--reverse {
-    flex-direction: column-reverse;
-  }
-  .main .testimonials figure figcaption,
-  .main .testimonials figure img {
-    max-width: 90%;
+  .testimonials .testimonials__text {
+    padding: 0 1em 1em 0;
   }
 }
 
 @media (max-width: 768px) {
+  .testimonials h2 {
+    text-align: center;
+  }
   .testimonials .testimonials__container {
     grid-template-columns: 1fr;
     max-width: 482px;
