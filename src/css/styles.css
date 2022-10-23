@@ -41,90 +41,6 @@
 /* TODO use PostCSS to convert to color definitions for better backwards compatibility */
 /* TODO minify CSS and HTML files */
 
-/* TODO use optimized local font files and acquire licenses if necessary */
-
-/** Figtree and Kalam web fonts are licensed under the SIL Open Font License 1.1 */
-
-/* figtree-regular - latin */
-@font-face {
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-  url("../fonts/figtree-v1-latin-regular.woff2") format("woff2"),
-  url("../fonts/figtree-v1-latin-regular.woff") format("woff");
-  font-display: swap;
-}
-
-/* figtree-700 - latin */
-@font-face {
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 700;
-  src: local(""),
-  url("../fonts/figtree-v1-latin-700.woff2") format("woff2"),
-  url("../fonts/figtree-v1-latin-700.woff") format("woff");
-  font-display: swap;
-}
-
-/* kalam-regular - latin */
-@font-face {
-  font-family: 'Kalam';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-  url('../fonts/kalam-v16-latin-regular.woff2') format("woff2"),
-  url('../fonts/kalam-v16-latin-regular.woff') format("woff");
-}
-
-/* kalam-700 - latin */
-@font-face {
-  font-family: 'Kalam';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-  url('../fonts/kalam-v16-latin-700.woff2') format("woff2"),
-  url('../fonts/kalam-v16-latin-700.woff') format("woff");
-}
-
-html, body {
-  font: inherit;
-  font-size: 100%;
-  font-weight: 400;
-}
-
-body {
-  overflow-x: hidden; /* TODO ensure content visibility */
-}
-
-body, p /* TODO add web form elements etc. if needed */ {
-  font-family: Figtree, Helvetica, sans-serif;
-  font-weight: 400;
-}
-
-b, strong, .bold {
-  font-weight: 700;
-}
-
-.large {
-  font-size: 26px;
-}
-
-.larger {
-  font-size: 28px;
-}
-
-h1, h2, h3, h4, h5, .main__intro {
-  font-family: "Kalam", Handwritten, sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-}
-
-h1 {
-  margin: 0 auto;
-  text-align: center;
-}
-
 .background-color--sand {
   background-color: var(--sand) !important;
 }
@@ -169,6 +85,12 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, .main__intro {
+  font-family: "Kalam", Handwritten, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
 }
 
 img, picture, svg {
@@ -263,10 +185,17 @@ nav, #lightbox-wrapper {
 .main__intro {
   display: inline-block;
   max-width: 50%;
-  padding: 4em;
+  padding: 4em 1em 4em 4em;
   font-size: 130%;
   font-family: "Kalam", Handwritten, sans-serif;
   font-weight: 400;
+}
+
+.main__intro .hello {
+  display: block;
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 0.325em;
 }
 
 .main__image--beside {
@@ -355,7 +284,7 @@ article.testimonials {
 
 @media (max-width: 1024px) {
   .main .main__intro {
-    padding: 2em;
+    padding: 2em 0 2em 2em;
     max-width: 55%;
   }
   .testimonials .testimonials__text {

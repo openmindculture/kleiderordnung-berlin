@@ -5,13 +5,87 @@
     <title>KleiderOrdnung Berlin: nachhaltige Modeberatung von Tina Steinke</title>
     <!-- ^ TODO wie soll das lauten? -->
     <meta name=language content="de">
+    <link rel="canonical" href="https://www.kleiderordnung-berlin.de/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="fonts/kalam-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/figtree-v1-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" media="screen" href="css/styles.css?v=1" type="text/css">
     <script src="js/scripts.js?v=1" type="text/javascript"></script>
     <link rel="stylesheet" media="print" href="css/print.css?v=1" type="text/css">
-    <link rel="canonical" href="https://www.kleiderordnung-berlin.de/">
+
+    <style type="text/css">
+      /** Figtree and Kalam web fonts are licensed under the SIL Open Font License 1.1 */
+
+      /* figtree-regular - latin */
+      @font-face {
+        font-family: 'Figtree';
+        font-style: normal;
+        font-weight: 400;
+        src: local(""),
+        url("fonts/figtree-v1-latin-regular.woff2") format("woff2"),
+        url("fonts/figtree-v1-latin-regular.woff") format("woff");
+        font-display: swap;
+      }
+
+      /* figtree-700 - latin */
+      @font-face {
+        font-family: 'Figtree';
+        font-style: normal;
+        font-weight: 700;
+        src: local(""),
+        url("fonts/figtree-v1-latin-700.woff2") format("woff2"),
+        url("fonts/figtree-v1-latin-700.woff") format("woff");
+        font-display: swap;
+      }
+
+      /* kalam-regular - latin */
+      @font-face {
+        font-family: 'Kalam';
+        font-style: normal;
+        font-weight: 400;
+        src: local(''),
+        url('fonts/kalam-v16-latin-regular.woff2') format("woff2"),
+        url('fonts/kalam-v16-latin-regular.woff') format("woff");
+      }
+
+      /* kalam-700 - latin */
+      @font-face {
+        font-family: 'Kalam';
+        font-style: normal;
+        font-weight: 700;
+        src: local(''),
+        url('fonts/kalam-v16-latin-700.woff2') format("woff2"),
+        url('fonts/kalam-v16-latin-700.woff') format("woff");
+      }
+
+      html, body {
+        font: inherit;
+        font-size: 100%;
+        font-weight: 400;
+      }
+
+      body {
+        overflow-x: hidden; /* TODO ensure content visibility */
+      }
+
+      body, p {
+        font-family: Figtree, Helvetica, sans-serif;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+
+      b, strong {
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0 auto;
+        text-align: center;
+        font-family: "Kalam", Handwritten, sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+      }
+    </style>
 
     <meta name="description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
     <meta name="keywords" content="Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit,Stilberatung,Stil,Beratung,Mode,Shopping,einkaufen,kombinieren,aussehen,aufräumen,aussortieren,Kleiderschrank,Check,Begleitung,Berlin">
@@ -48,35 +122,9 @@
     <div class="page-container" id="top">
       <header class="header"><!-- TODO change to "mobile" burger menu when enough items, maybe remove? what about contact/imprint? -->
         <h1>KleiderOrdnung Berlin: nachhaltige Modeberatung</h1>
-        <nav>
-          <ul>
-            <li><!-- Persona weiss auf blau -->
-              <a id="link-ueber-mich" class="link-ueber" href="#ueber-mich" data-tab="ueber-mich" title="Über mich">
-              </a>
-            </li>
-            <li><!-- Krawatte weiss auf rot -->
-              <a id="link-business" class="link-b" href="#business" data-tab="business" title="Stil für den Job, Ordnung im Kleiderschrank">
-              </a>
-            </li>
-            <li><!-- Kleiderbügel weiss auf blau -->
-              <a id="link-leistungen" class="link-leistungen active" href="#leistungen" data-tab="leistungen" title="Leistungen">
-              </a>
-            </li>
-            <li ><!-- Bildsymbol weiss auf rot -->
-              <a id="link-media" class="link-media" href="#media" data-tab="media" title="Impressionen, Eindrücke">
-              </a>
-            </li>
-            <li><!-- Briefumschlag weiss auf blau -->
-              <a id="link-kontakt" class="link-kontakt" href="#kontakt" data-tab="kontakt" title="Kontakt / Impressum / AGB / Datenschutz">
-              </a>
-            </li>
-          </ul>
-        </nav>
       </header>
       <main class="main">
         <div class="main__images">
-
-
           <picture>
             <source type="image/webp" srcset="img/Tina-Steinke-Kleiderstaender-47190-750x586.webp, img/Tina-Steinke-Kleiderstaender-47190-1500x1171.webp 2x" media="(min-width: 376px)">
             <source type="image/webp" srcset="img/Tina-Steinke-Kleiderstaender-47190-375x293.webp, img/Tina-Steinke-Kleiderstaender-47190-750x586.webp 2x, img/Tina-Steinke-Kleiderstaender-47190-1500x1171.webp 4x">
@@ -93,7 +141,6 @@
               alt="Tina Steinke"
             >
           </picture>
-
 
           <picture>
             <source type="image/webp" srcset="img/Tina-Steinke-Studio-47466-750x586.webp, img/Tina-Steinke-Studio-47466-1500x1171.webp 2x" media="(min-width: 376px)">
@@ -130,37 +177,23 @@
           </picture>
 
           <p class="main__intro">
-            Hallo! Ich bin Tina Steinke. Unter dem Motto "KleiderOrdnung Berlin" und als Teil des Netzwerks von the Sustainable Stylists biete ich nachhaltige Stil- und Modeberatung sowie Einrichtungs- und Kleiderschrank-Check.
+            <span class="hello">Hallo,</span>
+            ich bin Tina Steinke, Gründerin von KleiderOrdnung und kürzlich von Düsseldorf ins inspirierende quirlige Berlin gezogen. Als Sustainable Stylist verfolge ich mit viel Kreativität und Enthusiasmus das Ziel, dem Fast-Fashion-Zirkus deutlich entgegenzuwirken. Sehr schön, dass du diesen Weg ebenfalls mitgehen möchtest!
           </p>
         </div>
         <div id="ueber-mich">
           <article>
-            <h2>Hallo,</h2>
-            <p>
-              ich bin Tina Steinke, Gründerin von KleiderOrdnung und kürzlich von Düsseldorf ins inspirierende quirlige Berlin gezogen.
-            </p>
-            <p>
-              Als Sustainable Stylist verfolge ich mit viel Kreativität und Enthusiasmus das Ziel, dem Fast-Fashion-Zirkus deutlich entgegenzuwirken.
-            </p>
-
-            <p>
-              Sehr schön, dass du diesen Weg auch einschlagen willst!
-            </p>
-            <br>
-            <h3>
-              Wie nachhaltige Modeberatung funktioniert?
-            </h3>
+            <h3>Wie nachhaltige Modeberatung funktioniert?</h3>
             <p>
               <ul>
-                <li>Gemeinsam stellen wir Deinen Kleiderschrank auf den Kopf und finden dort garantiert schon eine hervorragende Basis und besondere Stücke!</li>
-                <li>Ich erwecke das Potential aus dem Vorhandenen, denn häufig fehlt nur der richtige „Mitspieler“ und Accessoires zum stimmigen Look!</li>
-                <li>Für Ergänzungen schauen wir bei hochwertigen Fair-Fashion-Läden, Second-Hand und Vintage Stores.</li>
-                <li>Gerne begleite ich Dich auch auf Flohmärkte oder Kleidertausch-Events, denn mein besonderes Talent besteht darin, aus einer Vielzahl vermeintlich beliebiger Stücke die Perlen zielsicher herauszuangeln. 😀</li>
+                <li>gemeinsam stellen wir Deinen Kleiderschrank auf den Kopf und finden dort garantiert schon eine gute Basis und besondere Stücke!</li>
+                <li>wir erwecken zusammen das Potential aus dem Vorhandenen, denn häufig fehlt nur der richtige &bdquo;Mitspieler&ldquo; und Accessoires zum stimmigen Look!</li>
+                <li>für Ergänzungen schauen wir bei hochwertigen Fairfashion Stores, Second Hand und Vintage Läden.</li>
+                <li>Gerne begleite ich Dich auch auf Flohmärkte oder Kleidertauschevents, denn mein besonderes Talent besteht darin, aus einer Vielzahl beliebiger Stücke die Perlen zielsicher herauszuangeln 😀</li>
               </ul>
             </p>
             <p>
-              Ob minimalistisch, bunt, mutig, mondän, stark, mädchenhaft, androgyn, kompetent ... ich kreiere für
-              Dich den Stil, die Austrahlung, das Statement, was Du mit Deiner Kleidung ausdrücken möchtest.
+              Ob minimalistisch, bunt, mutig, modern, stark, mädchenhaft, androgyn, selbstbewusst... wir finden für Dich den Stil, die Ausstrahlung, das Statement, was Du mit Deiner Kleidung ausdrücken möchtest.
             </p>
             <p>
               Ich freue mich, Dich kennenzulernen!
