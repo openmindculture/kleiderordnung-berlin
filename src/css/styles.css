@@ -278,38 +278,27 @@ nav, #lightbox-wrapper {
   z-index: 2;
 }
 
-
-
-
-
-.testimonials figure {
-  clear: both;
-  padding: 0;
-  margin: 0 0 1em 0;
+.testimonials__container {
   display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100%);
+  grid-template-columns: repeat(auto-fit, min(10em, 100%));
+  grid-template-rows: masonry;
+  justify-content: center;
+  grid-gap: .5em;
+  padding: .5em;
 }
 
-.testimonials figure > *:first-child {
+.testimonials__container > * {
   float: left;
+  width: 49%;
+  width: min(10em, 100%);
 }
 
-.testimonials .testimonials__figure--reverse {
-  flex-direction: row-reverse;
-}
-
-.testimonials .testimonials__figure--reverse > *:first-child {
-  float: right;
-}
-
-.testimonials figure figcaption {
-  max-width: 60%;
-  padding: 1em;
-  font-size: 120%;
-}
-
-.testimonials .testimonials__picture {
-  max-width: 40%;
-  position: relative;
+@supports (grid-template-rows: masonry) {
+  .testimonials__container {
+    grid-template-rows: masonry;
+  }
 }
 
 .testimonials .testimonials__image  {
