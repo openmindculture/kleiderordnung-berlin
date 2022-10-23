@@ -37,11 +37,12 @@ function intersectionCallback(intersectingEntries) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  var observer = new IntersectionObserver(intersectionCallback, observerOptions);
-  var elementsAnimatedOnVisibility = document.getElementsByClassName("animate--on-visibility");
-  for (var i = 0; i < elementsAnimatedOnVisibility.length; i++) {
-    observer.observe(elementsAnimatedOnVisibility[i]);
+  var prefersReducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (prefersReducedMotionQuery && !prefersReducedMotionQuery.matches) {
+    var observer = new IntersectionObserver(intersectionCallback, observerOptions);
+    var elementsAnimatedOnVisibility = document.getElementsByClassName("animate--on-visibility");
+    for (var i = 0; i < elementsAnimatedOnVisibility.length; i++) {
+      observer.observe(elementsAnimatedOnVisibility[i]);
+    }
   }
 });
-
-
