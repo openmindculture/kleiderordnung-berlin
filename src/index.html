@@ -78,20 +78,10 @@
       }
     </style>
     <link rel="stylesheet" media="screen" href="css/styles.css?v=1" type="text/css">
-    <!-- <link rel="stylesheet" media="screen" href="css/klaro/0.7.15/klaro.min.css" type="text/css"> -->
+    <link rel="stylesheet" media="screen" href="css/klaro/0.7.15/klaro.min.css" type="text/css">
     <link rel="stylesheet" media="print" href="css/print.css?v=1" type="text/css">
     <script src="js/scripts.js?v=1" type="text/javascript"></script>
-    <!--
-    <script src="js/klaro/0.7.18/klaro.min.js" type="text/javascript"></script>
-    <script src="js/instafetch/1.5.0/instafetch.min.js" type="text/javascript"></script>
-    <script type="opt-in" data-type="application/javascript" data-name="instagram">
-instafetch.init({
-  accessToken: 'FUCK_MARK_SUCKERBERG!',
-  target: 'instafetch',
-  numOfPics: 4,
-  caption: false
-});
-    </script> -->
+    <script src="js/klaro/0.7.18/klaro.min.js" type="text/javascript" async defer></script>
     <meta name="description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
     <meta name="keywords" content="Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit,Stilberatung,Stil,Beratung,Mode,Shopping,einkaufen,kombinieren,aussehen,aufräumen,aussortieren,Kleiderschrank,Check,Begleitung,Berlin">
     <!-- TODO check and adapt all header and social attribute values! -->
@@ -535,10 +525,14 @@ instafetch.init({
         <a href="#top" onclick="window.scrollTo(0,0);" class="toplink">^ zurück / nach oben</a>
       </aside><!-- Ende der Datenschutzerklärung -->
 
-      <!-- placeholder for GDPR-compliant Instagram feed using instafetch and klaro -->
+      <!-- placeholder for GDPR-compliant Instagram feed using juicer.io and klaro -->
       <!-- https://github.com/kiprotect/klaro -->
-      <!-- https://github.com/thomasvaeth/instafetch.js -->
-      <div id=instafetch></div>
+      <!-- TODO juicer stlyes don't work on file url; klaro consent does not work on localhost server -->
+      <aside id=instafetch>
+        <script type="opt-in" data-type="application/javascript" data-name="instagram" src="js/loadJuicerfeedStyles.js"></script>
+        <script type="opt-in" data-type="application/javascript" data-name="instagram" src="https://assets.juicer.io/embed.js"></script>
+        <ul class="juicer-feed" data-feed-id="openmindculture" data-origin="embed-code"><h1 class="referral"><a href="https://www.juicer.io">Social Media Feed powered by Juicer.io</a></h1></ul>
+      </aside>
 
       <footer class="footer">
         <p>

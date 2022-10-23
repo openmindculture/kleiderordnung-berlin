@@ -1,8 +1,8 @@
 'use strict';
 
 /** integrate social media in compliance with privacy law using https://heyklaro.com */
-/* window.klaroConfig = {
-  apps : [
+window.klaroConfig = {
+  services : [
     {
       name : 'instagram',
       default: true,
@@ -11,7 +11,7 @@
       cookies : [/^instagram/i]
     }
   ]
-} */
+}
 
 /** @type {String} */
 var animatingClassName = 'animate__animated';

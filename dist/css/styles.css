@@ -686,9 +686,10 @@ a:focus, a:hover {
   }
 }
 
+.juicer-feed h1 {
+  color: var(--primary-foreground);
+}
 
-
-/* TODO add styles, effects, and animations from customized Colorway Barber Shop Template */
 /* TODO technical SEO and content SEM:
   - [ ] meaningful, unique heading content (not just "about me" or "imprint")
   - [ ] printable as pdf
