@@ -5,6 +5,8 @@ node_modules
 .idea
 Thumbs.db
 Thumbs.db:encryptable
+_tmp_conversion
 Desktop.ini
 .DS_Store
 codecept/output
+photography

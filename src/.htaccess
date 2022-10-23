@@ -1,11 +1,11 @@
 # BEGIN Cache-Control Headers (5184000s=60d, 86400s=1d)
-<FilesMatch "\\.(jpg|png|svg)$">
+<FilesMatch "\\.(jpg|png|ico|svg|woff|woff2|webp|avif)$">
 	Header set Cache-Control "max-age=5184000, public"
 </FilesMatch>
 <FilesMatch "\\.(css|js)$">
 	Header set Cache-Control "max-age=5184000, public"
 </FilesMatch>
-<FilesMatch "\\.html$">
+<FilesMatch "\\.(html|xml|txt)$">
 	Header set Cache-Control "max-age=86400, public, must-revalidate"
 </FilesMatch>
 

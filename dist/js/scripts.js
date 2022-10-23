@@ -1,5 +1,18 @@
 'use strict';
 
+/** integrate social media in compliance with privacy law using https://heyklaro.com */
+/* window.klaroConfig = {
+  apps : [
+    {
+      name : 'instagram',
+      default: true,
+      title : 'Instagram',
+      purposes : ['statistics'],
+      cookies : [/^instagram/i]
+    }
+  ]
+} */
+
 /** @type {String} */
 var animatingClassName = 'animate__animated';
 
@@ -13,7 +26,7 @@ var observerOptions = {
 };
 
 /**
- * Observe .animated-on-visibility adding animation class when they become visible
+ * Observe .animated-on-visibility to add animation class when elements become visible
  * @param {Array} intersectingEntries
  * param {IntersectionObserver=} observer @optional= TODO how to note optional?
  */
@@ -21,7 +34,7 @@ function intersectionCallback(intersectingEntries) {
   for (var j = 0; j < intersectingEntries.length; j++) {
     if (intersectingEntries[j].isIntersecting && intersectingEntries[j].intersectionRatio > observerOptions.threshold) {
       if (intersectingEntries[j].target && intersectingEntries[j].target.classList) {
-        var datakey = 'animationclass'; // or if parent style flexDirection column
+        var datakey = 'animationclass';
         var flexContainer = intersectingEntries[j].target.parentElement;
         if (flexContainer) {
           var flexDirection = window.getComputedStyle(flexContainer).flexDirection;
@@ -37,11 +50,12 @@ function intersectionCallback(intersectingEntries) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  var observer = new IntersectionObserver(intersectionCallback, observerOptions);
-  var elementsAnimatedOnVisibility = document.getElementsByClassName("animate--on-visibility");
-  for (var i = 0; i < elementsAnimatedOnVisibility.length; i++) {
-    observer.observe(elementsAnimatedOnVisibility[i]);
+  var prefersReducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (prefersReducedMotionQuery && !prefersReducedMotionQuery.matches) {
+    var observer = new IntersectionObserver(intersectionCallback, observerOptions);
+    var elementsAnimatedOnVisibility = document.getElementsByClassName("animate--on-visibility");
+    for (var i = 0; i < elementsAnimatedOnVisibility.length; i++) {
+      observer.observe(elementsAnimatedOnVisibility[i]);
+    }
   }
 });
-
-
