@@ -1,5 +1,18 @@
 'use strict';
 
+/** integrate social media in compliance with privacy law using https://heyklaro.com */
+/* window.klaroConfig = {
+  apps : [
+    {
+      name : 'instagram',
+      default: true,
+      title : 'Instagram',
+      purposes : ['statistics'],
+      cookies : [/^instagram/i]
+    }
+  ]
+} */
+
 /** @type {String} */
 var animatingClassName = 'animate__animated';
 
@@ -13,7 +26,7 @@ var observerOptions = {
 };
 
 /**
- * Observe .animated-on-visibility adding animation class when they become visible
+ * Observe .animated-on-visibility to add animation class when elements become visible
  * @param {Array} intersectingEntries
  * param {IntersectionObserver=} observer @optional= TODO how to note optional?
  */
