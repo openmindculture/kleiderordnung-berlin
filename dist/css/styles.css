@@ -297,6 +297,10 @@ article.testimonials {
   margin: 0 auto;
 }
 
+.testimonials__picture {
+  position: relative;
+}
+
 /* fixed placement for pseudo masonry layout mixing portraint and landscape blocks */
 .testimonials__text--vivien {
   grid-column: 1 / 1;
@@ -474,6 +478,7 @@ article.testimonials {
   }
   .main__image--beside {
     max-width: 500px;
+    margin-left: 1em;
   }
   .main__image--below {
     max-width: 400px;
