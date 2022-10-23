@@ -137,6 +137,10 @@ h1 {
   background-color: var(--palm) !important;
 }
 
+.color--white {
+  color: white;
+}
+
 /* reset styles, see https://piccalil.li/blog/a-modern-css-reset/ */
 
 *,
@@ -409,7 +413,7 @@ article.testimonials {
     display: block;
   }
 
-  .main h1, h2, h3, h4, h5 {
+  .main h1, .main h2, .main h3, .main h4, .main h5 {
     line-height: 1.25;
     margin-bottom: 0.325em;
   }
@@ -555,7 +559,13 @@ article.testimonials {
   background-color: antiquewhite;
   border-color: gray;
   border-color: var(--default-border-color);
-  padding: 0.5em;
+  padding: 0;
+}
+
+.feature__box p {
+  margin: 0;
+  padding: 1em;
+  background: transparent;
 }
 
 a, a:link, a:visited, a:hover, a:active, a:focus {
@@ -570,9 +580,14 @@ a:focus, a:hover {
 .vcard a.email, .vcard a.email:link, .vcard a.email:visited,
 .vcard a.telephone, .vcard a.telephone:link, .vcard a.telephone:visited,
 .vcard a.url, .vcard a.url:link, .vcard a.url:visited,
-.footer a, .footer a:link, .foter a:visited,
+.footer a, .footer a:link, .footer a:visited,
 .vcard .social a, .vcard .social a:link, .vcard .social a:visited {
   text-decoration: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.social a + a {
+  margin-left: 1em;
 }
 
 /* TODO animated color link hover, TODO define marked text color */
@@ -601,9 +616,7 @@ a:focus, a:hover {
   margin-top: 1em;
 }
 
-.social a + a {
-  margin-left: 1em;
-}
+
 
 .social svg {
   height: 2em;
