@@ -730,28 +730,50 @@ a:focus, a:hover {
 
 /* use ID to override 3rd party styles */
 /* TODO defer and lazy load the following styles only when social media consent has been given */
-#juicer-feed-container.juicer-feed {
-  margin: 0 auto !important;
+#juicer-feed-container {
+  margin: 2em auto 0 auto !important
   max-width: 90%;
+  text-align: center;
 }
 
-#juicer-feed-container.juicer-feed h1,
-#juicer-feed-container.juicer-feed h1.referral a {
-  color: var(--primary-foreground);
+#juicer-feed-container .juicer-feed h1,
+#juicer-feed-container .juicer-feed h1.referral,
+#juicer-feed-container .juicer-feed h1.referral a {
+  color: silver;
   font-size: 90%;
+  font-family: Courier, monospace;
+  margin-bottom: 0;
+  margin-top: 0.5em;
 }
 
-#juicer-feed-container.juicer-feed .feed-item.image-post img {
+#juicer-feed-container h2 {
+  text-align: center;
+}
+
+#juicer-feed-container .juicer-feed .feed-item.image-post img {
   aspect-ratio: 1/1;
   object-fit: cover;
 }
 
-#juicer-feed-container.juicer-feed .j-message p {
+#juicer-feed-container .juicer-feed .j-message p {
   background: transparent;
   color: silver;
   font-family: "Figtree", "Helvetica", sans-serif;
   font-size: 130%;
   text-overflow: ellipsis;
+}
+
+#juicer-feed-container .juicer-feed .j-paginate {
+  display: none;
+}
+
+#juicer-feed-container a.follow {
+  margin: 2rem;
+  padding: 1em;
+  border: solid 1px var(--tar);
+  border-radius: 0.25em;
+  display: inline-block;
+  text-decoration: none;
 }
 
 #klaro .klaro .cookie-notice {

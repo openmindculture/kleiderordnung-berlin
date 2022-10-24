@@ -7,6 +7,7 @@ fetch('css/juicer.io/202210/embed.css')
     var style = document.head.appendChild(document.createElement('style'));
     style.textContent = text;
     var juicerFeedContainer = document.getElementById("juicer-feed-container");
+    console.log("juicerFeedContainer", juicerFeedContainer);
     if (juicerFeedContainer && juicerFeedContainer.classList) {
       juicerFeedContainer.classList.remove("initially-hidden");
     }
