@@ -287,11 +287,7 @@ article.testimonials {
   max-width: unset;
   width: 100%;
   height: auto;
-  clip-path: url(#testimonials__clipPath);
-}
-
-.testimonials .testimonials__image--landscape {
-  clip-path: url(#testimonials__clipPath);
+  clip-path: ellipse(42% 50% at 53% 50%);
 }
 
 .testimonials .testimonials__imagecaption {
