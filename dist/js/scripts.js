@@ -58,4 +58,14 @@ document.addEventListener('DOMContentLoaded', function() {
       observer.observe(elementsAnimatedOnVisibility[i]);
     }
   }
+  var prefersMoreContrastQuery = window.matchMedia("(prefers-contrast: more)");
+  if (prefersMoreContrastQuery && !prefersMoreContrastQuery.matches) {
+    window.setTimeout(function() {
+      var moreContrastElements = document.getElementsByClassName("contrast--varies");
+      for (var i = 0; i < moreContrastElements.length; i++) {
+        moreContrastElements[i].classList.remove("contrast--more");
+        console.log("removed high contrast class");
+      }
+    }, 5000);
+  }
 });

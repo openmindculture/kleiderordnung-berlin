@@ -16,6 +16,24 @@
   --palm: #c3cfbb; /* California Collection CC4 Palm */
   --faded-terracotta: #dfb797; /* California Collection CC8 Faded Terracotta */
 
+  /* darker equivalents taken from photography used on the page */
+  /* high contrast alternatives can be removed using allowLowContrast() handle after load */
+  --citrona--darker: #bb9a47; /* like the yellow glasses cases */
+  --citrona--dark: #d2bb75;
+  --citrona--high--contrast: #e2a021;
+
+  --palm--darker: #9ea47d; /* like the garden trees of testimonial V. */
+  --palm--dark: #a6af91;
+  --palm--high--contrast: #a8b26c;
+
+  --sand--darker: #947e62; /* like the darker part of the portrait picture background */
+  --sand--dark: #947e62; /* like the darker part of the portrait picture background */
+  --sand--high--contrast: #966e37;
+
+
+  --cyan--darker: #1eaeb4;  /* darker version of skirt in portrait picture */
+  --cyan--dark:  #2ecbd1;  /* darker version of skirt in portrait picture */
+
   --dark-heart-rose: #ebc8c9;
   --light-heart-rose: #f6e7e6;
   --pale-rose: #fef5f8; /* Design Shack Typography Trends 2018 - 2022 */
@@ -224,6 +242,10 @@ article.testimonials {
   max-width: 1024px;
 }
 
+.testimonials h2 {
+  font-weight: 700;
+}
+
 .testimonials__container {
   display: flex;
   display: grid;
@@ -273,13 +295,19 @@ article.testimonials {
 }
 
 .testimonials .testimonials__imagecaption {
-  color: white;
   position: absolute;
-  bottom: 0.5em;
+  bottom: 0.75em;
   right: 1em;
+  padding: 0.25em 0.5em 0em 0.5em;
   font-weight: 700;
   font-family: "Kalam", Handwritten, sans-serif;
   font-size: 130%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.testimonials .testimonials__imagecaption.contrast--more {
+  background-color: rgba(0, 0, 0);
 }
 
 @media (max-width: 1024px) {
@@ -348,10 +376,6 @@ article.testimonials {
   }
   .main p:has(+ p) {
     margin-bottom: 1em;
-  }
-
-  .main .feature__box p {
-    font-size: 140%;
   }
 
   .main h1, .main h2, .main h3, .main h4, .main h5 {
@@ -499,23 +523,46 @@ article.testimonials {
   background-color: antiquewhite;
   border-color: gray;
   border-color: var(--default-border-color);
+  color: darkgreen;
   padding: 0;
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
 }
 
 /* TODO refactor using native CSS nesting and https://www.npmjs.com/package/postcss-nesting */
 
 .feature__box:first-child {
+  background-color: var(--citrona--dark);
+  background-color: var(--citrona--darker);
   background-color: var(--citrona);
+
 }
 
 .feature__box:nth-child(2) {
+  background-color: var(--palm--dark);
+  background-color: var(--palm--darker);
   background-color: var(--palm);
+
 }
 
 .feature__box:nth-child(3) {
+  background-color: var(--sand--darker);
+  background-color: var(--sand--dark);
+  background-color: var(--cyan--darker);
+  background-color: var(--cyan--dark);
+  background-color: var(--cyan--darker);
   background-color: var(--sand);
+}
+
+.feature__box.contrast--more:first-child {
+  background-color: var(--citrona--high--contrast);
+}
+.feature__box.contrast--more:nth-child(2) {
+  background-color: var(--palm--high--contrast);
+}
+.feature__box.contrast--more:nth-child(3) {
+  background-color: var(--sand--high--contrast);
 }
 
 .feature__box p {
@@ -523,13 +570,18 @@ article.testimonials {
   padding: 1em;
   background: transparent;
   text-align: center;
-  font-size: 120%;
-  color: white;
+  font-size: 1.5rem;
+  color: darkgreen;
 }
 
 .main article.outro {
-  text-align: center;
   margin-top: 4em;
+}
+
+.main article.outro p {
+  text-align: center;
+  font-family: "Kalam", cursive, sans-serif;
+  font-size: 150%;
 }
 
 a, a:link, a:visited, a:hover, a:active, a:focus {
@@ -615,6 +667,10 @@ a:focus, a:hover {
   font-style: normal;
 }
 
+.vcard.contrast--more {
+  background-image: none;
+}
+
 .vcard .social {
   margin: 2em 0 0 0;
   opacity: 0.75;
@@ -667,4 +723,8 @@ a:focus, a:hover {
 
 .animate--on-visibility {
   /* class will be used by JS intersection observer */
+}
+
+.contrast--varies {
+  transition: color 2s ease-out, background-color 2s ease-out, background-image 2s ease-out;
 }
