@@ -167,19 +167,16 @@ main, .main, p, article, section, .footer {
   padding: 1em;
 }
 
-
-.logo-wrapper {
-  margin: 0;
-  padding: 0;
-  height: 0;
-  overflow: visible;
+nav ul {
+  display: flex;
+  list-style: none;
 }
 
-.heart-and-thread {
-  height: auto;
+nav ul li + li {
+  margin-left: 1em;
 }
 
-nav, #lightbox-wrapper {
+.nav-wrapper {
   display: none;
 }
 
@@ -240,10 +237,6 @@ article {
 
 article.testimonials {
   max-width: 1024px;
-}
-
-.testimonials h2 {
-  font-weight: 700;
 }
 
 .testimonials__container {
@@ -751,20 +744,24 @@ a:focus, a:hover {
 #juicer-feed-container .juicer-feed h1,
 #juicer-feed-container .juicer-feed h1.referral,
 #juicer-feed-container .juicer-feed h1.referral a {
-  color: silver;
-  font-size: 90%;
-  font-family: Courier, monospace;
-  margin-bottom: 0;
-  margin-top: 0.5em;
+  display: none;
 }
 
 #juicer-feed-container h2 {
   text-align: center;
 }
 
-#juicer-feed-container .juicer-feed .feed-item.image-post img {
+#juicer-feed-container .juicer-feed .feed-item img {
   aspect-ratio: 1/1;
   object-fit: cover;
+}
+
+#juicer-feed-container .juicer-feed .j-stacker {
+  border-spacing: 1em !important;
+}
+
+#juicer-feed-container .juicer-feed .j-stacker .galcolumn li {
+  margin-bottom: 1em !important;
 }
 
 #juicer-feed-container .juicer-feed .j-message p {
