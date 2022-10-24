@@ -259,7 +259,6 @@ article.testimonials {
 
 .testimonials__picture {
   position: relative;
-  padding: 4em;
 }
 
 /* fixed placement for pseudo masonry layout mixing portraint and landscape blocks */
@@ -270,6 +269,7 @@ article.testimonials {
 .testimonials__picture--vivien {
   grid-column: 2 / 2;
   grid-row: 1 / span 2;
+  padding: 1em;
 }
 .testimonials__text--katja {
   grid-column: 1 / 1;
@@ -279,6 +279,7 @@ article.testimonials {
   grid-column: 1 / 1;
   grid-row: 2 / 2;
   align-self: end;
+  padding: 2em;
 }
 .testimonials__text--kathrin {
   grid-column: 1 / 1;
@@ -293,22 +294,33 @@ article.testimonials {
   max-width: unset;
   width: 100%;
   height: auto;
+  clip-path: url(#testimonials__clipPath);
+}
+
+.testimonials .testimonials__image--landscape {
+  clip-path: url(#testimonials__clipPath);
 }
 
 .testimonials .testimonials__imagecaption {
   position: absolute;
-  bottom: 0.75em;
-  right: 1em;
+  bottom: 25%;
+  right: 25%;
   padding: 0.25em 0.5em 0em 0.5em;
   font-weight: 700;
   font-family: "Kalam", Handwritten, sans-serif;
   font-size: 130%;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.testimonials .testimonials__imagecaption--landscape {
+  bottom: 50%;
+  right: 15%;
 }
 
 .testimonials .testimonials__imagecaption.contrast--more {
   background-color: rgba(0, 0, 0);
+  border-radius: 1em;
 }
 
 @media (max-width: 1024px) {
@@ -731,7 +743,7 @@ a:focus, a:hover {
 /* use ID to override 3rd party styles */
 /* TODO defer and lazy load the following styles only when social media consent has been given */
 #juicer-feed-container {
-  margin: 2em auto 0 auto !important
+  margin: 2em auto 0 auto !important;
   max-width: 90%;
   text-align: center;
 }
