@@ -167,19 +167,16 @@ main, .main, p, article, section, .footer {
   padding: 1em;
 }
 
-
-.logo-wrapper {
-  margin: 0;
-  padding: 0;
-  height: 0;
-  overflow: visible;
+nav ul {
+  display: flex;
+  list-style: none;
 }
 
-.heart-and-thread {
-  height: auto;
+nav ul li + li {
+  margin-left: 1em;
 }
 
-nav, #lightbox-wrapper {
+.nav-wrapper {
   display: none;
 }
 
@@ -242,10 +239,6 @@ article.testimonials {
   max-width: 1024px;
 }
 
-.testimonials h2 {
-  font-weight: 700;
-}
-
 .testimonials__container {
   display: flex;
   display: grid;
@@ -269,6 +262,7 @@ article.testimonials {
 .testimonials__picture--vivien {
   grid-column: 2 / 2;
   grid-row: 1 / span 2;
+  padding: 1em;
 }
 .testimonials__text--katja {
   grid-column: 1 / 1;
@@ -278,6 +272,7 @@ article.testimonials {
   grid-column: 1 / 1;
   grid-row: 2 / 2;
   align-self: end;
+  padding: 2em;
 }
 .testimonials__text--kathrin {
   grid-column: 1 / 1;
@@ -292,22 +287,33 @@ article.testimonials {
   max-width: unset;
   width: 100%;
   height: auto;
+  clip-path: url(#testimonials__clipPath);
+}
+
+.testimonials .testimonials__image--landscape {
+  clip-path: url(#testimonials__clipPath);
 }
 
 .testimonials .testimonials__imagecaption {
   position: absolute;
-  bottom: 0.75em;
-  right: 1em;
+  bottom: 25%;
+  right: 25%;
   padding: 0.25em 0.5em 0em 0.5em;
   font-weight: 700;
   font-family: "Kalam", Handwritten, sans-serif;
   font-size: 130%;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.testimonials .testimonials__imagecaption--landscape {
+  bottom: 50%;
+  right: 15%;
 }
 
 .testimonials .testimonials__imagecaption.contrast--more {
   background-color: rgba(0, 0, 0);
+  border-radius: 1em;
 }
 
 @media (max-width: 1024px) {
@@ -686,9 +692,6 @@ a:focus, a:hover {
   }
 }
 
-
-
-/* TODO add styles, effects, and animations from customized Colorway Barber Shop Template */
 /* TODO technical SEO and content SEM:
   - [ ] meaningful, unique heading content (not just "about me" or "imprint")
   - [ ] printable as pdf
@@ -725,6 +728,118 @@ a:focus, a:hover {
   /* class will be used by JS intersection observer */
 }
 
+/* fade to pastel contrast unless user prefers high contrast */
 .contrast--varies {
   transition: color 2s ease-out, background-color 2s ease-out, background-image 2s ease-out;
+}
+
+/* use ID to override 3rd party styles */
+/* TODO defer and lazy load the following styles only when social media consent has been given */
+#juicer-feed-container {
+  margin: 2em auto 0 auto !important;
+  max-width: 90%;
+  text-align: center;
+}
+
+#juicer-feed-container .juicer-feed h1,
+#juicer-feed-container .juicer-feed h1.referral,
+#juicer-feed-container .juicer-feed h1.referral a {
+  display: none;
+}
+
+#juicer-feed-container h2 {
+  text-align: center;
+}
+
+#juicer-feed-container .juicer-feed .feed-item img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+#juicer-feed-container .juicer-feed .j-stacker {
+  border-spacing: 1em !important;
+}
+
+#juicer-feed-container .juicer-feed .j-stacker .galcolumn li {
+  margin-bottom: 1em !important;
+}
+
+#juicer-feed-container .juicer-feed .j-message p {
+  background: transparent;
+  color: silver;
+  font-family: "Figtree", "Helvetica", sans-serif;
+  font-size: 130%;
+  text-overflow: ellipsis;
+}
+
+#juicer-feed-container .juicer-feed .j-paginate {
+  display: none;
+}
+
+#juicer-feed-container a.follow {
+  margin: 2rem;
+  padding: 1em;
+  border: solid 1px var(--tar);
+  border-radius: 0.25em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#klaro .klaro .cookie-notice {
+  margin: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: unset;
+}
+
+#klaro .klaro .cookie-modal p {
+  background: none;
+}
+
+#klaro .klaro .cookie-modal .cm-list-description {
+  background: none;
+  color: #fff;
+}
+
+/* hide default cookie message, hide configure button */
+#klaro .klaro .cookie-notice .cn-body span,
+#klaro .klaro .cookie-notice .cn-body .cn-ok a {
+  display: none;
+}
+
+#klaro .klaro .cookie-notice .cn-body p::after {
+  content: "Diese Seite nutzt Cookies. Mit Deinem Einverständnis möchten ich außerdem gerne meine Instagram-Bilder auf dieser Seite anzeigen.";
+  width: 100%;
+}
+
+#klaro .klaro .cookie-notice:not(.cookie-modal-notice) .cn-body .cn-ok div {
+  position: absolute;
+  bottom: 0.625em;
+  right: 0.5em;
+}
+
+#klaro .klaro .cookie-notice .cn-body p {
+  padding-right: 11em;
+}
+
+#klaro .klaro .cookie-notice,
+#klaro .klaro .cookie-notice .cn-body,
+#klaro .klaro .cookie-notice .cn-body p,
+#klaro .klaro .cookie-notice .cn-body span,
+#klaro .klaro .cookie-notice .cn-body strong {
+  background-color: #eee;
+  color: darkgreen;
+}
+
+@media (max-width: 384px) {
+  #klaro .klaro .cookie-notice .cn-body p {
+    padding-right: 0;
+    padding-bottom: 2em;
+  }
+  #klaro .klaro .cookie-notice:not(.cookie-modal-notice) .cn-body .cn-ok div {
+    right: 0;
+    padding: 0 0.5em 0 0.5em;
+  }
 }

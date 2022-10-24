@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /
+Allow: /
 Sitemap: https://www.kleiderordnung-berlin.de/sitemap.xml
-
-# temporary block on preview site TODO remove finally
