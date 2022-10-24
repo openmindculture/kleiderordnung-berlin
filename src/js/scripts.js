@@ -2,13 +2,19 @@
 
 /** integrate social media in compliance with privacy law using https://heyklaro.com */
 window.klaroConfig = {
+  storageMethod: 'localStorage',
   services : [
     {
       name : 'instagram',
       default: true,
       title : 'Instagram',
-      purposes : ['statistics'],
-      cookies : [/^instagram/i]
+      purposes : ['Instagram-Bilder-Anzeige'],
+      cookies : [/^instagram/i],
+      translations: {
+        de: {
+          description: 'Instagram ist ein Social-Media-Netzwerk. Unsere aktuellen Instagram-Fotos möchten wir gerne auf dieser Webseite anzeigen.'
+        },
+      },
     }
   ]
 }
