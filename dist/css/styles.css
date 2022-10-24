@@ -1,43 +1,30 @@
 @import url("./animate.min.css") screen;
-/* TODO fix using an unsurprising modern import using a css loader when adding postCSS */
-/* TODO postCSS configuration
- * minify all files
- * include content from imported files
- * replace root variables (custom properties) in subsequent style definitions
- */
-
 :root {
+  --tar: #535353;
+  --sand: #e2d7c1;
+  --citrona: #dbcc7c;
+  --palm: #c3cfbb;
+  --faded-terracotta: #dfb797;
 
-  /* Color Palette Inspiration */
-
-  --tar: #535353; /* California Collection CC1 Tar */
-  --sand: #e2d7c1; /* California Collection CC2 Sand */
-  --citrona: #dbcc7c; /* California Collection CC3 Citrona */
-  --palm: #c3cfbb; /* California Collection CC4 Palm */
-  --faded-terracotta: #dfb797; /* California Collection CC8 Faded Terracotta */
-
-  /* darker equivalents taken from photography used on the page */
-  /* high contrast alternatives can be removed using allowLowContrast() handle after load */
-  --citrona--darker: #bb9a47; /* like the yellow glasses cases */
+  --citrona--darker: #bb9a47;
   --citrona--dark: #d2bb75;
   --citrona--high--contrast: #e2a021;
 
-  --palm--darker: #9ea47d; /* like the garden trees of testimonial V. */
+  --palm--darker: #9ea47d;
   --palm--dark: #a6af91;
   --palm--high--contrast: #a8b26c;
 
-  --sand--darker: #947e62; /* like the darker part of the portrait picture background */
-  --sand--dark: #947e62; /* like the darker part of the portrait picture background */
+  --sand--darker: #947e62;
+  --sand--dark: #947e62;
   --sand--high--contrast: #966e37;
 
-
-  --cyan--darker: #1eaeb4;  /* darker version of skirt in portrait picture */
-  --cyan--dark:  #2ecbd1;  /* darker version of skirt in portrait picture */
+  --cyan--darker: #1eaeb4;
+  --cyan--dark:  #2ecbd1;
 
   --dark-heart-rose: #ebc8c9;
   --light-heart-rose: #f6e7e6;
-  --pale-rose: #fef5f8; /* Design Shack Typography Trends 2018 - 2022 */
-  --pale-beige-rose: #f3ebde; /* San Diego Design Week / Julie's Dream von Little Greene */
+  --pale-rose: #fef5f8;
+  --pale-beige-rose: #f3ebde;
 
   --default-white: #ffffff;
 
@@ -53,11 +40,7 @@
 
   --animate-duration: 2s; /* --animate-duration: 2ms; duration like "slow animation" in colorway elementor theme fade in */
   --animate-delay: 0.9s;
-
 }
-
-/* TODO use PostCSS to convert to color definitions for better backwards compatibility */
-/* TODO minify CSS and HTML files */
 
 .background-color--sand {
   background-color: var(--sand) !important;
@@ -75,15 +58,12 @@
   color: white;
 }
 
-/* reset styles, see https://piccalil.li/blog/a-modern-css-reset/ */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* todo remove what gets overwritten anyway */
 body,
 h1,
 h2,
@@ -98,7 +78,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
@@ -146,7 +125,6 @@ li {
   }
 }
 
-/* TODO response fluid font size using css clamp */
 
 body {
   background: var(--neutral-background);
@@ -184,8 +162,6 @@ nav ul li + li {
   margin: 0 1em 0 1em;
 }
 
-/* TODO extract critical CSS and improve height handling to prevent unnecessary layout shift */
-/* TODO prefer percentages or (r)em units */
 .main__images {
   position: relative;
   margin: 0 auto 2em auto;
@@ -536,8 +512,6 @@ article.testimonials {
   font-size: 1.5rem;
 }
 
-/* TODO refactor using native CSS nesting and https://www.npmjs.com/package/postcss-nesting */
-
 .feature__box:first-child {
   background-color: var(--citrona--dark);
   background-color: var(--citrona--darker);
@@ -612,25 +586,6 @@ a:focus, a:hover {
   margin-left: 1em;
 }
 
-/* TODO animated color link hover, TODO define marked text color */
-/*
-@supports (background-image:linear-gradient(#222b40,#222b40)) and (transition:all 2s linear) {
-  a, a:link, a:visited, a:active {
-    background-image: linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#f5df4d,#f5df4d);
-    background-size: 100% 100%,50% 100%,100% 100%;
-    transition: background-size .25s ease-in,color .25s ease-in;
-  }
-
-  a:focus, a:hover {
-    background-position: 0 0,100% 0,0 0;
-    background-repeat: no-repeat;
-    background-size: 100% 100%,50% 100%,100% 100%;
-    transition: background-size .25s ease-in,color .25s ease-in;
-    background-image: linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#f5df4d,#f5df4d);
-    text-decoration-style: dotted;
-    text-decoration-thickness: 0.1em;
-  }
-} */
 
 .contact h2 {
   text-align: center;
@@ -691,38 +646,6 @@ a:focus, a:hover {
     flex-basis: 90%;
   }
 }
-
-/* TODO technical SEO and content SEM:
-  - [ ] meaningful, unique heading content (not just "about me" or "imprint")
-  - [ ] printable as pdf
-  - [ ] mobile-friendly
-  - [ ] accessible / screen reader friendly / tab navigateable
-  - [ ] vcard download option?
-  - [ ] ...
-  - [ ] configure additional performance and security headers using .htaccess only if necessary
-  - [ ] configure colors that provide necessary contrast to comply with WCAG 2.0 (might as well customize theme for the client?)
-  - [ ] ^ this would be OK to be specific for the chosen font(s) for Kleiderordnung
- */
-/* TODO possible decoration ideas
-  - [ ] no centered column layout
-  - [ ] pieces of cloth
-  - [ ] micro animations
-  - [ ] subtle text effects / gradients (see below)
- */
-/* TODO use some cutting edge modern CSS and web dev features, just because, and with fallbacks of course:
- - [ ] content-visibility as potential visibility query and upgrade to intersection observer? thanks to schepp!
- - [ ] :has()
- - [ ] container-type / @container see [CSS Container Query Syntax Update 2022: container-type](https://dev.to/ingosteinke/css-container-query-syntax-update-5cg5)
- - [ ] advanced color space see [Taking colors to the next (CSS) level](https://dev.to/ingosteinke/ccs4-colors-5bj2)
- - [ ] mix-blend-mode see [Color blending with CSS blend-modes] => subtle text gradient effects like ISD / [Animated Gradient Text Color](https://dev.to/ingosteinke/animated-gradient-text-color-25hi)(https://dev.to/ingosteinke/color-blending-with-css-blend-modes-34h3)
- - [ ] aspect-ratio
- - [ ] calc()
- - [ ] clamp()
- - [ ] grid fr minmax || flex || float
- - [ ] image source set with sizes, formats (webp), and lazy loading => local library instead of manual tinkering?
- - [ ] use git based deployment (with or without netlify)
- - [ ] deployment should possibly also cover tests
- */
 
 .animate--on-visibility {
   /* class will be used by JS intersection observer */
