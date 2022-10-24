@@ -6,7 +6,10 @@ fetch('css/juicer.io/202210/embed.css')
   .then(function(text) {
     var style = document.head.appendChild(document.createElement('style'));
     style.textContent = text;
-    console.log('style loaded');
+    var juicerFeedContainer = document.getElementById("juicer-feed-container");
+    if (juicerFeedContainer && juicerFeedContainer.classList) {
+      juicerFeedContainer.classList.remove("initially-hidden");
+    }
   }).catch(function(err) {
   console.error('style load failed with error', err);
 });

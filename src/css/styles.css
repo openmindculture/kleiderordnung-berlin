@@ -687,10 +687,6 @@ a:focus, a:hover {
   }
 }
 
-.juicer-feed h1 {
-  color: var(--primary-foreground);
-}
-
 /* TODO technical SEO and content SEM:
   - [ ] meaningful, unique heading content (not just "about me" or "imprint")
   - [ ] printable as pdf
@@ -727,8 +723,35 @@ a:focus, a:hover {
   /* class will be used by JS intersection observer */
 }
 
+/* fade to pastel contrast unless user prefers high contrast */
 .contrast--varies {
   transition: color 2s ease-out, background-color 2s ease-out, background-image 2s ease-out;
+}
+
+/* use ID to override 3rd party styles */
+/* TODO defer and lazy load the following styles only when social media consent has been given */
+#juicer-feed-container.juicer-feed {
+  margin: 0 auto !important;
+  max-width: 90%;
+}
+
+#juicer-feed-container.juicer-feed h1,
+#juicer-feed-container.juicer-feed h1.referral a {
+  color: var(--primary-foreground);
+  font-size: 90%;
+}
+
+#juicer-feed-container.juicer-feed .feed-item.image-post img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+#juicer-feed-container.juicer-feed .j-message p {
+  background: transparent;
+  color: silver;
+  font-family: "Figtree", "Helvetica", sans-serif;
+  font-size: 130%;
+  text-overflow: ellipsis;
 }
 
 #klaro .klaro .cookie-notice {
