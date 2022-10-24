@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="fonts/kalam-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/figtree-v1-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <style>
+    <style>/* critical CSS, TODO include minified from file */
       /** Figtree and Kalam web fonts are licensed under the SIL Open Font License 1.1 */
 
       @font-face {
@@ -263,22 +263,13 @@ instafetch.init({
 
             </div>
           </article>
-
-          <article>
-            <h2>Du möchtest auch besser aussehen, aufräumen und Geld sparen?</h2>
-            <p>Kontaktiere mich unverbindlich, und wir finden heraus, was ich für dich tun kann und was es kostet.</p>
-          </article>
-
-          <article>
-            <h2>Ich freue mich auf deinen Auftrag.</h2>
-
-          </article>
         </div>
+
         <div id="features">
           <article>
             <div class="feature__container">
               <div
-                class="feature__box animate--on-visibility background-color--citrona"
+                class="feature__box animate--on-visibility"
                 data-animationclass="animate__fadeInLeft"
                 data-animationclassincolumn="animate__fadeInLeft"
               >
@@ -287,7 +278,7 @@ instafetch.init({
                 </p>
               </div>
               <div
-                class="feature__box animate--on-visibility background-color--palm"
+                class="feature__box animate--on-visibility"
                 data-animationclass="animate__fadeInUp"
                 data-animationclassincolumn="animate__fadeInRight"
               >
@@ -296,7 +287,7 @@ instafetch.init({
                 </p>
               </div>
               <div
-                class="feature__box animate--on-visibility background-color--sand"
+                class="feature__box animate--on-visibility"
                 data-animationclass="animate__fadeInRight"
                 data-animationclassincolumn="animate__fadeInLeft"
               >
@@ -307,25 +298,31 @@ instafetch.init({
             </div>
           </article>
         </div>
+
         <div id="contact" class="contact">
-          <article id="kontakt">
-            <h2>
-              Kontakt / Impressum:<br>
-              Tina Steinke
-            </h2>
+
+          <h2 class="visually-hidden">
+            Kontakt / Impressum:
+            Tina Steinke
+          </h2>
+
+          <article class="outro">
+            <p>Du möchtest auch besser aussehen, aufräumen und Geld sparen?</p>
+            <p>Kontaktiere mich unverbindlich, und wir finden heraus, was ich für dich tun kann und was es kostet.</p>
+          </article>
+
+          <article>
+            <h2>Ich freue mich auf deinen Auftrag!</h2>
+          </article>
+
+          <article>
+
             <address class=vcard>
               <div>
-                <!-- <h2>Tina Steinke</h2>-->
                 <div class="fn" itemprop="name">Martina Steinke</div>
                 <div class="street-address">Donaustr. 83, <span class="postal-code">12043</span> Berlin</div>
                 <div>Tel.
-                  <a class="telephone" itemprop="telephone" href="tel:+491636823820">
-                    <span class="visually-spaced">0</span>
-                    <span class="visually-spaced dot-after">163</span>
-                    <span class="visually-spaced">682</span>
-                    <span class="visually-spaced">382</span>
-                    <span class="visually-spaced">0</span>
-                  </a>
+                  <a class="telephone" itemprop="telephone" href="tel:+491636823820"><span class="visually-spaced">0</span><span class="visually-spaced dot-after">163</span><span class="visually-spaced">682</span><span class="visually-spaced">382</span><span class="visually-spaced">0</span></a>
                 </div>
                 <div>
                   <a class="email" itemprop="email" itemscope="email" href="mailto:martinasteinke@posteo.de">martinasteinke@posteo.de</a>

@@ -504,6 +504,20 @@ article.testimonials {
   align-items: center;
 }
 
+/* TODO refactor using native CSS nesting and https://www.npmjs.com/package/postcss-nesting */
+
+.feature__box:first-child {
+  background-color: var(--citrona);
+}
+
+.feature__box:nth-child(2) {
+  background-color: var(--palm);
+}
+
+.feature__box:nth-child(3) {
+  background-color: var(--sand);
+}
+
 .feature__box p {
   margin: 0;
   padding: 1em;
@@ -511,6 +525,11 @@ article.testimonials {
   text-align: center;
   font-size: 120%;
   color: white;
+}
+
+.main article.outro {
+  text-align: center;
+  margin-top: 4em;
 }
 
 a, a:link, a:visited, a:hover, a:active, a:focus {
@@ -561,7 +580,23 @@ a:focus, a:hover {
   margin-top: 1em;
 }
 
+/* Screen reader only */
+.sr-only, .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
+/* visually spaced content that can be copied contiguously */
+.visually-spaced + .visually-spaced::before {
+  content: " ";
+  letter-spacing: 0.25rem;
+}
 
 .social svg {
   height: 2em;
