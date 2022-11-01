@@ -237,6 +237,9 @@ article {
 
 article.testimonials {
   max-width: 1024px;
+  background: var(--sand);
+  padding: 1em;
+  margin-bottom: 2em;
 }
 
 .testimonials__container {
@@ -436,12 +439,13 @@ article.testimonials {
 @media (min-width: 1200px) {
   .main article,
   .main article.testimonials {
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
   }
   .main__images {
-    max-width: 1668px;
+    /* max-width: 1668px;
     margin-right: 0;
-    margin-left: auto;
+    margin-left: auto; */
   }
   .main__image {
     max-width: 600px;
@@ -731,6 +735,12 @@ a:focus, a:hover {
   margin: 2em auto 0 auto !important;
   max-width: 90%;
   text-align: center;
+}
+
+@media (min-width: 1600px) {
+  #juicer-feed-container {
+    max-width: 1500px;
+  }
 }
 
 #juicer-feed-container .juicer-feed h1,
