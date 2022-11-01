@@ -9,7 +9,7 @@ window.klaroConfig = {
       default: true,
       title : 'Instagram',
       purposes : ['Instagram-Bilder-Anzeige'],
-      cookies : [/^instagram/i], /* regex to delete cookies when consent is withdrawn */
+      contextualConsentOnly: true,
       translations: {
         de: {
           description: 'Instagram ist ein Social-Media-Netzwerk. Unsere aktuellen Instagram-Fotos möchten wir gerne auf dieser Webseite anzeigen.'
