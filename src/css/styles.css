@@ -459,17 +459,13 @@ article.testimonials {
 }
 
 @media (min-width: 1599px) {
-  .header,
-  .header h1 {
-    text-align: right;
-  }
   .main .main__intro {
     max-width: 1000px;
     font-size: 150%;
     float: none;
     clear: both;
     text-align: center;
-    margin: 0 0 0 auto;
+    margin: 0 auto;
     display: block;
   }
 }
