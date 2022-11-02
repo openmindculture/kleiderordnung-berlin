@@ -803,7 +803,12 @@ a:focus, a:hover {
 
 .feed__consent .button__allow {
   color: darkgreen;
-  padding: 0.5em;
+  padding: 0.5em 1em;
+  border: solid 1px var(--tar);
+  border-radius: 0.25em;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .feed__consent .button__allow--always {

@@ -1,24 +1,5 @@
 'use strict';
 
-/** integrate social media in compliance with privacy law using https://heyklaro.com */
-window.klaroConfig = {
-  storageMethod: 'localStorage',
-  services : [
-    {
-      name : 'instagram',
-      default: true,
-      title : 'Instagram',
-      purposes : ['Instagram-Bilder-Anzeige'],
-      contextualConsentOnly: true,
-      translations: {
-        de: {
-          description: 'Instagram ist ein Social-Media-Netzwerk. Unsere aktuellen Instagram-Fotos möchten wir gerne auf dieser Webseite anzeigen.'
-        },
-      },
-    }
-  ]
-}
-
 /** @type {String} */
 var animatingClassName = 'animate__animated';
 
@@ -33,52 +14,61 @@ var observerOptions = {
 
 /**
  * Observe .animated-on-visibility to add animation class when elements become visible
+ * Observe .allowable--on-visibility to activate external feed only if it ever becomes visible
  * @param {Array} intersectingEntries
  * param {IntersectionObserver=} observer @optional= TODO how to note optional?
  */
 function intersectionCallback(intersectingEntries) {
   for (var j = 0; j < intersectingEntries.length; j++) {
     if (intersectingEntries[j].isIntersecting && intersectingEntries[j].intersectionRatio > observerOptions.threshold) {
-      if (intersectingEntries[j].target && intersectingEntries[j].target.classList) {
-        // switch animation or insta feed prepareExternalFeed(intersectingEntries[j])
-        var datakey = 'animationclass';
-        var flexContainer = intersectingEntries[j].target.parentElement;
-        if (flexContainer) {
-          var flexDirection = window.getComputedStyle(flexContainer).flexDirection;
-          if (flexDirection === 'column') {
-            datakey = 'animationclassincolumn';
+      var targetElement = intersectingEntries[j].target;
+      if (targetElement) {
+        if (targetElement.dataset.animationclass && targetElement.classList) {
+          var datakey = 'animationclass';
+          var flexContainer = targetElement.parentElement;
+          if (flexContainer) {
+            var flexDirection = window.getComputedStyle(flexContainer).flexDirection;
+            if (flexDirection === 'column') {
+              datakey = 'animationclassincolumn';
+            }
           }
+          var animationClassName = targetElement.dataset[datakey];
+          targetElement.classList.add(animatingClassName, animationClassName);
         }
-        var animationClassName = intersectingEntries[j].target.dataset[datakey];
-        intersectingEntries[j].target.classList.add(animatingClassName, animationClassName);
+      }
+      if (targetElement.dataset.allow) {
+        prepareExternalFeed(targetElement);
       }
     }
   }
 }
 
-// callback insta feed visible:
-// mit Visibility prüfen wir ob es schon Consent gibt
-//   consent && load external scripts
-//   else add event handlers to button to set cookies and load external scripts
-
 function prepareExternalFeed(buttonWrapperElement) {
-  if (document.cookie.split(';').some((item) => item.trim().startsWith('reader='))) {
+  if (
+    document.cookie.split(';').some(
+      function(item) {
+        return item.trim().startsWith('instafeed=allow');
+      }
+    )
+  ) {
     allowAndActivateExternalFeed();
   } else {
-    // add button handlers
-    buttonWrapperElement.querySelectorAll("[data-allow]");
-    // onclick = function(buttonElement) { allowAndActivateExternalFeed(buttonElement)
+    var buttonElements = buttonWrapperElement.querySelectorAll('[data-allow]');
+    for (var i = 0; i < buttonElements.length; i++) {
+      var buttonElement = buttonElements[i];
+      buttonElement.addEventListener('click', function() {
+        allowAndActivateExternalFeed(buttonElement);
+      }, false);
+    }
   }
 }
 
-// callback allowAndLoad(allowanceDuration)
-
 function allowAndActivateExternalFeed(buttonElement) {
-  var feedContainerElement = buttonElement.closest(".feed__container");
-  var consentCookie = "instafeed=allow; SameSite=strict; secure";
-  if (buttonElement.dataset.allow === "always") {
-    // ;max-age=max-age-in-seconds (e.g., 60*60*24*365 or 31536000 for a year)
-    consentCookie += "expires=Fri, 31 Dec 9999 23:59:59 GMT;";
+  var feedContainerElement = buttonElement.closest('.feed__container');
+  var consentCookie = 'instafeed=allow;samesite=strict;secure';
+  if (buttonElement.dataset.allow === 'always') {
+    var maxAgeSeconds = 31536000; // 1 year
+    consentCookie += ';max-age=' + maxAgeSeconds +  ';';
   } // If neither expires nor max-age specified it will expire at the end of session.
   document.cookie = consentCookie;
   if (feedContainerElement) {
@@ -97,9 +87,9 @@ function activateExternalFeed(feedContainerElement) {
       .then(function(text) {
         var style = document.head.appendChild(document.createElement('style'));
         style.textContent = text;
-        console.log("juicerFeedContainer", feedContainerElement);
+        console.log('juicerFeedContainer', feedContainerElement);
         if (feedContainerElement && feedContainerElement.classList) {
-          feedContainerElement.classList.remove("initially-hidden");
+          feedContainerElement.classList.remove('initially-hidden');
         }
       }).catch(function(err) {
       console.error('style load failed with error', err);
@@ -107,7 +97,7 @@ function activateExternalFeed(feedContainerElement) {
   }
   var scriptFileUrl = feedContainerElement.dataset.scripturl;
   if (scriptFileUrl) {
-    var scriptElement = document.createElement('script')
+    var scriptElement = document.createElement('script');
     scriptElement.src = scriptFileUrl;
     document.head.append(scriptElement);
   }
@@ -116,23 +106,24 @@ function activateExternalFeed(feedContainerElement) {
 
 document.addEventListener('DOMContentLoaded', function() {
   var observer = new IntersectionObserver(intersectionCallback, observerOptions);
-  var elementsActivatedOnVisibilityAndConsent = {};
-  // ohne visibility passiert nichts mit dem Markup
-
-  var prefersReducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var elementsActivatedOnVisibilityAndConsent = document.getElementsByClassName('allowable--on-visibility');
+  for (var i = 0; i < elementsActivatedOnVisibilityAndConsent.length; i++) {
+    observer.observe(elementsActivatedOnVisibilityAndConsent[i]);
+  }
+  var prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (prefersReducedMotionQuery && !prefersReducedMotionQuery.matches) {
-    var elementsAnimatedOnVisibility = document.getElementsByClassName("animate--on-visibility");
-    for (var i = 0; i < elementsAnimatedOnVisibility.length; i++) {
-      observer.observe(elementsAnimatedOnVisibility[i]);
+    var elementsAnimatedOnVisibility = document.getElementsByClassName('animate--on-visibility');
+    for (var j = 0; j < elementsAnimatedOnVisibility.length; j++) {
+      observer.observe(elementsAnimatedOnVisibility[j]);
     }
   }
-  var prefersMoreContrastQuery = window.matchMedia("(prefers-contrast: more)");
+  var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
   if (prefersMoreContrastQuery && !prefersMoreContrastQuery.matches) {
     window.setTimeout(function() {
-      var moreContrastElements = document.getElementsByClassName("contrast--varies");
-      for (var i = 0; i < moreContrastElements.length; i++) {
-        moreContrastElements[i].classList.remove("contrast--more");
-        console.log("removed high contrast class");
+      var moreContrastElements = document.getElementsByClassName('contrast--varies');
+      for (var k = 0; k < moreContrastElements.length; k++) {
+        moreContrastElements[k].classList.remove('contrast--more');
+        console.log('removed high contrast class');
       }
     }, 5000);
   }

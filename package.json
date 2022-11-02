@@ -48,7 +48,6 @@
     "stylelint-config-recommended": "^9.0.0"
   },
   "dependencies": {
-    "animate.css": "^4.1.1",
-    "instafetch.js": "^1.5.0"
+    "animate.css": "^4.1.1"
   }
 }

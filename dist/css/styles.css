@@ -793,6 +793,32 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
+/* placeholder and consent without klaro library */
+.feed__consent {
+  transition: opacity 0.2s ease-in-out;
+  position: relative;
+  margin: 0 auto !important;
+  text-align: center;
+}
+
+.feed__consent .button__allow {
+  color: darkgreen;
+  padding: 0.5em 1em;
+  border: solid 1px var(--tar);
+  border-radius: 0.25em;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.feed__consent .button__allow--always {
+  background-color: var(--citrona);
+}
+
+.feed__consent .button__allow--once {
+  background-color: var(--palm);
+}
+
 #klaro .klaro .cookie-notice {
   margin: 0;
   right: 0;
