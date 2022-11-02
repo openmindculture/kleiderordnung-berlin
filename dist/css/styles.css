@@ -794,6 +794,7 @@ a:focus, a:hover {
 }
 
 /* placeholder and consent without klaro library */
+
 .feed__consent {
   transition: opacity 0.2s ease-in-out;
   position: relative;
@@ -819,61 +820,7 @@ a:focus, a:hover {
   background-color: var(--palm);
 }
 
-#klaro .klaro .cookie-notice {
-  margin: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  max-width: unset;
-}
-
-#klaro .klaro .cookie-modal p {
-  background: none;
-}
-
-#klaro .klaro .cookie-modal .cm-list-description {
-  background: none;
-  color: #fff;
-}
-
-/* hide default cookie message, hide configure button */
-#klaro .klaro .cookie-notice .cn-body span,
-#klaro .klaro .cookie-notice .cn-body .cn-ok a {
+.feed__container--active .feed__consent {
   display: none;
 }
 
-#klaro .klaro .cookie-notice .cn-body p::after {
-  content: "Diese Seite nutzt Cookies. Mit Deinem Einverständnis möchten ich außerdem gerne meine Instagram-Bilder auf dieser Seite anzeigen.";
-  width: 100%;
-}
-
-#klaro .klaro .cookie-notice:not(.cookie-modal-notice) .cn-body .cn-ok div {
-  position: absolute;
-  bottom: 0.625em;
-  right: 0.5em;
-}
-
-#klaro .klaro .cookie-notice .cn-body p {
-  padding-right: 11em;
-}
-
-#klaro .klaro .cookie-notice,
-#klaro .klaro .cookie-notice .cn-body,
-#klaro .klaro .cookie-notice .cn-body p,
-#klaro .klaro .cookie-notice .cn-body span,
-#klaro .klaro .cookie-notice .cn-body strong {
-  background-color: #eee;
-  color: darkgreen;
-}
-
-@media (max-width: 384px) {
-  #klaro .klaro .cookie-notice .cn-body p {
-    padding-right: 0;
-    padding-bottom: 2em;
-  }
-  #klaro .klaro .cookie-notice:not(.cookie-modal-notice) .cn-body .cn-ok div {
-    right: 0;
-    padding: 0 0.5em 0 0.5em;
-  }
-}
