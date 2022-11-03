@@ -264,17 +264,6 @@
           </article>
         </div>
 
-        <!-- placeholder for GDPR-compliant Instagram feed using juicer.io and klaro -->
-        <!-- https://github.com/kiprotect/klaro -->
-        <!-- as klaro does not seem to get any more active support,
-             we could try to do this simple consent piece on our own
-             1. defer any script activity until this element becomes visible
-             2. either load and initialize, if there is consent in the localStorage
-             3. otherwise do nothing;
-                alternative trigger will be a button to show instagram content
-             4. initialization loads the scripts and styles and hides the placeholder
-
-        -->
         <aside id="juicer-feed-container"
                label="Instagram Galerie"
                class="feed__container allowable--on-visibility"
@@ -284,7 +273,7 @@
         >
           <h2>Meine Bilder bei Instagram</h2>
           <div class="feed__consent">
-            Um externe Instagram-Inhalte anzuzeigen, benötigen wir deine Einwilligung.
+            <p>Dürfen externe Inhalte von Instagram geladen werden?</p>
             <button class="button__allow button__allow--once" data-allow="once">Einmal erlauben</button>
             <button class="button__allow button__allow--always" data-allow="always">Immer erlauben</button>
           </div>

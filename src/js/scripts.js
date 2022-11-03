@@ -1,15 +1,23 @@
 'use strict';
 
-/** @type {String} */
-var animatingClassName = 'animate__animated';
-// TODO all "magic" strings to variables
+var animateableClassName = 'animate--on-visibility'; // triggers micro animations
+var animatingClassName = 'animate__animated'; // will be added to animateable elements
+var animationClassDataKey = 'animationclass'; // data key to hold animation class name
+var animationClassInColumnDataKey = 'animationclassincolumn'; // dto. if element is inside of vertical layout
 
-/** @type {Object} */
+var variableContrastClassName = 'contrast--varies' // triggers automatic contrast adjustment
+var highContrastClassName = 'contrast--more'; // to be removed from .contrast--varies elements
+
+var allowableClassName = 'allowable--on-visibility'; // triggers consent challenge before external content loading
+var feedCookieKey = 'instafeed'; // name of the cookie set to remember consent
+var feedContainerActiveClassName = 'feed__container--active'; // set to feed container when allowed and loaded
+var feedScriptUrlDataKey = 'scripturl'; // data key which JavaScript to load (absolute or relative to project)
+var feedStyleUrlDataKey = 'styleurl'; // data key which stylesheet to load (absolute or relative to project)
+
+/** @object IntersectionObserver options */
 var observerOptions = {
   root: null,
-  /** @type {String} */
   rootMargin: '0px',
-  /** @type {Number} */
   threshold: 0.2
 };
 
@@ -17,23 +25,19 @@ var observerOptions = {
  * Observe .animated-on-visibility to add animation class when elements become visible
  * Observe .allowable--on-visibility to activate external feed only if it ever becomes visible
  * @param {Array} intersectingEntries
- * param {IntersectionObserver=} observer @optional= TODO how to note optional?
  */
 function intersectionCallback(intersectingEntries) {
-  console.log('intersectionCallback, intersectingEntries:', intersectingEntries);
   for (var j = 0; j < intersectingEntries.length; j++) {
     if (intersectingEntries[j].isIntersecting && intersectingEntries[j].intersectionRatio > observerOptions.threshold) {
       var targetElement = intersectingEntries[j].target;
-      console.log('entry isIntersecting && > treshold, targetElement:', targetElement);
       if (targetElement) {
         if (targetElement.dataset.animationclass && targetElement.classList) {
-          console.log('targetElement has data-animationclass');
-          var datakey = 'animationclass';
+          var datakey = animationClassDataKey;
           var flexContainer = targetElement.parentElement;
           if (flexContainer) {
             var flexDirection = window.getComputedStyle(flexContainer).flexDirection;
             if (flexDirection === 'column') {
-              datakey = 'animationclassincolumn';
+              datakey = animationClassInColumnDataKey;
             }
           }
           var animationClassName = targetElement.dataset[datakey];
@@ -41,63 +45,60 @@ function intersectionCallback(intersectingEntries) {
         }
       }
       if (targetElement.dataset.allowable) {
-        console.log('targetElement has data-allow, must prepareExternalFeed');
         prepareExternalFeed(targetElement);
       }
     }
   }
 }
 
+/**
+ * @param feedContainerElement
+ */
 function prepareExternalFeed(feedContainerElement) {
-  console.log('prepareExternalFeed, feedContainerElement:', feedContainerElement);
   if (
     document.cookie.split(';').some(
       function(item) {
-        return item.trim().startsWith('instafeed=allow');
+        return item.trim().startsWith(feedCookieKey + '=allow');
       }
     )
   ) {
-    console.log('detected cookie, now activateExternalFeed(feedContainerElement)');
     activateExternalFeed(feedContainerElement);
   } else {
     var buttonElements = feedContainerElement.querySelectorAll('[data-allow]');
-    console.log('attach click handlers to buttonElements', buttonElements);
     for (var i = 0; i < buttonElements.length; i++) {
       var buttonElement = buttonElements[i];
       buttonElement.addEventListener('click', function() {
         allowAndActivateExternalFeed(buttonElement);
       }, false);
-      console.log('appended to buttonElement', buttonElement);
     }
   }
 }
 
+/**
+ *
+ * @param buttonElement
+ */
 function allowAndActivateExternalFeed(buttonElement) {
-  console.log('allowAndActivateExternalFeed, buttonElement:', buttonElement);
   var feedContainerElement = buttonElement.closest('.feed__container');
-  console.log('feedContainerElement', feedContainerElement);
-  var consentCookie = 'instafeed=allow;samesite=strict;secure';
+  var consentCookie = feedCookieKey + '=allow;samesite=strict;secure';
   if (buttonElement.dataset.allow === 'always') {
-    console.log('allow always');
     var maxAgeSeconds = 31536000; // 1 year
     consentCookie += ';max-age=' + maxAgeSeconds +  ';';
   } // If neither expires nor max-age specified it will expire at the end of session.
   document.cookie = consentCookie;
-  console.log('set document.cookie = consentCookie', consentCookie);
   if (feedContainerElement) {
     activateExternalFeed(feedContainerElement);
-  } else {
-    console.log('missing feedContainerElement in allowAndActivateExternalFeed');
   }
 }
 
+/**
+ *
+ * @param feedContainerElement
+ */
 function activateExternalFeed(feedContainerElement) {
-  console.log('activateExternalFeed, feedContainerElement:', feedContainerElement);
   if (!feedContainerElement) { return; }
-  var styleFileUrl = feedContainerElement.dataset.styleurl;
-  console.log('styleFileUrl', styleFileUrl);
+  var styleFileUrl = feedContainerElement.dataset[feedStyleUrlDataKey];
   if (styleFileUrl) {
-    console.log('fetch styleFileUrl');
     fetch(styleFileUrl)
       .then(function(response) {
         return response.text();
@@ -105,53 +106,40 @@ function activateExternalFeed(feedContainerElement) {
       .then(function(text) {
         var style = document.head.appendChild(document.createElement('style'));
         style.textContent = text;
-        console.log('juicerFeedContainer', feedContainerElement);
-        if (feedContainerElement && feedContainerElement.classList) {
-          feedContainerElement.classList.remove('initially-hidden'); // obsolete?
-        }
       }).catch(function(err) {
-      console.error('style load failed with error', err);
+      // TODO schedule retry? or rather insert <style> element instead of fetching?
     });
   }
-  var scriptFileUrl = feedContainerElement.dataset.scripturl;
-  console.log('scriptFileUrl', scriptFileUrl);
+  var scriptFileUrl = feedContainerElement.dataset[feedScriptUrlDataKey];
   if (scriptFileUrl) {
-    console.log('append script for scriptFileUrl');
     var scriptElement = document.createElement('script');
     scriptElement.src = scriptFileUrl;
     document.head.append(scriptElement);
   }
   if (feedContainerElement && feedContainerElement.classList) {
-    feedContainerElement.classList.add('feed__container--active');
-    console.log('marked feedContainerElement as .feed__container--active', feedContainerElement);
-  } else {
-    console.error("failed to mark feedContainerElement as .feed__container--active", feedContainerElement);
+    feedContainerElement.classList.add(feedContainerActiveClassName);
   }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   var observer = new IntersectionObserver(intersectionCallback, observerOptions);
-  var elementsActivatedOnVisibilityAndConsent = document.getElementsByClassName('allowable--on-visibility');
-  console.log('elementsActivatedOnVisibilityAndConsent', elementsActivatedOnVisibilityAndConsent);
+  var elementsActivatedOnVisibilityAndConsent = document.getElementsByClassName(allowableClassName);
   for (var i = 0; i < elementsActivatedOnVisibilityAndConsent.length; i++) {
     observer.observe(elementsActivatedOnVisibilityAndConsent[i]);
-    console.log(`observing $i nr. ${i}`, elementsActivatedOnVisibilityAndConsent[i]);
   }
   var prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (prefersReducedMotionQuery && !prefersReducedMotionQuery.matches) {
-    var elementsAnimatedOnVisibility = document.getElementsByClassName('animate--on-visibility');
+    var elementsAnimatedOnVisibility = document.getElementsByClassName(animateableClassName);
     for (var j = 0; j < elementsAnimatedOnVisibility.length; j++) {
       observer.observe(elementsAnimatedOnVisibility[j]);
-      console.log(`observing $j nr. ${j}`, elementsAnimatedOnVisibility[j]);
     }
   }
   var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
   if (prefersMoreContrastQuery && !prefersMoreContrastQuery.matches) {
     window.setTimeout(function() {
-      var moreContrastElements = document.getElementsByClassName('contrast--varies');
+      var moreContrastElements = document.getElementsByClassName(variableContrastClassName);
       for (var k = 0; k < moreContrastElements.length; k++) {
-        moreContrastElements[k].classList.remove('contrast--more');
-        console.log('removed high contrast class');
+        moreContrastElements[k].classList.remove(highContrastClassName);
       }
     }, 5000);
   }

@@ -740,6 +740,7 @@ a:focus, a:hover {
 #juicer-feed-container {
   margin: 2em auto 0 auto !important;
   max-width: 90%;
+  min-height: 20em;
   text-align: center;
 }
 
@@ -793,13 +794,21 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
-/* placeholder and consent without klaro library */
-
 .feed__consent {
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out, margin 0.2s ease-in-out;
   position: relative;
-  margin: 0 auto !important;
+  margin: 2em auto;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.feed__consent > p:first-child {
+  flex: 1 0 0;
+  flex-basis: 100%;
 }
 
 .feed__consent .button__allow {
@@ -821,6 +830,8 @@ a:focus, a:hover {
 }
 
 .feed__container--active .feed__consent {
-  display: none;
+  opacity: 0;
+  height: 1px;
+  margin: 0;
 }
 
