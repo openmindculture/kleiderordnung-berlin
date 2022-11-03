@@ -163,8 +163,12 @@ main, .main, p, article, section, .footer {
 .header {
   height: auto;
   margin: 0;
-  background: var(--neutral-background);
+  top: 0;
+  position: sticky;
+  background: var(--default-white);
   padding: 1em;
+  z-index: 1;
+  opacity: 0.9;
 }
 
 nav ul {
@@ -174,10 +178,6 @@ nav ul {
 
 nav ul li + li {
   margin-left: 1em;
-}
-
-.nav-wrapper {
-  display: none;
 }
 
 .main {
