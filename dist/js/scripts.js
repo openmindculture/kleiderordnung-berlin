@@ -119,6 +119,26 @@ function activateExternalFeed(feedContainerElement) {
   if (feedContainerElement && feedContainerElement.classList) {
     feedContainerElement.classList.add(feedContainerActiveClassName);
   }
+  ensureScrolledToAnchorPosition()
+  // ^ happens to early, how to wait until feed is loaded?
+  // or else do we know the expected container height?
+  // but we do not want to make an empty placeholder in that height
+}
+
+/**
+ * loading external content might trigger layout shift, so
+ * we might need to jump back to a navigation trigger explicitly
+ */
+function ensureScrolledToAnchorPosition() {
+  if (window.location.hash) {
+    var target = document.querySelector(window.location.hash);
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+      console.log('smoothly scrolled to target ' + window.location.hash + ' (again)');
+    }
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {

@@ -168,15 +168,24 @@ main, .main, p, article, section, .footer {
   background: var(--default-white);
   padding: 1em;
   z-index: 1;
-  opacity: 0.9;
+  opacity: 0.96;
 }
 
-nav ul {
+.nav-wrapper {
+  text-align: center;
+}
+
+.main-menu {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.main-menu ul {
   display: flex;
   list-style: none;
 }
 
-nav ul li + li {
+.main-menu ul li + li {
   margin-left: 1em;
 }
 
@@ -233,6 +242,7 @@ nav ul li + li {
 
 article {
   max-width: 1021px;
+  margin: 0 auto;
 }
 
 article.testimonials {
@@ -598,7 +608,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
 }
 
 a:focus, a:hover {
-  text-decoration-color: #f5df4d;
+  text-decoration-color: var(--citrona);
 }
 
 .vcard a.email, .vcard a.email:link, .vcard a.email:visited,
