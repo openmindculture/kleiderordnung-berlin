@@ -95,7 +95,8 @@ blockquote {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto; /* smooth causes bypassing layout shift by triggering IntersectionObserver visibility; */
+  scroll-behavior: instant; /* non-standard, see https://kilianvalkhof.com/2022/css-html/preventing-smooth-scrolling-with-javascript/ */
 }
 
 /* Set core body defaults */
@@ -187,6 +188,17 @@ main, .main, p, article, section, .footer {
 
 .main-menu ul li + li {
   margin-left: 1em;
+}
+
+/* Don’t Headbutt The Browser Window by Chris Coyer
+/* https://css-tricks.com/hash-tag-links-padding/ */
+.target-offset::before {
+  display: block;
+  content: " ";
+  margin-top: -160px;
+  height: 160px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .main {

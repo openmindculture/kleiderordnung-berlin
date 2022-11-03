@@ -119,10 +119,19 @@ function activateExternalFeed(feedContainerElement) {
   if (feedContainerElement && feedContainerElement.classList) {
     feedContainerElement.classList.add(feedContainerActiveClassName);
   }
-  ensureScrolledToAnchorPosition()
+  window.setTimeout(ensureScrolledToAnchorPosition(), 1000);
   // ^ happens to early, how to wait until feed is loaded?
   // or else do we know the expected container height?
   // but we do not want to make an empty placeholder in that height
+  //
+  // IntersectionObserver vs. SmoothScroll: bypass scroll triggers visibility
+  //
+  // Workaround: debounce handler
+  // https://stackoverflow.com/questions/69292201/how-to-prevent-intersection-observer-from-firing-when-passing-over-elements-quic
+  // adapt:
+  // - debounce activating external image feed causing layout shift
+  // - debounce micro animations to prevent firing them too early
+  // - (no need to debounce adding click handlers to allow buttons)
 }
 
 /**
@@ -133,9 +142,7 @@ function ensureScrolledToAnchorPosition() {
   if (window.location.hash) {
     var target = document.querySelector(window.location.hash);
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth'
-      });
+      target.scrollIntoView();
       console.log('smoothly scrolled to target ' + window.location.hash + ' (again)');
     }
   }
