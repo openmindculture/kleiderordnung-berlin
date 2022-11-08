@@ -189,4 +189,45 @@ document.addEventListener('DOMContentLoaded', function() {
     preventActionWhenRunning: false,
     loop: true
   });
+
+  /* TODO gibt es keine mehreren Versionen mit gleicher Definition? */
+  /** @object tiny-slider options */
+  var slider = tns({
+    container: '.testimonials__sliderwrapper2',
+    items: 1,
+    controls: false,
+    nav: true,
+    mouseDrag: true,
+    slideBy: 'page',
+    swipeAngle: false,
+    speed: 500,
+    autoplay: false,
+    animateDelay: 2000,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    autoplayResetOnVisibility: true,
+    autoplayButtonOutput: false,
+    preventActionWhenRunning: false,
+    loop: true
+  });
+
+  /** @object tiny-slider options */
+  var slider = tns({
+    container: '.testimonials__sliderwrapper3',
+    items: 1,
+    controls: false,
+    nav: true,
+    mouseDrag: true,
+    slideBy: 'page',
+    swipeAngle: false,
+    speed: 500,
+    autoplay: false,
+    animateDelay: 2000,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    autoplayResetOnVisibility: true,
+    autoplayButtonOutput: false,
+    preventActionWhenRunning: false,
+    loop: true
+  });
 });

@@ -172,6 +172,7 @@ main, .main, p, article, section, .footer {
 
 .nav-wrapper {
   text-align: center;
+  display: none; /* TODO style later */
 }
 
 .main-menu {
@@ -257,7 +258,7 @@ article {
 
 article.testimonials {
   max-width: 1024px;
-  background: var(--sand);
+  background: var(--palm);
   padding: 1em;
   margin-bottom: 2em;
 }
@@ -279,31 +280,41 @@ article.testimonials {
 
 /* fixed placement for pseudo masonry layout mixing portraint and landscape blocks */
 .testimonials__text--vivien {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
+  grid-column: 2 / 2;
+  grid-row: 4 / span 5;
+  z-index: 3;
+  color: #fff;
+  padding: 1em;
+  align-self: end;
 }
+
+.testimonials__text--vivien.contrast--more {
+  background-color: rgba(66, 77, 58, 0.6);
+}
+
 .testimonials__picture--vivien {
   grid-column: 2 / 2;
-  grid-row: 1 / span 2;
-  padding: 1em;
+  grid-row: 4 / span 5;
 }
 .testimonials__text--katja {
   grid-column: 1 / 1;
-  grid-row: 3 / 3;
+  grid-row: 5 / span 6;
+  padding: 0 1em 0 1em;
 }
 .testimonials__picture--katja {
   grid-column: 1 / 1;
-  grid-row: 2 / 2;
+  grid-row: 2 / span 3;
   align-self: end;
   padding: 2em;
 }
-.testimonials__text--kathrin {
+.testimonials__text--maxi {
   grid-column: 1 / 1;
-  grid-row: 4 / 4;
+  grid-row: 1 / 1;
+  padding-right: 1em;
 }
-.testimonials__picture--kathrin {
+.testimonials__picture--maxi {
   grid-column: 2 / 2;
-  grid-row: 3 / span 4;
+  grid-row: 1 / span 3;
 }
 
 .testimonials .testimonials__image  {
@@ -323,6 +334,7 @@ article.testimonials {
   font-size: 130%;
   color: #fff;
   background-color: rgba(0, 0, 0, 0);
+  border-radius: 1em;
 }
 
 .testimonials .testimonials__imagecaption--landscape {
@@ -331,8 +343,7 @@ article.testimonials {
 }
 
 .testimonials .testimonials__imagecaption.contrast--more {
-  background-color: rgba(0, 0, 0);
-  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 @media (max-width: 1024px) {
