@@ -170,4 +170,23 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }, 5000);
   }
+  /** @object tiny-slider options */
+  var slider = tns({
+    container: '.testimonials__sliderwrapper',
+    items: 1,
+    controls: false,
+    nav: true,
+    mouseDrag: true,
+    slideBy: 'page',
+    swipeAngle: false,
+    speed: 500,
+    autoplay: false,
+    animateDelay: 2000,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    autoplayResetOnVisibility: true,
+    autoplayButtonOutput: false,
+    preventActionWhenRunning: false,
+    loop: true
+  });
 });

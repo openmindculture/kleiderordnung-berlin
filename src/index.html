@@ -80,15 +80,15 @@
     <link rel="stylesheet" media="screen" href="css/styles.css?v=1.0.3" type="text/css">
     <!-- defer loading of optional componets as shown on web.dev -->
     <link rel="preload" media="screen" href="css/animate.min.css?v=4.1.1" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" media="screen" href="css/tiny-slider.css.css?v=2.9.4" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" media="screen" href="css/tiny-slider.css?v=2.9.4" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" media="print" href="css/print.css?v=1.0.3" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
       <link rel="stylesheet" href="css/animate.min.css?v=4.1.1">
-      <link rel="stylesheet" href="css/tiny-slider.css.css?v=2.9.4">
+      <link rel="stylesheet" href="css/tiny-slider.css?v=2.9.4">
       <link rel="stylesheet" media="print" href="css/print.css?v=1.0.3">
     </noscript>
     <script src="js/scripts.js?v=1.0.3" type="text/javascript"></script>
-    <script src="js/tiny-slider.js?v=2.9.4" type="text/javascript" async defer></script>
+    <script src="js/tiny-slider.js?v=2.9.4" type="text/javascript"></script>
     <meta name="description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
     <meta name="keywords" content="Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit,Stilberatung,Stil,Beratung,Mode,Shopping,einkaufen,kombinieren,aussehen,aufräumen,aussortieren,Kleiderschrank,Check,Begleitung,Berlin">
     <!-- TODO check and adapt all header and social attribute values! -->
@@ -227,18 +227,33 @@
               <div class="testimonials__picture testimonials__picture--vivien animate--on-visibility"
                    data-animationclass="animate__fadeInRight"
               >
-                <picture>
-                  <source type="image/webp" srcset="img/Testimonial-Vivien-482x643.webp, img/Testimonial-Vivien-964x1286.webp 2x">
-                  <source type="image/jpeg" srcset="img/Testimonial-Vivien-482x643.jpg, img/Testimonial-Vivien-964x1286.jpg 2x">
-                  <img
-                    src="img/Testimonial-Vivien-482x643.jpg"
-                    width="482"
-                    height="643"
-                    class="main__image testimonials__image testimonials__image--landscape"
-                    loading="lazy"
-                    alt="Vivien, Kundin von Tina"
-                  >
-                </picture>
+                <div class="testimonials__sliderwrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/Testimonial-Vivien-482x643.webp, img/Testimonial-Vivien-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Vivien-482x643.jpg, img/Testimonial-Vivien-964x1286.jpg 2x">
+                    <img
+                      src="img/Testimonial-Vivien-482x643.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image testimonials__image--landscape"
+                      loading="lazy"
+                      alt="Vivien, Kundin von Tina"
+                    >
+                  </picture>
+                  <picture>
+                    <source type="image/webp" srcset="img/Testimonial-Vivien-2-482x643.webp, img/Testimonial-Vivien-2-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Vivien-2-482x643.jpg, img/Testimonial-Vivien-2-964x1286.jpg 2x">
+                    <img
+                      src="img/Testimonial-Vivien-2-482x643.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image testimonials__image--landscape"
+                      loading="lazy"
+                      alt="Vivien, Kundin von Tina"
+                    >
+                  </picture>
+                </div>
+
                 <span class="testimonials__imagecaption testimonials__imagecaption--landscape contrast--varies contrast--more">Vivien</span>
               </div>
 
