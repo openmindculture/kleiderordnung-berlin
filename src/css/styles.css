@@ -110,6 +110,10 @@ h1, h2, h3, h4, h5, .main__intro {
   font-size: 36px;
 }
 
+#nachhaltige-modeberatung h2 {
+  text-align: center;
+}
+
 img, picture, svg {
   border: none;
   max-width: 100%;
@@ -209,6 +213,14 @@ main, .main, p, article, section, .footer {
 .main__images {
   position: relative;
   margin: 0 auto 2em auto;
+  display: flex;
+  max-width: 1024px;
+}
+
+@media (max-width: 1024px) {
+  .main__images {
+    max-width: 99%;
+  }
 }
 
 .main__image {
@@ -219,8 +231,8 @@ main, .main, p, article, section, .footer {
 
 .main__intro {
   display: inline-block;
-  max-width: 50%;
-  padding: 4em 1em 4em 4em;
+  padding: 1em 0 0 2em;
+  text-align: left;
   font-size: 130%;
   font-family: "Kalam", Handwritten, sans-serif;
   font-weight: 400;
@@ -490,18 +502,6 @@ article.testimonials {
   }
   .main__intro {
     max-width: 550px;
-  }
-}
-
-@media (min-width: 1599px) {
-  .main .main__intro {
-    max-width: 1000px;
-    font-size: 150%;
-    float: none;
-    clear: both;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
   }
 }
 
