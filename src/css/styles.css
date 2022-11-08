@@ -1,5 +1,3 @@
-@import url("./animate.min.css") screen;
-/* TODO fix using an unsurprising modern import using a css loader when adding postCSS */
 /* TODO postCSS configuration
  * minify all files
  * include content from imported files

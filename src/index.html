@@ -78,8 +78,17 @@
       }
     </style>
     <link rel="stylesheet" media="screen" href="css/styles.css?v=1.0.3" type="text/css">
-    <link rel="stylesheet" media="print" href="css/print.css?v=1.0.3" type="text/css">
+    <!-- defer loading of optional componets as shown on web.dev -->
+    <link rel="preload" media="screen" href="css/animate.min.css?v=4.1.1" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" media="screen" href="css/tiny-slider.css.css?v=2.9.4" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" media="print" href="css/print.css?v=1.0.3" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="css/animate.min.css?v=4.1.1">
+      <link rel="stylesheet" href="css/tiny-slider.css.css?v=2.9.4">
+      <link rel="stylesheet" media="print" href="css/print.css?v=1.0.3">
+    </noscript>
     <script src="js/scripts.js?v=1.0.3" type="text/javascript"></script>
+    <script src="js/tiny-slider.js?v=2.9.4" type="text/javascript" async defer></script>
     <meta name="description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
     <meta name="keywords" content="Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit,Stilberatung,Stil,Beratung,Mode,Shopping,einkaufen,kombinieren,aussehen,aufräumen,aussortieren,Kleiderschrank,Check,Begleitung,Berlin">
     <!-- TODO check and adapt all header and social attribute values! -->
