@@ -119,6 +119,33 @@ function activateExternalFeed(feedContainerElement) {
   if (feedContainerElement && feedContainerElement.classList) {
     feedContainerElement.classList.add(feedContainerActiveClassName);
   }
+  window.setTimeout(ensureScrolledToAnchorPosition(), 1000);
+  // ^ happens to early, how to wait until feed is loaded?
+  // or else do we know the expected container height?
+  // but we do not want to make an empty placeholder in that height
+  //
+  // IntersectionObserver vs. SmoothScroll: bypass scroll triggers visibility
+  //
+  // Workaround: debounce handler
+  // https://stackoverflow.com/questions/69292201/how-to-prevent-intersection-observer-from-firing-when-passing-over-elements-quic
+  // adapt:
+  // - debounce activating external image feed causing layout shift
+  // - debounce micro animations to prevent firing them too early
+  // - (no need to debounce adding click handlers to allow buttons)
+}
+
+/**
+ * loading external content might trigger layout shift, so
+ * we might need to jump back to a navigation trigger explicitly
+ */
+function ensureScrolledToAnchorPosition() {
+  if (window.location.hash) {
+    var target = document.querySelector(window.location.hash);
+    if (target) {
+      target.scrollIntoView();
+      console.log('smoothly scrolled to target ' + window.location.hash + ' (again)');
+    }
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -143,4 +170,64 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }, 5000);
   }
+  /** @object tiny-slider options */
+  var slider = tns({
+    container: '.testimonials__sliderwrapper',
+    items: 1,
+    controls: false,
+    nav: true,
+    mouseDrag: true,
+    slideBy: 'page',
+    swipeAngle: false,
+    speed: 500,
+    autoplay: false,
+    animateDelay: 2000,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    autoplayResetOnVisibility: true,
+    autoplayButtonOutput: false,
+    preventActionWhenRunning: false,
+    loop: true
+  });
+
+  /* TODO gibt es keine mehreren Versionen mit gleicher Definition? */
+  /** @object tiny-slider options */
+  var slider = tns({
+    container: '.testimonials__sliderwrapper2',
+    items: 1,
+    controls: false,
+    nav: true,
+    mouseDrag: true,
+    slideBy: 'page',
+    swipeAngle: false,
+    speed: 500,
+    autoplay: false,
+    animateDelay: 2000,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    autoplayResetOnVisibility: true,
+    autoplayButtonOutput: false,
+    preventActionWhenRunning: false,
+    loop: true
+  });
+
+  /** @object tiny-slider options */
+  var slider = tns({
+    container: '.testimonials__sliderwrapper3',
+    items: 1,
+    controls: false,
+    nav: true,
+    mouseDrag: true,
+    slideBy: 'page',
+    swipeAngle: false,
+    speed: 500,
+    autoplay: false,
+    animateDelay: 2000,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    autoplayResetOnVisibility: true,
+    autoplayButtonOutput: false,
+    preventActionWhenRunning: false,
+    loop: true
+  });
 });

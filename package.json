@@ -4,7 +4,7 @@
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "main": "dist/index.html",
   "scripts": {
-    "build": "rm -rf dist/* && cp -r src/* dist && cp node_modules/animate.css/animate.min.css dist/css && npm run postCSS && node_modules/html-minifier-cli/bin/htmlmin -o dist/index.html src/index.html",
+    "build": "rm -rf dist/* && cp -r src/* dist && cp node_modules/animate.css/animate.min.css dist/css && cp node_modules/tiny-slider/dist/tiny-slider.css dist/css && cp node_modules/tiny-slider/dist/sourcemaps/*.js.map dist/sourcemaps && mkdir dist/css/sourcemaps && cp node_modules/tiny-slider/dist/sourcemaps/*.css.map dist/css/sourcemaps && cp node_modules/tiny-slider/dist/min/tiny-slider.js dist/js && npm run postCSS && node_modules/html-minifier-cli/bin/htmlmin -o dist/index.html src/index.html",
     "codeceptjs": "codeceptjs run --steps",
     "dev": "npm run serve",
     "eslint": "eslint --ext .js dist",
@@ -48,6 +48,7 @@
     "stylelint-config-recommended": "^9.0.0"
   },
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "tiny-slider": "^2.9.4"
   }
 }

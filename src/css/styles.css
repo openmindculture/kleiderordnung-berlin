@@ -1,5 +1,3 @@
-@import url("./animate.min.css") screen;
-/* TODO fix using an unsurprising modern import using a css loader when adding postCSS */
 /* TODO postCSS configuration
  * minify all files
  * include content from imported files
@@ -95,7 +93,8 @@ blockquote {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto; /* smooth causes bypassing layout shift by triggering IntersectionObserver visibility; */
+  scroll-behavior: instant; /* non-standard, see https://kilianvalkhof.com/2022/css-html/preventing-smooth-scrolling-with-javascript/ */
 }
 
 /* Set core body defaults */
@@ -109,6 +108,10 @@ h1, h2, h3, h4, h5, .main__intro {
   font-family: "Kalam", Handwritten, sans-serif;
   font-weight: 400;
   font-size: 36px;
+}
+
+#nachhaltige-modeberatung h2 {
+  text-align: center;
 }
 
 img, picture, svg {
@@ -163,21 +166,42 @@ main, .main, p, article, section, .footer {
 .header {
   height: auto;
   margin: 0;
-  background: var(--neutral-background);
+  top: 0;
+  position: sticky;
+  background: var(--default-white);
   padding: 1em;
+  z-index: 1;
+  opacity: 0.96;
 }
 
-nav ul {
+.nav-wrapper {
+  text-align: center;
+  display: none; /* TODO style later */
+}
+
+.main-menu {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.main-menu ul {
   display: flex;
   list-style: none;
 }
 
-nav ul li + li {
+.main-menu ul li + li {
   margin-left: 1em;
 }
 
-.nav-wrapper {
-  display: none;
+/* Don’t Headbutt The Browser Window by Chris Coyer
+/* https://css-tricks.com/hash-tag-links-padding/ */
+.target-offset::before {
+  display: block;
+  content: " ";
+  margin-top: -160px;
+  height: 160px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .main {
@@ -189,6 +213,14 @@ nav ul li + li {
 .main__images {
   position: relative;
   margin: 0 auto 2em auto;
+  display: flex;
+  max-width: 1024px;
+}
+
+@media (max-width: 1024px) {
+  .main__images {
+    max-width: 99%;
+  }
 }
 
 .main__image {
@@ -199,8 +231,8 @@ nav ul li + li {
 
 .main__intro {
   display: inline-block;
-  max-width: 50%;
-  padding: 4em 1em 4em 4em;
+  padding: 1em 0 0 2em;
+  text-align: left;
   font-size: 130%;
   font-family: "Kalam", Handwritten, sans-serif;
   font-weight: 400;
@@ -233,11 +265,12 @@ nav ul li + li {
 
 article {
   max-width: 1021px;
+  margin: 0 auto;
 }
 
 article.testimonials {
   max-width: 1024px;
-  background: var(--sand);
+  background: var(--palm);
   padding: 1em;
   margin-bottom: 2em;
 }
@@ -259,38 +292,48 @@ article.testimonials {
 
 /* fixed placement for pseudo masonry layout mixing portraint and landscape blocks */
 .testimonials__text--vivien {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
+  grid-column: 2 / 2;
+  grid-row: 4 / span 5;
+  z-index: 3;
+  color: #fff;
+  padding: 1em;
+  align-self: end;
 }
+
+.testimonials__text--vivien.contrast--more {
+  background-color: rgba(66, 77, 58, 0.6);
+}
+
 .testimonials__picture--vivien {
   grid-column: 2 / 2;
-  grid-row: 1 / span 2;
-  padding: 1em;
+  grid-row: 4 / span 5;
 }
 .testimonials__text--katja {
   grid-column: 1 / 1;
-  grid-row: 3 / 3;
+  grid-row: 5 / span 6;
+  padding: 0 1em 0 1em;
 }
 .testimonials__picture--katja {
   grid-column: 1 / 1;
-  grid-row: 2 / 2;
+  grid-row: 2 / span 3;
   align-self: end;
   padding: 2em;
 }
-.testimonials__text--kathrin {
+.testimonials__text--maxi {
   grid-column: 1 / 1;
-  grid-row: 4 / 4;
+  grid-row: 1 / 1;
+  padding-right: 1em;
 }
-.testimonials__picture--kathrin {
+.testimonials__picture--maxi {
   grid-column: 2 / 2;
-  grid-row: 3 / span 4;
+  grid-row: 1 / span 3;
 }
 
 .testimonials .testimonials__image  {
   max-width: unset;
   width: 100%;
   height: auto;
-  clip-path: ellipse(42% 50% at 53% 50%);
+  /* clip-path: ellipse(42% 50% at 53% 50%); */
 }
 
 .testimonials .testimonials__imagecaption {
@@ -303,6 +346,7 @@ article.testimonials {
   font-size: 130%;
   color: #fff;
   background-color: rgba(0, 0, 0, 0);
+  border-radius: 1em;
 }
 
 .testimonials .testimonials__imagecaption--landscape {
@@ -311,8 +355,7 @@ article.testimonials {
 }
 
 .testimonials .testimonials__imagecaption.contrast--more {
-  background-color: rgba(0, 0, 0);
-  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 @media (max-width: 1024px) {
@@ -462,18 +505,6 @@ article.testimonials {
   }
 }
 
-@media (min-width: 1599px) {
-  .main .main__intro {
-    max-width: 1000px;
-    font-size: 150%;
-    float: none;
-    clear: both;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
 .tos {
   padding: 1em;
   max-width: 1200px;
@@ -598,7 +629,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
 }
 
 a:focus, a:hover {
-  text-decoration-color: #f5df4d;
+  text-decoration-color: var(--citrona);
 }
 
 .vcard a.email, .vcard a.email:link, .vcard a.email:visited,
@@ -835,3 +866,29 @@ a:focus, a:hover {
   margin: 0;
 }
 
+/* tiny-slider customization */
+
+.tns-outer {
+  position: relative;
+}
+
+.tns-nav {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+.tns-nav > [aria-controls] {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 0;
+}
+
+.tns-nav > .tns-nav-active {
+  background: #999;
+}

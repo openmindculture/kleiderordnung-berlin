@@ -78,8 +78,17 @@
       }
     </style>
     <link rel="stylesheet" media="screen" href="css/styles.css?v=1.0.3" type="text/css">
-    <link rel="stylesheet" media="print" href="css/print.css?v=1.0.3" type="text/css">
+    <!-- defer loading of optional componets as shown on web.dev -->
+    <link rel="preload" media="screen" href="css/animate.min.css?v=4.1.1" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" media="screen" href="css/tiny-slider.css?v=2.9.4" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" media="print" href="css/print.css?v=1.0.3" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="css/animate.min.css?v=4.1.1">
+      <link rel="stylesheet" href="css/tiny-slider.css?v=2.9.4">
+      <link rel="stylesheet" media="print" href="css/print.css?v=1.0.3">
+    </noscript>
     <script src="js/scripts.js?v=1.0.3" type="text/javascript"></script>
+    <script src="js/tiny-slider.js?v=2.9.4" type="text/javascript"></script>
     <meta name="description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
     <meta name="keywords" content="Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit,Stilberatung,Stil,Beratung,Mode,Shopping,einkaufen,kombinieren,aussehen,aufräumen,aussortieren,Kleiderschrank,Check,Begleitung,Berlin">
     <!-- TODO check and adapt all header and social attribute values! -->
@@ -118,11 +127,11 @@
             aria-label="Hauptnavigation"
           >
             <ul>
-              <li><a href="#projects">Hallo</a></li>
-              <li><a href="#projects">nachhaltige Modeberatung</a></li>
-              <li><a href="#projects">Kund:innen</a></li>
-              <li><a href="#projects">Bilder</a></li>
-              <li><a href="#projects">Kontakt</a></li>
+              <li><a href="#intro">Hallo!</a></li>
+              <li><a href="#nachhaltige-modeberatung">nachhaltige Modeberatung</a></li>
+              <li><a href="#kundinnenstimmen">Kund:innen</a></li>
+              <li><a href="#bilder">Bilder</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
             </ul>
           </nav>
         </div>
@@ -146,7 +155,7 @@
               alt="Tina Steinke"
             >
           </picture>
-
+<!--
           <picture>
             <source type="image/webp" srcset="img/Tina-Steinke-Studio-47466-750x586.webp, img/Tina-Steinke-Studio-47466-1500x1171.webp 2x" media="(min-width: 376px)">
             <source type="image/webp" srcset="img/Tina-Steinke-Studio-47466-375x293.webp, img/Tina-Steinke-Studio-47466-750x586.webp 2x, img/Tina-Steinke-Studio-47466-1500x1171.webp 4x">
@@ -180,13 +189,13 @@
               alt="Tina Steinke"
             >
           </picture>
-
-          <p class="main__intro">
+-->
+          <p class="main__intro target-offset" id="intro">
             <span class="hello">Hallo,</span>
             ich bin Tina Steinke, Gründerin von KleiderOrdnung und kürzlich von Düsseldorf ins inspirierende quirlige Berlin gezogen. Als Sustainable Stylist verfolge ich mit viel Kreativität und Enthusiasmus das Ziel, dem Fast-Fashion-Zirkus deutlich entgegenzuwirken. Sehr schön, dass du diesen Weg ebenfalls mitgehen möchtest!
           </p>
         </div>
-        <div id="ueber-mich">
+        <div id="nachhaltige-modeberatung" class="target-offset">
           <article>
             <h2>Wie nachhaltige Modeberatung funktioniert?</h2>
             <p>
@@ -205,11 +214,11 @@
             </p>
           </article>
 
-          <article id="kundinnenstimmen" class="testimonials">
+          <article id="kundinnenstimmen" class="testimonials target-offset">
             <h2>Kund:innenstimmen</h2>
 
             <div class="testimonials__container">
-              <div class="testimonials__text testimonials__text--vivien">
+              <div class="testimonials__text testimonials__text--vivien contrast--varies contrast--more">
                 <blockquote>
                   Vivien, Grafikerin, Düsseldorf: &bdquo;Tina hat ein unglaubliches Auge für die kleinen Details und hat es geschafft, mir mit nur wenigen liebevoll ausgewählten Secondhand- Kleidungsstücken neue Outfits zusammenzustellen. Den Secondhand-Wollmantel richtig geknöpft, meine Mützen und Taschen dazu kombiniert und zack standen verschiedene Winteroutfits.&ldquo;
                 </blockquote>
@@ -218,18 +227,33 @@
               <div class="testimonials__picture testimonials__picture--vivien animate--on-visibility"
                    data-animationclass="animate__fadeInRight"
               >
-                <picture>
-                  <source type="image/webp" srcset="img/Testimonial-Vivien-482x643.webp, img/Testimonial-Vivien-964x1286.webp 2x">
-                  <source type="image/jpeg" srcset="img/Testimonial-Vivien-482x643.jpg, img/Testimonial-Vivien-964x1286.jpg 2x">
-                  <img
-                    src="img/Testimonial-Vivien-482x643.jpg"
-                    width="482"
-                    height="643"
-                    class="main__image testimonials__image testimonials__image--landscape"
-                    loading="lazy"
-                    alt="Vivien, Kundin von Tina"
-                  >
-                </picture>
+                <div class="testimonials__sliderwrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/Testimonial-Vivien-482x643.webp, img/Testimonial-Vivien-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Vivien-482x643.jpg, img/Testimonial-Vivien-964x1286.jpg 2x">
+                    <img
+                      src="img/Testimonial-Vivien-482x643.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image testimonials__image--landscape"
+                      loading="lazy"
+                      alt="Vivien, Kundin von Tina"
+                    >
+                  </picture>
+                  <picture>
+                    <source type="image/webp" srcset="img/Testimonial-Vivien-2-482x643.webp, img/Testimonial-Vivien-2-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Vivien-2-482x643.jpg, img/Testimonial-Vivien-2-964x1286.jpg 2x">
+                    <img
+                      src="img/Testimonial-Vivien-2-482x643.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image testimonials__image--landscape"
+                      loading="lazy"
+                      alt="Vivien, Kundin von Tina"
+                    >
+                  </picture>
+                </div>
+
                 <span class="testimonials__imagecaption testimonials__imagecaption--landscape contrast--varies contrast--more">Vivien</span>
               </div>
 
@@ -242,24 +266,89 @@
               <div class="testimonials__picture testimonials__picture--katja animate--on-visibility"
                    data-animationclass="animate__fadeInUp"
                    data-animationclassincolumn="animate__fadeInLeft">
-                <picture>
-                  <source type="image/webp" srcset="img/Testimonial-Katja-753x565.webp, img/Testimonial-Katja-1560x1170.webp 2x" media="(min-width: 376px)">
-                  <source type="image/webp" srcset="img/Testimonial-Katja-375x281.webp, img/Testimonial-Katja-753x565.webp 2x, img/Testimonial-Katja-1560x1170.webp 4x">
-
-                  <source type="image/jpeg" srcset="img/Testimonial-Katja-753x565.jpg, img/Testimonial-Katja-1560x1170.jpg 2x" media="(min-width: 376px)">
-                  <source type="image/jpeg" srcset="img/Testimonial-Katja-375x281.jpg, img/Testimonial-Katja-753x565.jpg 2x, img/Testimonial-Katja-1560x1170.jpg 4x">
-
-                  <img
-                    src="img/Testimonial-Katja-753x565.jpg"
-                    width="753"
-                    height="565"
-                    class="main__image testimonials__image "
-                    loading="lazy"
-                    alt="Katja, Kundin von Tina Steinke"
-                  >
-                </picture>
+                <div class="testimonials__sliderwrapper2">
+                  <picture><!--
+                    <source type="image/webp" srcset="img/Testimonial-Katja-482x643.webp, img/Testimonial-Katja-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Katja-482x643.jpg, img/Testimonial-Katja-964x1286.jpg 2x">-->
+                    <img
+                      src="img/Testimonial-Katja-482-643-98.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image "
+                      loading="lazy"
+                      alt="Katja, Kundin von Tina Steinke"
+                    >
+                  </picture>
+                  <picture><!--
+                    <source type="image/webp" srcset="img/Testimonial-Katja-Jackett-482x643.webp, img/Testimonial-Katja-Jackett-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Katja-Jackett-482x643.jpg, img/Testimonial-Katja-Jackett-964x1286.jpg 2x">-->
+                    <img
+                      src="img/Testimonial-Katja-Jackett-482-643-98.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image "
+                      loading="lazy"
+                      alt="Katja mit Jackett bei der Anprobe"
+                    >
+                  </picture>
+                  <picture><!--
+                    <source type="image/webp" srcset="img/Testimonial-Katja-Stiegenhaus-482x643.webp, img/Testimonial-Katja-Stiegenhaus-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Katja-Stiegenhaus-482x643.jpg, img/Testimonial-Katja-Stiegenhaus-964x1286.jpg 2x">-->
+                    <img
+                      src="img/Testimonial-Katja-Stiegenhaus-482-643-98.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image "
+                      loading="lazy"
+                      alt="Katja im finalen Outfit"
+                    >
+                  </picture>
+                </div>
                 <span class="testimonials__imagecaption contrast--varies contrast--more">Katja</span>
               </div>
+
+              <div class="testimonials__text testimonials__text--maxi">
+                <blockquote>Maxi, Künstlerin, Berlin:<br> „Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.“</blockquote>
+              </div>
+
+              <div class="testimonials__picture testimonials__picture--maxi animate--on-visibility"
+                   data-animationclass="animate__fadeInRight"
+                   data-animationclassincolumn="animate__fadeInRight">
+                <div class="testimonials__sliderwrapper3">
+                  <picture>
+                    <img
+                      src="img/Testimonial-Maxi-482-643-98.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image "
+                      loading="lazy"
+                      alt="Maxi, Kundin von Tina Steinke"
+                    >
+                  </picture>
+                  <picture>
+                    <img
+                      src="img/Testimonial-Maxi-Anprobe-482-643-98.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image "
+                      loading="lazy"
+                      alt="Maxi bei der Anprobe"
+                    >
+                  </picture>
+                  <picture>
+                    <img
+                      src="img/Testimonial-Maxi-Vernissage-482-643-98.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image "
+                      loading="lazy"
+                      alt="Maxi bei ihrer Vernissage"
+                    >
+                  </picture>
+                </div>
+                <span class="testimonials__imagecaption contrast--varies contrast--more">Maxi</span>
+              </div>
+
             </div>
           </article>
         </div>
@@ -271,7 +360,7 @@
                data-styleurl="css/juicer.io/202210/embed.css"
                data-scripturl="https://assets.juicer.io/embed.js"
         >
-          <h2>Meine Bilder bei Instagram</h2>
+          <h2 id="bilder" class="target-offset">Meine Bilder bei Instagram</h2>
           <div class="feed__consent">
             <p>Dürfen externe Inhalte von Instagram geladen werden?</p>
             <button class="button__allow button__allow--once" data-allow="once">Einmal erlauben</button>
@@ -281,7 +370,7 @@
           <a class="follow" target="_blank" rel="noopener" href="https://www.instagram.com/kleider.ordnung">jetzt folgen</a>
         </aside>
 
-        <div id="features">
+        <div id="features" class="target-offset">
           <article>
             <div class="feature__container">
               <div
@@ -315,7 +404,7 @@
           </article>
         </div>
 
-        <div id="contact" class="contact">
+        <div id="kontakt" class="contact target-offset">
 
           <h2 class="visually-hidden">
             Kontakt / Impressum:
@@ -389,7 +478,7 @@
         </div>
       </main>
 
-      <aside id="agb" label="AGB" class="tos initially-hidden">
+      <aside id="agb" label="AGB" class="tos initially-hidden target-offset">
         <h2>Allgemeine Geschäftsbedingungen</h2>
         <p>
         <h4>§ 1 Geltungsbereich</h4>
@@ -482,7 +571,7 @@
         <br>
         <!-- Ende der AGB -->
         <!-- Datenschutzerklärung mit selber Sichtbarkeit direkt darunter -->
-        <h2 id="datenschutz">Datenschutzerklärung</h2>
+        <h2 id="datenschutz" class="target-offset">Datenschutzerklärung</h2>
         <br>
         <p>Diese Datenschutzerklärung klärt darüber auf, wie Ihre Daten geschützt und zu welchen Zwecken sie vearbeitet werden. Wir befolgen dabei die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO).</p>
 
