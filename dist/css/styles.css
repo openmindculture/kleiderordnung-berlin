@@ -291,6 +291,35 @@ article.testimonials {
 }
 
 /* fixed placement for pseudo masonry layout mixing portraint and landscape blocks */
+.testimonials__text--maxi {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  padding-right: 1em;
+}
+
+.testimonials__picture--maxi {
+  grid-column: 2 / 2;
+  grid-row: 1 / span 3;
+}
+
+.testimonials__picture--katja {
+  grid-column: 1 / 1;
+  grid-row: 2 / span 3;
+  align-self: end;
+  padding: 2em;
+}
+
+.testimonials__text--katja {
+  grid-column: 1 / 1;
+  grid-row: 5 / span 6;
+  padding: 0 1em 0 1em;
+}
+
+.testimonials__picture--vivien {
+  grid-column: 2 / 2;
+  grid-row: 4 / span 5;
+}
+
 .testimonials__text--vivien {
   grid-column: 2 / 2;
   grid-row: 4 / span 5;
@@ -302,31 +331,6 @@ article.testimonials {
 
 .testimonials__text--vivien.contrast--more {
   background-color: rgba(66, 77, 58, 0.6);
-}
-
-.testimonials__picture--vivien {
-  grid-column: 2 / 2;
-  grid-row: 4 / span 5;
-}
-.testimonials__text--katja {
-  grid-column: 1 / 1;
-  grid-row: 5 / span 6;
-  padding: 0 1em 0 1em;
-}
-.testimonials__picture--katja {
-  grid-column: 1 / 1;
-  grid-row: 2 / span 3;
-  align-self: end;
-  padding: 2em;
-}
-.testimonials__text--maxi {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-  padding-right: 1em;
-}
-.testimonials__picture--maxi {
-  grid-column: 2 / 2;
-  grid-row: 1 / span 3;
 }
 
 .testimonials .testimonials__image  {
@@ -380,24 +384,26 @@ article.testimonials {
   .testimonials .testimonials__text {
     max-width: unset;
     grid-column: 1 / 1;
+    padding: 0;
   }
-  .testimonials .testimonials__picture--vivien {
+  .testimonials .testimonials__text--maxi {
     grid-row: 1 / 1;
   }
-  .testimonials .testimonials__text--vivien {
+  .testimonials .testimonials__picture--maxi {
     grid-row: 2 / 2;
   }
-  .testimonials .testimonials__picture--katja {
+  .testimonials .testimonials__text--katja {
     grid-row: 3 / 3;
   }
-  .testimonials .testimonials__text--katja {
+  .testimonials .testimonials__picture--katja {
     grid-row: 4 / 4;
   }
-  .testimonials .testimonials__picture--kathrin {
+  .testimonials .testimonials__picture--vivien {
     grid-row: 5 / 5;
   }
-  .testimonials .testimonials__text--kathrin {
-    grid-row: 6 / 6;
+  .testimonials .testimonials__text--vivien {
+    grid-row: 5 / 5;
+    padding: 1em;
   }
 
   img.main__image {
