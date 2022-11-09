@@ -10,7 +10,7 @@
     "eslint": "eslint --ext .js dist",
     "postCSS": "postcss --verbose src/css/*.css --dir dist",
     "serve": "npx http-server dist  -p 1234 --cors",
-    "stylelint": "stylelint 'src/**/*.css'",
+    "stylelint": "stylelint 'src/css/*.css'",
     "pretest": "npm run eslint && npm run stylelint && npm run build && npm run serve",
     "test": "npm run codeceptjs",
     "posttest": "pkill -f http-server"
