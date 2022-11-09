@@ -170,7 +170,7 @@ main, .main, p, article, section, .footer {
   position: sticky;
   background: var(--default-white);
   padding: 1em;
-  z-index: 1;
+  z-index: 10     ;
   opacity: 0.96;
 }
 
@@ -291,7 +291,24 @@ article.testimonials {
   position: relative;
 }
 
-/* fixed placement for pseudo masonry layout mixing portraint and landscape blocks */
+.testimonials__sliderwrapper, .testimonials__sliderwrapper.tns-slider {
+  transition: margin-left 0.25s ease-in-out;
+  transition-duration: 0.25s !important; /* override inline style set by slider library */
+  cursor: pointer;
+}
+
+/* has-teaser class will be removed on first mouse down */
+.testimonials__sliderwrapper--has-teaser:hover {
+  margin-left: -30px;
+}
+
+@media (hover: none) {
+  .testimonials__sliderwrapper--has-teaser {
+    margin-left: -30px;
+  }
+}
+
+  /* fixed placement for pseudo masonry layout mixing portraint and landscape blocks */
 .testimonials__text--maxi {
   grid-column: 1 / 1;
   grid-row: 1 / 1;
@@ -338,7 +355,6 @@ article.testimonials {
   max-width: unset;
   width: 100%;
   height: auto;
-  /* clip-path: ellipse(42% 50% at 53% 50%); */
 }
 
 .testimonials .testimonials__imagecaption {
@@ -374,6 +390,9 @@ article.testimonials {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   article.testimonials {
     max-width: max-content;
   }
@@ -404,6 +423,10 @@ article.testimonials {
   }
   .testimonials .testimonials__picture--vivien {
     grid-row: 5 / 5;
+  }
+  .testimonials .testimonials__picture--vivien .testimonials__imagecaption {
+    bottom: auto;
+    top: 2em;
   }
   .testimonials .testimonials__text--vivien {
     grid-row: 5 / 5;
