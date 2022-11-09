@@ -374,6 +374,9 @@ article.testimonials {
 }
 
 @media (max-width: 768px) {
+  article.testimonials {
+    max-width: max-content;
+  }
   .testimonials h2 {
     text-align: center;
   }
