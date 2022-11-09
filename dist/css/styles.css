@@ -174,6 +174,19 @@ main, .main, p, article, section, .footer {
   opacity: 0.96;
 }
 
+/* workaround missing ::stuck selector
+ * we probably do not need IntersectionObserver
+ * see https://codepen.io/TomAnthony/pen/qBqgErK
+ * Pure CSS ::stuck pseudo class hack is semantically incorrect using two copies of elements
+ */
+.header.stuck {
+  padding-bottom: 0.5em;
+}
+
+.header.stuck h1 {
+  font-size: 100%;
+}
+
 .nav-wrapper {
   text-align: center;
   display: none; /* TODO style later */

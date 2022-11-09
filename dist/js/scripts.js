@@ -17,6 +17,28 @@ var feedStyleUrlDataKey = 'styleurl'; // data key which stylesheet to load (abso
 var isMobileQuery = window.matchMedia('(max-width: 768px)');
 var isMobile = (isMobileQuery && isMobileQuery.matches);
 
+/** @object tiny-slider options */
+var tinySliderOptions = {
+  container: '',
+  items: 1,
+  controls: false,
+  nav: false,
+  mouseDrag: true,
+  gutter: 5,
+  slideBy: 'page',
+  swipeAngle: false,
+  speed: 500,
+  autoplay: false,
+  animateDelay: 2000,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  autoplayResetOnVisibility: true,
+  autoplayButtonOutput: false,
+  preventActionWhenRunning: false,
+  preventScrollOnTouch: 'force',
+  loop: true
+}
+
 /** @object IntersectionObserver options */
 var observerOptions = {
   root: null,
@@ -174,34 +196,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 5000);
   }
 
-  /** @object tiny-slider options */
-  var tinySliderOptions_default = {
-    container: '',
-    items: 1,
-    controls: false,
-    nav: false,
-    mouseDrag: true,
-    gutter: 5,
-    slideBy: 'page',
-    swipeAngle: false,
-    speed: 500,
-    autoplay: false,
-    animateDelay: 2000,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    autoplayResetOnVisibility: true,
-    autoplayButtonOutput: false,
-    preventActionWhenRunning: false,
-    preventScrollOnTouch: 'force',
-    loop: true
-  }
-
   var sliders=[];
   var sliderContainers = document.getElementsByClassName('testimonials__sliderwrapper');
   for (var l=0; l < sliderContainers.length; l++) {
-    var tinySliderOptions = tinySliderOptions_default;
-    tinySliderOptions.container = sliderContainers[l];
-    sliders[l] = tns(tinySliderOptions);
+    var currentTinySliderOptions = tinySliderOptions;
+    currentTinySliderOptions.container = sliderContainers[l];
+    sliders[l] = tns(currentTinySliderOptions);
     sliderContainers[l].addEventListener('mousedown', function(event) {
       var target = /** @type {HTMLElement} */ event.currentTarget;
       target.classList.remove('testimonials__sliderwrapper--has-teaser');
