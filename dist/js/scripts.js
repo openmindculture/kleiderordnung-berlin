@@ -14,6 +14,10 @@ var feedContainerActiveClassName = 'feed__container--active'; // set to feed con
 var feedScriptUrlDataKey = 'scripturl'; // data key which JavaScript to load (absolute or relative to project)
 var feedStyleUrlDataKey = 'styleurl'; // data key which stylesheet to load (absolute or relative to project)
 
+/** type {number[]} TimeoutID to prevent redundant checks and involuntary smooth scroll side effect */
+var observableTimeoutsByTargetElementId = [];
+var genericIdCounter = 0;
+
 var isMobileQuery = window.matchMedia('(max-width: 768px)');
 var isMobile = (isMobileQuery && isMobileQuery.matches);
 
@@ -49,35 +53,90 @@ var observerOptions = {
 /**
  * Observe .animated-on-visibility to add animation class when elements become visible
  * Observe .allowable--on-visibility to activate external feed only if it ever becomes visible
- * @param {Array} intersectingEntries
+ * @param {IntersectionObserverEntry[]} intersectingEntries
  */
 function intersectionCallback(intersectingEntries) {
   for (var j = 0; j < intersectingEntries.length; j++) {
-    if (intersectingEntries[j].isIntersecting && intersectingEntries[j].intersectionRatio > observerOptions.threshold) {
-      var targetElement = intersectingEntries[j].target;
+    var intersectingEntry = intersectingEntries[j];
+    if (intersectingEntry.isIntersecting && intersectingEntry.intersectionRatio > observerOptions.threshold) {
+      var targetElement = /** @type {HTMLElement} */ intersectingEntry.target;
       if (targetElement) {
-        if (targetElement.dataset.animationclass && targetElement.classList) {
-          var datakey = animationClassDataKey;
-          if (isMobile) {
-            datakey = animationClassInColumnDataKey;
-          }
-          if (datakey) {
-            var animationClassName = targetElement.dataset[datakey];
-            if (animationClassName && animationClassName !== '') {
-              targetElement.classList.add(animatingClassName, animationClassName);
-            }
-          }
+        console.log(`caught intersecting element ${j}`, intersectingEntry.target);
+        var targetId = targetElement.id;
+        if (!targetId) {
+          genericIdCounter++;
+          targetId = '_observable' + genericIdCounter;
+          targetElement.id = targetId;
         }
+        if (!observableTimeoutsByTargetElementId[targetId]) {
+          console.log("trying to define a debounce timeout for current IntersectionObserverEntry[] intersectingEntry", intersectingEntry);
+          observableTimeoutsByTargetElementId[targetId] = window.setTimeout(function() {
+            var debouncedEntry = intersectingEntry;
+            var debouncedTarget = /** @type {HTMLElement} */ debouncedEntry.target;
+            console.log('timeout for debounced entry', debouncedEntry);
+            if (debouncedEntry.isIntersecting && debouncedEntry.intersectionRatio > observerOptions.threshold) {
+              console.log('debounced entry is still intersecting');
+              handleAppearedElement(debouncedTarget);
+            } else {
+              console.log('debounced entry is NOT intersecting anymore');
+            }
+          }, 1000);
+        }
+
+        // TODO debounce subsequent code in cancellable setTimeout function
+        // cancel timeout when setting a new one for the same element
+        // otherwise, inside the timeout function, check for current visibility/intersection to determine whether to run
+        // simplest and safest way would be to ensure an id for each element which can be used as a key, like
+        // observableTimeoutsById[]
+        // observableTimeoutsByTargetElementId['intro'] = window.setTimeout(...)
+        // wobei noch simpler: wir brauchen von jedem Element nur die erste nachhaltige Sichtbarkeit, d.h.
+        // dann aber wiederum einen möglichst kurzen timeout
+        // und wenn wir das element schon behandelten, können wir es auch sein lassen,
+        // also:
+        // Sichtbar: setTimeout unless isset schon einer da
+        // Unsichtbar: clearTimeout falls schon einer da
+        //
+        // Falls ein Element noch keine feste ID hat (was es auch nicht braucht und nicht haben sollte, modular gedacht)
+        //   dann vergeben wir bei erster Notwendigkeit eine generische selbst
+        // handleAppearedElement(targetElement);
+
       }
-      if (targetElement.dataset.allowable) {
-        prepareExternalFeed(targetElement);
+    } else {
+      console.log(`caught non intersecting element ${j}`, intersectingEntries[j].target);
+      // cancel timeout caused by same element when it was only short time visible?
+      var invisibleTargetElement = intersectingEntries[j].target;
+      if (invisibleTargetElement) {
+        var invisibleTargetId = invisibleTargetElement.id;
+        if (observableTimeoutsByTargetElementId[invisibleTargetId]) {
+          console.log(`clear timeout ${observableTimeoutsByTargetElementId[invisibleTargetId]} for target id ${invisibleTargetId} of element`, invisibleTargetElement);
+          window.clearTimeout(observableTimeoutsByTargetElementId[invisibleTargetId]);
+        }
       }
     }
   }
 }
 
+/** @param {HTMLElement} targetElement */
+function handleAppearedElement(targetElement) {
+  if (targetElement.dataset.animationclass && targetElement.classList) {
+    var datakey = animationClassDataKey;
+    if (isMobile) {
+      datakey = animationClassInColumnDataKey;
+    }
+    if (datakey) {
+      var animationClassName = targetElement.dataset[datakey];
+      if (animationClassName && animationClassName !== '') {
+        targetElement.classList.add(animatingClassName, animationClassName);
+      }
+    }
+  }
+  if (targetElement.dataset.allowable) {
+    prepareExternalFeed(targetElement);
+  }
+}
+
 /**
- * @param feedContainerElement
+ * @param {HTMLElement} feedContainerElement
  */
 function prepareExternalFeed(feedContainerElement) {
   if (
@@ -101,7 +160,7 @@ function prepareExternalFeed(feedContainerElement) {
 
 /**
  *
- * @param buttonElement
+ * @param {HTMLElement} buttonElement
  */
 function allowAndActivateExternalFeed(buttonElement) {
   var feedContainerElement = buttonElement.closest('.feed__container');
@@ -118,7 +177,7 @@ function allowAndActivateExternalFeed(buttonElement) {
 
 /**
  *
- * @param feedContainerElement
+ * @param {HTMLElement} feedContainerElement
  */
 function activateExternalFeed(feedContainerElement) {
   if (!feedContainerElement) { return; }
@@ -144,7 +203,7 @@ function activateExternalFeed(feedContainerElement) {
   if (feedContainerElement && feedContainerElement.classList) {
     feedContainerElement.classList.add(feedContainerActiveClassName);
   }
-  window.setTimeout(ensureScrolledToAnchorPosition(), 1000);
+  // window.setTimeout(ensureScrolledToAnchorPosition(), 1000);
   // ^ happens to early, how to wait until feed is loaded?
   // or else do we know the expected container height?
   // but we do not want to make an empty placeholder in that height
@@ -159,19 +218,7 @@ function activateExternalFeed(feedContainerElement) {
   // - (no need to debounce adding click handlers to allow buttons)
 }
 
-/**
- * loading external content might trigger layout shift, so
- * we might need to jump back to a navigation trigger explicitly
- */
-function ensureScrolledToAnchorPosition() {
-  if (window.location.hash) {
-    var target = document.querySelector(window.location.hash);
-    if (target) {
-      target.scrollIntoView();
-      console.log('smoothly scrolled to target ' + window.location.hash + ' (again)');
-    }
-  }
-}
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var observer = new IntersectionObserver(intersectionCallback, observerOptions);
@@ -196,12 +243,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 5000);
   }
 
-  var sliders=[];
+  // var sliders=[];
   var sliderContainers = document.getElementsByClassName('testimonials__sliderwrapper');
   for (var l=0; l < sliderContainers.length; l++) {
     var currentTinySliderOptions = tinySliderOptions;
     currentTinySliderOptions.container = sliderContainers[l];
-    sliders[l] = tns(currentTinySliderOptions);
+    // sliders[l] = tns(currentTinySliderOptions);
+    tns(currentTinySliderOptions);
     sliderContainers[l].addEventListener('mousedown', function(event) {
       var target = /** @type {HTMLElement} */ event.currentTarget;
       target.classList.remove('testimonials__sliderwrapper--has-teaser');

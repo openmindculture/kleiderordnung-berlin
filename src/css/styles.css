@@ -93,8 +93,7 @@ blockquote {
 }
 
 html {
-  scroll-behavior: auto; /* smooth causes bypassing layout shift by triggering IntersectionObserver visibility; */
-  scroll-behavior: instant; /* non-standard, see https://kilianvalkhof.com/2022/css-html/preventing-smooth-scrolling-with-javascript/ */
+  scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
@@ -403,7 +402,8 @@ article.testimonials {
   grid-row: 4 / span 5;
 }
 
-.testimonials__text--vivien {
+/* increase specificity to against generic media query padding, TODO refactor this */
+.testimonials .testimonials__text.testimonials__text--vivien {
   grid-column: 2 / 2;
   grid-row: 4 / span 5;
   z-index: 3;
