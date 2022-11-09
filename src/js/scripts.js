@@ -63,7 +63,7 @@ function intersectionCallback(intersectingEntries) {
           }
           if (datakey) {
             var animationClassName = targetElement.dataset[datakey];
-            if (animationClassName && animationClassName !== "") {
+            if (animationClassName && animationClassName !== '') {
               targetElement.classList.add(animatingClassName, animationClassName);
             }
           }
@@ -213,5 +213,16 @@ document.addEventListener('DOMContentLoaded', function() {
       var target = eventTarget.closest('.testimonials__sliderwrapper');
       target.classList.remove('testimonials__sliderwrapper--has-teaser');
     }, { once: true });
+  }
+
+  var stickyHeader = document.getElementById('header');
+  if (stickyHeader) {
+    const observer = new IntersectionObserver(
+      function(intersectingEntries) {
+        intersectingEntries[0].target.classList.toggle("stuck", intersectingEntries[0].intersectionRatio < 1);
+      },
+      { threshold: [1] }
+    );
+    observer.observe(stickyHeader);
   }
 });

@@ -166,12 +166,14 @@ main, .main, p, article, section, .footer {
 .header {
   height: auto;
   margin: 0;
-  top: 0;
+  top: -1px;
   position: sticky;
   background: var(--default-white);
   padding: 1em;
-  z-index: 10     ;
+  padding-bottom: 1em;
+  z-index: 10;
   opacity: 0.96;
+  transition: padding-bottom 2s 0.25s ease-in;
 }
 
 /* workaround missing ::stuck selector
@@ -183,8 +185,10 @@ main, .main, p, article, section, .footer {
   padding-bottom: 0.5em;
 }
 
-.header.stuck h1 {
-  font-size: 100%;
+@media (max-width: 824px) {
+  .header.stuck h1 {
+    font-size: 100%;
+  }
 }
 
 .nav-wrapper {
