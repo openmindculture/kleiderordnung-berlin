@@ -581,13 +581,16 @@ article.testimonials {
 
 @media (max-width: 576px) {
   .testimonials .testimonials__text--vivien {
-    grid-row: 6 / 6;
+    grid-row: 5 / 6;
     color: var(--tar);
     padding-left: 0;
     padding-right: 0;
   }
   .testimonials .testimonials__text.testimonials__text--vivien.contrast--more {
     background: none;
+  }
+  .testimonials .testimonials__picture--vivien {
+    grid-row: 6 / 6;
   }
 }
 
