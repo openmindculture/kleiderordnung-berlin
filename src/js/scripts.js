@@ -14,6 +14,9 @@ var feedContainerActiveClassName = 'feed__container--active'; // set to feed con
 var feedScriptUrlDataKey = 'scripturl'; // data key which JavaScript to load (absolute or relative to project)
 var feedStyleUrlDataKey = 'styleurl'; // data key which stylesheet to load (absolute or relative to project)
 
+var isMobileQuery = window.matchMedia('(max-width: 768px)');
+var isMobile = (isMobileQuery && isMobileQuery.matches);
+
 /** @object IntersectionObserver options */
 var observerOptions = {
   root: null,
@@ -33,15 +36,15 @@ function intersectionCallback(intersectingEntries) {
       if (targetElement) {
         if (targetElement.dataset.animationclass && targetElement.classList) {
           var datakey = animationClassDataKey;
-          var flexContainer = targetElement.parentElement;
-          if (flexContainer) {
-            var flexDirection = window.getComputedStyle(flexContainer).flexDirection;
-            if (flexDirection === 'column') {
-              datakey = animationClassInColumnDataKey;
+          if (isMobile) {
+            datakey = animationClassInColumnDataKey;
+          }
+          if (datakey) {
+            var animationClassName = targetElement.dataset[datakey];
+            if (animationClassName && animationClassName !== "") {
+              targetElement.classList.add(animatingClassName, animationClassName);
             }
           }
-          var animationClassName = targetElement.dataset[datakey];
-          targetElement.classList.add(animatingClassName, animationClassName);
         }
       }
       if (targetElement.dataset.allowable) {
@@ -170,54 +173,15 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }, 5000);
   }
-  /** @object tiny-slider options */
-  var slider = tns({
-    container: '.testimonials__sliderwrapper',
-    items: 1,
-    controls: false,
-    nav: true,
-    mouseDrag: true,
-    slideBy: 'page',
-    swipeAngle: false,
-    speed: 500,
-    autoplay: false,
-    animateDelay: 2000,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    autoplayResetOnVisibility: true,
-    autoplayButtonOutput: false,
-    preventActionWhenRunning: false,
-    loop: true
-  });
-
-  /* TODO gibt es keine mehreren Versionen mit gleicher Definition? */
-  /** @object tiny-slider options */
-  var slider = tns({
-    container: '.testimonials__sliderwrapper2',
-    items: 1,
-    controls: false,
-    nav: true,
-    mouseDrag: true,
-    slideBy: 'page',
-    swipeAngle: false,
-    speed: 500,
-    autoplay: false,
-    animateDelay: 2000,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    autoplayResetOnVisibility: true,
-    autoplayButtonOutput: false,
-    preventActionWhenRunning: false,
-    loop: true
-  });
 
   /** @object tiny-slider options */
-  var slider = tns({
-    container: '.testimonials__sliderwrapper3',
+  var tinySliderOptions_default = {
+    container: '',
     items: 1,
     controls: false,
-    nav: true,
+    nav: false,
     mouseDrag: true,
+    gutter: 5,
     slideBy: 'page',
     swipeAngle: false,
     speed: 500,
@@ -228,6 +192,26 @@ document.addEventListener('DOMContentLoaded', function() {
     autoplayResetOnVisibility: true,
     autoplayButtonOutput: false,
     preventActionWhenRunning: false,
+    preventScrollOnTouch: 'force',
     loop: true
-  });
+  }
+
+  var sliders=[];
+  var sliderContainers = document.getElementsByClassName('testimonials__sliderwrapper');
+  for (var l=0; l < sliderContainers.length; l++) {
+    var tinySliderOptions = tinySliderOptions_default;
+    tinySliderOptions.container = sliderContainers[l];
+    sliders[l] = tns(tinySliderOptions);
+    sliderContainers[l].addEventListener('mousedown', function(event) {
+      var target = /** @type {HTMLElement} */ event.currentTarget;
+      target.classList.remove('testimonials__sliderwrapper--has-teaser');
+    }, { once: true });
+
+    /* mousedown event seems to be prevented by slider library touch handler */
+    sliderContainers[l].addEventListener('touchmove', function(event) {
+      var eventTarget =  /** @type {HTMLElement} */ event.target;
+      var target = eventTarget.closest('.testimonials__sliderwrapper');
+      target.classList.remove('testimonials__sliderwrapper--has-teaser');
+    }, { once: true });
+  }
 });

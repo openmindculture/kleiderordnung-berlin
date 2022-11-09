@@ -77,17 +77,17 @@
         font-size: 36px;
       }
     </style>
-    <link rel="stylesheet" media="screen" href="css/styles.css?v=1.1.0" type="text/css">
+    <link rel="stylesheet" media="screen" href="css/styles.css?v=1.1.1" type="text/css">
     <!-- defer loading of optional componets as shown on web.dev -->
     <link rel="preload" media="screen" href="css/animate.min.css?v=4.1.1" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" media="screen" href="css/tiny-slider.css?v=2.9.4" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" media="print" href="css/print.css?v=1.1.0" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" media="print" href="css/print.css?v=1.1.1" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
       <link rel="stylesheet" href="css/animate.min.css?v=4.1.1">
       <link rel="stylesheet" href="css/tiny-slider.css?v=2.9.4">
       <link rel="stylesheet" media="print" href="css/print.css?v=1.0.3">
     </noscript>
-    <script src="js/scripts.js?v=1.1.0" type="text/javascript"></script>
+    <script src="js/scripts.js?v=1.1.1" type="text/javascript"></script>
     <script src="js/tiny-slider.js?v=2.9.4" type="text/javascript"></script>
     <meta name="description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
     <meta name="keywords" content="Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit,Stilberatung,Stil,Beratung,Mode,Shopping,einkaufen,kombinieren,aussehen,aufräumen,aussortieren,Kleiderschrank,Check,Begleitung,Berlin">
@@ -152,6 +152,7 @@
               height="586"
               class="main__image animate--on-visibility"
               data-animationclass="animate__fadeInRight"
+              data-animationclassincolumn="animate__fadeInRight"
               alt="Tina Steinke"
             >
           </picture>
@@ -218,43 +219,52 @@
             <h2>Kund:innenstimmen</h2>
 
             <div class="testimonials__container">
-              <div class="testimonials__text testimonials__text--vivien contrast--varies contrast--more">
-                <blockquote>
-                  Vivien, Grafikerin, Düsseldorf: &bdquo;Tina hat ein unglaubliches Auge für die kleinen Details und hat es geschafft, mir mit nur wenigen liebevoll ausgewählten Secondhand- Kleidungsstücken neue Outfits zusammenzustellen. Den Secondhand-Wollmantel richtig geknöpft, meine Mützen und Taschen dazu kombiniert und zack standen verschiedene Winteroutfits.&ldquo;
-                </blockquote>
+              <div class="testimonials__text testimonials__text--maxi">
+                <blockquote>Maxi, Künstlerin, Berlin:<br> „Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.“</blockquote>
               </div>
 
-              <div class="testimonials__picture testimonials__picture--vivien animate--on-visibility"
+              <div class="testimonials__picture testimonials__picture--maxi animate--on-visibility"
                    data-animationclass="animate__fadeInRight"
-              >
-                <div class="testimonials__sliderwrapper">
+                   data-animationclassincolumn="">
+                <div class="testimonials__sliderwrapper testimonials__sliderwrapper--has-teaser">
                   <picture>
-                    <source type="image/webp" srcset="img/Testimonial-Vivien-482x643.webp, img/Testimonial-Vivien-964x1286.webp 2x">
-                    <source type="image/jpeg" srcset="img/Testimonial-Vivien-482x643.jpg, img/Testimonial-Vivien-964x1286.jpg 2x">
+                    <source type="image/webp" srcset="img/Testimonial-Maxi-482x643.webp, img/Testimonial-Maxi-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Maxi-482x643.jpg, img/Testimonial-Maxi-964x1286.jpg 2x">
                     <img
-                      src="img/Testimonial-Vivien-482x643.jpg"
+                      src="img/Testimonial-Maxi-482-643-98.jpg"
                       width="482"
                       height="643"
-                      class="main__image testimonials__image testimonials__image--landscape"
+                      class="main__image testimonials__image "
                       loading="lazy"
-                      alt="Vivien, Kundin von Tina"
+                      alt="Maxi, Kundin von Tina Steinke"
                     >
                   </picture>
                   <picture>
-                    <source type="image/webp" srcset="img/Testimonial-Vivien-2-482x643.webp, img/Testimonial-Vivien-2-964x1286.webp 2x">
-                    <source type="image/jpeg" srcset="img/Testimonial-Vivien-2-482x643.jpg, img/Testimonial-Vivien-2-964x1286.jpg 2x">
+                    <source type="image/webp" srcset="img/Testimonial-Maxi-Anprobe-482x643.webp, img/Testimonial-Maxi-Anprobe-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Maxi-Anprobe-482x643.jpg, img/Testimonial-Maxi-Anprobe-964x1286.jpg 2x">
                     <img
-                      src="img/Testimonial-Vivien-2-482x643.jpg"
+                      src="img/Testimonial-Maxi-Anprobe-482-643-98.jpg"
                       width="482"
                       height="643"
-                      class="main__image testimonials__image testimonials__image--landscape"
+                      class="main__image testimonials__image "
                       loading="lazy"
-                      alt="Vivien, Kundin von Tina"
+                      alt="Maxi bei der Anprobe"
+                    >
+                  </picture>
+                  <picture>
+                    <source type="image/webp" srcset="img/Testimonial-Maxi-Vernissage-482x643.webp, img/Testimonial-Maxi-Vernissage-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Maxi-Vernissage-482x643.jpg, img/Testimonial-Maxi-Vernissage-964x1286.jpg 2x">
+                    <img
+                      src="img/Testimonial-Maxi-Vernissage-482-643-98.jpg"
+                      width="482"
+                      height="643"
+                      class="main__image testimonials__image "
+                      loading="lazy"
+                      alt="Maxi bei ihrer Vernissage"
                     >
                   </picture>
                 </div>
-
-                <span class="testimonials__imagecaption testimonials__imagecaption--landscape contrast--varies contrast--more">Vivien</span>
+                <span class="testimonials__imagecaption contrast--varies contrast--more">Maxi</span>
               </div>
 
               <div class="testimonials__text testimonials__text--katja">
@@ -265,8 +275,8 @@
 
               <div class="testimonials__picture testimonials__picture--katja animate--on-visibility"
                    data-animationclass="animate__fadeInUp"
-                   data-animationclassincolumn="animate__fadeInLeft">
-                <div class="testimonials__sliderwrapper2">
+                   data-animationclassincolumn="">
+                <div class="testimonials__sliderwrapper testimonials__sliderwrapper--has-teaser">
                   <picture>
                     <source type="image/webp" srcset="img/Testimonial-Katja-482x643.webp, img/Testimonial-Katja-964x1286.webp 2x">
                     <source type="image/jpeg" srcset="img/Testimonial-Katja-482x643.jpg, img/Testimonial-Katja-964x1286.jpg 2x">
@@ -307,52 +317,44 @@
                 <span class="testimonials__imagecaption contrast--varies contrast--more">Katja</span>
               </div>
 
-              <div class="testimonials__text testimonials__text--maxi">
-                <blockquote>Maxi, Künstlerin, Berlin:<br> „Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.“</blockquote>
+              <div class="testimonials__text testimonials__text--vivien contrast--varies contrast--more">
+                <blockquote>
+                  Vivien, Grafikerin, Düsseldorf: &bdquo;Tina hat ein unglaubliches Auge für die kleinen Details und hat es geschafft, mir mit nur wenigen liebevoll ausgewählten Secondhand- Kleidungsstücken neue Outfits zusammenzustellen. Den Secondhand-Wollmantel richtig geknöpft, meine Mützen und Taschen dazu kombiniert und zack standen verschiedene Winteroutfits.&ldquo;
+                </blockquote>
               </div>
 
-              <div class="testimonials__picture testimonials__picture--maxi animate--on-visibility"
+              <div class="testimonials__picture testimonials__picture--vivien animate--on-visibility"
                    data-animationclass="animate__fadeInRight"
-                   data-animationclassincolumn="animate__fadeInRight">
-                <div class="testimonials__sliderwrapper3">
+                   data-animationclassincolumn=""
+              >
+                <div class="testimonials__sliderwrapper testimonials__sliderwrapper--has-teaser">
                   <picture>
-                    <source type="image/webp" srcset="img/Testimonial-Maxi-482x643.webp, img/Testimonial-Maxi-964x1286.webp 2x">
-                    <source type="image/jpeg" srcset="img/Testimonial-Maxi-482x643.jpg, img/Testimonial-Maxi-964x1286.jpg 2x">
+                    <source type="image/webp" srcset="img/Testimonial-Vivien-482x643.webp, img/Testimonial-Vivien-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Vivien-482x643.jpg, img/Testimonial-Vivien-964x1286.jpg 2x">
                     <img
-                      src="img/Testimonial-Maxi-482-643-98.jpg"
+                      src="img/Testimonial-Vivien-482x643.jpg"
                       width="482"
                       height="643"
-                      class="main__image testimonials__image "
+                      class="main__image testimonials__image testimonials__image--landscape"
                       loading="lazy"
-                      alt="Maxi, Kundin von Tina Steinke"
+                      alt="Vivien, Kundin von Tina"
                     >
                   </picture>
                   <picture>
-                    <source type="image/webp" srcset="img/Testimonial-Maxi-Anprobe-482x643.webp, img/Testimonial-Maxi-Anprobe-964x1286.webp 2x">
-                    <source type="image/jpeg" srcset="img/Testimonial-Maxi-Anprobe-482x643.jpg, img/Testimonial-Maxi-Anprobe-964x1286.jpg 2x">
+                    <source type="image/webp" srcset="img/Testimonial-Vivien-2-482x643.webp, img/Testimonial-Vivien-2-964x1286.webp 2x">
+                    <source type="image/jpeg" srcset="img/Testimonial-Vivien-2-482x643.jpg, img/Testimonial-Vivien-2-964x1286.jpg 2x">
                     <img
-                      src="img/Testimonial-Maxi-Anprobe-482-643-98.jpg"
+                      src="img/Testimonial-Vivien-2-482x643.jpg"
                       width="482"
                       height="643"
-                      class="main__image testimonials__image "
+                      class="main__image testimonials__image testimonials__image--landscape"
                       loading="lazy"
-                      alt="Maxi bei der Anprobe"
-                    >
-                  </picture>
-                  <picture>
-                    <source type="image/webp" srcset="img/Testimonial-Maxi-Vernissage-482x643.webp, img/Testimonial-Maxi-Vernissage-964x1286.webp 2x">
-                    <source type="image/jpeg" srcset="img/Testimonial-Maxi-Vernissage-482x643.jpg, img/Testimonial-Maxi-Vernissage-964x1286.jpg 2x">
-                    <img
-                      src="img/Testimonial-Maxi-Vernissage-482-643-98.jpg"
-                      width="482"
-                      height="643"
-                      class="main__image testimonials__image "
-                      loading="lazy"
-                      alt="Maxi bei ihrer Vernissage"
+                      alt="Vivien, Kundin von Tina"
                     >
                   </picture>
                 </div>
-                <span class="testimonials__imagecaption contrast--varies contrast--more">Maxi</span>
+
+                <span class="testimonials__imagecaption testimonials__imagecaption--landscape contrast--varies contrast--more">Vivien</span>
               </div>
 
             </div>

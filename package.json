@@ -1,6 +1,6 @@
 {
   "name": "kleiderordnung-berlin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "main": "dist/index.html",
   "scripts": {
