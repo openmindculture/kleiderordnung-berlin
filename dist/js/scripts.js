@@ -10,11 +10,23 @@ var highContrastClassName = 'contrast--more'; // to be removed from .contrast--v
 
 var allowableClassName = 'allowable--on-visibility'; // triggers consent challenge before external content loading
 var feedCookieKey = 'instafeed'; // name of the cookie set to remember consent
+var feedCookieValue = 'allow'; // default value
+var feedContainerClassName = 'feed__container';
 var feedContainerActiveClassName = 'feed__container--active'; // set to feed container when allowed and loaded
+var feedDataKey = 'allow'; // data key to control the expiry / validity when clicking allow
+var feedDataValueAlways = 'always'; // data value to always allow (as opposed to the session default)
 var feedScriptUrlDataKey = 'scripturl'; // data key which JavaScript to load (absolute or relative to project)
 var feedStyleUrlDataKey = 'styleurl'; // data key which stylesheet to load (absolute or relative to project)
 
-/** type {number[]} TimeoutID to prevent redundant checks and involuntary smooth scroll side effect */
+var sliderWrapperClassName = 'testimonials__sliderwrapper';
+var sliderWrapperShowingTeaserClassName = 'testimonials__sliderwrapper--has-teaser';
+
+var menuOpenButtonClassName = 'main-menu__button--open';
+var menuCloseButtonClassName = 'main-menu__button--close';
+var menuOpenClassName = 'target'; // .target for progressive enhancement of :target
+var mainMenuNavWrapperSelector = 'main-menu__nav-wrapper'; // select parent menu from descendant button handler
+
+/** type {number[]} TimeoutID for DOM element ID to prevent redundant checks and involuntary smooth scroll side effect */
 var observableTimeoutsByTargetElementId = [];
 var genericIdCounter = 0;
 
@@ -61,7 +73,6 @@ function intersectionCallback(intersectingEntries) {
     if (intersectingEntry.isIntersecting && intersectingEntry.intersectionRatio > observerOptions.threshold) {
       var targetElement = /** @type {HTMLElement} */ intersectingEntry.target;
       if (targetElement) {
-        console.log(`caught intersecting element ${j}`, intersectingEntry.target);
         var targetId = targetElement.id;
         if (!targetId) {
           genericIdCounter++;
@@ -69,47 +80,23 @@ function intersectionCallback(intersectingEntries) {
           targetElement.id = targetId;
         }
         if (!observableTimeoutsByTargetElementId[targetId]) {
-          console.log("trying to define a debounce timeout for current IntersectionObserverEntry[] intersectingEntry", intersectingEntry);
           observableTimeoutsByTargetElementId[targetId] = window.setTimeout(function() {
             var debouncedEntry = intersectingEntry;
             var debouncedTarget = /** @type {HTMLElement} */ debouncedEntry.target;
-            console.log('timeout for debounced entry', debouncedEntry);
             if (debouncedEntry.isIntersecting && debouncedEntry.intersectionRatio > observerOptions.threshold) {
-              console.log('debounced entry is still intersecting');
               handleAppearedElement(debouncedTarget);
-            } else {
-              console.log('debounced entry is NOT intersecting anymore');
             }
+            observableTimeoutsByTargetElementId[debouncedTarget.id] = undefined;
           }, 1000);
         }
-
-        // TODO debounce subsequent code in cancellable setTimeout function
-        // cancel timeout when setting a new one for the same element
-        // otherwise, inside the timeout function, check for current visibility/intersection to determine whether to run
-        // simplest and safest way would be to ensure an id for each element which can be used as a key, like
-        // observableTimeoutsById[]
-        // observableTimeoutsByTargetElementId['intro'] = window.setTimeout(...)
-        // wobei noch simpler: wir brauchen von jedem Element nur die erste nachhaltige Sichtbarkeit, d.h.
-        // dann aber wiederum einen möglichst kurzen timeout
-        // und wenn wir das element schon behandelten, können wir es auch sein lassen,
-        // also:
-        // Sichtbar: setTimeout unless isset schon einer da
-        // Unsichtbar: clearTimeout falls schon einer da
-        //
-        // Falls ein Element noch keine feste ID hat (was es auch nicht braucht und nicht haben sollte, modular gedacht)
-        //   dann vergeben wir bei erster Notwendigkeit eine generische selbst
-        // handleAppearedElement(targetElement);
-
       }
     } else {
-      console.log(`caught non intersecting element ${j}`, intersectingEntries[j].target);
-      // cancel timeout caused by same element when it was only short time visible?
       var invisibleTargetElement = intersectingEntries[j].target;
       if (invisibleTargetElement) {
         var invisibleTargetId = invisibleTargetElement.id;
         if (observableTimeoutsByTargetElementId[invisibleTargetId]) {
-          console.log(`clear timeout ${observableTimeoutsByTargetElementId[invisibleTargetId]} for target id ${invisibleTargetId} of element`, invisibleTargetElement);
           window.clearTimeout(observableTimeoutsByTargetElementId[invisibleTargetId]);
+          observableTimeoutsByTargetElementId[invisibleTargetId] = undefined;
         }
       }
     }
@@ -142,13 +129,13 @@ function prepareExternalFeed(feedContainerElement) {
   if (
     document.cookie.split(';').some(
       function(item) {
-        return item.trim().startsWith(feedCookieKey + '=allow');
+        return item.trim().startsWith(feedCookieKey + '=' + feedCookieValue);
       }
     )
   ) {
     activateExternalFeed(feedContainerElement);
   } else {
-    var buttonElements = feedContainerElement.querySelectorAll('[data-allow]');
+    var buttonElements = feedContainerElement.querySelectorAll('[data-' + feedDataKey + ']');
     for (var i = 0; i < buttonElements.length; i++) {
       var buttonElement = buttonElements[i];
       buttonElement.addEventListener('click', function() {
@@ -158,14 +145,11 @@ function prepareExternalFeed(feedContainerElement) {
   }
 }
 
-/**
- *
- * @param {HTMLElement} buttonElement
- */
+/** @param {HTMLElement} buttonElement */
 function allowAndActivateExternalFeed(buttonElement) {
-  var feedContainerElement = buttonElement.closest('.feed__container');
-  var consentCookie = feedCookieKey + '=allow;samesite=strict;secure';
-  if (buttonElement.dataset.allow === 'always') {
+  var feedContainerElement = buttonElement.closest('.' + feedContainerClassName);
+  var consentCookie = feedCookieKey + '=' + feedCookieValue + ';samesite=strict;secure';
+  if (buttonElement.dataset[feedDataKey].allow === feedDataValueAlways) {
     var maxAgeSeconds = 31536000; // 1 year
     consentCookie += ';max-age=' + maxAgeSeconds +  ';';
   } // If neither expires nor max-age specified it will expire at the end of session.
@@ -175,10 +159,7 @@ function allowAndActivateExternalFeed(buttonElement) {
   }
 }
 
-/**
- *
- * @param {HTMLElement} feedContainerElement
- */
+/** @param {HTMLElement} feedContainerElement */
 function activateExternalFeed(feedContainerElement) {
   if (!feedContainerElement) { return; }
   var styleFileUrl = feedContainerElement.dataset[feedStyleUrlDataKey];
@@ -203,22 +184,7 @@ function activateExternalFeed(feedContainerElement) {
   if (feedContainerElement && feedContainerElement.classList) {
     feedContainerElement.classList.add(feedContainerActiveClassName);
   }
-  // window.setTimeout(ensureScrolledToAnchorPosition(), 1000);
-  // ^ happens to early, how to wait until feed is loaded?
-  // or else do we know the expected container height?
-  // but we do not want to make an empty placeholder in that height
-  //
-  // IntersectionObserver vs. SmoothScroll: bypass scroll triggers visibility
-  //
-  // Workaround: debounce handler
-  // https://stackoverflow.com/questions/69292201/how-to-prevent-intersection-observer-from-firing-when-passing-over-elements-quic
-  // adapt:
-  // - debounce activating external image feed causing layout shift
-  // - debounce micro animations to prevent firing them too early
-  // - (no need to debounce adding click handlers to allow buttons)
 }
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
   var observer = new IntersectionObserver(intersectionCallback, observerOptions);
@@ -243,76 +209,61 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 5000);
   }
 
-  // var sliders=[];
-  var sliderContainers = document.getElementsByClassName('testimonials__sliderwrapper');
+  var sliderContainers = document.getElementsByClassName(sliderWrapperClassName);
   for (var l=0; l < sliderContainers.length; l++) {
     var currentTinySliderOptions = tinySliderOptions;
     currentTinySliderOptions.container = sliderContainers[l];
-    // sliders[l] = tns(currentTinySliderOptions);
     tns(currentTinySliderOptions);
     sliderContainers[l].addEventListener('mousedown', function(event) {
       var target = /** @type {HTMLElement} */ event.currentTarget;
-      target.classList.remove('testimonials__sliderwrapper--has-teaser');
+      target.classList.remove(sliderWrapperShowingTeaserClassName);
     }, { once: true });
 
     /* mousedown event seems to be prevented by slider library touch handler */
     sliderContainers[l].addEventListener('touchmove', function(event) {
       var eventTarget =  /** @type {HTMLElement} */ event.target;
-      var target = eventTarget.closest('.testimonials__sliderwrapper');
-      target.classList.remove('testimonials__sliderwrapper--has-teaser');
+      var target = eventTarget.closest('.' + sliderWrapperClassName);
+      target.classList.remove(sliderWrapperShowingTeaserClassName);
     }, { once: true });
   }
 
-  // emulate ::stuck pseudo class to style sticky header element based on sticky state
-  var stickyHeader = document.getElementById('header');
+  var stickyHeaderId = 'header';
+  var stuckClassName = 'stuck'; // emulate ::stuck pseudo class for sticky header styling
+
+  var stickyHeader = document.getElementById(stickyHeaderId);
   if (stickyHeader) {
-    const observer = new IntersectionObserver(
+    var stickyObserver = new IntersectionObserver(
       function(intersectingEntries) {
-        intersectingEntries[0].target.classList.toggle("stuck", intersectingEntries[0].intersectionRatio < 1);
+        intersectingEntries[0].target.classList.toggle(stuckClassName, intersectingEntries[0].intersectionRatio < 1);
       },
       { threshold: [1] }
     );
-    observer.observe(stickyHeader);
+    stickyObserver.observe(stickyHeader);
   }
 
   // progressive enhancement for navigation menu behavior
-  // TODO diesen ganzen Kram in Funktionen auslagern damit wir auch in ES5 functional scoped variables haben for (var...)
-  // TODO ohne die erwünschten globals zu zerstören
-
-
-
-  var menuOpenButtons = document.getElementsByClassName('main-menu__button--open');
+  var menuOpenButtons = document.getElementsByClassName(menuOpenButtonClassName);
   for (var m = 0; m < menuOpenButtons.length; m++) {
     menuOpenButtons[m].addEventListener('click', function(event) {
       event.preventDefault();
-      console.log('event listener ', event);
       var menuOpenButton = /** @type {HTMLElement} */ event.currentTarget;
       var menuId = /** @type {String} */ menuOpenButton.hash.substring(1);
       var menu = document.getElementById(menuId);
-      console.log(`got menu element by id (${menuId})`, menu);
-      menu.classList.add('target');
-      console.log('handled menu.target', menu);
-      // #target => target => document.getElementById => set class && prevent default
-      // dto close button set class
+      menu.classList.add(menuOpenClassName);
     });
-    console.log('added event listener to ',menuOpenButtons[m]);
   }
-  var menuCloseButtons = document.getElementsByClassName('main-menu__button--close');
-  console.log('menuCloseButtons', menuCloseButtons);
+  var menuCloseButtons = document.getElementsByClassName(menuCloseButtonClassName);
   for (var n = 0; n < menuCloseButtons.length; n++) {
     menuCloseButtons[n].addEventListener('click', function(event) {
       event.preventDefault();
-      var menu = event.currentTarget.closest('.main-menu__nav-wrapper');
-      menu.classList.remove('target');
+      var menu = event.currentTarget.closest('.' + mainMenuNavWrapperSelector);
+      menu.classList.remove(menuOpenClassName);
       var navLinks = menu.querySelectorAll('nav a[href]');
       for (var o = 0; o < navLinks.length; o++) {
         navLinks[o].addEventListener('click', function(event) {
-          menu.classList.remove('target');
+          menu.classList.remove(menuOpenClassName);
         });
       }
     });
   }
-  // close handler on click close X: close and prevent default,
-  //               on click any link: close and proceed
-  //               on click outside: close
 });
