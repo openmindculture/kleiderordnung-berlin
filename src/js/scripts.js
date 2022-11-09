@@ -26,6 +26,10 @@ var menuCloseButtonClassName = 'main-menu__button--close';
 var menuOpenClassName = 'target'; // .target for progressive enhancement of :target
 var mainMenuNavWrapperSelector = 'main-menu__nav-wrapper'; // select parent menu from descendant button handler
 
+var stickyHeaderId = 'header';
+var stuckClassName = 'stuck'; // emulate ::stuck pseudo class for sticky header styling
+var root = document.querySelector(':root'); // to update actual header height to fix anchor positions
+
 /** type {number[]} TimeoutID for DOM element ID to prevent redundant checks and involuntary smooth scroll side effect */
 var observableTimeoutsByTargetElementId = [];
 var genericIdCounter = 0;
@@ -227,14 +231,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { once: true });
   }
 
-  var stickyHeaderId = 'header';
-  var stuckClassName = 'stuck'; // emulate ::stuck pseudo class for sticky header styling
-
   var stickyHeader = document.getElementById(stickyHeaderId);
   if (stickyHeader) {
+    root.style.setProperty('--header-height', '' + stickyHeader.offsetHeight + 'px');
     var stickyObserver = new IntersectionObserver(
       function(intersectingEntries) {
-        intersectingEntries[0].target.classList.toggle(stuckClassName, intersectingEntries[0].intersectionRatio < 1);
+        var isStuck = intersectingEntries[0].intersectionRatio < 1;
+        intersectingEntries[0].target.classList.toggle(stuckClassName, isStuck);
+        if (isStuck) {
+          root.style.setProperty('--header-height--stuck', '' + stickyHeader.offsetHeight + 'px');
+        }
       },
       { threshold: [1] }
     );
@@ -258,12 +264,13 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault();
       var menu = event.currentTarget.closest('.' + mainMenuNavWrapperSelector);
       menu.classList.remove(menuOpenClassName);
-      var navLinks = menu.querySelectorAll('nav a[href]');
-      for (var o = 0; o < navLinks.length; o++) {
-        navLinks[o].addEventListener('click', function(event) {
-          menu.classList.remove(menuOpenClassName);
-        });
-      }
+    });
+  }
+  var navLinks = document.querySelectorAll('nav a[href]');
+  for (var o = 0; o < navLinks.length; o++) {
+    navLinks[o].addEventListener('click', function(event) {
+      var menu = event.currentTarget.closest('.' + mainMenuNavWrapperSelector);
+      menu.classList.remove(menuOpenClassName);
     });
   }
 });

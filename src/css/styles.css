@@ -52,6 +52,9 @@
   --animate-duration: 2s; /* --animate-duration: 2ms; duration like "slow animation" in colorway elementor theme fade in */
   --animate-delay: 0.9s;
 
+  /* header height to prevent anchor links go astray */
+  --header-height: 160px;
+  --header-height--stuck: 0;
 }
 
 /* TODO use PostCSS to convert to color definitions for better backwards compatibility */
@@ -259,13 +262,28 @@ a.main-menu__button--close:link {
 
 /* Don’t Headbutt The Browser Window by Chris Coyer
 /* https://css-tricks.com/hash-tag-links-padding/ */
-.target-offset::before {
+/* http://darktef.github.io/posts/2017-03-offset-html-anchors-for-fixed-header-with-css */
+.target-offset::before,
+:target::before {
   display: block;
   content: " ";
-  margin-top: -160px;
+  /* TODO adjust defaults to actual height, considering responsive multi lines, navigation and shrinking stuck header */
+  /* there are only two different heights for each viewport width */
+  /* those will be updated on document load and/or when adjusting element sizes */
+  /* TODO pseudo element offset height shows up correctly, but page scrolls below anyway still */
   height: 160px;
+  height: var(--header-height);
+  margin-top: -160px;
+  margin-top: calc(-1 * var(--header-height));
   visibility: hidden;
   pointer-events: none;
+}
+
+.header.stuck ~ .target-offset::before {
+  height: 160px;
+  height: var(--header-height--stuck);
+  margin-top: -160px;
+  margin-top: calc(-1 * var(--header-height--stuck));
 }
 
 .main {
