@@ -77,17 +77,17 @@
         font-size: 36px;
       }
     </style>
-    <link rel="stylesheet" media="screen" href="css/styles.css?v=1.1.1" type="text/css">
+    <link rel="stylesheet" media="screen" href="css/styles.css?v=1.2.0" type="text/css">
     <!-- defer loading of optional componets as shown on web.dev -->
     <link rel="preload" media="screen" href="css/animate.min.css?v=4.1.1" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" media="screen" href="css/tiny-slider.css?v=2.9.4" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" media="print" href="css/print.css?v=1.1.1" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" media="print" href="css/print.css?v=1.2.0" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
       <link rel="stylesheet" href="css/animate.min.css?v=4.1.1">
       <link rel="stylesheet" href="css/tiny-slider.css?v=2.9.4">
-      <link rel="stylesheet" media="print" href="css/print.css?v=1.0.3">
+      <link rel="stylesheet" media="print" href="css/print.css?v=1.2.0">
     </noscript>
-    <script src="js/scripts.js?v=1.1.1" type="text/javascript"></script>
+    <script src="js/scripts.js?v=1.2.0" type="text/javascript"></script>
     <script src="js/tiny-slider.js?v=2.9.4" type="text/javascript"></script>
     <meta name="description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
     <meta name="keywords" content="Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit,Stilberatung,Stil,Beratung,Mode,Shopping,einkaufen,kombinieren,aussehen,aufräumen,aussortieren,Kleiderschrank,Check,Begleitung,Berlin">
@@ -116,26 +116,37 @@
     <meta name="msapplication-TileColor" content="#f3ebde">
   </head>
   <body>
-    <div class="page-container" id="top">
-      <header class="header">
+    <div class="page-container target-offset" id="top">
+      <header class="header" id="header">
         <h1>KleiderOrdnung Berlin: nachhaltige Modeberatung</h1>
 
-        <div class="nav-wrapper">
+        <div id="open-menu" class="main-menu__nav-wrapper">
           <nav
             id="main-menu"
-            class="main-menu page-navigation"
+            class="main-menu__navigation page-navigation"
             aria-label="Hauptnavigation"
           >
             <ul>
-              <li><a href="#intro">Hallo!</a></li>
+              <li><a href="#top">Hallo!</a></li>
               <li><a href="#nachhaltige-modeberatung">nachhaltige Modeberatung</a></li>
               <li><a href="#kundinnenstimmen">Kund:innen</a></li>
               <li><a href="#bilder">Bilder</a></li>
               <li><a href="#kontakt">Kontakt</a></li>
             </ul>
           </nav>
+          <a class="main-menu__button--close" title="Navigation schließen" href="#">
+            <svg viewBox="0 0 96 96" width="15" height="15">
+              <polygon fill="currentColor" points="96,14 82,0 48,34 14,0 0,14 34,48 0,82 14,96 48,62 82,96 96,82 62,48 "></polygon>
+            </svg>
+          </a>
         </div>
-
+        <a class="main-menu__button--open" title="Navigation anzeigen" href="#open-menu">
+          <svg viewBox="0 0 100 80" width="15" height="15">
+            <rect fill="currentColor" width="100" height="15" rx="8"></rect>
+            <rect fill="currentColor" y="32" width="100" height="15" rx="8"></rect>
+            <rect fill="currentColor" y="64" width="100" height="15" rx="8"></rect>
+          </svg>
+        </a>
       </header>
       <main class="main">
         <div class="main__images">
@@ -215,8 +226,8 @@
             </p>
           </article>
 
-          <article id="kundinnenstimmen" class="testimonials target-offset">
-            <h2>Kund:innenstimmen</h2>
+          <article class="testimonials ">
+            <h2 id="kundinnenstimmen" class="target-offset">Kund:innenstimmen</h2>
 
             <div class="testimonials__container">
               <div class="testimonials__text testimonials__text--maxi">

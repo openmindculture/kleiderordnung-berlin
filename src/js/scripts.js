@@ -10,12 +10,54 @@ var highContrastClassName = 'contrast--more'; // to be removed from .contrast--v
 
 var allowableClassName = 'allowable--on-visibility'; // triggers consent challenge before external content loading
 var feedCookieKey = 'instafeed'; // name of the cookie set to remember consent
+var feedCookieValue = 'allow'; // default value
+var feedContainerClassName = 'feed__container';
 var feedContainerActiveClassName = 'feed__container--active'; // set to feed container when allowed and loaded
+var feedDataKey = 'allow'; // data key to control the expiry / validity when clicking allow
+var feedDataValueAlways = 'always'; // data value to always allow (as opposed to the session default)
 var feedScriptUrlDataKey = 'scripturl'; // data key which JavaScript to load (absolute or relative to project)
 var feedStyleUrlDataKey = 'styleurl'; // data key which stylesheet to load (absolute or relative to project)
 
+var sliderWrapperClassName = 'testimonials__sliderwrapper';
+var sliderWrapperShowingTeaserClassName = 'testimonials__sliderwrapper--has-teaser';
+
+var menuOpenButtonClassName = 'main-menu__button--open';
+var menuCloseButtonClassName = 'main-menu__button--close';
+var menuOpenClassName = 'target'; // .target for progressive enhancement of :target
+var mainMenuNavWrapperSelector = 'main-menu__nav-wrapper'; // select parent menu from descendant button handler
+
+var stickyHeaderId = 'header';
+var stuckClassName = 'stuck'; // emulate ::stuck pseudo class for sticky header styling
+var root = document.querySelector(':root'); // to update actual header height to fix anchor positions
+
+/** type {number[]} TimeoutID for DOM element ID to prevent redundant checks and involuntary smooth scroll side effect */
+var observableTimeoutsByTargetElementId = [];
+var genericIdCounter = 0;
+
 var isMobileQuery = window.matchMedia('(max-width: 768px)');
 var isMobile = (isMobileQuery && isMobileQuery.matches);
+
+/** @object tiny-slider options */
+var tinySliderOptions = {
+  container: '',
+  items: 1,
+  controls: false,
+  nav: false,
+  mouseDrag: true,
+  gutter: 5,
+  slideBy: 'page',
+  swipeAngle: false,
+  speed: 500,
+  autoplay: false,
+  animateDelay: 2000,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  autoplayResetOnVisibility: true,
+  autoplayButtonOutput: false,
+  preventActionWhenRunning: false,
+  preventScrollOnTouch: 'force',
+  loop: true
+}
 
 /** @object IntersectionObserver options */
 var observerOptions = {
@@ -27,47 +69,77 @@ var observerOptions = {
 /**
  * Observe .animated-on-visibility to add animation class when elements become visible
  * Observe .allowable--on-visibility to activate external feed only if it ever becomes visible
- * @param {Array} intersectingEntries
+ * @param {IntersectionObserverEntry[]} intersectingEntries
  */
 function intersectionCallback(intersectingEntries) {
   for (var j = 0; j < intersectingEntries.length; j++) {
-    if (intersectingEntries[j].isIntersecting && intersectingEntries[j].intersectionRatio > observerOptions.threshold) {
-      var targetElement = intersectingEntries[j].target;
+    var intersectingEntry = intersectingEntries[j];
+    if (intersectingEntry.isIntersecting && intersectingEntry.intersectionRatio > observerOptions.threshold) {
+      var targetElement = /** @type {HTMLElement} */ intersectingEntry.target;
       if (targetElement) {
-        if (targetElement.dataset.animationclass && targetElement.classList) {
-          var datakey = animationClassDataKey;
-          if (isMobile) {
-            datakey = animationClassInColumnDataKey;
-          }
-          if (datakey) {
-            var animationClassName = targetElement.dataset[datakey];
-            if (animationClassName && animationClassName !== "") {
-              targetElement.classList.add(animatingClassName, animationClassName);
+        var targetId = targetElement.id;
+        if (!targetId) {
+          genericIdCounter++;
+          targetId = '_observable' + genericIdCounter;
+          targetElement.id = targetId;
+        }
+        if (!observableTimeoutsByTargetElementId[targetId]) {
+          observableTimeoutsByTargetElementId[targetId] = window.setTimeout(function() {
+            var debouncedEntry = intersectingEntry;
+            var debouncedTarget = /** @type {HTMLElement} */ debouncedEntry.target;
+            if (debouncedEntry.isIntersecting && debouncedEntry.intersectionRatio > observerOptions.threshold) {
+              handleAppearedElement(debouncedTarget);
             }
-          }
+            observableTimeoutsByTargetElementId[debouncedTarget.id] = undefined;
+          }, 1000);
         }
       }
-      if (targetElement.dataset.allowable) {
-        prepareExternalFeed(targetElement);
+    } else {
+      var invisibleTargetElement = intersectingEntries[j].target;
+      if (invisibleTargetElement) {
+        var invisibleTargetId = invisibleTargetElement.id;
+        if (observableTimeoutsByTargetElementId[invisibleTargetId]) {
+          window.clearTimeout(observableTimeoutsByTargetElementId[invisibleTargetId]);
+          observableTimeoutsByTargetElementId[invisibleTargetId] = undefined;
+        }
       }
     }
   }
 }
 
+/** @param {HTMLElement} targetElement */
+function handleAppearedElement(targetElement) {
+  if (targetElement.dataset.animationclass && targetElement.classList) {
+    var datakey = animationClassDataKey;
+    if (isMobile) {
+      datakey = animationClassInColumnDataKey;
+    }
+    if (datakey) {
+      var animationClassName = targetElement.dataset[datakey];
+      if (animationClassName && animationClassName !== '') {
+        targetElement.classList.add(animatingClassName, animationClassName);
+      }
+    }
+  }
+  if (targetElement.dataset.allowable) {
+    prepareExternalFeed(targetElement);
+  }
+}
+
 /**
- * @param feedContainerElement
+ * @param {HTMLElement} feedContainerElement
  */
 function prepareExternalFeed(feedContainerElement) {
   if (
     document.cookie.split(';').some(
       function(item) {
-        return item.trim().startsWith(feedCookieKey + '=allow');
+        return item.trim().startsWith(feedCookieKey + '=' + feedCookieValue);
       }
     )
   ) {
     activateExternalFeed(feedContainerElement);
   } else {
-    var buttonElements = feedContainerElement.querySelectorAll('[data-allow]');
+    var buttonElements = feedContainerElement.querySelectorAll('[data-' + feedDataKey + ']');
     for (var i = 0; i < buttonElements.length; i++) {
       var buttonElement = buttonElements[i];
       buttonElement.addEventListener('click', function() {
@@ -77,14 +149,11 @@ function prepareExternalFeed(feedContainerElement) {
   }
 }
 
-/**
- *
- * @param buttonElement
- */
+/** @param {HTMLElement} buttonElement */
 function allowAndActivateExternalFeed(buttonElement) {
-  var feedContainerElement = buttonElement.closest('.feed__container');
-  var consentCookie = feedCookieKey + '=allow;samesite=strict;secure';
-  if (buttonElement.dataset.allow === 'always') {
+  var feedContainerElement = buttonElement.closest('.' + feedContainerClassName);
+  var consentCookie = feedCookieKey + '=' + feedCookieValue + ';samesite=strict;secure';
+  if (buttonElement.dataset[feedDataKey].allow === feedDataValueAlways) {
     var maxAgeSeconds = 31536000; // 1 year
     consentCookie += ';max-age=' + maxAgeSeconds +  ';';
   } // If neither expires nor max-age specified it will expire at the end of session.
@@ -94,10 +163,7 @@ function allowAndActivateExternalFeed(buttonElement) {
   }
 }
 
-/**
- *
- * @param feedContainerElement
- */
+/** @param {HTMLElement} feedContainerElement */
 function activateExternalFeed(feedContainerElement) {
   if (!feedContainerElement) { return; }
   var styleFileUrl = feedContainerElement.dataset[feedStyleUrlDataKey];
@@ -121,33 +187,6 @@ function activateExternalFeed(feedContainerElement) {
   }
   if (feedContainerElement && feedContainerElement.classList) {
     feedContainerElement.classList.add(feedContainerActiveClassName);
-  }
-  window.setTimeout(ensureScrolledToAnchorPosition(), 1000);
-  // ^ happens to early, how to wait until feed is loaded?
-  // or else do we know the expected container height?
-  // but we do not want to make an empty placeholder in that height
-  //
-  // IntersectionObserver vs. SmoothScroll: bypass scroll triggers visibility
-  //
-  // Workaround: debounce handler
-  // https://stackoverflow.com/questions/69292201/how-to-prevent-intersection-observer-from-firing-when-passing-over-elements-quic
-  // adapt:
-  // - debounce activating external image feed causing layout shift
-  // - debounce micro animations to prevent firing them too early
-  // - (no need to debounce adding click handlers to allow buttons)
-}
-
-/**
- * loading external content might trigger layout shift, so
- * we might need to jump back to a navigation trigger explicitly
- */
-function ensureScrolledToAnchorPosition() {
-  if (window.location.hash) {
-    var target = document.querySelector(window.location.hash);
-    if (target) {
-      target.scrollIntoView();
-      console.log('smoothly scrolled to target ' + window.location.hash + ' (again)');
-    }
   }
 }
 
@@ -174,44 +213,64 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 5000);
   }
 
-  /** @object tiny-slider options */
-  var tinySliderOptions_default = {
-    container: '',
-    items: 1,
-    controls: false,
-    nav: false,
-    mouseDrag: true,
-    gutter: 5,
-    slideBy: 'page',
-    swipeAngle: false,
-    speed: 500,
-    autoplay: false,
-    animateDelay: 2000,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    autoplayResetOnVisibility: true,
-    autoplayButtonOutput: false,
-    preventActionWhenRunning: false,
-    preventScrollOnTouch: 'force',
-    loop: true
-  }
-
-  var sliders=[];
-  var sliderContainers = document.getElementsByClassName('testimonials__sliderwrapper');
+  var sliderContainers = document.getElementsByClassName(sliderWrapperClassName);
   for (var l=0; l < sliderContainers.length; l++) {
-    var tinySliderOptions = tinySliderOptions_default;
-    tinySliderOptions.container = sliderContainers[l];
-    sliders[l] = tns(tinySliderOptions);
+    var currentTinySliderOptions = tinySliderOptions;
+    currentTinySliderOptions.container = sliderContainers[l];
+    tns(currentTinySliderOptions);
     sliderContainers[l].addEventListener('mousedown', function(event) {
       var target = /** @type {HTMLElement} */ event.currentTarget;
-      target.classList.remove('testimonials__sliderwrapper--has-teaser');
+      target.classList.remove(sliderWrapperShowingTeaserClassName);
     }, { once: true });
 
     /* mousedown event seems to be prevented by slider library touch handler */
     sliderContainers[l].addEventListener('touchmove', function(event) {
       var eventTarget =  /** @type {HTMLElement} */ event.target;
-      var target = eventTarget.closest('.testimonials__sliderwrapper');
-      target.classList.remove('testimonials__sliderwrapper--has-teaser');
+      var target = eventTarget.closest('.' + sliderWrapperClassName);
+      target.classList.remove(sliderWrapperShowingTeaserClassName);
     }, { once: true });
+  }
+
+  var stickyHeader = document.getElementById(stickyHeaderId);
+  if (stickyHeader) {
+    root.style.setProperty('--header-height', '' + stickyHeader.offsetHeight + 'px');
+    var stickyObserver = new IntersectionObserver(
+      function(intersectingEntries) {
+        var isStuck = intersectingEntries[0].intersectionRatio < 1;
+        intersectingEntries[0].target.classList.toggle(stuckClassName, isStuck);
+        if (isStuck) {
+          root.style.setProperty('--header-height--stuck', '' + stickyHeader.offsetHeight + 'px');
+        }
+      },
+      { threshold: [1] }
+    );
+    stickyObserver.observe(stickyHeader);
+  }
+
+  // progressive enhancement for navigation menu behavior
+  var menuOpenButtons = document.getElementsByClassName(menuOpenButtonClassName);
+  for (var m = 0; m < menuOpenButtons.length; m++) {
+    menuOpenButtons[m].addEventListener('click', function(event) {
+      event.preventDefault();
+      var menuOpenButton = /** @type {HTMLElement} */ event.currentTarget;
+      var menuId = /** @type {String} */ menuOpenButton.hash.substring(1);
+      var menu = document.getElementById(menuId);
+      menu.classList.add(menuOpenClassName);
+    });
+  }
+  var menuCloseButtons = document.getElementsByClassName(menuCloseButtonClassName);
+  for (var n = 0; n < menuCloseButtons.length; n++) {
+    menuCloseButtons[n].addEventListener('click', function(event) {
+      event.preventDefault();
+      var menu = event.currentTarget.closest('.' + mainMenuNavWrapperSelector);
+      menu.classList.remove(menuOpenClassName);
+    });
+  }
+  var navLinks = document.querySelectorAll('nav a[href]');
+  for (var o = 0; o < navLinks.length; o++) {
+    navLinks[o].addEventListener('click', function(event) {
+      var menu = event.currentTarget.closest('.' + mainMenuNavWrapperSelector);
+      menu.classList.remove(menuOpenClassName);
+    });
   }
 });

@@ -52,6 +52,9 @@
   --animate-duration: 2s; /* --animate-duration: 2ms; duration like "slow animation" in colorway elementor theme fade in */
   --animate-delay: 0.9s;
 
+  /* header height to prevent anchor links go astray */
+  --header-height: 160px;
+  --header-height--stuck: 0;
 }
 
 /* TODO use PostCSS to convert to color definitions for better backwards compatibility */
@@ -93,8 +96,7 @@ blockquote {
 }
 
 html {
-  scroll-behavior: auto; /* smooth causes bypassing layout shift by triggering IntersectionObserver visibility; */
-  scroll-behavior: instant; /* non-standard, see https://kilianvalkhof.com/2022/css-html/preventing-smooth-scrolling-with-javascript/ */
+  scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
@@ -166,42 +168,122 @@ main, .main, p, article, section, .footer {
 .header {
   height: auto;
   margin: 0;
-  top: 0;
+  top: -1px;
   position: sticky;
   background: var(--default-white);
   padding: 1em;
-  z-index: 10     ;
+  padding-bottom: 1em;
+  z-index: 10;
   opacity: 0.96;
+  transition: padding-bottom 2s 0.25s ease-in;
 }
 
-.nav-wrapper {
+.header.stuck {
+  padding-bottom: 0.5em;
+}
+
+.main-menu__nav-wrapper {
   text-align: center;
-  display: none; /* TODO style later */
+  position: relative
 }
 
-.main-menu {
+.main-menu__navigation {
   display: inline-block;
   margin: 0 auto;
 }
 
-.main-menu ul {
+.main-menu__navigation ul {
   display: flex;
   list-style: none;
 }
 
-.main-menu ul li + li {
+.main-menu__navigation ul li {
+  margin-bottom: 0;
+}
+
+.main-menu__navigation ul li + li {
   margin-left: 1em;
+}
+
+a.main-menu__button--open:link,
+a.main-menu__button--close:link {
+  display: none;
+}
+
+@media (max-width: 824px) {
+
+  .main-menu__nav-wrapper {
+    display: none;
+  }
+
+  a.main-menu__button--open:link {
+    display: block;
+    position: absolute;
+    bottom: 0.5em;
+    right: 1em;
+  }
+
+  a.main-menu__button--close:link {
+    display: block;
+    position: absolute;
+    top: -1.5em;
+    right: 0;
+  }
+
+  a.main-menu__button--open:link, a.main-menu__button--close:link {
+    text-decoration: none;
+  }
+
+  .main-menu__nav-wrapper.target ~ a.main-menu__button--open {
+    display: none;
+  }
+
+  .header.stuck .main-menu__nav-wrapper:not(:target):not(.target) {
+    display: none;
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  .main-menu__nav-wrapper:target,
+  .main-menu__nav-wrapper.target {
+    display: block;
+  }
+
+  .header.stuck h1 {
+    font-size: 100%;
+  }
+
+  .main-menu__nav-wrapper ul {
+    flex-direction: column;
+  }
+  .main-menu__nav-wrapper ul li {
+    margin-bottom: 1em;
+  }
 }
 
 /* Don’t Headbutt The Browser Window by Chris Coyer
 /* https://css-tricks.com/hash-tag-links-padding/ */
-.target-offset::before {
+/* http://darktef.github.io/posts/2017-03-offset-html-anchors-for-fixed-header-with-css */
+.target-offset::before,
+:target::before {
   display: block;
   content: " ";
-  margin-top: -160px;
+  /* TODO adjust defaults to actual height, considering responsive multi lines, navigation and shrinking stuck header */
+  /* there are only two different heights for each viewport width */
+  /* those will be updated on document load and/or when adjusting element sizes */
+  /* TODO pseudo element offset height shows up correctly, but page scrolls below anyway still */
   height: 160px;
+  height: var(--header-height);
+  margin-top: -160px;
+  margin-top: calc(-1 * var(--header-height));
   visibility: hidden;
   pointer-events: none;
+}
+
+.header.stuck ~ .target-offset::before {
+  height: 160px;
+  height: var(--header-height--stuck);
+  margin-top: -160px;
+  margin-top: calc(-1 * var(--header-height--stuck));
 }
 
 .main {
@@ -343,8 +425,12 @@ article.testimonials {
   grid-row: 4 / span 5;
   z-index: 3;
   color: #fff;
-  padding: 1em;
   align-self: end;
+}
+
+/* increase specificity to against generic media query padding, TODO refactor this */
+.testimonials .testimonials__text.testimonials__text--vivien {
+  padding: 1em;
 }
 
 .testimonials__text--vivien.contrast--more {
@@ -692,6 +778,7 @@ a:focus, a:hover {
   }
 } */
 
+/* stylelint-disable-next-line no-descending-specificity */
 .contact h2 {
   text-align: center;
   margin-bottom: 0.5em;

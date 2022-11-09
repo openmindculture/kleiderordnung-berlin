@@ -1,5 +1,7 @@
 **/*.js
 **/*.liquid
 vendor/**/*.css
+src/css/tiny-slider.css
+src/css/juicer.io/**/*.css
 node_modules/**/*.*
 dist/**/*.*
