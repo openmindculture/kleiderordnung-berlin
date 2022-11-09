@@ -215,6 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { once: true });
   }
 
+  // emulate ::stuck pseudo class to style sticky header element based on sticky state
   var stickyHeader = document.getElementById('header');
   if (stickyHeader) {
     const observer = new IntersectionObserver(
@@ -225,4 +226,45 @@ document.addEventListener('DOMContentLoaded', function() {
     );
     observer.observe(stickyHeader);
   }
+
+  // progressive enhancement for navigation menu behavior
+  // TODO diesen ganzen Kram in Funktionen auslagern damit wir auch in ES5 functional scoped variables haben for (var...)
+  // TODO ohne die erwünschten globals zu zerstören
+
+
+
+  var menuOpenButtons = document.getElementsByClassName('main-menu__button--open');
+  for (var m = 0; m < menuOpenButtons.length; m++) {
+    menuOpenButtons[m].addEventListener('click', function(event) {
+      event.preventDefault();
+      console.log('event listener ', event);
+      var menuOpenButton = /** @type {HTMLElement} */ event.currentTarget;
+      var menuId = /** @type {String} */ menuOpenButton.hash.substring(1);
+      var menu = document.getElementById(menuId);
+      console.log(`got menu element by id (${menuId})`, menu);
+      menu.classList.add('target');
+      console.log('handled menu.target', menu);
+      // #target => target => document.getElementById => set class && prevent default
+      // dto close button set class
+    });
+    console.log('added event listener to ',menuOpenButtons[m]);
+  }
+  var menuCloseButtons = document.getElementsByClassName('main-menu__button--close');
+  console.log('menuCloseButtons', menuCloseButtons);
+  for (var n = 0; n < menuCloseButtons.length; n++) {
+    menuCloseButtons[n].addEventListener('click', function(event) {
+      event.preventDefault();
+      var menu = event.currentTarget.closest('.main-menu__nav-wrapper');
+      menu.classList.remove('target');
+      var navLinks = menu.querySelectorAll('nav a[href]');
+      for (var o = 0; o < navLinks.length; o++) {
+        navLinks[o].addEventListener('click', function(event) {
+          menu.classList.remove('target');
+        });
+      }
+    });
+  }
+  // close handler on click close X: close and prevent default,
+  //               on click any link: close and proceed
+  //               on click outside: close
 });

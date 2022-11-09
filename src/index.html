@@ -120,10 +120,10 @@
       <header class="header" id="header">
         <h1>KleiderOrdnung Berlin: nachhaltige Modeberatung</h1>
 
-        <div class="nav-wrapper">
+        <div id="open-menu" class="main-menu__nav-wrapper">
           <nav
             id="main-menu"
-            class="main-menu page-navigation"
+            class="main-menu__navigation page-navigation"
             aria-label="Hauptnavigation"
           >
             <ul>
@@ -134,8 +134,19 @@
               <li><a href="#kontakt">Kontakt</a></li>
             </ul>
           </nav>
+          <a class="main-menu__button--close" title="Navigation schließen" href="#">
+            <svg viewBox="0 0 96 96" width="15" height="15">
+              <polygon fill="currentColor" points="96,14 82,0 48,34 14,0 0,14 34,48 0,82 14,96 48,62 82,96 96,82 62,48 "></polygon>
+            </svg>
+          </a>
         </div>
-
+        <a class="main-menu__button--open" title="Navigation anzeigen" href="#open-menu">
+          <svg viewBox="0 0 100 80" width="15" height="15">
+            <rect fill="currentColor" width="100" height="20" rx="8"></rect>
+            <rect fill="currentColor" y="30" width="100" height="20" rx="8"></rect>
+            <rect fill="currentColor" y="60" width="100" height="20" rx="8"></rect>
+          </svg>
+        </a>
       </header>
       <main class="main">
         <div class="main__images">
