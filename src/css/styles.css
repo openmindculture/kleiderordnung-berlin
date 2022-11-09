@@ -760,6 +760,7 @@ a:focus, a:hover {
   }
 } */
 
+/* stylelint-disable-next-line no-descending-specificity */
 .contact h2 {
   text-align: center;
   margin-bottom: 0.5em;
