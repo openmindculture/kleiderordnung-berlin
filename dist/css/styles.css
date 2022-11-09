@@ -224,7 +224,7 @@ main, .main, p, article, section, .footer {
 }
 
 .main__image {
-  max-width: 60%;
+  max-width: 600px;
   height: auto;
   z-index: 3;
 }
@@ -236,6 +236,7 @@ main, .main, p, article, section, .footer {
   font-size: 130%;
   font-family: "Kalam", Handwritten, sans-serif;
   font-weight: 400;
+  max-width: 550px;
 }
 
 .main__intro .hello {
@@ -457,7 +458,7 @@ article.testimonials {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   /* change item order to display intro text below first image */
   .main .main__images {
     display: grid;
@@ -496,18 +497,12 @@ article.testimonials {
     margin-right: 0;
     margin-left: auto; */
   }
-  .main__image {
-    max-width: 600px;
-  }
   .main__image--beside {
     max-width: 500px;
     margin-left: 1em;
   }
   .main__image--below {
     max-width: 400px;
-  }
-  .main__intro {
-    max-width: 550px;
   }
 }
 
