@@ -1,0 +1,28 @@
+{
+	"extends": "stylelint-config-standard",
+	"plugins": [
+		"stylelint-use-nesting"
+	],
+  "rules": {
+    "alpha-value-notation": null,
+    "at-rule-empty-line-before": null,
+    "at-rule-no-unknown": [true,{
+      "ignoreAtRules": ["extend"]
+    }],
+    "color-function-notation": null,
+    "comment-empty-line-before": null,
+    "comment-whitespace-inside": null,
+    "csstools/use-nesting": "ignore",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "keyframes-name-pattern": null,
+    "media-feature-name-no-vendor-prefix": null,
+    "import-notation": null,
+    "property-no-vendor-prefix": null,
+    "rule-empty-line-before": null,
+    "selector-class-pattern": null,
+    "selector-id-pattern": null,
+    "selector-not-notation": null,
+    "shorthand-property-no-redundant-values": null,
+    "value-no-vendor-prefix": null
+  }
+}

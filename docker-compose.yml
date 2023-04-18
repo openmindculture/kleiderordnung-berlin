@@ -1,0 +1,73 @@
+version: "3"
+
+services:
+  db:
+    image: mysql:5.7
+    restart: on-failure:3
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+
+  wordpress:
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: docker/WordPress.Dockerfile
+    ports:
+      - "1234:80"
+    restart: on-failure:3
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_TABLE_PREFIX: "wp_"
+      WORDPRESS_DEBUG: 1
+      UPLOAD_LIMIT: 64M
+    # shared volumes
+    volumes:
+      - "./wp_data:/var/www/html"
+      - "./themes:/var/www/html/wp-content/themes:rw"
+      - "./mu-plugins:/var/www/html/wp-content/mu-plugins:rw"
+      # increase allowed upload file size so that we can import shop data:
+      - ./docker/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      # uncomment/modify the following line to plugin code available for local search/debugging:
+      # - ./plugins/:/var/www/html/wp-content/plugins
+
+
+  wordpress-cli:
+    depends_on:
+      - db
+      - wordpress
+    links:
+      - db
+    image: wordpress:cli
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_TABLE_PREFIX: "wp_"
+      WORDPRESS_DEBUG: 1
+    command: []
+    entrypoint: []
+    # This is required to run wordpress-cli with the same
+    # user-id as wordpress. This way there are no permission problems
+    # when running the cli
+    user: xfs
+    # shared volume
+    volumes:
+      - "./wp_data:/var/www/html"
+      - "./themes:/var/www/html/wp-content/themes:rw"
+      # uncomment/modify the following line to import saved content
+      # - ./content.xml:/var/www/html/content.xml
+
+volumes:
+  db_data:
+  # shared volume
+  wp_data:
