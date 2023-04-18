@@ -17,12 +17,12 @@ This is a classic WordPress theme, without full-page editing or full theme engin
 but allowing the use of blocks and Gutenberg block editor.
 
 The page structure and design elements are fixed by the theme, based on the main landing page
-which can not be fully editied in the block editor. Instead, custom fields or widgets are provided to ensure
+which can not be fully edited in the block editor. Instead, custom fields or widgets are provided to ensure
 non-destructive editing limited to the intended content type (plain text or partially rich text).
 
 The main index landing page contains most of the content and links / teasers to additional posts and pages:
 - news (blog post items of type `post`)
-- events (optional alternative `event` content type quite similar to blog posts)
+- events (optional alternative `eventpost` content type quite similar to blog posts)
 - privacy (page)
 - imprint (page)
 
