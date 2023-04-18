@@ -62,6 +62,7 @@ Code style follows modern recommendations for HTML, CSS, PHP, and ECMAScript, ig
 
 ## WordPress-Plugins
 
+- Advanced Custom Fields
 - Akismet Anti-Spam Protection (production site only)
 - Complianz | GDPR/CCPA Cookie Consent (if necessary)
 - Contact Form 7
