@@ -66,7 +66,7 @@ async function installPlugins() {
 	return await compose.run(
 		'wordpress-cli',
 		/* specify the technical names (text domain) of plugins to be installed */
-		'wp plugin install --activate advanced-custom-fields complianz-gdpr contact-form-7 flamingo incompatibility-status polylang svg-support',
+		'wp plugin install --activate advanced-custom-fields contact-form-7 flamingo incompatibility-status polylang svg-support',
 		{ cwd: path.join(__dirname), commandOptions: ['--rm'] });
 }
 

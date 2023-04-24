@@ -4,16 +4,19 @@
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "main": "dist/index.html",
   "scripts": {
-    "build": "rm -rf dist/* && cp -r src/* dist && cp node_modules/animate.css/animate.min.css dist/css && cp node_modules/tiny-slider/dist/tiny-slider.css dist/css && cp node_modules/tiny-slider/dist/sourcemaps/*.js.map dist/sourcemaps && mkdir dist/css/sourcemaps && cp node_modules/tiny-slider/dist/sourcemaps/*.css.map dist/css/sourcemaps && cp node_modules/tiny-slider/dist/min/tiny-slider.js dist/js && npm run postCSS && node_modules/html-minifier-cli/bin/htmlmin -o dist/index.html src/index.html",
-    "codeceptjs": "codeceptjs run --steps",
-    "dev": "npm run serve",
-    "eslint": "eslint --ext .js dist",
-    "postCSS": "postcss --verbose src/css/*.css --dir dist",
-    "serve": "npx http-server dist  -p 1234 --cors",
-    "stylelint": "stylelint 'src/css/*.css'",
-    "pretest": "npm run eslint && npm run stylelint && npm run build && npm run serve",
-    "test": "npm run codeceptjs",
-    "posttest": "pkill -f http-server"
+    "start": "docker-compose restart",
+    "install": "node install-local-environment.js",
+    "postinstall": "docker image prune -f",
+    "stop": "docker-compose stop",
+    "destroy": "docker-compose down -v",
+    "eslint": "eslint --ext .js src",
+    "stylelint": "stylelint src/**/*.css",
+    "prebuild": "rimraf build dist && make-dir dist",
+    "build": "run-s build:core build:postcss",
+    "build:core": "copyfiles -u 1 -e src/**/* src/style.css src/theme.json src/screenshot.jpg src/assets/fonts/* src/assets/svg/* src/*.php themes/twentytwentythree-child",
+    "build:postcss": "postcss src/style.css --config . --no-map --verbose --o themes/twentytwentythree-child/style.css",
+    "build:zip": "zip-build themes/twentytwentythree-child dist --name twentytwentythree-child --template %NAME%-%VERSION%.%EXT%",
+    "watch": "watch \"npm run build:postscss\" src/css"
   },
   "repository": {
     "type": "git",
@@ -25,30 +28,35 @@
     "url": "https://github.com/openmindculture/kleiderordnung-berlin/issues"
   },
   "homepage": "https://www.kleiderordnung-berlin.de/",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "docker-compose": "^0.23.17",
+    "tiny-slider": "^2.9.4"
+  },
   "devDependencies": {
     "@codeceptjs/configure": "^0.10.0",
     "@testomatio/reporter": "^0.7.0",
     "codeceptjs": "^3.3.5",
     "codeceptjs-resemblehelper": "^1.9.6",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.36.0",
     "eslint-plugin-es5": "^1.5.0",
     "html-minifier-cli": "^0.1.0",
-    "http-server": "^14.1.1",
+    "make-dir-cli": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "path": "^0.12.7",
     "playwright": "^1.25.2",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "postcss-css-variables": "^0.18.0",
     "postcss-custom-properties": "^13.1.4",
+    "postcss-extend-rule": "^4.0.0",
     "postcss-import": "^15.1.0",
     "postcss-minify": "^1.1.0",
     "postcss-nesting": "^11.2.2",
-    "postcss-preset-env": "^8.1.0",
-    "puppeteer": "^19.0.0",
+    "rimraf": "^4.1.2",
     "stylelint": "^15.3.0",
-    "stylelint-config-recommended": "^11.0.0"
-  },
-  "dependencies": {
-    "animate.css": "^4.1.1",
-    "tiny-slider": "^2.9.4"
+    "stylelint-config-standard": "^31.0.0",
+    "stylelint-use-nesting": "^4.1.0",
+    "watch": "^1.0.2"
   }
 }

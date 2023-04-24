@@ -20,14 +20,22 @@ The page structure and design elements are fixed by the theme, based on the main
 which can not be fully edited in the block editor. Instead, custom fields or widgets are provided to ensure
 non-destructive editing limited to the intended content type (plain text or partially rich text).
 
-The main index landing page contains most of the content and links / teasers to additional posts and pages:
-- news (blog post items of type `post`)
-- events (optional alternative `eventpost` content type quite similar to blog posts)
-- privacy (page)
-- imprint (page)
+### Content: Widgets, Custom Fields and Post Types
 
-A contact form is provided using the popular Contact Form 7 plugin and the Flamingo add-on to save messages in the
-database. For localized content, a new form needs to be created for each language.
+- **page** (landing page, imprint, privacy, about me)
+  - The main index landing page contains most of the content and links / teasers to additional posts and pages.
+  - Text lines and paragraphs must be editable, probably as **custom fields**, using either plain text or very limited styling like bold, italic, underline, marker, link?
+- **post** (News blog posts)
+- **story** (Stories / Testimonials)
+- **product**
+  - **Taxonomy**: (Haupt-)Angebot vs. weiteres Angebot
+
+A contact form is provided using the popular Contact Form 7 plugin and the Flamingo add-on to save messages in the database. For localized content, a new form needs to be created for each language. Fixed text output by the theme (like contact buttons) we might need a localization file? If it's all but a few button captions, we may be better off with a condition or translation function call in the theme code if possible.
+
+- **page header**
+- **contact form**
+- **Instagram posts**
+- **page footer**
 
 ### Localization
 
@@ -50,6 +58,8 @@ Support and code review: tbd.
 
 The web site's theme, plugin, and example content can be developed and testing using automated screenshot tests, accessibility and performance audits with axe and Lighthouse, and static code quality assistance using eslint, stylelint, SonarLint.
 
+We can use exported (Figma) template graphics instead of screenshots to verify the initial visual expectations.
+
 [CodeceptJS](https://codecept.io/) is used for test automation.
 
 WordPress can be run locally using the provided development server setup using Doker and docker-compose, based on [wp_template_opinionated](https://github.com/openmindculture/wp_template_opinionated/) by [Ingo Steinke](https://www.ingo-steinke.com/).
@@ -62,9 +72,9 @@ Code style follows modern recommendations for HTML, CSS, PHP, and ECMAScript, ig
 
 ## WordPress-Plugins
 
-- Advanced Custom Fields
+- Advanced Custom Fields (necessary if using mu-plugins?)
 - Akismet Anti-Spam Protection (production site only)
-- Complianz | GDPR/CCPA Cookie Consent (if necessary)
+- Complianz | GDPR/CCPA Cookie Consent (if necessary - not automatically installed, database migration did not work with wp-cli)
 - Contact Form 7
 - Flamingo (save contact forms messages)
 - HTTP-Header zur Verbesserung der Webseiten-Sicherheit
