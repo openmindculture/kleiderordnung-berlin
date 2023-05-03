@@ -1,4 +1,17 @@
-/* TODO postCSS configuration
+/*!
+ Theme Name:   KleiderOrdnung
+ Theme URI:    https://github.com/openmindculture/kleiderordnung-berlin
+ Description:  Theme for WordPress
+ Author:       Ingo Steinke
+ Author URI:   https://www.ingo-steinke.com/
+ Version:      2.0.0
+ License:      proprietary
+ Tags:         Tags: wordpress-theme,wordpress-classic-theme,classic-theme,classic
+ Text Domain:  kleiderordnung
+*/
+
+
+/*! TODO postCSS configuration
  * minify all files
  * include content from imported files
  * replace root variables (custom properties) in subsequent style definitions
@@ -13,24 +26,6 @@
   --citrona: #dbcc7c; /* California Collection CC3 Citrona */
   --palm: #c3cfbb; /* California Collection CC4 Palm */
   --faded-terracotta: #dfb797; /* California Collection CC8 Faded Terracotta */
-
-  /* darker equivalents taken from photography used on the page */
-  /* high contrast alternatives can be removed using allowLowContrast() handle after load */
-  --citrona--darker: #bb9a47; /* like the yellow glasses cases */
-  --citrona--dark: #d2bb75;
-  --citrona--high--contrast: #e2a021;
-
-  --palm--darker: #9ea47d; /* like the garden trees of testimonial V. */
-  --palm--dark: #a6af91;
-  --palm--high--contrast: #a8b26c;
-
-  --sand--darker: #947e62; /* like the darker part of the portrait picture background */
-  --sand--dark: #947e62; /* like the darker part of the portrait picture background */
-  --sand--high--contrast: #966e37;
-
-
-  --cyan--darker: #1eaeb4;  /* darker version of skirt in portrait picture */
-  --cyan--dark:  #2ecbd1;  /* darker version of skirt in portrait picture */
 
   --dark-heart-rose: #ebc8c9;
   --light-heart-rose: #f6e7e6;
@@ -54,7 +49,7 @@
 
   /* header height to prevent anchor links go astray */
   --header-height: 160px;
-  --header-height--stuck: 0;
+  --header-height-stuck: 0;
 }
 
 /* TODO use PostCSS to convert to color definitions for better backwards compatibility */
@@ -102,7 +97,7 @@ html {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizespeed;
   line-height: 1.5;
 }
 
@@ -281,9 +276,9 @@ a.main-menu__button--close:link {
 
 .header.stuck ~ .target-offset::before {
   height: 160px;
-  height: var(--header-height--stuck);
+  height: var(--header-height-stuck);
   margin-top: -160px;
-  margin-top: calc(-1 * var(--header-height--stuck));
+  margin-top: calc(-1 * var(--header-height-stuck));
 }
 
 .main {
@@ -447,7 +442,7 @@ article.testimonials {
   position: absolute;
   bottom: 25%;
   right: 25%;
-  padding: 0.25em 0.5em 0em 0.5em;
+  padding: 0.25em 0.5em 0 0.5em;
   font-weight: 700;
   font-family: "Kalam", Handwritten, sans-serif;
   font-size: 130%;
@@ -616,7 +611,7 @@ article.testimonials {
   }
 }
 
-.main__images:after {
+.main__images::after {
   content: " ";
   clear: left;
   display: block;
@@ -649,7 +644,9 @@ article.testimonials {
 }
 
 @media (max-width: 1200px) {
-  max-width: 99vw;
+  .tos {
+    max-width: 99vw;
+  }
 }
 
 .tos h4 {
@@ -710,40 +707,6 @@ article.testimonials {
   font-size: 1.5rem;
 }
 
-/* TODO refactor using native CSS nesting and https://www.npmjs.com/package/postcss-nesting */
-
-.feature__box:first-child {
-  background-color: var(--citrona--dark);
-  background-color: var(--citrona--darker);
-  background-color: var(--citrona);
-
-}
-
-.feature__box:nth-child(2) {
-  background-color: var(--palm--dark);
-  background-color: var(--palm--darker);
-  background-color: var(--palm);
-
-}
-
-.feature__box:nth-child(3) {
-  background-color: var(--sand--darker);
-  background-color: var(--sand--dark);
-  background-color: var(--cyan--darker);
-  background-color: var(--cyan--dark);
-  background-color: var(--cyan--darker);
-  background-color: var(--sand);
-}
-
-.feature__box.contrast--more:first-child {
-  background-color: var(--citrona--high--contrast);
-}
-.feature__box.contrast--more:nth-child(2) {
-  background-color: var(--palm--high--contrast);
-}
-.feature__box.contrast--more:nth-child(3) {
-  background-color: var(--sand--high--contrast);
-}
 
 .feature__box p {
   margin: 0;

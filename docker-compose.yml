@@ -3,7 +3,6 @@ version: "3"
 services:
   db:
     image: mysql:5.7
-    restart: on-failure:3
     volumes:
       - db_data:/var/lib/mysql
     environment:
@@ -20,7 +19,6 @@ services:
       dockerfile: docker/WordPress.Dockerfile
     ports:
       - "1234:80"
-    restart: on-failure:3
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress

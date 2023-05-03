@@ -72,7 +72,8 @@ Code style follows modern recommendations for HTML, CSS, PHP, and ECMAScript, ig
 
 ## WordPress-Plugins
 
-- Advanced Custom Fields (necessary if using mu-plugins?)
+- Advanced Custom Fields
+  - `mu-plugins/kleiderordnung-content-type` for custom fields and content types (if necessary)
 - Akismet Anti-Spam Protection (production site only)
 - Complianz | GDPR/CCPA Cookie Consent (if necessary - not automatically installed, database migration did not work with wp-cli)
 - Contact Form 7
@@ -85,7 +86,6 @@ Code style follows modern recommendations for HTML, CSS, PHP, and ECMAScript, ig
 - SVG Support
 - TinyPNG – JPEG, PNG & WebP image compression (tiny-compress-images)
 - W3 Total Cache (production site only)
-- `mu-plugins/kleiderordnung-content-type` for custom fields and content types (if necessary)
 
 ## WordPress Theme
 
