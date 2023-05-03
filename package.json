@@ -1,6 +1,6 @@
 {
   "name": "kleiderordnung-berlin",
-  "version": "1.9.0",
+  "version": "2.0.0",
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "main": "dist/index.html",
   "scripts": {
@@ -13,25 +13,27 @@
     "stylelint": "stylelint src/**/*.css",
     "prebuild": "rimraf build dist && make-dir dist",
     "build": "run-s build:core build:postcss",
-    "build:core": "copyfiles -u 1 -e src/**/* src/style.css src/theme.json src/screenshot.jpg src/assets/fonts/* src/assets/svg/* src/*.php themes/twentytwentythree-child",
-    "build:postcss": "postcss src/style.css --config . --no-map --verbose --o themes/twentytwentythree-child/style.css",
-    "build:zip": "zip-build themes/twentytwentythree-child dist --name twentytwentythree-child --template %NAME%-%VERSION%.%EXT%",
-    "watch": "watch \"npm run build:postscss\" src/css"
+    "build:core": "copyfiles -u 1 -e src/**/* src/style.css src/screenshot.jpg src/assets/fonts/* src/assets/svg/* src/*.php src/*.html themes/kleiderordnung",
+    "build:postcss": "postcss src/style.css --config . --no-map --verbose --o themes/kleiderordnung/style.css",
+    "build:zip": "zip-build themes/kleiderordnung dist --name kleiderordnung --template %NAME%-%VERSION%.%EXT%",
+    "watch": "watch \"npm run build:postscss\" src/css",
+    "codeceptjs:default": "codeceptjs run --steps",
+    "codeceptjs:mobile": "MOBILE=true codeceptjs run --steps",
+    "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+    "codeceptjs": "npm run codeceptjs:default && npm run codeceptjs:mobile"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openmindculture/kleiderordnung-berlin.git"
   },
   "author": "Ingo Steinke",
-  "license": "UNLICENSED",
+  "license": "proprietary",
   "bugs": {
     "url": "https://github.com/openmindculture/kleiderordnung-berlin/issues"
   },
   "homepage": "https://www.kleiderordnung-berlin.de/",
   "dependencies": {
-    "animate.css": "^4.1.1",
-    "docker-compose": "^0.23.17",
-    "tiny-slider": "^2.9.4"
+    "animate.css": "^4.1.1"
   },
   "devDependencies": {
     "@codeceptjs/configure": "^0.10.0",
@@ -39,6 +41,7 @@
     "codeceptjs": "^3.3.5",
     "codeceptjs-resemblehelper": "^1.9.6",
     "copyfiles": "^2.4.1",
+    "docker-compose": "^0.24.0",
     "eslint": "^8.36.0",
     "eslint-plugin-es5": "^1.5.0",
     "html-minifier-cli": "^0.1.0",
@@ -53,6 +56,7 @@
     "postcss-import": "^15.1.0",
     "postcss-minify": "^1.1.0",
     "postcss-nesting": "^11.2.2",
+    "puppeteer": "^20.0.0",
     "rimraf": "^5.0.0",
     "stylelint": "^15.3.0",
     "stylelint-config-standard": "^33.0.0",

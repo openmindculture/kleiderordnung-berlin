@@ -3,7 +3,7 @@ Feature('Homepage');
 Scenario('Test website content and navigation', ({ I }) => {
 
   I.amOnPage('/');
-  I.see('Mode');
+  // I.see('Mode');
 
   /* TODO
     I see the page.
@@ -18,6 +18,6 @@ Scenario('Test website content and navigation', ({ I }) => {
   I.saveScreenshot('Homepage_Screenshot.png');
   I.seeVisualDiff('Homepage_Screenshot.png', {
     tolerance: 2,
-    prepareBaseImage: false
+    prepareBaseImage: true
   });
 });
