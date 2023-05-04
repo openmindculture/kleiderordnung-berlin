@@ -2,7 +2,6 @@
   "name": "kleiderordnung-berlin",
   "version": "2.0.0",
   "description": "portfolio website for sustainable stylist Tina Steinke",
-  "main": "dist/index.html",
   "scripts": {
     "start": "docker-compose restart",
     "install": "node install-local-environment.js",
@@ -13,7 +12,7 @@
     "stylelint": "stylelint src/**/*.css",
     "prebuild": "rimraf build dist && make-dir dist",
     "build": "run-s build:core build:postcss",
-    "build:core": "copyfiles -u 1 -e src/**/* src/style.css src/screenshot.jpg src/assets/fonts/* src/assets/svg/* src/*.php src/*.html themes/kleiderordnung",
+    "build:core": "copyfiles -u 1 -e src/**/* src/style.css src/screenshot.png src/assets/fonts/* src/assets/svg/* src/*.php themes/kleiderordnung",
     "build:postcss": "postcss src/style.css --config . --no-map --verbose --o themes/kleiderordnung/style.css",
     "build:zip": "zip-build themes/kleiderordnung dist --name kleiderordnung --template %NAME%-%VERSION%.%EXT%",
     "watch": "watch \"npm run build:postscss\" src/css",

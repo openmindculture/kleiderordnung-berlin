@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="de">
+<!DOCTYPE html><html lang="de"> <!-- TODO replace with proper index file -->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
