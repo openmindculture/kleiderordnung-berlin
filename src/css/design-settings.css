@@ -1,0 +1,58 @@
+:root {
+
+  /** BEGIN ad-hoc demo styles 2023 (1), TODO review, refactor */
+  --breakpoint-lg: 1024px;
+  /** END ad-hoc demo styles 2023 (1) */
+
+  /* Text Styles */
+  --font-family-default: "Henderson Sans", sans-serif; /* TODO use licensed names instead*/
+  --font-family-semibold: "Henderson SansSm"; /* dto. TODO */
+  --font-family-bold: "H"; /* I would also prefer to define a common family name,
+                            * instead of distinct names for each font weight,
+                            * TODO check if that would work and not against best practice */
+  --font-family-heading: "Ivy Mode", serif; /* tODO */
+  --font-family-heading-bold: "Ive Mode Bd", serif; /* TODO */
+  --font-size-48: 48px;
+  --font-size-40: 40px;
+  --font-size-32: 32px;
+  --font-size-28: 28px;
+  --font-size-24: 24px;
+  --font-size-20: 20px;
+  --font-size-17: 17px;
+  --font-size-16: 16px; /* TODO use (r)em instead! We can keep the pixels in the name
+                         * to make it easier to use and verify with Figma designs */
+  --font-size-15: 15px;
+  --font-size-14: 14px;
+
+  /* Color Styles */
+
+  --color-blue-dark-purpleish: #0014d1;
+  --color-orange-dark: #ff9052; /* do we have better names for those colors? */
+  --color-pink-neon: #ff5baa;
+  --color-pink-reddish: #ff5454;
+  --color-turquoise-pastel: #bad2d7;
+  --color-pink-pastel-orangeish: #ffc7b0;
+  --color-pink-pastel-pinkish: #ffb1ce;
+  --color-pink-pastel-salmon: #ffa6a6;
+  --color-sandy-light-grayish: #f5f1ed; /* TODO Rückfrage weil GIMP Colorpicker vom Screenshot f6f1ed liest */
+  --color-sandy-light-pinkish: #f4e9e0;
+  --color-anthracite-dark-purpleish: #5d5781;
+  --color-default-white: #ffffff;
+  --color-default-black: #000000;
+
+  /* Effect Styles */
+  --effect-box-shadow-dropshadow: 60px 64px 74px rgba(0, 0, 0, 0.12);
+
+  /* Export Theme Colors */
+  --color-primary-background: var(--color-sandy-light-grayish);
+  --color-primary-foreground: var(--color-blue-dark-purpleish);
+  --color-neutral-background: transparent;
+
+  /* animate.css library: this changes all the animations globally https://animate.style  */
+  --animate-duration: 2s; /* like "slow animation" in colorway elementor theme fade in */
+  --animate-delay: 0.9s;
+
+  /* header height to prevent anchor links go astray */
+  --header-height: 160px;
+  --header-height-stuck: 0;
+}
