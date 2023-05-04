@@ -23,32 +23,49 @@
   --breakpoint-lg: 1024px;
   /** END ad-hoc demo styles 2023 (1) */
 
-  /* Color Palette Inspiration */
+  /* Text Styles */
+  --font-family-default: "Henderson Sans", sans-serif; /* TODO use licensed names instead*/
+  --font-family-semibold: "Henderson SansSm"; /* dto. TODO */
+  --font-family-bold: "H"; /* I would also prefer to define a common family name,
+                            * instead of distinct names for each font weight,
+                            * TODO check if that would work and not against best practice */
+  --font-family-heading: "Ivy Mode", serif; /* tODO */
+  --font-family-heading-bold: "Ive Mode Bd", serif; /* TODO */
+  --font-size-48: 48px;
+  --font-size-40: 40px;
+  --font-size-32: 32px;
+  --font-size-28: 28px;
+  --font-size-24: 24px;
+  --font-size-20: 20px;
+  --font-size-17: 17px;
+  --font-size-16: 16px; /* TODO use (r)em instead! We can keep the pixels in the name
+                         * to make it easier to use and verify with Figma designs */
+  --font-size-15: 15px;
+  --font-size-14: 14px;
 
-  --tar: #535353; /* California Collection CC1 Tar */
-  --sand: #e2d7c1; /* California Collection CC2 Sand */
-  --citrona: #dbcc7c; /* California Collection CC3 Citrona */
-  --palm: #c3cfbb; /* California Collection CC4 Palm */
-  --faded-terracotta: #dfb797; /* California Collection CC8 Faded Terracotta */
+  /* Color Styles */
 
-  --dark-heart-rose: #ebc8c9;
-  --light-heart-rose: #f6e7e6;
-  --pale-rose: #fef5f8; /* Design Shack Typography Trends 2018 - 2022 */
-  --pale-beige-rose: #f3ebde; /* San Diego Design Week / Julie's Dream von Little Greene */
-
-  --default-white: #ffffff;
+  --color-blue-dark-purpleish: #0014d1;
+  --color-orange-dark: #ff9052; /* do we have better names for those colors? */
+  --color-pink-neon: #ff5baa;
+  --color-pink-reddish: #ff5454;
+  --color-turquoise-pastel: #bad2d7;
+  --color-pink-pastel-orangeish: #ffc7b0;
+  --color-pink-pastel-pinkish: #ffb1ce;
+  --color-pink-pastel-salmon: #ffa6a6;
+  --color-sandy-light-grayish: #f5f1ed; /* TODO Rückfrage weil GIMP Colorpicker vom Screenshot f6f1ed liest */
+  --color-sandy-ligth-pinkish: #f4e9e0;
+  --color-anthracite-dark-purpleish: #5d5781;
+  --color-default-white: #ffffff;
+  --color-default-black: #000000;
 
   /* Export Theme Colors */
-
-  --primary-backround: var(--default-white);
-  --primary-foreground: var(--tar);
-
-  --neutral-background: transparent;
-  --default-border-color: var(--dark-heart-rose);
+  --color-primary-background: var(--color-sandy-light-grayish);
+  --color-primary-foreground: var(--color-blue-dark-purpleish);
+  --color-neutral-background: transparent;
 
   /* animate.css library: this changes all the animations globally https://animate.style  */
-
-  --animate-duration: 2s; /* --animate-duration: 2ms; duration like "slow animation" in colorway elementor theme fade in */
+  --animate-duration: 2s; /* like "slow animation" in colorway elementor theme fade in */
   --animate-delay: 0.9s;
 
   /* header height to prevent anchor links go astray */
@@ -58,22 +75,6 @@
 
 /* TODO use PostCSS to convert to color definitions for better backwards compatibility */
 /* TODO minify CSS and HTML files */
-
-.background-color--sand {
-  background-color: var(--sand) !important;
-}
-
-.background-color--citrona {
-  background-color: var(--citrona) !important;
-}
-
-.background-color--palm {
-  background-color: var(--palm) !important;
-}
-
-.color--white {
-  color: white;
-}
 
 /* reset styles, see https://piccalil.li/blog/a-modern-css-reset/ */
 
@@ -102,18 +103,8 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizespeed;
-  line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, .main__intro {
-  font-family: "Kalam", Handwritten, sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-}
-
-#nachhaltige-modeberatung h2 {
-  text-align: center;
-}
 
 img, picture, svg {
   border: none;
@@ -127,11 +118,6 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-li {
-  margin-bottom: 1em;
-  font-size: 110%;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -150,15 +136,129 @@ li {
   }
 }
 
-/* TODO response fluid font size using css clamp */
-
-main, .main, p, article, section, .footer {
-  background-color: var(--primary-backround);
-  color: var(--primary-foreground);
-  font-size: 103%;
-  letter-spacing: 0.025rem;
-  padding: 0 0.5em 0.5em 0;
+html, body, main, .main, p, article, section, .footer {
+  background-color: var(--color-primary-background);
+  color: var(--color-primary-foreground);
 }
+
+/* TODO move specific combination classes out of :root and use proper BEMIT name and/or elements */
+/* keep utility classes, and add specific alternatives and global elements */
+
+/** BEGIN verified Figma Style block with TODO annotations */
+
+.text-body {
+  font-family: var(--font-family-default);
+  font-weight: 400;
+  font-size: var(--font-size-16);
+  line-height: 140%; /* would that be 1.4 ? is there a best-practice notation? "or 22px" */
+  color: var(--color-default-black);
+}
+
+.text-copy, .text-copy2 { /* identical */
+  font-family: var(--font-family-default);
+  font-weight: 400;
+  font-size: var(--font-size-15); /* property names matching pixel definitions in Figma */
+  line-height: 160%; /* "identical to box height, or 24px" */
+  color: var(--color-default-black);
+}
+
+.text-copy--bold, strong, b {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.text-button-label {
+  font-family: var(--font-family-default); /* TODO default ist nicht 700 */
+  /* oder die Gewichte müssten jeweils gleich heißen,
+   * was aber deren CSS-Beispielen widerspricht.
+   */
+  font-weight: 700;
+  line-height: 14px; /* "identical to box height, or 108%" */
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: var(--font-family-default);
+  font-weight: 700;
+  font-size: var(--font-size-17);
+  line-height: 160%; /* "or 27px" */
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: var(--color-default-black);
+}
+
+h1 { /* TODO reorder in an unsurprising way after finished verifying with Figma */
+  font-family: var(--font-family-heading);
+  font-weight: 400;
+  font-size: var(--font-size-48);
+  line-height: 140%; /* "or 67px" */
+  letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
+  font-style: normal;
+  color: var(--color-default-black);
+}
+
+h3 { /* TODO reorder in an unsurprising way after finished verifying with Figma */
+  font-family: var(--font-family-heading); /* TODO dto. common family names?! */
+  font-weight: 700;
+  font-size: var(--font-size-32);
+  line-height: 130%; /* "identical to box height or 42px" */
+  letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
+  font-style: normal;
+  color: var(--color-default-black);
+}
+
+h4 {
+  font-family: var(--font-family-default); /* TODO dto. common family names?! */
+  font-weight: 700;
+  font-size: var(--font-size-17);
+  line-height: 160%; /* "or 27px" */
+  letter-spacing: -0.5px;
+  font-style: normal;
+  color: var(--color-default-black);
+}
+
+.text-quote {
+  font-family: var(--font-family-heading); /* TODO dto. common family names?! */
+  font-weight: 400;
+  font-size: var(--font-size-20);
+  line-height: 160%; /* "identical to box height or 32px" */
+  letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
+  font-style: normal;
+  color: var(--color-default-black);
+}
+
+/* mobile: tablet / smartphone */
+@media (max-width: 768px) { /* TODO more generic and which one to use */
+  /* TODO match any change to class names and elements above */
+  /* TODO this would be a super SCSS use case - what about postCSS nesting media queries inside classes? */
+  /* probably not, but then again, there isn't a lot and should only change font size values  anyway */
+  .text-quote {
+    font-size: var(--font-size-16);
+  }
+
+  .text-copy, .text-copy2, .text-copy--bold {
+    font-size: var(--font-size-14);
+  }
+
+  h3 {
+    font-size: var(--font-size-28);
+  }
+
+  h1 { /* h1 tablet */
+    font-size: var(--font-size-40);
+  }
+}
+
+/* mobile: smartphone */
+@media (max-width: 555px) { /* TODO more generic and which one to use */
+  h1 { /* h1 smartphone */
+    font-size: var(--font-size-24);
+  }
+}
+
+/** END verified Figma Style block with TODO annotations */
 
 .header {
   height: auto;
@@ -301,38 +401,6 @@ a.main-menu__button--close:link {
   display: block;
 }
 
-.main article.outro {
-  margin-top: 4em;
-}
-
-.main article.outro p {
-  text-align: center;
-  font-family: "Kalam", cursive, sans-serif;
-  font-size: 150%;
-}
-
-a, a:link, a:visited, a:hover, a:active, a:focus {
-  text-decoration: underline;
-  color: var(--primary-foreground);
-}
-
-a:focus, a:hover {
-  text-decoration-color: var(--citrona);
-}
-
-.vcard a.email, .vcard a.email:link, .vcard a.email:visited,
-.vcard a.telephone, .vcard a.telephone:link, .vcard a.telephone:visited,
-.vcard a.url, .vcard a.url:link, .vcard a.url:visited,
-.footer a, .footer a:link, .footer a:visited,
-.vcard .social a, .vcard .social a:link, .vcard .social a:visited {
-  text-decoration: none;
-}
-
-/* stylelint-disable-next-line no-descending-specificity */
-.social a + a {
-  margin-left: 1em;
-}
-
 /* TODO animated color link hover, TODO define marked text color */
 /*
 @supports (background-image:linear-gradient(#222b40,#222b40)) and (transition:all 2s linear) {
@@ -353,12 +421,6 @@ a:focus, a:hover {
   }
 } */
 
-/* stylelint-disable-next-line no-descending-specificity */
-.contact h2 {
-  text-align: center;
-  margin-bottom: 0.5em;
-  margin-top: 1em;
-}
 
 /* visually spaced content that can be copied contiguously */
 .visually-spaced + .visually-spaced::before {
@@ -445,7 +507,7 @@ a:focus, a:hover {
   flex-wrap: wrap;
 }
 
-.columns__column-50 {
+.columns__column-50 { /* TODO use Ina's grid columns instead */
   flex-basis: calc(50% - 0.5rem);
   max-width: 50%;
 }
