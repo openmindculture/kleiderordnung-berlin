@@ -282,7 +282,7 @@ a.main-menu__button--close:link {
 }
 
 /* Screen reader only */
-.sr-only, .visually-hidden {
+.sr-only, .screen-reader-text, .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
