@@ -124,7 +124,30 @@
 
     <p>Beispiel Absatz und Bild: WordPress (Block) Class Names bei Bildern ...</p>
 
+    <h1>H1 IvyMode Regular</h1>
+    <h2>H2 Henderson Sans W00 Bold</h2>
+    <h3>H3 IvyMode Bold</h3>
+    <h4>H4 Henderson Sans W00 Bold</h4>
+
+    <p>Absatz: Henderson Sans W00 Regular</p>
+
+    <p class="text-semibold">Tabs: Henderson Sans W00 SemiBold</p>
+
+    <p>
+      Absatz mit Formatierung:
+      Henderson Sans W00 Regular,
+      <b>Henderson Sans W00 Bold (b)</b> oder
+      <b>Henderson Sans W00 Bold (strong)</b> oder
+      <i>Henderson Sans W00 Regular kursiv (i)</i> oder
+      <em>Henderson Sans W00 Regular kursiv (em)</em> oder
+      <strong><em>Henderson Sans W00 Bold kursiv (strong em)</em></strong>
+    </p>
+
+    <p>
+      Absatz mit Bild
+
     <figure class="wp-block-image size-full"><img decoding="async" width="600" height="80" src="http://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png" data-src="http://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png" alt="Coming Soon" class="wp-image-1804 lazy loaded" data-srcset="https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png 600w, https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded-300x40.png 300w" data-sizes="(max-width: 600px) 100vw, 600px" sizes="(max-width: 600px) 100vw, 600px" srcset="https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png 600w, https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded-300x40.png 300w" data-was-processed="true"></figure>
+    </p>
 
     <p>In den folgenden Absätzen das Kontaktformular und einen Complianz-Code einfügen: auch hier WordPress / Plugin Class Names</p>
 

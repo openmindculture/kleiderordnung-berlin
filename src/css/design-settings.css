@@ -13,13 +13,8 @@
   /** END ad-hoc demo styles 2023 (1) */
 
   /* Text Styles */
-  --font-family-default: "Henderson Sans W00 Regular", sans-serif; /* TODO use licensed names instead*/
-  --font-family-semibold: "Henderson Sans W00 SemiBold"; /* dto. TODO */
-  --font-family-bold: "Henderson Sans W00 Bold"; /* I would also prefer to define a common family name,
-                            * instead of distinct names for each font weight,
-                            * TODO check if that would work and not against best practice */
-  --font-family-heading: "IvyMode Reg", serif; /* tODO */
-  --font-family-heading-bold: "IvyMode Bd", serif; /* TODO */
+  --font-family-default: "Henderson Sans W00", sans-serif;
+  --font-family-heading: "IvyMode", serif;
   --font-size-48: 48px;
   --font-size-40: 40px;
   --font-size-32: 32px;

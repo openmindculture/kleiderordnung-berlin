@@ -17,10 +17,15 @@
    convert, modify or reverse engineer this font software. Please
    contact Type Network with any questions: www.typenetwork.com */
 
+/**! *************************************************************
+These styles are subject to the license agreement(s) provided when you purchased the license(s).
+https://store.typenetwork.com/cart/eula/type-network
+***************************************************************/
+
 /**! Ivy Mode Regular licensed to Martina Steinke by Type Network for KleiderOrdnung.Berlin */
 @font-face {
-  font-family: "IvyMode Reg";
-  font-weight: normal;
+  font-family: "IvyMode";
+  font-weight: 400; /* normal */
   font-style: normal;
   font-display: swap;
   src:
@@ -29,48 +34,33 @@
 
 /**! Ivy Mode Bold licensed to Martina Steinke by Type Network for KleiderOrdnung.Berlin */
 @font-face {
-  font-family: "IvyMode Bd";
-  font-weight: normal;
+  font-family: "IvyMode";
+  font-weight: 700; /* bold */
   font-style: normal;
   font-display: swap;
   src: url("<?php echo get_template_directory_uri() ?>/fonts/17ae_vdef_emp_8839.woff2?45711c4b8486ec30fae30fb185b8d8b9bb1d822f") format("woff2");
 }
 
-/***************************************************************!
-These styles are subject to the license agreement(s) provided when you purchased the license(s).
-https://store.typenetwork.com/cart/eula/type-network
-***************************************************************/
-.ivymoderegular {
-  font-family: "IvyMode Reg", serif;
-  font-style: normal;
-  font-weight: 400; /* normal */
-}
-.ivymodebold {
-  font-family: "IvyMode Bd", "IvyMode Reg", serif;
-  font-style: normal;
-  font-weight: 400; /* normal */
-}
-
 /**! Henderson Sans licensed to Martina Steinke by Monotype FontShop for KleiderOrdnung.Berlin */
 @font-face{
-  font-family:"Henderson Sans W00 Regular";
-  font-weight: 100 400;
+  font-family:"Henderson Sans W00";
+  font-weight: 100 400; /* Regular / normal */
   font-display: swap;
   src:
     url("<?php echo get_template_directory_uri() ?>/fonts/1be57243-bc0a-482e-a7f4-0c95f5fd6930.woff2") format("woff2"),
     url("<?php echo get_template_directory_uri() ?>/fonts/26380e33-0025-4b50-b82b-e20bea9205af.woff") format("woff");
 }
 @font-face{
-  font-family:"Henderson Sans W00 SemiBold";
-  font-weight: 500 600;
+  font-family:"Henderson Sans W00";
+  font-weight: 500 600; /* SemiBold */
   font-display: swap;
   src:
     url("<?php echo get_template_directory_uri() ?>/fonts/23c3a7e2-fd1b-4416-8d19-bf7e93f3c50c.woff2") format("woff2"),
     url("<?php echo get_template_directory_uri() ?>/fonts/a30ed0f8-46e4-46d8-ac79-1234482c780b.woff") format("woff");
 }
 @font-face{
-  font-family:"Henderson Sans W00 Bold";
-  font-weight: 700 900;
+  font-family:"Henderson Sans W00";
+  font-weight: 700 900; /* Bold */
   font-display: swap;
   src:
     url("<?php echo get_template_directory_uri() ?>/fonts/1abe8255-18cb-4cb2-8d6c-f6973e71dda4.woff2") format("woff2"),

@@ -35,9 +35,12 @@ html, body, main, .main, p, article, section, .footer {
 /* TODO move specific combination classes out of :root and use proper BEMIT name and/or elements */
 /* keep utility classes, and add specific alternatives and global elements */
 
+.text-semibold {
+  font-weight: 600;
+}
 /** BEGIN verified Figma Style block with TODO annotations */
 
-.text-body {
+html, body, main, p, .text-body {
   font-family: var(--font-family-default);
   font-weight: 400;
   font-size: var(--font-size-16);
