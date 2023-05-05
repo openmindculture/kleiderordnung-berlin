@@ -93,5 +93,4 @@ Code style follows modern recommendations for HTML, CSS, PHP, and ECMAScript, ig
 
 ### Add-Ons / Libraries
 
-- Animate.css (if necessary)
-- Lottie (if necessary)
+- Lottie Player

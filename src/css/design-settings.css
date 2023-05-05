@@ -51,10 +51,6 @@
   --color-primary-foreground: var(--color-blue-dark-purpleish);
   --color-neutral-background: transparent;
 
-  /* animate.css library: this changes all the animations globally https://animate.style  */
-  --animate-duration: 2s; /* like "slow animation" in colorway elementor theme fade in */
-  --animate-delay: 0.9s;
-
   /* header height to prevent anchor links go astray */
   --header-height: 160px;
   --header-height-stuck: 0;

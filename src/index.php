@@ -28,12 +28,12 @@
 
   <link rel="stylesheet" media="screen" href="<?php echo get_template_directory_uri() ?>/style.css?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>" type="text/css">
   <!-- defer loading of optional components as shown on web.dev -->
-  <link rel="preload" media="screen" href="<?php echo get_template_directory_uri() ?>/css/animate.min.css?v=4.1.1" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" media="print" href="<?php echo get_template_directory_uri() ?>/css/print.css?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/animate.min.css?v=4.1.1">
   </noscript>
   <script src="<?php echo get_template_directory_uri() ?>/js/scripts.js?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>" type="text/javascript"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/js/lottie-player.js?v=1.7.1" type="text/javascript"></script>
   <meta name="description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
   <meta name="keywords" content="Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit,Stilberatung,Stil,Beratung,Mode,Shopping,einkaufen,kombinieren,aussehen,aufräumen,aussortieren,Kleiderschrank,Check,Begleitung,Berlin">
   <!-- TODO check and adapt all header and social attribute values! -->
@@ -105,14 +105,25 @@
 
 
 <main id="wp--skip-link--target">
+  <!-- start stopped and activate on JS only -->
+  <lottie-player
+    autoplay
+    loop
+    mode="normal"
+    src="<?php echo get_template_directory_uri() ?>/lottie/data.json"
+    style="width: 90%"
+  >
+  </lottie-player>
 
   <!-- Hero Banner Key Visual Image, TODO: replace using SVG shapes and animated text on a circle -->
+  <!--
   <img
     src="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg" height="581" width="1160"
     srcset="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung@2x.jpg 2x"
     loading="eager"
     alt="Tina Steinke Photography"
   >
+  -->
 
   <div class="wp-block-group has-global-padding is-layout-constrained">
 
@@ -148,6 +159,11 @@
 
     <figure class="wp-block-image size-full"><img decoding="async" width="600" height="80" src="http://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png" data-src="http://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png" alt="Coming Soon" class="wp-image-1804 lazy loaded" data-srcset="https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png 600w, https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded-300x40.png 300w" data-sizes="(max-width: 600px) 100vw, 600px" sizes="(max-width: 600px) 100vw, 600px" srcset="https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png 600w, https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded-300x40.png 300w" data-was-processed="true"></figure>
     </p>
+
+
+    <br clear="all">
+    <br>
+    <br>
 
     <p>In den folgenden Absätzen das Kontaktformular und einen Complianz-Code einfügen: auch hier WordPress / Plugin Class Names</p>
 
