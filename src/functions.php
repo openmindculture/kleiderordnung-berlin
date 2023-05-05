@@ -10,6 +10,10 @@ if ( ! defined ( 'KLEIDERORDNUNG_URI' ) ){
   define( 'KLEIDERORDNUNG_URI', get_template_directory_uri() );
 }
 
+if ( ! defined ( 'KLEIDERORDNUNG_THEME_VERSION' ) ){
+  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.0.2' );
+}
+
 // the following should go to wp-config.php
 define('DISABLE_FSE', true); // disable site editing features like editable template parts TODO not working here
 

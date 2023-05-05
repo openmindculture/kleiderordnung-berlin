@@ -1,4 +1,10 @@
-/* reset styles, see https://piccalil.li/blog/a-modern-css-reset/ */
+/**
+ * Reset Normalize Styles to Reduce Browser Incompatibilities
+ * see https://piccalil.li/blog/a-modern-css-reset/
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
 
 *,
 *::before,

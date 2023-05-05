@@ -1,3 +1,11 @@
+/**
+ * Print Styles for printed documents or PDF Versions
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+
 body,html{
   background:#fff;
   color:#000;
