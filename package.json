@@ -1,6 +1,6 @@
 {
   "name": "kleiderordnung-berlin",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "scripts": {
     "start": "docker-compose restart",
@@ -16,10 +16,11 @@
     "build:postcss": "postcss src/style.css --config . --no-map --verbose --o themes/kleiderordnung/style.css",
     "build:zip": "zip-build themes/kleiderordnung dist --name kleiderordnung --template %NAME%-%VERSION%.%EXT%",
     "watch": "watch \"npm run build:postscss\" src/css",
+    "test": "npm run stylelint && npm run eslint && npm run codeceptjs",
+    "codeceptjs": "npm run codeceptjs:default && npm run codeceptjs:mobile",
     "codeceptjs:default": "codeceptjs run --steps",
     "codeceptjs:mobile": "MOBILE=true codeceptjs run --steps",
-    "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
-    "codeceptjs": "npm run codeceptjs:default && npm run codeceptjs:mobile"
+    "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps"
   },
   "repository": {
     "type": "git",

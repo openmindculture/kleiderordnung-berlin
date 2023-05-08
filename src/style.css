@@ -4,21 +4,40 @@
  Description:  WordPress Classic Theme for KleiderOrdnung.Berlin by Ingo Steinke (web development), Ina Nixdorf (web design), Tina Steinke (requirements)
  Author:       openmindculture
  Author URI:   https://www.ingo-steinke.com/
- Version:      2.0.4
+ Version:      2.1.0
  License:      proprietary
  Tags:         Tags: wordpress-theme,wordpress-classic-theme,classic-theme,classic,fashion,sustainability,webperf
  Text Domain:  kleiderordnung
 */
 
 /* critical css will be imported in HTML header */
-/* @import url("css/critical.css"); */
-/* @import url("css/typography.css"); */
+/* @import url("css/0_critical.css"); */
+/* @import url("css/0_typography.css"); */
 
 /* import css component files (will be combined into single style.css file by postCSS */
-@import url("css/design-settings.css");
-@import url("css/reset.css");
-@import url("css/header.css");
-@import url("css/buttons.css");
+/* -- global settings -- */
+@import url("css/1_colors-design-settings.css");
+@import url("css/1_globals.css");
+@import url("css/1_utility-classes.css");
+/* -- common elements -- */
+@import url("css/a_buttons-links.css");
+@import url("css/a_carousel-slideable.css");
+@import url("css/a_list.css");
+/* -- page sections in alphabetical order -- */
+/* -- TODO move or copy page and header layout rules to critical.css to prevent layout shift */
+@import url("css/m_contact.css");
+@import url("css/m_cookie-consent.css");
+@import url("css/m_footer.css");
+@import url("css/m_header.css");
+@import url("css/m_intro.css");
+@import url("css/m_mission.css");
+@import url("css/m_navigation.css");
+@import url("css/m_offers.css");
+@import url("css/m_socialmedia.css");
+@import url("css/m_stories.css");
+
+/* media specific styles for printer, PDF, etc. will be loaded on demand */
+/* @import url("css/print.css"); */
 
 /*! TODO postCSS configuration
  * minify all files
@@ -29,169 +48,10 @@
 /* TODO use PostCSS to convert to color definitions for better backwards compatibility */
 /* TODO minify CSS and HTML files */
 
-html, body, main, .main, p, article, section, .footer {
-  background-color: var(--color-primary-background);
-  color: var(--color-primary-foreground);
-}
-
 /* TODO move specific combination classes out of :root and use proper BEMIT name and/or elements */
 /* keep utility classes, and add specific alternatives and global elements */
 
-.text-semibold {
-  font-weight: 600;
-}
-
-/* some more 2023 ad hoc styles */
-html, body, main, p {
-  text-align: center; /* TODO verify and move to a more appropriate place */
-}
-lottie-player {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 1160px;
-}
-
-h1.wp-block-post-title {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 918px;
-  color: var(--color-blue-dark-purpleish);
-}
-
-
-/** BEGIN verified Figma Style block with TODO annotations */
-
-html, body, main, p, .text-body {
-  font-family: var(--font-family-default);
-  font-weight: 400;
-  font-size: var(--font-size-16);
-  line-height: 140%; /* would that be 1.4 ? is there a best-practice notation? "or 22px" */
-  color: var(--color-default-black);
-}
-
-.text-copy, .text-copy2 { /* identical */
-  font-family: var(--font-family-default);
-  font-weight: 400;
-  font-size: var(--font-size-15); /* property names matching pixel definitions in Figma */
-  line-height: 160%; /* "identical to box height, or 24px" */
-  color: var(--color-default-black);
-}
-
-.text-copy--bold, strong, b {
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-
-.text-button-label {
-  font-family: var(--font-family-default); /* TODO default ist nicht 700 */
-  /* oder die Gewichte müssten jeweils gleich heißen,
-   * was aber deren CSS-Beispielen widerspricht.
-   */
-  font-weight: 700;
-  line-height: 14px; /* "identical to box height, or 108%" */
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-family: var(--font-family-default);
-  font-weight: 700;
-  font-size: var(--font-size-17);
-  line-height: 160%; /* "or 27px" */
-  letter-spacing: -0.5px;
-  text-transform: uppercase;
-  font-style: normal;
-  color: var(--color-default-black);
-}
-
-h1 { /* TODO reorder in an unsurprising way after finished verifying with Figma */
-  font-family: var(--font-family-heading);
-  font-weight: 400;
-  font-size: var(--font-size-48);
-  line-height: 140%; /* "or 67px" */
-  letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
-  font-style: normal;
-  color: var(--color-default-black);
-}
-
-h3 { /* TODO reorder in an unsurprising way after finished verifying with Figma */
-  font-family: var(--font-family-heading); /* TODO dto. common family names?! */
-  font-weight: 700;
-  font-size: var(--font-size-32);
-  line-height: 130%; /* "identical to box height or 42px" */
-  letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
-  font-style: normal;
-  color: var(--color-default-black);
-}
-
-h4 {
-  font-family: var(--font-family-default); /* TODO dto. common family names?! */
-  font-weight: 700;
-  font-size: var(--font-size-17);
-  line-height: 160%; /* "or 27px" */
-  letter-spacing: -0.5px;
-  font-style: normal;
-  color: var(--color-default-black);
-}
-
-.text-quote {
-  font-family: var(--font-family-heading); /* TODO dto. common family names?! */
-  font-weight: 400;
-  font-size: var(--font-size-20);
-  line-height: 160%; /* "identical to box height or 32px" */
-  letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
-  font-style: normal;
-  color: var(--color-default-black);
-}
-
-/* mobile: tablet / smartphone */
-@media (max-width: 768px) { /* TODO more generic and which one to use */
-  /* TODO match any change to class names and elements above */
-  /* TODO this would be a super SCSS use case - what about postCSS nesting media queries inside classes? */
-  /* probably not, but then again, there isn't a lot and should only change font size values  anyway */
-  .text-quote {
-    font-size: var(--font-size-16);
-  }
-
-  .text-copy, .text-copy2, .text-copy--bold {
-    font-size: var(--font-size-14);
-  }
-
-  h3 {
-    font-size: var(--font-size-28);
-  }
-
-  h1 { /* h1 tablet */
-    font-size: var(--font-size-40);
-  }
-}
-
-/* mobile: smartphone */
-@media (max-width: 555px) { /* TODO more generic and which one to use */
-  h1 { /* h1 smartphone */
-    font-size: var(--font-size-24);
-  }
-}
-
-/** END verified Figma Style block with TODO annotations */
-
-
-.header {
-  height: auto;
-  margin: 0;
-  top: -1px;
-  position: sticky;
-  background: var(--color-default-white);
-  padding: 1em;
-  padding-bottom: 1em;
-  z-index: 10;
-  opacity: 0.96;
-  transition: padding-bottom 2s 0.25s ease-in;
-}
-
-.header.stuck {
-  padding-bottom: 0.5em;
-}
+/* TODO obsolete? */
 
 .main-menu__nav-wrapper {
   text-align: center;
@@ -271,52 +131,6 @@ a.main-menu__button--close:link {
   }
 }
 
-/* Don’t Headbutt The Browser Window by Chris Coyer
-/* https://css-tricks.com/hash-tag-links-padding/ */
-/* http://darktef.github.io/posts/2017-03-offset-html-anchors-for-fixed-header-with-css */
-.target-offset::before,
-:target::before {
-  display: block;
-  content: " ";
-  /* TODO adjust defaults to actual height, considering responsive multi lines, navigation and shrinking stuck header */
-  /* there are only two different heights for each viewport width */
-  /* those will be updated on document load and/or when adjusting element sizes */
-  /* TODO pseudo element offset height shows up correctly, but page scrolls below anyway still */
-  height: 160px;
-  height: var(--header-height);
-  margin-top: -160px;
-  margin-top: calc(-1 * var(--header-height));
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.header.stuck ~ .target-offset::before {
-  height: 160px;
-  height: var(--header-height-stuck);
-  margin-top: -160px;
-  margin-top: calc(-1 * var(--header-height-stuck));
-}
-
-/* Screen reader only */
-.sr-only, .screen-reader-text, .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.hidden, .initially-hidden {
-  display: none;
-}
-
-.initially-hidden:target {
-  display: block;
-}
-
 /* TODO animated color link hover, TODO define marked text color */
 /*
 @supports (background-image:linear-gradient(#222b40,#222b40)) and (transition:all 2s linear) {
@@ -336,38 +150,6 @@ a.main-menu__button--close:link {
     text-decoration-thickness: 0.1em;
   }
 } */
-
-
-/* visually spaced content that can be copied contiguously */
-.visually-spaced + .visually-spaced::before {
-  content: " ";
-  letter-spacing: 0.25rem;
-}
-
-.social svg {
-  height: 2em;
-  width: auto;
-  border-radius: 0.125em;
-}
-
-.vcard {
-  padding: 2.5em 1em 1.5em 1em;
-  background-color: white;
-  text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
-  font-size: 110%;
-  font-style: normal;
-}
-
-.vcard.contrast--more {
-  background-image: none;
-}
-
-.vcard .social {
-  margin: 2em 0 0 0;
-}
-
 
 /* TODO technical SEO and content SEM:
   - [ ] meaningful, unique heading content (not just "about me" or "imprint")
@@ -401,37 +183,11 @@ a.main-menu__button--close:link {
  - [ ] deployment should possibly also cover tests
  */
 
-.animate--on-visibility {
-  /* class will be used by JS intersection observer */
-}
 
-/* fade to pastel contrast unless user prefers high contrast */
-.contrast--varies {
-  transition: color 2s ease-out, background-color 2s ease-out, background-image 2s ease-out;
-}
 
 
 /** TODO: review and remove unnecessary code above;
  *  TODO: review and refactor ad-hoc demo code below;
  *        move component code like .columns* to distinct files;
  */
-
-/* BEGIN ad-hoc demo styles 2023 */
-.columns__column-wrapper {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.columns__column-50 { /* TODO use Ina's grid columns instead */
-  flex-basis: calc(50% - 0.5rem);
-  max-width: 50%;
-}
-
-/* TODO: use case for container queries, using viewport queries only as a fallback if necessary */
-@media (max-width: var(--breakpoint-lg)) { /* TODO is this even necessary when using flex-wrap? */
-  .columns__column-wrapper--lg {
-    flex-direction: column;
-  }
-}
 

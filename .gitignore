@@ -1,7 +1,9 @@
 .env
+.secrets
 docker-compose.override.yml
 node_modules
 vendor
+dist
 
 data
 plugins

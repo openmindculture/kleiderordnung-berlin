@@ -1,0 +1,17 @@
+/**
+ * Intro Section
+ * with Key Visual / Hero / Jumbotron Image Animation, Special Headline, Text Paragraph
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+/* some more 2023 ad hoc styles */
+html, body, main, p {
+  text-align: center; /* TODO verify and move to a more appropriate place */
+}
+.intro__keyvisual__animation {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1160px;
+}

@@ -1,0 +1,41 @@
+/**
+ * Utility Classes
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+/* Screen reader only */
+.sr-only, .screen-reader-text, .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.hidden, .initially-hidden {
+  display: none;
+}
+
+.initially-hidden:target {
+  display: block;
+}
+
+/* visually spaced content that can be copied contiguously */
+.visually-spaced + .visually-spaced::before {
+  content: " ";
+  letter-spacing: 0.25rem;
+}
+
+.animate--on-visibility {
+  /* class will be used by JS intersection observer */
+}
+
+/* fade to pastel contrast unless user prefers high contrast */
+.contrast--varies {
+  transition: color 2s ease-out, background-color 2s ease-out, background-image 2s ease-out;
+}

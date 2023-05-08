@@ -27,14 +27,51 @@ non-destructive editing limited to the intended content type (plain text or part
   - Text lines and paragraphs must be editable, probably as **custom fields**, using either plain text or very limited styling like bold, italic, underline, marker, link?
 - **post** (News blog posts)
 - **story** (Stories / Testimonials)
-- **product**
+- **offer** (not a "product" to avoid conflict with optional shop plugins)
   - **Taxonomy**: (Haupt-)Angebot vs. weiteres Angebot
+
+#### Page Structure
+
+- Header: the (sticky) header bar with logo and main navigation
+- Intro Section
+  - Key Visual (hero image / hero header / jumbotron)
+  - Key Headline
+  - Text Paragraph
+- Offers Section
+  - sub-navigation
+  - offer article (post) (detailed, featured, main)
+    as a WordPress (custom) post, marked up as an <article>
+    with image, main headline, text paragraphs, offer price etc.
+  - (alternative further offers in a smaller card layout)
+- page decoration elements / section decoration elements
+- Mission Section
+- Stories Section
+  - story block quotes with icon, headline, paragraph
+- News Section with text box, call to action text, button
+- Social Media Section: Instagram images and link
+- Contact Section
+  - contact information (vcard)
+  - contact form
+- Footer
+
+#### Common Elements
+
+- Buttons (and call-to-action links in a button-like appearance)
+- Links (in a text-like appearance)
+- Headlines, bold text, and other typographic elements
+- Carousels or similar draggable / slideable elements
+- Lists
+- Icons
+- Card-like grid / flex layouts
+
+
+### Contact Form, Social Media, Dynamic Menu
 
 A contact form is provided using the popular Contact Form 7 plugin and the Flamingo add-on to save messages in the database. For localized content, a new form needs to be created for each language. Fixed text output by the theme (like contact buttons) we might need a localization file? If it's all but a few button captions, we may be better off with a condition or translation function call in the theme code if possible.
 
 - **page header**
-- **contact form**
 - **Instagram posts**
+- **contact form**
 - **page footer**
 
 ### Localization
@@ -92,7 +129,7 @@ Code style follows modern recommendations for HTML, CSS, PHP, and ECMAScript, ig
 - Matomo Analytics (production site only)
 - Polylang
 - SVG Support
-- TinyPNG – JPEG, PNG & WebP image compression (tiny-compress-images)
+  Tinify – TinyPNG – JPEG, PNG & WebP image compression (tiny-compress-images)
 - W3 Total Cache (production site only)
 
 ## WordPress Theme

@@ -1,0 +1,9 @@
+/**
+ * Critical CSS to be imported in HTML header to avoid Layout Shift
+ * apart from web fonts / typography which is handled in typography.css.php
+ * TODO can this be auto-generated successfully?
+ * otherwise add important styles manually
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */

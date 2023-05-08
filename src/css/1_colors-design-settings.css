@@ -5,7 +5,6 @@
  * @author openmindculture
  */
 
-
 :root {
 
   /** BEGIN ad-hoc demo styles 2023 (1), TODO review, refactor */
@@ -38,7 +37,7 @@
   --color-pink-pastel-orangeish: #ffc7b0;
   --color-pink-pastel-pinkish: #ffb1ce;
   --color-pink-pastel-salmon: #ffa6a6;
-  --color-sandy-light-grayish: #f5f1ed; /* TODO Rückfrage weil GIMP Colorpicker vom Screenshot f6f1ed liest */
+  --color-sandy-light-grayish: #f5f1ed; /* default background color */
   --color-sandy-light-pinkish: #f4e9e0;
   --color-anthracite-dark-purpleish: #5d5781;
   --color-default-white: #ffffff;
