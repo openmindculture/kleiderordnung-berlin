@@ -1,34 +1,50 @@
 # KleiderOrdnung Berlin
 
-portfolio website for sustainable stylist Tina Steinke in Berlin,
+A portfolio website for sustainable stylist Tina Steinke in Berlin,
 following up on a previous sustainable style consultancy in Düsseldorf.
 
 - https://kleiderordnung.berlin/ (upcoming)
 - https://www.kleiderordnung-berlin.de/ (classic alternative)
 
-Previous project's website:
-
-- https://www.kleiderordnung-duesseldorf.de/
-
 ## Setup, Structure, Editing
 
-The portfolio website content can be edited and extended using WordPress admin backend.
-This is a classic WordPress theme, without full-page editing or full theme engine support,
-but allowing the use of blocks and Gutenberg block editor.
+The portfolio website content can be edited and extended using the WordPress admin backend. This is a classic WordPress theme, without full-page editing or full theme engine support, but allowing to use the block editor where it might be helfpul.
 
 The page structure and design elements are fixed by the theme, based on the main landing page
 which can not be fully edited in the block editor. Instead, custom fields or widgets are provided to ensure
-non-destructive editing limited to the intended content type (plain text or partially rich text).
+non-destructive editing limited to the intended content type (plain text or rich text with limited markup options).
 
 ### Content: Widgets, Custom Fields and Post Types
 
 - **page** (landing page, imprint, privacy, about me)
   - The main index landing page contains most of the content and links / teasers to additional posts and pages.
-  - Text lines and paragraphs must be editable, probably as **custom fields**, using either plain text or very limited styling like bold, italic, underline, marker, link?
-- **post** (News blog posts)
-- **story** (Stories / Testimonials)
+  - Text lines and paragraphs must be editable, probably as **custom fields**, using either plain text or very limited styling like bold, italic, underline, marker, link:
+    - intro headline
+    - intro text
+    - mission headline
+    - mission text
+    - contact teaser text
 - **offer** (not a "product" to avoid conflict with optional shop plugins)
-  - **Taxonomy**: (Haupt-)Angebot vs. weiteres Angebot
+  - taxonomy: **offer_section** (main | other)
+  - Fields:
+    - post title = main headline
+    - post text = intro text
+    - feature list ("Was du erhältst")
+    - price
+    - price annotation text
+    - post image = main post image (only in main offer section)
+    - post icon
+- **story** ("Stories" / Testimonials)
+  - post title = headline: testimonial name and short description
+  - post text = quotation
+  - post image(s) = main image (and possibly more optional images)
+- **post** ("News" blog posts)
+  - catagory title = over headline
+  - post title = teaser headline / text
+  - post image = main post image
+- (instagram section as juicer feed)
+- (contact form 7 widget via shortcode)
+- (fixed contact information and links below editable contact text)
 
 #### Page Structure
 
