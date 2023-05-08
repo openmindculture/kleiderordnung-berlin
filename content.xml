@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2" created="2023-05-08 07:49" -->
+	<!-- generator="WordPress/6.2" created="2023-05-08 08:25" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Mon, 08 May 2023 07:49:03 +0000</pubDate>
+	<pubDate>Mon, 08 May 2023 08:25:59 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -244,7 +244,7 @@ Die Avatare der Kommentatoren kommen von <a href="https://de.gravatar.com/">Grav
 										<category domain="wp_theme" nicename="twentytwentythree"><![CDATA[twentytwentythree]]></category>
 						</item>
 					<item>
-		<title><![CDATA[Kontaktformular 1]]></title>
+		<title><![CDATA[Kontaktformular deutsch]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=16</link>
 		<pubDate>Mon, 08 May 2023 07:39:25 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
@@ -262,9 +262,25 @@ Die Avatare der Kommentatoren kommen von <a href="https://de.gravatar.com/">Grav
 <label> Deine Nachricht (optional)
     [textarea your-message] </label>
 
-[submit "Senden"]
+[checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkbox class:contact__checkbox--style-visit use_label_element "Style Visit"]
+
+[checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkbox class:contact__checkbox--shopping-tour use_label_element "Shopping Tour"]
+
+[checkbox anfrage-style-visit id:anfrage-online-style-beratung class:contact__checkbox class:contact__checkbox--online-style-beratung use_label_element "Online Styling Beratung"]
+
+[checkbox anfrage-style-visit id:anfrage-start-up-consulting class:contact__checkbox class:contact__checkbox--start-up-consulting use_label_element "Start-Up-Consulting"]
+
+[checkbox anfrage-style-visit id:anfrage-gutschein class:contact__checkbox class:contact__checkbox--gutschein use_label_element "Gutschein"]
+
+[checkbox anfrage-style-visit id:anfrage-ordnung-im-schrank class:contact__checkbox class:contact__checkbox--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
+
+[checkbox anfrage-style-visit id:anfrage-styling-abo class:contact__checkbox class:contact__checkbox--styling-abo use_label_element "Styling-Abo"]
+
+[submit "Absenden"]
+1
 [_site_title] „[your-subject]“
 [_site_title] <wordpress@preview.kleiderordnung-berlin.de>
+[_site_admin_email]
 Von: [your-name] [your-email]
 Betreff: [your-subject]
 
@@ -273,24 +289,23 @@ Nachrichtentext:
 
 -- 
 Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
-[_site_admin_email]
 Reply-To: [your-email]
 
-0
-0
+
+
 
 [_site_title] „[your-subject]“
 [_site_title] <wordpress@preview.kleiderordnung-berlin.de>
+[your-email]
 Nachrichtentext:
 [your-message]
 
 -- 
 Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
-[your-email]
 Reply-To: [_site_admin_email]
 
-0
-0
+
+
 Vielen Dank für deine Nachricht. Sie wurde gesendet.
 Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.
 Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.
@@ -302,13 +317,23 @@ Die Eingabe in diesem Feld ist zu kurz.
 Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.
 Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.
 Die hochzuladende Datei ist zu groß.
-Beim Hochladen der Datei ist ein Fehler aufgetreten.]]></content:encoded>
+Beim Hochladen der Datei ist ein Fehler aufgetreten.
+Bitte gib das Datum im Format YYYY-MM-DD ein.
+Das Datum in diesem Feld ist zu früh.
+Das Datum in diesem Feld ist zu spät.
+Bitte gibt eine Zahl ein.
+Die Zahl in diesem Feld ist zu klein.
+Die Zahl in diesem Feld ist zu groß.
+Die Antwort auf das Quiz ist falsch.
+Bitte gib eine E-Mail-Adresse ein.
+Bitte gib eine URL ein.
+Bitte gib eine Telefonnummer ein.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>16</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-08 09:39:25]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-08 07:39:25]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-05-08 09:39:25]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-05-08 07:39:25]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-05-08 10:23:36]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-08 08:23:36]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[kontaktformular-1]]></wp:post_name>
@@ -332,30 +357,44 @@ Beim Hochladen der Datei ist ein Fehler aufgetreten.]]></content:encoded>
 <label> Deine Nachricht (optional)
     [textarea your-message] </label>
 
-[submit "Senden"]]]></wp:meta_value>
+[checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkbox class:contact__checkbox--style-visit use_label_element "Style Visit"]
+
+[checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkbox class:contact__checkbox--shopping-tour use_label_element "Shopping Tour"]
+
+[checkbox anfrage-style-visit id:anfrage-online-style-beratung class:contact__checkbox class:contact__checkbox--online-style-beratung use_label_element "Online Styling Beratung"]
+
+[checkbox anfrage-style-visit id:anfrage-start-up-consulting class:contact__checkbox class:contact__checkbox--start-up-consulting use_label_element "Start-Up-Consulting"]
+
+[checkbox anfrage-style-visit id:anfrage-gutschein class:contact__checkbox class:contact__checkbox--gutschein use_label_element "Gutschein"]
+
+[checkbox anfrage-style-visit id:anfrage-ordnung-im-schrank class:contact__checkbox class:contact__checkbox--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
+
+[checkbox anfrage-style-visit id:anfrage-styling-abo class:contact__checkbox class:contact__checkbox--styling-abo use_label_element "Styling-Abo"]
+
+[submit "Absenden"]]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:8:{s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:4:"body";s:177:"Von: [your-name] [your-email]
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:19:"[_site_admin_email]";s:4:"body";s:177:"Von: [your-name] [your-email]
 Betreff: [your-subject]
 
 Nachrichtentext:
 [your-message]
 
 -- 
-Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:9:"recipient";s:19:"[_site_admin_email]";s:18:"additional_headers";s:22:"Reply-To: [your-email]";s:11:"attachments";s:0:"";s:8:"use_html";i:0;s:13:"exclude_blank";i:0;}]]></wp:meta_value>
+Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:22:"Reply-To: [your-email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:4:"body";s:122:"Nachrichtentext:
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:122:"Nachrichtentext:
 [your-message]
 
 -- 
-Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:9:"recipient";s:12:"[your-email]";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";i:0;s:13:"exclude_blank";i:0;}]]></wp:meta_value>
+Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:12:{s:12:"mail_sent_ok";s:53:"Vielen Dank für deine Nachricht. Sie wurde gesendet.";s:12:"mail_sent_ng";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:16:"validation_error";s:94:"Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.";s:4:"spam";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:12:"accept_terms";s:93:"Du musst die Bedingungen und Konditionen akzeptieren, bevor du deine Nachricht senden kannst.";s:16:"invalid_required";s:28:"Füll bitte dieses Feld aus.";s:16:"invalid_too_long";s:39:"Die Eingabe in diesem Feld ist zu lang.";s:17:"invalid_too_short";s:39:"Die Eingabe in diesem Feld ist zu kurz.";s:13:"upload_failed";s:64:"Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.";s:24:"upload_file_type_invalid";s:54:"Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.";s:21:"upload_file_too_large";s:37:"Die hochzuladende Datei ist zu groß.";s:23:"upload_failed_php_error";s:52:"Beim Hochladen der Datei ist ein Fehler aufgetreten.";}]]></wp:meta_value>
+		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:53:"Vielen Dank für deine Nachricht. Sie wurde gesendet.";s:12:"mail_sent_ng";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:16:"validation_error";s:94:"Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.";s:4:"spam";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:12:"accept_terms";s:93:"Du musst die Bedingungen und Konditionen akzeptieren, bevor du deine Nachricht senden kannst.";s:16:"invalid_required";s:28:"Füll bitte dieses Feld aus.";s:16:"invalid_too_long";s:39:"Die Eingabe in diesem Feld ist zu lang.";s:17:"invalid_too_short";s:39:"Die Eingabe in diesem Feld ist zu kurz.";s:13:"upload_failed";s:64:"Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.";s:24:"upload_file_type_invalid";s:54:"Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.";s:21:"upload_file_too_large";s:37:"Die hochzuladende Datei ist zu groß.";s:23:"upload_failed_php_error";s:52:"Beim Hochladen der Datei ist ein Fehler aufgetreten.";s:12:"invalid_date";s:45:"Bitte gib das Datum im Format YYYY-MM-DD ein.";s:14:"date_too_early";s:38:"Das Datum in diesem Feld ist zu früh.";s:13:"date_too_late";s:38:"Das Datum in diesem Feld ist zu spät.";s:14:"invalid_number";s:25:"Bitte gibt eine Zahl ein.";s:16:"number_too_small";s:37:"Die Zahl in diesem Feld ist zu klein.";s:16:"number_too_large";s:37:"Die Zahl in diesem Feld ist zu groß.";s:23:"quiz_answer_not_correct";s:36:"Die Antwort auf das Quiz ist falsch.";s:13:"invalid_email";s:34:"Bitte gib eine E-Mail-Adresse ein.";s:11:"invalid_url";s:23:"Bitte gib eine URL ein.";s:11:"invalid_tel";s:33:"Bitte gib eine Telefonnummer ein.";}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
@@ -455,5 +494,5 @@ Ein WordPress-Kommentator]]></content:encoded>
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-05-08 09:49:03 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-05-08 10:25:59 by W3 Total Cache
 -->

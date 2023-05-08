@@ -56,6 +56,14 @@ Support and code review: tbd.
 
 ## Development, Performance, Accessibility, and Testing
 
+Edit source code in `src` files, rebuild and test the theme using `npm run build` and `npm run build:zip`.
+
+Increase theme versions in
+
+- `src/style.css`: `Version:`,
+- `src/functions.php`: `define( 'KLEIDERORDNUNG_THEME_VERSION`,
+- `package.json`: `"version":`
+
 The web site's theme, plugin, and example content can be developed and testing using automated screenshot tests, accessibility and performance audits with axe and Lighthouse, and static code quality assistance using eslint, stylelint, SonarLint.
 
 We can use exported (Figma) template graphics instead of screenshots to verify the initial visual expectations.

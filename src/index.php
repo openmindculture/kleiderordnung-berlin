@@ -180,7 +180,10 @@
       </div>
 
       <div class="columns__column columns__column-50">
-        <!-- BEGIN generated markup by WPCF7 Contact Forms 7 - TODO: replace with plugin shortcode in production site -->
+        <!-- contact 7 form using fixed shortcode (TODO: dynmic first available by language? -->
+        <?php echo do_shortcode( '[contact-form-7 id="16" title="Kontaktformular deutsch"]' ); ?>
+        <!-- BEGIN generated markup by WPCF7 Contact Forms 7 - -->
+        <!--
         <div class="wpcf7 js" id="wpcf7-f1816-p1033-o1" lang="de-DE" dir="ltr">
           <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
           <form action="/#wpcf7-f1816-p1033-o1" method="post" class="wpcf7-form init" aria-label="Kontaktformular" novalidate="novalidate" data-status="init">
@@ -212,6 +215,7 @@
             </p><div class="wpcf7-response-output" aria-hidden="true"></div>
           </form>
         </div>
+        -->
         <!-- END generated markup by WPCF7 Contact Forms 7 -->
       </div>
     </div>
