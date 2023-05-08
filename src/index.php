@@ -119,19 +119,17 @@
         style="width: 90%"
       >
       </lottie-player>
+      <!-- Fallback for users without Lottie Capability or Prefers Reduced Motion: Hero Banner Key Visual Image -->
+      <div class="intro__keyvisual__animation--motionless-fallback">
+        <img
+          src="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg" height="581" width="1160"
+          srcset="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung@2x.jpg 2x"
+          loading="eager"
+          alt="Tina Steinke Photography"
+        >
+      </div>
     </div>
   </section>
-
-
-  <!-- Hero Banner Key Visual Image, TODO: replace using SVG shapes and animated text on a circle -->
-  <!--
-  <img
-    src="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg" height="581" width="1160"
-    srcset="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung@2x.jpg 2x"
-    loading="eager"
-    alt="Tina Steinke Photography"
-  >
-  -->
 
   <div class="wp-block-group has-global-padding is-layout-constrained">
 

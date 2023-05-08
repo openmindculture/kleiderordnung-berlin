@@ -15,3 +15,27 @@ html, body, main, p {
   margin: 0 auto;
   max-width: 1160px;
 }
+
+intro__keyvisual__animation--motionless-fallback {
+  display: none;
+}
+
+/* TODO add feature detection for clients failing to activate Lottie player */
+@media (prefers-reduced-motion: reduce) {
+  .intro__keyvisual__animation {
+    display: none;
+  }
+  .intro__keyvisual__animation--motionless-fallback {
+    display: block;
+  }
+}
+
+body.no-webcomponents .intro__keyvisual__animation,
+body.no-js .intro__keyvisual__animation {
+  display: none;
+}
+
+body.no-webcomponents .intro__keyvisual__animation--motionless-fallback,
+body.no-js .intro__keyvisual__animation--motionless-fallback {
+  display: block;
+}
