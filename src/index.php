@@ -1,4 +1,5 @@
-<!DOCTYPE html><html <?php language_attributes(); ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html"/> <?php language_attributes(); ?>
 <head>
   <meta charset="utf-8">
   <!-- ?php wp_head(); ? -->
@@ -92,7 +93,7 @@
             <li id="menu-item-1856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"><a href="#mission">Mission</a></li>
             <li id="menu-item-1855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1855"><a href="#stories">Stories</a></li>
             <li id="menu-item-1854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1854"><a href="#news">News</a></li>
-            <li id="menu-item-1853" class="button button--primary menu-item menu-item-type-post_type menu-item-object-page menu-item-1853"><a href="#kontakt">Kontakt</a></li>
+            <li id="menu-item-1853" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-1853"><a href="#kontakt">Kontakt</a></li>
             <li id="menu-item-1859-de" class="lang-item lang-item-8 lang-item-de current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-1859-de">
               <a href="/" hreflang="de-DE" lang="de-DE" title="Deutsch">DE</a>/<a href="/en/kleiner-beispiel-content-english" hreflang="en-US" lang="en-US" title="English">EN</a>
             </li>
@@ -129,54 +130,280 @@
         >
       </div>
     </div>
+
+    <div class="intro__keytext">
+      <h1 class="intro__keytext__headline">Goodbye fast-fashion –
+        <br>
+        erlebe Kreativität und Freude mit nachhaltigem Modekonsum!</h1>
+      <p class="intro__keytext__paragraph">
+        Ich bin <strong>Tina Steinke</strong>, begeisterte Second Hand und Vintage Fashionista und helfe Dir dabei, Deine Schönheit und die Deiner Kleidungsstücke im Schrank zur Geltung und Dich zum Strahlen zu bringen!
+      </p><p class="intro__keytext__paragraph">
+        Ich habe selbst einen starken Stil und ein ausgeprägtes Gespür für die besonderen Perlen in der Fülle von Gewöhnlichem! Ob minimalistisch, bunt, mutig, modern, stark, mädchenhaft, androgyn, selbstbewusst – ich kreiere für Dich den Stil, die Ausstrahlung, das Statement, was Du mit Deiner Kleidung ausdrücken möchtest.
+      </p>
+    </div>
+
   </section>
 
-  <div class="wp-block-group has-global-padding is-layout-constrained">
+  <section class"offers">
+    <h2> class="offers_headline">Meine Angebote</h2>
+    <nav class="offers__navigation">
+      <ul>
+        <li>
+          <a href="#angebote-style-visit">Style Visit</a>
+        </li>
+        <li>
+          <a href="#angebote-shopping-tour">Shopping-Tour</a>
+        </li>
+        <li>
+          <a href="#angebote-online-styling-beratung">Online-Styling-Beratung</a>
+        </li>
+        <li>
+          <a href="#outfit-consulting">Outfit Consulting</a>
+        </li>
+      </ul>
+    </nav>
 
-    <h1 class="wp-block-post-title">Goodbye fast-fashion –
-      <br>
-      erlebe Kreativität und Freude mit nachhaltigem Modekonsum!</h1>
-  </div>
+    <article class="offers__offer">
+      <figure class="offers__offer__image">
+        <img
+          src="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg" width="560" height="560"
+          srcset="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung@2x.jpg 2x"
+          loading="lazy"
+          alt="Tina Steinke betrachtet lächelnd Kleidung am Kleiderständer"
+        >
+      </figure>
+      <div class="offers__offer__card">
+        <figure class="offers__offer__icon"></figure>
+          <svg></svg>
+        </figure>
+        <h3 class="offers__offer__headline">Style Visit</h3>
+        <p class="offers__offer__paragraph">
+          Wir treffen uns bei Dir zu Hause und wir gehen gemeinsam Deine Garderobe entsprechend nach Deinen Zielen und Anforderungen durch und mit viel Spaß und Ideenreichtum betrachte ich jedes Stück als Chance und wertvolle Ressource und füge sie zu überraschenden Kombinationen zusammen! Als Ergebnis kannst Du Dich auf eine neue Kollektion im Schrank erfreuen und dies ganz ohne Konsum!
+        </p>
+        <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
+        <ul class="offers__offer__features__list">
+          <li>Kostenloses Vorgespräch</li>
+          <li>tolle Kombinationen, auf die Du so nicht gekommen wärst</li>
+          <li>eine neue Kollektion aus dem eigenen Schrank</li>
+          <li>Definition von Stücken, die besonders gut zu Dir und Deiner Silhouette passen</li>
+          <li>Fotos von Dir und deinen neuen Looks mit anschließendem Stylebook</li>
+          <li>Kleidungsstücke gezielt aussortieren, die Deiner Persönlichkeit nicht entsprechen</li>
+          <li>Wegweiser für Dich, wie du die gewonnenen Erkenntnisse eigenständig umsetzten kannst</li>
+          <li>Empfehlungen für Ergänzungen, wenn sinnvoll</li>
+        </ul>
+        <div class="offers__offer__price">
+          <span class="offers__offer__price__prefix">ab</span>
+          <span class="offers__offer__price__amount">190,-</span>
+          <span class="offers__offer__price__currency">&euro;</span>
+        </div>
+        <ul class="offers__offer__price__annotations">
+          <li>Minimum 2h = 190 Euro</li>
+          <li>jede weitere Stunde = 90 Euro</li>
+        </ul>
+        <a class="button button--primary" href="#kontakt">Kontakt</a>
+      </div>
+    </article>
 
-  <div class="entry-content wp-block-post-content">
-    <h2 class="wp-block-heading">Zwischenüberschrift</h2>
+    <!-- TODO replace the duplicate example below with dynamic content from data loop -->
+    <article class="offers__offer">
+      <figure class="offers__offer__image">
+        <img
+          src="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg" width="560" height="560"
+          srcset="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung@2x.jpg 2x"
+          loading="lazy"
+          alt="Tina Steinke betrachtet lächelnd Kleidung am Kleiderständer"
+        >
+      </figure>
+      <div class="offers__offer__card">
+        <figure class="offers__offer__icon"></figure>
+          <svg></svg>
+        </figure>
+        <h3 class="offers__offer__headline">Style Visit</h3>
+        <p class="offers__offer__paragraph">
+          Wir treffen uns bei Dir zu Hause und wir gehen gemeinsam Deine Garderobe entsprechend nach Deinen Zielen und Anforderungen durch und mit viel Spaß und Ideenreichtum betrachte ich jedes Stück als Chance und wertvolle Ressource und füge sie zu überraschenden Kombinationen zusammen! Als Ergebnis kannst Du Dich auf eine neue Kollektion im Schrank erfreuen und dies ganz ohne Konsum!
+        </p>
+        <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
+        <ul class="offers__offer__features__list">
+          <li>Kostenloses Vorgespräch</li>
+          <li>tolle Kombinationen, auf die Du so nicht gekommen wärst</li>
+          <li>eine neue Kollektion aus dem eigenen Schrank</li>
+          <li>Definition von Stücken, die besonders gut zu Dir und Deiner Silhouette passen</li>
+          <li>Fotos von Dir und deinen neuen Looks mit anschließendem Stylebook</li>
+          <li>Kleidungsstücke gezielt aussortieren, die Deiner Persönlichkeit nicht entsprechen</li>
+          <li>Wegweiser für Dich, wie du die gewonnenen Erkenntnisse eigenständig umsetzten kannst</li>
+          <li>Empfehlungen für Ergänzungen, wenn sinnvoll</li>
+        </ul>
+        <div class="offers__offer__price">
+          <!-- TODO possibly better offer 1 free form text line? -->
+          <span class="offers__offer__price__prefix">ab</span>
+          <span class="offers__offer__price__amount">190,-</span>
+          <span class="offers__offer__price__currency">&euro;</span>
+        </div>
+        <ul class="offers__offer__price__annotations">
+          <li>Minimum 2h = 190 Euro</li>
+          <li>jede weitere Stunde = 90 Euro</li>
+        </ul>
+        <a class="button button--primary" href="#kontakt">Kontakt</a>
+      </div>
+    </article>
 
-    <p>Beispiel Absatz und Bild: WordPress (Block) Class Names bei Bildern ...</p>
+    <div class="offers__additional">
+      <h2> class="offers__additional__headline">Weitere Angebote</h2>
+      <div class="offers__additional__articles">
 
-    <h1>H1 IvyMode Regular</h1>
-    <h2>H2 Henderson Sans W00 Bold</h2>
-    <h3>H3 IvyMode Bold</h3>
-    <h4>H4 Henderson Sans W00 Bold</h4>
+        <article class="offers__additional__offer">
+          <figure class="offers__offer__icon"></figure>
+            <h3 class="offers__offer__headline">Styling-Abo</h3>
+            <p class="offers__offer__paragraph">
+              Du wünscht Dir regelmäßigen Support in Stylingfragen oder nachhaltigen Kaufentscheidungen? Dann sichere Dir meine Aufmerksamkeit durch Dein monatliches Styling-Abo! Beinhaltet sind 5-6 individuelle Anfragen online pro Monat.
+            </p>
+            <div class="offers__offer__price">
+              30,–€ monatl.
+            </div>
+        </article>
 
-    <p>Absatz: Henderson Sans W00 Regular</p>
+        <article class="offers__additional__offer">
+          <figure class="offers__offer__icon"></figure>
+          <h3 class="offers__offer__headline">Meet the Special-Places</h3>
+          <p class="offers__offer__paragraph">
+            Du möchtest gezielt besondere Fashion-Locations kennenlernen? Vintage-Stores, Designerateliers, Fairfashion-Boutiquen? Ich biete Gruppen-Walks zu Berlins besten Adressen in Sachen Mode!
+          </p>
+          <div class="offers__offer__price">
+            3h = 35,- € pro Person
+          </div>
+        </article>
 
-    <p class="text-semibold">Tabs: Henderson Sans W00 SemiBold</p>
+        <article class="offers__additional__offer">
+          <figure class="offers__offer__icon"></figure>
+          <h3 class="offers__offer__headline">Ordnung im Schrank</h3>
+          <p class="offers__offer__paragraph">
+            Schluss mit Chaos im Schrank und dem ewigen „Struggle“ der Outfitsuche am Morgen! Ich strukturiere Deine Garderobe sinnvoll und Du erfreust Dich umso mehr an Deinen Stücken
+          </p>
+          <div class="offers__offer__price">
+            ab 65,–€
+          </div>
+        </article>
 
-    <p>
-      Absatz mit Formatierung:
-      Henderson Sans W00 Regular,
-      <b>Henderson Sans W00 Bold (b)</b> oder
-      <b>Henderson Sans W00 Bold (strong)</b> oder
-      <i>Henderson Sans W00 Regular kursiv (i)</i> oder
-      <em>Henderson Sans W00 Regular kursiv (em)</em> oder
-      <strong><em>Henderson Sans W00 Bold kursiv (strong em)</em></strong>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="mission">
+      <h2 class="mission__headline">Meine Mission</h2>
+      <p class="mission__text">
+        Durch individuelle Stilberatung und den Einsatz fairer Mode möchte ich dazu beitragen, dass Du deiner Persönlichkeit Ausdruck verleihen kannst. Mein Ziel ist es, Kleidung auf eine kreative Art und Weise erlebbar zu machen und dich dabei zu unterstützen, dein Selbstbewusstsein zu stärken.
+      </p>
+  </section>
+
+  <section class="calltoaction">
+    <p class="calltoaction__text">
+      Habe ich Dich neugierig gemacht?
+      Dann buche gern einen kostenlosen Kennenlerntermin!
     </p>
+    <div class="calltoaction__buttonwrapper">
+      <a class="button button--primary" href="#kontakt">
+        Kontakt
+      </a>
+    </div>
+  </section>
 
-    <p>
-      Absatz mit Bild
+  <section class="stories">
+    <h2 class="stories__headline">Stories</h2>
+    <div class="stories__wrapper">
 
-    <figure class="wp-block-image size-full"><img decoding="async" width="600" height="80" src="http://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png" data-src="http://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png" alt="Coming Soon" class="wp-image-1804 lazy loaded" data-srcset="https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png 600w, https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded-300x40.png 300w" data-sizes="(max-width: 600px) 100vw, 600px" sizes="(max-width: 600px) 100vw, 600px" srcset="https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded.png 600w, https://hausordnung.open-mind-culture.org/wp-content/uploads/coming-soon-600-padded-300x40.png 300w" data-was-processed="true"></figure>
-    </p>
+      <!-- Story 1 -->
+      <article class="stories__story">
+        <figure class="stories__story__image">
+          <img>
+        </figure>
+        <blockquote class="stories__story__quote">
+          <author class="stories__story__quote__author">
+            Maxi, Künstlerin, Berlin:
+          </author>
+          <span class="stories__story__quote__text">
+Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.
+          </span>
+        </blockquote>
+      </article>
+
+      <!-- Story 2 -->
+      <article class="stories__story">
+        <figure class="stories__story__image">
+          <img>
+        </figure>
+        <blockquote class="stories__story__quote">
+          <author class="stories__story__quote__author">
+            Maxi, Künstlerin, Berlin:
+          </author>
+          <span class="stories__story__quote__text">
+Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.
+          </span>
+        </blockquote>
+      </article>
+
+      <nav class="stories__navigation">
+        <a class="stories__navigation__prev" href="#prev">zurück</a>
+        <a class="stories__navigation__next" href="#next">vor</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="news"><!-- post-type post -->
+    <h2 class="news__headline">News</h2>
+    <div class="news__wrapper">
+
+      <!-- News 1 -->
+      <article class="news__post">
+        <figure class="news__post__image">
+          <img>
+        </figure>
+        <h3 class="news__post__title">Kategoriename</h3>
+        <p class="stories__story__quote__text">
+          Gute Gespräche und viel zu sehen – unterwegs auf der Green Fashion Fair Berlin
+          </p>
+      </article>
+
+      <!-- News 2 -->
+      <h2 class="news__headline">News</h2>
+      <div class="news__wrapper">
+        <article class="news__post">
+          <figure class="news__post__image">
+            <img>
+          </figure>
+          <h3 class="news__post__title">Kategoriename</h3>
+          <p class="stories__story__quote__text">
+            Gute Gespräche und viel zu sehen – unterwegs auf der Green Fashion Fair Berlin
+          </p>
+        </article>
 
 
-    <br clear="all">
-    <br>
-    <br>
+        <!-- News 3 -->
+        <h2 class="news__headline">News</h2>
+        <div class="news__wrapper">
+          <article class="news__post">
+            <figure class="news__post__image">
+              <img>
+            </figure>
+            <h3 class="news__post__title">Kategoriename</h3>
+            <p class="stories__story__quote__text">
+              Gute Gespräche und viel zu sehen – unterwegs auf der Green Fashion Fair Berlin
+            </p>
+          </article>
 
-    <p>In den folgenden Absätzen das Kontaktformular und einen Complianz-Code einfügen: auch hier WordPress / Plugin Class Names</p>
+          <!-- TODO disable "all news" link in single page mode: -->
+          <a class="news__link" href="#">alle Neuigkeiten</a>
+    </div>
+  </section>
+
+  <section class="socialmedia">
+    <a rel="me" href=""><figure><svg></svg></figure> Kleiderordnung auf instagram</a>
+    TODO reactivate juicer feed
+  </section>
+
+  <section class="contact" id="kontakt">
 
     <div class="columns__column-wrapper columns__column-wrapper--lg">
-      <a name="kontakt" id="kontakt"></a>
 
       <div class="columns__column columns__column-50">
         <!-- BEGIN vcard imprint contact information - TODO: update using rel=me etc. -->
@@ -187,44 +414,10 @@
       <div class="columns__column columns__column-50">
         <!-- contact 7 form using fixed shortcode (TODO: dynmic first available by language? -->
         <?php echo do_shortcode( '[contact-form-7 id="16" title="Kontaktformular deutsch"]' ); ?>
-        <!-- BEGIN generated markup by WPCF7 Contact Forms 7 - -->
-        <!--
-        <div class="wpcf7 js" id="wpcf7-f1816-p1033-o1" lang="de-DE" dir="ltr">
-          <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-          <form action="/#wpcf7-f1816-p1033-o1" method="post" class="wpcf7-form init" aria-label="Kontaktformular" novalidate="novalidate" data-status="init">
-            <div style="display: none;">
-              <input type="hidden" name="_wpcf7" value="1816">
-              <input type="hidden" name="_wpcf7_version" value="5.7.6">
-              <input type="hidden" name="_wpcf7_locale" value="de_DE">
-              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1816-p1033-o1">
-              <input type="hidden" name="_wpcf7_container_post" value="1033">
-              <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-            </div>
-            <p><label> Dein Name<br>
-              <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="name" aria-required="true" aria-invalid="false" value="" type="text" name="your-name"></span> </label>
-            </p>
-            <p><label> Deine E-Mail-Adresse<br>
-              <span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" autocomplete="email" aria-required="true" aria-invalid="false" value="" type="email" name="your-email"></span> </label>
-            </p>
-            <p><label> Betreff<br>
-              <span class="wpcf7-form-control-wrap" data-name="your-subject"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" value="" type="text" name="your-subject"></span> </label>
-            </p>
-            <p><label> Deine Nachricht (optional)<br>
-              <span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="your-message"></textarea></span> </label>
-            </p>
-            <p><span class="wpcf7-form-control-wrap" data-name="anfrage-style-visit"><span class="wpcf7-form-control wpcf7-checkbox contact__checkbox contact__checkbox--style-visit" id="anfrage-style-visit"><span class="wpcf7-list-item first last"><label><input type="checkbox" name="anfrage-style-visit[]" value="Style Visit"><span class="wpcf7-list-item-label">Style Visit</span></label></span></span></span>
-            </p>
-            <p><span class="wpcf7-form-control-wrap" data-name="anfrage-shopping-tour"><span class="wpcf7-form-control wpcf7-checkbox contact__checkbox contact__checkbox--shopping-tour" id="anfrage-shopping-tour"><span class="wpcf7-list-item first last"><label><input type="checkbox" name="anfrage-shopping-tour[]" value="Shopping Tour"><span class="wpcf7-list-item-label">Shopping Tour</span></label></span></span></span>
-            </p>
-            <p><input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Absenden"><span class="wpcf7-spinner"></span>
-            </p><div class="wpcf7-response-output" aria-hidden="true"></div>
-          </form>
-        </div>
-        -->
-        <!-- END generated markup by WPCF7 Contact Forms 7 -->
+
       </div>
     </div>
-
+  </section>
   </div>
 </main>
 

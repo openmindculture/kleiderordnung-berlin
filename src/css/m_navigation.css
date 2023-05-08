@@ -23,7 +23,7 @@
   color: var(--color-blue-dark-purpleish);
 }
 
-.main-nav li:not(.button) a {
+.main-nav li a:not(.button) { /* inside .menu-item--has-button */
   padding-top: 2rem;
 }
 

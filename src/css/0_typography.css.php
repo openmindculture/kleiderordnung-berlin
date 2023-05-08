@@ -101,6 +101,8 @@ html, body, main, p, .text-body {
   text-transform: uppercase;
 }
 
+/* hier bräuchten wir entweder Mixins oder aber Utility Class Names = TODO */
+
 h2 {
   font-family: var(--font-family-default);
   font-weight: 700;

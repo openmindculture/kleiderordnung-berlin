@@ -49,25 +49,26 @@ non-destructive editing limited to the intended content type (plain text or rich
 #### Page Structure
 
 - Header: the (sticky) header bar with logo and main navigation
-- Intro Section
-  - Key Visual (hero image / hero header / jumbotron)
-  - Key Headline
-  - Text Paragraph
-- Offers Section
-  - sub-navigation
-  - offer article (post) (detailed, featured, main)
-    as a WordPress (custom) post, marked up as an <article>
-    with image, main headline, text paragraphs, offer price etc.
-  - (alternative further offers in a smaller card layout)
-- page decoration elements / section decoration elements
-- Mission Section
-- Stories Section
-  - story block quotes with icon, headline, paragraph
-- News Section with text box, call to action text, button
-- Social Media Section: Instagram images and link
-- Contact Section
-  - contact information (vcard)
-  - contact form
+- Main:
+  - Intro Section
+    - Key Visual (hero image / hero header / jumbotron)
+    - Key Headline (h1)
+    - Text Paragraph
+  - Offers Section (h2)
+    - sub-navigation
+    - offer article (post) (detailed, featured, main)
+      as a WordPress (custom) post, marked up as an <article>
+      with image, main headline (h3), text paragraphs, offer price etc.
+    - (alternative further offers in a smaller card layout)
+  - page decoration elements / section decoration elements
+  - Mission Section
+  - Stories Section
+    - story block quotes with icon, headline, paragraph
+  - News Section with text box, call to action text, button
+  - Social Media Section: Instagram images and link
+  - Contact Section
+    - contact information (vcard)
+    - contact form
 - Footer
 
 #### Common Elements
