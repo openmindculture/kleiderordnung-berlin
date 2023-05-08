@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html"/> <?php language_attributes(); ?>
+<html <?php echo get_language_attributes(); ?>
 <head>
   <meta charset="utf-8">
-  <!-- ?php wp_head(); ? -->
+  <!-- ?php echo get_wp_head(); ? -->
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>KleiderOrdnung Berlin: nachhaltige Modeberatung von Tina Steinke</title>
   <meta name=language content="de">
@@ -93,7 +93,7 @@
             <li id="menu-item-1856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"><a href="#mission">Mission</a></li>
             <li id="menu-item-1855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1855"><a href="#stories">Stories</a></li>
             <li id="menu-item-1854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1854"><a href="#news">News</a></li>
-            <li id="menu-item-1853" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-1853"><a href="#kontakt">Kontakt</a></li>
+            <li id="menu-item-1853" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-1853"><a class="button button--primary" href="#kontakt">Kontakt</a></li>
             <li id="menu-item-1859-de" class="lang-item lang-item-8 lang-item-de current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-1859-de">
               <a href="/" hreflang="de-DE" lang="de-DE" title="Deutsch">DE</a>/<a href="/en/kleiner-beispiel-content-english" hreflang="en-US" lang="en-US" title="English">EN</a>
             </li>
@@ -248,7 +248,7 @@
     </article>
 
     <div class="offers__additional">
-      <h2> class="offers__additional__headline">Weitere Angebote</h2>
+      <h2 class="offers__additional__headline">Weitere Angebote</h2>
       <div class="offers__additional__articles">
 
         <article class="offers__additional__offer">

@@ -2,5 +2,6 @@
 [search.exclude]
 node_modules
 dist
+themes
 package.json
 package-lock.json

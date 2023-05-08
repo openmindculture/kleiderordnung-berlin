@@ -16,7 +16,7 @@ html, body, main, p {
   max-width: 1160px;
 }
 
-intro__keyvisual__animation--motionless-fallback {
+.intro__keyvisual__animation--motionless-fallback {
   display: none;
 }
 

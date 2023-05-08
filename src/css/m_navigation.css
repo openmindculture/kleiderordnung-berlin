@@ -5,33 +5,52 @@
  * @author openmindculture
  */
 
-.main-nav ul {
+.main-navigation.has-menu-bar-items { /* TODO refactor class names */
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  background-color: var(--color-primary-background);
+}
+
+@media (min-width: 768px) {
+  .main-navigation.has-menu-bar-items {
+    position: static;
+  }
+}
+
+.main-navigation .sf-menu { /* TODO refactor class names: ul.sf-menu ?! */
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 2rem;
   list-style: none;
 }
 
-.main-nav a {
+.main-nav a:not(.button) {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
   font-size: var(--font-size-13);
+  padding-top: 2rem;
 }
-.main-nav a:link,
-.main-nav a:visited {
+.main-nav a:not(.button):link,
+.main-nav a:not(.button):visited {
   color: var(--color-blue-dark-purpleish);
 }
 
-.main-nav li a:not(.button) { /* inside .menu-item--has-button */
-  padding-top: 2rem;
+@media (min-width: 768px) {
+  .main-navigation .sf-menu { /* TODO refactor class names: ul.sf-menu ?! */
+    flex-direction: row;
+  }
+
+  .menu-toggle[aria-controls="primary-menu"] { /* Button with Icons and Menü Text */
+    display: none; /* TODO refine */
+  }
+
+  /* TODO main-navigation vs. main-nav ???? */
+  .main-navigation.mobile-menu-control-wrapper { /* Button with Icons for mobile Menu */
+    display: none; /* TODO refine */
+  }
 }
 
-.menu-toggle[aria-controls="primary-menu"] { /* Button with Icons and Menü Text */
-  display: none; /* TODO refine */
-}
 
-/* TODO main-navigation vs. main-nav ???? */
-.main-navigation mobile-menu-control-wrapper { /* Button with Icons for mobile Menu */
-  display: none; /* TODO refine */
-}
