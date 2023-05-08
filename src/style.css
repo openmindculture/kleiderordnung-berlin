@@ -17,6 +17,8 @@
 /* import css component files (will be combined into single style.css file by postCSS */
 @import url("css/design-settings.css");
 @import url("css/reset.css");
+@import url("css/header.css");
+@import url("css/buttons.css");
 
 /*! TODO postCSS configuration
  * minify all files
@@ -38,6 +40,25 @@ html, body, main, .main, p, article, section, .footer {
 .text-semibold {
   font-weight: 600;
 }
+
+/* some more 2023 ad hoc styles */
+html, body, main, p {
+  text-align: center; /* TODO verify and move to a more appropriate place */
+}
+lottie-player {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+h1.wp-block-post-title {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 918px;
+  color: var(--color-blue-dark-purpleish);
+}
+
+
 /** BEGIN verified Figma Style block with TODO annotations */
 
 html, body, main, p, .text-body {
@@ -153,6 +174,7 @@ h4 {
 }
 
 /** END verified Figma Style block with TODO annotations */
+
 
 .header {
   height: auto;

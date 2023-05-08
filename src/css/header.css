@@ -1,0 +1,51 @@
+/**
+ * Header, Logo, Navigation
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+
+/** BEGIN ad-hoc main navigation menu styles */
+
+.inside-header { /* wrapper around logo, navigation, and navigation toggle buttons */
+  display: flex;
+  max-width: calc(100% - 1rem);
+  width: 1680px;
+  margin: 0 auto;
+}
+
+.inside-header .site-logo {
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: var(--font-size-13);
+}
+.main-nav a:link,
+.main-nav a:visited {
+  color: var(--color-blue-dark-purpleish);
+}
+
+.main-nav li:not(.button) a {
+  padding-top: 2rem;
+}
+
+.menu-toggle[aria-controls="primary-menu"] { /* Button with Icons and Menü Text */
+  display: none; /* TODO refine */
+}
+
+.main-navigation mobile-menu-control-wrapper { /* Button with Icons for mobile Menu */
+  display: none; /* TODO refine */
+}

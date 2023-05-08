@@ -84,15 +84,16 @@
     <nav class="main-navigation has-menu-bar-items sub-menu-right" id="site-navigation" aria-label="Primary"  itemtype="https://schema.org/SiteNavigationElement" itemscope>
       <div class="inside-navigation grid-container">
         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-          <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="mobile-menu">Menü</span>				</button>
+          <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="mobile-menu">Menü</span>
+        </button>
         <div id="primary-menu" class="main-nav">
-          <ul id="menu-main-menu" class=" menu sf-menu"><li id="menu-item-1857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1857"><a href="https://hausordnung.open-mind-culture.org/angebot">Angebot</a></li>
-            <li id="menu-item-1856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"><a href="https://hausordnung.open-mind-culture.org/mission">Mission</a></li>
-            <li id="menu-item-1855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1855"><a href="https://hausordnung.open-mind-culture.org/stories">Stories</a></li>
-            <li id="menu-item-1854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1854"><a href="https://hausordnung.open-mind-culture.org/news">News</a></li>
-            <li id="menu-item-1853" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1853"><a href="https://hausordnung.open-mind-culture.org/kontakt">Kontakt</a></li>
+          <ul id="menu-main-menu" class=" menu sf-menu"><li id="menu-item-1857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1857"><a href="#angebot">Angebot</a></li>
+            <li id="menu-item-1856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"><a href="#mission">Mission</a></li>
+            <li id="menu-item-1855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1855"><a href="#stories">Stories</a></li>
+            <li id="menu-item-1854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1854"><a href="#news">News</a></li>
+            <li id="menu-item-1853" class="button button--primary menu-item menu-item-type-post_type menu-item-object-page menu-item-1853"><a href="#kontakt">Kontakt</a></li>
             <li id="menu-item-1859-de" class="lang-item lang-item-8 lang-item-de current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-1859-de">
-              <a href="https://hausordnung.open-mind-culture.org/" hreflang="de-DE" lang="de-DE" title="Deutsch">DE</a>/<a href="https://hausordnung.open-mind-culture.org/en/kleiner-beispiel-content-english" hreflang="en-US" lang="en-US" title="English">EN</a>
+              <a href="/" hreflang="de-DE" lang="de-DE" title="Deutsch">DE</a>/<a href="/en/kleiner-beispiel-content-english" hreflang="en-US" lang="en-US" title="English">EN</a>
             </li>
           </ul>
         </div>
@@ -127,7 +128,9 @@
 
   <div class="wp-block-group has-global-padding is-layout-constrained">
 
-    <h1 class="wp-block-post-title">Beispiel Content (src/index.php)</h1>
+    <h1 class="wp-block-post-title">Goodbye fast-fashion –
+      <br>
+      erlebe Kreativität und Freude mit nachhaltigem Modekonsum!</h1>
   </div>
 
   <div class="entry-content wp-block-post-content">
@@ -168,6 +171,7 @@
     <p>In den folgenden Absätzen das Kontaktformular und einen Complianz-Code einfügen: auch hier WordPress / Plugin Class Names</p>
 
     <div class="columns__column-wrapper columns__column-wrapper--lg">
+      <a name="kontakt" id="kontakt"></a>
 
       <div class="columns__column columns__column-50">
         <!-- BEGIN vcard imprint contact information - TODO: update using rel=me etc. -->
