@@ -8,21 +8,19 @@
  */
 
 /* TODO verify and adapt sticky header wrapper styles and behavior, add optional JavaScript observer */
-.header {
+.header--site-header {
   height: auto;
   margin: 0;
   top: -1px;
   position: sticky;
-  background: var(--color-default-white);
-  padding: 1em;
-  padding-bottom: 1em;
+  background: var(--color-primary-background);
   z-index: 10;
-  opacity: 0.96;
+  opacity: 1;
   transition: padding-bottom 2s 0.25s ease-in;
 }
 
-.header.stuck {
-  padding-bottom: 0.5em;
+.header--site-header.stuck {
+  /* padding-bottom: 0.5em; */
 }
 
 /* Don’t Headbutt The Browser Window by Chris Coyer
@@ -44,7 +42,7 @@
   pointer-events: none;
 }
 
-.header.stuck ~ .target-offset::before {
+.header--site-header.stuck ~ .target-offset::before {
   height: 160px;
   height: var(--header-height-stuck);
   margin-top: -160px;
@@ -53,19 +51,41 @@
 
 /** BEGIN ad-hoc main navigation menu styles */
 
-.inside-header { /* wrapper around logo, navigation, and navigation toggle buttons */
+.header__contentwrapper { /* wrapper around logo, navigation, and navigation toggle buttons */
   display: flex;
   max-width: calc(100% - 1rem);
-  width: 1680px;
+  width: 1024px;
   margin: 0 auto;
+  padding: 1.25rem;
 }
 
-.inside-header .site-logo {
+.header__contentwrapper .header__site-logo {
   flex-grow: 1;
-  padding: 0.5rem;
+  padding: 0;
+  text-align: left;
 }
 
-.inside-header .site-logo,
-.inside-header .site-logo svg {
+.header__contentwrapper .header__site-logo,
+.header__contentwrapper .header__site-logo svg {
   color: var(--color-primary-foreground);
+}
+
+.header__contentwrapper .header__site-logo svg {
+  width: 8.4375rem;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .header--site-header {
+    opacity: 0.96;
+  }
+  .header__contentwrapper {
+    padding: 1.5rem 3.125rem 1.5rem 3.125rem;
+  }
+  .header__contentwrapper .header__site-logo {
+    padding: 0.5625rem 0 0 0.25rem;
+  }
+  .header__contentwrapper .header__site-logo svg {
+    width: 16.8125rem;
+  }
 }

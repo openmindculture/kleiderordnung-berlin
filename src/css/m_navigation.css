@@ -5,7 +5,7 @@
  * @author openmindculture
  */
 
-.main-navigation.has-menu-bar-items { /* TODO refactor class names */
+.navigation--main-navigation {
   position: absolute;
   right: 0;
   z-index: 1;
@@ -13,28 +13,42 @@
 }
 
 @media (min-width: 768px) {
-  .main-navigation.has-menu-bar-items {
+  .navigation--main-navigation {
     position: static;
   }
 }
 
-.main-navigation .sf-menu { /* TODO refactor class names: ul.sf-menu ?! */
+.navigation__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+  padding-inline-start: 1.5rem;
   list-style: none;
+  align-items: flex-start;
 }
 
-.main-nav a:not(.button) {
+.navigation__list-wrapper--main a:not(.button) {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
   font-size: var(--font-size-13);
 }
-.main-nav a:not(.button):link,
-.main-nav a:not(.button):visited {
-  color: var(--color-blue-dark-purpleish);
+.navigation__list-wrapper--main a:not(.button):link,
+.navigation__list-wrapper--main a:not(.button):visited {
+  color: var(--color-primary-foreground);
+}
+
+.navigation__toggle--close {
+  display: block;
+  padding: 0 1rem 0 0;
+  text-align: right;
+}
+
+.navigation__toggle--open {
+  padding: 0 1.5rem 0 0 ;
+  margin-top: 0.25rem;
+  color: var(--color-primary-foreground);
 }
 
 /* Mobile navigation initially hidden, opened / closed by button links */
@@ -43,18 +57,23 @@
   visibility: hidden;
 }
 
-#primary-menu {
+.navigation__list-wrapper--main {
   display: none;
 }
 
-#primary-menu.navigation__menu-opened,
-#primary-menu:target {
+.navigation__list-wrapper--main.navigation__menu-opened,
+.navigation__list-wrapper--main:target {
   display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  background-color: var(--color-primary-background);
 }
 
 /* Tablet / Desktop width with always open horizontal menu bar: */
 @media (min-width: 768px) {
-  #primary-menu {
+  .navigation__list-wrapper--main {
     display: block;
   }
 
@@ -62,11 +81,11 @@
     display: none;
   }
 
-  .main-navigation .sf-menu { /* TODO refactor class names: ul.sf-menu ?! */
+  .navigation__list {
     flex-direction: row;
   }
 
-  .main-nav a:not(.button) {
-    padding-top: 2rem;
+  .navigation__list-wrapper--main a:not(.button) {
+    padding-top: 0.75rem;
   }
 }

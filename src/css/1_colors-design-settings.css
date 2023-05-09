@@ -8,6 +8,7 @@
 :root {
 
   /** BEGIN ad-hoc demo styles 2023 (1), TODO review, refactor */
+  --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   /** END ad-hoc demo styles 2023 (1) */
 

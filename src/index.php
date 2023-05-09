@@ -67,9 +67,9 @@
 <div id="cmplz-cookiebanner-container"></div>
 
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'kleiderordnung' ); ?></a>
-<header class="site-header has-inline-mobile-toggle" id="masthead" aria-label="Site" role="banner" itemtype="https://schema.org/WPHeader" itemscope>
-  <div class="inside-header grid-container">
-    <div class="site-logo">
+<header id="site-header" class="header header--site-header has-inline-mobile-toggle" aria-label="Site" role="banner" itemtype="https://schema.org/WPHeader" itemscope>
+  <div class="header__contentwrapper">
+    <div class="header__site-logo">
       <a href="<?php echo get_template_directory_uri() ?>/" rel="home">
         <svg width="269" height="37" viewBox="0 0 269 37" fill="none">
           <title>kleiderordnung</title>
@@ -77,19 +77,20 @@
         </svg>
       </a>
     </div>
-    <nav class="navigation navigation--main-navigation main-navigation" id="site-navigation" aria-label="Primary"  itemtype="https://schema.org/SiteNavigationElement" itemscope>
+    <nav id="site-navigation" class="navigation navigation--main-navigation main-navigation" aria-label="Primary"  itemtype="https://schema.org/SiteNavigationElement" itemscope>
       <div class="inside-navigation grid-container">
         <a href="#primary-menu" class="navigation__toggle navigation__toggle--open" aria-controls="primary-menu" aria-expanded="false" title="Menü öffnen">
-          <svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg>
+          <svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" fill="currentColor"/></svg>
           <span class="sr-only">Menü</span>
         </a>
 
-        <div id="primary-menu" class="main-nav">
+        <div id="primary-menu" class="navigation__list-wrapper navigation__list-wrapper--main">
           <a href="#" class="navigation__toggle navigation__toggle--close" aria-controls="primary-menu" aria-expanded="false" title="Menü schließen">
-            <svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg>
+            <svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" fill="currentColor"/></svg>
             <span class="sr-only">Menü schließen</span>
           </a>
-          <ul id="menu-main-menu" class=" menu sf-menu"><li id="menu-item-1857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1857"><a href="#angebot">Angebot</a></li>
+          <ul id="menu-main-menu" class="navigation__list navigation__list--main">
+            <li id="menu-item-1857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1857"><a href="#angebot">Angebot</a></li>
             <li id="menu-item-1856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"><a href="#mission">Mission</a></li>
             <li id="menu-item-1855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1855"><a href="#stories">Stories</a></li>
             <li id="menu-item-1854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1854"><a href="#news">News</a></li>
@@ -144,7 +145,7 @@
 
   </section>
 
-  <section class"offers" id="angebot">
+  <section id="angebot" class="offers target-offset">
     <h2> class="offers_headline">Meine Angebote</h2>
     <nav class="offers__navigation">
       <ul>
@@ -289,7 +290,7 @@
 
   </section>
 
-  <section class="mission" id="mission">
+  <section id="mission" class="mission target-offset">
       <h2 class="mission__headline">Meine Mission</h2>
       <p class="mission__text">
         Durch individuelle Stilberatung und den Einsatz fairer Mode möchte ich dazu beitragen, dass Du deiner Persönlichkeit Ausdruck verleihen kannst. Mein Ziel ist es, Kleidung auf eine kreative Art und Weise erlebbar zu machen und dich dabei zu unterstützen, dein Selbstbewusstsein zu stärken.
@@ -308,7 +309,7 @@
     </div>
   </section>
 
-  <section class="stories" id="stories">
+  <section id="stories" class="stories target-offset">
     <h2 class="stories__headline">Stories</h2>
     <div class="stories__wrapper">
 
@@ -349,7 +350,7 @@ Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir g
     </div>
   </section>
 
-  <section class="news" id="news"><!-- post-type post -->
+  <section id="news" class="news target-offset"><!-- post-type post -->
     <h2 class="news__headline">News</h2>
     <div class="news__wrapper">
 
@@ -396,7 +397,7 @@ Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir g
     </div>
   </section>
 
-  <section class="socialmedia">
+  <section class="socialmedia target-offset">
     <a rel="me" href=""><figure><svg></svg></figure> Kleiderordnung auf instagram</a>
     <aside id="juicer-feed-container"
            label="Instagram Galerie"
@@ -416,13 +417,16 @@ Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir g
     </aside>
   </section>
 
-  <section class="contact" id="kontakt">
+  <section id="kontakt" class="contact target-offset">
 
     <div class="columns__column-wrapper columns__column-wrapper--lg">
 
       <div class="columns__column columns__column-50">
         <!-- BEGIN vcard imprint contact information - TODO: update using rel=me etc. -->
-        <article id=kontakt class=target-offset><address class="vcard contrast--varies contrast--more"><div><div class=fn itemprop=name>Martina Steinke</div><div class=street-address>Donaustr. 83, <span class=postal-code>12043</span> Berlin</div><div>Tel. <a class=telephone itemprop=telephone href=tel:+491636823820><span class=visually-spaced>0</span><span class="visually-spaced dot-after">163</span><span class=visually-spaced>682</span><span class=visually-spaced>382</span><span class=visually-spaced>0</span></a></div><div><a class=email itemprop=email itemscope href=mailto:martinasteinke@posteo.de>martinasteinke@posteo.de</a></div><div><a itemscope class=url rel=author href="https://www.kleiderordnung-berlin.de/">www.kleiderordnung-berlin.de</a></div><br><div>Mitglied bei <a href="https://fashionchangers.de/" target=_blank rel=noopener&quot;>Fashion Changers</a> und <span class="role jobtitle" itemprop=jobTitle>nachhaltige Modeberaterin</span> bei <a href=https://www.sustainable-stylists.com target=_blank rel=noopener>Sustainable Stylists</a>.</div></div><div class=social><a href="https://www.instagram.com/kleider.ordnung/" target=_blank rel=noopener title="kleider.ordnung auf Instagram"><svg x=0px y=0px width=25 height=25 viewbox="0 0 512 512"><path style=fill:currentColor d=M256,49.471c67.266,0,75.233.257,101.8,1.469,24.562,1.121,37.9,5.224,46.778,8.674a78.052,78.052,0,0,1,28.966,18.845,78.052,78.052,0,0,1,18.845,28.966c3.45,8.877,7.554,22.216,8.674,46.778,1.212,26.565,1.469,34.532,1.469,101.8s-0.257,75.233-1.469,101.8c-1.121,24.562-5.225,37.9-8.674,46.778a83.427,83.427,0,0,1-47.811,47.811c-8.877,3.45-22.216,7.554-46.778,8.674-26.56,1.212-34.527,1.469-101.8,1.469s-75.237-.257-101.8-1.469c-24.562-1.121-37.9-5.225-46.778-8.674a78.051,78.051,0,0,1-28.966-18.845,78.053,78.053,0,0,1-18.845-28.966c-3.45-8.877-7.554-22.216-8.674-46.778-1.212-26.564-1.469-34.532-1.469-101.8s0.257-75.233,1.469-101.8c1.121-24.562,5.224-37.9,8.674-46.778A78.052,78.052,0,0,1,78.458,78.458a78.053,78.053,0,0,1,28.966-18.845c8.877-3.45,22.216-7.554,46.778-8.674,26.565-1.212,34.532-1.469,101.8-1.469m0-45.391c-68.418,0-77,.29-103.866,1.516-26.815,1.224-45.127,5.482-61.151,11.71a123.488,123.488,0,0,0-44.62,29.057A123.488,123.488,0,0,0,17.3,90.982C11.077,107.007,6.819,125.319,5.6,152.134,4.369,179,4.079,187.582,4.079,256S4.369,333,5.6,359.866c1.224,26.815,5.482,45.127,11.71,61.151a123.489,123.489,0,0,0,29.057,44.62,123.486,123.486,0,0,0,44.62,29.057c16.025,6.228,34.337,10.486,61.151,11.71,26.87,1.226,35.449,1.516,103.866,1.516s77-.29,103.866-1.516c26.815-1.224,45.127-5.482,61.151-11.71a128.817,128.817,0,0,0,73.677-73.677c6.228-16.025,10.486-34.337,11.71-61.151,1.226-26.87,1.516-35.449,1.516-103.866s-0.29-77-1.516-103.866c-1.224-26.815-5.482-45.127-11.71-61.151a123.486,123.486,0,0,0-29.057-44.62A123.487,123.487,0,0,0,421.018,17.3C404.993,11.077,386.681,6.819,359.866,5.6,333,4.369,324.418,4.079,256,4.079h0Z></path><path style=fill:currentColor d=M256,126.635A129.365,129.365,0,1,0,385.365,256,129.365,129.365,0,0,0,256,126.635Zm0,213.338A83.973,83.973,0,1,1,339.974,256,83.974,83.974,0,0,1,256,339.973Z></path><circle style=fill:currentColor cx=390.476 cy=121.524 r=30.23></circle></svg></a> <a href=https://www.reflecta.network/changemaker/martina-steinke target=_blank rel=noopener title="reflecta network"><svg width=36 height=32 viewbox="0 0 36 32"><g fill=none fill-rule=evenodd><g fill-rule=nonzero><g><path fill=currentColor d="M11.515 21.8v-6.794c0-.588.133-1.079.398-1.473.265-.394.648-.591 1.15-.591.53 0 .917.161 1.161.484.244.322.365.706.365 1.15v.494h2.623c.015-.086.033-.236.054-.451.022-.215.033-.43.033-.645 0-1.018-.27-1.835-.807-2.451-.537-.616-1.3-.925-2.29-.925-.616 0-1.15.122-1.601.366-.452.244-.796.509-1.032.795-.237.287-.384.51-.441.667l-.387-1.613H8.419V21.8h3.096zm12.144.215c.889 0 1.71-.154 2.462-.462.753-.308 1.358-.789 1.817-1.44.458-.653.688-1.46.688-2.42h-3.01c0 .717-.19 1.258-.57 1.624-.38.365-.9.548-1.559.548-.73 0-1.308-.24-1.73-.72-.423-.48-.635-1.079-.635-1.796v-.516h7.525V15.2c0-.946-.229-1.766-.688-2.461-.458-.695-1.068-1.226-1.827-1.591-.76-.366-1.584-.549-2.473-.549h-.344c-1.017 0-1.931.215-2.74.645-.81.43-1.452 1.054-1.925 1.871-.473.817-.71 1.777-.71 2.881v.623c0 1.118.233 2.082.7 2.892.465.81 1.106 1.43 1.923 1.86.817.43 1.735.645 2.752.645h.344zm1.806-6.902h-4.343c.058-.688.283-1.254.678-1.698.394-.444.906-.667 1.537-.667.745 0 1.286.212 1.623.635.337.423.505 1 .505 1.73z" transform="translate(-16 -12) translate(16 12)"></path><path fill=currentColor d="M9 0c.552 0 1 .448 1 1 0 .527-.408.96-.925.997L9 2H2v28h7c.527 0 .96.408.997.925L10 31c0 .527-.408.96-.925.997L9 32H1c-.527 0-.96-.408-.997-.925L0 31V1C0 .473.408.04.925.003L1 0h8z" transform="translate(-16 -12) translate(16 12)"></path><path fill=currentColor d="M34.5 0c.552 0 1 .448 1 1 0 .527-.408.96-.925.997L34.5 2h-7v28h7c.527 0 .96.408.997.925L35.5 31c0 .527-.408.96-.925.997L34.5 32h-8c-.527 0-.96-.408-.997-.925L25.5 31V1c0-.527.408-.96.925-.997L26.5 0h8z" transform="translate(-16 -12) translate(16 12) matrix(-1 0 0 1 61 0)"></path></g></g></g></svg></a> <a href=https://www.xing.com/profile/Martina_Steinke11 target=_blank rel=noopener title=XING><svg height=25 width=25 x=0px y=0px viewbox="0 0 400 400" style="enable-background:new 0 0 455.731 455.731"><g><rect x=0 y=0 style=fill:currentColor width=455.731 height=455.731></rect><g><polygon style=fill:#c3cfbb points="161.915,124.199 89.249,124.199 129.915,200.199 74.582,291.532 147.249,291.532 202.582,200.199"></polygon><polygon style=fill:#c3cfbb points="304.582,66.199 381.149,66.199 268.482,264.199 342.382,389.532 265.916,389.532 191.916,264.199"></polygon></g></g></svg></a></div></address></article>
+        <article id="kontakt" class="contact target-offset">
+          <address class="vcard contrast--varies contrast--more">
+            <div>
+              <div class=fn itemprop=name>Martina Steinke</div><div class=street-address>Donaustr. 83, <span class=postal-code>12043</span> Berlin</div><div>Tel. <a class=telephone itemprop=telephone href=tel:+491636823820><span class=visually-spaced>0</span><span class="visually-spaced dot-after">163</span><span class=visually-spaced>682</span><span class=visually-spaced>382</span><span class=visually-spaced>0</span></a></div><div><a class=email itemprop=email itemscope href=mailto:martinasteinke@posteo.de>martinasteinke@posteo.de</a></div><div><a itemscope class=url rel=author href="https://www.kleiderordnung-berlin.de/">www.kleiderordnung-berlin.de</a></div><br><div>Mitglied bei <a href="https://fashionchangers.de/" target=_blank rel=noopener&quot;>Fashion Changers</a> und <span class="role jobtitle" itemprop=jobTitle>nachhaltige Modeberaterin</span> bei <a href=https://www.sustainable-stylists.com target=_blank rel=noopener>Sustainable Stylists</a>.</div></div><div class=social><a href="https://www.instagram.com/kleider.ordnung/" target=_blank rel=noopener title="kleider.ordnung auf Instagram"><svg x=0px y=0px width=25 height=25 viewbox="0 0 512 512"><path style=fill:currentColor d=M256,49.471c67.266,0,75.233.257,101.8,1.469,24.562,1.121,37.9,5.224,46.778,8.674a78.052,78.052,0,0,1,28.966,18.845,78.052,78.052,0,0,1,18.845,28.966c3.45,8.877,7.554,22.216,8.674,46.778,1.212,26.565,1.469,34.532,1.469,101.8s-0.257,75.233-1.469,101.8c-1.121,24.562-5.225,37.9-8.674,46.778a83.427,83.427,0,0,1-47.811,47.811c-8.877,3.45-22.216,7.554-46.778,8.674-26.56,1.212-34.527,1.469-101.8,1.469s-75.237-.257-101.8-1.469c-24.562-1.121-37.9-5.225-46.778-8.674a78.051,78.051,0,0,1-28.966-18.845,78.053,78.053,0,0,1-18.845-28.966c-3.45-8.877-7.554-22.216-8.674-46.778-1.212-26.564-1.469-34.532-1.469-101.8s0.257-75.233,1.469-101.8c1.121-24.562,5.224-37.9,8.674-46.778A78.052,78.052,0,0,1,78.458,78.458a78.053,78.053,0,0,1,28.966-18.845c8.877-3.45,22.216-7.554,46.778-8.674,26.565-1.212,34.532-1.469,101.8-1.469m0-45.391c-68.418,0-77,.29-103.866,1.516-26.815,1.224-45.127,5.482-61.151,11.71a123.488,123.488,0,0,0-44.62,29.057A123.488,123.488,0,0,0,17.3,90.982C11.077,107.007,6.819,125.319,5.6,152.134,4.369,179,4.079,187.582,4.079,256S4.369,333,5.6,359.866c1.224,26.815,5.482,45.127,11.71,61.151a123.489,123.489,0,0,0,29.057,44.62,123.486,123.486,0,0,0,44.62,29.057c16.025,6.228,34.337,10.486,61.151,11.71,26.87,1.226,35.449,1.516,103.866,1.516s77-.29,103.866-1.516c26.815-1.224,45.127-5.482,61.151-11.71a128.817,128.817,0,0,0,73.677-73.677c6.228-16.025,10.486-34.337,11.71-61.151,1.226-26.87,1.516-35.449,1.516-103.866s-0.29-77-1.516-103.866c-1.224-26.815-5.482-45.127-11.71-61.151a123.486,123.486,0,0,0-29.057-44.62A123.487,123.487,0,0,0,421.018,17.3C404.993,11.077,386.681,6.819,359.866,5.6,333,4.369,324.418,4.079,256,4.079h0Z></path><path style=fill:currentColor d=M256,126.635A129.365,129.365,0,1,0,385.365,256,129.365,129.365,0,0,0,256,126.635Zm0,213.338A83.973,83.973,0,1,1,339.974,256,83.974,83.974,0,0,1,256,339.973Z></path><circle style=fill:currentColor cx=390.476 cy=121.524 r=30.23></circle></svg></a> <a href=https://www.reflecta.network/changemaker/martina-steinke target=_blank rel=noopener title="reflecta network"><svg width=36 height=32 viewbox="0 0 36 32"><g fill=none fill-rule=evenodd><g fill-rule=nonzero><g><path fill=currentColor d="M11.515 21.8v-6.794c0-.588.133-1.079.398-1.473.265-.394.648-.591 1.15-.591.53 0 .917.161 1.161.484.244.322.365.706.365 1.15v.494h2.623c.015-.086.033-.236.054-.451.022-.215.033-.43.033-.645 0-1.018-.27-1.835-.807-2.451-.537-.616-1.3-.925-2.29-.925-.616 0-1.15.122-1.601.366-.452.244-.796.509-1.032.795-.237.287-.384.51-.441.667l-.387-1.613H8.419V21.8h3.096zm12.144.215c.889 0 1.71-.154 2.462-.462.753-.308 1.358-.789 1.817-1.44.458-.653.688-1.46.688-2.42h-3.01c0 .717-.19 1.258-.57 1.624-.38.365-.9.548-1.559.548-.73 0-1.308-.24-1.73-.72-.423-.48-.635-1.079-.635-1.796v-.516h7.525V15.2c0-.946-.229-1.766-.688-2.461-.458-.695-1.068-1.226-1.827-1.591-.76-.366-1.584-.549-2.473-.549h-.344c-1.017 0-1.931.215-2.74.645-.81.43-1.452 1.054-1.925 1.871-.473.817-.71 1.777-.71 2.881v.623c0 1.118.233 2.082.7 2.892.465.81 1.106 1.43 1.923 1.86.817.43 1.735.645 2.752.645h.344zm1.806-6.902h-4.343c.058-.688.283-1.254.678-1.698.394-.444.906-.667 1.537-.667.745 0 1.286.212 1.623.635.337.423.505 1 .505 1.73z" transform="translate(-16 -12) translate(16 12)"></path><path fill=currentColor d="M9 0c.552 0 1 .448 1 1 0 .527-.408.96-.925.997L9 2H2v28h7c.527 0 .96.408.997.925L10 31c0 .527-.408.96-.925.997L9 32H1c-.527 0-.96-.408-.997-.925L0 31V1C0 .473.408.04.925.003L1 0h8z" transform="translate(-16 -12) translate(16 12)"></path><path fill=currentColor d="M34.5 0c.552 0 1 .448 1 1 0 .527-.408.96-.925.997L34.5 2h-7v28h7c.527 0 .96.408.997.925L35.5 31c0 .527-.408.96-.925.997L34.5 32h-8c-.527 0-.96-.408-.997-.925L25.5 31V1c0-.527.408-.96.925-.997L26.5 0h8z" transform="translate(-16 -12) translate(16 12) matrix(-1 0 0 1 61 0)"></path></g></g></g></svg></a> <a href=https://www.xing.com/profile/Martina_Steinke11 target=_blank rel=noopener title=XING><svg height=25 width=25 x=0px y=0px viewbox="0 0 400 400" style="enable-background:new 0 0 455.731 455.731"><g><rect x=0 y=0 style=fill:currentColor width=455.731 height=455.731></rect><g><polygon style=fill:#c3cfbb points="161.915,124.199 89.249,124.199 129.915,200.199 74.582,291.532 147.249,291.532 202.582,200.199"></polygon><polygon style=fill:#c3cfbb points="304.582,66.199 381.149,66.199 268.482,264.199 342.382,389.532 265.916,389.532 191.916,264.199"></polygon></g></g></svg></a></div></address></article>
         <!-- END vcard imprint contact information -->
       </div>
 
@@ -436,7 +440,7 @@ Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir g
   </div>
 </main>
 
-<footer id="footer" role="contentinfo" class="site-footer">
+<footer id="footer" class="site-footer" role="contentinfo">
   Footer Content
 </footer>
 </div>

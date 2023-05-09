@@ -1,5 +1,5 @@
 'use strict';
-
+/* TODO remove unused optional components like contrast-adaption, intersection observer, ... */
 var animateableClassName = 'animate--on-visibility'; // triggers micro animations
 var animatingClassName = 'animate__animated'; // will be added to animateable elements
 var animationClassDataKey = 'animationclass'; // data key to hold animation class name
@@ -28,7 +28,7 @@ var menuOpenedClassName = 'navigation__menu-opened'; // .target for progressive 
 var menuLinksSelector = '#primary-menu a[href]'; // links inside the menu
 var mainMenuNavWrapperSelector = 'navigation--main-navigation'; // select parent menu from descendant button handler
 
-var stickyHeaderId = 'header';
+var stickyHeaderId = 'site-header';
 var stuckClassName = 'stuck'; // emulate ::stuck pseudo class for sticky header styling
 var root = document.querySelector(':root'); // to update actual header height to fix anchor positions
 
@@ -235,14 +235,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var stickyHeader = document.getElementById(stickyHeaderId);
   if (stickyHeader) {
+    console.log('prepare intersectionObserver for stickHeader');
     root.style.setProperty('--header-height', '' + stickyHeader.offsetHeight + 'px');
     var stickyObserver = new IntersectionObserver(
       function(intersectingEntries) {
+        console.log('sticky header intersection callback; toggle classList stuckClassName');
         var isStuck = intersectingEntries[0].intersectionRatio < 1;
         intersectingEntries[0].target.classList.toggle(stuckClassName, isStuck);
         if (isStuck) {
+          console.log('header isStuck, save offsetHeight to :root { header-height-stuck: ', stickyHeader.offsetHeight + 'px');
           root.style.setProperty('--header-height--stuck', '' + stickyHeader.offsetHeight + 'px');
         }
+        console.log('intersectingEntries[0].target:', intersectingEntries[0].target);
       },
       { threshold: [1] }
     );
