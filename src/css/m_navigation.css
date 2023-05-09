@@ -28,6 +28,22 @@
   align-items: flex-start;
 }
 
+.navigation__list {
+  border: solid 1px blanchedalmond;
+}
+
+/* gap fallback for rotten apple browsers */
+/* too bad that does not actually work in safari */
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .navigation__list {
+    border: solid 1px green;
+  }
+  .navigation__list li + li {
+    margin-left: 1.5rem;
+    border: solid 1px red;
+  }
+}
+
 .navigation__list-wrapper--main a:not(.button) {
   text-decoration: none;
   text-transform: uppercase;

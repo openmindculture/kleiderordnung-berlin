@@ -11,7 +11,7 @@ if ( ! defined ( 'KLEIDERORDNUNG_URI' ) ){
 }
 
 if ( ! defined ( 'KLEIDERORDNUNG_THEME_VERSION' ) ){
-  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.1.0' );
+  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.1.1' );
 }
 
 // the following should go to wp-config.php
