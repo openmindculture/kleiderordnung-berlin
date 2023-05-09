@@ -64,3 +64,8 @@
   flex-grow: 1;
   padding: 0.5rem;
 }
+
+.inside-header .site-logo,
+.inside-header .site-logo svg {
+  color: var(--color-primary-foreground);
+}

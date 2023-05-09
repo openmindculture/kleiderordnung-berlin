@@ -31,26 +31,42 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: var(--font-size-13);
-  padding-top: 2rem;
 }
 .main-nav a:not(.button):link,
 .main-nav a:not(.button):visited {
   color: var(--color-blue-dark-purpleish);
 }
 
+/* Mobile navigation initially hidden, opened / closed by button links */
+.navigation__toggle--open.navigation__menu-opened,
+.navigation__toggle--open.active {
+  visibility: hidden;
+}
+
+#primary-menu {
+  display: none;
+}
+
+#primary-menu.navigation__menu-opened,
+#primary-menu:target {
+  display: block;
+}
+
+/* Tablet / Desktop width with always open horizontal menu bar: */
 @media (min-width: 768px) {
+  #primary-menu {
+    display: block;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
   .main-navigation .sf-menu { /* TODO refactor class names: ul.sf-menu ?! */
     flex-direction: row;
   }
 
-  .menu-toggle[aria-controls="primary-menu"] { /* Button with Icons and Menü Text */
-    display: none; /* TODO refine */
-  }
-
-  /* TODO main-navigation vs. main-nav ???? */
-  .main-navigation.mobile-menu-control-wrapper { /* Button with Icons for mobile Menu */
-    display: none; /* TODO refine */
+  .main-nav a:not(.button) {
+    padding-top: 2rem;
   }
 }
-
-

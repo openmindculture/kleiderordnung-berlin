@@ -21,10 +21,12 @@ var feedStyleUrlDataKey = 'styleurl'; // data key which stylesheet to load (abso
 var sliderWrapperClassName = 'testimonials__sliderwrapper';
 var sliderWrapperShowingTeaserClassName = 'testimonials__sliderwrapper--has-teaser';
 
-var menuOpenButtonClassName = 'main-menu__button--open';
-var menuCloseButtonClassName = 'main-menu__button--close';
-var menuOpenClassName = 'target'; // .target for progressive enhancement of :target
-var mainMenuNavWrapperSelector = 'main-menu__nav-wrapper'; // select parent menu from descendant button handler
+var menuId = 'primary-menu';
+var menuOpenButtonClassName = 'navigation__toggle--open';
+var menuCloseButtonClassName= 'navigation__toggle--close';
+var menuOpenedClassName = 'navigation__menu-opened'; // .target for progressive enhancement of :target
+var menuLinksSelector = '#primary-menu a[href]'; // links inside the menu
+var mainMenuNavWrapperSelector = 'navigation--main-navigation'; // select parent menu from descendant button handler
 
 var stickyHeaderId = 'header';
 var stuckClassName = 'stuck'; // emulate ::stuck pseudo class for sticky header styling
@@ -248,29 +250,26 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // progressive enhancement for navigation menu behavior
-  var menuOpenButtons = document.getElementsByClassName(menuOpenButtonClassName);
-  for (var m = 0; m < menuOpenButtons.length; m++) {
-    menuOpenButtons[m].addEventListener('click', function(event) {
-      event.preventDefault();
-      var menuOpenButton = /** @type {HTMLElement} */ event.currentTarget;
-      var menuId = /** @type {String} */ menuOpenButton.hash.substring(1);
-      var menu = document.getElementById(menuId);
-      menu.classList.add(menuOpenClassName);
-    });
-  }
-  var menuCloseButtons = document.getElementsByClassName(menuCloseButtonClassName);
-  for (var n = 0; n < menuCloseButtons.length; n++) {
-    menuCloseButtons[n].addEventListener('click', function(event) {
-      event.preventDefault();
-      var menu = event.currentTarget.closest('.' + mainMenuNavWrapperSelector);
-      menu.classList.remove(menuOpenClassName);
-    });
-  }
-  var navLinks = document.querySelectorAll('nav a[href]');
+  var menu = document.getElementById(menuId);
+  var menuOpenButton = document.getElementsByClassName(menuOpenButtonClassName)[0];
+  menuOpenButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    var menuOpenButton = /** @type {HTMLElement} */ event.currentTarget;
+    var menu = document.getElementById(menuId);
+    menu.classList.add(menuOpenedClassName);
+    menuOpenButton.classList.add(menuOpenedClassName);
+  });
+  var menuCloseButton = document.getElementsByClassName(menuCloseButtonClassName)[0];
+  menuCloseButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    menu.classList.remove(menuOpenedClassName);
+    menuOpenButton.classList.remove(menuOpenedClassName);
+  });
+  var navLinks = document.querySelectorAll(menuLinksSelector);
   for (var o = 0; o < navLinks.length; o++) {
     navLinks[o].addEventListener('click', function(event) {
-      var menu = event.currentTarget.closest('.' + mainMenuNavWrapperSelector);
-      menu.classList.remove(menuOpenClassName);
+      menu.classList.remove(menuOpenedClassName);
+      menuOpenButton.classList.remove(menuOpenedClassName);
     });
   }
 });
