@@ -18,6 +18,6 @@ Scenario('Test website content and navigation', ({ I }) => {
   I.saveScreenshot('Homepage_Screenshot.png');
   I.seeVisualDiff('Homepage_Screenshot.png', {
     tolerance: 2,
-    prepareBaseImage: true
+    prepareBaseImage: false
   });
 });
