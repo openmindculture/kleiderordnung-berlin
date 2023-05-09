@@ -398,7 +398,22 @@ Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir g
 
   <section class="socialmedia">
     <a rel="me" href=""><figure><svg></svg></figure> Kleiderordnung auf instagram</a>
-    TODO reactivate juicer feed
+    <aside id="juicer-feed-container"
+           label="Instagram Galerie"
+           class="feed__container allowable--on-visibility"
+           data-allowable="allowable"
+           data-styleurl="css/juicer.io/202210/embed.css"
+           data-scripturl="https://assets.juicer.io/embed.js"
+    >
+      <h2 id="bilder" class="target-offset">Meine Bilder bei Instagram</h2>
+      <div class="feed__consent">
+        <p>Dürfen externe Inhalte von Instagram geladen werden?</p>
+        <button class="button__allow button__allow--once" data-allow="once">Einmal erlauben</button>
+        <button class="button__allow button__allow--always" data-allow="always">Immer erlauben</button>
+      </div>
+      <ul class="juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="9" pages="1"><h1 class="referral"><a href="https://www.juicer.io">Social Media Feed von Juicer.io</a></h1></ul>
+      <a class="follow" target="_blank" rel="noopener" href="https://www.instagram.com/kleider.ordnung">jetzt folgen</a>
+    </aside>
   </section>
 
   <section class="contact" id="kontakt">
