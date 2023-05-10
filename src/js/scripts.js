@@ -235,18 +235,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var stickyHeader = document.getElementById(stickyHeaderId);
   if (stickyHeader) {
-    console.log('prepare intersectionObserver for stickHeader');
     root.style.setProperty('--header-height', '' + stickyHeader.offsetHeight + 'px');
     var stickyObserver = new IntersectionObserver(
       function(intersectingEntries) {
-        console.log('sticky header intersection callback; toggle classList stuckClassName');
         var isStuck = intersectingEntries[0].intersectionRatio < 1;
         intersectingEntries[0].target.classList.toggle(stuckClassName, isStuck);
         if (isStuck) {
-          console.log('header isStuck, save offsetHeight to :root { header-height-stuck: ', stickyHeader.offsetHeight + 'px');
           root.style.setProperty('--header-height--stuck', '' + stickyHeader.offsetHeight + 'px');
         }
-        console.log('intersectingEntries[0].target:', intersectingEntries[0].target);
       },
       { threshold: [1] }
     );
