@@ -112,6 +112,7 @@
   <!-- start stopped and activate on JS only -->
   <section class="intro">
     <div id="intro-keyvisual-wrapper" class="intro__keyvisual">
+      <div id="intro-keyvisual-mousetrap" class="intro__keyvisual__mousetrap"></div>
       <lottie-player
         class="intro__keyvisual__animation"
         id="intro-keyvisual-animation"
@@ -147,7 +148,7 @@
   </section>
 
   <section id="angebot" class="offers target-offset">
-    <h2> class="offers_headline">Meine Angebote</h2>
+    <h2 class="offers_headline">Meine Angebote</h2>
     <nav class="offers__navigation">
       <ul>
         <li>

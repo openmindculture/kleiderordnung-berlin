@@ -14,6 +14,17 @@
   /* TODO change values to ensure there is always visible text below when viewing on a "normal" screen size */
   text-align: center;
   margin: 0 auto;
+  position: relative;
+}
+
+.intro__keyvisual__mousetrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: all;
+  z-index: 10;
+  inset: 0;
+  cursor: default;
 }
 
 /* some more 2023 ad hoc styles */

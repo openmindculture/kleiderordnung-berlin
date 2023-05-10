@@ -205,25 +205,26 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!prefersReducedMotion) {
     /** TODO add JSDoc for player object */
     var introAnimation = document.getElementById("intro-keyvisual-animation");
-    var introAnimationWrapper = document.getElementById("intro-keyvisual-wrapper");
-    if (introAnimation && introAnimationWrapper) {
+    if (introAnimation) {
       introAnimation.addEventListener("ready", function() {
         introAnimation.play();
         currentAnimationReplayTimeoutId = window.setTimeout(function(){
           introAnimation.play();
         }, 30000);
       });
-      /* TODO fix mouseover handler or use scroll observation instead */
-      introAnimationWrapper.addEventListener("mouseover", () => {
-        window.clearTimeout(currentAnimationReplayTimeoutId);
-        // window.clearTimeout(currentAnimationPauseTimeoutId);
-        introAnimation.play();
-        /* introAnimationWrapper.addEventListener("mouseout", function() {
-          currentAnimationPauseTimeoutId = window.setTimeout(function(){
-            introAnimation.pause();
-          }, 2000);
-        }); */
-      });
+      /** @var {HTMLElement|null} */
+      var introAnimationMousetrap = document.getElementById("intro-keyvisual-mousetrap");
+      if (introAnimationMousetrap) {
+        console.log("initialize mousetrap");
+        introAnimationMousetrap.addEventListener("mouseenter", function() {
+          console.log("mousetrap mouseenter should restart animation");
+          window.clearTimeout(currentAnimationReplayTimeoutId);
+          introAnimation.play();
+          currentAnimationReplayTimeoutId = window.setTimeout(function(){
+            introAnimation.play();
+          }, 30000);
+        });
+      }
     }
   }
 
