@@ -52,8 +52,18 @@
   /* Effect Styles */
   --effect-box-shadow-dropshadow: 3.75rem 4rem 4.625rem rgba(0, 0, 0, 0.12);
 
+  /* Width Standards */
+  --width-full: 87.5rem; /* anyhting smaller than actual full width */
+  --width-constrained: 57.5rem; /* 920px Mission, Key Visual Text etc. maximal */
+  --width-max: calc(100% - 2.5rem); /* full (mobile) viewport minus horinzontal margins */
+  /* thus a potential mixin would look like
+   * width: var(--width-full | --width-constrained);
+   * max-width: var(--width-max);
+   */
+
   /* header height to prevent anchor links go astray */
-  --header-height: 10rem; /* TODO: obsolete? mobile:65px; desktop: 48 + 57 = 105px; tablet 48 + 104 = 152px */
+  /* mobile:65px; desktop: 48 + 57 = 105px; tablet 48 + 104 = 152px */
+  --header-height: 10rem;
   --header-height-negative: -10rem;
   --header-height-stuck: 0;
 }
