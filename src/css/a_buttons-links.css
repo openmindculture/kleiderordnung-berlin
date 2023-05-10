@@ -9,12 +9,12 @@
   font-family: var(--font-family-default);
   font-weight: 700;
   font-size: var(--font-size-13);
-  line-height: 14px;
+  line-height: 0.875rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  border-radius: 30px;
-  padding: 16px 24px;
+  border-radius: 1.875rem;
+  padding: 1rem 1.5rem;
 }
 
 .button--primary,

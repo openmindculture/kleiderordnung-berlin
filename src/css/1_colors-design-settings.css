@@ -7,29 +7,29 @@
 
 :root {
 
-  /** BEGIN ad-hoc demo styles 2023 (1), TODO review, refactor */
+  /* DON'T USE IN MEDIA QUERIES! Root properties can't be used in media queries! */
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
-  /** END ad-hoc demo styles 2023 (1) */
 
   /* Text Styles */
   --font-family-default: "Henderson Sans W00", sans-serif;
   --font-family-heading: "IvyMode", serif;
-  --font-size-48: 48px;
-  --font-size-40: 40px;
-  --font-size-32: 32px;
-  --font-size-28: 28px;
-  --font-size-24: 24px;
-  --font-size-20: 20px;
-  --font-size-17: 17px;
-  --font-size-16: 16px; /* TODO use (r)em instead! We can keep the pixels in the name
-                         * to make it easier to use and verify with Figma designs */
-  --font-size-15: 15px;
-  --font-size-14: 14px;
-  --font-size-13: 13px;
+
+  /* Font sizes with pixel names to make it easier to use and verify with Figma designs */
+  --font-size-48: 3rem;
+  --font-size-40: 2.5rem;
+  --font-size-32: 2rem;
+  --font-size-28: 1.75rem;
+  --font-size-24: 1.5rem;
+  --font-size-20: 1.25rem;
+  --font-size-17: 1.0625rem;
+  --font-size-16: 1rem;
+  --font-size-15: 0.9375rem;
+  --font-size-14: 0.875rem;
+  --font-size-13: 0.8125rem;
 
   /* Color Styles */
-
+  /* PREFERABLY USE generic semantic names below like --color-primary-background ! */
   --color-blue-dark-purpleish: #0014d1;
   --color-orange-dark: #ff9052; /* do we have better names for those colors? */
   --color-pink-neon: #ff5baa;
@@ -44,15 +44,37 @@
   --color-default-white: #ffffff;
   --color-default-black: #000000;
 
-  /* Effect Styles */
-  --effect-box-shadow-dropshadow: 60px 64px 74px rgba(0, 0, 0, 0.12);
-
   /* Export Theme Colors */
   --color-primary-background: var(--color-sandy-light-grayish);
   --color-primary-foreground: var(--color-blue-dark-purpleish);
   --color-neutral-background: transparent;
 
+  /* Effect Styles */
+  --effect-box-shadow-dropshadow: 3.75rem 4rem 4.625rem rgba(0, 0, 0, 0.12);
+
   /* header height to prevent anchor links go astray */
-  --header-height: 160px;
+  --header-height: 10rem; /* TODO: obsolete? mobile:65px; desktop: 48 + 57 = 105px; tablet 48 + 104 = 152px */
+  --header-height-negative: -10rem;
   --header-height-stuck: 0;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 9.5rem;
+    --header-height-negative: -9.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 9.5rem;
+    --header-height-negative: -9.5rem;
+  }
+}
+
+@media (min-width: 1001px) {
+  :root {
+    --header-height: 6.5625rem;
+    --header-height-negative: -6.5625rem;
+  }
 }

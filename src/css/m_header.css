@@ -34,18 +34,16 @@
   /* there are only two different heights for each viewport width */
   /* those will be updated on document load and/or when adjusting element sizes */
   /* TODO pseudo element offset height shows up correctly, but page scrolls below anyway still */
-  height: 160px;
   height: var(--header-height);
-  margin-top: -160px;
+  margin-top: var(--header-height-negative);
   margin-top: calc(-1 * var(--header-height));
   visibility: hidden;
   pointer-events: none;
 }
 
 .header--site-header.stuck ~ .target-offset::before {
-  height: 160px;
   height: var(--header-height-stuck);
-  margin-top: -160px;
+  margin-top: var(--header-height-negative);
   margin-top: calc(-1 * var(--header-height-stuck));
 }
 
@@ -54,7 +52,7 @@
 .header__contentwrapper { /* wrapper around logo, navigation, and navigation toggle buttons */
   display: flex;
   max-width: calc(100% - 1rem);
-  width: 1024px;
+  width: 64rem; /* 1024px; */
   margin: 0 auto;
   padding: 1.25rem;
 }
