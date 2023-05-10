@@ -28,10 +28,6 @@
   align-items: flex-start;
 }
 
-.navigation__list {
-  border: solid 1px blanchedalmond;
-}
-
 /* gap fallback for rotten apple browsers */
 /* too bad that does not actually work in safari */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {

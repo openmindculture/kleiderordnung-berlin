@@ -193,45 +193,8 @@ function activateExternalFeed(feedContainerElement) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  var observer = new IntersectionObserver(intersectionCallback, observerOptions);
-  var elementsActivatedOnVisibilityAndConsent = document.getElementsByClassName(allowableClassName);
-  for (var i = 0; i < elementsActivatedOnVisibilityAndConsent.length; i++) {
-    observer.observe(elementsActivatedOnVisibilityAndConsent[i]);
-  }
-  var prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-  if (prefersReducedMotionQuery && !prefersReducedMotionQuery.matches) {
-    var elementsAnimatedOnVisibility = document.getElementsByClassName(animateableClassName);
-    for (var j = 0; j < elementsAnimatedOnVisibility.length; j++) {
-      observer.observe(elementsAnimatedOnVisibility[j]);
-    }
-  }
-  var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
-  if (prefersMoreContrastQuery && !prefersMoreContrastQuery.matches) {
-    window.setTimeout(function() {
-      var moreContrastElements = document.getElementsByClassName(variableContrastClassName);
-      for (var k = 0; k < moreContrastElements.length; k++) {
-        moreContrastElements[k].classList.remove(highContrastClassName);
-      }
-    }, 5000);
-  }
 
-  var sliderContainers = document.getElementsByClassName(sliderWrapperClassName);
-  for (var l=0; l < sliderContainers.length; l++) {
-    var currentTinySliderOptions = tinySliderOptions;
-    currentTinySliderOptions.container = sliderContainers[l];
-    tns(currentTinySliderOptions);
-    sliderContainers[l].addEventListener('mousedown', function(event) {
-      var target = /** @type {HTMLElement} */ event.currentTarget;
-      target.classList.remove(sliderWrapperShowingTeaserClassName);
-    }, { once: true });
-
-    /* mousedown event seems to be prevented by slider library touch handler */
-    sliderContainers[l].addEventListener('touchmove', function(event) {
-      var eventTarget =  /** @type {HTMLElement} */ event.target;
-      var target = eventTarget.closest('.' + sliderWrapperClassName);
-      target.classList.remove(sliderWrapperShowingTeaserClassName);
-    }, { once: true });
-  }
+  /* Header / Navigation control */
 
   var stickyHeader = document.getElementById(stickyHeaderId);
   if (stickyHeader) {
@@ -271,5 +234,53 @@ document.addEventListener('DOMContentLoaded', function() {
       menu.classList.remove(menuOpenedClassName);
       menuOpenButton.classList.remove(menuOpenedClassName);
     });
+  }
+
+  /* Key Visual Lottie Animation Control */
+
+  /* ... */
+
+  /* Animate on Visibility, Respect Reduced Motion Preference */
+
+  var observer = new IntersectionObserver(intersectionCallback, observerOptions);
+  var elementsActivatedOnVisibilityAndConsent = document.getElementsByClassName(allowableClassName);
+  for (var i = 0; i < elementsActivatedOnVisibilityAndConsent.length; i++) {
+    observer.observe(elementsActivatedOnVisibilityAndConsent[i]);
+  }
+  var prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (prefersReducedMotionQuery && !prefersReducedMotionQuery.matches) {
+    var elementsAnimatedOnVisibility = document.getElementsByClassName(animateableClassName);
+    for (var j = 0; j < elementsAnimatedOnVisibility.length; j++) {
+      observer.observe(elementsAnimatedOnVisibility[j]);
+    }
+  }
+  var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
+  if (prefersMoreContrastQuery && !prefersMoreContrastQuery.matches) {
+    window.setTimeout(function() {
+      var moreContrastElements = document.getElementsByClassName(variableContrastClassName);
+      for (var k = 0; k < moreContrastElements.length; k++) {
+        moreContrastElements[k].classList.remove(highContrastClassName);
+      }
+    }, 5000);
+  }
+
+  /* Activate Carousel Slider Behavior */
+
+  var sliderContainers = document.getElementsByClassName(sliderWrapperClassName);
+  for (var l=0; l < sliderContainers.length; l++) {
+    var currentTinySliderOptions = tinySliderOptions;
+    currentTinySliderOptions.container = sliderContainers[l];
+    tns(currentTinySliderOptions);
+    sliderContainers[l].addEventListener('mousedown', function(event) {
+      var target = /** @type {HTMLElement} */ event.currentTarget;
+      target.classList.remove(sliderWrapperShowingTeaserClassName);
+    }, { once: true });
+
+    /* mousedown event seems to be prevented by slider library touch handler */
+    sliderContainers[l].addEventListener('touchmove', function(event) {
+      var eventTarget =  /** @type {HTMLElement} */ event.target;
+      var target = eventTarget.closest('.' + sliderWrapperClassName);
+      target.classList.remove(sliderWrapperShowingTeaserClassName);
+    }, { once: true });
   }
 });
