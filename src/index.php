@@ -110,13 +110,14 @@
 
 <main id="wp--skip-link--target">
   <!-- start stopped and activate on JS only -->
-  <section class"intro">
-    <div class="intro__keyvisual">
+  <section class="intro">
+    <div id="intro-keyvisual-wrapper" class="intro__keyvisual">
       <lottie-player
         class="intro__keyvisual__animation"
-        autoplay
-        loop
+        id="intro-keyvisual-animation"
         mode="normal"
+        loop
+        count="2"
         src="<?php echo get_template_directory_uri() ?>/lottie/data.json"
         style="width: 90%"
       >
@@ -124,7 +125,7 @@
       <!-- Fallback for users without Lottie Capability or Prefers Reduced Motion: Hero Banner Key Visual Image -->
       <div class="intro__keyvisual__animation--motionless-fallback">
         <img
-          src="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg" height="581" width="1160"
+          src="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg" width="1160" height="581"
           srcset="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung@2x.jpg 2x"
           loading="eager"
           alt="Tina Steinke Photography"

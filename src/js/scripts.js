@@ -1,9 +1,13 @@
 'use strict';
 /* TODO remove unused optional components like contrast-adaption, intersection observer, ... */
+/* TODO prefix all functions and variables with theme prefix ?! */
 var animateableClassName = 'animate--on-visibility'; // triggers micro animations
 var animatingClassName = 'animate__animated'; // will be added to animateable elements
 var animationClassDataKey = 'animationclass'; // data key to hold animation class name
 var animationClassInColumnDataKey = 'animationclassincolumn'; // dto. if element is inside of vertical layout
+
+var currentAnimationReplayTimeoutId = null;
+var currentAnimationPauseTimeoutId = null;
 
 var variableContrastClassName = 'contrast--varies' // triggers automatic contrast adjustment
 var highContrastClassName = 'contrast--more'; // to be removed from .contrast--varies elements
@@ -38,6 +42,9 @@ var genericIdCounter = 0;
 
 var isMobileQuery = window.matchMedia('(max-width: 768px)');
 var isMobile = (isMobileQuery && isMobileQuery.matches);
+
+var prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+var prefersReducedMotion = (prefersReducedMotionQuery && prefersReducedMotionQuery.matches);
 
 /** @object tiny-slider options */
 var tinySliderOptions = {
@@ -194,6 +201,32 @@ function activateExternalFeed(feedContainerElement) {
 
 document.addEventListener('DOMContentLoaded', function() {
 
+  /* Key Visual Lottie Animation Control */
+  if (!prefersReducedMotion) {
+    /** TODO add JSDoc for player object */
+    var introAnimation = document.getElementById("intro-keyvisual-animation");
+    var introAnimationWrapper = document.getElementById("intro-keyvisual-wrapper");
+    if (introAnimation && introAnimationWrapper) {
+      introAnimation.addEventListener("ready", function() {
+        introAnimation.play();
+        currentAnimationReplayTimeoutId = window.setTimeout(function(){
+          introAnimation.play();
+        }, 30000);
+      });
+      /* TODO fix mouseover handler or use scroll observation instead */
+      introAnimationWrapper.addEventListener("mouseover", () => {
+        window.clearTimeout(currentAnimationReplayTimeoutId);
+        // window.clearTimeout(currentAnimationPauseTimeoutId);
+        introAnimation.play();
+        /* introAnimationWrapper.addEventListener("mouseout", function() {
+          currentAnimationPauseTimeoutId = window.setTimeout(function(){
+            introAnimation.pause();
+          }, 2000);
+        }); */
+      });
+    }
+  }
+
   /* Header / Navigation control */
 
   var stickyHeader = document.getElementById(stickyHeaderId);
@@ -236,10 +269,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  /* Key Visual Lottie Animation Control */
-
-  /* ... */
-
   /* Animate on Visibility, Respect Reduced Motion Preference */
 
   var observer = new IntersectionObserver(intersectionCallback, observerOptions);
@@ -247,8 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var i = 0; i < elementsActivatedOnVisibilityAndConsent.length; i++) {
     observer.observe(elementsActivatedOnVisibilityAndConsent[i]);
   }
-  var prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-  if (prefersReducedMotionQuery && !prefersReducedMotionQuery.matches) {
+  if (!prefersReducedMotion) {
     var elementsAnimatedOnVisibility = document.getElementsByClassName(animateableClassName);
     for (var j = 0; j < elementsAnimatedOnVisibility.length; j++) {
       observer.observe(elementsAnimatedOnVisibility[j]);

@@ -6,14 +6,21 @@
  * @author openmindculture
  */
 
-/* some more 2023 ad hoc styles */
-html, body, main, p {
-  text-align: center; /* TODO verify and move to a more appropriate place */
+.intro__keyvisual {
+  aspect-ratio: 2; /* 2 / 1 rounded from the fallback image size 1160 x 581 px */
+  width: 90%;
+  max-width: 1160px;
+  height: auto;
+  /* TODO change values to ensure there is always visible text below when viewing on a "normal" screen size */
+  text-align: center;
+  margin: 0 auto;
 }
+
+/* some more 2023 ad hoc styles */
+
 .intro__keyvisual__animation {
   text-align: center;
   margin: 0 auto;
-  max-width: 1160px;
 }
 
 .intro__keyvisual__animation--motionless-fallback {
