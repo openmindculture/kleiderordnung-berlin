@@ -8,7 +8,7 @@
  */
 
 .offers {
-  width: var(--width-spaced);
+  width: var(--width-full);
   max-width: var(--width-max);
   margin: 0 auto;
 }
@@ -26,4 +26,67 @@
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.offers__offer {
+  position: relative;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.offers__offer__image {
+  position: absolute;
+  top: 0;
+  right: 3.5rem;
+}
+
+.offers__offer__card {
+  position: relative;
+  left: 0;
+  top: 3.5rem;
+  padding: 3.5rem;
+  margin-bottom: 3.5rem;
+  width: 50rem;
+  max-width: var(--width-max);
+  background-color: var(--color-default-white);
+}
+
+.offers__offer:nth-child(even) .offers__offer__image {
+  left: 3.5rem;
+  right: auto;
+}
+
+.offers__offer:nth-child(even) .offers__offer__card {
+  left: auto;
+  margin-left: auto;
+  right: 0;
+}
+
+.offers__offer__icon {}
+.offers__offer__headline {}
+.offers__offer__paragraph {}
+.offers__offer__features__headline {}
+
+.offers__offer__features__list {
+  text-align: left;
+  list-style-type: image;
+  list-style-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 10L10 5L5 0L0 5L5 10Z' fill='%230014D1'/%3E%3C/svg%3E");
+}
+
+.offers__offer__price {
+  text-align: left;
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-24);
+  line-height: 1.5;
+}
+
+.offers__offer__price__annotations {
+  list-style: none;
+  text-align: left;
+}
+
+
+.offers__additional__articles {
+  display: flex;
 }

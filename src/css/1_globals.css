@@ -26,7 +26,7 @@ body {
   /* overflow-x: hidden; */ /* workaround layout issues with image columns, TODO remove when obsolete */
 }
 
-html, body, main, .main, p, article, section, .footer {
+html, body, main, .main {
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);
 }

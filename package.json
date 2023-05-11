@@ -1,6 +1,6 @@
 {
   "name": "kleiderordnung-berlin",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "scripts": {
     "start": "docker-compose restart",

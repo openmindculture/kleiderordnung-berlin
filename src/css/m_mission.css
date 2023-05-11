@@ -10,4 +10,16 @@
   width: var(--width-spaced);
   max-width: var(--width-max);
   margin: 0 auto;
+  background-color: var(--color-primary-foreground);
+  color: var(--color-primary-background);
+  padding: 7.3125rem 5rem 5rem 5rem;
+}
+
+.mission__text {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-24);
+  line-height: 1.6;
+  letter-spacing: 0.07em;
+  text-align: center;
 }
