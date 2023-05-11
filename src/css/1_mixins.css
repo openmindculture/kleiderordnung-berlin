@@ -1,0 +1,25 @@
+/**
+ * Define reusable Style Snippets (Mixins)
+ *
+ * .ignore file if the non-standard syntax causes false positive warnings
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+/* stylelint-disable */
+/*noinspection ALL*/
+@define-mixin heading--h1 $className {
+  /*noinspection ALL*/
+  $(className) {
+    font-family: var(--font-family-heading);
+    font-weight: 400;
+    font-size: var(--font-size-48);
+    line-height: 140%; /* "or 67px" */
+    letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
+    font-style: normal;
+    /*noinspection ALL*/
+    @mixin-content;
+  }
+}
+/* stylelint-enable */

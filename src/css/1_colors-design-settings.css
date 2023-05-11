@@ -54,7 +54,7 @@
 
   /* Width Standards */
   --width-full: 87.5rem; /* anyhting smaller than actual full width */
-  --width-constrained: 57.5rem; /* 920px Mission, Key Visual Text etc. maximal */
+  --width-spaced: 57.5rem; /* 920px Mission, Key Visual Text etc. maximal */
   --width-max: calc(100% - 2.5rem); /* full (mobile) viewport minus horinzontal margins */
   /* thus a potential mixin would look like
    * width: var(--width-full | --width-constrained);

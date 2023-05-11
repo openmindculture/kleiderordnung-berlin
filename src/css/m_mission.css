@@ -4,3 +4,10 @@
  * @package KleiderOrdnung
  * @author openmindculture
  */
+
+
+.mission {
+  width: var(--width-spaced);
+  max-width: var(--width-max);
+  margin: 0 auto;
+}

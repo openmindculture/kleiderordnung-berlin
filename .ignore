@@ -5,3 +5,4 @@ dist
 themes
 package.json
 package-lock.json
+src/css/mixins.css

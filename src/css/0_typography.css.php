@@ -114,16 +114,6 @@ h2 {
   color: var(--color-default-black);
 }
 
-h1 { /* TODO reorder in an unsurprising way after finished verifying with Figma */
-  font-family: var(--font-family-heading);
-  font-weight: 400;
-  font-size: var(--font-size-48);
-  line-height: 140%; /* "or 67px" */
-  letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
-  font-style: normal;
-  color: var(--color-default-black);
-}
-
 h3 { /* TODO reorder in an unsurprising way after finished verifying with Figma */
   font-family: var(--font-family-heading); /* TODO dto. common family names?! */
   font-weight: 700;
