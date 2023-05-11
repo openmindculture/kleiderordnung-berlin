@@ -35,6 +35,13 @@ html, body, main, p {
   text-align: center; /* TODO verify and move to a more appropriate place */
 }
 
+html, body, main, p, .text-body { /* TODO make mixin and use in globals.css */
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-16);
+  line-height: 140%; /* would that be 1.4 ? is there a best-practice notation? "or 22px" */
+}
+
 img, picture, svg {
   border: none;
   max-width: 100%;

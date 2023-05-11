@@ -12,8 +12,7 @@
   margin: 0 auto;
 }
 
-/*noinspection ALL */
-@mixin heading--h1 .intro__keytext__headline {
+@mixin typography-heading-h1 .intro__keytext__headline {
   color: var(--color-primary-foreground);
 }
 

@@ -28,6 +28,10 @@
   --font-size-14: 0.875rem;
   --font-size-13: 0.8125rem;
 
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
   /* Color Styles */
   /* PREFERABLY USE generic semantic names below like --color-primary-background ! */
   --color-blue-dark-purpleish: #0014d1;

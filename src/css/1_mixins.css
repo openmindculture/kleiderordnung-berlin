@@ -1,16 +1,59 @@
 /**
  * Define reusable Style Snippets (Mixins)
  *
+ * depends on postcss-mixins
+ *
  * .ignore file if the non-standard syntax causes false positive warnings
+ *
+ * example:
+   @define-mixin typography-button-label $className {
+   $(className) {
+     // styles to mix in
+     @mixin-content; // anything nested when using the mixin
+   }
+
+   @mixin mixin-name .class-name {
+     // mixin-content
+   }
  *
  * @package KleiderOrdnung
  * @author openmindculture
  */
 
 /* stylelint-disable */
-/*noinspection ALL*/
-@define-mixin heading--h1 $className {
-  /*noinspection ALL*/
+
+@define-mixin typography-button-label $className {
+  $(className) {
+    font-family: var(--font-family-default); /* TODO default ist nicht 700 */
+    /* oder die Gewichte müssten jeweils gleich heißen,
+     * was aber deren CSS-Beispielen widerspricht.
+     */
+    font-weight: var(--font-weight-bold);
+    line-height: 14px; /* "identical to box height, or 108%" */
+    font-style: normal;
+    text-transform: uppercase;
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-copy $className {
+  $(className) {
+    font-family: var(--font-family-default);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-15); /* property names matching pixel definitions in Figma */
+    line-height: 160%; /* "identical to box height, or 24px" */
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-copy-sm $className { /* mobile / tablet < 768px */
+  $(className) {
+    font-size: var(--font-size-14);
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-heading-h1 $className {
   $(className) {
     font-family: var(--font-family-heading);
     font-weight: 400;
@@ -18,8 +61,100 @@
     line-height: 140%; /* "or 67px" */
     letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
     font-style: normal;
-    /*noinspection ALL*/
     @mixin-content;
   }
 }
+
+@define-mixin typography-heading-h1-sm $className { /* mobile / tablet < 768px */
+  $(className) {
+    font-size: var(--font-size-40);
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-heading-h1-xs $className { /* smartphone < 555px */
+  $(className) {
+    font-size: var(--font-size-24);
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-heading-h2 $className {
+  $(className) {
+    font-family: var(--font-family-default);
+    font-weight: 700;
+    font-size: var(--font-size-17);
+    line-height: 160%; /* "or 27px" */
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    font-style: normal;
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-heading-h3 $className {
+  $(className) {
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    font-size: var(--font-size-32);
+    line-height: 130%; /* "identical to box height or 42px" */
+    letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
+    font-style: normal;
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-heading-h3-sm $className { /* mobile / tablet < 768px */
+  $(className) {
+    font-size: var(--font-size-28);
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-heading-h4 $className {
+  $(className) {
+    font-family: var(--font-family-default); /* TODO dto. common family names?! */
+    font-weight: 700;
+    font-size: var(--font-size-17);
+    line-height: 160%; /* "or 27px" */
+    letter-spacing: -0.5px;
+    font-style: normal;
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-quote $className {
+  $(className) {
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-20);
+    line-height: 160%; /* "identical to box height or 32px" */
+    letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
+    font-style: normal;
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-quote-sm $className {  /* mobile / tablet < 768px */
+  $(className) {
+    font-size: var(--font-size-16);
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-weight-semibold $className {
+  $(className) {
+    font-weight: var(--font-weight-semibold);
+    @mixin-content;
+  }
+}
+
+@define-mixin typography-weight-bold $className {
+  $(className) {
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.5px;
+    @mixin-content;
+  }
+}
+
 /* stylelint-enable */

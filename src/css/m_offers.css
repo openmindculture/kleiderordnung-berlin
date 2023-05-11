@@ -12,3 +12,18 @@
   max-width: var(--width-max);
   margin: 0 auto;
 }
+
+.offers__navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.offers__navigation ul li + li {
+  margin-left: 2rem;
+}
+
+@mixin typography-button-label .offers__navigation ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
