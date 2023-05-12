@@ -30,6 +30,7 @@
 
 /* gap fallback for rotten apple browsers */
 /* too bad that does not actually work in safari */
+/* TODO refactor and don't use gap at all */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
   .navigation__list {
     border: solid 1px green;
@@ -82,6 +83,11 @@
   z-index: 11;
   background-color: var(--color-primary-background);
 }
+
+/*
+Weitere Rückfragen an Ina (bzw. selbst mal ausprobieren):
+- Wie soll das mobile Menü aussehen? Soll es die volle Breite ausfüllen? Wie sollen die Menüpunkte ausgerichtet sein? Was machen wir mit dem Kontakt-Button?
+ */
 
 /* Tablet / Desktop width with always open horizontal menu bar: */
 @media (min-width: 768px) {
