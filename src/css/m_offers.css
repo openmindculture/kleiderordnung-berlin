@@ -140,5 +140,11 @@
 }
 
 .offers__additional__articles__offer {
-  flex: 1 1 30%;
+  flex: 1 0 100%;
+}
+
+@media (min-width: 992px) {
+  .offers__additional__articles__offer {
+    flex: 1 1 30%;
+  }
 }
