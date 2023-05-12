@@ -1,6 +1,7 @@
 'use strict';
+var kleiderordnung = {}; /* TODO prefix all functions and variables with theme prefix ?! */
 /* TODO remove unused optional components like contrast-adaption, intersection observer, ... */
-/* TODO prefix all functions and variables with theme prefix ?! */
+
 var animateableClassName = 'animate--on-visibility'; // triggers micro animations
 var animatingClassName = 'animate__animated'; // will be added to animateable elements
 var animationClassDataKey = 'animationclass'; // data key to hold animation class name

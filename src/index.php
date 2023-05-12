@@ -218,8 +218,8 @@
     <article class="offers__offer">
       <figure class="offers__offer__image">
         <img
-          src="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg" width="560" height="560"
-          srcset="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg@2x.jpg 2x"
+          src="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg" width="560" height="560"
+          srcset="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung@2x.jpg 2x"
           loading="lazy"
           alt="Tina Steinke am Kleiderständer"
         >
@@ -360,7 +360,12 @@
       <!-- Story 1 -->
       <article class="stories__story">
         <figure class="stories__story__image">
-          <img alt>
+          <img
+            src="<?php echo get_template_directory_uri() ?>/img/maxi.jpg" width="319" height="567"
+            srcset="<?php echo get_template_directory_uri() ?>/img/maxi.jpg 1x, <?php echo get_template_directory_uri() ?>/img/maxi@2x.jpg 2x"
+            loading="lazy"
+            alt="Foto der Kundin Maxi"
+          >
         </figure>
         <blockquote class="stories__story__quote">
           <author class="stories__story__quote__author">
@@ -375,23 +380,55 @@ Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir g
       <!-- Story 2 -->
       <article class="stories__story">
         <figure class="stories__story__image">
-          <img alt>
+          <img
+            src="<?php echo get_template_directory_uri() ?>/img/jackie.jpg" width="321" height="570"
+            srcset="<?php echo get_template_directory_uri() ?>/img/jackie.jpg 1x, <?php echo get_template_directory_uri() ?>/img/jackie@2x.jpg 2x"
+            loading="lazy"
+            alt="Foto der Kundin Jackie"
+          >
         </figure>
         <blockquote class="stories__story__quote">
           <author class="stories__story__quote__author">
-            Maxi, Künstlerin, Berlin:
+            Jackie, Marketing Lead @ Impact Hub Berlin:
           </author>
           <span class="stories__story__quote__text">
-Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.
+I really enjoyed doing a tour of my closet with Tina. She helped me see my clothes with fresh eyes and provided practical tips on how to come up with combinations and accessories that enhance my style and personality. I recommend her services if you are looking to refine your fashion style. Thank you so much, Tina!
           </span>
         </blockquote>
       </article>
 
-      <nav class="stories__navigation">
-        <a class="stories__navigation__prev" href="#prev">zurück</a>
-        <a class="stories__navigation__next" href="#next">vor</a>
-      </nav>
+      <!-- Story 3 - absichtlich ohne Bild -->
+      <article class="stories__story">
+        <!-- einige Testimonials haben eventuell kein Bild -->
+        <blockquote class="stories__story__quote">
+          <author class="stories__story__quote__author">
+            Ellie, Foundation Executive:
+          </author>
+          <span class="stories__story__quote__text">
+Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </span>
+        </blockquote>
+      </article>
+
+      <!-- Story 4 - absichtlich ohne Bild -->
+      <article class="stories__story">
+        <!-- einige Testimonials haben eventuell kein Bild -->
+        <blockquote class="stories__story__quote">
+          <author class="stories__story__quote__author">
+            Someone, without a picture:
+          </author>
+          <span class="stories__story__quote__text">
+Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </span>
+        </blockquote>
+      </article>
+
     </div>
+
+    <nav class="stories__navigation">
+      <a class="stories__navigation__prev" href="#prev">zurück</a>
+      <a class="stories__navigation__next" href="#next">vor</a>
+    </nav>
   </section>
 
   <section id="news" class="news target-offset"><!-- post-type post -->

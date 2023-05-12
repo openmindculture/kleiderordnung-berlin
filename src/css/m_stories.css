@@ -4,3 +4,24 @@
  * @package KleiderOrdnung
  * @author openmindculture
  */
+
+@mixin typography-heading-h2 .stories__headline {}
+
+.stories__wrapper {
+  display: flex;
+  max-width: unset;
+  width: max-content;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+.stories__story {
+  display: flex;
+  flex-basis: 60%;
+  max-width: 600px;
+}
+
+.stories__story__image {
+
+}
