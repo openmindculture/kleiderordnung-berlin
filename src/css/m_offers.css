@@ -19,6 +19,7 @@
 
 .offers__navigation ul {
   list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -148,3 +149,23 @@
     flex: 1 1 30%;
   }
 }
+
+/*
+additional offers: icon: float: none;
+pricing auch zentriert;
+padding bzw. gap?
+ab min width: article + article: margin-left: ca.104px = 6.5rem;
+Weitere Angebote Überschrift immer Caps und linksbündig;
+Abstand unter big offers bzw. über jener Überschrift: 80px = 5rem;
+Abstand zur Mission wiederum ca. 104px = 6.5rem;
+
+Abstände weiter oben:
+Big offer + big offer: 80px = 5rem
+  (hat aber jetzt schon Abstand weil nach oben definiert? dann fehlte noch entsprechender unten?
+Die gelten mobil genau so.
+Subnavi + big offfer: ca. 87px = 5,4375rem; eventuell geht da auch 5 plus line-height der Links?
+
+Abstand von Intro zum folgenden: 80px = 5rem;
+
+Könnten wir eventuell verallgemeinern, dass zwischen den Sektionen grundsätzlich mindestens 5rem Abstand ist?
+ */
