@@ -10,7 +10,7 @@
 .contact span,
 .contact input,
 .contact textarea {
-  max-width: 100%;
+  max-width: var(--width-max);
 }
 
 /* BEGIN ad-hoc demo styles 2023 */
