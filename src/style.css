@@ -26,6 +26,7 @@
 @import url("css/a_list.css");
 /* -- page sections in alphabetical order -- */
 /* -- TODO move or copy page and header layout rules to critical.css to prevent layout shift */
+@import url("css/m_calltoaction.css");
 @import url("css/m_contact.css");
 @import url("css/m_cookie-consent.css");
 @import url("css/m_footer.css");

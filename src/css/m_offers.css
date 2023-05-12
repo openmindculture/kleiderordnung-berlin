@@ -17,6 +17,8 @@
   text-align: left;
 }
 
+@mixin typography-heading-h2 .offers__additional__headline {}
+
 .offers__navigation ul {
   list-style: none;
   padding: 0;
@@ -138,6 +140,7 @@
 .offers__additional__articles {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .offers__additional__articles__offer {
@@ -146,15 +149,23 @@
 
 @media (min-width: 992px) {
   .offers__additional__articles__offer {
-    flex: 1 1 30%;
+    flex: 1 1 25%;
+  }
+  .offers__additional__articles__offer + .offers__additional__articles__offer {
+    margin-left: 6.5rem;
   }
 }
 
+.offers__additional__articles .offers__offer__icon {
+  float: none;
+}
+
+.offers__additional__articles .offers__offer__price {
+  text-align: center;
+}
+
 /*
-additional offers: icon: float: none;
-pricing auch zentriert;
-padding bzw. gap?
-ab min width: article + article: margin-left: ca.104px = 6.5rem;
+additional offers:
 Weitere Angebote Überschrift immer Caps und linksbündig;
 Abstand unter big offers bzw. über jener Überschrift: 80px = 5rem;
 Abstand zur Mission wiederum ca. 104px = 6.5rem;

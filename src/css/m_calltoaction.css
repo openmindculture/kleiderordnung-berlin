@@ -1,0 +1,15 @@
+/**
+ * Call to Action
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+.calltoaction {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.calltoaction__text {
+  padding: 7.9375rem 0 3rem 0;
+}

@@ -13,7 +13,7 @@
   background-color: var(--color-primary-foreground);
   color: var(--color-primary-background);
   padding: 7.3125rem 5rem 5rem 5rem;
-  /* */
+  text-align: center;
 }
 
 .mission__text {
