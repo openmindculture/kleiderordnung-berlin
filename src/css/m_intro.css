@@ -6,6 +6,11 @@
  * @author openmindculture
  */
 
+.intro {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .intro__keytext {
   width: var(--width-spaced);
   max-width: var(--width-max);
