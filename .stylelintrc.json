@@ -13,6 +13,7 @@
         "mixin-content"
       ]
     }],
+    "block-no-empty": null,
     "color-function-notation": null,
     "color-hex-length": null,
     "comment-empty-line-before": null,
