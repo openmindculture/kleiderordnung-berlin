@@ -16,6 +16,14 @@
   color: var(--color-primary-foreground);
 }
 
+@media (max-width: 768px) { /* mobile / tablet < 768px */
+  @mixin typography-heading-h1-sm .intro__keytext__headline {}
+}
+
+@media (max-width: 768px) { /* smartphone < 555px */
+  @mixin typography-heading-h1-xs .intro__keytext__headline {}
+}
+
 .intro__keyvisual {
   aspect-ratio: 2; /* 2 / 1 rounded from the fallback image size 1160 x 581 px */
   width: 90%;
