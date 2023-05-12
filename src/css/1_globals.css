@@ -42,10 +42,10 @@ html, body, main, p, .text-body { /* TODO make mixin and use in globals.css */
   line-height: 140%; /* would that be 1.4 ? is there a best-practice notation? "or 22px" */
 }
 
-img, picture, svg {
+img, svg {
   border: none;
   max-width: 100%;
-  max-width: 99vw;
+  height: auto;
 }
 
 /* Inherit fonts for inputs and buttons */

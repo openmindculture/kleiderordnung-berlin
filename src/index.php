@@ -148,7 +148,7 @@
   </section>
 
   <section id="angebot" class="offers target-offset">
-    <h2 class="offers_headline">Meine Angebote</h2>
+    <h2 class="offers__headline">Meine Angebote</h2>
     <nav class="offers__navigation">
       <ul>
         <li>
@@ -176,8 +176,15 @@
         >
       </figure>
       <div class="offers__offer__card">
-        <figure class="offers__offer__icon"></figure>
-          <svg></svg>
+        <figure class="offers__offer__icon">
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4.75C7 3.09314 8.34315 1.75 10 1.75H46C47.6569 1.75 49 3.09315 49 4.75V47.75C49 49.4069 47.6569 50.75 46 50.75H10C8.34315 50.75 7 49.4069 7 47.75V4.75Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.5 50.75V54.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M45.5 50.75V54.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M28 50.75V1.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 25.375C21.4832 25.375 21.875 25.7668 21.875 26.25C21.875 26.7332 21.4832 27.125 21 27.125C20.5168 27.125 20.125 26.7332 20.125 26.25C20.125 25.7668 20.5168 25.375 21 25.375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M35 25.375C35.4832 25.375 35.875 25.7668 35.875 26.25C35.875 26.7332 35.4832 27.125 35 27.125C34.5168 27.125 34.125 26.7332 34.125 26.25C34.125 25.7668 34.5168 25.375 35 25.375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </figure>
         <h3 class="offers__offer__headline">Style Visit</h3>
         <p class="offers__offer__paragraph">
@@ -203,50 +210,53 @@
           <li>Minimum 2h = 190 Euro</li>
           <li>jede weitere Stunde = 90 Euro</li>
         </ul>
-        <a class="button button--primary" href="#kontakt">Kontakt</a>
+        <a class="button button--primary" href="#kontakt">Termin buchen</a>
       </div>
     </article>
 
-    <!-- TODO replace the duplicate example below with dynamic content from data loop -->
+    <!-- TODO replace the example(s) below with dynamic content from data loop -->
     <article class="offers__offer">
       <figure class="offers__offer__image">
         <img
           src="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg" width="560" height="560"
-          srcset="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung@2x.jpg 2x"
+          srcset="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg@2x.jpg 2x"
           loading="lazy"
-          alt="Tina Steinke betrachtet lächelnd Kleidung am Kleiderständer"
+          alt="Tina Steinke am Kleiderständer"
         >
       </figure>
       <div class="offers__offer__card">
-        <figure class="offers__offer__icon"></figure>
-          <svg></svg>
+        <figure class="offers__offer__icon">
+          <svg width="57" height="56" viewBox="0 0 57 56" fill="none">
+            <path d="M22 54.8334H1.02002C1.02002 54.8334 1.02002 43.6081 1.02002 43.251C1.02002 43.251 0.974976 41.7351 1.02002 40.8336V19.033V16.3334H41.8333V19.033" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M30.5374 9.46637C29.7468 5.33694 26.1411 2.34659 21.9367 2.33337V2.33337C17.7542 2.35172 14.1652 5.31781 13.3594 9.42204" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M50.6359 32.7195H31.7242C30.7849 32.6812 29.9623 33.344 29.7999 34.2699L27.1199 52.9163C27.0918 53.434 27.2861 53.9391 27.6538 54.3046C28.0216 54.6701 28.5279 54.8612 29.0455 54.8299H53.3146C53.8321 54.8612 54.3383 54.6701 54.7058 54.3046C55.0734 53.939 55.2674 53.4339 55.2389 52.9163L52.5589 34.2699C52.3965 33.3445 51.5747 32.6819 50.6359 32.7195Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M46.0957 28.776C45.6417 26.4045 43.571 24.6872 41.1564 24.6796V24.6796C38.7544 24.6901 36.6932 26.3935 36.2305 28.7506" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </figure>
-        <h3 class="offers__offer__headline">Style Visit</h3>
+        <h3 class="offers__offer__headline">Shopping-Tour</h3>
         <p class="offers__offer__paragraph">
-          Wir treffen uns bei Dir zu Hause und wir gehen gemeinsam Deine Garderobe entsprechend nach Deinen Zielen und Anforderungen durch und mit viel Spaß und Ideenreichtum betrachte ich jedes Stück als Chance und wertvolle Ressource und füge sie zu überraschenden Kombinationen zusammen! Als Ergebnis kannst Du Dich auf eine neue Kollektion im Schrank erfreuen und dies ganz ohne Konsum!
+          In 3-4 ausgesuchten Läden suchen wir gezielt nach den fehlenden Puzzlestücken, die aus deiner Garderobe ein stimmiges Ganzes machen! Im Fokus stehen Fair-Fashion Boutiquen, Second Hand & Vintage-Stores. Die Berliner Designer-Szene bietet zudem zahlreiche unabhängige Brands mit ausdrucksstarken Kollektionen und Einzelstücken ebenso wie puristischen Schnitten. Ich werde das Richtige für Dich finden, denn viel Erfahrung und Kreativität lässt mich das Potential eines Kleidungsstücks und dessen Einsatzfähigkeit schnell erkennen!
         </p>
         <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
         <ul class="offers__offer__features__list">
           <li>Kostenloses Vorgespräch</li>
-          <li>tolle Kombinationen, auf die Du so nicht gekommen wärst</li>
-          <li>eine neue Kollektion aus dem eigenen Schrank</li>
-          <li>Definition von Stücken, die besonders gut zu Dir und Deiner Silhouette passen</li>
-          <li>Fotos von Dir und deinen neuen Looks mit anschließendem Stylebook</li>
-          <li>Kleidungsstücke gezielt aussortieren, die Deiner Persönlichkeit nicht entsprechen</li>
-          <li>Wegweiser für Dich, wie du die gewonnenen Erkenntnisse eigenständig umsetzten kannst</li>
-          <li>Empfehlungen für Ergänzungen, wenn sinnvoll</li>
+          <li>gezielte Auswahl an passenden Ergänzungen</li>
+          <li>Zeit- und Nerven sparendes Einkaufen</li>
+          <li>Vermeidung von Fehlkäufen</li>
+          <li>Kennenlernen von besonderen Stores & Designern</li>
+          <li>1 zu 1 Styling-Beratung vor Ort</li>
         </ul>
         <div class="offers__offer__price">
           <!-- TODO possibly better offer 1 free form text line? -->
           <span class="offers__offer__price__prefix">ab</span>
-          <span class="offers__offer__price__amount">190,-</span>
+          <span class="offers__offer__price__amount">120,-</span>
           <span class="offers__offer__price__currency">&euro;</span>
         </div>
         <ul class="offers__offer__price__annotations">
-          <li>Minimum 2h = 190 Euro</li>
+          <li>Minimum 3 Stunden = 290 Euro</li>
           <li>jede weitere Stunde = 90 Euro</li>
         </ul>
-        <a class="button button--primary" href="#kontakt">Kontakt</a>
+        <a class="button button--primary" href="#kontakt">Termin buchen</a>
       </div>
     </article>
 
@@ -254,8 +264,16 @@
       <h2 class="offers__additional__headline">Weitere Angebote</h2>
       <div class="offers__additional__articles">
 
-        <article class="offers__additional__offer">
-          <figure class="offers__offer__icon"></figure>
+        <article class="offers__additional__articles__offer">
+          <figure class="offers__offer__icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M40.25 18.4811L38.444 11.6715C38.1863 10.7301 37.2972 10.0757 36.2833 10.0811H31.3413C31.3413 11.8526 29.8454 13.2888 28 13.2888C26.1546 13.2888 24.6587 11.8526 24.6587 10.0811H19.7167C18.7028 10.0757 17.8137 10.7301 17.556 11.6715L15.75 18.4811H21V26.8811H35V18.4811H40.25Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17.5 52.0811H38.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.75 33.6011H54.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 4.68018C1.75 3.02332 3.09315 1.68018 4.75 1.68018H51.25C52.9069 1.68018 54.25 3.02332 54.25 4.68018V39.0002C54.25 40.657 52.9069 42.0002 51.25 42.0002H4.75C3.09315 42.0002 1.75 40.657 1.75 39.0002V4.68018Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M28 52.08V42" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
             <h3 class="offers__offer__headline">Styling-Abo</h3>
             <p class="offers__offer__paragraph">
               Du wünscht Dir regelmäßigen Support in Stylingfragen oder nachhaltigen Kaufentscheidungen? Dann sichere Dir meine Aufmerksamkeit durch Dein monatliches Styling-Abo! Beinhaltet sind 5-6 individuelle Anfragen online pro Monat.
@@ -265,8 +283,20 @@
             </div>
         </article>
 
-        <article class="offers__additional__offer">
-          <figure class="offers__offer__icon"></figure>
+        <article class="offers__additional__articles__offer">
+          <figure class="offers__offer__icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path d="M1.75 53.083H54.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M54.25 21.583H1.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M38.5 14.5832L30.8 4.3165C30.139 3.43518 29.1017 2.9165 28 2.9165C26.8983 2.9165 25.861 3.43518 25.2 4.3165L17.5 14.5832" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17.5 46.0811V28.5811" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17.5 28.5811H19.25C22.1495 28.5811 24.5 30.9316 24.5 33.8311C24.5 36.7305 22.1495 39.0811 19.25 39.0811H17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7 28.583C5.067 28.583 3.5 30.15 3.5 32.083V42.583C3.5 44.516 5.067 46.083 7 46.083C8.933 46.083 10.5 44.516 10.5 42.583V32.083C10.5 30.15 8.933 28.583 7 28.583Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M38.5 46.0811H35C33.067 46.0811 31.5 44.5141 31.5 42.5811V32.0811C31.5 30.1481 33.067 28.5811 35 28.5811H38.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M31.5 39.0811H38.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M45.5 46.0811V28.5811L52.5 46.0811V28.5811" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
           <h3 class="offers__offer__headline">Meet the Special-Places</h3>
           <p class="offers__offer__paragraph">
             Du möchtest gezielt besondere Fashion-Locations kennenlernen? Vintage-Stores, Designerateliers, Fairfashion-Boutiquen? Ich biete Gruppen-Walks zu Berlins besten Adressen in Sachen Mode!
@@ -276,8 +306,20 @@
           </div>
         </article>
 
-        <article class="offers__additional__offer">
-          <figure class="offers__offer__icon"></figure>
+        <article class="offers__additional__articles__offer">
+          <figure class="offers__offer__icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path d="M35 1.75C36.933 1.75 38.5 3.317 38.5 5.25C38.5 7.183 36.933 8.75 35 8.75V12.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.75 5.25H26.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M54.25 5.25H47.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M33.25 33.25H5.25C3.317 33.25 1.75 34.817 1.75 36.75V54.25H36.75V36.75C36.75 34.817 35.183 33.25 33.25 33.25Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M19.25 40.25V54.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.75 40.25H36.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.75 47.25H12.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M26.25 47.25H29.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.75 22.75C22.75 16.9517 28.2357 12.25 35 12.25C41.7643 12.25 47.25 16.9517 47.25 22.75H22.75Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
           <h3 class="offers__offer__headline">Ordnung im Schrank</h3>
           <p class="offers__offer__paragraph">
             Schluss mit Chaos im Schrank und dem ewigen „Struggle“ der Outfitsuche am Morgen! Ich strukturiere Deine Garderobe sinnvoll und Du erfreust Dich umso mehr an Deinen Stücken
