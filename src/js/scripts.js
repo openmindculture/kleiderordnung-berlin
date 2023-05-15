@@ -2,53 +2,59 @@
 var kleiderordnung = {}; /* TODO prefix all functions and variables with theme prefix ?! */
 /* TODO remove unused optional components like contrast-adaption, intersection observer, ... */
 
-var animateableClassName = 'animate--on-visibility'; // triggers micro animations
-var animatingClassName = 'animate__animated'; // will be added to animateable elements
-var animationClassDataKey = 'animationclass'; // data key to hold animation class name
-var animationClassInColumnDataKey = 'animationclassincolumn'; // dto. if element is inside of vertical layout
+kleiderordnung.animateableClassName = 'animate--on-visibility'; // triggers micro animations
+kleiderordnung.animatingClassName = 'animate__animated'; // will be added to animateable elements
+kleiderordnung.animationClassDataKey = 'animationclass'; // data key to hold animation class name
+kleiderordnung.animationClassInColumnDataKey = 'animationclassincolumn'; // dto. if element is inside of vertical layout
 
-var currentAnimationReplayTimeoutId = null;
-var currentAnimationPauseTimeoutId = null;
+kleiderordnung.currentAnimationReplayTimeoutId = null;
+kleiderordnung.currentAnimationPauseTimeoutId = null;
 
-var variableContrastClassName = 'contrast--varies' // triggers automatic contrast adjustment
-var highContrastClassName = 'contrast--more'; // to be removed from .contrast--varies elements
+kleiderordnung.variableContrastClassName = 'contrast--varies' // triggers automatic contrast adjustment
+kleiderordnung.highContrastClassName = 'contrast--more'; // to be removed from .contrast--varies elements
 
 var allowableClassName = 'allowable--on-visibility'; // triggers consent challenge before external content loading
-var feedCookieKey = 'instafeed'; // name of the cookie set to remember consent
-var feedCookieValue = 'allow'; // default value
-var feedContainerClassName = 'feed__container';
-var feedContainerActiveClassName = 'feed__container--active'; // set to feed container when allowed and loaded
-var feedDataKey = 'allow'; // data key to control the expiry / validity when clicking allow
-var feedDataValueAlways = 'always'; // data value to always allow (as opposed to the session default)
-var feedScriptUrlDataKey = 'scripturl'; // data key which JavaScript to load (absolute or relative to project)
-var feedStyleUrlDataKey = 'styleurl'; // data key which stylesheet to load (absolute or relative to project)
+kleiderordnung.feedCookieKey = 'instafeed'; // name of the cookie set to remember consent
+kleiderordnung.feedCookieValue = 'allow'; // default value
+kleiderordnung.feedContainerClassName = 'feed__container';
+kleiderordnung.feedContainerActiveClassName = 'feed__container--active'; // set to feed container when allowed and loaded
+kleiderordnung.feedDataKey = 'allow'; // data key to control the expiry / validity when clicking allow
+kleiderordnung.feedDataValueAlways = 'always'; // data value to always allow (as opposed to the session default)
+kleiderordnung.feedScriptUrlDataKey = 'scripturl'; // data key which JavaScript to load (absolute or relative to project)
+kleiderordnung.feedStyleUrlDataKey = 'styleurl'; // data key which stylesheet to load (absolute or relative to project)
 
-var sliderWrapperClassName = 'testimonials__sliderwrapper';
-var sliderWrapperShowingTeaserClassName = 'testimonials__sliderwrapper--has-teaser';
+kleiderordnung.sliderWrapperClassName = 'testimonials__sliderwrapper';
+kleiderordnung.sliderWrapperShowingTeaserClassName = 'testimonials__sliderwrapper--has-teaser';
 
-var menuId = 'primary-menu';
-var menuOpenButtonClassName = 'navigation__toggle--open';
-var menuCloseButtonClassName= 'navigation__toggle--close';
-var menuOpenedClassName = 'navigation__menu-opened'; // .target for progressive enhancement of :target
-var menuLinksSelector = '#primary-menu a[href]'; // links inside the menu
-var mainMenuNavWrapperSelector = 'navigation--main-navigation'; // select parent menu from descendant button handler
+kleiderordnung.menuId = 'primary-menu';
+kleiderordnung.menuOpenButtonClassName = 'navigation__toggle--open';
+kleiderordnung.menuCloseButtonClassName= 'navigation__toggle--close';
+kleiderordnung.menuOpenedClassName = 'navigation__menu-opened'; // .target for progressive enhancement of :target
+kleiderordnung.menuLinksSelector = '#primary-menu a[href]'; // links inside the menu
+kleiderordnung.mainMenuNavWrapperSelector = 'navigation--main-navigation'; // select parent menu from descendant button handler
 
-var stickyHeaderId = 'site-header';
-var stuckClassName = 'stuck'; // emulate ::stuck pseudo class for sticky header styling
-var root = document.querySelector(':root'); // to update actual header height to fix anchor positions
+kleiderordnung.stickyHeaderId = 'site-header';
+kleiderordnung.stuckClassName = 'stuck'; // emulate ::stuck pseudo class for sticky header styling
+kleiderordnung.root = document.querySelector(':root'); // to update actual header height to fix anchor positions
+
+kleiderordnung.introKeyvisualAnimationId = 'intro-keyvisual-animation';
+kleiderordnung.introKeyvisualMousetrapId = 'intro-keyvisual-mousetrap'
 
 /** type {number[]} TimeoutID for DOM element ID to prevent redundant checks and involuntary smooth scroll side effect */
-var observableTimeoutsByTargetElementId = [];
-var genericIdCounter = 0;
+kleiderordnung.observableTimeoutsByTargetElementId = [];
+kleiderordnung.genericIdCounter = 0;
 
-var isMobileQuery = window.matchMedia('(max-width: 768px)');
-var isMobile = (isMobileQuery && isMobileQuery.matches);
+kleiderordnung.isMobileQuery = window.matchMedia('(max-width: 768px)');
+kleiderordnung.isMobile = (kleiderordnung.isMobileQuery && kleiderordnung.isMobileQuery.matches);
 
-var prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-var prefersReducedMotion = (prefersReducedMotionQuery && prefersReducedMotionQuery.matches);
+kleiderordnung.prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+kleiderordnung.prefersReducedMotion = (kleiderordnung.prefersReducedMotionQuery && kleiderordnung.prefersReducedMotionQuery.matches);
+
+kleiderordnung.prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
+kleiderordnung.prefersMoreContrast = (kleiderordnung.prefersMoreContrastQuery && kleiderordnung.prefersMoreContrastQuery.matches);
 
 /** @object tiny-slider options */
-var tinySliderOptions = {
+kleiderordnung.tinySliderOptions = {
   container: '',
   items: 1,
   controls: false,
@@ -70,7 +76,7 @@ var tinySliderOptions = {
 }
 
 /** @object IntersectionObserver options */
-var observerOptions = {
+kleiderordnung.observerOptions = {
   root: null,
   rootMargin: '0px',
   threshold: 0.1
@@ -81,26 +87,26 @@ var observerOptions = {
  * Observe .allowable--on-visibility to activate external feed only if it ever becomes visible
  * @param {IntersectionObserverEntry[]} intersectingEntries
  */
-function intersectionCallback(intersectingEntries) {
+kleiderordnung.intersectionCallback = function(intersectingEntries) {
   for (var j = 0; j < intersectingEntries.length; j++) {
     var intersectingEntry = intersectingEntries[j];
-    if (intersectingEntry.isIntersecting && intersectingEntry.intersectionRatio > observerOptions.threshold) {
+    if (intersectingEntry.isIntersecting && intersectingEntry.intersectionRatio > kleiderordnung.observerOptions.threshold) {
       var targetElement = /** @type {HTMLElement} */ intersectingEntry.target;
       if (targetElement) {
         var targetId = targetElement.id;
         if (!targetId) {
-          genericIdCounter++;
+          kleiderordnung.genericIdCounter++;
           targetId = '_observable' + genericIdCounter;
           targetElement.id = targetId;
         }
-        if (!observableTimeoutsByTargetElementId[targetId]) {
-          observableTimeoutsByTargetElementId[targetId] = window.setTimeout(function() {
+        if (!kleiderordnung.observableTimeoutsByTargetElementId[targetId]) {
+          kleiderordnung.observableTimeoutsByTargetElementId[targetId] = window.setTimeout(function() {
             var debouncedEntry = intersectingEntry;
             var debouncedTarget = /** @type {HTMLElement} */ debouncedEntry.target;
             if (debouncedEntry.isIntersecting && debouncedEntry.intersectionRatio > observerOptions.threshold) {
-              handleAppearedElement(debouncedTarget);
+              kleiderordnung.handleAppearedElement(debouncedTarget);
             }
-            observableTimeoutsByTargetElementId[debouncedTarget.id] = undefined;
+            kleiderordnung.observableTimeoutsByTargetElementId[debouncedTarget.id] = undefined;
           }, 500);
         }
       }
@@ -108,9 +114,9 @@ function intersectionCallback(intersectingEntries) {
       var invisibleTargetElement = intersectingEntries[j].target;
       if (invisibleTargetElement) {
         var invisibleTargetId = invisibleTargetElement.id;
-        if (observableTimeoutsByTargetElementId[invisibleTargetId]) {
-          window.clearTimeout(observableTimeoutsByTargetElementId[invisibleTargetId]);
-          observableTimeoutsByTargetElementId[invisibleTargetId] = undefined;
+        if (kleiderordnung.observableTimeoutsByTargetElementId[invisibleTargetId]) {
+          window.clearTimeout(kleiderordnung.observableTimeoutsByTargetElementId[invisibleTargetId]);
+          kleiderordnung.observableTimeoutsByTargetElementId[invisibleTargetId] = undefined;
         }
       }
     }
@@ -118,63 +124,63 @@ function intersectionCallback(intersectingEntries) {
 }
 
 /** @param {HTMLElement} targetElement */
-function handleAppearedElement(targetElement) {
+kleiderordnung.handleAppearedElement = function(targetElement) {
   if (targetElement.dataset.animationclass && targetElement.classList) {
-    var datakey = animationClassDataKey;
-    if (isMobile) {
-      datakey = animationClassInColumnDataKey;
+    var datakey = kleiderordnung.animationClassDataKey;
+    if (kleiderordnung.isMobile) {
+      datakey = kleiderordnung.animationClassInColumnDataKey;
     }
     if (datakey) {
       var animationClassName = targetElement.dataset[datakey];
       if (animationClassName && animationClassName !== '') {
-        targetElement.classList.add(animatingClassName, animationClassName);
+        targetElement.classList.add(kleiderordnung.animatingClassName, kleiderordnung.animationClassName);
       }
     }
   }
   if (targetElement.dataset.allowable) {
-    prepareExternalFeed(targetElement);
+    kleiderordnung.prepareExternalFeed(targetElement);
   }
 }
 
 /**
  * @param {HTMLElement} feedContainerElement
  */
-function prepareExternalFeed(feedContainerElement) {
+kleiderordnung.prepareExternalFeed = function(feedContainerElement) {
   if (
     document.cookie.split(';').some(
       function(item) {
-        return item.trim().startsWith(feedCookieKey + '=' + feedCookieValue);
+        return item.trim().startsWith(kleiderordnung.feedCookieKey + '=' + kleiderordnung.feedCookieValue);
       }
     )
   ) {
-    activateExternalFeed(feedContainerElement);
+    kleiderordnung.activateExternalFeed(feedContainerElement);
   } else {
-    var buttonElements = feedContainerElement.querySelectorAll('[data-' + feedDataKey + ']');
+    var buttonElements = feedContainerElement.querySelectorAll('[data-' + kleiderordnung.feedDataKey + ']');
     for (var i = 0; i < buttonElements.length; i++) {
       var buttonElement = buttonElements[i];
       buttonElement.addEventListener('click', function() {
-        allowAndActivateExternalFeed(buttonElement);
+        kleiderordnung.allowAndActivateExternalFeed(buttonElement);
       }, false);
     }
   }
 }
 
 /** @param {HTMLElement} buttonElement */
-function allowAndActivateExternalFeed(buttonElement) {
-  var feedContainerElement = buttonElement.closest('.' + feedContainerClassName);
-  var consentCookie = feedCookieKey + '=' + feedCookieValue + ';samesite=strict;secure';
-  if (buttonElement.dataset[feedDataKey].allow === feedDataValueAlways) {
+kleiderordnung.allowAndActivateExternalFeed = function(buttonElement) {
+  var feedContainerElement = buttonElement.closest('.' + kleiderordnung.feedContainerClassName);
+  var consentCookie = kleiderordnung.feedCookieKey + '=' + kleiderordnung.feedCookieValue + ';samesite=strict;secure';
+  if (buttonElement.dataset[feedDataKey].allow === kleiderordnung.feedDataValueAlways) {
     var maxAgeSeconds = 31536000; // 1 year
     consentCookie += ';max-age=' + maxAgeSeconds +  ';';
   } // If neither expires nor max-age specified it will expire at the end of session.
   document.cookie = consentCookie;
   if (feedContainerElement) {
-    activateExternalFeed(feedContainerElement);
+    kleiderordnung.activateExternalFeed(feedContainerElement);
   }
 }
 
 /** @param {HTMLElement} feedContainerElement */
-function activateExternalFeed(feedContainerElement) {
+kleiderordnung.activateExternalFeed = function(feedContainerElement) {
   if (!feedContainerElement) { return; }
   var styleFileUrl = feedContainerElement.dataset[feedStyleUrlDataKey];
   if (styleFileUrl) {
@@ -189,40 +195,38 @@ function activateExternalFeed(feedContainerElement) {
       // TODO schedule retry? or rather insert <style> element instead of fetching?
     });
   }
-  var scriptFileUrl = feedContainerElement.dataset[feedScriptUrlDataKey];
+  var scriptFileUrl = feedContainerElement.dataset[kleiderordnung.feedScriptUrlDataKey];
   if (scriptFileUrl) {
     var scriptElement = document.createElement('script');
     scriptElement.src = scriptFileUrl;
     document.head.append(scriptElement);
   }
   if (feedContainerElement && feedContainerElement.classList) {
-    feedContainerElement.classList.add(feedContainerActiveClassName);
+    feedContainerElement.classList.add(kleiderordnung.feedContainerActiveClassName);
   }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
 
   /* Key Visual Lottie Animation Control */
-  if (!prefersReducedMotion) {
+  if (!kleiderordnung.prefersReducedMotion) {
     /** TODO add JSDoc for player object */
-    var introAnimation = document.getElementById("intro-keyvisual-animation");
-    if (introAnimation) {
-      introAnimation.addEventListener("ready", function() {
-        introAnimation.play();
-        currentAnimationReplayTimeoutId = window.setTimeout(function(){
-          introAnimation.play();
+    kleiderordnung.introAnimation = document.getElementById(kleiderordnung.introKeyvisualAnimationId);
+    if (kleiderordnung.introAnimation) {
+      kleiderordnung.introAnimation.addEventListener('ready', function() {
+        kleiderordnung.introAnimation.play();
+        kleiderordnung.currentAnimationReplayTimeoutId = window.setTimeout(function(){
+          kleiderordnung.introAnimation.play();
         }, 30000);
       });
       /** @var {HTMLElement|null} */
-      var introAnimationMousetrap = document.getElementById("intro-keyvisual-mousetrap");
-      if (introAnimationMousetrap) {
-        console.log("initialize mousetrap");
-        introAnimationMousetrap.addEventListener("mouseenter", function() {
-          console.log("mousetrap mouseenter should restart animation");
-          window.clearTimeout(currentAnimationReplayTimeoutId);
-          introAnimation.play();
-          currentAnimationReplayTimeoutId = window.setTimeout(function(){
-            introAnimation.play();
+      kleiderordnung.introAnimationMousetrap = document.getElementById(kleiderordnung.introKeyvisualMousetrapId);
+      if (kleiderordnung.introAnimationMousetrap) {
+        kleiderordnung.introAnimationMousetrap.addEventListener('mouseenter', function() {
+          window.clearTimeout(kleiderordnung.currentAnimationReplayTimeoutId);
+          kleiderordnung.introAnimation.play();
+          kleiderordnung.currentAnimationReplayTimeoutId = window.setTimeout(function(){
+            kleiderordnung.introAnimation.play();
           }, 30000);
         });
       }
@@ -231,86 +235,87 @@ document.addEventListener('DOMContentLoaded', function() {
 
   /* Header / Navigation control */
 
-  var stickyHeader = document.getElementById(stickyHeaderId);
-  if (stickyHeader) {
-    root.style.setProperty('--header-height', '' + stickyHeader.offsetHeight + 'px');
-    var stickyObserver = new IntersectionObserver(
+  kleiderordnung.stickyHeader = document.getElementById(kleiderordnung.stickyHeaderId);
+  if (kleiderordnung.stickyHeader) {
+    kleiderordnung.root.style.setProperty('--header-height', '' + kleiderordnung.stickyHeader.offsetHeight + 'px');
+    kleiderordnung.stickyObserver = new IntersectionObserver(
       function(intersectingEntries) {
-        var isStuck = intersectingEntries[0].intersectionRatio < 1;
-        intersectingEntries[0].target.classList.toggle(stuckClassName, isStuck);
-        if (isStuck) {
-          root.style.setProperty('--header-height--stuck', '' + stickyHeader.offsetHeight + 'px');
+        kleiderordnung.isStuck = intersectingEntries[0].intersectionRatio < 1;
+        intersectingEntries[0].target.classList.toggle(kleiderordnung.stuckClassName, kleiderordnung.isStuck);
+        if (kleiderordnung.isStuck) {
+          kleiderordnung.root.style.setProperty('--header-height--stuck', '' + kleiderordnung.stickyHeader.offsetHeight + 'px');
         }
       },
       { threshold: [1] }
     );
-    stickyObserver.observe(stickyHeader);
+    kleiderordnung.stickyObserver.observe(kleiderordnung.stickyHeader);
   }
 
   // progressive enhancement for navigation menu behavior
-  var menu = document.getElementById(menuId);
-  var menuOpenButton = document.getElementsByClassName(menuOpenButtonClassName)[0];
-  menuOpenButton.addEventListener('click', function(event) {
+  kleiderordnung.menu = document.getElementById(kleiderordnung.menuId);
+  kleiderordnung.menuOpenButton = document.getElementsByClassName(kleiderordnung.menuOpenButtonClassName)[0];
+  kleiderordnung.menuOpenButton.addEventListener('click', function(event) {
     event.preventDefault();
-    var menuOpenButton = /** @type {HTMLElement} */ event.currentTarget;
-    var menu = document.getElementById(menuId);
-    menu.classList.add(menuOpenedClassName);
-    menuOpenButton.classList.add(menuOpenedClassName);
+    kleiderordnung.menuOpenButton = /** @type {HTMLElement} */ event.currentTarget;
+    kleiderordnung.menu = document.getElementById(kleiderordnung.menuId);
+    kleiderordnung.menu.classList.add(kleiderordnung.menuOpenedClassName);
+    kleiderordnung.menuOpenButton.classList.add(kleiderordnung.menuOpenedClassName);
   });
-  var menuCloseButton = document.getElementsByClassName(menuCloseButtonClassName)[0];
-  menuCloseButton.addEventListener('click', function(event) {
+  kleiderordnung.menuCloseButton = document.getElementsByClassName(kleiderordnung.menuCloseButtonClassName)[0];
+  kleiderordnung.menuCloseButton.addEventListener('click', function(event) {
     event.preventDefault();
-    menu.classList.remove(menuOpenedClassName);
-    menuOpenButton.classList.remove(menuOpenedClassName);
+    kleiderordnung.menu.classList.remove(kleiderordnung.menuOpenedClassName);
+    kleiderordnung.menuOpenButton.classList.remove(kleiderordnung.menuOpenedClassName);
   });
-  var navLinks = document.querySelectorAll(menuLinksSelector);
-  for (var o = 0; o < navLinks.length; o++) {
-    navLinks[o].addEventListener('click', function(event) {
-      menu.classList.remove(menuOpenedClassName);
-      menuOpenButton.classList.remove(menuOpenedClassName);
+  kleiderordnung.navLinks = document.querySelectorAll(kleiderordnung.menuLinksSelector);
+  for (var o = 0; o < kleiderordnung.navLinks.length; o++) {
+    kleiderordnung.navLinks[o].addEventListener('click', function(event) {
+      kleiderordnung.menu.classList.remove(kleiderordnung.menuOpenedClassName);
+      kleiderordnung.menuOpenButton.classList.remove(kleiderordnung.menuOpenedClassName);
     });
   }
 
   /* Animate on Visibility, Respect Reduced Motion Preference */
 
-  var observer = new IntersectionObserver(intersectionCallback, observerOptions);
-  var elementsActivatedOnVisibilityAndConsent = document.getElementsByClassName(allowableClassName);
-  for (var i = 0; i < elementsActivatedOnVisibilityAndConsent.length; i++) {
-    observer.observe(elementsActivatedOnVisibilityAndConsent[i]);
+  kleiderordnung.observer = new IntersectionObserver(kleiderordnung.intersectionCallback, kleiderordnung.observerOptions);
+  kleiderordnung.elementsActivatedOnVisibilityAndConsent = document.getElementsByClassName(kleiderordnung.allowableClassName);
+  for (var i = 0; i < kleiderordnung.elementsActivatedOnVisibilityAndConsent.length; i++) {
+    kleiderordnung.observer.observe(kleiderordnung.elementsActivatedOnVisibilityAndConsent[i]);
   }
-  if (!prefersReducedMotion) {
-    var elementsAnimatedOnVisibility = document.getElementsByClassName(animateableClassName);
-    for (var j = 0; j < elementsAnimatedOnVisibility.length; j++) {
-      observer.observe(elementsAnimatedOnVisibility[j]);
+  if (!kleiderordnung.prefersReducedMotion) {
+    kleiderordnung.elementsAnimatedOnVisibility = document.getElementsByClassName(kleiderordnung.animateableClassName);
+    for (var j = 0; j < kleiderordnung.elementsAnimatedOnVisibility.length; j++) {
+      kleiderordnung.observer.observe(kleiderordnung.elementsAnimatedOnVisibility[j]);
     }
   }
-  var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
-  if (prefersMoreContrastQuery && !prefersMoreContrastQuery.matches) {
+  kleiderordnung.prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
+  if (!kleiderordnung.prefersMoreContrast ) {
     window.setTimeout(function() {
-      var moreContrastElements = document.getElementsByClassName(variableContrastClassName);
-      for (var k = 0; k < moreContrastElements.length; k++) {
-        moreContrastElements[k].classList.remove(highContrastClassName);
+      kleiderordnung.moreContrastElements = document.getElementsByClassName(kleiderordnung.variableContrastClassName);
+      for (var k = 0; k < kleiderordnung.moreContrastElements.length; k++) {
+        kleiderordnung.moreContrastElements[k].classList.remove(kleiderordnung.highContrastClassName);
       }
     }, 5000);
   }
 
   /* Activate Carousel Slider Behavior */
 
-  var sliderContainers = document.getElementsByClassName(sliderWrapperClassName);
-  for (var l=0; l < sliderContainers.length; l++) {
-    var currentTinySliderOptions = tinySliderOptions;
-    currentTinySliderOptions.container = sliderContainers[l];
-    tns(currentTinySliderOptions);
-    sliderContainers[l].addEventListener('mousedown', function(event) {
+  kleiderordnung.sliderContainers = document.getElementsByClassName(kleiderordnung.sliderWrapperClassName);
+  for (var l=0; l < kleiderordnung.sliderContainers.length; l++) {
+    kleiderordnung.currentTinySliderOptions = kleiderordnung.tinySliderOptions;
+    kleiderordnung.currentTinySliderOptions.container = kleiderordnung.sliderContainers[l];
+    /** @var {Object} tns global carousel slider library object */
+    tns(kleiderordnung.currentTinySliderOptions);
+    kleiderordnung.sliderContainers[l].addEventListener('mousedown', function(event) {
       var target = /** @type {HTMLElement} */ event.currentTarget;
-      target.classList.remove(sliderWrapperShowingTeaserClassName);
+      target.classList.remove(kleiderordnung.sliderWrapperShowingTeaserClassName);
     }, { once: true });
 
     /* mousedown event seems to be prevented by slider library touch handler */
-    sliderContainers[l].addEventListener('touchmove', function(event) {
+    kleiderordnung.sliderContainers[l].addEventListener('touchmove', function(event) {
       var eventTarget =  /** @type {HTMLElement} */ event.target;
-      var target = eventTarget.closest('.' + sliderWrapperClassName);
-      target.classList.remove(sliderWrapperShowingTeaserClassName);
+      var target = eventTarget.closest('.' + kleiderordnung.sliderWrapperClassName);
+      target.classList.remove(kleiderordnung.sliderWrapperShowingTeaserClassName);
     }, { once: true });
   }
 });
