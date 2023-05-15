@@ -39,3 +39,7 @@
 .contrast--varies {
   transition: color 2s ease-out, background-color 2s ease-out, background-image 2s ease-out;
 }
+
+.has-secondary-background {
+  background-color: var(--color-secondary-background);
+}

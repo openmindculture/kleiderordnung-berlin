@@ -166,7 +166,7 @@
       </ul>
     </nav>
 
-    <article class="offers__offer">
+    <article class="offers__offer has-secondary-background">
       <figure class="offers__offer__image">
         <img
           src="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg" width="560" height="560"
@@ -215,7 +215,7 @@
     </article>
 
     <!-- TODO replace the example(s) below with dynamic content from data loop -->
-    <article class="offers__offer">
+    <article class="offers__offer has-secondary-background">
       <figure class="offers__offer__image">
         <img
           src="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg" width="560" height="560"

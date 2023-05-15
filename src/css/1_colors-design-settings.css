@@ -44,6 +44,7 @@
   --color-pink-neon: #ff5baa;
   --color-pink-reddish: #ff5454;
   --color-turquoise-pastel: #bad2d7;
+  --color-purple-pastel-pinkish: #cbc3f6; /* decoration color, currently not used for text content */
   --color-pink-pastel-orangeish: #ffc7b0;
   --color-pink-pastel-pinkish: #ffb1ce;
   --color-pink-pastel-salmon: #ffa6a6;
@@ -56,7 +57,9 @@
   /* Export Theme Colors */
   --color-primary-background: var(--color-sandy-light-grayish);
   --color-primary-foreground: var(--color-blue-dark-purpleish);
+  --color-secondary-background: var(--color-default-white);
   --color-neutral-background: transparent;
+  --color-hover-background: var(--color-pink-pastel-orangeish);
 
   /* Effect Styles */
   --effect-box-shadow-dropshadow: 3.75rem 4rem 4.625rem rgba(0, 0, 0, 0.12);

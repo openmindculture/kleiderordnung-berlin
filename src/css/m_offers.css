@@ -54,7 +54,7 @@
 
 .offers__offer__card {
   padding: 3.5rem; /* TODO why too much spacing to top? */
-  background-color: var(--color-default-white);
+  background-color: var(--color-secondary-background);
 }
 
 /* mobile-first width starting with 1 column images above cards */
