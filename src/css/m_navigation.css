@@ -94,6 +94,7 @@
   .navigation__list-wrapper--main.navigation__menu-opened,
   .navigation__list-wrapper--main:target {
     width: auto;
+    height: auto;
   }
   .navigation__list {
     margin: 0.5rem 0 0 0;
