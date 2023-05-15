@@ -1,0 +1,40 @@
+/**
+ * A Carousel Slider Component
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+.carousel__wrapper {
+  position: relative;
+  max-height: calc(100vh - 2rem);
+}
+
+.carousel__viewport {
+  position: relative;
+  width: 920px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__wrapper--js-controls-initialized .carousel__viewport {
+  scrollbar-color: transparent transparent;
+  scrollbar-width: 0;
+}
+
+.carousel__wrapper--js-controls-initialized .carousel__viewport::-webkit-scrollbar,
+.carousel__wrapper--js-controls-initialized .carousel__viewport::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  color: transparent;
+}
+
+.carousel__item {
+  position: relative;
+  flex: 0 0 80%;
+  width: 80%;
+}

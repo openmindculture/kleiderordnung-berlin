@@ -16,6 +16,22 @@
   --breakpoint-l2: 1024px; /* custom instead of xl 1200 */
   --breakpoint-xxl: 1440px;
 
+  /* Width / Height Standards */
+  --width-full: 87.5rem; /* anything smaller than actual full width */
+  --width-spaced: 57.5rem; /* 920px Mission, Key Visual Text etc. maximal */
+  --width-max: calc(100% - 2.5rem); /* full (mobile) viewport minus horinzontal margins */
+  /* thus a potential mixin would look like
+   * width: var(--width-full | --width-constrained);
+   * max-width: var(--width-max);
+   */
+  --height-stories-max: 60vh;
+
+  /* header height to prevent anchor links go astray */
+  /* mobile:65px; desktop: 48 + 57 = 105px; tablet 48 + 104 = 152px */
+  --header-height: 10rem;
+  --header-height-negative: -10rem;
+  --header-height-stuck: 0;
+
   /* Text Styles */
   --font-family-default: "Henderson Sans W00", sans-serif;
   --font-family-heading: "IvyMode", serif;
@@ -63,21 +79,6 @@
 
   /* Effect Styles */
   --effect-box-shadow-dropshadow: 3.75rem 4rem 4.625rem rgba(0, 0, 0, 0.12);
-
-  /* Width Standards */
-  --width-full: 87.5rem; /* anyhting smaller than actual full width */
-  --width-spaced: 57.5rem; /* 920px Mission, Key Visual Text etc. maximal */
-  --width-max: calc(100% - 2.5rem); /* full (mobile) viewport minus horinzontal margins */
-  /* thus a potential mixin would look like
-   * width: var(--width-full | --width-constrained);
-   * max-width: var(--width-max);
-   */
-
-  /* header height to prevent anchor links go astray */
-  /* mobile:65px; desktop: 48 + 57 = 105px; tablet 48 + 104 = 152px */
-  --header-height: 10rem;
-  --header-height-negative: -10rem;
-  --header-height-stuck: 0;
 }
 
 @media (min-width: 768px) {

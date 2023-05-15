@@ -23,9 +23,6 @@ kleiderordnung.feedDataValueAlways = 'always'; // data value to always allow (as
 kleiderordnung.feedScriptUrlDataKey = 'scripturl'; // data key which JavaScript to load (absolute or relative to project)
 kleiderordnung.feedStyleUrlDataKey = 'styleurl'; // data key which stylesheet to load (absolute or relative to project)
 
-kleiderordnung.sliderWrapperClassName = 'testimonials__sliderwrapper';
-kleiderordnung.sliderWrapperShowingTeaserClassName = 'testimonials__sliderwrapper--has-teaser';
-
 kleiderordnung.menuId = 'primary-menu';
 kleiderordnung.menuOpenButtonClassName = 'navigation__toggle--open';
 kleiderordnung.menuCloseButtonClassName= 'navigation__toggle--close';
@@ -52,28 +49,6 @@ kleiderordnung.prefersReducedMotion = (kleiderordnung.prefersReducedMotionQuery 
 
 kleiderordnung.prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
 kleiderordnung.prefersMoreContrast = (kleiderordnung.prefersMoreContrastQuery && kleiderordnung.prefersMoreContrastQuery.matches);
-
-/** @object tiny-slider options */
-kleiderordnung.tinySliderOptions = {
-  container: '',
-  items: 1,
-  controls: false,
-  nav: false,
-  mouseDrag: true,
-  gutter: 5,
-  slideBy: 'page',
-  swipeAngle: false,
-  speed: 500,
-  autoplay: false,
-  animateDelay: 2000,
-  autoplayTimeout: 5000,
-  autoplayHoverPause: true,
-  autoplayResetOnVisibility: true,
-  autoplayButtonOutput: false,
-  preventActionWhenRunning: false,
-  preventScrollOnTouch: 'force',
-  loop: true
-}
 
 /** @object IntersectionObserver options */
 kleiderordnung.observerOptions = {
@@ -298,24 +273,56 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 5000);
   }
 
-  /* Activate Carousel Slider Behavior */
-
-  kleiderordnung.sliderContainers = document.getElementsByClassName(kleiderordnung.sliderWrapperClassName);
-  for (var l=0; l < kleiderordnung.sliderContainers.length; l++) {
-    kleiderordnung.currentTinySliderOptions = kleiderordnung.tinySliderOptions;
-    kleiderordnung.currentTinySliderOptions.container = kleiderordnung.sliderContainers[l];
-    /** @var {Object} tns global carousel slider library object */
-    tns(kleiderordnung.currentTinySliderOptions);
-    kleiderordnung.sliderContainers[l].addEventListener('mousedown', function(event) {
-      var target = /** @type {HTMLElement} */ event.currentTarget;
-      target.classList.remove(kleiderordnung.sliderWrapperShowingTeaserClassName);
-    }, { once: true });
-
-    /* mousedown event seems to be prevented by slider library touch handler */
-    kleiderordnung.sliderContainers[l].addEventListener('touchmove', function(event) {
-      var eventTarget =  /** @type {HTMLElement} */ event.target;
-      var target = eventTarget.closest('.' + kleiderordnung.sliderWrapperClassName);
-      target.classList.remove(kleiderordnung.sliderWrapperShowingTeaserClassName);
-    }, { once: true });
+  /* Activate Carousel Slider Controls */
+  /* if instagram has no wrap-around, we don't need it here either */
+  kleiderordnung.carouselWrappers = document.getElementsByClassName('carousel__wrapper');
+  for (var l=0; l < kleiderordnung.carouselWrappers.length; l++) {
+    var carouselWrapper = kleiderordnung.carouselWrappers[l];
+    var carouselPrevButton = carouselWrapper.querySelector('.carousel__navigation__prev');
+    var carouselNextButton = carouselWrapper.querySelector('.carousel__navigation__next');
+    if (carouselNextButton) {
+      carouselNextButton.addEventListener('click', function(event){
+        event.preventDefault();
+        var carouselWrapper = event.target.closest('.carousel__wrapper');
+        if (carouselWrapper && carouselWrapper.querySelector) {
+          var carouselViewport = carouselWrapper.querySelector('.carousel__viewport');
+          var carouselActiveChildNumber = carouselViewport.dataset.activeChildNumber || '0';
+          var carouselSlides = carouselViewport.children;
+          if (!isNaN(Number(carouselActiveChildNumber))) {
+            var carouselUpcomingChildIndex = Number(carouselActiveChildNumber) + 1;
+            carouselUpcomingChildIndex = carouselUpcomingChildIndex >= carouselSlides.length ? 0 : carouselUpcomingChildIndex;
+            var carouselUpcomingItem = carouselSlides[carouselUpcomingChildIndex];
+            if (carouselUpcomingItem) {
+              /* TODO mobile targets missed completely */
+              carouselUpcomingItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'end' });
+              carouselViewport.dataset.activeChildNumber = '' + carouselUpcomingChildIndex;
+            }
+          }
+        }
+      })
+    }
+    if (carouselPrevButton) {
+      carouselPrevButton.addEventListener('click', function(event){
+        event.preventDefault();
+        var carouselWrapper = event.target.closest('.carousel__wrapper');
+        if (carouselWrapper && carouselWrapper.querySelector) {
+          var carouselViewport = carouselWrapper.querySelector('.carousel__viewport');
+          var carouselActiveChildNumber = carouselViewport.dataset.activeChildNumber || '0';
+          var carouselSlides = carouselViewport.children;
+          if (!isNaN(Number(carouselActiveChildNumber))) {
+            var carouselUpcomingChildIndex = Number(carouselActiveChildNumber) - 1;
+            carouselUpcomingChildIndex = carouselUpcomingChildIndex < 0  ? (carouselSlides.length - 1) : carouselUpcomingChildIndex;
+            var carouselUpcomingItem = carouselSlides[carouselUpcomingChildIndex];
+            if (carouselUpcomingItem) {
+              carouselUpcomingItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'end' });
+              carouselViewport.dataset.activeChildNumber = '' + carouselUpcomingChildIndex;
+            }
+          }
+        }
+      })
+    }
+    if (carouselNextButton && carouselPrevButton) {
+      carouselWrapper.classList.add('carousel__wrapper--js-controls-initialized');
+    }
   }
 });

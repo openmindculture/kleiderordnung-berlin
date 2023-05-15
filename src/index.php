@@ -355,10 +355,11 @@
 
   <section id="stories" class="stories target-offset">
     <h2 class="stories__headline">Stories</h2>
-    <div class="stories__wrapper">
+    <div class="stories__wrapper carousel__wrapper">
+      <div class="stories__viewport carousel__viewport">
 
       <!-- Story 1 -->
-      <article class="stories__story">
+      <article class="stories__story carousel__item">
         <figure class="stories__story__image">
           <img
             src="<?php echo get_template_directory_uri() ?>/img/maxi.jpg" width="319" height="567"
@@ -378,7 +379,7 @@ Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir g
       </article>
 
       <!-- Story 2 -->
-      <article class="stories__story">
+      <article class="stories__story carousel__item">
         <figure class="stories__story__image">
           <img
             src="<?php echo get_template_directory_uri() ?>/img/jackie.jpg" width="321" height="570"
@@ -397,21 +398,28 @@ I really enjoyed doing a tour of my closet with Tina. She helped me see my cloth
         </blockquote>
       </article>
 
-      <!-- Story 3 - absichtlich ohne Bild -->
-      <article class="stories__story">
-        <!-- einige Testimonials haben eventuell kein Bild -->
+      <!-- Story 3 -->
+      <article class="stories__story carousel__item">
+        <figure class="stories__story__image">
+          <img
+            src="<?php echo get_template_directory_uri() ?>/img/jackie.jpg" width="321" height="570"
+            srcset="<?php echo get_template_directory_uri() ?>/img/maik.jpg 1x, <?php echo get_template_directory_uri() ?>/img/maik@2x.jpg 2x"
+            loading="lazy"
+            alt="Foto des Kunden Mike"
+          >
+        </figure>
         <blockquote class="stories__story__quote">
           <author class="stories__story__quote__author">
-            Ellie, Foundation Executive:
+            Mike, Freelance Translator, Berlin::
           </author>
           <span class="stories__story__quote__text">
-Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ Tina brings enthusiasm and positive energy to fashion and styling. It's clear that she's good at what she does, and loves it too. She's given me clear advice on how to make the most of my existing wardrobe, and also how to make small changes that can make a big difference for my appearance. I look forward to working with Tina more!
           </span>
         </blockquote>
       </article>
 
       <!-- Story 4 - absichtlich ohne Bild -->
-      <article class="stories__story">
+      <article class="stories__story carousel__item">
         <!-- einige Testimonials haben eventuell kein Bild -->
         <blockquote class="stories__story__quote">
           <author class="stories__story__quote__author">
@@ -425,9 +433,23 @@ Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq
 
     </div>
 
-    <nav class="stories__navigation">
-      <a class="stories__navigation__prev" href="#prev">zurück</a>
-      <a class="stories__navigation__next" href="#next">vor</a>
+    <nav class="stories__navigation carousel__navigation">
+      <a class="stories__navigation__link stories__navigation__link--prev carousel__navigation__prev" href="#prev">
+        <svg width="70" height="42" viewBox="0 0 70 42" fill="none">
+          <title>zurück</title>
+          <path d="M-1.36497e-06 21C11.598 21 21 11.598 21 0" stroke="currentColor" stroke-width="2"/>
+          <path d="M4.70904e-07 21C11.598 21 21 30.402 21 42" stroke="currentColor" stroke-width="2"/>
+          <line y1="21" x2="70" y2="21" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </a>
+      <a class="stories__navigation__link stories__navigation__link--next carousel__navigation__next" href="#next">
+        <svg width="70" height="42" viewBox="0 0 70 42" fill="none">
+          <title>vor</title>
+          <path d="M70 21C58.402 21 49 30.402 49 42" stroke="currentColor" stroke-width="2"/>
+          <path d="M70 21C58.402 21 49 11.598 49 0" stroke="currentColor" stroke-width="2"/>
+          <line x1="70" y1="21" x2="8.74224e-08" y2="21" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </a>
     </nav>
   </section>
 
@@ -472,6 +494,7 @@ Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq
               Gute Gespräche und viel zu sehen – unterwegs auf der Green Fashion Fair Berlin
             </p>
           </article>
+        </div>
 
           <!-- TODO disable "all news" link in single page mode: -->
           <a class="news__link" href="#">alle Neuigkeiten</a>

@@ -25,6 +25,7 @@
     "keyframes-name-pattern": null,
     "media-feature-name-no-vendor-prefix": null,
     "media-feature-range-notation": null,
+    "number-max-precision": null,
     "import-notation": null,
     "property-no-vendor-prefix": null,
     "rule-empty-line-before": null,

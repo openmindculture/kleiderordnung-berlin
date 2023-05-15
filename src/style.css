@@ -22,7 +22,7 @@
 @import url("css/1_utility-classes.css");
 /* -- common elements -- */
 @import url("css/a_buttons-links.css");
-@import url("css/a_carousel-slideable.css");
+@import url("css/a_carousel.css");
 @import url("css/a_list.css");
 /* -- page sections in alphabetical order -- */
 /* -- TODO move or copy page and header layout rules to critical.css to prevent layout shift */
