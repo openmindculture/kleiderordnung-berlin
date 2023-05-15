@@ -8,8 +8,13 @@
 :root {
 
   /* DON'T USE IN MEDIA QUERIES! Root properties can't be used in media queries! */
+  --breakpoint-s: 555px; /* custom instead of usual sm: 576 */
   --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
+  --breakpoint-m: 824px; /* custom */
+  --breakpoint-lg: 992px;
+  --breakpoint-l1: 1001px; /* custom */
+  --breakpoint-l2: 1024px; /* custom instead of xl 1200 */
+  --breakpoint-xxl: 1440px;
 
   /* Text Styles */
   --font-family-default: "Henderson Sans W00", sans-serif;

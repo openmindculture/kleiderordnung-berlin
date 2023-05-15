@@ -12,24 +12,21 @@
   background-color: var(--color-primary-background);
 }
 
-@media (min-width: 768px) {
-  .navigation--main-navigation {
-    position: static;
-  }
-}
-
 .navigation__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-inline-start: 1.5rem;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
   list-style: none;
   align-items: flex-start;
-  margin: 1rem 0 0 0;
+  margin: 0.5rem 0 0 0;
 }
 
 .navigation__list li {
-  margin: 0 0 1.5rem 1.5rem;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  width: 100%;
 }
 
 .navigation__list-wrapper--main a:not(.button) {
@@ -51,7 +48,7 @@
 }
 
 .navigation__toggle--open {
-  padding: 0 1.5rem 0 0 ;
+  padding: 0 1.25rem 0 1.25rem;
   margin-top: 0.25rem;
   color: var(--color-primary-foreground);
 }
@@ -73,16 +70,30 @@
   top: 0;
   right: 0;
   z-index: 11;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: var(--color-primary-background);
 }
 
-/*
-Weitere Rückfragen an Ina (bzw. selbst mal ausprobieren):
-- Wie soll das mobile Menü aussehen? Soll es die volle Breite ausfüllen? Wie sollen die Menüpunkte ausgerichtet sein? Was machen wir mit dem Kontakt-Button?
- */
+/* intermediate breakpoint: mobile menu no longer full width: */
+@media (min-width: 555px) {
+  .navigation__list-wrapper--main.navigation__menu-opened,
+  .navigation__list-wrapper--main:target {
+    width: auto;
+  }
+  .navigation__list {
+    margin: 0.5rem 0 0 0;
+    padding: 2rem 2rem 0 2rem;
+  }
+}
 
 /* Tablet / Desktop width with always open horizontal menu bar: */
 @media (min-width: 768px) {
+  .navigation--main-navigation {
+    position: static;
+  }
+
   .navigation__list-wrapper--main {
     display: block;
   }
@@ -93,10 +104,14 @@ Weitere Rückfragen an Ina (bzw. selbst mal ausprobieren):
 
   .navigation__list {
     flex-direction: row;
+    padding-top: 0;
+    margin: 1rem 0 0 0;
   }
 
   .navigation__list li {
     margin: 0 0 1.5rem 0;
+    text-align: left;
+    width: auto;
   }
 
   .navigation__list li + li {

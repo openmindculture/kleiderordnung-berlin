@@ -61,6 +61,7 @@
   flex-grow: 1;
   padding: 0;
   text-align: left;
+  z-index: 10;
 }
 
 .header__contentwrapper .header__site-logo,
