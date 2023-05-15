@@ -21,12 +21,21 @@
   list-style: none;
   align-items: flex-start;
   margin: 0.5rem 0 0 0;
+  background-color: var(--color-primary-foreground); /* mobile inverted colors */
+  height: 100%;
+  overflow-y: auto;
 }
 
 .navigation__list li {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.25rem 0;
   text-align: center;
   width: 100%;
+}
+
+.navigation__list-wrapper--main a.button { /* mobile inverted colors */
+  background-color: var(--color-primary-background);
+  color: var(--color-primary-foreground);
+  display: inline-block;
 }
 
 .navigation__list-wrapper--main a:not(.button) {
@@ -36,21 +45,23 @@
   font-size: var(--font-size-13);
 }
 
-.navigation__list-wrapper--main a:not(.button):link,
-.navigation__list-wrapper--main a:not(.button):visited {
-  color: var(--color-primary-foreground);
+.navigation__list-wrapper--main a:not(.button):not(.navigation__toggle):link,
+.navigation__list-wrapper--main a:not(.button):not(.navigation__toggle):visited {
+  color: var(--color-primary-background); /* mobile inverted colors */
 }
 
 .navigation__toggle--close {
   display: block;
   padding: 0 1rem 0 0;
   text-align: right;
+  pointer-events: all;
 }
 
 .navigation__toggle--open {
   padding: 0 1.25rem 0 1.25rem;
   margin-top: 0.25rem;
   color: var(--color-primary-foreground);
+  pointer-events: all;
 }
 
 /* Mobile navigation initially hidden, opened / closed by button links */
@@ -70,7 +81,9 @@
   top: 0;
   right: 0;
   z-index: 11;
+  pointer-events: all;
   width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: var(--color-primary-background);
@@ -85,6 +98,7 @@
   .navigation__list {
     margin: 0.5rem 0 0 0;
     padding: 2rem 2rem 0 2rem;
+    height: auto;
   }
 }
 
@@ -105,7 +119,8 @@
   .navigation__list {
     flex-direction: row;
     padding-top: 0;
-    margin: 1rem 0 0 0;
+    margin: 0;
+    background-color: var(--color-primary-background);
   }
 
   .navigation__list li {
@@ -118,6 +133,16 @@
     margin: 0 0 1.5rem 1.5rem;
   }
 
+  .navigation__list li:not(.menu-item--has-button) {
+    padding-top: 1rem;
+  }
+
+  .navigation__list-wrapper--main a.button {
+    background-color: var(--color-primary-foreground);
+    color: var(--color-primary-background);
+    margin-top: 0.25rem;
+  }
+
   .navigation__list-wrapper--main a:not(.button) {
     padding-top: 0.75rem;
   }
@@ -125,5 +150,10 @@
   .navigation__list-wrapper--main.navigation__menu-opened,
   .navigation__list-wrapper--main:target {
     position: static;
+  }
+
+  .navigation__list-wrapper--main a:not(.button):not(.navigation__toggle):link,
+  .navigation__list-wrapper--main a:not(.button):not(.navigation__toggle):visited {
+    color: var(--color-primary-foreground);
   }
 }
