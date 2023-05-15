@@ -47,14 +47,16 @@
   margin-top: calc(-1 * var(--header-height-stuck));
 }
 
-/** BEGIN ad-hoc main navigation menu styles */
-
 .header__contentwrapper { /* wrapper around logo, navigation, and navigation toggle buttons */
   display: flex;
   max-width: calc(100% - 1rem);
   width: 64rem; /* 1024px; */
   margin: 0 auto;
   padding: 1.25rem;
+}
+
+.header--site-header.stuck .header__contentwrapper {
+  padding-bottom: 0;
 }
 
 .header__contentwrapper .header__site-logo {
