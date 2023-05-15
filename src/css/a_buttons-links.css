@@ -23,6 +23,7 @@
 .button--primary a:visited {
   background-color: var(--color-blue-dark-purpleish);
   color: var(--color-default-white);
+  display: inline-block;
 }
 
 a:not(.button):hover,
