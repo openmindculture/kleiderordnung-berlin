@@ -290,6 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
           var carouselSlides = carouselViewport.children;
           if (!isNaN(Number(carouselActiveChildNumber))) {
             var carouselUpcomingChildIndex = Number(carouselActiveChildNumber) + 1;
+            // TODO wrap-around might be counter-intuitive and feel buggy?
             carouselUpcomingChildIndex = carouselUpcomingChildIndex >= carouselSlides.length ? 0 : carouselUpcomingChildIndex;
             var carouselUpcomingItem = carouselSlides[carouselUpcomingChildIndex];
             if (carouselUpcomingItem) {
