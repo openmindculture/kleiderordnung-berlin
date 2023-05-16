@@ -15,6 +15,7 @@
 /* @import url("css/0_typography.css"); */
 
 /* import css component files (will be combined into single style.css file by postCSS */
+/* TODO PostCSS soll die Importe zusammenfassen!!!  */
 /* -- global settings -- */
 @import url("css/1_colors-design-settings.css");
 @import url("css/1_globals.css");

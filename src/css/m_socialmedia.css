@@ -4,3 +4,16 @@
  * @package KleiderOrdnung
  * @author openmindculture
  */
+
+.socialmedia {}
+
+.socialmedia__feed__container--juicer {}
+
+.socialmedia__feed__consent--juicer {}
+
+.socialmedia__feed__embed--juicer {}
+
+.socialmedia__feed__embed--juicer.referral,
+.socialmedia__feed__embed--juicer h1 {
+  display: none;
+}

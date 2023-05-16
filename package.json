@@ -12,7 +12,7 @@
     "stylelint": "stylelint src/**/*.css",
     "prebuild": "rimraf build dist && make-dir dist",
     "build": "run-s build:core build:postcss",
-    "build:core": "copyfiles -u 1 -e src/* src/**/* src/*.php src/*.png src/*.json src/style.css src/screenshot.png src/lottie/images/*  themes/kleiderordnung",
+    "build:core": "copyfiles -u 1 -e src/* src/**/* src/fonts/* src/img/* src/img/**/* src/*.php src/*.png src/*.json src/style.css src/screenshot.png src/lottie/images/*  themes/kleiderordnung",
     "build:postcss": "postcss src/style.css --config . --no-map --verbose --o themes/kleiderordnung/style.css",
     "build:zip": "zip-build themes/kleiderordnung dist --name kleiderordnung --template %NAME%-%VERSION%.%EXT%",
     "watch": "watch \"npm run build:postscss\" src/css",

@@ -507,18 +507,21 @@ Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq
            label="Instagram Galerie"
            class="feed__container allowable--on-visibility"
            data-allowable="allowable"
-           data-styleurl="css/juicer.io/202210/embed.css"
+           data-styleurl="<?php echo get_template_directory_uri() ?>/css/juicer-embed-min.css"
            data-scripturl="https://assets.juicer.io/embed.js"
+           class="socialmedia__feed__container socialmedia__feed__container--juicer"
     >
       <h2 id="bilder" class="target-offset">Meine Bilder bei Instagram</h2>
-      <div class="feed__consent">
+      <div class="socialmedia__feed__consent feed__consent socialmedia__feed__consent--juicer">
         <p>Dürfen externe Inhalte von Instagram geladen werden?</p>
         <button class="button__allow button__allow--once" data-allow="once">Einmal erlauben</button>
         <button class="button__allow button__allow--always" data-allow="always">Immer erlauben</button>
       </div>
-      <h1 class="referral"><a href="https://www.juicer.io">Social Media Feed von Juicer.io</a></h1>
-      <ul class="juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="9" pages="1"></ul>
-      <a class="follow" target="_blank" rel="noopener" href="https://www.instagram.com/kleider.ordnung">jetzt folgen</a>
+
+      <ul class="socialmedia__feed__embed socialmedia__feed__embed--juicer juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="5" data-columns="5" pages="1">
+        <h1 class="referral"><a href="https://www.juicer.io">Social Media Feed von Juicer.io</a></h1>
+      </ul>
+      <a class="follow" target="_blank" rel="noopener" href="https://www.instagram.com/tina_steinke_kleiderordnung">jetzt folgen</a>
     </aside>
   </section>
 

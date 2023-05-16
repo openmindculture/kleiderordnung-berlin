@@ -13,7 +13,7 @@ kleiderordnung.currentAnimationPauseTimeoutId = null;
 kleiderordnung.variableContrastClassName = 'contrast--varies' // triggers automatic contrast adjustment
 kleiderordnung.highContrastClassName = 'contrast--more'; // to be removed from .contrast--varies elements
 
-var allowableClassName = 'allowable--on-visibility'; // triggers consent challenge before external content loading
+kleiderordnung.allowableClassName = 'allowable--on-visibility'; // triggers consent challenge before external content loading
 kleiderordnung.feedCookieKey = 'instafeed'; // name of the cookie set to remember consent
 kleiderordnung.feedCookieValue = 'allow'; // default value
 kleiderordnung.feedContainerClassName = 'feed__container';
@@ -78,7 +78,7 @@ kleiderordnung.intersectionCallback = function(intersectingEntries) {
           kleiderordnung.observableTimeoutsByTargetElementId[targetId] = window.setTimeout(function() {
             var debouncedEntry = intersectingEntry;
             var debouncedTarget = /** @type {HTMLElement} */ debouncedEntry.target;
-            if (debouncedEntry.isIntersecting && debouncedEntry.intersectionRatio > observerOptions.threshold) {
+            if (debouncedEntry.isIntersecting && debouncedEntry.intersectionRatio > kleiderordnung.observerOptions.threshold) {
               kleiderordnung.handleAppearedElement(debouncedTarget);
             }
             kleiderordnung.observableTimeoutsByTargetElementId[debouncedTarget.id] = undefined;
@@ -144,7 +144,7 @@ kleiderordnung.prepareExternalFeed = function(feedContainerElement) {
 kleiderordnung.allowAndActivateExternalFeed = function(buttonElement) {
   var feedContainerElement = buttonElement.closest('.' + kleiderordnung.feedContainerClassName);
   var consentCookie = kleiderordnung.feedCookieKey + '=' + kleiderordnung.feedCookieValue + ';samesite=strict;secure';
-  if (buttonElement.dataset[feedDataKey].allow === kleiderordnung.feedDataValueAlways) {
+  if (buttonElement.dataset[kleiderordnung.feedDataKey].allow === kleiderordnung.feedDataValueAlways) {
     var maxAgeSeconds = 31536000; // 1 year
     consentCookie += ';max-age=' + maxAgeSeconds +  ';';
   } // If neither expires nor max-age specified it will expire at the end of session.
@@ -157,7 +157,7 @@ kleiderordnung.allowAndActivateExternalFeed = function(buttonElement) {
 /** @param {HTMLElement} feedContainerElement */
 kleiderordnung.activateExternalFeed = function(feedContainerElement) {
   if (!feedContainerElement) { return; }
-  var styleFileUrl = feedContainerElement.dataset[feedStyleUrlDataKey];
+  var styleFileUrl = feedContainerElement.dataset[kleiderordnung.feedStyleUrlDataKey];
   if (styleFileUrl) {
     fetch(styleFileUrl)
       .then(function(response) {
