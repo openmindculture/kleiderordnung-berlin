@@ -13,26 +13,30 @@
   max-width: var(--width-max);
 }
 
+.contact {
+  background-color: var(--color-inverted-background);
+}
+
 /* BEGIN ad-hoc demo styles 2023 */
 /* TODO rename to contact section specific BEM class names */
-.columns__column-wrapper {
+.contact__columns__column-wrapper {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.columns__column-50 {
+.contact__columns__column-50 {
   flex-basis: 100%;
   max-width: 100%;
 }
 
 @media (min-width: 992px) {
-  .columns__column-50 { /* TODO use Ina's grid columns instead */
+  .contact__columns__column-50 { /* TODO use Ina's grid columns instead */
     flex-basis: calc(50% - 0.5rem);
     max-width: 50%;
   }
-  .columns__column-wrapper {
+  .contact__columns__column-wrapper {
     flex-direction: row;
   }
 }
@@ -45,12 +49,9 @@
 
 .vcard {
   padding: 2.5em 1em 1.5em 1em;
-  background-color: white;
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
-  font-size: 110%;
-  font-style: normal;
 }
 
 .vcard.contrast--more {

@@ -74,6 +74,8 @@
   --color-primary-background: var(--color-sandy-light-grayish);
   --color-primary-foreground: var(--color-blue-dark-purpleish);
   --color-secondary-background: var(--color-default-white);
+  --color-inverted-background: var(--color-blue-dark-purpleish);
+  --color-inverted-foreground: var(--color-default-white);
   --color-neutral-background: transparent;
   --color-hover-background: var(--color-pink-pastel-orangeish);
 
