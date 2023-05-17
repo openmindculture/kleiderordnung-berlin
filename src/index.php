@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html <?php echo get_language_attributes(); ?>
+<html <?php echo get_language_attributes(); ?>>
 <head>
   <meta charset="utf-8">
   <!-- ?php echo get_wp_head(); ? -->
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>KleiderOrdnung Berlin: nachhaltige Modeberatung von Tina Steinke</title>
   <meta name=language content="de">
   <link rel="canonical" href="https://kleiderordnung.berlin/">
@@ -34,13 +33,12 @@
   <noscript>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/animate.min.css?v=4.1.1">
   </noscript>
-  <script src="<?php echo get_template_directory_uri() ?>/js/scripts.js?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>" type="text/javascript"></script>
-  <script src="<?php echo get_template_directory_uri() ?>/js/lottie-player.js?v=1.7.1" type="text/javascript"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/js/scripts.js?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/js/lottie-player.js?v=1.7.1" ></script>
   <meta name="description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
   <meta name="keywords" content="Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit,Stilberatung,Stil,Beratung,Mode,Shopping,einkaufen,kombinieren,aussehen,aufräumen,aussortieren,Kleiderschrank,Check,Begleitung,Berlin">
   <!-- TODO check and adapt all header and social attribute values! -->
-  <meta name="google-site-verification" content="google123todo">
-  <meta name="robots" content="noindex,nofollow"><!-- temporary block on preview site TODO remove finally -->
+  <meta name="robots" content="index,follow">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="HandheldFriendly" content="true">
   <meta name="google" content="notranslate">
@@ -53,7 +51,20 @@
   <meta property="og:site_name" content="">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#f3ebde">
-  <!-- TODO link rel="me" -->
+  <!-- TODO HTML with JSON-LD & schema.org schema markup -->
+<script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "name" : "KleiderOrdnung Berlin",
+      "url" : "https://kleiderordnung.berlin/",
+      "sameAs" : [
+        "https://kleiderordnung-berlin.de/",
+        "https://www.instagram.com/tina_steinke_kleiderordnung/",
+        "https://www.linkedin.com/in/martina-steinke-6810aa111/"
+      ]
+    }
+  </script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -67,7 +78,7 @@
 <div id="cmplz-cookiebanner-container"></div>
 
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'kleiderordnung' ); ?></a>
-<header id="site-header" class="header header--site-header has-inline-mobile-toggle" aria-label="Site" role="banner" itemtype="https://schema.org/WPHeader" itemscope>
+<header id="site-header" class="header header--site-header has-inline-mobile-toggle" aria-label="Site" itemtype="https://schema.org/WPHeader" itemscope>
   <div class="header__contentwrapper">
     <div class="header__site-logo">
       <a href="<?php echo get_template_directory_uri() ?>/" rel="home">
@@ -409,7 +420,7 @@
       </p>
   </section>
 
-  <section class="calltoaction">
+  <div class="calltoaction">
     <p class="calltoaction__text">
       Habe ich Dich neugierig gemacht?
       Dann buche gern einen kostenlosen Kennenlerntermin!
@@ -419,86 +430,86 @@
         Kontakt
       </a>
     </div>
-  </section>
+  </div>
 
   <section id="stories" class="stories target-offset">
     <h2 class="stories__headline">Stories</h2>
-    <div class="stories__wrapper carousel__wrapper">
-      <div class="stories__viewport carousel__viewport">
+      <div class="stories__wrapper carousel__wrapper">
+        <div class="stories__viewport carousel__viewport">
 
-      <!-- Story 1 -->
-      <article class="stories__story carousel__item">
-        <figure class="stories__story__image">
-          <img
-            src="<?php echo get_template_directory_uri() ?>/img/maxi.jpg" width="319" height="567"
-            srcset="<?php echo get_template_directory_uri() ?>/img/maxi.jpg 1x, <?php echo get_template_directory_uri() ?>/img/maxi@2x.jpg 2x"
-            loading="lazy"
-            alt="Foto der Kundin Maxi"
-          >
-        </figure>
-        <blockquote class="stories__story__quote">
-          <author class="stories__story__quote__author">
-            Maxi, Künstlerin, Berlin:
-          </author>
-          <span class="stories__story__quote__text">
-Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.
-          </span>
-        </blockquote>
-      </article>
+        <!-- Story 1 -->
+        <div class="stories__story carousel__item">
+          <figure class="stories__story__image">
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/maxi.jpg" width="319" height="567"
+              srcset="<?php echo get_template_directory_uri() ?>/img/maxi.jpg 1x, <?php echo get_template_directory_uri() ?>/img/maxi@2x.jpg 2x"
+              loading="lazy"
+              alt="Foto der Kundin Maxi"
+            >
+          </figure>
+          <figure class="stories__story__quote">
+            <figcaption class="stories__story__quote__author">
+              Maxi, Künstlerin, Berlin:
+            </figcaption>
+            <blockquote class="stories__story__quote__text">
+  Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.
+            </blockquote>
+          </figure>
+        </div>
 
-      <!-- Story 2 -->
-      <article class="stories__story carousel__item">
-        <figure class="stories__story__image">
-          <img
-            src="<?php echo get_template_directory_uri() ?>/img/jackie.jpg" width="321" height="570"
-            srcset="<?php echo get_template_directory_uri() ?>/img/jackie.jpg 1x, <?php echo get_template_directory_uri() ?>/img/jackie@2x.jpg 2x"
-            loading="lazy"
-            alt="Foto der Kundin Jackie"
-          >
-        </figure>
-        <blockquote class="stories__story__quote">
-          <author class="stories__story__quote__author">
-            Jackie, Marketing Lead @ Impact Hub Berlin:
-          </author>
-          <span class="stories__story__quote__text">
-I really enjoyed doing a tour of my closet with Tina. She helped me see my clothes with fresh eyes and provided practical tips on how to come up with combinations and accessories that enhance my style and personality. I recommend her services if you are looking to refine your fashion style. Thank you so much, Tina!
-          </span>
-        </blockquote>
-      </article>
+        <!-- Story 2 -->
+        <div class="stories__story carousel__item">
+          <figure class="stories__story__image">
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/jackie.jpg" width="321" height="570"
+              srcset="<?php echo get_template_directory_uri() ?>/img/jackie.jpg 1x, <?php echo get_template_directory_uri() ?>/img/jackie@2x.jpg 2x"
+              loading="lazy"
+              alt="Foto der Kundin Jackie"
+            >
+          </figure>
+          <figure class="stories__story__quote">
+            <figcaption class="stories__story__quote__author">
+              Jackie, Marketing Lead @ Impact Hub Berlin:
+            </figcaption>
+            <blockquote class="stories__story__quote__text">
+              I really enjoyed doing a tour of my closet with Tina. She helped me see my clothes with fresh eyes and provided practical tips on how to come up with combinations and accessories that enhance my style and personality. I recommend her services if you are looking to refine your fashion style. Thank you so much, Tina!
+            </blockquote>
+          </figure>
+        </div>
 
-      <!-- Story 3 -->
-      <article class="stories__story carousel__item">
-        <figure class="stories__story__image">
-          <img
-            src="<?php echo get_template_directory_uri() ?>/img/jackie.jpg" width="321" height="570"
-            srcset="<?php echo get_template_directory_uri() ?>/img/maik.jpg 1x, <?php echo get_template_directory_uri() ?>/img/maik@2x.jpg 2x"
-            loading="lazy"
-            alt="Foto des Kunden Mike"
-          >
-        </figure>
-        <blockquote class="stories__story__quote">
-          <author class="stories__story__quote__author">
-            Mike, Freelance Translator, Berlin::
-          </author>
-          <span class="stories__story__quote__text">
- Tina brings enthusiasm and positive energy to fashion and styling. It's clear that she's good at what she does, and loves it too. She's given me clear advice on how to make the most of my existing wardrobe, and also how to make small changes that can make a big difference for my appearance. I look forward to working with Tina more!
-          </span>
-        </blockquote>
-      </article>
+        <!-- Story 3 -->
+        <div class="stories__story carousel__item">
+          <figure class="stories__story__image">
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/jackie.jpg" width="321" height="570"
+              srcset="<?php echo get_template_directory_uri() ?>/img/maik.jpg 1x, <?php echo get_template_directory_uri() ?>/img/maik@2x.jpg 2x"
+              loading="lazy"
+              alt="Foto des Kunden Mike"
+            >
+          </figure>
+          <figure class="stories__story__quote">
+            <figcaption class="stories__story__quote__author">
+              Mike, Freelance Translator, Berlin:
+            </figcaption>
+            <blockquote class="stories__story__quote__text">
+              Tina brings enthusiasm and positive energy to fashion and styling. It's clear that she's good at what she does, and loves it too. She's given me clear advice on how to make the most of my existing wardrobe, and also how to make small changes that can make a big difference for my appearance. I look forward to working with Tina more!
+            </blockquote>
+          </figure>
+        </div>
 
-      <!-- Story 4 - absichtlich ohne Bild -->
-      <article class="stories__story carousel__item">
-        <!-- einige Testimonials haben eventuell kein Bild -->
-        <blockquote class="stories__story__quote">
-          <author class="stories__story__quote__author">
-            Someone, without a picture:
-          </author>
-          <span class="stories__story__quote__text">
-Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </span>
-        </blockquote>
-      </article>
-
+        <!-- Story 4 - absichtlich ohne Bild -->
+        <div class="stories__story carousel__item">
+          <!-- einige Testimonials haben eventuell kein Bild -->
+          <figure class="stories__story__quote">
+            <figcaption class="stories__story__quote__author">
+              Someone, without a picture:
+            </figcaption>
+            <blockquote class="stories__story__quote__text">
+              Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </blockquote>
+          </figure>
+        </div>
+      </div>
     </div>
 
     <nav class="stories__navigation carousel__navigation">
@@ -563,15 +574,14 @@ Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq
     </div>
   </section>
 
-  <section class="socialmedia target-offset">
-    <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram"><figure class="socialmedia__icon socialmedia__icon--primary socialmedia__icon--primary--instagram""></figure> Kleiderordnung auf instagram</a>
+  <div class="socialmedia target-offset">
+    <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram"><figure class="socialmedia__icon socialmedia__icon--primary socialmedia__icon--primary--instagram"></figure> Kleiderordnung auf instagram</a>
     <aside id="juicer-feed-container"
            label="Instagram Galerie"
-           class="feed__container allowable--on-visibility"
+           class="feed__container socialmedia__feed__container socialmedia__feed__container--juicer allowable--on-visibility"
            data-allowable="allowable"
            data-styleurl="<?php echo get_template_directory_uri() ?>/css/juicer-embed-min.css"
            data-scripturl="https://assets.juicer.io/embed.js"
-           class="socialmedia__feed__container socialmedia__feed__container--juicer"
     >
       <div class="socialmedia__feed__consent feed__consent socialmedia__feed__consent--juicer">
         <p>Dürfen externe Inhalte von Instagram geladen werden?</p>
@@ -583,23 +593,38 @@ Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq
         <h1 class="referral"><a href="https://www.juicer.io">Social Media Feed von Juicer.io</a></h1>
       </ul>
     </aside>
-  </section>
+  </div>
 
-  <section id="kontakt" class="contact target-offset">
-
+  <div id="kontakt" class="contact target-offset">
+    <div class="contact__headline">
+      Kontakt
+    </div>
     <div class="contact__columns__column-wrapper contact__columns__column-wrapper--lg">
 
       <div class="contact__columns__column contact__columns__column-50">
         <!-- BEGIN vcard imprint contact information - TODO: update using rel=me etc. -->
-        <article class="contact__vcard">
-          <address class="vcard contrast--varies contrast--more">
-            <div>
-              <div class=fn itemprop=name>Martina Steinke</div><div class=street-address>Donaustr. 83, <span class=postal-code>12043</span> Berlin</div><div>Tel. <a class=telephone itemprop=telephone href=tel:+491636823820><span class=visually-spaced>0</span><span class="visually-spaced dot-after">163</span><span class=visually-spaced>682</span><span class=visually-spaced>382</span><span class=visually-spaced>0</span></a></div><div><a class=email itemprop=email itemscope href=mailto:martinasteinke@posteo.de>martinasteinke@posteo.de</a></div><div><a itemscope class=url rel=author href="https://www.kleiderordnung-berlin.de/">www.kleiderordnung-berlin.de</a></div><br><div>Mitglied bei <a href="https://fashionchangers.de/" target=_blank rel=noopener&quot;>Fashion Changers</a> und <span class="role jobtitle" itemprop=jobTitle>nachhaltige Modeberaterin</span> bei <a href=https://www.sustainable-stylists.com target=_blank rel=noopener>Sustainable Stylists</a>.</div></div>
-            <div class=social>
-              <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target=_"blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--instagram"></figure></a>
-              <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target=_blank rel="me noopener" title="Martina Steinke auf LinkedIn"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--linkedin"></figure></a>
+        <div class="contact__calltoactiontext contact__calltoactiontext--primary">Habe ich Dich neugierig gemacht oder hast du Fragen? Melde dich gern bei mir!</div>
+        <div class="contact__vcard">
 
-            </div></address></article>
+          <address class="vcard contrast--varies contrast--more">
+               <div class="" itemprop="company">Kleiderordnung</div>
+              <div class=fn itemprop=name>Tina Steinke</div>
+              <div class="role jobtitle" itemprop="jobTitle">
+                Personal sustainable Stylist</div>
+
+              <div>Tel. <a class=telephone itemprop=telephone href=tel:+491636823820><span class=visually-spaced>0</span><span class="visually-spaced dot-after">163</span><span class=visually-spaced>682</span><span class=visually-spaced>382</span><span class=visually-spaced>0</span></a>
+              </div>
+            <div>
+              <a class=email itemprop=email itemscope href=mailto:martinasteinke@posteo.de>martinasteinke@posteo.de</a>
+            </div>
+                <div class="contact__calltoactiontext contact__calltoactiontext--secondary">
+                  Folge mir
+                </div>
+            <div class="social">
+              <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--instagram"></figure></a>
+              <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target="_blank" rel="me noopener" title="Martina Steinke auf LinkedIn"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--linkedin"></figure></a>
+
+            </div></address></div>
         <!-- END vcard imprint contact information -->
       </div>
 
@@ -609,14 +634,52 @@ Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq
 
       </div>
     </div>
-  </section>
   </div>
 </main>
 
-<footer id="footer" class="site-footer" role="contentinfo">
-  Footer Content
+<footer id="footer" class="site-footer">
+  <div class="footer__columns__column-wrapper">
+    <div class="footer__columns__column footer__columns__column-50">
+      2023 © Kleiderordnung Martina Steinke  – All rights reserved
+      Impressum Datenschutz
+    </div>
+    <div class="footer__columns__column footer__columns__column-50">
+      Mitglied bei
+      <a href=https://www.sustainable-stylists.com/tina-steinke target="_blank" rel="me noopener">
+        <img
+          src="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.png" width="203" height="61"
+          srcset="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists@2x.png 2x"
+          loading="lazy"
+          alt="Sustainable Stylists"
+        >
+      </a>
+      <a href="https://fashionchangers.de/" target="_blank" rel="noopener">
+        <img
+          src="<?php echo get_template_directory_uri() ?>/img/logos/fashion-changers.png" width="178" height="65"
+          srcset="<?php echo get_template_directory_uri() ?>/img/logos/fashion-changers.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/fashion-changers@2x.png 2x"
+          loading="lazy"
+          alt="reflecta"
+        >
+      </a>
+      <a href="https://www.reflecta.network/changemaker/martina-steinke" target=_blank rel=noopener">
+        <img
+          src="<?php echo get_template_directory_uri() ?>/img/logos/reflecta.png" width="127" height="61"
+          srcset="<?php echo get_template_directory_uri() ?>/img/logos/reflecta.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/reflecta@2x.png 2x"
+          loading="lazy"
+          alt="reflecta network"
+        >
+      </a>
+      <a href="https://berlin.impacthub.net/" target="_blank" rel="noopener">
+        <img
+          src="<?php echo get_template_directory_uri() ?>/img/logos/impact-hub.png" width="61" height="61"
+          srcset="<?php echo get_template_directory_uri() ?>/img/logos/impact-hub.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/impact-hub@2x.png 2x"
+          loading="lazy"
+          alt="Impact Hub Berlin"
+        >
+      </a>
+    </div>
+  </div>
 </footer>
-</div>
 
 </body>
 </html>
