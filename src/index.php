@@ -161,104 +161,241 @@
           <a href="#angebote-online-styling-beratung">Online-Styling-Beratung</a>
         </li>
         <li>
-          <a href="#outfit-consulting">Outfit Consulting</a>
+          <a href="#angebote-outfit-consulting">Outfit Consulting</a>
+        </li>
+        <li>
+          <a href="#angebote-kleiderordnung">Kleiderordnung</a>
         </li>
       </ul>
     </nav>
 
-    <article class="offers__offer has-secondary-background">
-      <figure class="offers__offer__image">
-        <img
-          src="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg" width="560" height="560"
-          srcset="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung@2x.jpg 2x"
-          loading="lazy"
-          alt="Tina Steinke betrachtet lächelnd Kleidung am Kleiderständer"
-        >
-      </figure>
-      <div class="offers__offer__card">
-        <figure class="offers__offer__icon">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4.75C7 3.09314 8.34315 1.75 10 1.75H46C47.6569 1.75 49 3.09315 49 4.75V47.75C49 49.4069 47.6569 50.75 46 50.75H10C8.34315 50.75 7 49.4069 7 47.75V4.75Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M10.5 50.75V54.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M45.5 50.75V54.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M28 50.75V1.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M21 25.375C21.4832 25.375 21.875 25.7668 21.875 26.25C21.875 26.7332 21.4832 27.125 21 27.125C20.5168 27.125 20.125 26.7332 20.125 26.25C20.125 25.7668 20.5168 25.375 21 25.375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M35 25.375C35.4832 25.375 35.875 25.7668 35.875 26.25C35.875 26.7332 35.4832 27.125 35 27.125C34.5168 27.125 34.125 26.7332 34.125 26.25C34.125 25.7668 34.5168 25.375 35 25.375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+    <div class="offers__cards">
+      <!-- Offer 1/5 -->
+      <article id="angebote-style-visit" class="offers__offer has-secondary-background">
+        <figure class="offers__offer__image">
+          <img
+            src="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg" width="560" height="560"
+            srcset="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung@2x.jpg 2x"
+            loading="lazy"
+            alt="Tina Steinke betrachtet lächelnd Kleidung am Kleiderständer"
+          >
         </figure>
-        <h3 class="offers__offer__headline">Style Visit</h3>
-        <p class="offers__offer__paragraph">
-          Wir treffen uns bei Dir zu Hause und wir gehen gemeinsam Deine Garderobe entsprechend nach Deinen Zielen und Anforderungen durch und mit viel Spaß und Ideenreichtum betrachte ich jedes Stück als Chance und wertvolle Ressource und füge sie zu überraschenden Kombinationen zusammen! Als Ergebnis kannst Du Dich auf eine neue Kollektion im Schrank erfreuen und dies ganz ohne Konsum!
-        </p>
-        <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
-        <ul class="offers__offer__features__list">
-          <li>Kostenloses Vorgespräch</li>
-          <li>tolle Kombinationen, auf die Du so nicht gekommen wärst</li>
-          <li>eine neue Kollektion aus dem eigenen Schrank</li>
-          <li>Definition von Stücken, die besonders gut zu Dir und Deiner Silhouette passen</li>
-          <li>Fotos von Dir und deinen neuen Looks mit anschließendem Stylebook</li>
-          <li>Kleidungsstücke gezielt aussortieren, die Deiner Persönlichkeit nicht entsprechen</li>
-          <li>Wegweiser für Dich, wie du die gewonnenen Erkenntnisse eigenständig umsetzten kannst</li>
-          <li>Empfehlungen für Ergänzungen, wenn sinnvoll</li>
-        </ul>
-        <div class="offers__offer__price">
-          <span class="offers__offer__price__prefix">ab</span>
-          <span class="offers__offer__price__amount">190,-</span>
-          <span class="offers__offer__price__currency">&euro;</span>
+        <div class="offers__offer__card">
+          <figure class="offers__offer__icon"><!-- TODO icons ins CSS umziehen -->
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4.75C7 3.09314 8.34315 1.75 10 1.75H46C47.6569 1.75 49 3.09315 49 4.75V47.75C49 49.4069 47.6569 50.75 46 50.75H10C8.34315 50.75 7 49.4069 7 47.75V4.75Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10.5 50.75V54.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M45.5 50.75V54.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M28 50.75V1.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21 25.375C21.4832 25.375 21.875 25.7668 21.875 26.25C21.875 26.7332 21.4832 27.125 21 27.125C20.5168 27.125 20.125 26.7332 20.125 26.25C20.125 25.7668 20.5168 25.375 21 25.375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M35 25.375C35.4832 25.375 35.875 25.7668 35.875 26.25C35.875 26.7332 35.4832 27.125 35 27.125C34.5168 27.125 34.125 26.7332 34.125 26.25C34.125 25.7668 34.5168 25.375 35 25.375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
+          <h3 class="offers__offer__headline">Style Visit</h3>
+          <p class="offers__offer__paragraph">
+            Wir treffen uns bei Dir zu Hause und wir gehen gemeinsam Deine Garderobe entsprechend nach Deinen Zielen und Anforderungen durch und mit viel Spaß und Ideenreichtum betrachte ich jedes Stück als Chance und wertvolle Ressource und füge sie zu überraschenden Kombinationen zusammen! Als Ergebnis kannst Du Dich auf eine neue Kollektion im Schrank erfreuen und dies ganz ohne Konsum!
+          </p>
+          <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
+          <ul class="offers__offer__features__list">
+            <li>Kostenloses Vorgespräch</li>
+            <li>tolle Kombinationen, auf die Du so nicht gekommen wärst</li>
+            <li>eine neue Kollektion aus dem eigenen Schrank</li>
+            <li>Definition von Stücken, die besonders gut zu Dir und Deiner Silhouette passen</li>
+            <li>Fotos von Dir und deinen neuen Looks mit anschließendem Stylebook</li>
+            <li>Kleidungsstücke gezielt aussortieren, die Deiner Persönlichkeit nicht entsprechen</li>
+            <li>Wegweiser für Dich, wie du die gewonnenen Erkenntnisse eigenständig umsetzten kannst</li>
+            <li>Empfehlungen für Ergänzungen, wenn sinnvoll</li>
+          </ul>
+          <div class="offers__offer__price">
+            <span class="offers__offer__price__prefix">ab</span>
+            <span class="offers__offer__price__amount">190,-</span>
+            <span class="offers__offer__price__currency">&euro;</span>
+          </div>
+          <ul class="offers__offer__price__annotations">
+            <li>Minimum 2h = 190 Euro</li>
+            <li>jede weitere Stunde = 90 Euro</li>
+          </ul>
+          <a class="button button--primary" href="#kontakt">Termin buchen</a>
         </div>
-        <ul class="offers__offer__price__annotations">
-          <li>Minimum 2h = 190 Euro</li>
-          <li>jede weitere Stunde = 90 Euro</li>
-        </ul>
-        <a class="button button--primary" href="#kontakt">Termin buchen</a>
-      </div>
-    </article>
+      </article>
 
-    <!-- TODO replace the example(s) below with dynamic content from data loop -->
-    <article class="offers__offer has-secondary-background">
-      <figure class="offers__offer__image">
-        <img
-          src="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg" width="560" height="560"
-          srcset="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung@2x.jpg 2x"
-          loading="lazy"
-          alt="Tina Steinke am Kleiderständer"
-        >
-      </figure>
-      <div class="offers__offer__card">
-        <figure class="offers__offer__icon">
-          <svg width="57" height="56" viewBox="0 0 57 56" fill="none">
-            <path d="M22 54.8334H1.02002C1.02002 54.8334 1.02002 43.6081 1.02002 43.251C1.02002 43.251 0.974976 41.7351 1.02002 40.8336V19.033V16.3334H41.8333V19.033" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M30.5374 9.46637C29.7468 5.33694 26.1411 2.34659 21.9367 2.33337V2.33337C17.7542 2.35172 14.1652 5.31781 13.3594 9.42204" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M50.6359 32.7195H31.7242C30.7849 32.6812 29.9623 33.344 29.7999 34.2699L27.1199 52.9163C27.0918 53.434 27.2861 53.9391 27.6538 54.3046C28.0216 54.6701 28.5279 54.8612 29.0455 54.8299H53.3146C53.8321 54.8612 54.3383 54.6701 54.7058 54.3046C55.0734 53.939 55.2674 53.4339 55.2389 52.9163L52.5589 34.2699C52.3965 33.3445 51.5747 32.6819 50.6359 32.7195Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M46.0957 28.776C45.6417 26.4045 43.571 24.6872 41.1564 24.6796V24.6796C38.7544 24.6901 36.6932 26.3935 36.2305 28.7506" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+      <!-- Offer 2/5 -->
+      <article id="angebote-shopping-tour" class="offers__offer has-secondary-background">
+        <figure class="offers__offer__image">
+          <img
+            src="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg" width="560" height="560"
+            srcset="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung@2x.jpg 2x"
+            loading="lazy"
+            alt="Tina Steinke am Kleiderständer"
+          >
         </figure>
-        <h3 class="offers__offer__headline">Shopping-Tour</h3>
-        <p class="offers__offer__paragraph">
-          In 3-4 ausgesuchten Läden suchen wir gezielt nach den fehlenden Puzzlestücken, die aus deiner Garderobe ein stimmiges Ganzes machen! Im Fokus stehen Fair-Fashion Boutiquen, Second Hand & Vintage-Stores. Die Berliner Designer-Szene bietet zudem zahlreiche unabhängige Brands mit ausdrucksstarken Kollektionen und Einzelstücken ebenso wie puristischen Schnitten. Ich werde das Richtige für Dich finden, denn viel Erfahrung und Kreativität lässt mich das Potential eines Kleidungsstücks und dessen Einsatzfähigkeit schnell erkennen!
-        </p>
-        <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
-        <ul class="offers__offer__features__list">
-          <li>Kostenloses Vorgespräch</li>
-          <li>gezielte Auswahl an passenden Ergänzungen</li>
-          <li>Zeit- und Nerven sparendes Einkaufen</li>
-          <li>Vermeidung von Fehlkäufen</li>
-          <li>Kennenlernen von besonderen Stores & Designern</li>
-          <li>1 zu 1 Styling-Beratung vor Ort</li>
-        </ul>
-        <div class="offers__offer__price">
-          <!-- TODO possibly better offer 1 free form text line? -->
-          <span class="offers__offer__price__prefix">ab</span>
-          <span class="offers__offer__price__amount">120,-</span>
-          <span class="offers__offer__price__currency">&euro;</span>
+        <div class="offers__offer__card">
+          <figure class="offers__offer__icon">
+            <svg width="57" height="56" viewBox="0 0 57 56" fill="none">
+              <path d="M22 54.8334H1.02002C1.02002 54.8334 1.02002 43.6081 1.02002 43.251C1.02002 43.251 0.974976 41.7351 1.02002 40.8336V19.033V16.3334H41.8333V19.033" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M30.5374 9.46637C29.7468 5.33694 26.1411 2.34659 21.9367 2.33337V2.33337C17.7542 2.35172 14.1652 5.31781 13.3594 9.42204" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M50.6359 32.7195H31.7242C30.7849 32.6812 29.9623 33.344 29.7999 34.2699L27.1199 52.9163C27.0918 53.434 27.2861 53.9391 27.6538 54.3046C28.0216 54.6701 28.5279 54.8612 29.0455 54.8299H53.3146C53.8321 54.8612 54.3383 54.6701 54.7058 54.3046C55.0734 53.939 55.2674 53.4339 55.2389 52.9163L52.5589 34.2699C52.3965 33.3445 51.5747 32.6819 50.6359 32.7195Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M46.0957 28.776C45.6417 26.4045 43.571 24.6872 41.1564 24.6796V24.6796C38.7544 24.6901 36.6932 26.3935 36.2305 28.7506" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
+          <h3 class="offers__offer__headline">Shopping-Tour</h3>
+          <p class="offers__offer__paragraph">
+            In 3-4 ausgesuchten Läden suchen wir gezielt nach den fehlenden Puzzlestücken, die aus deiner Garderobe ein stimmiges Ganzes machen! Im Fokus stehen Fair-Fashion Boutiquen, Second Hand & Vintage-Stores. Die Berliner Designer-Szene bietet zudem zahlreiche unabhängige Brands mit ausdrucksstarken Kollektionen und Einzelstücken ebenso wie puristischen Schnitten. Ich werde das Richtige für Dich finden, denn viel Erfahrung und Kreativität lässt mich das Potential eines Kleidungsstücks und dessen Einsatzfähigkeit schnell erkennen!
+          </p>
+          <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
+          <ul class="offers__offer__features__list">
+            <li>Kostenloses Vorgespräch</li>
+            <li>gezielte Auswahl an passenden Ergänzungen</li>
+            <li>Zeit- und Nerven sparendes Einkaufen</li>
+            <li>Vermeidung von Fehlkäufen</li>
+            <li>Kennenlernen von besonderen Stores & Designern</li>
+            <li>1 zu 1 Styling-Beratung vor Ort</li>
+          </ul>
+          <div class="offers__offer__price">
+            <!-- TODO possibly better offer 1 free form text line? -->
+            <span class="offers__offer__price__prefix">ab</span>
+            <span class="offers__offer__price__amount">120,-</span>
+            <span class="offers__offer__price__currency">&euro;</span>
+          </div>
+          <ul class="offers__offer__price__annotations">
+            <li>Minimum 3 Stunden = 290 Euro</li>
+            <li>jede weitere Stunde = 90 Euro</li>
+          </ul>
+          <a class="button button--primary" href="#kontakt">Termin buchen</a>
         </div>
-        <ul class="offers__offer__price__annotations">
-          <li>Minimum 3 Stunden = 290 Euro</li>
-          <li>jede weitere Stunde = 90 Euro</li>
-        </ul>
-        <a class="button button--primary" href="#kontakt">Termin buchen</a>
-      </div>
-    </article>
+      </article>
+
+
+      <!-- Offer 3/5 -->
+      <article id="angebote-online-styling-beratung" class="offers__offer has-secondary-background">
+        <figure class="offers__offer__image">
+          <img
+            src="<?php echo get_template_directory_uri() ?>/img/onlinestyling-beratung-kleiderordnung.jpg" width="560" height="560"
+            srcset="<?php echo get_template_directory_uri() ?>/img/onlinestyling-beratung-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/onlinestyling-beratung-kleiderordnung@2x.jpg 2x"
+            loading="lazy"
+            alt="Symbolbild"
+          >
+        </figure>
+        <div class="offers__offer__card">
+          <figure class="offers__offer__icon">
+            <svg width="57" height="56" viewBox="0 0 57 56" fill="none">
+              <path d="M22 54.8334H1.02002C1.02002 54.8334 1.02002 43.6081 1.02002 43.251C1.02002 43.251 0.974976 41.7351 1.02002 40.8336V19.033V16.3334H41.8333V19.033" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M30.5374 9.46637C29.7468 5.33694 26.1411 2.34659 21.9367 2.33337V2.33337C17.7542 2.35172 14.1652 5.31781 13.3594 9.42204" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M50.6359 32.7195H31.7242C30.7849 32.6812 29.9623 33.344 29.7999 34.2699L27.1199 52.9163C27.0918 53.434 27.2861 53.9391 27.6538 54.3046C28.0216 54.6701 28.5279 54.8612 29.0455 54.8299H53.3146C53.8321 54.8612 54.3383 54.6701 54.7058 54.3046C55.0734 53.939 55.2674 53.4339 55.2389 52.9163L52.5589 34.2699C52.3965 33.3445 51.5747 32.6819 50.6359 32.7195Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M46.0957 28.776C45.6417 26.4045 43.571 24.6872 41.1564 24.6796V24.6796C38.7544 24.6901 36.6932 26.3935 36.2305 28.7506" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
+          <h3 class="offers__offer__headline">Online Styling Beratung</h3>
+          <p class="offers__offer__paragraph">
+            Deine zeitlichen Kapazitäten sind begrenzt? Du brauchst kurzfristig Rat? Du wohnst nicht in der Region Berlin? Als follow-up nach einer bereits erfolgten Styling-Session? Keine Sorge, ich stehe Dir mit meiner Erfahrungen und Ideenreichtum auch online zur Verfügung! Nach einer Vorbesprechung Deines Anliegens treffen wir uns virtuell und Du zeigst mir via Kamera die Kleidungsstücke, zu denen Du Fragen hast: sei es generell zu Farbe und Schnitt, ein Event, oder für eine finale Kaufentscheidung bei online gekauften Kleidungsstücken.
+          </p>
+          <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
+          <ul class="offers__offer__features__list">
+            <li>Kostenloses Vorgespräch</li>
+            <li>Virtuelle Beratung via Videoanruf</li>
+            <li>Beratung zu Farbe und Schnitt der Kleidungsstücke</li>
+            <li>Hilfe bei Kaufentscheidungen von online gekauften Kleidungsstücken</li>
+          </ul>
+          <div class="offers__offer__price">
+            <span class="offers__offer__price__prefix">ab</span>
+            <span class="offers__offer__price__amount">85,-</span>
+            <span class="offers__offer__price__currency">&euro;</span>
+          </div>
+          <ul class="offers__offer__price__annotations">
+            <li>Minimum = 85 Euro</li>
+          </ul>
+          <a class="button button--primary" href="#kontakt">Termin buchen</a>
+        </div>
+      </article>
+
+      <!-- Offer 4/5 -->
+      <article id="angebote-outfit-consulting" class="offers__offer has-secondary-background">
+        <figure class="offers__offer__image">
+          <img
+            src="<?php echo get_template_directory_uri() ?>/img/outfit-consulting-kleiderordnung.jpg" width="560" height="560"
+            srcset="<?php echo get_template_directory_uri() ?>/img/outfit-consulting-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/outfit-consulting-kleiderordnung@2x.jpg 2x"
+            loading="lazy"
+            alt="Tina Steinke am Kleiderständer"
+          >
+        </figure>
+        <div class="offers__offer__card">
+          <figure class="offers__offer__icon">
+            <svg width="57" height="56" viewBox="0 0 57 56" fill="none">
+              <path d="M22 54.8334H1.02002C1.02002 54.8334 1.02002 43.6081 1.02002 43.251C1.02002 43.251 0.974976 41.7351 1.02002 40.8336V19.033V16.3334H41.8333V19.033" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M30.5374 9.46637C29.7468 5.33694 26.1411 2.34659 21.9367 2.33337V2.33337C17.7542 2.35172 14.1652 5.31781 13.3594 9.42204" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M50.6359 32.7195H31.7242C30.7849 32.6812 29.9623 33.344 29.7999 34.2699L27.1199 52.9163C27.0918 53.434 27.2861 53.9391 27.6538 54.3046C28.0216 54.6701 28.5279 54.8612 29.0455 54.8299H53.3146C53.8321 54.8612 54.3383 54.6701 54.7058 54.3046C55.0734 53.939 55.2674 53.4339 55.2389 52.9163L52.5589 34.2699C52.3965 33.3445 51.5747 32.6819 50.6359 32.7195Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M46.0957 28.776C45.6417 26.4045 43.571 24.6872 41.1564 24.6796V24.6796C38.7544 24.6901 36.6932 26.3935 36.2305 28.7506" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
+          <h3 class="offers__offer__headline">Outfit Consulting für Start-ups mit nachhaltigem Fokus</h3>
+          <p class="offers__offer__paragraph">
+            Kleider machen Leute, auch im nachhaltigen Sektor. Das Erscheinungsbild beeinflusst den ersten Eindruck, den Betrachter:innen von Dir haben. Überlasse dies nicht dem Zufall und lass uns zusammenarbeiten, denn Präsentationen und Treffen mit Entscheidern, Sponsoren und Businessangeln sind enorm wichtige Auftritte zum Erreichen Deiner Ziele.<br>
+            Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, selbstbewusst und verleiht dir einen emotionalen Boost.
+          </p>
+          <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
+          <ul class="offers__offer__features__list">
+            <li>Kostenloses Vorgespräch</li>
+            <li>Individuelle Outfit-Empfehlungen</li>
+            <li>Outfit-Zusammenstellung aus dem Vorhandenen (nach erfolgtem Style-Visit oder Online Styling Beratung)</li>
+            <li>Ausarbeiten eines Corporate Designs als Branding zur optimalen Visualisierung Deines Businesses</li>
+          </ul>
+          <div class="offers__offer__price">
+            <span class="offers__offer__price__prefix">ab</span>
+            <span class="offers__offer__price__amount">190,-</span>
+            <span class="offers__offer__price__currency">&euro;</span>
+          </div>
+          <ul class="offers__offer__price__annotations">
+            <li>Minimum 2 h = 190 Euro</li>
+            <li>jede weitere Stunde = 90 Euro</li>
+          </ul>
+          <a class="button button--primary" href="#kontakt">Termin buchen</a>
+        </div>
+      </article>
+
+      <!-- Offer 5/5 -->
+      <article id="angebote-kleiderordnung" class="offers__offer has-secondary-background">
+        <figure class="offers__offer__image">
+          <img
+            src="<?php echo get_template_directory_uri() ?>/img/kleiderordnung.jpg" width="560" height="560"
+            srcset="<?php echo get_template_directory_uri() ?>/img/kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/kleiderordnung.jpg 2x"
+            loading="lazy"
+            alt="Tina Steinke am Kleiderständer"
+          >
+        </figure>
+        <div class="offers__offer__card">
+          <figure class="offers__offer__icon">
+            <svg width="57" height="56" viewBox="0 0 57 56" fill="none">
+              <path d="M22 54.8334H1.02002C1.02002 54.8334 1.02002 43.6081 1.02002 43.251C1.02002 43.251 0.974976 41.7351 1.02002 40.8336V19.033V16.3334H41.8333V19.033" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M30.5374 9.46637C29.7468 5.33694 26.1411 2.34659 21.9367 2.33337V2.33337C17.7542 2.35172 14.1652 5.31781 13.3594 9.42204" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M50.6359 32.7195H31.7242C30.7849 32.6812 29.9623 33.344 29.7999 34.2699L27.1199 52.9163C27.0918 53.434 27.2861 53.9391 27.6538 54.3046C28.0216 54.6701 28.5279 54.8612 29.0455 54.8299H53.3146C53.8321 54.8612 54.3383 54.6701 54.7058 54.3046C55.0734 53.939 55.2674 53.4339 55.2389 52.9163L52.5589 34.2699C52.3965 33.3445 51.5747 32.6819 50.6359 32.7195Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M46.0957 28.776C45.6417 26.4045 43.571 24.6872 41.1564 24.6796V24.6796C38.7544 24.6901 36.6932 26.3935 36.2305 28.7506" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
+          <h3 class="offers__offer__headline">Kleiderordnung</h3>
+          <p class="offers__offer__paragraph">
+            Schluss mit Chaos in Deinem Schrank, Kommode oder Kleiderstange und dem ewigen „Struggle“ der Outfit-Zusammenstellung am Morgen! Durch eine sinnvolle Struktur und Sortierung Deiner Kleidung, Schuhe und Accessoires gewinnst Du nicht nur mehr Übersicht Deiner schönen Stücke, sondern auch mehr Wertschätzung, Freude und Kreativität für neue Looks!
+          </p>
+          <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
+          <ul class="offers__offer__features__list">
+            <li>Kostenloses Vorgespräch</li>
+            <li>Strukturieren und Gruppieren des Vorhandenen</li>
+            <li>Sinnvolle Sortiersysteme integrieren</li>
+            <li>Nerven- und Zeit sparenden Zugang zur Garderobe</li>
+            <li>weniger „hab nix anzuziehen“-Feeling!</li>
+          </ul>
+          <div class="offers__offer__price">
+            <span class="offers__offer__price__prefix">ab</span>
+            <span class="offers__offer__price__amount">90,-</span>
+            <span class="offers__offer__price__currency">&euro;</span>
+          </div>
+          <ul class="offers__offer__price__annotations">
+            <li>Minimum 2 h = 90 Euro</li>
+            <li>jede weitere Stunde = 40 Euro</li>
+          </ul>
+          <a class="button button--primary" href="#kontakt">Termin buchen</a>
+        </div>
+      </article>
+    </div>
 
     <div class="offers__additional">
       <h2 class="offers__additional__headline">Weitere Angebote</h2>
