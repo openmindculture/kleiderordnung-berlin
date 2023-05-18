@@ -541,10 +541,12 @@
         <figure class="news__post__image">
           <img width="440" height="248" alt="" src="<?php echo get_template_directory_uri() ?>/img/news-example-1.jpg">
         </figure>
-        <h3 class="news__post__title">Kategoriename</h3>
-        <p class="stories__story__quote__text">
-          Gute Gespräche und viel zu sehen – unterwegs auf der Green Fashion Fair Berlin
-          </p>
+        <div class="news__post__content">
+          <h3 class="news__post__title">Kategoriename</h3>
+          <p class="news__post__text">
+            Gute Gespräche und viel zu sehen – unterwegs auf der Green Fashion Fair Berlin
+            </p>
+        </div>
       </article>
 
       <!-- News 2 -->
@@ -552,10 +554,12 @@
         <figure class="news__post__image">
           <img width="440" height="248" alt="" src="<?php echo get_template_directory_uri() ?>/img/news-example-2.jpg">
         </figure>
-        <h3 class="news__post__title">Workshops & Events</h3>
-        <p class="stories__story__quote__text">
-          Second Hand Shopping am 12. Mai auf dem Flowmarkt Nowkoelln
-        </p>
+        <div class="news__post__content">
+          <h3 class="news__post__title">Workshops & Events</h3>
+          <p class="news__post__text">
+            Second Hand Shopping am 12. Mai auf dem Flowmarkt Nowkoelln
+          </p>
+        </div>
       </article>
 
       <!-- News 3 -->
@@ -563,15 +567,21 @@
         <figure class="news__post__image">
           <img width="440" height="248" alt="" src="<?php echo get_template_directory_uri() ?>/img/news-example-3.jpg">
         </figure>
-        <h3 class="news__post__title">Impulse</h3>
-        <p class="stories__story__quote__text">
-          Neue Studie zu Fast Fashion schockiert
-        </p>
+        <div class="news__post__content">
+          <h3 class="news__post__title">Impulse</h3>
+          <p class="news__post__text">
+            Neue Studie zu Fast Fashion schockiert
+          </p>
+        </div>
       </article>
 
-      <!-- TODO disable "all news" link in single page mode: -->
-      <a class="news__link" href="#">alle Neuigkeiten</a>
     </div>
+
+    <div class="news__footer">
+      <!-- TODO disable "all news" link in single page mode: -->
+      <a class="news__link news__link--more" href="#">alle Neuigkeiten</a>
+    </div>
+
   </section>
 
   <div class="socialmedia target-offset">

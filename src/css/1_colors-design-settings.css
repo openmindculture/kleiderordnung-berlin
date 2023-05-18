@@ -33,8 +33,10 @@
   --header-height-stuck: 0;
 
   /* Text Styles */
-  --font-family-default: "Henderson Sans W00", sans-serif;
-  --font-family-heading: "IvyMode", serif;
+  --font-family-henderson: "Henderson Sans W00", sans-serif;
+  --font-family-ivymode: "IvyMode", serif;
+  --font-family-default: var(--font-family-henderson);
+  --font-family-heading: var(--font-family-ivymode);
 
   /* Font sizes with pixel names to make it easier to use and verify with Figma designs */
   --font-size-48: 3rem;
@@ -48,6 +50,7 @@
   --font-size-15: 0.9375rem;
   --font-size-14: 0.875rem;
   --font-size-13: 0.8125rem;
+  --font-size-12: 0.75rem;
 
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
