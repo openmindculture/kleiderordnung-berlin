@@ -673,14 +673,16 @@
             <div>
               <a class=email itemprop=email itemscope href=mailto:martinasteinke@posteo.de>martinasteinke@posteo.de</a>
             </div>
-                <div class="contact__calltoactiontext contact__calltoactiontext--secondary">
-                  Folge mir
-                </div>
-            <div class="contact__socialmedia__links__wrapper">
-              <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--instagram"></figure></a>
-              <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target="_blank" rel="me noopener" title="Martina Steinke auf LinkedIn"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--linkedin"></figure></a>
-
-            </div></address></div>
+          </address>
+          <div class="contact__calltoactiontext contact__calltoactiontext--secondary">
+            Folge mir
+          </div>
+          <div class="contact__socialmedia__links__wrapper">
+            <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--instagram"></figure></a>
+            <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target="_blank" rel="me noopener" title="Martina Steinke auf LinkedIn"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--linkedin"></figure></a>
+            <a href="https://www.pinterest.de/martinasteinke0050/" target="_blank" rel="me noopener" title="Tina Steinke auf Pinterest"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--pinterest"></figure></a>
+          </div>
+        </div>
         <!-- END vcard imprint contact information -->
       </div>
 
