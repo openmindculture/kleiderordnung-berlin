@@ -16,8 +16,10 @@ kleiderordnung.highContrastClassName = 'contrast--more'; // to be removed from .
 kleiderordnung.allowableClassName = 'allowable--on-visibility'; // triggers consent challenge before external content loading
 kleiderordnung.feedCookieKey = 'instafeed'; // name of the cookie set to remember consent
 kleiderordnung.feedCookieValue = 'allow'; // default value
-kleiderordnung.feedContainerClassName = 'feed__container';
-kleiderordnung.feedContainerActiveClassName = 'feed__container--active'; // set to feed container when allowed and loaded
+kleiderordnung.feedSectionClassName = 'socialmedia__feed__section';
+kleiderordnung.feedSectionActiveClassName = 'socialmedia__feed__section--active';
+kleiderordnung.feedContainerClassName = 'socialmedia__feed__container';
+kleiderordnung.feedContainerActiveClassName = 'socialmedia__feed__container--active'; // set to feed container when allowed and loaded
 kleiderordnung.feedDataKey = 'allow'; // data key to control the expiry / validity when clicking allow
 kleiderordnung.feedDataValueAlways = 'always'; // data value to always allow (as opposed to the session default)
 kleiderordnung.feedScriptUrlDataKey = 'scripturl'; // data key which JavaScript to load (absolute or relative to project)
@@ -121,6 +123,8 @@ kleiderordnung.handleAppearedElement = function(targetElement) {
  * @param {HTMLElement} feedContainerElement
  */
 kleiderordnung.prepareExternalFeed = function(feedContainerElement) {
+  console.log("prepareExternalFeed");
+  if (!feedContainerElement) { return; }
   if (
     document.cookie.split(';').some(
       function(item) {
@@ -130,11 +134,20 @@ kleiderordnung.prepareExternalFeed = function(feedContainerElement) {
   ) {
     kleiderordnung.activateExternalFeed(feedContainerElement);
   } else {
-    var buttonElements = feedContainerElement.querySelectorAll('[data-' + kleiderordnung.feedDataKey + ']');
+    console.log("feedContainerElement", feedContainerElement);
+    var feedSectionElement = feedContainerElement.closest('.' + kleiderordnung.feedSectionClassName);
+    console.log("kleiderordnung.feedSectionClassName", kleiderordnung.feedSectionClassName);
+    console.log("feedSectionElement", feedSectionElement);
+    if (!feedSectionElement) { return; }
+    var buttonElements = feedSectionElement.querySelectorAll('[data-' + kleiderordnung.feedDataKey + ']');
+    console.log("prepareExternalFeed: buttonElements", buttonElements);
     for (var i = 0; i < buttonElements.length; i++) {
       var buttonElement = buttonElements[i];
-      buttonElement.addEventListener('click', function() {
-        kleiderordnung.allowAndActivateExternalFeed(buttonElement);
+      console.log("buttonElement", buttonElement);
+      buttonElement.addEventListener('click', function(buttonEvent) {
+        console.log("buttonElement on click");
+
+        kleiderordnung.allowAndActivateExternalFeed(buttonEvent.currentTarget);
       }, false);
     }
   }
@@ -142,7 +155,15 @@ kleiderordnung.prepareExternalFeed = function(feedContainerElement) {
 
 /** @param {HTMLElement} buttonElement */
 kleiderordnung.allowAndActivateExternalFeed = function(buttonElement) {
-  var feedContainerElement = buttonElement.closest('.' + kleiderordnung.feedContainerClassName);
+  console.log("1");
+  if (!buttonElement) { return; }
+  console.log("2");
+  var feedSectionElement = buttonElement.closest('.' + kleiderordnung.feedSectionClassName);
+  if (!feedSectionElement) { return; }
+  console.log("3");
+  var feedContainerElement = feedSectionElement.querySelector('.' + kleiderordnung.feedContainerClassName);
+  if (!feedContainerElement) { return; }
+  console.log("4");
   var consentCookie = kleiderordnung.feedCookieKey + '=' + kleiderordnung.feedCookieValue + ';samesite=strict;secure';
   if (buttonElement.dataset[kleiderordnung.feedDataKey].allow === kleiderordnung.feedDataValueAlways) {
     var maxAgeSeconds = 31536000; // 1 year
@@ -178,6 +199,10 @@ kleiderordnung.activateExternalFeed = function(feedContainerElement) {
   }
   if (feedContainerElement && feedContainerElement.classList) {
     feedContainerElement.classList.add(kleiderordnung.feedContainerActiveClassName);
+    var feedSectionElement = feedContainerElement.closest('.' + kleiderordnung.feedSectionClassName);
+    if (feedSectionElement && feedSectionElement.classList) {
+      feedSectionElement.classList.add(kleiderordnung.feedSectionActiveClassName);
+    }
   }
 }
 

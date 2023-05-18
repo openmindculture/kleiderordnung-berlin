@@ -9,22 +9,35 @@
 
 .socialmedia__feed__container--juicer {}
 
-.socialmedia__feed__consent--juicer {}
+.socialmedia__links__wrapper {
+  width: var(--width-spaced);
+  max-width: var(--width-max);
+  margin: 0 auto 1.5rem auto;
+}
 
-.socialmedia__feed__embed--juicer {}
+.socialmedia__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
 
-.socialmedia__feed__embed--juicer.referral,
-.socialmedia__feed__embed--juicer h1 {
-  display: none;
+.socialmedia__link:link,
+.socialmedia__link:visited,
+.socialmedia__link:active,
+.socialmedia__link:hover {
+  color: var(--color-primary-foreground);
 }
 
 .socialmedia__icon {
+  display: inline-block;
   width: 2.75rem;
   height: 2.75rem;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 1.375rem;
+  margin: 0 1.5rem 0 0;
+  padding: 0;
 }
 
 /* dark circle with light icon */
@@ -49,4 +62,104 @@
 
 .socialmedia__icon--inverted--linkedin {
   background-image: url("data:image/svg+xml,%3Csvg width='44' height='44' viewBox='0 0 44 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.200195' width='43.2' height='43.2' rx='21.6' fill='%23ffffff'/%3E%3Cpath fill='%230014D1' fill-rule='evenodd' clip-rule='evenodd' d='M27.9321 12H14.6691C13.0844 12 11.7998 13.2846 11.7998 14.8693V28.1308C11.7998 29.7155 13.0844 31 14.6691 31H27.932C29.5167 31 30.8013 29.7154 30.8013 28.1308V14.8694C30.8014 13.2847 29.5167 12 27.9321 12ZM17.5473 19.3572V27.9498H14.6915V19.3572H17.5473ZM17.7341 16.6994C17.7341 17.5241 17.1137 18.1839 16.1185 18.1839H16.0996C15.1409 18.1839 14.5213 17.5241 14.5213 16.6994C14.5213 15.8564 15.1599 15.2149 16.1372 15.2149C17.1137 15.2149 17.7156 15.8564 17.7341 16.6994ZM21.9827 27.9498H19.1264C19.1264 27.9498 19.1643 20.1634 19.1264 19.3573H21.9827V20.573C22.3622 19.9876 23.0418 19.1555 24.5563 19.1555C26.4356 19.1555 27.8442 20.3835 27.8442 23.0228V27.9498H24.9885V23.3528C24.9885 22.1979 24.5754 21.4097 23.5418 21.4097C22.7531 21.4097 22.2828 21.9409 22.0768 22.4543C22.0013 22.6378 21.9827 22.8945 21.9827 23.1514V27.9498Z' /%3E%3C/svg%3E");
+}
+
+/* skeleton + actual feed:
+ * keep 5-column layout as long as possible
+ * by reducing image size
+ * mobile: swipeable view with inital 3.5 items
+ */
+
+/* skeleton placeholder must be disabled when the actual content loads, both could overlay at the exact same position and the new content might fade in unless users prefer reduced motion */
+
+/* use an empty svg to ensure same behavior as insta pics */
+
+/* replicate, override, extend third party styles */
+.socialmedia__feed_section,
+.socialmedia__feed__embed--skeleton,
+.socialmedia__feed__embed--juicer {
+  position: relative;
+
+}
+
+.socialmedia__feed__embed--skeleton {
+  z-index: 1;
+  margin: 0;
+}
+
+.socialmedia__feed__embed--juicer {
+  z-index: 2;
+  margin: 0;
+}
+
+.socialmedia__feed__consent--juicer {
+  z-index: 3;
+  position: relative;
+  top: -10rem;
+  background-color: var(--color-primary-background);
+  padding: 1rem;
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+.socialmedia__feed__section--active .socialmedia__feed__placeholder,
+.socialmedia__feed__section--active .socialmedia__feed__consent {
+  display: none; /* TODO add transitions or animations? */
+}
+
+.socialmedia__feed__embed__table {
+  display: flex;
+}
+
+.socialmedia__feed__embed__cell {
+  background: silver;
+  padding-right: 1px;
+}
+
+.juicer-feed.j-stacker {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.juicer-feed.j-stacker > * {
+  display: table-cell !important;
+  vertical-align: top;
+  float: none !important;
+}
+.j-stack.galcolumn {
+  width: 20%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.j-image {
+  position: relative;
+  display: block;
+}
+
+.j-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+/* TODO how to handle juicer copyright / referral link? if we keep juicer, how much would a paid license be and would that allow to get rid of the notice? */
+
+.socialmedia__feed__embed--juicer.referral,
+.socialmedia__feed__embed--juicer h1 {
+  display: none;
+}
+
+.juicer-feed h1.referral {
+  text-align: right !important;
+  position: absolute !important;
+  bottom: 0 !important;
+}
+.juicer-feed h1.referral a:after {
+  background-size: 100% 100%;
+  background-position: 0 0;
+}
+
+.juicer-feed  .j-paginate.juicer-button {
+  display: none !important;
 }

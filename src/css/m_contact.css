@@ -41,10 +41,9 @@
   }
 }
 
-.social svg {
-  height: 2em;
-  width: auto;
-  border-radius: 0.125em;
+
+.contact__socialmedia__links__wrapper {
+  display: flex;
 }
 
 .vcard {
