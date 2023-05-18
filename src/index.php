@@ -576,9 +576,34 @@
 
   <div class="socialmedia target-offset">
     <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram"><figure class="socialmedia__icon socialmedia__icon--primary socialmedia__icon--primary--instagram"></figure> Kleiderordnung auf instagram</a>
+
+    <!-- TODO show content skeleton to be replaced with actual content -->
+    <!-- always start with "skeleton" placeholder, allowed content will only replace on visibility -->
+    <!-- content skeleton will be valid markup, same visual layout, prevent layout shift by ensuring height -->
+    <aside class="socialmedia__feed__placeholder">
+      <div class="socialmedia__feed__embed socialmedia__feed__embed--skeleton" data-per="5" data-columns="5" pages="1">
+        <div class="j-stacker-wrapper">
+          <div class="j-stacker">
+            <div class="j-stack galcolumn column-0">
+              <div class="feed-item"></div>
+            </div>
+            <div class="j-stack galcolumn column-1">
+              <div class="feed-item"></div>
+            </div>
+            <div class="j-stack galcolumn column-2">
+              <div class="feed-item"></div>
+            </div>
+            <div class="j-stack galcolumn column-3">
+              <div class="feed-item"></div>
+            </div>
+            <div class="j-stack galcolumn column-4">
+              <div class="feed-item"></div>
+            </div>
+    </aside>
+
     <aside id="juicer-feed-container"
            label="Instagram Galerie"
-           class="feed__container socialmedia__feed__container socialmedia__feed__container--juicer allowable--on-visibility"
+           class="socialmedia__feed__container socialmedia__feed__container--juicer feed__container allowable--on-visibility"
            data-allowable="allowable"
            data-styleurl="<?php echo get_template_directory_uri() ?>/css/juicer-embed-min.css"
            data-scripturl="https://assets.juicer.io/embed.js"
@@ -590,7 +615,8 @@
       </div>
 
       <ul class="socialmedia__feed__embed socialmedia__feed__embed--juicer juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="5" data-columns="5" pages="1">
-        <h1 class="referral"><a href="https://www.juicer.io">Social Media Feed von Juicer.io</a></h1>
+        <!-- TODO insert (hidden) h1 only before activating external content -->
+        <!-- <h1 class="referral"><a href="https://www.juicer.io">Social Media Feed von Juicer.io</a></h1> -->
       </ul>
     </aside>
   </div>
