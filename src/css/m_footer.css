@@ -4,3 +4,66 @@
  * @package KleiderOrdnung
  * @author openmindculture
  */
+
+.footer {
+  width: var(--width-full);
+  max-width: var(--width-max);
+}
+
+.footer__columns__column-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 88.5rem;
+  max-width: calc(100% - 1rem);
+  margin: 0 auto;
+}
+
+.footer__columns__column--50 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer__columns__column-wrapper {
+    flex-direction: row;
+  }
+  .footer__columns__column--50:first-child {
+    flex-basis: 23.125rem;
+    flex-shrink: 1;
+  }
+  .footer__columns__column--50:last-child {
+    flex-basis: 23.125rem;
+    flex-grow: 1;
+  }
+}
+
+.footer__column__row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__column__row__softhyphen {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .footer__columns__column--50,
+  .footer__columns__column--50:first-child,
+  .footer__columns__column--50:last-child {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 0.5rem);
+    max-width: 50%;
+  }
+
+  .footer__column__row {
+    display: block;
+  }
+
+  .footer__column__row__softhyphen {
+    display: inline;
+  }
+}
