@@ -123,7 +123,6 @@ kleiderordnung.handleAppearedElement = function(targetElement) {
  * @param {HTMLElement} feedContainerElement
  */
 kleiderordnung.prepareExternalFeed = function(feedContainerElement) {
-  console.log("prepareExternalFeed");
   if (!feedContainerElement) { return; }
   if (
     document.cookie.split(';').some(
@@ -134,19 +133,12 @@ kleiderordnung.prepareExternalFeed = function(feedContainerElement) {
   ) {
     kleiderordnung.activateExternalFeed(feedContainerElement);
   } else {
-    console.log("feedContainerElement", feedContainerElement);
     var feedSectionElement = feedContainerElement.closest('.' + kleiderordnung.feedSectionClassName);
-    console.log("kleiderordnung.feedSectionClassName", kleiderordnung.feedSectionClassName);
-    console.log("feedSectionElement", feedSectionElement);
     if (!feedSectionElement) { return; }
     var buttonElements = feedSectionElement.querySelectorAll('[data-' + kleiderordnung.feedDataKey + ']');
-    console.log("prepareExternalFeed: buttonElements", buttonElements);
     for (var i = 0; i < buttonElements.length; i++) {
       var buttonElement = buttonElements[i];
-      console.log("buttonElement", buttonElement);
       buttonElement.addEventListener('click', function(buttonEvent) {
-        console.log("buttonElement on click");
-
         kleiderordnung.allowAndActivateExternalFeed(buttonEvent.currentTarget);
       }, false);
     }
@@ -155,15 +147,11 @@ kleiderordnung.prepareExternalFeed = function(feedContainerElement) {
 
 /** @param {HTMLElement} buttonElement */
 kleiderordnung.allowAndActivateExternalFeed = function(buttonElement) {
-  console.log("1");
   if (!buttonElement) { return; }
-  console.log("2");
   var feedSectionElement = buttonElement.closest('.' + kleiderordnung.feedSectionClassName);
   if (!feedSectionElement) { return; }
-  console.log("3");
   var feedContainerElement = feedSectionElement.querySelector('.' + kleiderordnung.feedContainerClassName);
   if (!feedContainerElement) { return; }
-  console.log("4");
   var consentCookie = kleiderordnung.feedCookieKey + '=' + kleiderordnung.feedCookieValue + ';samesite=strict;secure';
   if (buttonElement.dataset[kleiderordnung.feedDataKey].allow === kleiderordnung.feedDataValueAlways) {
     var maxAgeSeconds = 31536000; // 1 year
