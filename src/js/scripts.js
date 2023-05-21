@@ -196,6 +196,16 @@ kleiderordnung.activateExternalFeed = function(feedContainerElement) {
 
 document.addEventListener('DOMContentLoaded', function() {
 
+  /* body.no-js is handled by WordPress core in php body_class() */
+
+  /* Lottie player has no fallback / polyfill for missing globalThis object */
+  /* which seems hard to polyfill so let's activate our no-JS fallback instead */
+  if (typeof globalThis !== 'object') {
+    if (document.body && document.body.classList) {
+      document.body.classList.add('no-globalthis');
+    }
+  }
+
   /* Key Visual Lottie Animation Control */
   if (!kleiderordnung.prefersReducedMotion) {
     /** TODO add JSDoc for player object */
