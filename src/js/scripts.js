@@ -205,6 +205,16 @@ document.addEventListener('DOMContentLoaded', function() {
   /* which seems hard to polyfill so let's activate our no-JS fallback instead */
   if (!kleiderordnung.supportsGlobalThis && document.body && document.body.classList) {
     document.body.classList.add('no-globalthis');
+    var lottiePlayerScript = document.getElementById('lottie-player-script');
+    if (lottiePlayerScript) {
+      lottiePlayerScript.remove();
+    }
+    var lottieAnimations = document.getElementsByTagName('lottie-player');
+    for (var la = 0; la < lottieAnimations.length; la++) {
+      if (lottieAnimations[la]) {
+        lottieAnimations[la].remove();
+      }
+    }
   }
 
   /* Key Visual Lottie Animation Control */
