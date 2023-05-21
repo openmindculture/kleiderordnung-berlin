@@ -12,15 +12,12 @@
   height: auto;
   margin: 0;
   top: -1px;
+  position: fixed;
   position: sticky;
   background: var(--color-primary-background);
   z-index: 10;
   opacity: 1;
   transition: padding-bottom 2s 0.25s ease-in;
-}
-
-.header--site-header.stuck {
-  /* padding-bottom: 0.5em; */
 }
 
 /* Don’t Headbutt The Browser Window by Chris Coyer
@@ -74,6 +71,39 @@
 .header__contentwrapper .header__site-logo svg {
   width: 8.4375rem;
   height: auto;
+}
+
+
+/* sticky navigation fallback for mobile Safari < 13 */
+@supports (-webkit-marquee-repetition:infinite) and (object-fit:fill) {
+  .header--site-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 767.767px) {
+    .header--site-header {
+      position: fixed;
+      height: 3rem;
+    }
+    .navigation--main-navigation {
+      position: fixed;
+    }
+    main {
+      margin-top: 3rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .navigation__list {
+      flex-wrap: nowrap !important;
+    }
+    .header--site-header {
+      height: 6rem;
+    }
+    main {
+      margin-top: 5rem;
+    }
+  }
 }
 
 @media (min-width: 768px) {
