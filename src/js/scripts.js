@@ -52,6 +52,9 @@ kleiderordnung.prefersReducedMotion = (kleiderordnung.prefersReducedMotionQuery 
 kleiderordnung.prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
 kleiderordnung.prefersMoreContrast = (kleiderordnung.prefersMoreContrastQuery && kleiderordnung.prefersMoreContrastQuery.matches);
 
+kleiderordnung.supportsIntersectionObserver = (typeof IntersectionObserver === 'function');
+kleiderordnung.supportsGlobalThis = (typeof globalThis === 'object');
+
 /** @object IntersectionObserver options */
 kleiderordnung.observerOptions = {
   root: null,
@@ -200,10 +203,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   /* Lottie player has no fallback / polyfill for missing globalThis object */
   /* which seems hard to polyfill so let's activate our no-JS fallback instead */
-  if (typeof globalThis !== 'object') {
-    if (document.body && document.body.classList) {
-      document.body.classList.add('no-globalthis');
-    }
+  if (!kleiderordnung.supportsGlobalThis && document.body && document.body.classList) {
+    document.body.classList.add('no-globalthis');
   }
 
   /* Key Visual Lottie Animation Control */
@@ -232,21 +233,22 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   /* Header / Navigation control */
-
-  kleiderordnung.stickyHeader = document.getElementById(kleiderordnung.stickyHeaderId);
-  if (kleiderordnung.stickyHeader) {
-    kleiderordnung.root.style.setProperty('--header-height', '' + kleiderordnung.stickyHeader.offsetHeight + 'px');
-    kleiderordnung.stickyObserver = new IntersectionObserver(
-      function(intersectingEntries) {
-        kleiderordnung.isStuck = intersectingEntries[0].intersectionRatio < 1;
-        intersectingEntries[0].target.classList.toggle(kleiderordnung.stuckClassName, kleiderordnung.isStuck);
-        if (kleiderordnung.isStuck) {
-          kleiderordnung.root.style.setProperty('--header-height--stuck', '' + kleiderordnung.stickyHeader.offsetHeight + 'px');
-        }
-      },
-      { threshold: [1] }
-    );
-    kleiderordnung.stickyObserver.observe(kleiderordnung.stickyHeader);
+  if (kleiderordnung.supportsIntersectionObserver) {
+    kleiderordnung.stickyHeader = document.getElementById(kleiderordnung.stickyHeaderId);
+    if (kleiderordnung.stickyHeader) {
+      kleiderordnung.root.style.setProperty('--header-height', '' + kleiderordnung.stickyHeader.offsetHeight + 'px');
+      kleiderordnung.stickyObserver = new IntersectionObserver(
+        function(intersectingEntries) {
+          kleiderordnung.isStuck = intersectingEntries[0].intersectionRatio < 1;
+          intersectingEntries[0].target.classList.toggle(kleiderordnung.stuckClassName, kleiderordnung.isStuck);
+          if (kleiderordnung.isStuck) {
+            kleiderordnung.root.style.setProperty('--header-height--stuck', '' + kleiderordnung.stickyHeader.offsetHeight + 'px');
+          }
+        },
+        { threshold: [1] }
+      );
+      kleiderordnung.stickyObserver.observe(kleiderordnung.stickyHeader);
+    }
   }
 
   // progressive enhancement for navigation menu behavior
@@ -273,27 +275,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  /* Animate on Visibility, Respect Reduced Motion Preference */
-
-  kleiderordnung.observer = new IntersectionObserver(kleiderordnung.intersectionCallback, kleiderordnung.observerOptions);
   kleiderordnung.elementsActivatedOnVisibilityAndConsent = document.getElementsByClassName(kleiderordnung.allowableClassName);
-  for (var i = 0; i < kleiderordnung.elementsActivatedOnVisibilityAndConsent.length; i++) {
-    kleiderordnung.observer.observe(kleiderordnung.elementsActivatedOnVisibilityAndConsent[i]);
-  }
-  if (!kleiderordnung.prefersReducedMotion) {
-    kleiderordnung.elementsAnimatedOnVisibility = document.getElementsByClassName(kleiderordnung.animateableClassName);
-    for (var j = 0; j < kleiderordnung.elementsAnimatedOnVisibility.length; j++) {
-      kleiderordnung.observer.observe(kleiderordnung.elementsAnimatedOnVisibility[j]);
+  /* Animate on Visibility, Respect Reduced Motion Preference */
+  if (kleiderordnung.supportsIntersectionObserver) {
+    kleiderordnung.observer = new IntersectionObserver(kleiderordnung.intersectionCallback, kleiderordnung.observerOptions);
+    for (var i = 0; i < kleiderordnung.elementsActivatedOnVisibilityAndConsent.length; i++) {
+      kleiderordnung.observer.observe(kleiderordnung.elementsActivatedOnVisibilityAndConsent[i]);
     }
-  }
-  kleiderordnung.prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
-  if (!kleiderordnung.prefersMoreContrast ) {
-    window.setTimeout(function() {
-      kleiderordnung.moreContrastElements = document.getElementsByClassName(kleiderordnung.variableContrastClassName);
-      for (var k = 0; k < kleiderordnung.moreContrastElements.length; k++) {
-        kleiderordnung.moreContrastElements[k].classList.remove(kleiderordnung.highContrastClassName);
+    if (!kleiderordnung.prefersReducedMotion) {
+      kleiderordnung.elementsAnimatedOnVisibility = document.getElementsByClassName(kleiderordnung.animateableClassName);
+      for (var j = 0; j < kleiderordnung.elementsAnimatedOnVisibility.length; j++) {
+        kleiderordnung.observer.observe(kleiderordnung.elementsAnimatedOnVisibility[j]);
       }
-    }, 5000);
+    }
+    kleiderordnung.prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
+    if (!kleiderordnung.prefersMoreContrast) {
+      window.setTimeout(function () {
+        kleiderordnung.moreContrastElements = document.getElementsByClassName(kleiderordnung.variableContrastClassName);
+        for (var k = 0; k < kleiderordnung.moreContrastElements.length; k++) {
+          kleiderordnung.moreContrastElements[k].classList.remove(kleiderordnung.highContrastClassName);
+        }
+      }, 5000);
+    }
+  } else { /* activate allowable elements directly if no intersection observer available like in old Safari */
+    for (var i = 0; i < kleiderordnung.elementsActivatedOnVisibilityAndConsent.length; i++) {
+      var activateableElement = kleiderordnung.elementsActivatedOnVisibilityAndConsent[i];
+      if (activateableElement.dataset.allowable) {
+        kleiderordnung.prepareExternalFeed(activateableElement);
+      }
+    }
   }
 
   /* Activate Carousel Slider Controls */
