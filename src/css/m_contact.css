@@ -37,6 +37,10 @@
   max-width: 100%;
 }
 
+.contact__columns__column--50:last-child {
+  max-width: min(42.5rem, calc(100% - 1rem));
+}
+
 @media (min-width: 992px) {
   .contact__columns__column-wrapper {
     flex-direction: row;
@@ -52,6 +56,7 @@
 
   .contact__columns__column--50:last-child {
     flex-basis: 42.5rem;
+    max-width: 100%;
   }
 }
 
@@ -126,28 +131,42 @@
 .contact__fieldset--from,
 .contact__fieldset--from p {
   display: flex;
-  width: 42.5rem;
-  max-width: calc(100% - 1rem);
+  width: min(42.5rem, 100%);
+  max-width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .contact__label--name,
 .contact__label--email {
-  flex: 0 0 auto;
+  flex: 0 0 20rem;
   width: 100%;
+  max-height: 4rem;
 }
 
 .contact__label--name,
 .contact__label--email,
 input[name="Name"],
 input[name="Email"] {
-  width: 320px;
-  max-width: calc(100% - 1rem);
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact__fieldset--message p {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .contact__label--email {
     margin-left: 2rem;
     margin-left: auto;
+  }
+
+  .contact__fieldset--message,
+  .contact__fieldset--message textarea,
+  .contact__fieldset--from,
+  .contact__fieldset--from p {
+    flex-direction: row;
   }
 
   .contact__fieldset--message,
