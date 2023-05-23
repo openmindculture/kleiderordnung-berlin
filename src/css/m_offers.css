@@ -50,6 +50,7 @@
   position: relative;
   margin-bottom: 2rem;
   max-width: 100%;
+  background-color: transparent;
 }
 
 .offers__offer__card {
