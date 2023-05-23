@@ -17,7 +17,9 @@
   text-align: left;
 }
 
-@mixin typography-heading-h2 .offers__additional__headline {}
+@mixin typography-heading-h2 .offers__additional__headline {
+  margin-bottom: 5.25rem;
+}
 
 .offers__navigation ul {
   list-style: none;
@@ -133,12 +135,6 @@
   text-align: left;
 }
 
-.offers__additional__articles {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
 .offers__offer__icon {
   float: right;
   width: 3.5625rem;
@@ -148,6 +144,46 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+.offers__additional__articles {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 6.5rem;
+}
+
+@mixin typography-heading-h3 .offers__additional__articles__headline {
+  margin: 0 auto 1rem auto;
+}
+
+.offers__additional__articles .offers__offer__icon {
+  float: none;
+  margin: 0 auto 3rem auto;
+}
+
+.offers__additional__articles__offer {
+  flex: 1 0 100%;
+}
+
+@media (min-width: 992px) {
+  .offers__additional__articles__offer {
+    flex: 1 1 25%;
+  }
+  .offers__additional__articles__offer + .offers__additional__articles__offer {
+    margin-left: 6.5rem;
+  }
+}
+
+.offers__additional__articles .offers__offer__paragraph {
+  margin-bottom: 1.5rem;
+}
+
+@mixin typography-copy .offers__additional__articles__price {
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.5px;
+}
+
 
 /* icons based on navigation ID no matter if card offer or additional offer */
 
@@ -183,40 +219,3 @@
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56' fill='none'%3E%3Cpath d='M35 1.75C36.933 1.75 38.5 3.317 38.5 5.25C38.5 7.183 36.933 8.75 35 8.75V12.25' stroke='%230014D1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1.75 5.25H26.25' stroke='%230014D1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M54.25 5.25H47.25' stroke='%230014D1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M33.25 33.25H5.25C3.317 33.25 1.75 34.817 1.75 36.75V54.25H36.75V36.75C36.75 34.817 35.183 33.25 33.25 33.25Z' stroke='%230014D1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19.25 40.25V54.25' stroke='%230014D1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1.75 40.25H36.75' stroke='%230014D1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.75 47.25H12.25' stroke='%230014D1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M26.25 47.25H29.75' stroke='%230014D1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.75 22.75C22.75 16.9517 28.2357 12.25 35 12.25C41.7643 12.25 47.25 16.9517 47.25 22.75H22.75Z' stroke='%230014D1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
-.offers__additional__articles__offer {
-  flex: 1 0 100%;
-}
-
-@media (min-width: 992px) {
-  .offers__additional__articles__offer {
-    flex: 1 1 25%;
-  }
-  .offers__additional__articles__offer + .offers__additional__articles__offer {
-    margin-left: 6.5rem;
-  }
-}
-
-.offers__additional__articles .offers__offer__icon {
-  float: none;
-}
-
-.offers__additional__articles .offers__offer__price {
-  text-align: center;
-}
-
-/*
-additional offers:
-Weitere Angebote Überschrift immer Caps und linksbündig;
-Abstand unter big offers bzw. über jener Überschrift: 80px = 5rem;
-Abstand zur Mission wiederum ca. 104px = 6.5rem;
-
-Abstände weiter oben:
-Big offer + big offer: 80px = 5rem
-  (hat aber jetzt schon Abstand weil nach oben definiert? dann fehlte noch entsprechender unten?
-Die gelten mobil genau so.
-Subnavi + big offfer: ca. 87px = 5,4375rem; eventuell geht da auch 5 plus line-height der Links?
-
-Abstand von Intro zum folgenden: 80px = 5rem;
-
-Könnten wir eventuell verallgemeinern, dass zwischen den Sektionen grundsätzlich mindestens 5rem Abstand ist?
- */

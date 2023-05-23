@@ -376,34 +376,34 @@
 
         <article id="angebote-styling-abo" class="offers__additional__articles__offer">
           <figure class="offers__offer__icon"></figure>
-            <h3 class="offers__offer__headline">Styling-Abo</h3>
+            <h3 class="offers__additional__articles__headline">Styling-Abo</h3>
             <p class="offers__offer__paragraph">
               Du wünscht Dir regelmäßigen Support in Stylingfragen oder nachhaltigen Kaufentscheidungen? Dann sichere Dir meine Aufmerksamkeit durch Dein monatliches Styling-Abo! Beinhaltet sind 5-6 individuelle Anfragen online pro Monat.
             </p>
-            <div class="offers__offer__price">
+            <div class="offers__offer__price offers__additional__articles__price">
               30,–€ monatl.
             </div>
         </article>
 
         <article id="angebote-meet-the-special-places" class="offers__additional__articles__offer">
           <figure class="offers__offer__icon"></figure>
-          <h3 class="offers__offer__headline">Meet the Special-Places</h3>
+          <h3 class="offers__additional__articles__headline">Meet the Special-Places</h3>
           <p class="offers__offer__paragraph">
             Du möchtest gezielt besondere Fashion-Locations kennenlernen? Vintage-Stores, Designerateliers, Fairfashion-Boutiquen? Ich biete Gruppen-Walks zu Berlins besten Adressen in Sachen Mode!
           </p>
-          <div class="offers__offer__price">
+          <div class="offers__offer__price offers__additional__articles__price">
             3h = 35,- € pro Person
           </div>
         </article>
 
         <article id="angebote-gutscheine" class="offers__additional__articles__offer">
           <figure class="offers__offer__icon"></figure>
-          <h3 class="offers__offer__headline">Gutscheine</h3>
+          <h3 class="offers__additional__articles__headline">Gutscheine</h3>
           <p class="offers__offer__paragraph">
             Mach Dir und Deinen Herzensmenschen<br
             >eine Freude mit Sustainable Styling als Geschenk-Gutschein!
           </p>
-          <div class="offers__offer__price">
+          <div class="offers__offer__price offers__additional__articles__price">
             ab 30,–€
           </div>
         </article>
