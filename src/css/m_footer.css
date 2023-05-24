@@ -8,26 +8,13 @@
 .footer {
   width: var(--width-full);
   max-width: var(--width-max);
+  margin: 0 auto;
   padding: 3.875rem 0 3.5rem 0;
-  margin: 0 auto;
 }
 
-/* TODO verify: */
-/* footer columns must visually match contact columns */
-.footer__columns__column-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 88.5rem;
-  max-width: calc(100% - 1rem);
-  margin: 0 auto;
-}
+@mixin layout-column-wrapper .footer__columns__column-wrapper {}
 
-.footer__columns__column--50 {
-  flex-basis: 100%;
-  max-width: 100%;
-}
+@mixin layout-column-50 .footer__columns__column--50 {}
 
 @media (min-width: 768px) {
   .footer__columns__column-wrapper {
@@ -62,6 +49,14 @@
     flex-basis: calc(50% - 0.5rem);
     max-width: 50%;
   }
+
+  /* TODO adjust individual columns */
+  /* seemingly like the contact columns above,
+   * the left one is a little broader,
+   * and while the cut is exactly in the middle,
+   * due to the smaller left column this has still
+   * some aspect of a "golden ratio"
+   */
 
   .footer__column__row {
     display: block;

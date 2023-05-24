@@ -157,4 +157,25 @@
   }
 }
 
+@define-mixin layout-column-wrapper $className {
+  $(className) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 88.5rem;
+    max-width: calc(100% - 1rem);
+    margin: 0 auto;
+    @mixin-content;
+  }
+}
+
+@define-mixin layout-column-50 $className {
+  $(className) {
+    flex-basis: 100%;
+    max-width: 100%;
+    @mixin-content;
+  }
+}
+
 /* stylelint-enable */

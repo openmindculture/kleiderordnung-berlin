@@ -22,20 +22,9 @@
   text-align: left;
 }
 
-.contact__columns__column-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 88.5rem;
-  max-width: calc(100% - 1rem);
-  margin: 0 auto;
-}
+@mixin layout-column-wrapper .contact__columns__column-wrapper {}
 
-.contact__columns__column--50 {
-  flex-basis: 100%;
-  max-width: 100%;
-}
+@mixin layout-column-50 .contact__columns__column--50 {}
 
 .contact__columns__column--50:last-child {
   max-width: min(42.5rem, calc(100% - 1rem));
