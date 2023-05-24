@@ -33,4 +33,4 @@ add_action('after_setup_theme', function() {
 // remove_action( 'wp_head', 'wp_generator' ); // goes into functions.php
 // remove_action( 'wp_head', 'wp_generator' );
 
-require_once( KLEIDERORDNUNG_DIR.'/inc/customizer.php' ); //customizer
+require_once( KLEIDERORDNUNG_DIR.'/inc/functions/customizer.php' );
