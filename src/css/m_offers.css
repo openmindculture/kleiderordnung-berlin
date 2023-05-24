@@ -26,6 +26,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   max-width: 100%;
 }
 
@@ -39,6 +40,7 @@
   }
   .offers__navigation ul li + li {
     margin-left: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -46,6 +48,15 @@
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.offers__navigation ul a:link,
+.offers__navigation ul a:visited,
+.offers__navigation ul a:active,
+.offers__navigation ul a:hover,
+.offers__navigation ul a:focus {
+  color: var(--color-primary-foreground);
+  text-decoration: none;
 }
 
 .offers__offer {
@@ -113,7 +124,11 @@
 }
 
 .offers__offer__headline {}
-.offers__offer__paragraph {}
+
+.offers__offer__paragraph {
+  margin-bottom: 2rem;
+}
+
 .offers__offer__features__headline {}
 
 .offers__offer__features__list {
