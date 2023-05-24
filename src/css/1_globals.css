@@ -32,6 +32,11 @@ html, body {
   color: var(--color-primary-foreground);
 }
 
+::selection { /* TODO propbably not exactly the same as links? or change link backgrounds instead? */
+  background-color: var(--color-hover-background);
+  color: var(--color-primary-foreground);
+}
+
 img, svg {
   border: none;
   max-width: 100%;
