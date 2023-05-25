@@ -12,22 +12,16 @@
   padding: 3.875rem 0 3.5rem 0;
 }
 
+.footer a {
+  text-decoration: none;
+}
+
 @mixin layout-column-wrapper .footer__columns__column-wrapper {}
 
 @mixin layout-column-50 .footer__columns__column--50 {}
 
-@media (min-width: 768px) {
-  .footer__columns__column-wrapper {
-    flex-direction: row;
-  }
-  .footer__columns__column--50:first-child {
-    flex-basis: 23.125rem;
-    flex-shrink: 1;
-  }
-  .footer__columns__column--50:last-child {
-    flex-basis: 23.125rem;
-    flex-grow: 1;
-  }
+.footer__columns__column + .footer__columns__column {
+  margin-top: 1.75rem;
 }
 
 .footer__column__row {
@@ -36,33 +30,81 @@
   flex-wrap: wrap;
 }
 
+.footer__column__row__allrights {
+  /* display: block; */
+}
+
 .footer__column__row__softhyphen {
   display: none;
 }
 
-@media (min-width: 992px) {
-  .footer__columns__column--50,
-  .footer__columns__column--50:first-child,
-  .footer__columns__column--50:last-child {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: calc(50% - 0.5rem);
-    max-width: 50%;
+.footer__partners {
+  margin-top: 1rem;
+}
+
+.footer__partners img {
+  width: auto;
+  height: 1.875rem;
+}
+
+@media (min-width: 768px) {
+  .footer__partners {
+    margin-top: 0;
   }
+  .footer__partners img {
+    width: initial;
+    height: auto;
+  }
+}
 
-  /* TODO adjust individual columns */
-  /* seemingly like the contact columns above,
-   * the left one is a little broader,
-   * and while the cut is exactly in the middle,
-   * due to the smaller left column this has still
-   * some aspect of a "golden ratio"
-   */
-
+@media (min-width: 992px) {
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__columns__column-wrapper {
+    flex-direction: row;
+  }
+  .footer__columns__column--50:first-child {
+    flex: 0 0 32rem;
+  }
+  .footer__columns__column--50:last-child {
+    flex: 1 0 42.5rem;
+  }
   .footer__column__row {
     display: block;
   }
 
   .footer__column__row__softhyphen {
     display: inline;
+  }
+  .footer__column__row__softhyphen::after {
+    content: " ";
+    display: block;
+  }
+}
+
+@media (min-width: 1235px) {
+  .footer__columns__column--50:last-child {
+    max-width: 56%;
+  }
+  .footer__columns__column + .footer__columns__column {
+    margin-top: 0;
+  }
+  .footer__partners a + a {
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__columns__column + .footer__columns__column {
+    margin-top: 0;
+  }
+  .footer__column__row__allrights {
+    display: inline;
+  }
+  .footer__columns__column--50:first-child,
+  .footer__columns__column--50:last-child {
+    flex: 0 0 calc(50% - 0.5rem);
   }
 }
