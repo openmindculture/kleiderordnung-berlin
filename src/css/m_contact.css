@@ -217,6 +217,18 @@ textarea[name="Nachricht"]::placeholder {
   line-height: 1.6;
 }
 
+.contact__checkboxline:focus > *,
+.contact__checkboxline:hover > * {
+  background-color: var(--color-hover-background);
+  padding-top: 0.125rem;
+  padding-right: 0.25rem;
+}
+
+.contact__checkboxline:focus label,
+.contact__checkboxline:hover label {
+  color: var(--color-primary-foreground); /* TODO not working yet */
+}
+
 .contact__checkboxline input[type="checkbox"] {
   position: absolute;
   opacity: 0;

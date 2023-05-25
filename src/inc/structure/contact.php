@@ -30,9 +30,9 @@
           Folge mir
         </div>
         <div class="contact__socialmedia__links__wrapper">
-          <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--instagram"></figure></a>
-          <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target="_blank" rel="me noopener" title="Martina Steinke auf LinkedIn"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--linkedin"></figure></a>
-          <a href="https://www.pinterest.de/martinasteinke0050/" target="_blank" rel="me noopener" title="Tina Steinke auf Pinterest"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--pinterest"></figure></a>
+          <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram" tabindex="0"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--instagram"></figure></a>
+          <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target="_blank" rel="me noopener" title="Martina Steinke auf LinkedIn"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--linkedin" tabindex="0"></figure></a>
+          <a href="https://www.pinterest.de/martinasteinke0050/" target="_blank" rel="me noopener" title="Tina Steinke auf Pinterest"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--pinterest" tabindex="0"></figure></a>
         </div>
       </div>
       <!-- END vcard imprint contact information -->

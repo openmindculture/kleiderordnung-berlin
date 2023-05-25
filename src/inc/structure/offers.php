@@ -11,19 +11,19 @@
   <nav class="offers__navigation">
     <ul>
       <li>
-        <a href="#angebote-style-visit">Style Visit</a>
+        <a href="#angebote-style-visit" tabindex="0">Style Visit</a>
       </li>
       <li>
-        <a href="#angebote-shopping-tour">Shopping-Tour</a>
+        <a href="#angebote-shopping-tour" tabindex="0">Shopping-Tour</a>
       </li>
       <li>
-        <a href="#angebote-online-styling-beratung">Online-Styling-Beratung</a>
+        <a href="#angebote-online-styling-beratung" tabindex="0">Online-Styling-Beratung</a>
       </li>
       <li>
-        <a href="#angebote-outfit-consulting">Outfit Consulting</a>
+        <a href="#angebote-outfit-consulting" tabindex="0">Outfit Consulting</a>
       </li>
       <li>
-        <a href="#angebote-kleiderordnung">Kleiderordnung</a>
+        <a href="#angebote-kleiderordnung" tabindex="0">Kleiderordnung</a>
       </li>
     </ul>
   </nav>
@@ -65,7 +65,7 @@
           <li>Minimum 2h = 190 Euro</li>
           <li>jede weitere Stunde = 90 Euro</li>
         </ul>
-        <a class="button button--primary" href="#kontakt">Termin buchen</a>
+        <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
       </div>
     </article>
 
@@ -104,7 +104,7 @@
           <li>Minimum 3 Stunden = 290 Euro</li>
           <li>jede weitere Stunde = 90 Euro</li>
         </ul>
-        <a class="button button--primary" href="#kontakt">Termin buchen</a>
+        <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
       </div>
     </article>
 
@@ -139,7 +139,7 @@
         <ul class="offers__offer__price__annotations">
           <li>Minimum = 85 Euro</li>
         </ul>
-        <a class="button button--primary" href="#kontakt">Termin buchen</a>
+        <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
       </div>
     </article>
 
@@ -176,7 +176,7 @@
           <li>Minimum 2 h = 190 Euro</li>
           <li>jede weitere Stunde = 90 Euro</li>
         </ul>
-        <a class="button button--primary" href="#kontakt">Termin buchen</a>
+        <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
       </div>
     </article>
 
@@ -213,7 +213,7 @@
           <li>Minimum 2 h = 90 Euro</li>
           <li>jede weitere Stunde = 40 Euro</li>
         </ul>
-        <a class="button button--primary" href="#kontakt">Termin buchen</a>
+        <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
       </div>
     </article>
   </div>

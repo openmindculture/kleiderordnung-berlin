@@ -9,7 +9,7 @@
 ?>
 <div class="socialmedia target-offset">
   <div class="socialmedia__links__wrapper">
-    <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram" class="socialmedia__link socialmedia__link--instagram"><figure class="socialmedia__icon socialmedia__icon--primary socialmedia__icon--primary--instagram"></figure> Kleiderordnung auf instagram</a>
+    <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram" class="socialmedia__link socialmedia__link--instagram"><figure class="socialmedia__icon socialmedia__icon--primary socialmedia__icon--primary--instagram" tabindex="0"></figure> Kleiderordnung auf instagram</a>
   </div>
 
 
@@ -68,8 +68,8 @@
 
     <div class="socialmedia__feed__consent feed__consent socialmedia__feed__consent--juicer">
       <p>Dürfen externe Inhalte von Instagram geladen werden?</p>
-      <button class="button__allow button__allow--once" data-allow="once">Einmal erlauben</button>
-      <button class="button__allow button__allow--always" data-allow="always">Immer erlauben</button>
+      <button class="button__allow button__allow--once" data-allow="once" tabindex="0">Einmal erlauben</button>
+      <button class="button__allow button__allow--always" data-allow="always" tabindex="0">Immer erlauben</button>
     </div>
   </aside>
 </div>

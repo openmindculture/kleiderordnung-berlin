@@ -29,6 +29,17 @@
 a:not(.button):hover,
 a:not(.button):focus {
   background-color: var(--color-hover-background);
+  border: none;
+  outline: none;
+}
+
+.button--primary:hover,
+.button--primary:focus {
+  color: var(--color-hover-background);
+}
+
+.button--primary:focus {
+  outline: solid 3px var(--color-hover-background);
 }
 
 @supports (background-image: linear-gradient(#222b40, #222b40)) and (transition: all 2s linear) {

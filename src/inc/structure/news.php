@@ -53,7 +53,7 @@
 
   <div class="news__footer">
     <!-- TODO disable "all news" link in single page mode: -->
-    <a class="news__link news__link--more" href="#">alle Neuigkeiten</a>
+    <a class="news__link news__link--more" href="#" tabindex="0">alle Neuigkeiten</a>
   </div>
 
 </section>

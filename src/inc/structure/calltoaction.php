@@ -12,7 +12,7 @@
     Dann buche gern einen kostenlosen Kennenlerntermin!
   </p>
   <div class="calltoaction__buttonwrapper">
-    <a class="button button--primary" href="#kontakt">
+    <a class="button button--primary" href="#kontakt" tabindex="0">
       Kontakt
     </a>
   </div>
