@@ -7,13 +7,15 @@
 
 @mixin typography-heading-h2 .stories__headline {}
 
-.stories__wrapper {
-
+.stories {
+  width: var(--width-full);
+  max-width: var(--width-max);
+  margin: 0 auto;
 }
 
 .stories__viewport {
   position: relative;
-  width: 920px;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -39,7 +41,7 @@
 .stories__story__quote {
   flex: 0 0 auto;
   width: 20.3125rem; /* 325px; */
-  margin: 0 0 2.5rem 0;
+  margin: 0 2.5rem 2.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -48,7 +50,7 @@
 .stories__story__quote::before {
   content: " ";
   display: block;
-  margin: 0 auto 3.5rem auto;
+  margin: 0 auto 3.5rem 0;
   width: 2.75rem;
   height: 2rem;
   background-image: url("data:image/svg+xml,%3Csvg width='43' height='32' viewBox='0 0 43 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 21.6514C0 27.4799 3.56842 31.9999 9.63474 31.9999C15.3442 31.9999 18.9126 27.5988 18.9126 22.4841C18.9126 16.8935 15.1063 13.2062 8.8021 13.2062C10.1105 9.39987 12.7274 5.95039 14.9874 3.4525C14.6305 3.21461 10.8242 0.47881 10.4674 0.359863C2.14105 9.28092 0 17.0125 0 21.6514ZM23.7895 21.6514C23.7895 27.4799 27.3579 31.9999 33.4242 31.9999C39.1337 31.9999 42.7021 27.5988 42.7021 22.4841C42.7021 16.8935 38.8958 13.2062 32.5916 13.2062C33.9 9.39987 36.5168 5.95039 38.7768 3.4525C38.42 3.21461 34.6137 0.47881 34.2568 0.359863C25.9305 9.28092 23.7895 17.0125 23.7895 21.6514Z' fill='%230014D1'/%3E%3C/svg%3E");
@@ -63,6 +65,7 @@
 
 .stories__story__quote__text {
   display: block;
+  margin: 0;
 }
 
 .stories__navigation__link,

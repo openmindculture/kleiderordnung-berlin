@@ -316,53 +316,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  /* Activate Carousel Slider Controls */
-  /* if instagram has no wrap-around, we don't need it here either */
+  /**
+   * @param {HTMLElement} eventTarget DOM welement inside carousel wrapper
+   * @param {Number} carouselSlideStep pixels to scroll by
+   */
+  kleiderordnung.carouselDoSlide = function (eventTarget, carouselSlideStep) {
+    if (!eventTarget) { return; }
+    var carouselWrapper = eventTarget.closest('.carousel__wrapper');
+    if (!carouselWrapper || !carouselWrapper.querySelector) { return; }
+    var carouselViewport = carouselWrapper.querySelector('.carousel__viewport');
+    if (!carouselViewport || !carouselViewport.getBoundingClientRect()) { return; }
+    carouselViewport.scrollBy({ left: carouselSlideStep, top: 0, behavior: 'smooth' });
+    return;
+  }
+
   kleiderordnung.carouselWrappers = document.getElementsByClassName('carousel__wrapper');
   for (var l=0; l < kleiderordnung.carouselWrappers.length; l++) {
     var carouselWrapper = kleiderordnung.carouselWrappers[l];
-    var carouselPrevButton = carouselWrapper.querySelector('.carousel__navigation__prev');
+    var carouselSlideWidth = 644; // fallback: expected width of 1 image + 1 quote on desktop
+    var carouselFirstSlideItem = carouselWrapper.querySelector('.carousel__item:first-child');
+    if (carouselFirstSlideItem && carouselFirstSlideItem.getBoundingClientRect()) {
+      carouselSlideWidth = carouselFirstSlideItem.getBoundingClientRect().width;
+    }
     var carouselNextButton = carouselWrapper.querySelector('.carousel__navigation__next');
     if (carouselNextButton) {
       carouselNextButton.addEventListener('click', function(event){
         event.preventDefault();
-        var carouselWrapper = event.target.closest('.carousel__wrapper');
-        if (carouselWrapper && carouselWrapper.querySelector) {
-          var carouselViewport = carouselWrapper.querySelector('.carousel__viewport');
-          var carouselActiveChildNumber = carouselViewport.dataset.activeChildNumber || '0';
-          var carouselSlides = carouselViewport.children;
-          if (!isNaN(Number(carouselActiveChildNumber))) {
-            var carouselUpcomingChildIndex = Number(carouselActiveChildNumber) + 1;
-            // TODO wrap-around might be counter-intuitive and feel buggy?
-            carouselUpcomingChildIndex = carouselUpcomingChildIndex >= carouselSlides.length ? 0 : carouselUpcomingChildIndex;
-            var carouselUpcomingItem = carouselSlides[carouselUpcomingChildIndex];
-            if (carouselUpcomingItem) {
-              /* TODO mobile targets missed completely */
-              carouselUpcomingItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'end' });
-              carouselViewport.dataset.activeChildNumber = '' + carouselUpcomingChildIndex;
-            }
-          }
-        }
+        kleiderordnung.carouselDoSlide(event.currentTarget, carouselSlideWidth);
       })
     }
+    var carouselPrevButton = carouselWrapper.querySelector('.carousel__navigation__prev');
     if (carouselPrevButton) {
       carouselPrevButton.addEventListener('click', function(event){
         event.preventDefault();
-        var carouselWrapper = event.target.closest('.carousel__wrapper');
-        if (carouselWrapper && carouselWrapper.querySelector) {
-          var carouselViewport = carouselWrapper.querySelector('.carousel__viewport');
-          var carouselActiveChildNumber = carouselViewport.dataset.activeChildNumber || '0';
-          var carouselSlides = carouselViewport.children;
-          if (!isNaN(Number(carouselActiveChildNumber))) {
-            var carouselUpcomingChildIndex = Number(carouselActiveChildNumber) - 1;
-            carouselUpcomingChildIndex = carouselUpcomingChildIndex < 0  ? (carouselSlides.length - 1) : carouselUpcomingChildIndex;
-            var carouselUpcomingItem = carouselSlides[carouselUpcomingChildIndex];
-            if (carouselUpcomingItem) {
-              carouselUpcomingItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'end' });
-              carouselViewport.dataset.activeChildNumber = '' + carouselUpcomingChildIndex;
-            }
-          }
-        }
+        kleiderordnung.carouselDoSlide(event.currentTarget, (-1 * carouselSlideWidth));
       })
     }
     if (carouselNextButton && carouselPrevButton) {

@@ -4,6 +4,7 @@
   ],
   "ignorePatterns": [
     ".postcss.config.js",
-    "node_modules/**/*.js"
+    "node_modules/**/*.js",
+    "**/lottie-player.js"
   ]
 }
