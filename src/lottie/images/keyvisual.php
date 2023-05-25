@@ -2,9 +2,8 @@
 /*
  * Image Provider based on Browser Capabilities
  *
- * TODO fix naive pseudo code: use valid PHP
- * verify that default headers are generated (content-length, expires etc.)
- * verify that this custom system does not break transfer compression (unless there hasn't been anyway)
+ * Fallback for the unlikely case of a user agent that supports lottie.js (using globalThis)
+ * but that does not support the webp image format
  *
  * @package KleiderOrdnung
  * @author openmindculture
