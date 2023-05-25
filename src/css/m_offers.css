@@ -42,6 +42,15 @@
     margin-left: 2rem;
     margin-bottom: 1rem;
   }
+  @supports (gap: 2rem) {
+    .offers__navigation ul {
+      gap: 2rem;
+    }
+    .offers__navigation ul li + li {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
 }
 
 @mixin typography-button-label .offers__navigation ul a {
