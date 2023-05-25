@@ -2,12 +2,7 @@
 <html <?php echo get_language_attributes(); ?>>
 <?php include( KLEIDERORDNUNG_DIR . '/inc/structure/html-head.php') ?>
 <body <?php body_class(); ?> itemtype="https://schema.org/WebPage" itemscope>
-
-<div id="cmplz-cookiebanner-container"></div>
-
-<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'kleiderordnung' ); ?></a>
 <?php include( KLEIDERORDNUNG_DIR . '/inc/structure/header.php') ?>
-<!-- TODO remove all of the default WordPress utility classes to prevent compatibility issues with WP core -->
 <main id="wp--skip-link--target">
   <!-- start stopped and activate on JS only -->
   <section class="intro">

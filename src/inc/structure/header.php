@@ -6,6 +6,8 @@
  * @author openmindculture
  */
 ?>
+<div id="cmplz-cookiebanner-container"></div>
+<a class="skip-link screen-reader-text" href="#wp--skip-link--target"><?php esc_html_e( 'Skip to content', 'kleiderordnung' ); ?></a>
 <header id="site-header" class="header header--site-header has-inline-mobile-toggle" aria-label="Site" itemtype="https://schema.org/WPHeader" itemscope>
   <div class="header__contentwrapper">
     <div class="header__site-logo">

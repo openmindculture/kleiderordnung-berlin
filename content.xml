@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.1" created="2023-05-19 16:04" -->
+	<!-- generator="WordPress/6.2.2" created="2023-05-25 11:53" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Fri, 19 May 2023 16:04:33 +0000</pubDate>
+	<pubDate>Thu, 25 May 2023 11:53:00 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -102,7 +102,7 @@
 		<wp:term_description><![CDATA[a:2:{s:2:"de";i:1;s:2:"en";i:8;}]]></wp:term_description>
 	</wp:term>
 		
-	<generator>https://wordpress.org/?v=6.2.1</generator>
+	<generator>https://wordpress.org/?v=6.2.2</generator>
 
 		<item>
 		<title><![CDATA[Hallo Welt!]]></title>
@@ -284,13 +284,13 @@ Die Avatare der Kommentatoren kommen von <a href="https://de.gravatar.com/">Grav
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=16</guid>
 		<description></description>
-		<content:encoded><![CDATA[<fieldset class="contact__fieldset contact__fieldset--from">
+		<content:encoded><![CDATA[<div class="contact__fieldset contact__fieldset--from">
   <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email placeholder "E-Mail"] </label>
-</fieldset>
+</div>
 
-<fieldset class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></fieldset>
+<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
 
-<fieldset class="contact__fieldset contact__fieldset--checkboxes">
+<div class="contact__fieldset contact__fieldset--checkboxes">
   <div class="contact__calltoactiontext--fieldset">Unverbindliche Anfrage für</div>
 
   [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "Style Visit"]
@@ -306,7 +306,7 @@ Die Avatare der Kommentatoren kommen von <a href="https://de.gravatar.com/">Grav
   [checkbox anfrage-style-visit id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
 
   [checkbox anfrage-style-visit id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
-</fieldset>
+</div>
 
 <span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Absenden"]</span>
 1
@@ -364,8 +364,8 @@ Bitte gib eine Telefonnummer ein.]]></content:encoded>
 		<wp:post_id>16</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-08 09:39:25]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-08 07:39:25]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-05-19 18:04:27]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-05-19 16:04:27]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-05-25 13:51:48]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-25 11:51:48]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[kontaktformular-1]]></wp:post_name>
@@ -377,13 +377,13 @@ Bitte gib eine Telefonnummer ein.]]></content:encoded>
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
-		<wp:meta_value><![CDATA[<fieldset class="contact__fieldset contact__fieldset--from">
+		<wp:meta_value><![CDATA[<div class="contact__fieldset contact__fieldset--from">
   <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email placeholder "E-Mail"] </label>
-</fieldset>
+</div>
 
-<fieldset class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></fieldset>
+<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
 
-<fieldset class="contact__fieldset contact__fieldset--checkboxes">
+<div class="contact__fieldset contact__fieldset--checkboxes">
   <div class="contact__calltoactiontext--fieldset">Unverbindliche Anfrage für</div>
 
   [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "Style Visit"]
@@ -399,7 +399,7 @@ Bitte gib eine Telefonnummer ein.]]></content:encoded>
   [checkbox anfrage-style-visit id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
 
   [checkbox anfrage-style-visit id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
-</fieldset>
+</div>
 
 <span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Absenden"]</span>]]></wp:meta_value>
 		</wp:postmeta>
@@ -734,5 +734,5 @@ Meine Website ist www.ingo-steinke.de oder https://www.ingo-steinke.de und ich k
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-05-19 18:04:33 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-05-25 13:53:00 by W3 Total Cache
 -->

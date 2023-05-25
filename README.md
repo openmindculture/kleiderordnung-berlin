@@ -6,6 +6,18 @@ following up on a previous sustainable style consultancy in Düsseldorf.
 - https://kleiderordnung.berlin/ (upcoming)
 - https://www.kleiderordnung-berlin.de/ (classic alternative)
 
+## Installation (Deployment)
+
+To deploy the KleiderOrdnung theme on a website,
+- install WordPress core and the required plugins,
+- copy `kleiderordnung-register-custom-post-type.php` to `wp-content/mu-plugins`,
+- install the lastest KleiderOrdnung theme by uploading it in WP-Admin,
+- activate the theme,
+- copy all icons and manifest files (`*.ico`, `*.png`, `*.svg`, `*.json`, `*.xml`, `robots.txt`) to the web root directory
+- configure server and caching by editing `.htaccess` / `nginx.conf` / hosting backend or by using appropriate plugins,
+- use additional reverse proxy and/or CDN servers if necessary,
+- test everything and backup your data regularly!
+
 ## Setup, Structure, Editing
 
 The portfolio website content can be edited and extended using the WordPress admin backend. This is a classic WordPress theme, without full-page editing or full theme engine support, but allowing to use the block editor where it might be helfpul.
