@@ -18,17 +18,17 @@ if (
   ||
   ($request_headers["accept"] && is_string($request_headers["accept"]) && str_contains($request_headers["accept"], 'webp'))
 ) {
-  serve_webp();
+  kleiderordnung_keyvisual_serve_webp();
 } else {
-  serve_png();
+  kleiderordnung_keyvisual_serve_png();
 }
 
-function serve_webp() {
+function kleiderordnung_keyvisual_serve_webp(): void {
   header('content-type: image/webp');
   echo file_get_contents('./img_0.webp');
 }
 
-function serve_png() {
+function kleiderordnung_keyvisual_serve_png(): void {
   header('content-type: image/png');
   echo file_get_contents('./img_0.png');
 }
