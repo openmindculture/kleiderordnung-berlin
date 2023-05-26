@@ -17,7 +17,12 @@
   text-align: left;
 }
 
+.offers__cards {
+  margin: 0 0 5rem 0;
+}
+
 @mixin typography-heading-h2 .offers__additional__headline {
+  margin-top: 0;
   margin-bottom: 5.25rem;
 }
 
