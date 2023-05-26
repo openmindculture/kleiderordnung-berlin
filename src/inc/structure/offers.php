@@ -56,16 +56,22 @@
           <li>Wegweiser für Dich, wie du die gewonnenen Erkenntnisse eigenständig umsetzten kannst</li>
           <li>Empfehlungen für Ergänzungen, wenn sinnvoll</li>
         </ul>
-        <div class="offers__offer__price">
-          <span class="offers__offer__price__prefix">ab</span>
-          <span class="offers__offer__price__amount">190,-</span>
-          <span class="offers__offer__price__currency">&euro;</span>
+        <div class="offers__offer__card__footer">
+          <div class="offers__offer__pricingwrapper">
+            <div class="offers__offer__price">
+              <span class="offers__offer__price__prefix">ab</span>
+              <span class="offers__offer__price__amount">190,-</span>
+              <span class="offers__offer__price__currency">&euro;</span>
+            </div>
+            <ul class="offers__offer__price__annotations">
+              <li>Minimum 2h = 190 Euro</li>
+              <li>jede weitere Stunde = 90 Euro</li>
+            </ul>
+          </div>
+          <div class="offers__offer__buttonwrapper">
+            <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
+          </div>
         </div>
-        <ul class="offers__offer__price__annotations">
-          <li>Minimum 2h = 190 Euro</li>
-          <li>jede weitere Stunde = 90 Euro</li>
-        </ul>
-        <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
       </div>
     </article>
 
@@ -94,17 +100,23 @@
           <li>Kennenlernen von besonderen Stores & Designern</li>
           <li>1 zu 1 Styling-Beratung vor Ort</li>
         </ul>
-        <div class="offers__offer__price">
-          <!-- TODO possibly better offer 1 free form text line? -->
-          <span class="offers__offer__price__prefix">ab</span>
-          <span class="offers__offer__price__amount">120,-</span>
-          <span class="offers__offer__price__currency">&euro;</span>
+        <div class="offers__offer__card__footer">
+          <div class="offers__offer__pricingwrapper">
+            <div class="offers__offer__price">
+              <!-- TODO possibly better offer 1 free form text line? -->
+              <span class="offers__offer__price__prefix">ab</span>
+              <span class="offers__offer__price__amount">120,-</span>
+              <span class="offers__offer__price__currency">&euro;</span>
+            </div>
+            <ul class="offers__offer__price__annotations">
+              <li>Minimum 3 Stunden = 290 Euro</li>
+              <li>jede weitere Stunde = 90 Euro</li>
+            </ul>
+          </div>
+          <div class="offers__offer__buttonwrapper">
+            <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
+          </div>
         </div>
-        <ul class="offers__offer__price__annotations">
-          <li>Minimum 3 Stunden = 290 Euro</li>
-          <li>jede weitere Stunde = 90 Euro</li>
-        </ul>
-        <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
       </div>
     </article>
 
@@ -131,15 +143,21 @@
           <li>Beratung zu Farbe und Schnitt der Kleidungsstücke</li>
           <li>Hilfe bei Kaufentscheidungen von online gekauften Kleidungsstücken</li>
         </ul>
-        <div class="offers__offer__price">
-          <span class="offers__offer__price__prefix">ab</span>
-          <span class="offers__offer__price__amount">85,-</span>
-          <span class="offers__offer__price__currency">&euro;</span>
+        <div class="offers__offer__card__footer">
+          <div class="offers__offer__pricingwrapper">
+            <div class="offers__offer__price">
+              <span class="offers__offer__price__prefix">ab</span>
+              <span class="offers__offer__price__amount">85,-</span>
+              <span class="offers__offer__price__currency">&euro;</span>
+            </div>
+            <ul class="offers__offer__price__annotations">
+              <li>Minimum = 85 Euro</li>
+            </ul>
+          </div>
+          <div class="offers__offer__buttonwrapper">
+            <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
+          </div>
         </div>
-        <ul class="offers__offer__price__annotations">
-          <li>Minimum = 85 Euro</li>
-        </ul>
-        <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
       </div>
     </article>
 
@@ -167,16 +185,22 @@
           <li>Outfit-Zusammenstellung aus dem Vorhandenen (nach erfolgtem Style-Visit oder Online Styling Beratung)</li>
           <li>Ausarbeiten eines Corporate Designs als Branding zur optimalen Visualisierung Deines Businesses</li>
         </ul>
-        <div class="offers__offer__price">
-          <span class="offers__offer__price__prefix">ab</span>
-          <span class="offers__offer__price__amount">190,-</span>
-          <span class="offers__offer__price__currency">&euro;</span>
+        <div class="offers__offer__card__footer">
+          <div class="offers__offer__pricingwrapper">
+            <div class="offers__offer__price">
+              <span class="offers__offer__price__prefix">ab</span>
+              <span class="offers__offer__price__amount">190,-</span>
+              <span class="offers__offer__price__currency">&euro;</span>
+            </div>
+            <ul class="offers__offer__price__annotations">
+              <li>Minimum 2 h = 190 Euro</li>
+              <li>jede weitere Stunde = 90 Euro</li>
+            </ul>
+          </div>
+          <div class="offers__offer__buttonwrapper">
+            <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
+          </div>
         </div>
-        <ul class="offers__offer__price__annotations">
-          <li>Minimum 2 h = 190 Euro</li>
-          <li>jede weitere Stunde = 90 Euro</li>
-        </ul>
-        <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
       </div>
     </article>
 
@@ -204,16 +228,22 @@
           <li>Nerven- und Zeit sparenden Zugang zur Garderobe</li>
           <li>weniger „hab nix anzuziehen“-Feeling!</li>
         </ul>
-        <div class="offers__offer__price">
-          <span class="offers__offer__price__prefix">ab</span>
-          <span class="offers__offer__price__amount">90,-</span>
-          <span class="offers__offer__price__currency">&euro;</span>
+        <div class="offers__offer__card__footer">
+          <div class="offers__offer__pricingwrapper">
+            <div class="offers__offer__price">
+              <span class="offers__offer__price__prefix">ab</span>
+              <span class="offers__offer__price__amount">90,-</span>
+              <span class="offers__offer__price__currency">&euro;</span>
+            </div>
+            <ul class="offers__offer__price__annotations">
+              <li>Minimum 2 h = 90 Euro</li>
+              <li>jede weitere Stunde = 40 Euro</li>
+            </ul>
+          </div>
+          <div class="offers__offer__buttonwrapper">
+            <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
+          </div>
         </div>
-        <ul class="offers__offer__price__annotations">
-          <li>Minimum 2 h = 90 Euro</li>
-          <li>jede weitere Stunde = 40 Euro</li>
-        </ul>
-        <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
       </div>
     </article>
   </div>

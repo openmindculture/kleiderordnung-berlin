@@ -76,7 +76,7 @@
 }
 
 .offers__offer__card {
-  padding: 3.5rem; /* TODO why too much spacing to top? */
+  padding: 3.5rem;
   background-color: var(--color-secondary-background);
 }
 
@@ -132,7 +132,7 @@
   right: 0;
 }
 
-.offers__offer__headline {}
+@mixin typography-heading-h3 .offers__offer__headline {}
 
 .offers__offer__paragraph {
   margin-bottom: 2rem;
@@ -144,6 +144,20 @@
   text-align: left;
   list-style-type: image;
   list-style-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 10L10 5L5 0L0 5L5 10Z' fill='%230014D1'/%3E%3C/svg%3E");
+  margin-bottom: 2rem;
+}
+
+.offers__offer__card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers__offer__pricingwrapper {
+
+}
+
+.offers__offer__buttonwrapper {
+
 }
 
 .offers__offer__price {
@@ -157,6 +171,8 @@
 .offers__offer__price__annotations {
   list-style: none;
   text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .offers__offer__icon {
