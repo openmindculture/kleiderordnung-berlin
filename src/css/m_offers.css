@@ -187,11 +187,13 @@
 
 .offers__additional__articles__offer {
   flex: 1 0 100%;
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 992px) {
   .offers__additional__articles__offer {
     flex: 1 1 25%;
+    margin-bottom: 0;
   }
   .offers__additional__articles__offer + .offers__additional__articles__offer {
     margin-left: 6.5rem;

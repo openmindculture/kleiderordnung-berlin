@@ -7,9 +7,15 @@
 
 .calltoaction {
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 12.3125rem auto;
 }
 
 .calltoaction__text {
   padding: 7.9375rem 0 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .calltoaction {
+    margin-bottom: 7.5rem;
+  }
 }
