@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-05-25 11:53" -->
+	<!-- generator="WordPress/6.2.2" created="2023-05-30 13:28" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Thu, 25 May 2023 11:53:00 +0000</pubDate>
+	<pubDate>Tue, 30 May 2023 13:28:59 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -297,31 +297,33 @@ Die Avatare der Kommentatoren kommen von <a href="https://de.gravatar.com/">Grav
 
   [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping Tour"]
 
-  [checkbox anfrage-style-visit id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online Styling Beratung"]
+  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online Styling Beratung"]
 
-  [checkbox anfrage-style-visit id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Start-Up-Consulting"]
+  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Start-Up-Consulting"]
 
-  [checkbox anfrage-style-visit id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gutschein"]
+  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gutschein"]
 
-  [checkbox anfrage-style-visit id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
+  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
 
-  [checkbox anfrage-style-visit id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
+  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
 </div>
 
 <span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Absenden"]</span>
 1
-[_site_title] „[your-subject]“
+[_site_title] Kontaktformular
 [_site_title] <wordpress@preview.kleiderordnung-berlin.de>
 [_site_admin_email]
-Von: [your-name] [your-email]
-Betreff: [your-subject]
+Von: [Name]
+E-Mail: [Email]
 
-Nachrichtentext:
-[your-message]
+Unverbindliche Anfrage für: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
+
+Nachricht:
+[Nachricht]
 
 -- 
 Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
-
+Reply-To: [Email]
 
 
 
@@ -364,8 +366,8 @@ Bitte gib eine Telefonnummer ein.]]></content:encoded>
 		<wp:post_id>16</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-08 09:39:25]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-08 07:39:25]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-05-25 13:51:48]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-05-25 11:51:48]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-05-30 15:28:35]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-30 13:28:35]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[kontaktformular-1]]></wp:post_name>
@@ -390,29 +392,31 @@ Bitte gib eine Telefonnummer ein.]]></content:encoded>
 
   [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping Tour"]
 
-  [checkbox anfrage-style-visit id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online Styling Beratung"]
+  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online Styling Beratung"]
 
-  [checkbox anfrage-style-visit id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Start-Up-Consulting"]
+  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Start-Up-Consulting"]
 
-  [checkbox anfrage-style-visit id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gutschein"]
+  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gutschein"]
 
-  [checkbox anfrage-style-visit id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
+  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
 
-  [checkbox anfrage-style-visit id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
+  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
 </div>
 
 <span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Absenden"]</span>]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:19:"[_site_admin_email]";s:4:"body";s:177:"Von: [your-name] [your-email]
-Betreff: [your-subject]
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:29:"[_site_title] Kontaktformular";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:19:"[_site_admin_email]";s:4:"body";s:351:"Von: [Name]
+E-Mail: [Email]
 
-Nachrichtentext:
-[your-message]
+Unverbindliche Anfrage für: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
+
+Nachricht:
+[Nachricht]
 
 -- 
-Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:0:"";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
+Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:17:"Reply-To: [Email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
@@ -727,6 +731,397 @@ Meine Website ist www.ingo-steinke.de oder https://www.ingo-steinke.de und ich k
 		<wp:meta_value><![CDATA[Tina Steinke betrachtet lächelnd Kleidung am Kleiderständer]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
+					<item>
+		<title><![CDATA[[your-subject]]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=48</link>
+		<pubDate>Tue, 30 May 2023 12:56:27 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=48</guid>
+		<description></description>
+		<content:encoded><![CDATA[Steinke
+contact@ingo-steinke.com
+DSDFG
+tESTnachricht in
+mehren
+Zeilen
+Style Visit
+Online Styling Beratung
+Start-Up-Consulting
+Gutschein
+Ordnung im Schrank
+Styling-Abo
+Shopping Tour
+2
+217.9.48.50
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+https://preview.kleiderordnung-berlin.de/
+30. Mai 2023
+14:56
+KleiderOrdnung Berlin
+https://preview.kleiderordnung-berlin.de
+kontakt@ingo-steinke.de
+admin
+kontakt@ingo-steinke.de
+admin]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>48</wp:post_id>
+		<wp:post_date><![CDATA[2023-05-30 14:56:27]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-05-30 12:56:27]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-05-30 14:56:27]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-30 12:56:27]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[your-subject]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[flamingo_inbound]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="flamingo_inbound_channel" nicename="kontaktformular-1"><![CDATA[Kontaktformular deutsch]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_submission_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[mail_sent]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_subject]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-subject]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-name] <[your-email]>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-name]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-email]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Steinke]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[contact@ingo-steinke.com]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_nachricht]]></wp:meta_key>
+		<wp:meta_value><![CDATA[DSDFG
+tESTnachricht in
+mehren
+Zeilen]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-style-visit]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:6:{i:0;s:11:"Style Visit";i:1;s:23:"Online Styling Beratung";i:2;s:19:"Start-Up-Consulting";i:3;s:9:"Gutschein";i:4;s:18:"Ordnung im Schrank";i:5;s:11:"Styling-Abo";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-shopping-tour]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:13:"Shopping Tour";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_fields]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:5:{s:4:"Name";N;s:5:"Email";N;s:9:"Nachricht";N;s:19:"anfrage-style-visit";N;s:21:"anfrage-shopping-tour";N;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:19:{s:13:"serial_number";i:2;s:9:"remote_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36";s:3:"url";s:41:"https://preview.kleiderordnung-berlin.de/";s:4:"date";s:12:"30. Mai 2023";s:4:"time";s:5:"14:56";s:7:"post_id";s:0:"";s:9:"post_name";s:0:"";s:10:"post_title";s:0:"";s:8:"post_url";s:0:"";s:11:"post_author";s:0:"";s:17:"post_author_email";s:0:"";s:10:"site_title";s:21:"KleiderOrdnung Berlin";s:16:"site_description";s:0:"";s:8:"site_url";s:40:"https://preview.kleiderordnung-berlin.de";s:16:"site_admin_email";s:23:"kontakt@ingo-steinke.de";s:10:"user_login";s:5:"admin";s:10:"user_email";s:23:"kontakt@ingo-steinke.de";s:17:"user_display_name";s:5:"admin";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_akismet]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_recaptcha]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_spam_log]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_consent]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[650ec50c02b36ab24dcc834789ad01f2]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[[your-subject]]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=49</link>
+		<pubDate>Tue, 30 May 2023 13:25:27 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=49</guid>
+		<description></description>
+		<content:encoded><![CDATA[Ich Bins
+tmp11@fraktalisman.de
+Freitextfeld greift die angekreuzten Felder auf: hier nur jedes zweite, also Style Visit, Online Style Beratung, Gutschein, und Styling-Abo
+
+und wenn ich hier HTML eingebe?
+I'm so <strong>strong</strong>!
+https://example.com
+tmp11@fraktalisman.de
+Style Visit
+Online Styling Beratung
+Gutschein
+Styling-Abo
+3
+217.9.48.50
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+https://preview.kleiderordnung-berlin.de/
+30. Mai 2023
+15:25
+KleiderOrdnung Berlin
+https://preview.kleiderordnung-berlin.de
+kontakt@ingo-steinke.de
+admin
+kontakt@ingo-steinke.de
+admin]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>49</wp:post_id>
+		<wp:post_date><![CDATA[2023-05-30 15:25:27]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-05-30 13:25:27]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-05-30 15:25:27]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-30 13:25:27]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[your-subject-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[flamingo_inbound]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="flamingo_inbound_channel" nicename="kontaktformular-1"><![CDATA[Kontaktformular deutsch]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_submission_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[mail_sent]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_subject]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-subject]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-name] <[your-email]>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-name]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-email]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Ich Bins]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[tmp11@fraktalisman.de]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_nachricht]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Freitextfeld greift die angekreuzten Felder auf: hier nur jedes zweite, also Style Visit, Online Style Beratung, Gutschein, und Styling-Abo
+
+und wenn ich hier HTML eingebe?
+I'm so <strong>strong</strong>!
+https://example.com
+tmp11@fraktalisman.de]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-style-visit]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:11:"Style Visit";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-online-style-beratung]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:23:"Online Styling Beratung";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-gutschein]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:9:"Gutschein";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-styling-abo]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:11:"Styling-Abo";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-shopping-tour]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-start-up-consulting]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-ordnung-im-schrank]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_fields]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:10:{s:4:"Name";N;s:5:"Email";N;s:9:"Nachricht";N;s:19:"anfrage-style-visit";N;s:29:"anfrage-online-style-beratung";N;s:17:"anfrage-gutschein";N;s:19:"anfrage-styling-abo";N;s:21:"anfrage-shopping-tour";N;s:27:"anfrage-start-up-consulting";N;s:26:"anfrage-ordnung-im-schrank";N;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:19:{s:13:"serial_number";i:3;s:9:"remote_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36";s:3:"url";s:41:"https://preview.kleiderordnung-berlin.de/";s:4:"date";s:12:"30. Mai 2023";s:4:"time";s:5:"15:25";s:7:"post_id";s:0:"";s:9:"post_name";s:0:"";s:10:"post_title";s:0:"";s:8:"post_url";s:0:"";s:11:"post_author";s:0:"";s:17:"post_author_email";s:0:"";s:10:"site_title";s:21:"KleiderOrdnung Berlin";s:16:"site_description";s:0:"";s:8:"site_url";s:40:"https://preview.kleiderordnung-berlin.de";s:16:"site_admin_email";s:23:"kontakt@ingo-steinke.de";s:10:"user_login";s:5:"admin";s:10:"user_email";s:23:"kontakt@ingo-steinke.de";s:17:"user_display_name";s:5:"admin";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_akismet]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_recaptcha]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_spam_log]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_consent]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[42dc4259bd7feee8b401c350d6930279]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[[your-subject]]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=50</link>
+		<pubDate>Tue, 30 May 2023 13:27:19 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=50</guid>
+		<description></description>
+		<content:encoded><![CDATA[Du Bists
+ingosteinke@ingosteinke.de
+Noch ein Test und so
+Shopping Tour
+Start-Up-Consulting
+Ordnung im Schrank
+4
+217.9.48.50
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+https://preview.kleiderordnung-berlin.de/
+30. Mai 2023
+15:27
+KleiderOrdnung Berlin
+https://preview.kleiderordnung-berlin.de
+kontakt@ingo-steinke.de
+admin
+kontakt@ingo-steinke.de
+admin]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>50</wp:post_id>
+		<wp:post_date><![CDATA[2023-05-30 15:27:19]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-05-30 13:27:19]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-05-30 15:27:19]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-30 13:27:19]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[your-subject-3]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[flamingo_inbound]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="flamingo_inbound_channel" nicename="kontaktformular-1"><![CDATA[Kontaktformular deutsch]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_submission_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[mail_sent]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_subject]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-subject]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-name] <[your-email]>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-name]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-email]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Du Bists]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[ingosteinke@ingosteinke.de]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_nachricht]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Noch ein Test und so]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-shopping-tour]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:13:"Shopping Tour";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-start-up-consulting]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:19:"Start-Up-Consulting";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-ordnung-im-schrank]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:18:"Ordnung im Schrank";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-style-visit]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-online-style-beratung]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-gutschein]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-styling-abo]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_fields]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:10:{s:4:"Name";N;s:5:"Email";N;s:9:"Nachricht";N;s:21:"anfrage-shopping-tour";N;s:27:"anfrage-start-up-consulting";N;s:26:"anfrage-ordnung-im-schrank";N;s:19:"anfrage-style-visit";N;s:29:"anfrage-online-style-beratung";N;s:17:"anfrage-gutschein";N;s:19:"anfrage-styling-abo";N;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:19:{s:13:"serial_number";i:4;s:9:"remote_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36";s:3:"url";s:41:"https://preview.kleiderordnung-berlin.de/";s:4:"date";s:12:"30. Mai 2023";s:4:"time";s:5:"15:27";s:7:"post_id";s:0:"";s:9:"post_name";s:0:"";s:10:"post_title";s:0:"";s:8:"post_url";s:0:"";s:11:"post_author";s:0:"";s:17:"post_author_email";s:0:"";s:10:"site_title";s:21:"KleiderOrdnung Berlin";s:16:"site_description";s:0:"";s:8:"site_url";s:40:"https://preview.kleiderordnung-berlin.de";s:16:"site_admin_email";s:23:"kontakt@ingo-steinke.de";s:10:"user_login";s:5:"admin";s:10:"user_email";s:23:"kontakt@ingo-steinke.de";s:17:"user_display_name";s:5:"admin";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_akismet]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_recaptcha]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_spam_log]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_consent]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[bb5907803f3ce0a263424fce515c2b87]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
 				</channel>
 </rss>
 	
@@ -734,5 +1129,5 @@ Meine Website ist www.ingo-steinke.de oder https://www.ingo-steinke.de und ich k
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-05-25 13:53:00 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-05-30 15:28:59 by W3 Total Cache
 -->

@@ -93,15 +93,67 @@ non-destructive editing limited to the intended content type (plain text or rich
 - Icons
 - Card-like grid / flex layouts
 
-
-### Contact Form, Social Media, Dynamic Menu
-
-A contact form is provided using the popular Contact Form 7 plugin and the Flamingo add-on to save messages in the database. For localized content, a new form needs to be created for each language. Fixed text output by the theme (like contact buttons) we might need a localization file? If it's all but a few button captions, we may be better off with a condition or translation function call in the theme code if possible.
-
 - **page header**
 - **Instagram posts**
 - **contact form**
 - **page footer**
+
+### Contact Form, Social Media, Dynamic Menu
+
+A contact form is provided using the popular Contact Form 7 plugin and the Flamingo add-on to save messages in the database. For localized content, a new form needs to be created for each language.
+
+Contact form settings use specific shortcodes, identifiers must match in form template, email template, style sheets, and possible JavaScript handlers. Checkbox elements show up with their value when checked.
+
+Example:
+
+Form markup:
+
+``` 
+<div class="contact__fieldset contact__fieldset--from">
+  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email placeholder "E-Mail"] </label>
+</div>
+
+<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
+
+<div class="contact__fieldset contact__fieldset--checkboxes">
+  <div class="contact__calltoactiontext--fieldset">Unverbindliche Anfrage für</div>
+
+  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "Style Visit"]
+
+  [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping Tour"]
+
+  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online Styling Beratung"]
+
+  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Start-Up-Consulting"]
+
+  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gutschein"]
+
+  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
+
+  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
+</div>
+
+<span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Absenden"]</span>
+```
+
+Email template:
+
+```
+Subject: [_site_title] Kontaktformular
+Additional header: Reply-To: [Email]
+Message text:
+
+Von: [Name]
+E-Mail: [Email]
+
+Unverbindliche Anfrage für: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
+
+Nachricht:
+[Nachricht]
+
+-- 
+Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
+```
 
 ### Localization
 
