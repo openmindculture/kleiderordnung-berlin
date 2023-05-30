@@ -8,9 +8,7 @@
  * @author openmindculture
  */
 ?>
-.is-typography-css-php-file {
-  border: solid 1px red;
-}
+
 /**! This CSS resource incorporates links to font software which is the
    valuable copyrighted property of Type Network, Inc. and/or their
    suppliers. You may not attempt to copy, install, redistribute,
