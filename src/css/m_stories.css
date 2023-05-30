@@ -74,6 +74,10 @@
   margin: 0;
 }
 
+.stories__navigation {
+  text-align: right;
+}
+
 .stories__navigation__link,
 .stories__navigation__link:link,
 .stories__navigation__link:visited,
@@ -81,4 +85,7 @@
 .stories__navigation__link:hover {
   text-decoration: none;
   color: var(--color-primary-foreground);
+}
+.stories__navigation__link:last-child {
+  margin-left: 1.5rem;
 }
