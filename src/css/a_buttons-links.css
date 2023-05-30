@@ -26,6 +26,8 @@
   display: inline-block;
 }
 
+a:not(.button).active, /* .active class might be set by JavaScript on waypoint (target) observation */
+a:not(.button):active,
 a:not(.button):hover,
 a:not(.button):focus {
   background-color: var(--color-hover-background);
@@ -35,6 +37,8 @@ a:not(.button):focus {
   border-radius: 0.25rem;
 }
 
+.button--primary.active,
+.button--primary:active,
 .button--primary:hover,
 .button--primary:focus {
   color: var(--color-hover-background);
@@ -49,6 +53,7 @@ a:not(.button):focus {
     a:not(.button),
     a:not(.button):link,
     a:not(.button):visited,
+    a:not(.button).active,
     a:not(.button):active,
     a:not(.button):hover,
     a:not(.button):focus {
@@ -66,6 +71,8 @@ a:not(.button):focus {
       color 0.25s ease-in;
     }
 
+    a:not(.button).active,
+    a:not(.button):active,
     a:not(.button):hover,
     a:not(.button):focus {
       background-size: 0 100%,

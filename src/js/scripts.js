@@ -242,8 +242,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  /* Header / Navigation control */
+
   if (kleiderordnung.supportsIntersectionObserver) {
+    /* Header / Navigation control */
     kleiderordnung.stickyHeader = document.getElementById(kleiderordnung.stickyHeaderId);
     if (kleiderordnung.stickyHeader) {
       kleiderordnung.root.style.setProperty('--header-height', '' + kleiderordnung.stickyHeader.offsetHeight + 'px');
@@ -258,6 +259,51 @@ document.addEventListener('DOMContentLoaded', function() {
         { threshold: [1] }
       );
       kleiderordnung.stickyObserver.observe(kleiderordnung.stickyHeader);
+    }
+
+    /* Waypoint effect: visible link target (section) adds .active to matching main navigation item */
+    kleiderordnung.waypointObserver = new IntersectionObserver(
+      function(intersectingEntries) {
+        for (var j = 0; j < intersectingEntries.length; j++) {
+
+          var intersectingEntry = intersectingEntries[j];
+          if (intersectingEntry.isIntersecting && intersectingEntry.intersectionRatio > kleiderordnung.observerOptions.threshold) {
+            var targetElement = /** @type {HTMLElement} */ intersectingEntry.target;
+            if (targetElement) {
+              var targetId = targetElement.id;
+              if (targetId) {
+                var previousCorrespondingNavigationItem = document.querySelector('#menu-main .active');
+                if (previousCorrespondingNavigationItem && previousCorrespondingNavigationItem.classList) {
+                  previousCorrespondingNavigationItem.classList.remove('active');
+                }
+                var currentCorrespondingNavigationItem = document.querySelector('#menu-main-item-' + targetId + ' a');
+                if  (currentCorrespondingNavigationItem && currentCorrespondingNavigationItem.classList) {
+                  currentCorrespondingNavigationItem.classList.add('active');
+                }
+              }
+            }
+          }
+        }
+      },
+      kleiderordnung.observerOptions
+    );
+    var correnspodingNavigationItems = document.querySelectorAll('#menu-main a[href^="#"]');
+    if (correnspodingNavigationItems) {
+      for (var cni=0; cni < correnspodingNavigationItems.length; cni++) {
+        if (correnspodingNavigationItems[cni] && correnspodingNavigationItems[cni].href) {
+          var correspondingWayPointUrl = new URL(correnspodingNavigationItems[cni].href);
+          var correspondingWayPointId = correspondingWayPointUrl.hash.substring(1);
+          var correspondingWayPoint = document.getElementById(correspondingWayPointId);
+          if (correspondingWayPoint) {
+            kleiderordnung.waypointObserver.observe(correspondingWayPoint);
+          }
+        }
+      }
+    }
+    /* observe top or key visual (which has no active menu item) to disable item below when scrolling to top */
+    var topItem = document.getElementById(kleiderordnung.introKeyvisualMousetrapId);
+    if (topItem)  {
+      kleiderordnung.waypointObserver.observe(topItem);
     }
   }
 
