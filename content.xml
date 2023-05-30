@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-05-30 13:28" -->
+	<!-- generator="WordPress/6.2.2" created="2023-05-30 15:57" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Tue, 30 May 2023 13:28:59 +0000</pubDate>
+	<pubDate>Tue, 30 May 2023 15:57:32 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -285,7 +285,7 @@ Die Avatare der Kommentatoren kommen von <a href="https://de.gravatar.com/">Grav
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=16</guid>
 		<description></description>
 		<content:encoded><![CDATA[<div class="contact__fieldset contact__fieldset--from">
-  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email placeholder "E-Mail"] </label>
+  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email akismet:author_email placeholder "E-Mail"] </label>
 </div>
 
 <div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
@@ -366,8 +366,8 @@ Bitte gib eine Telefonnummer ein.]]></content:encoded>
 		<wp:post_id>16</wp:post_id>
 		<wp:post_date><![CDATA[2023-05-08 09:39:25]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-05-08 07:39:25]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-05-30 15:28:35]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-05-30 13:28:35]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-05-30 17:57:24]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-05-30 15:57:24]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[kontaktformular-1]]></wp:post_name>
@@ -380,7 +380,7 @@ Bitte gib eine Telefonnummer ein.]]></content:encoded>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
 		<wp:meta_value><![CDATA[<div class="contact__fieldset contact__fieldset--from">
-  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email placeholder "E-Mail"] </label>
+  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email akismet:author_email placeholder "E-Mail"] </label>
 </div>
 
 <div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
@@ -1129,5 +1129,5 @@ admin]]></content:encoded>
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-05-30 15:28:59 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-05-30 17:57:32 by W3 Total Cache
 -->
