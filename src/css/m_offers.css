@@ -13,6 +13,27 @@
   margin: 0 auto;
 }
 
+.offers,
+.offers__layer--content {
+  position: relative;
+}
+
+.offers__layer--content {
+  z-index: 2;
+}
+
+.offers__layer--decoration {
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.offers__decoration__item--pita {
+  background-position: top right;
+}
+
 @mixin typography-heading-h2 .offers__headline {
   text-align: left;
 }
