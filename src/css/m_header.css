@@ -52,10 +52,6 @@
   padding: 1.25rem;
 }
 
-.header--site-header.stuck .header__contentwrapper {
-  padding-bottom: 0;
-}
-
 .header__contentwrapper .header__site-logo {
   flex-grow: 1;
   padding: 0;
@@ -112,11 +108,27 @@
   }
   .header__contentwrapper {
     padding: 1.5rem 3.125rem 1.5rem 3.125rem;
+    transition: padding 0.5s ease;
   }
   .header__contentwrapper .header__site-logo {
     padding: 0.5625rem 0 0 0.25rem;
   }
   .header__contentwrapper .header__site-logo svg {
     width: 16.8125rem;
+  }
+
+  .navigation__list li {
+    transition: margin 0.5s ease;
+  }
+
+  /* more compact sticky header navigation when scrolling down */
+  .header--site-header.stuck .header__contentwrapper {
+    padding-top: 0.25rem;
+    padding-bottom: 0;
+  }
+
+  .header--site-header.stuck .navigation__list li,
+  .header--site-header.stuck .navigation__list li + li {
+    margin-bottom: 0.5rem;
   }
 }
