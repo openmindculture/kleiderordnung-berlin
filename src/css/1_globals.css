@@ -30,6 +30,8 @@ html, body, main, .main, p {
 html, body {
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);
+  voice-family: female;
+  voice-pitch: medium;
 }
 
 ::selection { /* TODO propbably not exactly the same as links? or change link backgrounds instead? */
