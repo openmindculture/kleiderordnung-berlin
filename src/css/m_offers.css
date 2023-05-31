@@ -163,6 +163,8 @@
 
 @mixin typography-heading-h3 .offers__offer__headline {
   margin-top: 0;
+  max-width: calc(100% - 2.5rem);
+  word-wrap: break-word;
 }
 
 .offers__offer__paragraph {
@@ -184,7 +186,12 @@
 
 .offers__offer__card__footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+.offers__offer__pricingwrapper {
+  margin-bottom: 1.5rem;
 }
 
 .offers__offer__price {
@@ -210,16 +217,21 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin: 0;
+  margin: 0 0 0 2rem;
 }
 
 @media (min-width: 992px) {
   .offers__offer__icon {
     width: 3.5625rem;
     height: 3.5625rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
   }
-  .offers__offer__headline {
-    margin-top: 1.5rem;
+  .offers__offer__card__footer {
+    flex-direction: row;
+  }
+  .offers__offer__pricingwrapper {
+    margin-bottom: 0;
   }
 }
 
