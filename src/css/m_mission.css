@@ -10,26 +10,6 @@
 
 }
 
-.mission,
-.mission__layer--content {
-  position: relative;
-}
-
-.mission__layer--content {
-  z-index: 2;
-}
-
-.mission__layer--decoration {
-  z-index: 1;
-  top: 0;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-}
-
 .mission__card {
   width: var(--width-spaced);
   max-width: var(--width-max);

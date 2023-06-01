@@ -6,8 +6,8 @@
  * @author openmindculture
  */
 ?>
-<section id="mission" class="mission target-offset">
-  <div class="mission__layer mission__layer mission__layer--content">
+<section id="mission" class="mission target-offset decoration__perspective__section">
+  <div class="mission__layer mission__layer--content decoration__perspective__section__layer decoration__perspective__section__layer--content">
     <div class="mission__card">
       <h2 class="mission__headline">Meine Mission</h2>
       <p class="mission__text">
@@ -15,7 +15,7 @@
       </p>
     </div>
   </div>
-  <div class="mission__layer mission__layer mission__layer--decoration">
+  <div class="mission__layer mission__layer--decoration decoration__perspective__section__layer decoration__perspective__section__layer--decoration">
     <div class="mission__decoration__item decoration__item mission__decoration__item--apricot decoration__item--apricot"></div>
   <div class="mission__decoration__item decoration__item mission__decoration__item--salmon2 decoration__item--salmon2"></div>
   </div>

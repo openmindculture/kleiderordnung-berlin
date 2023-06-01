@@ -19,6 +19,15 @@ define('DISABLE_FSE', true); // disable site editing features like editable temp
 
 // TODO dequeue third party styles like contact form 7
 
+// reminder that actions wrap filter calls
+// so there is any order preference despite the declarative approach
+// I would rather put filter hooks before action hooks
+
+add_filter( 'body_class', function( $classes = '' ) {
+  $classes[] = 'theme-kleiderordnung';
+  return $classes;
+} );
+
 // dequeue svg filters above page header
 add_action( 'wp_enqueue_scripts', function() {
   wp_dequeue_style( 'global-styles' );

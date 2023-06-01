@@ -89,6 +89,7 @@ non-destructive editing limited to the intended content type (plain text or rich
 - Links (in a text-like appearance)
 - Headlines, bold text, and other typographic elements
 - Carousels or similar draggable / slideable elements
+- Decoration + Perspective Effects
 - Lists
 - Icons
 - Card-like grid / flex layouts
@@ -97,6 +98,10 @@ non-destructive editing limited to the intended content type (plain text or rich
 - **Instagram posts**
 - **contact form**
 - **page footer**
+- 
+### Decoration / Parallax Perspective Effects
+
+Decorative colorful shapes are placed behind content sections using utility class names defined in `a_decoration.css`. **Side effect**: necessary global styles for document html and body are also defined there to increase modularization and readabilty of the parallax perspective effect setup.
 
 ### Contact Form, Social Media, Dynamic Menu
 

@@ -1,9 +1,57 @@
 /**
- * Decoration Items
+ * Decoration Items and Utility Classes
+ *
+ * Side effect: defines global document html and body styles!
+ *
+ * Markup:
+ * body (perspective wrapper)
+ *   .decoration__perspective__section (e.g. section.offers)
+ *     .decoration__perspective__section__layer.decoration__perspective__section__layer--content (comes first, determines content height)
+ *     .decoration__perspective__section__layer.decoration__perspective__section__layer--decoration (decoration items behind content)
+ *       .decoration__item (colored vector graphic shapes)
  *
  * @package KleiderOrdnung
  * @author openmindculture
  */
+
+/* independent of which element type, a */
+/* functional class name would be something like */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.decoration__perspective__section {
+  position: relative;
+}
+
+.decoration__perspective__section__layer--content {
+  position: relative;
+  z-index: 2;
+}
+
+.decoration__perspective__section__layer--decoration {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transform: translateZ(-1px) scale(1.5);
+}
 
 .decoration__item {
   background-position: 0 0;

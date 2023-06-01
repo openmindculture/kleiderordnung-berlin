@@ -11,26 +11,7 @@
   width: var(--width-full);
   max-width: var(--width-max);
   margin: 0 auto;
-}
-
-.offers,
-.offers__layer--content {
-  position: relative;
-}
-
-.offers__layer--content {
-  z-index: 2;
-}
-
-.offers__layer--decoration {
-  z-index: 1;
-  top: 0;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  perspective: 1rem;
 }
 
 .offers__decoration__item--pita {
