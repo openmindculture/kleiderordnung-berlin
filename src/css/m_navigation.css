@@ -52,16 +52,28 @@
 
 .navigation__toggle--close {
   display: block;
-  padding: 0 1rem 0 0;
+  margin: 0 1rem 0 0;
+  padding: 0;
   text-align: right;
   pointer-events: all;
 }
 
 .navigation__toggle--open {
-  padding: 0 1.25rem 0 1.25rem;
-  margin-top: 0.25rem;
+  display: block;
+  width: 1.325rem;
+  height: 1.325rem;
+  margin: 0.125rem 1rem 0 0;
+  padding: 0;
   color: var(--color-primary-foreground);
   pointer-events: all;
+}
+
+.navigation__toggle--open svg {
+  display: block;
+  width: 1.325rem;
+  height: 1.325rem;
+  margin: 0;
+  padding: 0;
 }
 
 /* Mobile navigation initially hidden, opened / closed by button links */

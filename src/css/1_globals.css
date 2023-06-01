@@ -68,3 +68,9 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+@media (max-width: 767.767px) {
+  html, body, main, .main, p {
+    font-size: var(--font-size-14);
+  }
+}

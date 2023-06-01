@@ -30,6 +30,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .offers__decoration__item--pita {
@@ -37,11 +38,13 @@
 }
 
 @mixin typography-heading-h2 .offers__headline {
+  margin: 0 0 2rem 0;
   text-align: left;
 }
 
 .offers__cards {
   margin: 0 0 5rem 0;
+  clear: left;
 }
 
 @mixin typography-heading-h2 .offers__additional__headline {
@@ -60,22 +63,22 @@
 
 .offers__navigation ul li {
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 992px) {
   .offers__navigation ul {
     flex-direction: row;
   }
-  .offers__navigation ul li + li {
-    margin-left: 2rem;
-    margin-bottom: 1rem;
+  .offers__navigation ul li {
+    float: left;
+    margin-right: 2rem;
   }
   @supports (gap: 2rem) {
     .offers__navigation ul {
-      gap: 2rem;
+      row-gap: 2rem;
     }
-    .offers__navigation ul li + li {
-      margin-left: 0;
+    .offers__navigation ul li {
       margin-bottom: 0;
     }
   }

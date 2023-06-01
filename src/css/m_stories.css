@@ -29,6 +29,7 @@
   flex: 0 0 auto;
   width: max-content;
   display: flex;
+  float: left;
 }
 
 .stories__story__image {
@@ -42,6 +43,7 @@
   width: 19.9375; /* 319px original image */
   max-width: min(100%, calc(var(--height-stories-max, 12.5rem) * var(--img-ratio, 0.562610229)));
   height: auto;
+  float: left;
 }
 
 .stories__story__quote {
@@ -83,8 +85,10 @@
 .stories__navigation__link:visited,
 .stories__navigation__link:active,
 .stories__navigation__link:hover {
-  text-decoration: none;
+  display: inline-block;
   color: var(--color-primary-foreground);
+  pointer-events: all;
+  text-decoration: none;
 }
 .stories__navigation__link:last-child {
   margin-left: 1.5rem;
