@@ -128,6 +128,7 @@
     margin: 0 0 1.5rem 0;
     text-align: left;
     width: auto;
+    float: left;
   }
 
   .navigation__list li + li {

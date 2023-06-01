@@ -112,6 +112,7 @@
   }
   .header__contentwrapper .header__site-logo {
     padding: 0.5625rem 0 0 0.25rem;
+    float: left;
   }
   .header__contentwrapper .header__site-logo svg {
     width: 16.8125rem;
