@@ -32,7 +32,8 @@
   width: 100%;
 }
 
-.navigation__list-wrapper--main a.button { /* mobile inverted colors */
+/* inverted colors inside mobile navigation wrapper */
+.navigation__list-wrapper--main a.button {
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);
   display: inline-block;
@@ -45,9 +46,11 @@
   font-size: var(--font-size-13);
 }
 
+/* inverted colors inside mobile navigation wrapper */
 .navigation__list-wrapper--main a:not(.button):not(.navigation__toggle):link,
 .navigation__list-wrapper--main a:not(.button):not(.navigation__toggle):visited {
-  color: var(--color-primary-background); /* mobile inverted colors */
+  background-color: var(--color-inverted-background);
+  color: var(--color-primary-background);
 }
 
 .navigation__toggle--close {
