@@ -39,10 +39,13 @@ html, body {
   color: var(--color-primary-foreground);
 }
 
-img, svg {
+img, svg, picture {
   border: none;
   max-width: 100%;
   height: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 /* Inherit fonts for inputs and buttons */

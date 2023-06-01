@@ -13,7 +13,11 @@
     <!-- News 1 -->
     <article class="news__post">
       <figure class="news__post__image">
-        <img width="440" height="248" alt="1" loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/news-example-1.jpg">
+        <picture>
+          <source srcset="<?php echo get_template_directory_uri() ?>/img/news-example-1.webp"  type="image/webp">
+          <source srcset="<?php echo get_template_directory_uri() ?>/img/news-example-1.jpg"  type="image/jpeg">
+          <img width="440" height="248" alt="1" loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/news-example-1.jpg">
+        </picture>
       </figure>
       <div class="news__post__content">
         <h3 class="news__post__title">Kategoriename</h3>
@@ -26,7 +30,11 @@
     <!-- News 2 -->
     <article class="news__post">
       <figure class="news__post__image">
-        <img width="440" height="248" alt="2" loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/news-example-2.jpg">
+        <picture>
+          <source srcset="<?php echo get_template_directory_uri() ?>/img/news-example-2.webp"  type="image/webp">
+          <source srcset="<?php echo get_template_directory_uri() ?>/img/news-example-2.jpg"  type="image/jpeg">
+          <img width="440" height="248" alt="2" loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/news-example-2.jpg">
+        </picture>
       </figure>
       <div class="news__post__content">
         <h3 class="news__post__title">Workshops & Events</h3>
@@ -39,7 +47,11 @@
     <!-- News 3 -->
     <article class="news__post">
       <figure class="news__post__image">
-        <img width="440" height="248" alt="3" loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/news-example-3.jpg">
+        <picture>
+          <source srcset="<?php echo get_template_directory_uri() ?>/img/news-example-3.webp"  type="image/webp">
+          <source srcset="<?php echo get_template_directory_uri() ?>/img/news-example-3.jpg"  type="image/jpeg">
+          <img width="440" height="248" alt="3" loading="lazy" src="<?php echo get_template_directory_uri() ?>/img/news-example-3.jpg">
+        </picture>
       </figure>
       <div class="news__post__content">
         <h3 class="news__post__title">Impulse</h3>
