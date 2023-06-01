@@ -34,12 +34,14 @@
       <!-- Offer 1/5 -->
       <article id="angebote-style-visit" class="offers__offer has-secondary-background">
         <figure class="offers__offer__image">
-          <img
-            src="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg" width="560" height="560"
-            srcset="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung@2x.jpg 2x"
-            loading="lazy"
-            alt="Tina Steinke betrachtet lächelnd Kleidung am Kleiderständer"
-          >
+          <picture>
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg" width="560" height="560"
+              srcset="<?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/stylevisit-kleiderordnung@2x.jpg 2x"
+              loading="lazy"
+              alt="Tina Steinke betrachtet lächelnd Kleidung am Kleiderständer"
+            >
+          </picture>
         </figure>
         <div class="offers__offer__card">
           <figure class="offers__offer__icon"></figure>
@@ -80,12 +82,14 @@
       <!-- Offer 2/5 -->
       <article id="angebote-shopping-tour" class="offers__offer has-secondary-background">
         <figure class="offers__offer__image">
-          <img
-            src="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg" width="560" height="560"
-            srcset="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung@2x.jpg 2x"
-            loading="lazy"
-            alt="Tina Steinke am Kleiderständer"
-          >
+          <picture>
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg" width="560" height="560"
+              srcset="<?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/shoppingtour-kleiderordnung@2x.jpg 2x"
+              loading="lazy"
+              alt="Tina Steinke am Kleiderständer"
+            >
+          </picture>
         </figure>
         <div class="offers__offer__card">
           <figure class="offers__offer__icon"></figure>
@@ -125,12 +129,14 @@
       <!-- Offer 3/5 -->
       <article id="angebote-online-styling-beratung" class="offers__offer has-secondary-background">
         <figure class="offers__offer__image">
-          <img
-            src="<?php echo get_template_directory_uri() ?>/img/onlinestyling-beratung-kleiderordnung.jpg" width="560" height="560"
-            srcset="<?php echo get_template_directory_uri() ?>/img/onlinestyling-beratung-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/onlinestyling-beratung-kleiderordnung@2x.jpg 2x"
-            loading="lazy"
-            alt="Symbolbild"
-          >
+          <picture>
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/onlinestyling-beratung-kleiderordnung.jpg" width="560" height="560"
+              srcset="<?php echo get_template_directory_uri() ?>/img/onlinestyling-beratung-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/onlinestyling-beratung-kleiderordnung@2x.jpg 2x"
+              loading="lazy"
+              alt="Symbolbild"
+            >
+          </picture>
         </figure>
         <div class="offers__offer__card">
           <figure class="offers__offer__icon"></figure>
@@ -166,12 +172,14 @@
       <!-- Offer 4/5 -->
       <article id="angebote-outfit-consulting" class="offers__offer has-secondary-background">
         <figure class="offers__offer__image">
-          <img
-            src="<?php echo get_template_directory_uri() ?>/img/outfit-consulting-kleiderordnung.jpg" width="560" height="560"
-            srcset="<?php echo get_template_directory_uri() ?>/img/outfit-consulting-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/outfit-consulting-kleiderordnung@2x.jpg 2x"
-            loading="lazy"
-            alt="Tina Steinke am Kleiderständer"
-          >
+          <picture>
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/outfit-consulting-kleiderordnung.jpg" width="560" height="560"
+              srcset="<?php echo get_template_directory_uri() ?>/img/outfit-consulting-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/outfit-consulting-kleiderordnung@2x.jpg 2x"
+              loading="lazy"
+              alt="Tina Steinke am Kleiderständer"
+            >
+          </picture>
         </figure>
         <div class="offers__offer__card">
           <figure class="offers__offer__icon"></figure>
@@ -209,12 +217,14 @@
       <!-- Offer 5/5 -->
       <article id="angebote-kleiderordnung" class="offers__offer has-secondary-background">
         <figure class="offers__offer__image">
-          <img
-            src="<?php echo get_template_directory_uri() ?>/img/kleiderordnung.jpg" width="560" height="560"
-            srcset="<?php echo get_template_directory_uri() ?>/img/kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/kleiderordnung.jpg 2x"
-            loading="lazy"
-            alt="Tina Steinke am Kleiderständer"
-          >
+          <picture>
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/kleiderordnung.jpg" width="560" height="560"
+              srcset="<?php echo get_template_directory_uri() ?>/img/kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/kleiderordnung.jpg 2x"
+              loading="lazy"
+              alt="Tina Steinke am Kleiderständer"
+            >
+          </picture>
         </figure>
         <div class="offers__offer__card">
           <figure class="offers__offer__icon"></figure>
