@@ -12,6 +12,8 @@
   max-width: var(--width-max);
   margin: 0 auto;
   perspective: 1rem;
+  background-image: @mixin background-image-pita,
+  @mixin background-image-salon, @mixin background-image-lilac;
 }
 
 .offers__decoration__item--pita {

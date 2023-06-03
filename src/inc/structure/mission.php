@@ -6,7 +6,7 @@
  * @author openmindculture
  */
 ?>
-<section id="mission" class="mission target-offset decoration__perspective__section">
+<section id="mission" class="mission target-offset decoration__perspective__section ">
   <div class="mission__layer mission__layer--content decoration__perspective__section__layer decoration__perspective__section__layer--content">
     <div class="mission__card">
       <h2 class="mission__headline">Meine Mission</h2>
