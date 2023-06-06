@@ -25,7 +25,7 @@
         <li id="menu-main-item-news" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1854"><a href="#news"  tabindex="0">News</a></li>
         <li id="menu-main-item-kontakt" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-1853"><a class="button button--primary" href="#kontakt" tabindex="0">Kontakt</a></li>
         <li id=""menu-main-item-language" class="lang-item lang-item-8 lang-item-de current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-1859-de">
-          <a href="/" hreflang="de" lang="de" title="Deutsch" tabindex="0">DE</a>/<a href="/en/" hreflang="en" lang="en" title="English" tabindex="0">EN</a>
+        <a href="/" hreflang="de" lang="de" title="Deutsch" tabindex="0">DE</a>/<a href="/?en" hreflang="en" lang="en" title="English" tabindex="0">EN</a>
         </li>
       </ul>
     </div>
