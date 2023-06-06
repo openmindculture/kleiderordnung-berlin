@@ -11,6 +11,10 @@
   width: var(--width-full);
   max-width: var(--width-max);
   margin: 0 auto;
+}
+
+/* TODO adjust and finalize decoration */
+.offers--decorated--todo {
   perspective: 1rem;
   background-image:
     var(--background-image-pita),
@@ -28,10 +32,6 @@
     50% 50%,
     50% 50%,
     50% 50%;
-}
-
-.offers__decoration__item--pita {
-  background-position: top right;
 }
 
 @mixin typography-heading-h2 .offers__headline {
