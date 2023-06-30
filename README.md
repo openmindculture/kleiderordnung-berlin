@@ -6,6 +6,10 @@ following up on a previous sustainable style consultancy in Düsseldorf.
 - https://kleiderordnung.berlin/ (upcoming)
 - https://www.kleiderordnung-berlin.de/ (classic alternative)
 
+Local development: http://localhost:1234/
+Backend: http://localhost:1234/wp-admin (default credentials: admin:secret).
+Make sure to that the theme KleiderOrdnung got activated or activate it manually after installation.
+
 ## Installation (Deployment)
 
 To deploy the KleiderOrdnung theme on a website,
@@ -179,7 +183,7 @@ Support and code review: tbd.
 
 ## Development, Performance, Accessibility, and Testing
 
-Edit source code in `src` files, rebuild and test the theme using `npm run build` and `npm run build:zip`.
+Edit source code in `src` files, rebuild and test the theme using `npm run build` and `npm run build:zip`, then start http://localhost:1234/
 
 Increase theme versions in
 
