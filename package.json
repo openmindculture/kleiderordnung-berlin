@@ -33,11 +33,11 @@
   },
   "homepage": "https://www.kleiderordnung-berlin.de/",
   "dependencies": {
-    "@lottiefiles/lottie-player": "^1.7.1"
+    "@lottiefiles/lottie-player": "^2.0.2"
   },
   "devDependencies": {
     "@codeceptjs/configure": "^0.10.0",
-    "@testomatio/reporter": "^0.7.0",
+    "@testomatio/reporter": "^1.0.0",
     "codeceptjs": "^3.3.5",
     "codeceptjs-resemblehelper": "^1.9.6",
     "copyfiles": "^2.4.1",
