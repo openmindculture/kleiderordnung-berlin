@@ -57,18 +57,22 @@ a:not(.button):focus {
     a:not(.button):active,
     a:not(.button):hover,
     a:not(.button):focus {
-      background-image: linear-gradient(var(--color-primary-background), var(--color-primary-background)),
-      linear-gradient(var(--color-primary-background), var(--color-primary-background)),
-      linear-gradient(var(--color-hover-background), var(--color-hover-background));
-      background-position: left top,
-      right top,
-      left top;
-      background-size: 100% 100%,
-      50% 100%,
-      100% 100%;
+      background-image:
+        linear-gradient(var(--color-primary-background), var(--color-primary-background)),
+        linear-gradient(var(--color-primary-background), var(--color-primary-background)),
+        linear-gradient(var(--color-hover-background), var(--color-hover-background));
+      background-position:
+        left top,
+        right top,
+        center top;
+      background-size:
+        100% 100%,
+        50% 100%,
+        100% 100%;
       background-repeat: no-repeat;
-      transition: background-size 0.25s ease-in,
-      color 0.25s ease-in;
+      transition:
+        background-size 0.25s ease-in,
+        color 0.25s ease-in;
     }
 
     a:not(.button).active,

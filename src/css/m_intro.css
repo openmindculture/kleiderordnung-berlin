@@ -9,6 +9,13 @@
 .intro {
   text-align: center;
   margin: 0 auto 7.5rem auto;
+  /* ensure to stay on top of subsequent special effects
+   * (parallax scrolling decoration behind offers section)
+   * while delibrately NOT setting an opaque background
+   * so it looks more natural / organic in case it might overlap
+   */
+  position: relative;
+  z-index: 1;
 }
 
 .intro__keytext {

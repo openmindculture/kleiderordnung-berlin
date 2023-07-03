@@ -6,8 +6,9 @@
  * @author openmindculture
  */
 ?>
-<section id="angebot" class="offers target-offset decoration__perspective__section">
-  <div class="offers__layer offers__layer--content decoration__perspective__section__layer decoration__perspective__section__layer--content">
+<section id="angebot" class="offers target-offset">
+  <div class="offers__layer offers__layer--decoration"></div>
+  <div class="offers__layer offers__layer--content">
 
     <h2 class="offers__headline">My Services</h2>
     <nav class="offers__navigation">
@@ -297,11 +298,5 @@
 
       </div>
     </div>
-
-  </div>
-  <div class="offers__layer offers__layer offers__layer--decoration decoration__perspective__section__layer decoration__perspective__section__layer--decoration">
-    <div class="offers__decoration__item decoration__item offers__decoration__item--pita decoration__item--pita"></div>
-    <div class="offers__decoration__item decoration__item offers__decoration__item--salmon decoration__item--salmon"></div>
-    <div class="offers__decoration__item decoration__item offers__decoration__item--lilac decoration__item--lilac"></div>
   </div>
 </section>

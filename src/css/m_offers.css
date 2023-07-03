@@ -7,23 +7,42 @@
  * @author openmindculture
  */
 
-.offers {
-  width: var(--width-full);
-  max-width: var(--width-max);
-  margin: 0 auto;
+:root {
+  --parallax-scale-offers: 0.1;
+  --parallax-min-height-offers: 100rem;
+  --container-offset-adjustment-offers: 5rem;
 }
 
-/* TODO adjust and finalize decoration */
-.offers--decorated--todo {
-  perspective: 1rem;
+@media (prefers-reduced-motion) {
+  :root {
+    --parallax-scale-offers: 0;
+  }
+}
+
+.offers, .offers__layer, .offers__layer--content, .offers__layer--decoration {
+  --parallax-scale: var(--parallax-scale-offers);
+  --parallax-min-height: var(--parallax-min-height-offers);
+  --container-offset-adjustment: var(--container-offset-adjustment-offers);
+}
+
+@mixin decoration-parallax-group .offers {
+  width: var(--width-full);
+  max-width: var(--width-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin decoration-parallax-layer-foreground .offers__layer--content {}
+
+@mixin decoration-parallax-layer-background .offers__layer--decoration {
   background-image:
     var(--background-image-pita),
     var(--background-image-salmon),
     var(--background-image-lilac);
   background-position: /* X Y */
-    100% 0%,
-    0% 50%,
-    100% 10%;
+    125% 0%,
+    -25% 50%,
+    125% 90%;
   background-repeat:
     no-repeat,
     no-repeat,
@@ -85,6 +104,28 @@
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+/* to make it look more natural / organic if the background intersects */
+/* start with a transparent link background ... */
+.offers__navigation ul a:link,
+.offers__navigation ul a:visited {
+  background-image:
+    linear-gradient(transparent, transparent),
+    linear-gradient(transparent, transparent),
+    linear-gradient(var(--color-hover-background), var(--color-hover-background));
+  background-position:
+    left top,
+    right top,
+    center top;
+  background-size:
+    100% 100%,
+    50% 100%,
+    0% 100%;
+  transition:
+    background-size 0.25s ease-in,
+    background-position 0.25s ease-in,
+    color 0.25s ease-in;
 }
 
 .offers__navigation ul a:link,

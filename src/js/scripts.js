@@ -402,4 +402,13 @@ document.addEventListener('DOMContentLoaded', function() {
       carouselWrapper.classList.add('carousel__wrapper--js-controls-initialized');
     }
   }
+
+  kleiderordnung.decoratedParagraphs = null;
+  // find decorated section to update their parallax background min height according to its foreground
+  // each element:
+  //  get the foreground container,
+  //  measure its height,
+  //  convert the pixel value to (r)em,
+  //  find a corresponding custom css property,
+  //  overwrite only if the new value is greater than the existing one
 });

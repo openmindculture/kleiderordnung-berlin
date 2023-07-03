@@ -102,10 +102,12 @@ non-destructive editing limited to the intended content type (plain text or rich
 - **Instagram posts**
 - **contact form**
 - **page footer**
-- 
+
+
+
 ### Decoration / Parallax Perspective Effects
 
-Decorative colorful shapes are placed behind content sections using utility class names defined in `a_decoration.css`. **Side effect**: necessary global styles for document html and body are also defined there to increase modularization and readabilty of the parallax perspective effect setup.
+Colorful shapes are placed behind content sections using mixins and custom properties defined in `a_decoration.css`. Scale and height adjustment property defaults can be overridden in a module / section scope, which might in turn be ajusted according to a JavaScript-based height measurement once after the document has been rendered.
 
 ### Contact Form, Social Media, Dynamic Menu
 
