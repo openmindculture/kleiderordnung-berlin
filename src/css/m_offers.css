@@ -9,8 +9,11 @@
 
 :root {
   --parallax-scale-offers: 0.1;
-  --parallax-min-height-offers: 100rem;
-  --container-offset-adjustment-offers: 5rem;
+  --parallax-min-height-offers: 255rem;
+  /* TODO inwiefern lässt sich folgendes generisch aus der obigen bzw. gemessenen Höhe ermitteln? */
+  --container-offset-adjustment-offers: 16rem;
+  /* TODO entsprechendes negative margin-bottom wäre eleganterweise auch generisch zu ermitteln? */
+  /* ^ wird es ja schon, aber das passt so nicht! bzw. müsste auch anhand der JS Messung angepasst werden! */
 }
 
 @media (prefers-reduced-motion) {
@@ -30,6 +33,8 @@
   max-width: var(--width-max);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -70rem; /* TODO s.o. eleganterweise sollte das generisch ermittelt werden */
+  /* TODO idealer margin-bottom variiert auch ja nach Bildschirmbreite bzw. sollte anhand der Höhe ermittelt werden */
 }
 
 @mixin decoration-parallax-layer-foreground .offers__layer--content {}

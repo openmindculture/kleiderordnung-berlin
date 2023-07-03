@@ -197,6 +197,42 @@ kleiderordnung.activateExternalFeed = function(feedContainerElement) {
   }
 }
 
+kleiderordnung.decoratedParagraphsHeightAdjustment = function() {
+  console.log('kleiderordnung.decoratedParagraphsHeightAdjustment');
+// find decorated section to update their parallax background min height according to its foreground
+// TODO we might want to make this a more generic solution
+  kleiderordnung.decoratedOfferSection = document.getElementById('angebot');
+  console.log(kleiderordnung.decoratedOfferSection);
+  if (!kleiderordnung.decoratedOfferSection) { return; }
+  var contentLayer = kleiderordnung.decoratedOfferSection.querySelector('.offers__layer--content');
+  console.log(contentLayer, 'typeof contentLayer', typeof contentLayer);
+  if (!contentLayer) { return; }
+  console.log(contentLayer, 'typeof contentLayer.offsetHeight', typeof contentLayer.offsetHeight);
+  if (typeof contentLayer.offsetHeight === 'number') {
+    var contentLayerHeightInRem = contentLayer.offsetHeight / 16;
+    // TIL: techtips: don't use root/document.documentElement.style.getPropertyValue: the getter will only return the value of a var, if has been set, using .setProperty(). If has been set through CSS declaration, will return undefined. To avoid that unexpected behavior you have to make use of the getComputedStyle()method , before calling .getPropertyValue():
+    var currentMinHeight = getComputedStyle(document.documentElement,null).getPropertyValue('--parallax-min-height-offers');
+    console.log(currentMinHeight);
+    console.log('typeof currentMinHeight', typeof currentMinHeight);
+    if (!currentMinHeight || typeof currentMinHeight !== 'string' || !currentMinHeight.endsWith('rem')) { return; }
+    var currentMinHeightInRem = parseInt(currentMinHeight.substring(0, currentMinHeight.length -3));
+    console.log(`compare contentLayerHeightInRem: ${contentLayerHeightInRem} to currentMinHeightInRem: ${currentMinHeightInRem}`);
+    if (contentLayerHeightInRem > currentMinHeightInRem) {
+      kleiderordnung.root.style.setProperty('--parallax-min-height-offers', '' + contentLayerHeightInRem+ 'rem');
+      console.log('set new offers background min height to ' + contentLayerHeightInRem + 'rem');
+    }
+
+  }
+
+// each element:
+//  get the foreground container,
+//  measure its height,
+//  convert the pixel value to (r)em,
+//  find a corresponding custom css property,
+//  overwrite only if the new value is greater than the existing one
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
 
   /* body.no-js is handled by WordPress core in php body_class() */
@@ -403,12 +439,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  kleiderordnung.decoratedParagraphs = null;
-  // find decorated section to update their parallax background min height according to its foreground
-  // each element:
-  //  get the foreground container,
-  //  measure its height,
-  //  convert the pixel value to (r)em,
-  //  find a corresponding custom css property,
-  //  overwrite only if the new value is greater than the existing one
+  kleiderordnung.decoratedParagraphsHeightAdjustment();
 });
