@@ -7,59 +7,6 @@
  * @author openmindculture
  */
 
-:root {
-  --parallax-scale-offers: 0.1;
-  --parallax-min-height-offers: 255rem;
-  /* TODO inwiefern lässt sich folgendes generisch aus der obigen bzw. gemessenen Höhe ermitteln? */
-  --container-offset-adjustment-offers: 16rem;
-  /* TODO entsprechendes negative margin-bottom wäre eleganterweise auch generisch zu ermitteln? */
-  /* ^ wird es ja schon, aber das passt so nicht! bzw. müsste auch anhand der JS Messung angepasst werden! */
-}
-
-@media (prefers-reduced-motion) {
-  :root {
-    --parallax-scale-offers: 0;
-  }
-}
-
-.offers, .offers__layer, .offers__layer--content, .offers__layer--decoration {
-  --parallax-scale: var(--parallax-scale-offers);
-  --parallax-min-height: var(--parallax-min-height-offers);
-  --container-offset-adjustment: var(--container-offset-adjustment-offers);
-}
-
-@mixin decoration-parallax-group .offers {
-  width: var(--width-full);
-  max-width: var(--width-max);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -70rem; /* TODO s.o. eleganterweise sollte das generisch ermittelt werden */
-  /* TODO idealer margin-bottom variiert auch ja nach Bildschirmbreite bzw. sollte anhand der Höhe ermittelt werden */
-}
-
-@mixin decoration-parallax-layer .offers__layer {}
-
-@mixin decoration-parallax-layer-foreground .offers__layer--content {}
-
-@mixin decoration-parallax-layer-background .offers__layer--decoration {
-  background-image:
-    var(--background-image-pita),
-    var(--background-image-salmon),
-    var(--background-image-lilac);
-  background-position: /* X Y */
-    125% 0%,
-    -25% 50%,
-    125% 90%;
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat;
-  background-size:
-    50% 50%,
-    50% 50%,
-    50% 50%;
-}
-
 @mixin typography-heading-h2 .offers__headline {
   margin: 0 0 2rem 0;
   text-align: left;
