@@ -32,8 +32,9 @@ non-destructive editing limited to the intended content type (plain text or rich
 
 ### Content: Widgets, Custom Fields and Post Types
 
-- **page** (landing page, imprint, privacy, about me)
-  - The main index landing page contains most of the content and links / teasers to additional posts and pages.
+- **page** (front / home / landing page, imprint, privacy, about me)
+  - The main index landing page (front page / home page), defined in `front-page.php` according to the class [template hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/), contains most of the content and links / teasers to additional posts and pages.
+  - Any other regular static page, like imprint or privacy, is handled by `page.php`.
   - Text lines and paragraphs must be editable, probably as **custom fields**, using either plain text or very limited styling like bold, italic, underline, marker, link:
     - intro headline
     - intro text
@@ -73,7 +74,7 @@ non-destructive editing limited to the intended content type (plain text or rich
   - Offers Section (h2)
     - sub-navigation
     - offer article (post) (detailed, featured, main)
-      as a WordPress (custom) post, marked up as an <article>
+      as a WordPress (custom) post, marked up as an &lt;article&gt;
       with image, main headline (h3), text paragraphs, offer price etc.
     - (alternative further offers in a smaller card layout)
   - page decoration elements / section decoration elements
