@@ -37,6 +37,8 @@
   /* TODO idealer margin-bottom variiert auch ja nach Bildschirmbreite bzw. sollte anhand der Höhe ermittelt werden */
 }
 
+@mixin decoration-parallax-layer .offers__layer {}
+
 @mixin decoration-parallax-layer-foreground .offers__layer--content {}
 
 @mixin decoration-parallax-layer-background .offers__layer--decoration {

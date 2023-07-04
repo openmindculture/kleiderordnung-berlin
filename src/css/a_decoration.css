@@ -48,7 +48,17 @@ $(className) {
     max(100vh, var(--parallax-min-height))
     )
   );
+  margin-top: calc(1 / (1 - var(--parallax-scale)));
   margin-bottom: calc(-1 * var(--container-offset-adjustment));
+  @mixin-content;
+}
+}
+
+@define-mixin decoration-parallax-layer $className {
+$(className) {
+  top: 0;
+  transform-origin: center top;
+  transform: scaleY(calc(1 / (1 - var(--parallax-scale))));
   @mixin-content;
 }
 }
@@ -56,7 +66,7 @@ $(className) {
 @define-mixin decoration-parallax-layer-foreground $className {
 $(className) {
   position: relative;
-  top: 0;
+  margin-top: calc(-1 * var(--parallax-min-height));
   @mixin-content;
 }
 }
@@ -65,10 +75,6 @@ $(className) {
 $(className) {
   position: sticky;
   z-index: -2;
-  top: 0;
-  transform-origin: center top;
-  transform: scaleY(calc(1 / (1 - var(--parallax-scale))));
-  @mixin-content;
   height: 100%;
   min-height: 100vh;
   min-height: max(100vh, var(--parallax-min-height));
