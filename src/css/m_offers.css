@@ -33,8 +33,6 @@
   max-width: var(--width-max);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -70rem; /* TODO s.o. eleganterweise sollte das generisch ermittelt werden */
-  /* TODO idealer margin-bottom variiert auch ja nach Bildschirmbreite bzw. sollte anhand der Höhe ermittelt werden */
 }
 
 @mixin decoration-parallax-layer .offers__layer {}

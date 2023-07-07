@@ -37,34 +37,19 @@
 @define-mixin decoration-parallax-group $className {
 $(className) {
   position: relative;
-  /* z-index: -1; */
-  transform-origin: center top;
   transform: scaleY(calc(1 - var(--parallax-scale)));
-  /* margin-top breaks, but top doesn't? */
-  /* doesn't matter which, a compensated container only works unless the decoration stickiness starts */
-  top: calc(
-    var(--container-offset-adjustment)
-    +
-    (-1
-    *
-    max(100vh, var(--parallax-min-height))
-    )
-  );
-  /* compensate scale to the top */
-  /* margin-top: calc(1 / (1 - var(--parallax-scale))); /* without a unit that's always zero! */
-  /* TODO ... AND compensate content offset without breaking the effect */
-  /* margin-top: calc(var(--parallax-min-height) * (-1 / (1 - var(--parallax-scale)))); */
-  /* neither works AND breaks the effect as well???  */
-  /* but why didn't my "manual" adjustment break it? */
-  margin-bottom: calc(-1 * var(--container-offset-adjustment));
+  top: 0;
   @mixin-content;
 }
+$(className) + * {
+   position: relative;
+   z-index: 2;
+ }
 }
 
 @define-mixin decoration-parallax-layer $className {
 $(className) {
   top: 0;
-  transform-origin: center top;
   transform: scaleY(calc(1 / (1 - var(--parallax-scale))));
   @mixin-content;
 }
@@ -73,8 +58,8 @@ $(className) {
 @define-mixin decoration-parallax-layer-foreground $className {
 $(className) {
   position: relative;
-  /* compensating margin-top here breaks the parallax effect */
-  /* margin-top: calc(-1 * var(--parallax-min-height)); */
+  top: -100vh;
+  margin-bottom: -100vh;
   @mixin-content;
 }
 }
@@ -85,7 +70,6 @@ $(className) {
   z-index: -2;
   height: 100%;
   min-height: 100vh;
-  min-height: max(100vh, var(--parallax-min-height));
   background-attachment: fixed; /* legacy browser fallback */
   @mixin-content;
 }
