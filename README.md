@@ -167,6 +167,11 @@ Nachricht:
 Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
 ```
 
+#### Instagram Feed via Juicer
+
+- Known issues: occasional "juicer error" when using on localhost instead of configured domain or pseduo-public domain like browserstack's bs-local.com
+- account / API at juicer.io
+
 ### Localization
 
 The site is provided in a German and an English language version using the Polylang plugin.
