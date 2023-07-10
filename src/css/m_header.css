@@ -23,6 +23,12 @@
 /* Don’t Headbutt The Browser Window by Chris Coyer
 /* https://css-tricks.com/hash-tag-links-padding/ */
 /* http://darktef.github.io/posts/2017-03-offset-html-anchors-for-fixed-header-with-css */
+.target-offset {
+  pointer-events: none; /* prevent disabling interactive elements in previous section */
+}
+.target-offset > * {
+  pointer-events: all;
+}
 .target-offset::before,
 :target::before {
   display: block;
