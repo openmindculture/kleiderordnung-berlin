@@ -80,6 +80,28 @@
   text-align: right;
 }
 
+/* to make it look more natural / organic if the background intersects */
+/* start with a transparent link background ... */
+a.stories__navigation__link:link,
+a.stories__navigation__link:visited {
+  background-image:
+    linear-gradient(transparent, transparent),
+    linear-gradient(transparent, transparent),
+    linear-gradient(var(--color-hover-background), var(--color-hover-background));
+  background-position:
+    left top,
+    right top,
+    center top;
+  background-size:
+    100% 100%,
+    50% 100%,
+    0% 100%;
+  transition:
+    background-size 0.25s ease-in,
+    background-position 0.25s ease-in,
+    color 0.25s ease-in;
+}
+
 .stories__navigation__link,
 .stories__navigation__link:link,
 .stories__navigation__link:visited,

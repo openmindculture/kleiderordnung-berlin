@@ -20,6 +20,7 @@
     "comment-whitespace-inside": null,
     "custom-property-empty-line-before": null,
     "csstools/use-nesting": "ignore",
+    "declaration-block-no-duplicate-properties": null,
     "declaration-block-no-redundant-longhand-properties": null,
     "font-family-name-quotes": null,
     "keyframes-name-pattern": null,

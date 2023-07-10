@@ -30,6 +30,11 @@ html, body, main, .main, p {
 html, body {
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);
+  /* overflow-x: hidden; */
+  /* ^ TODO understand:
+          how can a HORIZONTAL modification
+          break the VERTICAL parall effect ?!?!?!?!
+          */
   voice-family: female;
   voice-pitch: medium;
 }

@@ -41,7 +41,7 @@ $(className) {
   top: 0;
   @mixin-content;
 }
-$(className) + * {
+$(className) ~ * {
    position: relative;
    z-index: 2;
  }
