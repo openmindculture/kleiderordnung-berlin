@@ -6,8 +6,27 @@
  */
 
 
-.mission {
+@mixin decoration-parallax-group .mission {
 
+}
+
+@mixin decoration-parallax-layer .mission__layer {}
+
+@mixin decoration-parallax-layer-foreground .mission__layer--content {}
+
+@mixin decoration-parallax-layer-background .mission__layer--decoration {
+  background-image:
+    var(--background-image-apricot),
+    var(--background-image-salmon2);
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-position:
+    -20% 0%,
+    120% 0%;
+  background-size:
+    50% 50%,
+    50% 50%;
 }
 
 .mission__card {

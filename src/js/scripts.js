@@ -197,6 +197,7 @@ kleiderordnung.activateExternalFeed = function(feedContainerElement) {
   }
 }
 
+// TODO obsolete?
 kleiderordnung.decoratedParagraphsHeightAdjustment = function() {
   console.log('kleiderordnung.decoratedParagraphsHeightAdjustment');
 // find decorated section to update their parallax background min height according to its foreground

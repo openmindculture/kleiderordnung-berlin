@@ -71,7 +71,26 @@ $(className) {
   height: 100%;
   min-height: 100vh;
   background-attachment: fixed; /* legacy browser fallback */
+  background-repeat: no-repeat;
   @mixin-content;
+}
+
+@media (min-width: 1400px) {
+  $(className) {
+    width: auto;
+    max-width: 100%;
+    max-width: 100vw;
+    max-width: min(100vw, 162.5rem);
+    margin-left: calc(-0.6 * (100vw - 1400px));
+    margin-right: calc(-0.6 * (100vw - 1400px));
+  }
+}
+
+@media (min-width: 2200px) {
+  $(className) {
+    margin-left: -43.75rem;
+    margin-right: -43.75rem;
+  }
 }
 }
 /* stylelint-enable */
