@@ -15,8 +15,8 @@
         <span class="footer__column__row__allrights">All rights reserved</span>
       </div>
       <div class="footer__column__row">
-        <a class="footer__column__row__link footer__column__row__link--imprint" href="#impressum" tabindex="0">Imprint</a><!-- TODO another distinct imprint page -->
-        <a class="footer__column__row__link footer__column__row__link--privacy" href="#datenschutz" tabindex="0">Privacy</a><!-- TODO another distinct privacy page -->
+        <a class="footer__column__row__link footer__column__row__link--imprint" href="/en/imprint/" tabindex="0">Imprint</a>
+        <a class="footer__column__row__link footer__column__row__link--privacy" href="/en/privacy-statement/" tabindex="0">Privacy</a>
       </div>
     </div>
     <div class="footer__columns__column footer__columns__column--50">

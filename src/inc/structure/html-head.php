@@ -9,7 +9,7 @@
 <head>
   <meta charset="utf-8">
   <!-- ?php echo get_wp_head(); ? -->
-  <title>KleiderOrdnung Berlin: nachhaltige Modeberatung von Tina Steinke</title>
+  <title><?php echo KLEIDERORDNUNG_PAGE_TITLE ?></title>
   <meta name=language content="de">
   <link rel="canonical" href="https://kleiderordnung.berlin/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

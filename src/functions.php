@@ -14,8 +14,15 @@ if ( ! defined ( 'KLEIDERORDNUNG_THEME_VERSION' ) ){
   define( 'KLEIDERORDNUNG_THEME_VERSION', '2.3.0' );
 }
 
-// the following should go to wp-config.php
-define('DISABLE_FSE', true); // disable site editing features like editable template parts TODO not working here
+function prefix_disable_gutenberg($current_status, $post_type)
+{
+  if ($post_type === 'post') return false;
+  return $current_status;
+}
+add_filter('use_block_editor_for_post_type', function ($current_status, $post_type){
+  if ($post_type === 'post') return false;
+  return $current_status;
+}, 10, 2);
 
 // TODO dequeue third party styles like contact form 7
 
