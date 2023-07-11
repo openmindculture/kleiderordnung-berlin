@@ -1,0 +1,15 @@
+/**
+ * Generic Page Styles
+ *
+ * for regular WordPress pages handled by page.php
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+body.page main {
+  width: var(--width-spaced);
+  max-width: var(--width-max);
+  margin-left: auto;
+  margin-right: auto;
+}

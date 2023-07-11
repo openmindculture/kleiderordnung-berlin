@@ -1,0 +1,32 @@
+/**
+ * TOS (AGB) and Generic Table Styles
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+.wp-block-table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.wp-block-table table {
+  background-color: var(--color-purple-pastel-pinkish);
+  display: table;
+  width: 100%;
+}
+
+.wp-block-table table td {
+  background-color: var(--color-primary-background);
+  height: 1.4rem; /* default line height as cell (min) height */
+}
+
+.wp-block-table table td:first-child {
+  width: 20%;
+  min-width: 18.75rem;
+}
+
+.wp-block-table table td:last-child {
+  width: 80%;
+}

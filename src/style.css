@@ -26,6 +26,9 @@
 @import url("css/a_carousel.css");
 @import url("css/a_decoration.css");
 @import url("css/a_list.css");
+@import url("css/a_page.css");
+@import url("css/a_post.css");
+@import url("css/a_table.css");
 /* -- page sections in alphabetical order -- */
 /* -- TODO move or copy page and header layout rules to critical.css to prevent layout shift */
 @import url("css/m_calltoaction.css");

@@ -18,6 +18,8 @@
         <svg viewBox="0 0 512 512" aria-hidden="true" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" fill="currentColor"/></svg>
         <span class="sr-only">Menü schließen</span>
       </a>
+      <!-- TODO use absolute paths! to make anchor links work on any page (e.g. privacy)
+        -->
       <ul id="menu-main" class="navigation__list navigation__list--main">
         <li id="menu-main-item-angebot" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1857"><a href="#angebot"  tabindex="0">Angebot</a></li>
         <li id="menu-main-item-mission" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"><a href="#mission"  tabindex="0">Mission</a></li>

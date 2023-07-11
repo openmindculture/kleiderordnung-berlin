@@ -23,6 +23,7 @@
       <div class="footer__column__row">
         <a class="footer__column__row__link footer__column__row__link--imprint" href="/impressum/" tabindex="0">Impressum</a>
         <a class="footer__column__row__link footer__column__row__link--privacy" href="/datenschutzerklaerung/" tabindex="0">Datenschutz</a>
+        <a class="footer__column__row__link footer__column__row__link--tos" href="/allgemeine-geschaeftsbedingungen/" tabindex="0">AGB</a>
       </div>
     </div>
     <div class="footer__columns__column footer__columns__column--50">
