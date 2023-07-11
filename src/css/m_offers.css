@@ -49,14 +49,14 @@
     no-repeat,
     no-repeat,
     no-repeat;
-  background-position: /* X Y */
-    125% 0%,
-    -25% 50%,
-    150% 90%;
+  background-position:
+    120% 0%,
+    -20% 50%,
+    120% 70%;
   background-size:
-    50% 50%,
-    50% 50%,
-    50% 50%;
+    40% 40%,
+    40% 40%,
+    40% 40%;
 }
 
 /* TODO test, fine tune, clean up and refactor
