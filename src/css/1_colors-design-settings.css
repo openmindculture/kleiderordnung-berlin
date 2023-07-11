@@ -32,6 +32,9 @@
   --header-height-negative: -10rem;
   --header-height-stuck: 0;
 
+  /* header + (min) footer height to set a min height for main content */
+  --footer-height: 13rem;
+
   /* Text Styles */
   --font-family-henderson: "Henderson Sans W00", sans-serif;
   --font-family-ivymode: "IvyMode", serif;

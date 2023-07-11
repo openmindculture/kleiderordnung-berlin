@@ -27,6 +27,10 @@ html, body, main, .main, p {
   line-height: 140%; /* would that be 1.4 ? is there a best-practice notation? "or 22px" */
 }
 
+main {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
 html, body {
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);

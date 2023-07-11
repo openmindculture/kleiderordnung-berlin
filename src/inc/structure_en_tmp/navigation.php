@@ -19,11 +19,11 @@
         <span class="sr-only">Close menu</span>
       </a>
       <ul id="menu-main" class="navigation__list navigation__list--main">
-        <li id="menu-main-item-angebot" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1857"><a href="#angebot"  tabindex="0">My Services</a></li>
-        <li id="menu-main-item-mission" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"><a href="#mission"  tabindex="0">My Mission</a></li>
-        <li id="menu-main-item-stories" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1855"><a href="#stories"  tabindex="0">Stories</a></li>
-        <li id="menu-main-item-news" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1854"><a href="#news"  tabindex="0">News</a></li>
-        <li id="menu-main-item-kontakt" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-1853"><a class="button button--primary" href="#kontakt" tabindex="0">Contact</a></li>
+        <li id="menu-main-item-angebot" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1857"><a href="/?en#angebot"  tabindex="0">My Services</a></li>
+        <li id="menu-main-item-mission" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"><a href="/?en#mission"  tabindex="0">My Mission</a></li>
+        <li id="menu-main-item-stories" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1855"><a href="/?en#stories"  tabindex="0">Stories</a></li>
+        <li id="menu-main-item-news" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1854"><a href="/?en#news"  tabindex="0">News</a></li>
+        <li id="menu-main-item-kontakt" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-1853"><a class="button button--primary" href="/?en#kontakt" tabindex="0">Contact</a></li>
         <li id=""menu-main-item-language" class="lang-item lang-item-8 lang-item-de current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-1859-de">
         <a href="/" hreflang="de" lang="de" title="Deutsch" tabindex="0">DE</a>/<a href="/?en" hreflang="en" lang="en" title="English" tabindex="0">EN</a>
         </li>
