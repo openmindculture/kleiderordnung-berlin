@@ -33,7 +33,7 @@
 
     <div class="offers__cards">
       <!-- Offer 1/5 -->
-      <article id="angebote-style-visit" class="offers__offer has-secondary-background">
+      <article id="angebote-style-visit" class="offers__offer">
         <figure class="offers__offer__image">
           <picture>
             <img
@@ -81,7 +81,7 @@
       </article>
 
       <!-- Offer 2/5 -->
-      <article id="angebote-shopping-tour" class="offers__offer has-secondary-background">
+      <article id="angebote-shopping-tour" class="offers__offer">
         <figure class="offers__offer__image">
           <picture>
             <img
@@ -128,7 +128,7 @@
       </article>
 
       <!-- Offer 3/5 -->
-      <article id="angebote-online-styling-beratung" class="offers__offer has-secondary-background">
+      <article id="angebote-online-styling-beratung" class="offers__offer">
         <figure class="offers__offer__image">
           <picture>
             <img
@@ -171,7 +171,7 @@
       </article>
 
       <!-- Offer 4/5 -->
-      <article id="angebote-outfit-consulting" class="offers__offer has-secondary-background">
+      <article id="angebote-outfit-consulting" class="offers__offer">
         <figure class="offers__offer__image">
           <picture>
             <img
@@ -216,7 +216,7 @@
       </article>
 
       <!-- Offer 5/5 -->
-      <article id="angebote-kleiderordnung" class="offers__offer has-secondary-background">
+      <article id="angebote-kleiderordnung" class="offers__offer">
         <figure class="offers__offer__image">
           <picture>
             <img

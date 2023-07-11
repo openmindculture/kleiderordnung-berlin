@@ -83,16 +83,5 @@ a:not(.button):focus {
       0 100%,
       100% 100%;
     }
-
-    .has-secondary-background a:not(.button),
-    .has-secondary-background a:not(.button):link,
-    .has-secondary-background a:not(.button):visited,
-    .has-secondary-background a:not(.button):active,
-    .has-secondary-background a:not(.button):hover,
-    .has-secondary-background a:not(.button):focus {
-      background-image: linear-gradient(var(--color-secondary-background), var(--color-secondary-background)),
-      linear-gradient(var(--color-secondary-background), var(--color-secondary-background)),
-      linear-gradient(var(--color-hover-background), var(--color-hover-background));
-    }
   }
 }
