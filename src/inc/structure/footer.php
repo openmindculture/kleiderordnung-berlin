@@ -14,6 +14,12 @@
         <span class="footer__column__row__softhyphen">–</span>
         <span class="footer__column__row__allrights">All rights reserved</span>
       </div>
+      <!-- TODO
+       * TODO de/en aus wp properties => structure_en_tmp obsolet
+        * TODO footer links generischer möglich?
+        => get_the_privacy_policy_link() | Function
+           aber auch mehrsprachigi mit Polylang?
+        -->
       <div class="footer__column__row">
         <a class="footer__column__row__link footer__column__row__link--imprint" href="/impressum/" tabindex="0">Impressum</a>
         <a class="footer__column__row__link footer__column__row__link--privacy" href="/datenschutzerklaerung/" tabindex="0">Datenschutz</a>

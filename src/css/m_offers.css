@@ -59,7 +59,14 @@
     50% 50%;
 }
 
-/* TODO test, fine tune, clean up and refactor using variables, rem, percentage where possible */
+/* TODO test, fine tune, clean up and refactor
+    using variables, rem, percentage where possible
+
+    bg height größer als 100vh damit dekos nicht überlappen,
+  aber deutluch kleiner als fg height damit noch Parallax Effekt
+  min-height: min(200vh, var(--parallax-min-height)
+  und dann ggf noch Background Position der unteren (u. ggf. mittleren) Deko höher damit unten nicht überragt
+    */
 
 @media (min-width: 1400px) {
   .offers__layer--decoration {
