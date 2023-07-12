@@ -6,37 +6,54 @@
  * @author openmindculture
  */
 ?>
-
 <?php
-$args = array(
-  'post_type'      => 'story',
-  'lang'           => 'de', /* TODO use current language */
-  'posts_per_page' => -1,
-  'orderby' => array(
-    'position_number' => 'ASC'
-  )
-);
-$the_query = new WP_Query( $args ); ?>
-<?php if ( $the_query->have_posts() ) : $loop_index = 0; ?>
+  $args = array(
+    'post_type'      => 'story',
+    'lang'           => 'de', /* TODO use current language */
+    'posts_per_page' => -1
+  );
+  $the_query = new WP_Query( $args );
+  $resorted_post_ids = array();
+  if ( $the_query->have_posts() ) : ?>
+
   <section id="stories" class="stories target-offset">
     <h2 class="stories__headline">Stories</h2>
     <div class="stories__wrapper carousel__wrapper">
       <div class="stories__viewport carousel__viewport">
-      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+<?php
+    $loop_index = 0;
+    while ( $the_query->have_posts() ) :
+      $the_query->the_post();
+      $unique_post_position_number = get_field('position_number', get_the_ID());
+      if (isset($resorted_post_ids[$unique_post_position_number])) {
+        $unique_post_position_number .= $loop_index; // random order is better than losing data
+      }
+      $resorted_post_ids[$unique_post_position_number] = get_the_ID();
+      $loop_index++;
+    endwhile;
+
+    ksort($resorted_post_ids);
+    $loop_index = 0;
+    foreach ($resorted_post_ids as $resorted_post_position_number => $resorted_post_id) {
+      ?>
         <div class="stories__story carousel__item carousel__item--index-<?php echo $loop_index?>"<?php if ($loop_index == 0) : echo 'id="stories-items-first"'; endif ?>>
           <figure class="stories__story__image">
-            <?php the_post_thumbnail() ?>
+            <?php echo get_the_post_thumbnail($resorted_post_id) ?>
           </figure>
           <figure class="stories__story__quote">
             <figcaption class="stories__story__quote__author">
-              <?php the_title() ?> (position_number:  <?php echo get_field('position_number', get_the_ID()); ?>)
+              <?php echo get_the_title($resorted_post_id) ?>
             </figcaption>
             <blockquote class="stories__story__quote__text">
-              <?php the_content() ?>
+              <?php echo get_the_content($resorted_post_id) ?>
             </blockquote>
           </figure>
         </div>
-      <?php $loop_index++; endwhile; ?>
+      <?php
+      $loop_index++;
+    }
+    ?>
       </div>
 
       <nav class="stories__navigation carousel__navigation">
