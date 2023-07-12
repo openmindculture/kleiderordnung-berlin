@@ -1,14 +1,19 @@
 <?php
-/*!
-Plugin Name: Openmindculture Kleiderorndung Register Custom Post Type
-Plugin URI: https://github.com/openmindculture/wp_template
-Description: Plugin to register custom post types
-Version: 1.2.3
-Author: Ingo Steinke
-Author URI: https://www.ingo-steinke.com/
-Textdomain: myprefix-register-custom-post-type
-License: GPLv2
-*/
+/**
+ * @package KleiderOrdnung
+ * @author openmindculture
+ * @version 2.3.0
+ *
+ * @wordpress-plugin
+ * Version: 2.3.0
+ * Tested up to: 6.2
+ * Plugin Name: Kleiderordnung Register Custom Post Types
+ * Text Domain: kleiderordnung-register-custom-post-types
+ * Author: openmindculture
+ * Author URI: https://wordpress.org/support/users/openmindculture/
+ * Plugin URI: https://github.com/openmindculture/kleiderordnung-berlin
+ * Description: Plugin to register custom post types
+ */
 
 function openmindculture_register_post_type() {
 	$labels = array(

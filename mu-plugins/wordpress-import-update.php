@@ -1,6 +1,13 @@
 <?php
-
 /**
+ * @package KleiderOrdnung
+ * @author balbuf (Stephen Beemsterboer)
+ * @wordpress-plugin
+ * Description: update existing posts when using the WordPress Importer
+ * Plugin URI: https://gist.github.com/balbuf/d232769f1e7d66fe91b8ecd7795ef3cb
+ * Author URI: https://github.com/balbuf
+ * Tested up to: 6.2
+ *
  * When using the WordPress Importer, update existing
  * posts instead of skipping them. Updates content according
  * to the import file even if the existing post was updated
@@ -8,9 +15,6 @@
  *
  * To use, drop this file into your /mu-plugins/ folder or
  * copy this code into your functions.php file.
- *
- * source:
- * https://gist.github.com/balbuf/d232769f1e7d66fe91b8ecd7795ef3cb
  */
 
 class WPImporterUpdate {

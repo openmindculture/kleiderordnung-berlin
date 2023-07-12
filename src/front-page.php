@@ -5,6 +5,8 @@
   <body <?php body_class(); ?> itemtype="https://schema.org/WebPage" itemscope>
   <?php
     if ( str_starts_with(parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY), 'en')  ) {
+      // TODO localize common template files
+      // TODO use default language URL (instead of ?en or as an alternative) handled by Polylang
       include( KLEIDERORDNUNG_DIR . '/inc/structure_en_tmp/header.php');
       echo '<main id="wp--skip-link--target">';
       include( KLEIDERORDNUNG_DIR . '/inc/structure_en_tmp/intro.php');

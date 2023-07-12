@@ -233,6 +233,21 @@ kleiderordnung.decoratedParagraphsHeightAdjustment = function() {
 //  overwrite only if the new value is greater than the existing one
 }
 
+/** Matomo Analytics */
+kleiderordnung.activateAnalyticsTracking = function() {
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  _paq.push(['alwaysUseSendBeacon']);
+  _paq.push(['setTrackerUrl', kleiderordnung_wpurl + '/wp-content/plugins/matomo/app/matomo.php']);
+  _paq.push(['setSiteId', '1']);
+  var g = document.createElement('script');
+  var s = document.getElementsByTagName('script')[0];
+  g.type = 'text/javascript';
+  g.async = true;
+  g.src = kleiderordnung_wpurl + '/wp-content/uploads/matomo/matomo.js';
+  s.parentNode.insertBefore(g,s);
+}
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -441,4 +456,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   kleiderordnung.decoratedParagraphsHeightAdjustment();
+  kleiderordnung.activateAnalyticsTracking();
+
 });

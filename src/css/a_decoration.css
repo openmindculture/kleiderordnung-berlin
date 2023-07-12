@@ -9,6 +9,8 @@
  *     .decoration__perspective__section__layer.decoration__perspective__section__layer--content (comes first, determines content height)
  *     .decoration__perspective__section__layer.decoration__perspective__section__layer--decoration (decoration items behind content)
  *       .decoration__item (colored vector graphic shapes)
+
+ * TODO regression global width not correct anymore?! since about 2.3.0
  *
  * @package KleiderOrdnung
  * @author openmindculture

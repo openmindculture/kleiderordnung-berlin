@@ -1,0 +1,17 @@
+/**
+ * Styles for WP-Admin
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+@import url("css/1_colors-design-settings.css");
+
+body {
+  background-color: var(--color-primary-background);
+  border: solid 3px green !important;
+  /* TODO *
+   * use colors depending on URL to indicate and make it easier to disambiguate installations
+   */
+  /
+}

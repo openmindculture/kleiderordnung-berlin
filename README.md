@@ -14,13 +14,32 @@ Make sure to that the theme KleiderOrdnung got activated or activate it manually
 
 To deploy the KleiderOrdnung theme on a website,
 - install WordPress core and the required plugins,
-- copy `kleiderordnung-register-custom-post-type.php` to `wp-content/mu-plugins`,
+- copy all `wp-content/mu-plugins/*.php` files manually,
 - install the lastest KleiderOrdnung theme by uploading it in WP-Admin,
 - activate the theme,
 - copy all icons and manifest files (`*.ico`, `*.png`, `*.svg`, `*.json`, `*.xml`, `robots.txt`) to the web root directory
 - configure server and caching by editing `.htaccess` / `nginx.conf` / hosting backend or by using appropriate plugins,
 - use additional reverse proxy and/or CDN servers if necessary,
 - test everything and backup your data regularly!
+
+## Data Flow, Backups, Updates
+
+Design and behavior is controlled by the theme and plugins which can be deployed to production after testing. Content (data) is edited on the production server and synchronized back to test and development systems.
+
+![data flow](doc/theme-and-data-flow.png)
+
+Upload
+ - the theme (ZIP) via wp-admin
+ - the `mu-plugins` via (S)FTP (**NOT included in the theme file!**)
+
+Download
+ - `content.xml` via WordPress tools export / import
+
+Existing posts and pages will be replaced when importing. This is non-standard configured behavior which will only work if `mu-plugins/wordpress-import-update.php` is present!
+
+DON'T commit any personal data (possibly included in a complete "all content" export file). Make sure to review and clean up any `content.xml` before committing!
+
+Review and synchronize settings manually, as far as you find useful. Make sure that all necessary plugins are installed.
 
 ## Setup, Structure, Editing
 
