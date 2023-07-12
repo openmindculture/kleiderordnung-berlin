@@ -9,16 +9,14 @@
 
 <?php
 $args = array(
-  'post_type' => 'story',
-  'lang' => 'de', /* TODO use current language */
-  'posts_per_page' => 99,
+  'post_type'      => 'story',
+  'lang'           => 'de', /* TODO use current language */
+  'posts_per_page' => -1,
   'orderby' => array(
     'position_number' => 'ASC'
-  ),
-  'order' => 'DESC',
+  )
 );
 $the_query = new WP_Query( $args ); ?>
-
 <?php if ( $the_query->have_posts() ) : $loop_index = 0; ?>
   <section id="stories" class="stories target-offset">
     <h2 class="stories__headline">Stories</h2>

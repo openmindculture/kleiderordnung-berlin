@@ -76,7 +76,7 @@ function kleiderordnung_register_post_type() {
           'key' => 'position_number',
           'label' => 'Positionsnummer (Beispiel: 2)',
           'name' => 'Positionsnummer',
-          'type' => 'number',
+          'type' => 'text',
         )
       ),
       'location' => array (
@@ -117,11 +117,11 @@ function kleiderordnung_register_post_type() {
     function kleiderordnung_story_orderby( $vars ) {
       if ( isset( $vars['orderby'] ) && 'position_number' == $vars['orderby'] ) {
         $vars = array_merge( $vars, array(
+          'meta_key'       => 'position_number',
           'orderby' => array(
-            'position_number' => 'ASC',
-            'lang' => 'ASC'
+            'position_number' => 'ASC'
           )
-        ) );
+        ));
       }
       return $vars;
     }
