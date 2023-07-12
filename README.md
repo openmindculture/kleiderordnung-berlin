@@ -34,15 +34,19 @@ non-destructive editing limited to the intended content type (plain text or rich
 
 - **page** (front / home / landing page, imprint, privacy, about me)
   - The main index landing page (front page / home page), defined in `front-page.php` according to the class [template hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/), contains most of the content and links / teasers to additional posts and pages.
-  - Any other regular static page, like imprint or privacy, is handled by `page.php`.
+  - Any other regular static page, like **privacy**, **imprint**, **tos** (AGB), is handled by `page.php`
   - Text lines and paragraphs must be editable, probably as **custom fields**, using either plain text or very limited styling like bold, italic, underline, marker, link:
     - intro headline
     - intro text
     - mission headline
     - mission text
-    - contact teaser text
-- **offer** (not a "product" to avoid conflict with optional shop plugins)
-  - taxonomy: **offer_section** (main | other)
+    - contact teaser text and content next to contact form
+- **post** (**News** blog posts / teasers)
+  - category title = over headline
+  - post title = teaser headline / text
+  - post image = main post image
+- **offer** (**Angebot**; not a "product" to avoid conflict with optional shop plugins)
+  - taxonomy: **offer_section** (`main` | `other`)
   - Fields:
     - post title = main headline
     - post text = intro text
@@ -51,19 +55,15 @@ non-destructive editing limited to the intended content type (plain text or rich
     - price annotation text
     - post image = main post image (only in main offer section)
     - post icon
-- **story** ("Stories" / Testimonials)
+- **story** (**Stories** / Testimonials)
   - post title = headline: testimonial name and short description
   - post text = quotation
   - post image(s) = main image (and possibly more optional images)
-- **post** ("News" blog posts)
-  - catagory title = over headline
-  - post title = teaser headline / text
-  - post image = main post image
-- (instagram section as juicer feed)
-- (contact form 7 widget via shortcode)
-- (fixed contact information and links below editable contact text)
+- content handled by plugins:
+  - Instagram section as juicer feed
+  - contact form 7 widget via shortcode
 
-#### Page Structure
+#### Front Page Structure
 
 - Header: the (sticky) header bar with logo and main navigation
 - Main:

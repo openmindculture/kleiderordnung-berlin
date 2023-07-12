@@ -19,6 +19,10 @@ add_filter('use_block_editor_for_post_type', function ($current_status, $post_ty
   return $current_status;
 }, 10, 2);
 
+add_action( 'admin_init', function () {
+  add_editor_style( 'editor-style.css');
+});
+
 // reminder that actions wrap filter calls
 // so there is any order preference despite the declarative approach
 // I would rather put filter hooks before action hooks

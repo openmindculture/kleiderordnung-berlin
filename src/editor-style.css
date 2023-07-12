@@ -1,0 +1,22 @@
+/**
+ * Editor Styles for Classic Editor (TinyMCE)
+ *
+ * @package KleiderOrdnung
+ * @author openmindculture
+ */
+
+@import url("css/typography.css.php");
+@import url("css/1_colors-design-settings.css");
+
+body#tinymce.wp-editor {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-16);
+  line-height: 140%;
+  background-color: var(--color-primary-background);
+  color: var(--color-primary-foreground);
+}
+
+body#tinymce.wp-editor.post-type-post {
+  background-color: var(--color-default-white);
+}
