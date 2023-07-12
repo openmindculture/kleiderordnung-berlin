@@ -32,7 +32,7 @@ function kleiderordnung_register_post_type() {
 		'update_item'           => 'Update Story',
 		'view_item'             => 'View Story',
 		'view_items'            => 'View Stories',
-		'search_items'          => 'Search Story',
+		'search_items'          => 'Suchen in Stories',
 		'not_found'             => 'Not found',
 		'not_found_in_trash'    => 'Not found in Trash',
 		'featured_image'        => 'Featured Image',

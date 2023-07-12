@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-07-12 13:16" -->
+	<!-- generator="WordPress/6.2.2" created="2023-07-12 17:16" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Wed, 12 Jul 2023 13:16:41 +0000</pubDate>
+	<pubDate>Wed, 12 Jul 2023 17:16:55 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -200,6 +200,38 @@
 		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[pll_64aea7b319626]]></wp:term_name>
 		<wp:term_description><![CDATA[a:2:{s:2:"en";i:110;s:2:"de";i:101;}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>27</wp:term_id>
+		<wp:term_taxonomy><![CDATA[post_translations]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_64aedf49ed767]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[pll_64aedf49ed767]]></wp:term_name>
+		<wp:term_description><![CDATA[a:2:{s:2:"de";i:122;s:2:"en";i:121;}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>28</wp:term_id>
+		<wp:term_taxonomy><![CDATA[post_translations]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_64aedfaf3463e]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[pll_64aedfaf3463e]]></wp:term_name>
+		<wp:term_description><![CDATA[a:2:{s:2:"en";i:123;s:2:"de";i:116;}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>29</wp:term_id>
+		<wp:term_taxonomy><![CDATA[post_translations]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_64aedfd0e09c1]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[pll_64aedfd0e09c1]]></wp:term_name>
+		<wp:term_description><![CDATA[a:2:{s:2:"en";i:124;s:2:"de";i:118;}]]></wp:term_description>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>30</wp:term_id>
+		<wp:term_taxonomy><![CDATA[post_translations]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_64aedfeb16903]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[pll_64aedfeb16903]]></wp:term_name>
+		<wp:term_description><![CDATA[a:2:{s:2:"en";i:125;s:2:"de";i:120;}]]></wp:term_description>
 	</wp:term>
 		
 	<generator>https://wordpress.org/?v=6.2.2</generator>
@@ -1413,6 +1445,403 @@ admin]]></content:encoded>
 		</wp:postmeta>
 							</item>
 					<item>
+		<title><![CDATA[news-example-2]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/second-hand-shopping-am-12-mai-auf-dem-flowmarkt-nowkoelln/news-example-2/</link>
+		<pubDate>Wed, 12 Jul 2023 13:09:55 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/news-example-2.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>104</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 15:09:55]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 13:09:55]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 15:09:55]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 13:09:55]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[news-example-2]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>99</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+						<wp:attachment_url><![CDATA[http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/news-example-2.jpg]]></wp:attachment_url>
+							<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023/07/news-example-2.jpg]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:440;s:6:"height";i:248;s:4:"file";s:26:"2023/07/news-example-2.jpg";s:8:"filesize";i:36698;s:5:"sizes";a:3:{s:6:"medium";a:5:{s:4:"file";s:26:"news-example-2-300x169.jpg";s:5:"width";s:3:"300";s:6:"height";s:3:"169";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"16539";}s:9:"thumbnail";a:5:{s:4:"file";s:26:"news-example-2-150x150.jpg";s:5:"width";s:3:"150";s:6:"height";s:3:"150";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:4:"9587";}s:18:"cmplz_banner_image";a:5:{s:4:"file";s:26:"news-example-2-350x100.jpg";s:5:"width";s:3:"350";s:6:"height";s:3:"100";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"11800";}}s:10:"image_meta";a:11:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[tiny_compress_images]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:4:{i:0;a:3:{s:5:"input";a:2:{s:4:"size";i:117532;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:36698;s:4:"type";s:10:"image/jpeg";s:5:"width";i:440;s:6:"height";i:248;s:5:"ratio";d:0.312199999999999977529085981586831621825695037841796875;}s:3:"end";i:1689167397;}s:6:"medium";a:3:{s:5:"input";a:2:{s:4:"size";i:16539;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:14749;s:4:"type";s:10:"image/jpeg";s:5:"width";i:300;s:6:"height";i:169;s:5:"ratio";d:0.89180000000000003712585794346523471176624298095703125;}s:3:"end";i:1689167398;}s:9:"thumbnail";a:3:{s:5:"input";a:2:{s:4:"size";i:9587;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:8581;s:4:"type";s:10:"image/jpeg";s:5:"width";i:150;s:6:"height";i:150;s:5:"ratio";d:0.8951000000000000067501559897209517657756805419921875;}s:3:"end";i:1689167397;}s:18:"cmplz_banner_image";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[news-example-1]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/gute-gespraeche-und-viel-zu-sehen-unterwegs-auf-der-green-fashion-fair-berlin/news-example-1/</link>
+		<pubDate>Wed, 12 Jul 2023 13:10:25 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/news-example-1.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>105</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 15:10:25]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 13:10:25]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 15:10:25]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 13:10:25]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[news-example-1]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>101</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+						<wp:attachment_url><![CDATA[http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/news-example-1.jpg]]></wp:attachment_url>
+							<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023/07/news-example-1.jpg]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:440;s:6:"height";i:248;s:4:"file";s:26:"2023/07/news-example-1.jpg";s:8:"filesize";i:54486;s:5:"sizes";a:3:{s:6:"medium";a:5:{s:4:"file";s:26:"news-example-1-300x169.jpg";s:5:"width";s:3:"300";s:6:"height";s:3:"169";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"17098";}s:9:"thumbnail";a:5:{s:4:"file";s:26:"news-example-1-150x150.jpg";s:5:"width";s:3:"150";s:6:"height";s:3:"150";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:4:"8668";}s:18:"cmplz_banner_image";a:5:{s:4:"file";s:26:"news-example-1-350x100.jpg";s:5:"width";s:3:"350";s:6:"height";s:3:"100";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"11653";}}s:10:"image_meta";a:11:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[tiny_compress_images]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:4:{i:0;a:3:{s:5:"input";a:2:{s:4:"size";i:143964;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:54486;s:4:"type";s:10:"image/jpeg";s:5:"width";i:440;s:6:"height";i:248;s:5:"ratio";d:0.378500000000000003108624468950438313186168670654296875;}s:3:"end";i:1689167427;}s:6:"medium";a:3:{s:5:"input";a:2:{s:4:"size";i:17098;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:16075;s:4:"type";s:10:"image/jpeg";s:5:"width";i:300;s:6:"height";i:169;s:5:"ratio";d:0.94020000000000003570477247194503434002399444580078125;}s:3:"end";i:1689167428;}s:9:"thumbnail";a:3:{s:5:"input";a:2:{s:4:"size";i:8668;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:8157;s:4:"type";s:10:"image/jpeg";s:5:"width";i:150;s:6:"height";i:150;s:5:"ratio";d:0.94099999999999994759747323769261129200458526611328125;}s:3:"end";i:1689167428;}s:18:"cmplz_banner_image";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[maxi@2x]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/maxi2x/</link>
+		<pubDate>Wed, 12 Jul 2023 16:39:10 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/maxi@2x.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>115</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 18:39:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 16:39:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 18:39:26]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 16:39:26]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[maxi2x]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+						<wp:attachment_url><![CDATA[http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/maxi@2x.jpg]]></wp:attachment_url>
+							<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023/07/maxi@2x.jpg]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:638;s:6:"height";i:1134;s:4:"file";s:19:"2023/07/maxi@2x.jpg";s:8:"filesize";i:268644;s:5:"sizes";a:4:{s:6:"medium";a:5:{s:4:"file";s:19:"maxi@2x-169x300.jpg";s:5:"width";s:3:"169";s:6:"height";s:3:"300";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"17623";}s:5:"large";a:5:{s:4:"file";s:20:"maxi@2x-576x1024.jpg";s:5:"width";s:3:"576";s:6:"height";s:4:"1024";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:6:"143606";}s:9:"thumbnail";a:5:{s:4:"file";s:19:"maxi@2x-150x150.jpg";s:5:"width";s:3:"150";s:6:"height";s:3:"150";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:4:"8750";}s:18:"cmplz_banner_image";a:5:{s:4:"file";s:19:"maxi@2x-350x100.jpg";s:5:"width";s:3:"350";s:6:"height";s:3:"100";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"11297";}}s:10:"image_meta";a:11:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[tiny_compress_images]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:5:{i:0;a:3:{s:5:"input";a:2:{s:4:"size";i:803877;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:268644;s:4:"type";s:10:"image/jpeg";s:5:"width";i:638;s:6:"height";i:1134;s:5:"ratio";d:0.334199999999999997069011214989586733281612396240234375;}s:3:"end";i:1689179956;}s:6:"medium";a:3:{s:5:"input";a:2:{s:4:"size";i:17623;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:16474;s:4:"type";s:10:"image/jpeg";s:5:"width";i:169;s:6:"height";i:300;s:5:"ratio";d:0.93479999999999996429522752805496565997600555419921875;}s:3:"end";i:1689179957;}s:5:"large";a:3:{s:5:"input";a:2:{s:4:"size";i:143606;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:128047;s:4:"type";s:10:"image/jpeg";s:5:"width";i:576;s:6:"height";i:1024;s:5:"ratio";d:0.89170000000000004813927034774678759276866912841796875;}s:3:"end";i:1689179959;}s:9:"thumbnail";a:3:{s:5:"input";a:2:{s:4:"size";i:8750;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:8202;s:4:"type";s:10:"image/jpeg";s:5:"width";i:150;s:6:"height";i:150;s:5:"ratio";d:0.9374000000000000110134124042815528810024261474609375;}s:3:"end";i:1689179957;}s:18:"cmplz_banner_image";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Foto der Kundin Maxi]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[jackie@2x]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/story/jackie-marketing-lead-impact-hub-berlin/jackie2x/</link>
+		<pubDate>Wed, 12 Jul 2023 16:57:05 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/jackie@2x.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>117</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 18:57:05]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 16:57:05]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 18:57:14]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 16:57:14]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[jackie2x]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>116</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+						<wp:attachment_url><![CDATA[http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/jackie@2x.jpg]]></wp:attachment_url>
+							<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023/07/jackie@2x.jpg]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:642;s:6:"height";i:1140;s:4:"file";s:21:"2023/07/jackie@2x.jpg";s:8:"filesize";i:129574;s:5:"sizes";a:4:{s:6:"medium";a:5:{s:4:"file";s:21:"jackie@2x-169x300.jpg";s:5:"width";s:3:"169";s:6:"height";s:3:"300";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"14647";}s:5:"large";a:5:{s:4:"file";s:22:"jackie@2x-577x1024.jpg";s:5:"width";s:3:"577";s:6:"height";s:4:"1024";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:6:"118079";}s:9:"thumbnail";a:5:{s:4:"file";s:21:"jackie@2x-150x150.jpg";s:5:"width";s:3:"150";s:6:"height";s:3:"150";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:4:"8308";}s:18:"cmplz_banner_image";a:5:{s:4:"file";s:21:"jackie@2x-350x100.jpg";s:5:"width";s:3:"350";s:6:"height";s:3:"100";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"10726";}}s:10:"image_meta";a:11:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[tiny_compress_images]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:5:{i:0;a:3:{s:5:"input";a:2:{s:4:"size";i:694243;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:129574;s:4:"type";s:10:"image/jpeg";s:5:"width";i:642;s:6:"height";i:1140;s:5:"ratio";d:0.18659999999999998809840917601832188665866851806640625;}s:3:"end";i:1689181029;}s:6:"medium";a:3:{s:5:"input";a:2:{s:4:"size";i:14647;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:13883;s:4:"type";s:10:"image/jpeg";s:5:"width";i:169;s:6:"height";i:300;s:5:"ratio";d:0.94779999999999997584154698415659368038177490234375;}s:3:"end";i:1689181030;}s:5:"large";a:3:{s:5:"input";a:2:{s:4:"size";i:118079;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:103491;s:4:"type";s:10:"image/jpeg";s:5:"width";i:577;s:6:"height";i:1024;s:5:"ratio";d:0.87649999999999994582111639829236082732677459716796875;}s:3:"end";i:1689181031;}s:9:"thumbnail";a:3:{s:5:"input";a:2:{s:4:"size";i:8308;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:7912;s:4:"type";s:10:"image/jpeg";s:5:"width";i:150;s:6:"height";i:150;s:5:"ratio";d:0.95230000000000003534950110406498424708843231201171875;}s:3:"end";i:1689181030;}s:18:"cmplz_banner_image";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Foto der Kundin Jackie]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[maik@2x]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/story/mike-freelance-translator-berlin/maik2x/</link>
+		<pubDate>Wed, 12 Jul 2023 16:58:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/maik@2x.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>119</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 18:58:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 16:58:00]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 18:58:07]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 16:58:07]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[maik2x]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>118</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+						<wp:attachment_url><![CDATA[http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/maik@2x.jpg]]></wp:attachment_url>
+							<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023/07/maik@2x.jpg]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:642;s:6:"height";i:1140;s:4:"file";s:19:"2023/07/maik@2x.jpg";s:8:"filesize";i:125852;s:5:"sizes";a:4:{s:6:"medium";a:5:{s:4:"file";s:19:"maik@2x-169x300.jpg";s:5:"width";s:3:"169";s:6:"height";s:3:"300";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"16533";}s:5:"large";a:5:{s:4:"file";s:20:"maik@2x-577x1024.jpg";s:5:"width";s:3:"577";s:6:"height";s:4:"1024";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:6:"129083";}s:9:"thumbnail";a:5:{s:4:"file";s:19:"maik@2x-150x150.jpg";s:5:"width";s:3:"150";s:6:"height";s:3:"150";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:4:"8424";}s:18:"cmplz_banner_image";a:5:{s:4:"file";s:19:"maik@2x-350x100.jpg";s:5:"width";s:3:"350";s:6:"height";s:3:"100";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"11161";}}s:10:"image_meta";a:11:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[tiny_compress_images]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:5:{i:0;a:3:{s:5:"input";a:2:{s:4:"size";i:778381;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:125852;s:4:"type";s:10:"image/jpeg";s:5:"width";i:642;s:6:"height";i:1140;s:5:"ratio";d:0.161700000000000010391687510491465218365192413330078125;}s:3:"end";i:1689181084;}s:6:"medium";a:3:{s:5:"input";a:2:{s:4:"size";i:16533;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:15511;s:4:"type";s:10:"image/jpeg";s:5:"width";i:169;s:6:"height";i:300;s:5:"ratio";d:0.93820000000000003392841563254478387534618377685546875;}s:3:"end";i:1689181085;}s:5:"large";a:3:{s:5:"input";a:2:{s:4:"size";i:129083;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:109464;s:4:"type";s:10:"image/jpeg";s:5:"width";i:577;s:6:"height";i:1024;s:5:"ratio";d:0.84799999999999997601918266809661872684955596923828125;}s:3:"end";i:1689181086;}s:9:"thumbnail";a:3:{s:5:"input";a:2:{s:4:"size";i:8424;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:7938;s:4:"type";s:10:"image/jpeg";s:5:"width";i:150;s:6:"height";i:150;s:5:"ratio";d:0.94230000000000002646771690706373192369937896728515625;}s:3:"end";i:1689181084;}s:18:"cmplz_banner_image";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Foto des Kunden Mike]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Custom Styles]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/wp-global-styles-twentytwentythree/</link>
+		<pubDate>Thu, 30 Mar 2023 06:17:26 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/2022/11/09/wp-global-styles-twentytwentythree/</guid>
+		<description></description>
+		<content:encoded><![CDATA[{"styles":[],"settings":[],"isGlobalStylesUserThemeJSON":true,"version":2}]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5</wp:post_id>
+		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-03-30 08:17:26]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[wp-global-styles-twentytwentythree]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[wp_global_styles]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="wp_theme" nicename="twentytwentythree"><![CDATA[twentytwentythree]]></category>
+						</item>
+					<item>
+		<title><![CDATA[Kontaktformular deutsch]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=16</link>
+		<pubDate>Mon, 08 May 2023 07:39:25 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=16</guid>
+		<description></description>
+		<content:encoded><![CDATA[<div class="contact__fieldset contact__fieldset--from">
+  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email akismet:author_email placeholder "E-Mail"] </label>
+</div>
+
+<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
+
+<div class="contact__fieldset contact__fieldset--checkboxes">
+  <div class="contact__calltoactiontext--fieldset">Unverbindliche Anfrage für</div>
+
+  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "Style Visit"]
+
+  [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping Tour"]
+
+  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online Styling Beratung"]
+
+  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Start-Up-Consulting"]
+
+  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gutschein"]
+
+  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
+
+  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
+
+  [checkbox anfrage-fashion-walking-tour id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--fashion-walking-tour use_label_element "Meet the Special-Places"]
+</div>
+
+<span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Absenden"]</span>
+1
+[_site_title] Kontaktformular
+[_site_title] <wordpress@preview.kleiderordnung-berlin.de>
+[_site_admin_email]
+Von: [Name]
+E-Mail: [Email]
+
+Unverbindliche Anfrage für: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
+
+Nachricht:
+[Nachricht]
+
+-- 
+Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
+Reply-To: [Email]
+
+
+
+
+[_site_title] „[your-subject]“
+[_site_title] <wordpress@preview.kleiderordnung-berlin.de>
+[your-email]
+Nachrichtentext:
+[your-message]
+
+-- 
+Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
+Reply-To: [_site_admin_email]
+
+
+
+Vielen Dank für deine Nachricht. Sie wurde gesendet.
+Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.
+Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.
+Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.
+Du musst die Bedingungen und Konditionen akzeptieren, bevor du deine Nachricht senden kannst.
+Füll bitte dieses Feld aus.
+Die Eingabe in diesem Feld ist zu lang.
+Die Eingabe in diesem Feld ist zu kurz.
+Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.
+Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.
+Die hochzuladende Datei ist zu groß.
+Beim Hochladen der Datei ist ein Fehler aufgetreten.
+Bitte gib das Datum im Format YYYY-MM-DD ein.
+Das Datum in diesem Feld ist zu früh.
+Das Datum in diesem Feld ist zu spät.
+Bitte gibt eine Zahl ein.
+Die Zahl in diesem Feld ist zu klein.
+Die Zahl in diesem Feld ist zu groß.
+Die Antwort auf das Quiz ist falsch.
+Bitte gib eine E-Mail-Adresse ein.
+Bitte gib eine URL ein.
+Bitte gib eine Telefonnummer ein.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>16</wp:post_id>
+		<wp:post_date><![CDATA[2023-05-08 09:39:25]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-05-08 07:39:25]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-06-06 15:01:07]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-06-06 13:01:07]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[kontaktformular-1]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[wpcf7_contact_form]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<div class="contact__fieldset contact__fieldset--from">
+  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email akismet:author_email placeholder "E-Mail"] </label>
+</div>
+
+<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
+
+<div class="contact__fieldset contact__fieldset--checkboxes">
+  <div class="contact__calltoactiontext--fieldset">Unverbindliche Anfrage für</div>
+
+  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "Style Visit"]
+
+  [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping Tour"]
+
+  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online Styling Beratung"]
+
+  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Start-Up-Consulting"]
+
+  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gutschein"]
+
+  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
+
+  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
+
+  [checkbox anfrage-fashion-walking-tour id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--fashion-walking-tour use_label_element "Meet the Special-Places"]
+</div>
+
+<span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Absenden"]</span>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:29:"[_site_title] Kontaktformular";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:19:"[_site_admin_email]";s:4:"body";s:351:"Von: [Name]
+E-Mail: [Email]
+
+Unverbindliche Anfrage für: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
+
+Nachricht:
+[Nachricht]
+
+-- 
+Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:17:"Reply-To: [Email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:122:"Nachrichtentext:
+[your-message]
+
+-- 
+Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:53:"Vielen Dank für deine Nachricht. Sie wurde gesendet.";s:12:"mail_sent_ng";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:16:"validation_error";s:94:"Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.";s:4:"spam";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:12:"accept_terms";s:93:"Du musst die Bedingungen und Konditionen akzeptieren, bevor du deine Nachricht senden kannst.";s:16:"invalid_required";s:28:"Füll bitte dieses Feld aus.";s:16:"invalid_too_long";s:39:"Die Eingabe in diesem Feld ist zu lang.";s:17:"invalid_too_short";s:39:"Die Eingabe in diesem Feld ist zu kurz.";s:13:"upload_failed";s:64:"Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.";s:24:"upload_file_type_invalid";s:54:"Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.";s:21:"upload_file_too_large";s:37:"Die hochzuladende Datei ist zu groß.";s:23:"upload_failed_php_error";s:52:"Beim Hochladen der Datei ist ein Fehler aufgetreten.";s:12:"invalid_date";s:45:"Bitte gib das Datum im Format YYYY-MM-DD ein.";s:14:"date_too_early";s:38:"Das Datum in diesem Feld ist zu früh.";s:13:"date_too_late";s:38:"Das Datum in diesem Feld ist zu spät.";s:14:"invalid_number";s:25:"Bitte gibt eine Zahl ein.";s:16:"number_too_small";s:37:"Die Zahl in diesem Feld ist zu klein.";s:16:"number_too_large";s:37:"Die Zahl in diesem Feld ist zu groß.";s:23:"quiz_answer_not_correct";s:36:"Die Antwort auf das Quiz ist falsch.";s:13:"invalid_email";s:34:"Bitte gib eine E-Mail-Adresse ein.";s:11:"invalid_url";s:23:"Bitte gib eine URL ein.";s:11:"invalid_tel";s:33:"Bitte gib eine Telefonnummer ein.";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
+		<wp:meta_value><![CDATA[de_DE]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_flamingo]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{s:7:"channel";i:11;}]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
 		<title><![CDATA[Imprint]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/imprint/</link>
 		<pubDate>Mon, 10 Jul 2023 15:51:08 +0000</pubDate>
@@ -1717,445 +2146,6 @@ admin]]></content:encoded>
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[news-example-2]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/second-hand-shopping-am-12-mai-auf-dem-flowmarkt-nowkoelln/news-example-2/</link>
-		<pubDate>Wed, 12 Jul 2023 13:09:55 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/news-example-2.jpg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>104</wp:post_id>
-		<wp:post_date><![CDATA[2023-07-12 15:09:55]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-07-12 13:09:55]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 15:09:55]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 13:09:55]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[news-example-2]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>99</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/news-example-2.jpg]]></wp:attachment_url>
-							<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2023/07/news-example-2.jpg]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:440;s:6:"height";i:248;s:4:"file";s:26:"2023/07/news-example-2.jpg";s:8:"filesize";i:36698;s:5:"sizes";a:3:{s:6:"medium";a:5:{s:4:"file";s:26:"news-example-2-300x169.jpg";s:5:"width";s:3:"300";s:6:"height";s:3:"169";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"16539";}s:9:"thumbnail";a:5:{s:4:"file";s:26:"news-example-2-150x150.jpg";s:5:"width";s:3:"150";s:6:"height";s:3:"150";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:4:"9587";}s:18:"cmplz_banner_image";a:5:{s:4:"file";s:26:"news-example-2-350x100.jpg";s:5:"width";s:3:"350";s:6:"height";s:3:"100";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"11800";}}s:10:"image_meta";a:11:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";}}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[tiny_compress_images]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:4:{i:0;a:3:{s:5:"input";a:2:{s:4:"size";i:117532;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:36698;s:4:"type";s:10:"image/jpeg";s:5:"width";i:440;s:6:"height";i:248;s:5:"ratio";d:0.312199999999999977529085981586831621825695037841796875;}s:3:"end";i:1689167397;}s:6:"medium";a:3:{s:5:"input";a:2:{s:4:"size";i:16539;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:14749;s:4:"type";s:10:"image/jpeg";s:5:"width";i:300;s:6:"height";i:169;s:5:"ratio";d:0.89180000000000003712585794346523471176624298095703125;}s:3:"end";i:1689167398;}s:9:"thumbnail";a:3:{s:5:"input";a:2:{s:4:"size";i:9587;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:8581;s:4:"type";s:10:"image/jpeg";s:5:"width";i:150;s:6:"height";i:150;s:5:"ratio";d:0.8951000000000000067501559897209517657756805419921875;}s:3:"end";i:1689167397;}s:18:"cmplz_banner_image";a:0:{}}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[news-example-1]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/gute-gespraeche-und-viel-zu-sehen-unterwegs-auf-der-green-fashion-fair-berlin/news-example-1/</link>
-		<pubDate>Wed, 12 Jul 2023 13:10:25 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/news-example-1.jpg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>105</wp:post_id>
-		<wp:post_date><![CDATA[2023-07-12 15:10:25]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-07-12 13:10:25]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 15:10:25]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 13:10:25]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[news-example-1]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>101</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/07/news-example-1.jpg]]></wp:attachment_url>
-							<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2023/07/news-example-1.jpg]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:440;s:6:"height";i:248;s:4:"file";s:26:"2023/07/news-example-1.jpg";s:8:"filesize";i:54486;s:5:"sizes";a:3:{s:6:"medium";a:5:{s:4:"file";s:26:"news-example-1-300x169.jpg";s:5:"width";s:3:"300";s:6:"height";s:3:"169";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"17098";}s:9:"thumbnail";a:5:{s:4:"file";s:26:"news-example-1-150x150.jpg";s:5:"width";s:3:"150";s:6:"height";s:3:"150";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:4:"8668";}s:18:"cmplz_banner_image";a:5:{s:4:"file";s:26:"news-example-1-350x100.jpg";s:5:"width";s:3:"350";s:6:"height";s:3:"100";s:9:"mime-type";s:10:"image/jpeg";s:8:"filesize";s:5:"11653";}}s:10:"image_meta";a:11:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";}}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[tiny_compress_images]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:4:{i:0;a:3:{s:5:"input";a:2:{s:4:"size";i:143964;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:54486;s:4:"type";s:10:"image/jpeg";s:5:"width";i:440;s:6:"height";i:248;s:5:"ratio";d:0.378500000000000003108624468950438313186168670654296875;}s:3:"end";i:1689167427;}s:6:"medium";a:3:{s:5:"input";a:2:{s:4:"size";i:17098;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:16075;s:4:"type";s:10:"image/jpeg";s:5:"width";i:300;s:6:"height";i:169;s:5:"ratio";d:0.94020000000000003570477247194503434002399444580078125;}s:3:"end";i:1689167428;}s:9:"thumbnail";a:3:{s:5:"input";a:2:{s:4:"size";i:8668;s:4:"type";s:10:"image/jpeg";}s:6:"output";a:5:{s:4:"size";i:8157;s:4:"type";s:10:"image/jpeg";s:5:"width";i:150;s:6:"height";i:150;s:5:"ratio";d:0.94099999999999994759747323769261129200458526611328125;}s:3:"end";i:1689167428;}s:18:"cmplz_banner_image";a:0:{}}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Custom Styles]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/wp-global-styles-twentytwentythree/</link>
-		<pubDate>Thu, 30 Mar 2023 06:17:26 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">/2022/11/09/wp-global-styles-twentytwentythree/</guid>
-		<description></description>
-		<content:encoded><![CDATA[{"styles":[],"settings":[],"isGlobalStylesUserThemeJSON":true,"version":2}]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>5</wp:post_id>
-		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-03-30 08:17:26]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[wp-global-styles-twentytwentythree]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[wp_global_styles]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="wp_theme" nicename="twentytwentythree"><![CDATA[twentytwentythree]]></category>
-						</item>
-					<item>
-		<title><![CDATA[Kontaktformular deutsch]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=16</link>
-		<pubDate>Mon, 08 May 2023 07:39:25 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=16</guid>
-		<description></description>
-		<content:encoded><![CDATA[<div class="contact__fieldset contact__fieldset--from">
-  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email akismet:author_email placeholder "E-Mail"] </label>
-</div>
-
-<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
-
-<div class="contact__fieldset contact__fieldset--checkboxes">
-  <div class="contact__calltoactiontext--fieldset">Unverbindliche Anfrage für</div>
-
-  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "Style Visit"]
-
-  [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping Tour"]
-
-  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online Styling Beratung"]
-
-  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Start-Up-Consulting"]
-
-  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gutschein"]
-
-  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
-
-  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
-
-  [checkbox anfrage-fashion-walking-tour id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--fashion-walking-tour use_label_element "Meet the Special-Places"]
-</div>
-
-<span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Absenden"]</span>
-1
-[_site_title] Kontaktformular
-[_site_title] <wordpress@preview.kleiderordnung-berlin.de>
-[_site_admin_email]
-Von: [Name]
-E-Mail: [Email]
-
-Unverbindliche Anfrage für: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
-
-Nachricht:
-[Nachricht]
-
--- 
-Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
-Reply-To: [Email]
-
-
-
-
-[_site_title] „[your-subject]“
-[_site_title] <wordpress@preview.kleiderordnung-berlin.de>
-[your-email]
-Nachrichtentext:
-[your-message]
-
--- 
-Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
-Reply-To: [_site_admin_email]
-
-
-
-Vielen Dank für deine Nachricht. Sie wurde gesendet.
-Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.
-Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.
-Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.
-Du musst die Bedingungen und Konditionen akzeptieren, bevor du deine Nachricht senden kannst.
-Füll bitte dieses Feld aus.
-Die Eingabe in diesem Feld ist zu lang.
-Die Eingabe in diesem Feld ist zu kurz.
-Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.
-Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.
-Die hochzuladende Datei ist zu groß.
-Beim Hochladen der Datei ist ein Fehler aufgetreten.
-Bitte gib das Datum im Format YYYY-MM-DD ein.
-Das Datum in diesem Feld ist zu früh.
-Das Datum in diesem Feld ist zu spät.
-Bitte gibt eine Zahl ein.
-Die Zahl in diesem Feld ist zu klein.
-Die Zahl in diesem Feld ist zu groß.
-Die Antwort auf das Quiz ist falsch.
-Bitte gib eine E-Mail-Adresse ein.
-Bitte gib eine URL ein.
-Bitte gib eine Telefonnummer ein.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>16</wp:post_id>
-		<wp:post_date><![CDATA[2023-05-08 09:39:25]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-05-08 07:39:25]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-06 15:01:07]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-06 13:01:07]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[kontaktformular-1]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[wpcf7_contact_form]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
-		<wp:meta_value><![CDATA[<div class="contact__fieldset contact__fieldset--from">
-  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email akismet:author_email placeholder "E-Mail"] </label>
-</div>
-
-<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
-
-<div class="contact__fieldset contact__fieldset--checkboxes">
-  <div class="contact__calltoactiontext--fieldset">Unverbindliche Anfrage für</div>
-
-  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "Style Visit"]
-
-  [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping Tour"]
-
-  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online Styling Beratung"]
-
-  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Start-Up-Consulting"]
-
-  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gutschein"]
-
-  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Ordnung im Schrank"]
-
-  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Styling-Abo"]
-
-  [checkbox anfrage-fashion-walking-tour id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--fashion-walking-tour use_label_element "Meet the Special-Places"]
-</div>
-
-<span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Absenden"]</span>]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:29:"[_site_title] Kontaktformular";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:19:"[_site_admin_email]";s:4:"body";s:351:"Von: [Name]
-E-Mail: [Email]
-
-Unverbindliche Anfrage für: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
-
-Nachricht:
-[Nachricht]
-
--- 
-Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:17:"Reply-To: [Email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:122:"Nachrichtentext:
-[your-message]
-
--- 
-Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:53:"Vielen Dank für deine Nachricht. Sie wurde gesendet.";s:12:"mail_sent_ng";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:16:"validation_error";s:94:"Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.";s:4:"spam";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:12:"accept_terms";s:93:"Du musst die Bedingungen und Konditionen akzeptieren, bevor du deine Nachricht senden kannst.";s:16:"invalid_required";s:28:"Füll bitte dieses Feld aus.";s:16:"invalid_too_long";s:39:"Die Eingabe in diesem Feld ist zu lang.";s:17:"invalid_too_short";s:39:"Die Eingabe in diesem Feld ist zu kurz.";s:13:"upload_failed";s:64:"Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.";s:24:"upload_file_type_invalid";s:54:"Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.";s:21:"upload_file_too_large";s:37:"Die hochzuladende Datei ist zu groß.";s:23:"upload_failed_php_error";s:52:"Beim Hochladen der Datei ist ein Fehler aufgetreten.";s:12:"invalid_date";s:45:"Bitte gib das Datum im Format YYYY-MM-DD ein.";s:14:"date_too_early";s:38:"Das Datum in diesem Feld ist zu früh.";s:13:"date_too_late";s:38:"Das Datum in diesem Feld ist zu spät.";s:14:"invalid_number";s:25:"Bitte gibt eine Zahl ein.";s:16:"number_too_small";s:37:"Die Zahl in diesem Feld ist zu klein.";s:16:"number_too_large";s:37:"Die Zahl in diesem Feld ist zu groß.";s:23:"quiz_answer_not_correct";s:36:"Die Antwort auf das Quiz ist falsch.";s:13:"invalid_email";s:34:"Bitte gib eine E-Mail-Adresse ein.";s:11:"invalid_url";s:23:"Bitte gib eine URL ein.";s:11:"invalid_tel";s:33:"Bitte gib eine Telefonnummer ein.";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
-		<wp:meta_value><![CDATA[de_DE]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_flamingo]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{s:7:"channel";i:11;}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Contact form english]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=56</link>
-		<pubDate>Tue, 06 Jun 2023 12:53:42 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=56</guid>
-		<description></description>
-		<content:encoded><![CDATA[<div class="contact__fieldset contact__fieldset--from">
-  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Email address </span> [email* Email autocomplete:email akismet:author_email placeholder "Email address"] </label>
-</div>
-
-<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Your message</span> [textarea Nachricht placeholder "Your message"] </label></div>
-
-<div class="contact__fieldset contact__fieldset--checkboxes">
-  <div class="contact__calltoactiontext--fieldset">I have a question about:</div>
-
-  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "In-home styling session"]
-
-  [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping tour"]
-
-  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online styling consultation"]
-
-  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Outfit consultation for startups"]
-
-  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Wardrobe organising"]
-
-  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Monthly styling subscription"]
-
-  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gift voucher"]
-
-  [checkbox anfrage-fashion-walking-tour id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--fashion-walking-tour use_label_element "Fashion walking tour"]
-
-</div>
-
-<span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Submit"]</span>
-1
-[_site_title] Contact form
-[_site_title] <wordpress@preview.kleiderordnung-berlin.de>
-[_site_admin_email]
-From: [Name]
-Email: [Email]
-
-I have a question about: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
-
-Message:
-[Nachricht]
-
--- 
-This email was sent via a contact form at [_site_title] ([_site_url])
-Reply-To: [Email]
-
-
-
-
-[_site_title] „[your-subject]“
-[_site_title] <wordpress@preview.kleiderordnung-berlin.de>
-[your-email]
-Nachrichtentext:
-[your-message]
-
--- 
-Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
-Reply-To: [_site_admin_email]
-
-
-
-Vielen Dank für deine Nachricht. Sie wurde gesendet.
-Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.
-Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.
-Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.
-Du musst die Bedingungen und Konditionen akzeptieren, bevor du deine Nachricht senden kannst.
-Füll bitte dieses Feld aus.
-Die Eingabe in diesem Feld ist zu lang.
-Die Eingabe in diesem Feld ist zu kurz.
-Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.
-Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.
-Die hochzuladende Datei ist zu groß.
-Beim Hochladen der Datei ist ein Fehler aufgetreten.
-Bitte gib das Datum im Format YYYY-MM-DD ein.
-Das Datum in diesem Feld ist zu früh.
-Das Datum in diesem Feld ist zu spät.
-Bitte gibt eine Zahl ein.
-Die Zahl in diesem Feld ist zu klein.
-Die Zahl in diesem Feld ist zu groß.
-Die Antwort auf das Quiz ist falsch.
-Bitte gib eine E-Mail-Adresse ein.
-Bitte gib eine URL ein.
-Bitte gib eine Telefonnummer ein.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>56</wp:post_id>
-		<wp:post_date><![CDATA[2023-06-06 14:53:42]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-06-06 12:53:42]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-06-06 15:00:36]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-06-06 13:00:36]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[kontaktformular-deutsch_copy]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[wpcf7_contact_form]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
-		<wp:meta_value><![CDATA[<div class="contact__fieldset contact__fieldset--from">
-  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Email address </span> [email* Email autocomplete:email akismet:author_email placeholder "Email address"] </label>
-</div>
-
-<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Your message</span> [textarea Nachricht placeholder "Your message"] </label></div>
-
-<div class="contact__fieldset contact__fieldset--checkboxes">
-  <div class="contact__calltoactiontext--fieldset">I have a question about:</div>
-
-  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "In-home styling session"]
-
-  [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping tour"]
-
-  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online styling consultation"]
-
-  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Outfit consultation for startups"]
-
-  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Wardrobe organising"]
-
-  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Monthly styling subscription"]
-
-  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gift voucher"]
-
-  [checkbox anfrage-fashion-walking-tour id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--fashion-walking-tour use_label_element "Fashion walking tour"]
-
-</div>
-
-<span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Submit"]</span>]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:26:"[_site_title] Contact form";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:19:"[_site_admin_email]";s:4:"body";s:329:"From: [Name]
-Email: [Email]
-
-I have a question about: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
-
-Message:
-[Nachricht]
-
--- 
-This email was sent via a contact form at [_site_title] ([_site_url])";s:18:"additional_headers";s:17:"Reply-To: [Email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:122:"Nachrichtentext:
-[your-message]
-
--- 
-Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:53:"Vielen Dank für deine Nachricht. Sie wurde gesendet.";s:12:"mail_sent_ng";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:16:"validation_error";s:94:"Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.";s:4:"spam";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:12:"accept_terms";s:93:"Du musst die Bedingungen und Konditionen akzeptieren, bevor du deine Nachricht senden kannst.";s:16:"invalid_required";s:28:"Füll bitte dieses Feld aus.";s:16:"invalid_too_long";s:39:"Die Eingabe in diesem Feld ist zu lang.";s:17:"invalid_too_short";s:39:"Die Eingabe in diesem Feld ist zu kurz.";s:13:"upload_failed";s:64:"Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.";s:24:"upload_file_type_invalid";s:54:"Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.";s:21:"upload_file_too_large";s:37:"Die hochzuladende Datei ist zu groß.";s:23:"upload_failed_php_error";s:52:"Beim Hochladen der Datei ist ein Fehler aufgetreten.";s:12:"invalid_date";s:45:"Bitte gib das Datum im Format YYYY-MM-DD ein.";s:14:"date_too_early";s:38:"Das Datum in diesem Feld ist zu früh.";s:13:"date_too_late";s:38:"Das Datum in diesem Feld ist zu spät.";s:14:"invalid_number";s:25:"Bitte gibt eine Zahl ein.";s:16:"number_too_small";s:37:"Die Zahl in diesem Feld ist zu klein.";s:16:"number_too_large";s:37:"Die Zahl in diesem Feld ist zu groß.";s:23:"quiz_answer_not_correct";s:36:"Die Antwort auf das Quiz ist falsch.";s:13:"invalid_email";s:34:"Bitte gib eine E-Mail-Adresse ein.";s:11:"invalid_url";s:23:"Bitte gib eine URL ein.";s:11:"invalid_tel";s:33:"Bitte gib eine Telefonnummer ein.";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
-		<wp:meta_value><![CDATA[de_DE]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
 		<title><![CDATA[Neue Studie zu Fast Fashion schockiert]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/neue-studie-zu-fast-fashion-schockiert/</link>
 		<pubDate>Wed, 12 Jul 2023 07:12:50 +0000</pubDate>
@@ -2424,6 +2414,534 @@ nicht Teil des Posts
 		<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
+					<item>
+		<title><![CDATA[Jackie, Marketing Lead @ Impact Hub Berlin]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/story/jackie-marketing-lead-impact-hub-berlin/</link>
+		<pubDate>Wed, 12 Jul 2023 16:57:17 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=116</guid>
+		<description></description>
+		<content:encoded><![CDATA[I really enjoyed doing a tour of my closet with Tina. She helped me see my clothes with fresh eyes and provided practical tips on how to come up with combinations and accessories that enhance my style and personality. I recommend her services if you are looking to refine your fashion style. Thank you so much, Tina!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>116</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 18:57:17]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 16:57:17]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 19:14:52]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 17:14:52]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[jackie-marketing-lead-impact-hub-berlin]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[story]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
+		<category domain="post_translations" nicename="pll_64aedfaf3463e"><![CDATA[pll_64aedfaf3463e]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[117]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[position_number]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Mike, Freelance Translator, Berlin]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/story/mike-freelance-translator-berlin/</link>
+		<pubDate>Wed, 12 Jul 2023 16:58:10 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=118</guid>
+		<description></description>
+		<content:encoded><![CDATA[Tina brings enthusiasm and positive energy to fashion and styling. It's clear that she's good at what she does, and loves it too. She's given me clear advice on how to make the most of my existing wardrobe, and also how to make small changes that can make a big difference for my appearance. I look forward to working with Tina more!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>118</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 18:58:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 16:58:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 19:15:46]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 17:15:46]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[mike-freelance-translator-berlin]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[story]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
+		<category domain="post_translations" nicename="pll_64aedfd0e09c1"><![CDATA[pll_64aedfd0e09c1]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[119]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[position_number]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Someone, without a picture]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/story/someone-without-a-picture/</link>
+		<pubDate>Wed, 12 Jul 2023 16:58:31 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=120</guid>
+		<description></description>
+		<content:encoded><![CDATA[Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>120</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 18:58:31]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 16:58:31]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 19:16:15]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 17:16:15]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[someone-without-a-picture]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[story]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
+		<category domain="post_translations" nicename="pll_64aedfeb16903"><![CDATA[pll_64aedfeb16903]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[4]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[position_number]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Maxi, Artist, Berlin]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/en/story/maxi-artist-berlin/</link>
+		<pubDate>Wed, 12 Jul 2023 17:13:21 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=121</guid>
+		<description></description>
+		<content:encoded><![CDATA[Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>121</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 19:13:21]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 17:13:21]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 19:13:21]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 17:13:21]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[maxi-artist-berlin]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[story]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="language" nicename="en"><![CDATA[English]]></category>
+		<category domain="post_translations" nicename="pll_64aedf49ed767"><![CDATA[pll_64aedf49ed767]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[115]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[position_number]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Maxi, Künstlerin, Berlin]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/story/maxi-kuenstlerin-berlin-2/</link>
+		<pubDate>Wed, 12 Jul 2023 17:13:45 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=122</guid>
+		<description></description>
+		<content:encoded><![CDATA[Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>122</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 19:13:45]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 17:13:45]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 19:13:45]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 17:13:45]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[maxi-kuenstlerin-berlin-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[story]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
+		<category domain="post_translations" nicename="pll_64aedf49ed767"><![CDATA[pll_64aedf49ed767]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[115]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[position_number]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Jackie, Marketing Lead @ Impact Hub Berlin]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/en/story/jackie-marketing-lead-impact-hub-berlin-2/</link>
+		<pubDate>Wed, 12 Jul 2023 17:15:27 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=123</guid>
+		<description></description>
+		<content:encoded><![CDATA[I really enjoyed doing a tour of my closet with Tina. She helped me see my clothes with fresh eyes and provided practical tips on how to come up with combinations and accessories that enhance my style and personality. I recommend her services if you are looking to refine your fashion style. Thank you so much, Tina!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>123</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 19:15:27]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 17:15:27]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 19:15:27]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 17:15:27]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[jackie-marketing-lead-impact-hub-berlin-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[story]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="language" nicename="en"><![CDATA[English]]></category>
+		<category domain="post_translations" nicename="pll_64aedfaf3463e"><![CDATA[pll_64aedfaf3463e]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[117]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[position_number]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Mike, Freelance Translator, Berlin]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/en/story/mike-freelance-translator-berlin-2/</link>
+		<pubDate>Wed, 12 Jul 2023 17:16:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=124</guid>
+		<description></description>
+		<content:encoded><![CDATA[Tina brings enthusiasm and positive energy to fashion and styling. It's clear that she's good at what she does, and loves it too. She's given me clear advice on how to make the most of my existing wardrobe, and also how to make small changes that can make a big difference for my appearance. I look forward to working with Tina more!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>124</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 19:16:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 17:16:00]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 19:16:00]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 17:16:00]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[mike-freelance-translator-berlin-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[story]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="language" nicename="en"><![CDATA[English]]></category>
+		<category domain="post_translations" nicename="pll_64aedfd0e09c1"><![CDATA[pll_64aedfd0e09c1]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[119]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[position_number]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Someone, without a picture]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/en/story/someone-without-a-picture-2/</link>
+		<pubDate>Wed, 12 Jul 2023 17:16:27 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=125</guid>
+		<description></description>
+		<content:encoded><![CDATA[Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>125</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-12 19:16:27]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-12 17:16:27]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-12 19:16:27]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-12 17:16:27]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[someone-without-a-picture-2]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[story]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="language" nicename="en"><![CDATA[English]]></category>
+		<category domain="post_translations" nicename="pll_64aedfeb16903"><![CDATA[pll_64aedfeb16903]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[4]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_Positionsnummer]]></wp:meta_key>
+		<wp:meta_value><![CDATA[position_number]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Contact form english]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=56</link>
+		<pubDate>Tue, 06 Jun 2023 12:53:42 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=56</guid>
+		<description></description>
+		<content:encoded><![CDATA[<div class="contact__fieldset contact__fieldset--from">
+  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Email address </span> [email* Email autocomplete:email akismet:author_email placeholder "Email address"] </label>
+</div>
+
+<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Your message</span> [textarea Nachricht placeholder "Your message"] </label></div>
+
+<div class="contact__fieldset contact__fieldset--checkboxes">
+  <div class="contact__calltoactiontext--fieldset">I have a question about:</div>
+
+  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "In-home styling session"]
+
+  [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping tour"]
+
+  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online styling consultation"]
+
+  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Outfit consultation for startups"]
+
+  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Wardrobe organising"]
+
+  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Monthly styling subscription"]
+
+  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gift voucher"]
+
+  [checkbox anfrage-fashion-walking-tour id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--fashion-walking-tour use_label_element "Fashion walking tour"]
+
+</div>
+
+<span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Submit"]</span>
+1
+[_site_title] Contact form
+[_site_title] <wordpress@preview.kleiderordnung-berlin.de>
+[_site_admin_email]
+From: [Name]
+Email: [Email]
+
+I have a question about: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
+
+Message:
+[Nachricht]
+
+-- 
+This email was sent via a contact form at [_site_title] ([_site_url])
+Reply-To: [Email]
+
+
+
+
+[_site_title] „[your-subject]“
+[_site_title] <wordpress@preview.kleiderordnung-berlin.de>
+[your-email]
+Nachrichtentext:
+[your-message]
+
+-- 
+Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
+Reply-To: [_site_admin_email]
+
+
+
+Vielen Dank für deine Nachricht. Sie wurde gesendet.
+Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.
+Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.
+Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.
+Du musst die Bedingungen und Konditionen akzeptieren, bevor du deine Nachricht senden kannst.
+Füll bitte dieses Feld aus.
+Die Eingabe in diesem Feld ist zu lang.
+Die Eingabe in diesem Feld ist zu kurz.
+Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.
+Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.
+Die hochzuladende Datei ist zu groß.
+Beim Hochladen der Datei ist ein Fehler aufgetreten.
+Bitte gib das Datum im Format YYYY-MM-DD ein.
+Das Datum in diesem Feld ist zu früh.
+Das Datum in diesem Feld ist zu spät.
+Bitte gibt eine Zahl ein.
+Die Zahl in diesem Feld ist zu klein.
+Die Zahl in diesem Feld ist zu groß.
+Die Antwort auf das Quiz ist falsch.
+Bitte gib eine E-Mail-Adresse ein.
+Bitte gib eine URL ein.
+Bitte gib eine Telefonnummer ein.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>56</wp:post_id>
+		<wp:post_date><![CDATA[2023-06-06 14:53:42]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-06-06 12:53:42]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-06-06 15:00:36]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-06-06 13:00:36]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[kontaktformular-deutsch_copy]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[wpcf7_contact_form]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_form]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<div class="contact__fieldset contact__fieldset--from">
+  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Email address </span> [email* Email autocomplete:email akismet:author_email placeholder "Email address"] </label>
+</div>
+
+<div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Your message</span> [textarea Nachricht placeholder "Your message"] </label></div>
+
+<div class="contact__fieldset contact__fieldset--checkboxes">
+  <div class="contact__calltoactiontext--fieldset">I have a question about:</div>
+
+  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "In-home styling session"]
+
+  [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping tour"]
+
+  [checkbox anfrage-online-style-beratung id:anfrage-online-style-beratung class:contact__checkboxline class:contact__checkboxline--online-style-beratung use_label_element "Online styling consultation"]
+
+  [checkbox anfrage-start-up-consulting id:anfrage-start-up-consulting class:contact__checkboxline class:contact__checkboxline--start-up-consulting use_label_element "Outfit consultation for startups"]
+
+  [checkbox anfrage-ordnung-im-schrank id:anfrage-ordnung-im-schrank class:contact__checkboxline class:contact__checkboxline--ordnung-im-schrank use_label_element "Wardrobe organising"]
+
+  [checkbox anfrage-styling-abo id:anfrage-styling-abo class:contact__checkboxline class:contact__checkboxline--styling-abo use_label_element "Monthly styling subscription"]
+
+  [checkbox anfrage-gutschein id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--gutschein use_label_element "Gift voucher"]
+
+  [checkbox anfrage-fashion-walking-tour id:anfrage-gutschein class:contact__checkboxline class:contact__checkboxline--fashion-walking-tour use_label_element "Fashion walking tour"]
+
+</div>
+
+<span class="contact__buttonwrapper contact__buttonwrapper--submit">[submit "Submit"]</span>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:1;s:7:"subject";s:26:"[_site_title] Contact form";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:19:"[_site_admin_email]";s:4:"body";s:329:"From: [Name]
+Email: [Email]
+
+I have a question about: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-online-style-beratung] [anfrage-start-up-consulting] [anfrage-gutschein] [anfrage-ordnung-im-schrank] [anfrage-styling-abo]
+
+Message:
+[Nachricht]
+
+-- 
+This email was sent via a contact form at [_site_title] ([_site_url])";s:18:"additional_headers";s:17:"Reply-To: [Email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_mail_2]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:122:"Nachrichtentext:
+[your-message]
+
+-- 
+Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_messages]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:22:{s:12:"mail_sent_ok";s:53:"Vielen Dank für deine Nachricht. Sie wurde gesendet.";s:12:"mail_sent_ng";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:16:"validation_error";s:94:"Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.";s:4:"spam";s:103:"Beim Versuch, deine Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuche es später nochmal.";s:12:"accept_terms";s:93:"Du musst die Bedingungen und Konditionen akzeptieren, bevor du deine Nachricht senden kannst.";s:16:"invalid_required";s:28:"Füll bitte dieses Feld aus.";s:16:"invalid_too_long";s:39:"Die Eingabe in diesem Feld ist zu lang.";s:17:"invalid_too_short";s:39:"Die Eingabe in diesem Feld ist zu kurz.";s:13:"upload_failed";s:64:"Beim Hochladen der Datei ist ein unbekannter Fehler aufgetreten.";s:24:"upload_file_type_invalid";s:54:"Es ist nicht erlaubt, Dateien dieses Typs hochzuladen.";s:21:"upload_file_too_large";s:37:"Die hochzuladende Datei ist zu groß.";s:23:"upload_failed_php_error";s:52:"Beim Hochladen der Datei ist ein Fehler aufgetreten.";s:12:"invalid_date";s:45:"Bitte gib das Datum im Format YYYY-MM-DD ein.";s:14:"date_too_early";s:38:"Das Datum in diesem Feld ist zu früh.";s:13:"date_too_late";s:38:"Das Datum in diesem Feld ist zu spät.";s:14:"invalid_number";s:25:"Bitte gibt eine Zahl ein.";s:16:"number_too_small";s:37:"Die Zahl in diesem Feld ist zu klein.";s:16:"number_too_large";s:37:"Die Zahl in diesem Feld ist zu groß.";s:23:"quiz_answer_not_correct";s:36:"Die Antwort auf das Quiz ist falsch.";s:13:"invalid_email";s:34:"Bitte gib eine E-Mail-Adresse ein.";s:11:"invalid_url";s:23:"Bitte gib eine URL ein.";s:11:"invalid_tel";s:33:"Bitte gib eine Telefonnummer ein.";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_additional_settings]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
+		<wp:meta_value><![CDATA[de_DE]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
 				</channel>
 </rss>
 	
@@ -2431,5 +2949,5 @@ nicht Teil des Posts
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-07-12 15:16:41 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-07-12 19:16:55 by W3 Total Cache
 -->

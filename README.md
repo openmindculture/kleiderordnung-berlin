@@ -10,11 +10,15 @@ Local development: http://localhost:1234/
 Backend: http://localhost:1234/wp-admin (default credentials: admin:secret).
 Make sure to that the theme KleiderOrdnung got activated or activate it manually after installation.
 
-## Installation (Deployment)
+## Installation / Deployment
 
-To deploy the KleiderOrdnung theme on a website,
+To setup / deploy KleiderOrdnung on a website,
 - install WordPress core and the required plugins,
 - copy all `wp-content/mu-plugins/*.php` files manually,
+- [setup Polylang](https://polylang.pro/doc/multilingual-custom-post-types-and-taxonomies/):
+  - German (Deutsch) as default language
+  - English (EN-US) as additional language
+  - enable translation of custom post types (Languages/Sprachen -> Settings/Einstellungen -> Custom Post Types and Taxonomies / Benutzerdefinierte Inhaltstypen und Taxonomien -> check all checkboxes) _before_ adding any new content!
 - install the lastest KleiderOrdnung theme by uploading it in WP-Admin,
 - activate the theme,
 - copy all icons and manifest files (`*.ico`, `*.png`, `*.svg`, `*.json`, `*.xml`, `robots.txt`) to the web root directory
