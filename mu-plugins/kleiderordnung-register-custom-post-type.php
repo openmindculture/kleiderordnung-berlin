@@ -32,7 +32,7 @@ function kleiderordnung_register_post_type() {
 		'update_item'           => 'Update Story',
 		'view_item'             => 'View Story',
 		'view_items'            => 'View Stories',
-		'search_items'          => 'Suchen in Stories',
+		'search_items'          => 'Search Story',
 		'not_found'             => 'Not found',
 		'not_found_in_trash'    => 'Not found in Trash',
 		'featured_image'        => 'Featured Image',
@@ -117,8 +117,10 @@ function kleiderordnung_register_post_type() {
     function kleiderordnung_story_orderby( $vars ) {
       if ( isset( $vars['orderby'] ) && 'position_number' == $vars['orderby'] ) {
         $vars = array_merge( $vars, array(
-          'meta_key' => 'position_number',
-          'orderby' => 'meta_value'
+          'orderby' => array(
+            'position_number' => 'ASC',
+            'lang' => 'ASC'
+          )
         ) );
       }
       return $vars;

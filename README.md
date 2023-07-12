@@ -18,7 +18,7 @@ To setup / deploy KleiderOrdnung on a website,
 - [setup Polylang](https://polylang.pro/doc/multilingual-custom-post-types-and-taxonomies/):
   - German (Deutsch) as default language
   - English (EN-US) as additional language
-  - enable translation of custom post types (Languages/Sprachen -> Settings/Einstellungen -> Custom Post Types and Taxonomies / Benutzerdefinierte Inhaltstypen und Taxonomien -> check all checkboxes) _before_ adding any new content!
+  - enable translation of custom post types (Languages/Sprachen -> Settings/Einstellungen -> Custom Post Types and Taxonomies / Benutzerdefinierte Inhaltstypen und Taxonomien -> check all checkboxes) _before_ adding (or importing) content!
 - install the lastest KleiderOrdnung theme by uploading it in WP-Admin,
 - activate the theme,
 - copy all icons and manifest files (`*.ico`, `*.png`, `*.svg`, `*.json`, `*.xml`, `robots.txt`) to the web root directory
