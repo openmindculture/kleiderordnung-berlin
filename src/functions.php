@@ -17,12 +17,13 @@ if ( ! defined ( 'KLEIDERORDNUNG_THEME_VERSION' ) ){
 add_theme_support('post-thumbnails', array(
   'post',
   'page',
-  /* TODO add custom post types */
-  /* 'custom-post-type-name', */
+  /* custom post types must also declare thumbnail support explicitly */
+  'story',
 ));
 
 add_filter('use_block_editor_for_post_type', function ($current_status, $post_type){
   if ($post_type === 'post') return false;
+  if ($post_type === 'story') return false;
   return $current_status;
 }, 10, 2);
 

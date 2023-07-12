@@ -6,6 +6,26 @@
  * @author openmindculture
  */
 ?>
+
+<?php
+$args = array(
+  'post_type' => 'story',
+  'posts_per_page' => 99,
+  'meta_key' => 'field_story_position',
+  'orderby' => 'meta_value',
+  'order' => 'DESC',
+);
+$the_query = new WP_Query( $args ); ?>
+
+<?php if ( $the_query->have_posts() ) : ?>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+    <?php the_title() ?>
+    (<?php the_ID(); ?>)
+  <?php endwhile; ?>
+
+  <?php wp_reset_postdata(); ?>
+<?php endif; ?>
+
 <section id="stories" class="stories target-offset">
   <h2 class="stories__headline">Stories</h2>
   <div class="stories__wrapper carousel__wrapper">

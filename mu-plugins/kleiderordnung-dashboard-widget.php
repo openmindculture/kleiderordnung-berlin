@@ -2,10 +2,10 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 2.3.0
+ * @version 2.3.1
  *
  * @wordpress-plugin
- * Version: 2.3.0
+ * Version: 2.3.1
  * Tested up to: 6.2
  * Plugin Name: KleiderOrdnung Dashboard Widget
  * Text Domain: kleiderOrdnung-dashboard-widget
@@ -39,6 +39,8 @@ function kleiderordnung_add_dashboard_widget()
 
     $kleiderordnung_dashboardContentOutput.= '<ul>';
     $kleiderordnung_dashboardContentOutput.= '<li>News: <a href="/wp-admin/edit.php">Beiträge bearbeiten</a></li>'; // TODO use generic path url
+    $kleiderordnung_dashboardContentOutput.= '<li><a href="/wp-admin/edit.php?post_type=story">Stories (Testimonials) bearbeiten</a></li>';
+    $kleiderordnung_dashboardContentOutput.= '<li><a href="/wp-admin/edit.php?post_type=offer">Angebote bearbeiten</a></li>';
     $kleiderordnung_dashboardContentOutput.= '<li>AGB, Impressum, Datenschutz, etc.: <a href="/wp-admin/edit.php?post_type=page">Seiten bearbeiten</a></li>';
     $kleiderordnung_dashboardContentOutput.= '<li>Homepage (Frontpage) Texte:</li>';
     $kleiderordnung_dashboardContentOutput.= '  <ul>';
