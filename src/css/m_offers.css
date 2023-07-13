@@ -286,11 +286,16 @@ white-space: nowrap;
   line-height: 1.5;
 }
 
+.offers__offer__price + ul,
 .offers__offer__price__annotations {
   list-style: none;
   text-align: left;
   margin: 0;
   padding: 0;
+}
+
+.offers__offer__price + ul li {
+  padding-left: 0;
 }
 
 .offers__offer__icon {

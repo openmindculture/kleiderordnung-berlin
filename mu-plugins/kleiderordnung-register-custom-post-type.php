@@ -116,39 +116,6 @@ function kleiderordnung_register_post_type_story() {
 }
 
 function kleiderordnung_register_post_type_offer() {
-  $labels = array(
-    'name'                  => 'Angebote',
-    'singular_name'         => 'Angebot',
-    'menu_name'             => 'Angebote',
-    'name_admin_bar'        => 'Angebot',
-    'all_items'             => 'Angebote',
-    'add_new_item'          => 'Neues Angebot erstellen',
-    'add_new'               => 'Erstellen',
-    'new_item'              => 'Neues Angebot',
-    'edit_item'             => 'Angebot bearbeiten',
-    'update_item'           => 'Angebot aktualisieren',
-    'featured_image'        => 'Beitragsbild',
-  );
-  $args = array(
-    'label'                 => 'Angebot',
-    'description'           => 'Offer Type Description',
-    'labels'                => $labels,
-    'supports'              => array( 'title', 'editor', 'thumbnail'),
-    'taxonomies'            => array(),
-    'hierarchical'          => false,
-    'public'                => true,
-    'show_ui'               => true,
-    'show_in_menu'          => true,
-    'menu_position'         => 6,
-    'show_in_admin_bar'     => true,
-    'show_in_nav_menus'     => true,
-    'can_export'            => true,
-    'has_archive'           => true,
-    'exclude_from_search'   => false,
-    'publicly_queryable'    => true,
-    'capability_type'       => 'post',
-  );
-  register_post_type( 'offer', $args );
 
   $labels = array(
     'name'                       => _x( 'Angebotskategorien', 'taxonomy general name', 'textdomain' ),
@@ -180,6 +147,40 @@ function kleiderordnung_register_post_type_offer() {
   );
 
   register_taxonomy( 'offer_section', 'offer', $args );
+
+  $labels = array(
+    'name'                  => 'Angebote',
+    'singular_name'         => 'Angebot',
+    'menu_name'             => 'Angebote',
+    'name_admin_bar'        => 'Angebot',
+    'all_items'             => 'Angebote',
+    'add_new_item'          => 'Neues Angebot erstellen',
+    'add_new'               => 'Erstellen',
+    'new_item'              => 'Neues Angebot',
+    'edit_item'             => 'Angebot bearbeiten',
+    'update_item'           => 'Angebot aktualisieren',
+    'featured_image'        => 'Beitragsbild',
+  );
+  $args = array(
+    'label'                 => 'Angebot',
+    'description'           => 'Offer Type Description',
+    'labels'                => $labels,
+    'supports'              => array( 'title', 'editor', 'thumbnail'),
+    'taxonomies'            => array( 'offer_section' ),
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => true,
+    'menu_position'         => 6,
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => true,
+    'can_export'            => true,
+    'has_archive'           => true,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'capability_type'       => 'post',
+  );
+  register_post_type( 'offer', $args );
 
   if( function_exists('acf_add_local_field_group') ) {
     acf_add_local_field_group( array(

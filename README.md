@@ -112,8 +112,8 @@ non-destructive editing limited to the intended content type (plain text or rich
   - **offer__id** (text)  in `offer_field_group_sidebar`
   - **offer_position_number** (text) in `offer_field_group_sidebar`
   - custom taxonomy: **offer_section** _NOT localized_
-    - `angebot`
-    - `weitere`
+    - `angebot` ("Angebot")
+    - `weitere` ("Weiteres Angebot")
 - social media placeholders (see below)
 - content handled by plugins or widgets:
   - Instagram section (external feed via juicer.io)

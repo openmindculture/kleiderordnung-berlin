@@ -23,7 +23,7 @@
 
 <?php
     $loop_index = 0;
-    while ( $the_query->have_posts() ) :
+    while ( $the_query->have_posts() ) {
       $the_query->the_post();
       $unique_post_position_number = get_field('position_number', get_the_ID());
       if (isset($resorted_post_ids[$unique_post_position_number])) {
@@ -31,7 +31,7 @@
       }
       $resorted_post_ids[$unique_post_position_number] = get_the_ID();
       $loop_index++;
-    endwhile;
+    }
 
     ksort($resorted_post_ids);
     $loop_index = 0;
