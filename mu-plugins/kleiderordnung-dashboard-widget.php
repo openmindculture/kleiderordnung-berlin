@@ -45,19 +45,27 @@ function kleiderordnung_add_dashboard_widget()
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=page">Seiten bearbeiten</a> (AGB, Impressum, Datenschutz, etc.)</li>';
     $kleiderordnung_dashboardContentOutput.= '<li>Homepage (Frontpage) Texte:</li>';
     $kleiderordnung_dashboardContentOutput.= '  <ul>';
-    $kleiderordnung_dashboardContentOutput.= '    <li>- Intro (TODO)</li>';
-    $kleiderordnung_dashboardContentOutput.= '    <li>- Mission (TODO)</li>';
-    $kleiderordnung_dashboardContentOutput.= '    <li>- Instagram-Platzhalterbilder aktualisieren (TODO)</li>';
+    $kleiderordnung_dashboardContentOutput.= '    <li>- Intro bearbeiten</li>'; // TODO
+    $kleiderordnung_dashboardContentOutput.= '    <li>- Mission bearbeiten</li>'; // TODO
+    $kleiderordnung_dashboardContentOutput.= '    <li>- <a href="#">Instagram-Platzhalterbilder aktualisieren</a></li>'; // TODO
     $kleiderordnung_dashboardContentOutput.= '  </ul>';
+    $kleiderordnung_dashboardContentOutput.= '  <li><a href="/wp-admin/admin.php?page=w3tc_pgcache">Zwischenspeicher (Cache) leeren...</a></li>'; // TODO
     $kleiderordnung_dashboardContentOutput.= '</ul>';
+
+    $kleiderordnung_dashboardContentOutput.= '<b>Posteingang / Kontaktformular</b><br>';
+    $kleiderordnung_dashboardContentOutput.= '- <a href="/wp-admin/admin.php?page=flamingo_inbound">Nachrichten lesen</a><br>';
+    $kleiderordnung_dashboardContentOutput.= '- <a href="/wp-admin/admin.php?page=wpcf7">Kontaktformular bearbeiten</a><br>';
+    $kleiderordnung_dashboardContentOutput.= '<br>';
 
     $kleiderordnung_dashboardContentOutput.= '<b>Daten sichern und wiederherstellen</b><br>';
 
     // TODO installation type ==> add import/export direct link(s)
-    $kleiderordnung_dashboardContentOutput.= '<a href="/wp-admin/export.php">Inhalte exportieren</a> /';
-    $kleiderordnung_dashboardContentOutput.= '<a href="/wp-admin/admin.php?import=wordpress">importieren</a> ...';
+    $kleiderordnung_dashboardContentOutput.= '- <a href="/wp-admin/export.php">Inhalte exportieren</a> /';
+    $kleiderordnung_dashboardContentOutput.= '<a href="/wp-admin/admin.php?import=wordpress">importieren</a> ...<br>';
+    $kleiderordnung_dashboardContentOutput.= '<br>';
 
-    $kleiderordnung_dashboardContentOutput.= '<b><a href="https://github.com/openmindculture/kleiderordnung-berlin/blob/main/doc/anleitung.md" target="_blank">Anleitung lesen</a></b><br>';
+    $kleiderordnung_dashboardContentOutput.= '<b>Anleitung / Hilfe</b><br>';
+    $kleiderordnung_dashboardContentOutput.= '- <a href="https://github.com/openmindculture/kleiderordnung-berlin/blob/main/doc/anleitung.md" target="_blank">Bedienungsanleitung lesen</a></b><br>';
 
     $kleiderordnung_dashboardContentOutput.= '<hr><b>Technische Daten</b><br>';
 
