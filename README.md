@@ -10,6 +10,8 @@ Local development: http://localhost:1234/
 Backend: http://localhost:1234/wp-admin (default credentials: admin:secret).
 Make sure to that the theme KleiderOrdnung got activated or activate it manually after installation.
 
+![KleiderOrdnung theme screenshot](src/screenshot.png)
+
 ## Installation / Deployment
 
 To setup / deploy KleiderOrdnung on a website,
