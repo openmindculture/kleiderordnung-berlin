@@ -41,7 +41,7 @@ Add, edit and preview stories (testimonials):
 ![Screenshot: edit stories](doc/anleitung-stories-bearbeiten.png)
 
 Add, edit and preview offers:
-(TODO)
+![Screenshot: edit offers](doc/anleitung-angebot-bearbeiten.png)
 
 Flamingo message inbox:
 ![Screenshot: message inbox](doc/anleitung-posteingang.png)
@@ -97,23 +97,48 @@ non-destructive editing limited to the intended content type (plain text or rich
   - category title = over headline
   - post title = teaser headline / text
   - post image = main post image
-- **offer** (**Angebot**; not a "product" to avoid conflict with optional shop plugins)
-  - taxonomy: **offer_section** (`main` | `other`)
-  - Fields:
-    - post title = main headline
-    - post text = intro text
-    - feature list ("Was du erhältst")
-    - price
-    - price annotation text
-    - post image = main post image (only in main offer section)
-    - post icon
-- **story** (**Stories** / Testimonials)
+- **story** (**Stories** / Testimonials) _localized_
   - post title = headline: testimonial name and short description
   - post text = quotation
   - post image(s) = main image (and possibly more optional images)
-- content handled by plugins:
-  - Instagram section as juicer feed
-  - contact form 7 widget via shortcode
+  - **position_number** (text) in `story_field_group` (sidebar)
+- **offer** (**Angebot**) _localized_
+  - post title = main headline
+  - post image = main post image (only in main offer section)
+  - post text = intro text
+  - **offer_features** ("Was du erhältst") (text) in `offer_field_group_main`
+  - **offer_price** (text) in `offer_field_group_main`
+  - **offer_price_annotation** (text) in `offer_field_group_main`
+  - **offer__id** (text)  in `offer_field_group_sidebar`
+  - **offer_position_number** (text) in `offer_field_group_sidebar`
+  - custom taxonomy: **offer_section** _NOT localized_
+    - `angebot`
+    - `weitere`
+- social media placeholders (see below)
+- content handled by plugins or widgets:
+  - Instagram section (external feed via juicer.io)
+  - contact form (widget shortcode)
+  - carbon badge (external content)
+
+##### Polylang Localization Settings for Custom Post Types
+
+Localization / translation needs to be enabled explicitly in Polylang **Languages** -> **Settings** -> Custom Post Types and Taxonomies:
+
+- [x] Stories (Testimonials) (story)
+- [x] Angebote (offer)
+- [ ] Angebotskategorien (offer_section)
+
+##### Post and Field Types, Sorting Order
+
+Pragmatically working around Meta Query issues when using custom post types, custom ACF fields, and polylang translation in the same theme, all custom fields are text fields. Custom **position number** fields are simple tools to let site owners control the display order of items that are not sorted by date.
+
+##### Offer ID and Taxonomy
+
+Each offer should have a unique, permanent ID, used as an anchor for sub-navigation and for external **deep linking**. The offers and their IDs should also match the checkbox options in the contact form. **Icons** on top of the offer cards are displayed according to one of the known offer IDs.
+
+Offer taxonomies currently serve to separate main offers, displayed with cards and images, from "other offers". There is no point in localization / translation.
+
+**Angebot** is not called "product" to avoid conflict with optional shop plugins.
 
 #### Front Page Structure
 
@@ -223,6 +248,15 @@ Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) ges
 
 - Known issues: occasional "juicer error" when using on localhost instead of configured domain or pseduo-public domain like browserstack's bs-local.com
 - account / API at juicer.io
+- placholder content:
+
+Unless a new page visitor has given consent to loading Instagram data by clicking on "allow once" or "allow always", placeholder images will be shown.
+
+TODO: alternatively:
+
+Alternative 1: These are simply images taken from the WordPress media library. Is there a simple way (besides image titles) to tag / categorize images so that we can just grab the N latest images matching this criteria?
+
+Alternative 2: provide some mechanism to scrape the images, not from Instagram (which might be hard, illegal, and due to break at a site or API update) but rather from our own front page after opt-in and completed loading. Might be done as a side-effect of frontend screenshot testing?
 
 ### Localization
 

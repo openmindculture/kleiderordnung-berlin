@@ -253,6 +253,7 @@ white-space: nowrap;
   margin-bottom: 2rem;
 }
 
+.offers__offer ul, /* generic to simplify WYSIWYG editing */
 .offers__offer__features__list {
   text-align: left;
   list-style-type: image;
@@ -262,6 +263,7 @@ white-space: nowrap;
 }
 
 /* stylelint-disable no-descending-specificity */
+.offers__offer ul li,
 .offers__offer__features__list li {
   padding-left: 1rem;
 }

@@ -19,11 +19,13 @@ add_theme_support('post-thumbnails', array(
   'page',
   /* custom post types must also declare thumbnail support explicitly */
   'story',
+  'offer',
 ));
 
 add_filter('use_block_editor_for_post_type', function ($current_status, $post_type){
   if ($post_type === 'post') return false;
   if ($post_type === 'story') return false;
+  if ($post_type === 'offer') return false;
   return $current_status;
 }, 10, 2);
 

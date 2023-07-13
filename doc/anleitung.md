@@ -30,7 +30,7 @@ Bestimmte Inhalte können im Administrationsbereichs (WP-Admin) bearbeitet werde
 
 Auf der Startseite (Dashboard) des Administrationsbereichs sind die Links zum Bearbeiten, zum Aktualisieren und zu dieser Anleitung zusammengefasst.
 
-Die folgenden Screenshots zeigen beispielhaft, wo welche Daten verändert und veröffentlicht werden.
+**Bilder** sollten grundsätzlich in möglichst hoher Qualität hochgeladen werden. Nach dem Hochladen werden sie automatisch in optimierte kleinere Bilddateien verwandelt. 
 
 <a name="news" id="news"></a>
 #### News-Beiträge (Blog Posts)
@@ -56,7 +56,7 @@ Auch andere Inhalte wie Stories (Testimonials) und Angebote lassen sich auf ähn
 
 Alles ist jeweils **mehrsprachig** angelegt, die Standardsprache ist deutsch, und Übersetzungen müssen separat erstellt und veröffentlicht werden. **Bilder** können hochgeladen oder aus der Mediathek ausgewählt werden.
 
-Stories und Angebote haben zusätzlich ein Feld **Positionsnummer** um ihre Platzierung auf der Homepage zu bestimmen.
+Stories und Angebote haben zusätzlich ein Feld **Positionsnummer** um ihre Platzierung auf der Homepage zu bestimmen. Diese Nummer bezieht sich auf gleichartige Artikel im selben Abschnitt. Daher ist beispielsweise die Sortierung von "weitere Angebote" unabhängig von der Sortierung der großen Angebote im Bereich darüber.
 
 ![Screenshot: Stories bearbeiten](anleitung-stories-bearbeiten.png)
 
@@ -64,7 +64,7 @@ Stories und Angebote haben zusätzlich ein Feld **Positionsnummer** um ihre Plat
 
 Das Layout richtet sich nach dem grafischen Design, somit wechselt die seitliche Anordnung von Text und Bild immer ab und kann nicht abweichend bestimmt werden. Entsprechend benötigt es etwas mehr Fantasie oder einen Klick auf **Vorschau**, um sich das Endergebnis vorzustellen.
 
-Screenshot(s) (TODO)
+![Screenshot: Angebot bearbeiten](anleitung-angebot-bearbeiten.png)
 
 **Weitere Angebote** sind ein Spezialfall der Angebote, die dreispaltig ohne Beitragsbilder angezeigt werden. Sie unterscheiden sich von den "großen" Angeboten nur dadurch, dass sie sich in der **Kategorie "Weitere Angebote"** befinden.
 
@@ -91,11 +91,9 @@ Die technisch einfachste Lösung wäre, alle Social-Media-Inhalte zusätzlich no
 <a name="kontakt" id="kontakt"></a>
 #### Posteingang / Flamingo-Adressbuch
 
-Nachrichten sind unter Flamingo -> **Nachrichten-Eingang** (oder über den Link im Dashboard) zu sehen. Flamingo ist der Name des Plugins, das zusammen mit Contact Form 7 dafür sorgt, dass Nachrichten geprüft, versendet und gespeichert werden.
+Nachrichten sind unter Flamingo -> **Nachrichten-Eingang** (oder über den Link im Dashboard) zu sehen.
 
 ![Screenshot Posteingang](anleitung-posteingang.png)
-
-Zum Schutz vor Spam und digitalen Bedrohungen werden, falls vorhanden, das WordPress-Plugin Akismet und die Recaptcha-Technologie verwendet.
 
 #### Kontaktformular bearbeiten
 

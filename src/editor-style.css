@@ -17,7 +17,8 @@ body#tinymce.wp-editor {
   color: var(--color-primary-foreground);
 }
 
-body#tinymce.wp-editor.post-type-post {
+body#tinymce.wp-editor.post-type-post,
+body#tinymce.wp-editor.post-type-offer {
   background-color: var(--color-default-white);
 }
 
