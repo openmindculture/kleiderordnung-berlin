@@ -37,6 +37,7 @@ function kleiderordnung_add_dashboard_widget()
       $kleiderordnung_dashboardContentOutput.= 'Theme "KleiderOrdnung" muss unter <a href="/themes.php">&quot;Design&quot;</a> aktiviert werden';
     }
 
+    $kleiderordnung_dashboardContentOutput.= '<b>Inhalte bearbeiten</b>';
     $kleiderordnung_dashboardContentOutput.= '<ul>';
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php">News-Beiträge bearbeiten</a></li>'; // TODO use generic path url
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=story">Stories (Testimonials) bearbeiten</a></li>';
@@ -50,14 +51,18 @@ function kleiderordnung_add_dashboard_widget()
     $kleiderordnung_dashboardContentOutput.= '  </ul>';
     $kleiderordnung_dashboardContentOutput.= '</ul>';
 
+    $kleiderordnung_dashboardContentOutput.= '<b>Daten sichern und wiederherstellen</b><br>';
+
     // TODO installation type ==> add import/export direct link(s)
     $kleiderordnung_dashboardContentOutput.= '<a href="/wp-admin/export.php">Inhalte exportieren</a> /';
     $kleiderordnung_dashboardContentOutput.= '<a href="/wp-admin/admin.php?import=wordpress">importieren</a> ...';
 
-    $kleiderordnung_dashboardContentOutput.= '<hr>';
+    $kleiderordnung_dashboardContentOutput.= '<b><a href="https://github.com/openmindculture/kleiderordnung-berlin/blob/main/doc/anleitung.md" target="_blank">Anleitung lesen</a></b><br>';
+
+    $kleiderordnung_dashboardContentOutput.= '<hr><b>Technische Daten</b><br>';
 
     $kleiderordnung_dashboardContentOutput.= 'Theme-Version: ' . $currentThemeName . ' ' . $currentThemeVersion . '<br>';
-    $kleiderordnung_dashboardContentOutput.= 'WordPress-Version:' . esc_html($wp_version) . '<br>';
+    $kleiderordnung_dashboardContentOutput.= 'WordPress-Version: ' . esc_html($wp_version) . '<br>';
     $kleiderordnung_dashboardContentOutput.= 'PHP-Version: ' . esc_html(phpversion()) . '<br>';
 
     // TODO check and warn if required plugins are missing, like

@@ -28,6 +28,14 @@ To setup / deploy KleiderOrdnung on a website,
 - use additional reverse proxy and/or CDN servers if necessary,
 - test everything and backup your data regularly!
 
+## User Manual for the Site Owner(s)
+
+There is a (German) end-user manual aiming to show non-technical site owners how to edit and add content in the WordPress admin backend, available at [doc/anleitung.md](doc/anleitung.md) and linked from the custom admin dashboard widget which contains direct links to edit different custom content types and generate a content export file.
+
+### Screenshots used in the manual
+
+TODO
+
 ## Data Flow, Backups, Updates
 
 Design and behavior is controlled by the theme and plugins which can be deployed to production after testing. Content (data) is edited on the production server and synchronized back to test and development systems.
