@@ -66,4 +66,5 @@
       </div>
     </div>
   </div>
+  <!-- TODO website carbon badge -->
 </footer>

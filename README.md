@@ -32,15 +32,34 @@ To setup / deploy KleiderOrdnung on a website,
 
 There is a (German) end-user manual aiming to show non-technical site owners how to edit and add content in the WordPress admin backend, available at [doc/anleitung.md](doc/anleitung.md) and linked from the custom admin dashboard widget which contains direct links to edit different custom content types and generate a content export file.
 
-### Screenshots used in the manual
+### Manual Screenshots
 
-TODO
+Add, edit and preview news (blog posts):
+![Screenshot: edit news](doc/anleitung-news-bearbeiten.png)
+
+Add, edit and preview stories (testimonials):
+![Screenshot: edit stories](doc/anleitung-stories-bearbeiten.png)
+
+Add, edit and preview offers:
+(TODO)
+
+Flamingo message inbox:
+![Screenshot: message inbox](doc/anleitung-posteingang.png)
+
+Contact Form 7 settings:
+![Screenshot: contact form settings](doc/anleitung-kontaktformular.png)
+
+Update WordPress / plugins:
+![Screenshot: update WordPress plugins](doc/anleitung-plugins-aktualisieren.png)
+
+Clear cache:
+![Screenshot: clear W3TC cache](doc/anleitung-cache-leeren.png)
 
 ## Data Flow, Backups, Updates
 
 Design and behavior is controlled by the theme and plugins which can be deployed to production after testing. Content (data) is edited on the production server and synchronized back to test and development systems.
 
-![data flow](doc/theme-and-data-flow.png)
+[![data flow](doc/theme-and-data-flow.png)]()
 
 Upload
  - the theme (ZIP) via wp-admin
