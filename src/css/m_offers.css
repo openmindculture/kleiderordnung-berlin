@@ -144,7 +144,12 @@ margin-bottom: 1rem;
 @mixin typography-button-label .offers__navigation ul a {
 text-decoration: none;
 text-transform: uppercase;
-white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .offers__navigation ul a {
+    white-space: nowrap;
+  }
 }
 
 /* to make it look more natural / organic if the background intersects */
