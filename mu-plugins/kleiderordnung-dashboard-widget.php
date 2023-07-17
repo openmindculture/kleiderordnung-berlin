@@ -2,10 +2,10 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 2.3.3
+ * @version 2.4.0
  *
  * @wordpress-plugin
- * Version: 2.3.3
+ * Version: 2.4.0
  * Tested up to: 6.2
  * Plugin Name: KleiderOrdnung Dashboard Widget
  * Text Domain: kleiderOrdnung-dashboard-widget

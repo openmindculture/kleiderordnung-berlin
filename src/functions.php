@@ -11,7 +11,7 @@ if ( ! defined ( 'KLEIDERORDNUNG_URI' ) ){
 }
 
 if ( ! defined ( 'KLEIDERORDNUNG_THEME_VERSION' ) ){
-  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.3.3' );
+  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.4.0' );
 }
 
 add_theme_support('post-thumbnails', array(
