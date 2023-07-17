@@ -17,31 +17,29 @@
 
 .news__wrapper {
   display: flex;
+  display: grid;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+  grid-template-columns: 30% 30% 30%;
 }
 
 .news__post {
-  background-color: var(--color-secondary-background);
+  float: left;
   display: flex;
   flex-direction: column;
-  width: 27.5rem;
-  max-width: 100%;
-  overflow: hidden;
   flex: 0 0 27.5rem;
+  width: 100%;
+  max-width: min(100%, 27.5rem);
+  height: 100%;
+  overflow: hidden;
   margin: 0;
   padding: 0;
+  background-color: var(--color-secondary-background);
 }
 
 .news__post + .news__post {
   margin-bottom: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .news__post {
-    max-width: 30%;
-  }
 }
 
 @media (min-width: 1440px) {
