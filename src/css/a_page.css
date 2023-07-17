@@ -7,7 +7,7 @@
  * @author openmindculture
  */
 
-body.page main {
+body.page:not(.home) main {
   width: var(--width-spaced);
   max-width: var(--width-max);
   margin-left: auto;
