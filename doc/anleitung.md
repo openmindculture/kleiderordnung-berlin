@@ -66,12 +66,22 @@ Das Layout richtet sich nach dem grafischen Design, somit wechselt die seitliche
 
 ![Screenshot: Angebot bearbeiten](anleitung-angebot-bearbeiten.png)
 
-**Weitere Angebote** sind ein Spezialfall der Angebote, die dreispaltig ohne Beitragsbilder angezeigt werden. Sie unterscheiden sich von den "großen" Angeboten nur dadurch, dass sie sich in der **Kategorie "Weitere Angebote"** befinden.
+**"Weitere Angebote"** sind ein Spezialfall der Angebote, die dreispaltig ohne Beitragsbilder angezeigt werden. Sie unterscheiden sich von den "großen" Angeboten nur dadurch, dass sie sich in der **Kategorie "Weitere Angebote"** befinden.
+
+<a name="frontpage" id="frontpage"></a>
+#### Homepage (Frontpage) Inhalte
+
+Unter "Seiten" ist für jede Sprache eine eigene **Homepage** zu finden.
+Nach Klick auf **"bearbeiten"** erscheint eine Vorschau des Titelbilds und mehrere weitere Felder mit den Texten für Intro, Mission, Call to Action, und Kontaktformular-Teaser.
+
+Die Art der Eingabefelder gibt vor, ob es sich um kurze Überschriften handelt, oder ob Absätze ggf. auch mit Formatierung (Fettschrift, Aufzählungen etc.) und Links verwendet werden können.
+
+![Screenshot: Homepage-Inhalte bearbeiten](anleitung-frontpage-inhalte.png)
 
 <a name="pages" id="pages"></a>
 #### Seiten (AGB, Datenschutz, Impressum, etc.)
 
-Im Gegensatz zu den oben beschriebenen Beiträgen haben **Seiten** keine vorgegebene Struktur. Hier kann mithilfe des Block-Editors frei getextet und gestaltet werden. Es ist auch möglich, vorformatierte Textpassagen aus anderen Dokumenten einzufügen.
+Im Gegensatz zu den oben beschriebenen Inhalten und Beiträgen haben **Seiten** keine vorgegebene Struktur. Hier kann mithilfe des Block-Editors frei getextet und gestaltet werden. Es ist auch möglich, vorformatierte Textpassagen aus anderen Dokumenten einzufügen.
 
 Sprachen / Übersetzungen funktionieren genau wie bei den Beiträgen, also gibt es die Seite "Datenschutzerklärung" auch in einer englischen Version als "Privacy Statement".
 
@@ -79,7 +89,7 @@ Die Startseite (Homepage / Frontpage) ist ein Sonderfall und kann nicht unter "S
 
 ![Screenshot der Seitenübersicht und vom Bearbeiten einer Seite im Block-Editor](anleitung-seiten-bearbeiten.png)
 
-Neue Seiten erscheinen nicht automatisch im Menü oder in der Fußzeile, sind aber öffentlich verfügbar und können beispielsweise als Landingpage für Event o.ä. verlinkt werden.
+Neue Seiten erscheinen **nicht** automatisch im Menü oder in der Fußzeile, sind aber öffentlich verfügbar und können beispielsweise als Landingpage für Event o.ä. verlinkt werden.
 
 <a name="socialmedia" id="socialmedia"></a>
 #### Social Media (Instagram)

@@ -54,14 +54,6 @@ body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-contact-teaser-
   color: var(--color-inverted-foreground);
 }
 
-body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-intro-text {
-  font-family: var(--font-family-heading); /* Ivy Mode */
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-48);
-  line-height: 140%;
-  letter-spacing: 0.05em;
-}
-
 body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-mission-text,
 body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-contact-teaser-text {
   font-family: var(--font-family-heading); /* Ivy Mode */
