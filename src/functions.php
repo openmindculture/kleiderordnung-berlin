@@ -11,7 +11,7 @@ if ( ! defined ( 'KLEIDERORDNUNG_URI' ) ){
 }
 
 if ( ! defined ( 'KLEIDERORDNUNG_THEME_VERSION' ) ){
-  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.4.0' );
+  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.5.0' );
 }
 
 add_theme_support('post-thumbnails', array(
@@ -22,17 +22,30 @@ add_theme_support('post-thumbnails', array(
   'offer',
 ));
 
-add_filter('use_block_editor_for_post_type', function ($current_status, $post_type){
-  if ($post_type === 'post') return false;
-  if ($post_type === 'story') return false;
-  if ($post_type === 'offer') return false;
-  return $current_status;
-}, 10, 2);
+add_filter('use_block_editor_for_post', function (
+    /** @var bool */ $useBlockEditorForPost,
+    /** @var WP_Post */ $post
+){
+  if ($post->post_type === 'post') return false;
+  if ($post->post_type === 'story') return false;
+  if ($post->post_type === 'offer') return false;
+  $languages = pll_languages_list();
+  foreach ($languages as &$language) {
+    if (get_permalink($post->ID) == pll_home_url($language))
+      return false;
+  }
+  return $useBlockEditorForPost;
+}, 10,2);
 
 add_action( 'admin_init', function () {
   add_editor_style( 'editor-style.css');
   if (is_admin()) {
-    wp_enqueue_style( 'kleiderordnung_admin_style', 'admin-style.css', array(), KLEIDERORDNUNG_THEME_VERSION, 'all');
+    wp_enqueue_style(
+      'kleiderordnung_admin_style',
+      'admin-style.css', array(),
+      KLEIDERORDNUNG_THEME_VERSION,
+      'all'
+    );
   }
 });
 
