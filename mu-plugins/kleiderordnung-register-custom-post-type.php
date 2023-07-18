@@ -331,6 +331,12 @@ function kleiderordnung_register_custom_page_fields() {
         'type'  => 'wysiwyg',
         'label' => 'Kontakt Teaser Text',
       ),
+      array(
+        'key'   => 'page_contact_job_title',
+        'name'  => 'page_contact_job_title',
+        'type'  => 'text',
+        'label' => 'Kontakt Jobbezeichnung/Untertitel (z.B. Personal sustainable Stylist)',
+      ),
     ),
     'location' => array(
       array(

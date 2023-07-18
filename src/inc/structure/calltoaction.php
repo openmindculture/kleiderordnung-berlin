@@ -12,7 +12,7 @@
   </p>
   <div class="calltoaction__buttonwrapper">
     <a class="button button--primary" href="#kontakt" tabindex="0">
-      Kontakt
+      <?php _e( 'Kontakt') ?>
     </a>
   </div>
 </div>

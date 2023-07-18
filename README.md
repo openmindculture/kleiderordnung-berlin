@@ -96,6 +96,7 @@ non-destructive editing limited to the intended content type (plain text or rich
     - `page_mission_text`
     - `page_cta_text`
     - `page_contact_teaser_text`
+    - `page_contact_job_title`
   - Any other regular static page, like **privacy**, **imprint**, **TOS** (AGB), is displayed by `page.php` and edited in the block editor.
 - **post** (**News** blog posts / teasers)
   - category title = over headline
