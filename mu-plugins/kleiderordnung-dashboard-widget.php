@@ -37,19 +37,17 @@ function kleiderordnung_add_dashboard_widget()
       $kleiderordnung_dashboardContentOutput.= 'Theme "KleiderOrdnung" muss unter <a href="/themes.php">&quot;Design&quot;</a> aktiviert werden';
     }
 
-    $kleiderordnung_dashboardContentOutput.= '<b>Inhalte bearbeiten</b>';
+    $kleiderordnung_dashboardContentOutput.= '<b>Inhalte bearbeiten / aktualisieren</b>';
     $kleiderordnung_dashboardContentOutput.= '<ul>';
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php">News-Beiträge bearbeiten</a></li>'; // TODO use generic path url
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=story">Stories (Testimonials) bearbeiten</a></li>';
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=offer">Angebote bearbeiten</a></li>';
-    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=page">Seiten bearbeiten</a> (AGB, Impressum, Datenschutz, etc.)</li>';
-    $kleiderordnung_dashboardContentOutput.= '<li>Homepage (Frontpage) Texte:</li>';
-    $kleiderordnung_dashboardContentOutput.= '  <ul>';
-    $kleiderordnung_dashboardContentOutput.= '    <li>- Intro bearbeiten</li>'; // TODO
-    $kleiderordnung_dashboardContentOutput.= '    <li>- Mission bearbeiten</li>'; // TODO
-    $kleiderordnung_dashboardContentOutput.= '    <li>- <a href="#">Instagram-Platzhalterbilder aktualisieren</a></li>'; // TODO
-    $kleiderordnung_dashboardContentOutput.= '  </ul>';
-    $kleiderordnung_dashboardContentOutput.= '  <li><a href="/wp-admin/admin.php?page=w3tc_pgcache">Zwischenspeicher (Cache) leeren...</a></li>'; // TODO
+    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=page">Seiten bearbeiten</a> (Home, AGB, Impressum, Datenschutz, etc.)<br>';
+    $kleiderordnung_dashboardContentOutput.= '&nbsp;&nbsp;(Intro, Mission, etc. bei Homepage DE/EN bearbeiten)';
+    $kleiderordnung_dashboardContentOutput.= '</li>';
+
+    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="#">Instagram-Platzhalterbilder aktualisieren</a> (TODO)</li>';
+    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/admin.php?page=w3tc_pgcache">Zwischenspeicher (Cache) leeren...</a></li>';
     $kleiderordnung_dashboardContentOutput.= '</ul>';
 
     $kleiderordnung_dashboardContentOutput.= '<b>Posteingang / Kontaktformular</b><br>';
