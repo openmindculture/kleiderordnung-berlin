@@ -19,7 +19,7 @@
       style="width: 90%"
     >
     </lottie-player>
-    <!-- Fallback for users without Lottie Capability or Prefers Reduced Motion: Hero Banner Key Visual Image -->
+    <!-- Fallback for users without Lottie capabilities or prefers reduced motion: hero banner key visual image -->
     <div class="intro__keyvisual__animation--motionless-fallback">
       <img
         src="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg" width="1160" height="581"
@@ -31,13 +31,9 @@
   </div>
 
   <div class="intro__keytext">
-    <h1 class="intro__keytext__headline">Goodbye fast-fashion –
-      <br>
-      erlebe Kreativität und Freude mit nachhaltigem Modekonsum!</h1>
-    <p class="intro__keytext__paragraph">
-      Ich bin <strong>Tina Steinke</strong>, begeisterte Second Hand und Vintage Fashionista und helfe Dir dabei, Deine Schönheit und die Deiner Kleidungsstücke im Schrank zur Geltung und Dich zum Strahlen zu bringen!
-    </p><p class="intro__keytext__paragraph">
-      Ich habe selbst einen starken Stil und ein ausgeprägtes Gespür für die besonderen Perlen in der Fülle von Gewöhnlichem! Ob minimalistisch, bunt, mutig, modern, stark, mädchenhaft, androgyn, selbstbewusst – ich kreiere für Dich den Stil, die Ausstrahlung, das Statement, was Du mit Deiner Kleidung ausdrücken möchtest.
+    <h1 class="intro__keytext__headline"><?php echo get_field('page_intro_headline', KLEIDERORDNUNG_FRONT_PAGE_ID) ?></h1>
+    <div class="intro__keytext__paragraphs">
+      <?php echo get_field('page_intro_text', KLEIDERORDNUNG_FRONT_PAGE_ID) ?>
     </p>
   </div>
 </section>

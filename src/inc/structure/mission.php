@@ -11,9 +11,9 @@
   <div class="mission__layer mission__layer--decoration"></div>
   <div class="mission__layer mission__layer--content">
     <div class="mission__card">
-      <h2 class="mission__headline">Meine Mission</h2>
+      <h2 class="mission__headline"><?php echo get_field('page_page_mission_headline', KLEIDERORDNUNG_FRONT_PAGE_ID) ?></h2>
       <p class="mission__text">
-        Durch individuelle Stilberatung und den Einsatz fairer Mode möchte ich dazu beitragen, dass Du deiner Persönlichkeit Ausdruck verleihen kannst. Mein Ziel ist es, Kleidung auf eine kreative Art und Weise erlebbar zu machen und dich dabei zu unterstützen, dein Selbstbewusstsein zu stärken.
+        <?php echo get_field('page_page_mission_text', KLEIDERORDNUNG_FRONT_PAGE_ID) ?>
       </p>
     </div>
   </div>

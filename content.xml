@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-07-13 17:32" -->
+	<!-- generator="WordPress/6.2.2" created="2023-07-18 17:22" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Thu, 13 Jul 2023 17:32:21 +0000</pubDate>
+	<pubDate>Tue, 18 Jul 2023 17:22:58 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -104,13 +104,6 @@
 		<wp:term_name><![CDATA[Deutsch]]></wp:term_name>
 	</wp:term>
 		<wp:term>
-		<wp:term_id>7</wp:term_id>
-		<wp:term_taxonomy><![CDATA[term_language]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[pll_en]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[English]]></wp:term_name>
-	</wp:term>
-		<wp:term>
 		<wp:term_id>6</wp:term_id>
 		<wp:term_taxonomy><![CDATA[language]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[en]]></wp:term_slug>
@@ -121,6 +114,13 @@
 			<wp:meta_key><![CDATA[_pll_strings_translations]]></wp:meta_key>
 			<wp:meta_value><![CDATA[a:1:{i:0;a:2:{i:0;s:17:"Website-Statistik";i:1;s:18:"website statistics";}}]]></wp:meta_value>
 		</wp:termmeta>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>7</wp:term_id>
+		<wp:term_taxonomy><![CDATA[term_language]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[pll_en]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[English]]></wp:term_name>
 	</wp:term>
 		<wp:term>
 		<wp:term_id>11</wp:term_id>
@@ -1620,35 +1620,13 @@ admin]]></content:encoded>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">/?page_id=2</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>Dies ist eine Beispiel-Seite. Sie unterscheidet sich von Beiträgen, da sie stets an derselben Stelle bleibt und (bei den meisten Themes) in der Website-Navigation angezeigt wird. Die meisten starten mit einem Impressum, der Datenschutzerklärung oder einer „Über&nbsp;uns“-Seite, um sich potenziellen Besuchern der Website vorzustellen. Dort könnte zum Beispiel stehen:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:quote -->
-<blockquote class="wp-block-quote"><!-- wp:paragraph -->
-<p>Hallo! Tagsüber arbeite ich als Fahrradkurier, nachts bin ich ein aufstrebender Schauspieler und dies hier ist meine Website. Ich lebe in Berlin, habe einen großen Hund namens Jack, mag Piña Coladas, jedoch weniger (ohne Schirm) im Regen stehen gelassen zu werden.</p>
-<!-- /wp:paragraph --></blockquote>
-<!-- /wp:quote -->
-
-<!-- wp:paragraph -->
-<p>...&nbsp;oder so etwas wie:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:quote -->
-<blockquote class="wp-block-quote"><!-- wp:paragraph -->
-<p>Das Unternehmen XYZ wurde 1971 gegründet und versorgt die Öffentlichkeit seither mit qualitativ hochwertigen Produkten. An seinem Standort in einer kleinen Großstadt beschäftigt der Betrieb über 2.000 Menschen und unterstützt die Stadtbewohner in vielfacher Hinsicht.</p>
-<!-- /wp:paragraph --></blockquote>
-<!-- /wp:quote -->
-
-<!-- wp:paragraph -->
-<p>Als neuer WordPress-Benutzer solltest du <a href="/wp-admin/">dein Dashboard</a> aufrufen, um diese Seite zu löschen und neue Seiten und Beiträge für deine Website erstellen. Viel Spaß!</p>
-<!-- /wp:paragraph -->]]></content:encoded>
+		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>2</wp:post_id>
 		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-10 17:45:56]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-10 15:45:56]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-18 19:21:53]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-18 17:21:53]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[beispiel-seite]]></wp:post_name>
@@ -1671,6 +1649,55 @@ admin]]></content:encoded>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
 		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_intro_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Goodbye fast-fashion – erlebe Kreativität und Freude mit nachhaltigem Modekonsum!]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_intro_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_intro_headline]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_intro_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<p class="intro__keytext__paragraph">Ich bin <strong>Tina Steinke</strong>, begeisterte Second Hand und Vintage Fashionista und helfe Dir dabei, Deine Schönheit und die Deiner Kleidungsstücke im Schrank zur Geltung und Dich zum Strahlen zu bringen!</p>
+<p class="intro__keytext__paragraph">Ich habe selbst einen starken Stil und ein ausgeprägtes Gespür für die besonderen Perlen in der Fülle von Gewöhnlichem! Ob minimalistisch, bunt, mutig, modern, stark, mädchenhaft, androgyn, selbstbewusst – ich kreiere für Dich den Stil, die Ausstrahlung, das Statement, was Du mit Deiner Kleidung ausdrücken möchtest.</p>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_intro_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_intro_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_mission_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Meine Mission]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_mission_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_mission_headline]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_mission_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Durch individuelle Stilberatung und den Einsatz fairer Mode möchte ich dazu beitragen, dass Du deiner Persönlichkeit Ausdruck verleihen kannst. Mein Ziel ist es, Kleidung auf eine kreative Art und Weise erlebbar zu machen und dich dabei zu unterstützen, dein Selbstbewusstsein zu stärken.]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_mission_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_mission_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_cta_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Habe ich Dich neugierig gemacht? Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_cta_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_cta_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_contact_teaser_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Habe ich Dich neugierig gemacht oder hast du Fragen? Melde dich gern bei mir!]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_contact_teaser_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_contact_teaser_text]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1825,8 +1852,8 @@ admin]]></content:encoded>
 		<wp:post_id>65</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-10 17:44:46]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-10 15:44:46]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-10 17:44:46]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-10 15:44:46]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-18 19:22:47]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-18 17:22:47]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[homepage]]></wp:post_name>
@@ -1853,6 +1880,61 @@ admin]]></content:encoded>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_cmplz_scanned_post]]></wp:meta_key>
 		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_intro_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Say goodbye to fast fashion – and say hello to the creativity and joy of sustainable wear!]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_intro_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_intro_headline]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_intro_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[<section class="intro">
+<div class="intro__keytext">
+<p class="intro__keytext__paragraph">Welcome to my website! I’m <strong>Tina Steinke</strong>, and I’m passionate about secondhand and vintage fashion. I’m here to help you and your wardrobe shine your brightest!</p>
+<p class="intro__keytext__paragraph">I have an eye for spotting pearls where they’re least expected. Minimalist, colourful, bold, modern, strong, feminine, androgynous, or assertive—I love working with all kinds of styles, most of all yours!</p>
+Your clothes can help make a statement, express your charisma, or show off your personal style. Let’s create your signature look!
+
+</div>
+</section><section id="angebot" class="offers target-offset"></section>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_intro_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_intro_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_mission_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[My Mission]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_mission_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_mission_headline]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_mission_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Express your truest self with my individualised, sustainably-based styling advice. My goal is to make your wardrobe and your self-confidence come alive for you!]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_mission_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_mission_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_cta_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Would you like to know more? Then book a free consultation call and let’s talk!]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_cta_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_cta_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_contact_teaser_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Would you like to know more? I want to hear from you!]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_contact_teaser_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_contact_teaser_text]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -4185,5 +4267,5 @@ nicht Teil des Posts
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-07-13 19:32:21 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-07-18 19:22:58 by W3 Total Cache
 -->

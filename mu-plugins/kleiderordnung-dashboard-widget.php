@@ -2,10 +2,10 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 2.5.0
+ * @version 2.5.1
  *
  * @wordpress-plugin
- * Version: 2.5.0
+ * Version: 2.5.1
  * Tested up to: 6.2
  * Plugin Name: KleiderOrdnung Dashboard Widget
  * Text Domain: kleiderOrdnung-dashboard-widget
@@ -45,6 +45,7 @@ function kleiderordnung_add_dashboard_widget()
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=page">Seiten bearbeiten</a> (Home, AGB, Impressum, Datenschutz, etc.)<br>';
     $kleiderordnung_dashboardContentOutput.= '&nbsp;&nbsp;(Intro, Mission, etc. bei Homepage DE/EN bearbeiten)';
     $kleiderordnung_dashboardContentOutput.= '</li>';
+    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/admin.php?page=mlang_strings">Sonstige Textteile und Übersetzungen bearbeiten</a> (Buttons u.a.)</li>';
 
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="#">Instagram-Platzhalterbilder aktualisieren</a> (TODO)</li>';
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/admin.php?page=w3tc_pgcache">Zwischenspeicher (Cache) leeren...</a></li>';

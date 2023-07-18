@@ -91,6 +91,11 @@ Die Startseite (Homepage / Frontpage) ist ein Sonderfall und kann nicht unter "S
 
 Neue Seiten erscheinen **nicht** automatisch im Menü oder in der Fußzeile, sind aber öffentlich verfügbar und können beispielsweise als Landingpage für Event o.ä. verlinkt werden.
 
+<a name="sonstige" id="sonstige"></a>
+#### Sonstige Texte (Übersetzungen)
+
+Unter dem Menüpunkt **Sprachen** -> **Übersetzungen** können allgemeingültige oder mehrfach vorkommende Textteile geändert werden, wie beispielsweise die Beschriftung der Kontakt-Buttons.
+
 <a name="socialmedia" id="socialmedia"></a>
 #### Social Media (Instagram)
 

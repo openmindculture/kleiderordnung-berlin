@@ -118,6 +118,7 @@ non-destructive editing limited to the intended content type (plain text or rich
   - custom taxonomy: **offer_section** _NOT localized_
     - `angebot` ("Angebot")
     - `weitere` ("Weiteres Angebot")
+- general **translations** managed by Polylang, like messages and button captions can be edited by the site owner on the **languages** -> **translations** page.
 - social media placeholders (see below)
 - content handled by plugins or widgets:
   - Instagram section (external feed via juicer.io)

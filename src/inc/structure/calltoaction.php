@@ -8,8 +8,7 @@
 ?>
 <div class="calltoaction">
   <p class="calltoaction__text">
-    Habe ich Dich neugierig gemacht?
-    Dann buche gern einen kostenlosen Kennenlerntermin!
+    <?php echo get_field('page_contact_teaser_text', KLEIDERORDNUNG_FRONT_PAGE_ID) ?>
   </p>
   <div class="calltoaction__buttonwrapper">
     <a class="button button--primary" href="#kontakt" tabindex="0">

@@ -97,7 +97,7 @@ if ( $the_query->have_posts() ) : ?>
     <?php
     $args = array(
       'post_type'      => 'offer',
-      'lang'           => 'de', /* TODO use current language */
+      'lang'           => pll_current_language(),
       'posts_per_page' => -1,
       'tax_query' => array(
         array(
@@ -133,7 +133,6 @@ if ( $the_query->have_posts() ) : ?>
           <figure class="offers__offer__icon"></figure>
           <h3 class="offers__additional__articles__headline"><?php echo get_the_title($resorted_post_id) ?></h3>
           <p class="offers__offer__paragraph">
-            <!-- TODO why does this show the same text for every post while every other field is correct?! -->
             <?php echo get_the_content($resorted_post_id) ?>
           </p>
           <div class="offers__offer__price offers__additional__articles__price">

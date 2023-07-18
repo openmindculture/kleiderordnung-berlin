@@ -54,6 +54,7 @@ body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-contact-teaser-
   color: var(--color-inverted-foreground);
 }
 
+body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-intro-headline,
 body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-mission-text,
 body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-contact-teaser-text {
   font-family: var(--font-family-heading); /* Ivy Mode */

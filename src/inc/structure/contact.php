@@ -14,7 +14,9 @@
 
     <div class="contact__columns__column contact__columns__column--50">
       <!-- BEGIN vcard imprint contact information - TODO: update using rel=me etc. -->
-      <div class="contact__calltoactiontext contact__calltoactiontext--primary">Habe ich Dich neugierig gemacht oder hast du Fragen? Melde dich gern bei mir!</div>
+      <div class="contact__calltoactiontext contact__calltoactiontext--primary">
+        <?php echo get_field('page_page_mission_headline', KLEIDERORDNUNG_FRONT_PAGE_ID) ?>
+      </div>
       <div class="contact__vcard">
         <address class="vcard contact__vcard__address">
           <div class="contact__vcard__company" itemprop="company">Kleiderordnung</div>
