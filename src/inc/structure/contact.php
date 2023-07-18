@@ -25,7 +25,7 @@
           <div class="contact__vcard__phone">Tel. <a class=telephone itemprop=telephone href=tel:+491636823820><span class=visually-spaced>0</span><span class="visually-spaced dot-after">163</span><span class=visually-spaced>682</span><span class=visually-spaced>382</span><span class=visually-spaced>0</span></a>
           </div>
           <div class="contact__vcard__email">
-            <a class="contact__vcard__email__mailto email" itemprop="email" itemscope href=mailto:martinasteinke@posteo.de>martinasteinke@posteo.de</a>
+            <a class="contact__vcard__email__mailto email" itemprop="email" itemscope href="#" data-mailing="lazy" data-user="martinasteinke" data-domain="posteo.de"><span class="spamprotected">mar</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">tinasteinke</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">@</span><span class="spamprotected">posteo</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">.</span><span class="spamprotected">de</span></a>
           </div>
         </address>
         <div class="contact__calltoactiontext contact__calltoactiontext--secondary">

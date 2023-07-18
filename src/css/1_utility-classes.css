@@ -17,7 +17,7 @@
   border: 0;
 }
 
-.hidden, .initially-hidden {
+.hidden, .initially-hidden, .blockspam {
   display: none;
 }
 
