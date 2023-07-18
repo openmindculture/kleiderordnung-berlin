@@ -5,7 +5,7 @@
  * @author openmindculture
  */
 
-@import url("css/typography.css.php");
+@import url("css/0_typography.css.php");
 @import url("css/1_colors-design-settings.css");
 
 body#tinymce.wp-editor {
@@ -49,7 +49,7 @@ body#tinymce.wp-editor.post-type-page:not(.acf_content) {
 
 body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-mission-headline,
 body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-mission-text,
-body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-contact-teaser {
+body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-contact-teaser-text {
   background-color: var(--color-inverted-background);
   color: var(--color-inverted-foreground);
 }
@@ -63,7 +63,7 @@ body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-intro-text {
 }
 
 body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-mission-text,
-body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-contact-teaser {
+body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-contact-teaser-text {
   font-family: var(--font-family-heading); /* Ivy Mode */
   font-size: var(--font-size-24);
   line-height: 160%;

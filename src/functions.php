@@ -37,9 +37,26 @@ add_filter('use_block_editor_for_post', function (
   return $useBlockEditorForPost;
 }, 10,2);
 
+// reminder that actions wrap filter calls
+// so there is any order preference despite the declarative approach
+// I would rather put filter hooks before action hooks
+
+add_filter( 'body_class', function( $classes = '' ) {
+  $classes[] = 'theme-kleiderordnung';
+  return $classes;
+} );
+
+add_filter('acf/fields/wysiwyg/toolbars' , function( $toolbars ){
+  $toolbars['Full'] = array();
+  $toolbars['Full'][1] = array('bold', 'italic', 'underline', 'strikethrough', 'bullist', 'alignleft', 'aligncenter', 'alignright', 'alignjustify', 'link', 'unlink', 'pastetext', 'removeformat', 'undo', 'redo' );
+  $toolbars['Full'][2] = array();
+  unset( $toolbars['Basic' ] );
+  return $toolbars;
+});
+
 add_action( 'admin_init', function () {
-  add_editor_style( 'editor-style.css');
   if (is_admin()) {
+    add_editor_style( 'editor-style.css');
     wp_enqueue_style(
       'kleiderordnung_admin_style',
       'admin-style.css',
@@ -50,21 +67,13 @@ add_action( 'admin_init', function () {
   }
 });
 
+
 if (is_admin()) {
   add_action('acf/input/admin_footer', function(){
     ?><script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/admin-scripts.js?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>"></script>
     <?php
   });
 }
-
-// reminder that actions wrap filter calls
-// so there is any order preference despite the declarative approach
-// I would rather put filter hooks before action hooks
-
-add_filter( 'body_class', function( $classes = '' ) {
-  $classes[] = 'theme-kleiderordnung';
-  return $classes;
-} );
 
 // dequeue svg filters above page header
 add_action( 'wp_enqueue_scripts', function() {
