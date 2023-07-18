@@ -53,6 +53,11 @@
 }
 
 .contact__calltoactiontext--primary {
+  margin-bottom: 3.5rem;
+}
+
+.contact__calltoactiontext--primary,
+.contact__calltoactiontext--primary p {
   font-family: var(--font-family-ivymode);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-32);

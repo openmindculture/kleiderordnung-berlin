@@ -40,9 +40,8 @@
   </script>
   <script defer src="<?php echo get_template_directory_uri() ?>/js/scripts.js?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>"></script>
   <script defer src="<?php echo get_template_directory_uri() ?>/js/lottie-player.js?v=1.7.1" id="lottie-player-script"></script>
-  <!-- TODO use localized editable meta information -->
-  <meta name="description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
-  <meta name="keywords" content="Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit,Stilberatung,Stil,Beratung,Mode,Shopping,einkaufen,kombinieren,aussehen,aufräumen,aussortieren,Kleiderschrank,Check,Begleitung,Berlin">
+  <meta name="description" content="<?php _e( 'Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin (Meta Description frei übersetzen)', 'kleiderordnung' ) ?>">
+  <meta name="keywords" content="<?php _e( 'Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit (Meta Keywords frei übersetzen)', 'kleiderordnung' ) ?>">
   <!-- TODO check and adapt all header and social attribute values! -->
   <meta name="robots" content="index,follow">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,8 +50,8 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/img/kleider-ordnung-logo.png">
-  <meta property="og:title" content="Kleiderordnung Berlin: nachhaltige Modeberatung von Tina Steinke">
-  <meta property="og:description" content="Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin">
+  <meta property="og:title" content="<?php _e( 'Kleiderordnung Berlin: nachhaltige Modeberatung von Tina Steinke', 'kleiderordnung' ) ?>">
+  <meta property="og:description" content="<?php _e( 'Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin', 'kleiderordnung' ) ?>">
   <meta property="og:url" content="https://www.kleiderordnung-berlin.de/">
   <meta property="og:site_name" content="">
   <meta property="og:type" content="website">

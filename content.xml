@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-07-18 17:22" -->
+	<!-- generator="WordPress/6.2.2" created="2023-07-18 20:33" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Tue, 18 Jul 2023 17:22:58 +0000</pubDate>
+	<pubDate>Tue, 18 Jul 2023 20:33:27 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -95,6 +95,10 @@
 		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[Deutsch]]></wp:term_name>
 		<wp:term_description><![CDATA[a:3:{s:6:"locale";s:5:"de_DE";s:3:"rtl";i:0;s:9:"flag_code";s:2:"de";}]]></wp:term_description>
+		<wp:termmeta>
+			<wp:meta_key><![CDATA[_pll_strings_translations]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:18:{i:0;a:2:{i:0;s:21:"KleiderOrdnung Berlin";i:1;s:21:"KleiderOrdnung Berlin";}i:1;a:2:{i:0;s:6:"j. F Y";i:1;s:6:"j. F Y";}i:2;a:2:{i:0;s:3:"G:i";i:1;s:3:"G:i";}i:3;a:2:{i:0;s:27:"Cookie-Zustimmung verwalten";i:1;s:27:"Cookie-Zustimmung verwalten";}i:4;a:2:{i:0;s:20:"Zustimmung verwalten";i:1;s:20:"Zustimmung verwalten";}i:5;a:2:{i:0;s:8:"Ablehnen";i:1;s:8:"Ablehnen";}i:6;a:2:{i:0;s:11:"Akzeptieren";i:1;s:11:"Akzeptieren";}i:7;a:2:{i:0;s:403:"Um dir ein optimales Erlebnis zu bieten, verwenden wir Technologien wie Cookies, um Geräteinformationen zu speichern und/oder darauf zuzugreifen. Wenn du diesen Technologien zustimmst, können wir Daten wie das Surfverhalten oder eindeutige IDs auf dieser Website verarbeiten. Wenn du deine Zustimmung nicht erteilst oder zurückziehst, können bestimmte Merkmale und Funktionen beeinträchtigt werden.";i:1;s:403:"Um dir ein optimales Erlebnis zu bieten, verwenden wir Technologien wie Cookies, um Geräteinformationen zu speichern und/oder darauf zuzugreifen. Wenn du diesen Technologien zustimmst, können wir Daten wie das Surfverhalten oder eindeutige IDs auf dieser Website verarbeiten. Wenn du deine Zustimmung nicht erteilst oder zurückziehst, können bestimmte Merkmale und Funktionen beeinträchtigt werden.";}i:8;a:2:{i:0;s:23:"Einstellungen speichern";i:1;s:23:"Einstellungen speichern";}i:9;a:2:{i:0;s:21:"Einstellungen ansehen";i:1;s:21:"Einstellungen ansehen";}i:10;a:2:{i:0;s:10:"Funktional";i:1;s:10:"Funktional";}i:11;a:2:{i:0;s:9:"Marketing";i:1;s:9:"Marketing";}i:12;a:2:{i:0;s:11:"Statistiken";i:1;s:11:"Statistiken";}i:13;a:2:{i:0;s:9:"Vorlieben";i:1;s:9:"Vorlieben";}i:14;a:2:{i:0;s:342:"Die technische Speicherung oder der Zugang ist unbedingt erforderlich für den rechtmäßigen Zweck, die Nutzung eines bestimmten Dienstes zu ermöglichen, der vom Teilnehmer oder Nutzer ausdrücklich gewünscht wird, oder für den alleinigen Zweck, die Übertragung einer Nachricht über ein elektronisches Kommunikationsnetz durchzuführen.";i:1;s:342:"Die technische Speicherung oder der Zugang ist unbedingt erforderlich für den rechtmäßigen Zweck, die Nutzung eines bestimmten Dienstes zu ermöglichen, der vom Teilnehmer oder Nutzer ausdrücklich gewünscht wird, oder für den alleinigen Zweck, die Übertragung einer Nachricht über ein elektronisches Kommunikationsnetz durchzuführen.";}i:15;a:2:{i:0;s:98:"Die technische Speicherung oder der Zugriff, der ausschließlich zu statistischen Zwecken erfolgt.";i:1;s:98:"Die technische Speicherung oder der Zugriff, der ausschließlich zu statistischen Zwecken erfolgt.";}i:16;a:2:{i:0;s:384:"Die technische Speicherung oder der Zugriff, der ausschließlich zu anonymen statistischen Zwecken verwendet wird. Ohne eine Vorladung, die freiwillige Zustimmung deines Internetdienstanbieters oder zusätzliche Aufzeichnungen von Dritten können die zu diesem Zweck gespeicherten oder abgerufenen Informationen allein in der Regel nicht dazu verwendet werden, dich zu identifizieren.";i:1;s:384:"Die technische Speicherung oder der Zugriff, der ausschließlich zu anonymen statistischen Zwecken verwendet wird. Ohne eine Vorladung, die freiwillige Zustimmung deines Internetdienstanbieters oder zusätzliche Aufzeichnungen von Dritten können die zu diesem Zweck gespeicherten oder abgerufenen Informationen allein in der Regel nicht dazu verwendet werden, dich zu identifizieren.";}i:17;a:2:{i:0;s:183:"Die technische Speicherung oder der Zugriff ist für den rechtmäßigen Zweck der Speicherung von Präferenzen erforderlich, die nicht vom Abonnenten oder Benutzer angefordert wurden.";i:1;s:183:"Die technische Speicherung oder der Zugriff ist für den rechtmäßigen Zweck der Speicherung von Präferenzen erforderlich, die nicht vom Abonnenten oder Benutzer angefordert wurden.";}}]]></wp:meta_value>
+		</wp:termmeta>
 	</wp:term>
 		<wp:term>
 		<wp:term_id>4</wp:term_id>
@@ -109,10 +113,10 @@
 		<wp:term_slug><![CDATA[en]]></wp:term_slug>
 		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[English]]></wp:term_name>
-		<wp:term_description><![CDATA[a:3:{s:6:"locale";s:5:"en_US";s:3:"rtl";i:0;s:9:"flag_code";s:2:"us";}]]></wp:term_description>
+		<wp:term_description><![CDATA[a:3:{s:6:"locale";s:5:"en_US";s:3:"rtl";i:0;s:9:"flag_code";s:2:"gb";}]]></wp:term_description>
 		<wp:termmeta>
 			<wp:meta_key><![CDATA[_pll_strings_translations]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;a:2:{i:0;s:17:"Website-Statistik";i:1;s:18:"website statistics";}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:19:{i:0;a:2:{i:0;s:17:"Website-Statistik";i:1;s:18:"website statistics";}i:1;a:2:{i:0;s:21:"KleiderOrdnung Berlin";i:1;s:21:"KleiderOrdnung Berlin";}i:2;a:2:{i:0;s:6:"j. F Y";i:1;s:6:"j. F Y";}i:3;a:2:{i:0;s:3:"G:i";i:1;s:3:"G:i";}i:4;a:2:{i:0;s:27:"Cookie-Zustimmung verwalten";i:1;s:27:"Cookie-Zustimmung verwalten";}i:5;a:2:{i:0;s:20:"Zustimmung verwalten";i:1;s:20:"Zustimmung verwalten";}i:6;a:2:{i:0;s:8:"Ablehnen";i:1;s:8:"Ablehnen";}i:7;a:2:{i:0;s:11:"Akzeptieren";i:1;s:11:"Akzeptieren";}i:8;a:2:{i:0;s:403:"Um dir ein optimales Erlebnis zu bieten, verwenden wir Technologien wie Cookies, um Geräteinformationen zu speichern und/oder darauf zuzugreifen. Wenn du diesen Technologien zustimmst, können wir Daten wie das Surfverhalten oder eindeutige IDs auf dieser Website verarbeiten. Wenn du deine Zustimmung nicht erteilst oder zurückziehst, können bestimmte Merkmale und Funktionen beeinträchtigt werden.";i:1;s:403:"Um dir ein optimales Erlebnis zu bieten, verwenden wir Technologien wie Cookies, um Geräteinformationen zu speichern und/oder darauf zuzugreifen. Wenn du diesen Technologien zustimmst, können wir Daten wie das Surfverhalten oder eindeutige IDs auf dieser Website verarbeiten. Wenn du deine Zustimmung nicht erteilst oder zurückziehst, können bestimmte Merkmale und Funktionen beeinträchtigt werden.";}i:9;a:2:{i:0;s:23:"Einstellungen speichern";i:1;s:23:"Einstellungen speichern";}i:10;a:2:{i:0;s:21:"Einstellungen ansehen";i:1;s:21:"Einstellungen ansehen";}i:11;a:2:{i:0;s:10:"Funktional";i:1;s:10:"Funktional";}i:12;a:2:{i:0;s:9:"Marketing";i:1;s:9:"Marketing";}i:13;a:2:{i:0;s:11:"Statistiken";i:1;s:11:"Statistiken";}i:14;a:2:{i:0;s:9:"Vorlieben";i:1;s:9:"Vorlieben";}i:15;a:2:{i:0;s:342:"Die technische Speicherung oder der Zugang ist unbedingt erforderlich für den rechtmäßigen Zweck, die Nutzung eines bestimmten Dienstes zu ermöglichen, der vom Teilnehmer oder Nutzer ausdrücklich gewünscht wird, oder für den alleinigen Zweck, die Übertragung einer Nachricht über ein elektronisches Kommunikationsnetz durchzuführen.";i:1;s:342:"Die technische Speicherung oder der Zugang ist unbedingt erforderlich für den rechtmäßigen Zweck, die Nutzung eines bestimmten Dienstes zu ermöglichen, der vom Teilnehmer oder Nutzer ausdrücklich gewünscht wird, oder für den alleinigen Zweck, die Übertragung einer Nachricht über ein elektronisches Kommunikationsnetz durchzuführen.";}i:16;a:2:{i:0;s:98:"Die technische Speicherung oder der Zugriff, der ausschließlich zu statistischen Zwecken erfolgt.";i:1;s:98:"Die technische Speicherung oder der Zugriff, der ausschließlich zu statistischen Zwecken erfolgt.";}i:17;a:2:{i:0;s:384:"Die technische Speicherung oder der Zugriff, der ausschließlich zu anonymen statistischen Zwecken verwendet wird. Ohne eine Vorladung, die freiwillige Zustimmung deines Internetdienstanbieters oder zusätzliche Aufzeichnungen von Dritten können die zu diesem Zweck gespeicherten oder abgerufenen Informationen allein in der Regel nicht dazu verwendet werden, dich zu identifizieren.";i:1;s:384:"Die technische Speicherung oder der Zugriff, der ausschließlich zu anonymen statistischen Zwecken verwendet wird. Ohne eine Vorladung, die freiwillige Zustimmung deines Internetdienstanbieters oder zusätzliche Aufzeichnungen von Dritten können die zu diesem Zweck gespeicherten oder abgerufenen Informationen allein in der Regel nicht dazu verwendet werden, dich zu identifizieren.";}i:18;a:2:{i:0;s:183:"Die technische Speicherung oder der Zugriff ist für den rechtmäßigen Zweck der Speicherung von Präferenzen erforderlich, die nicht vom Abonnenten oder Benutzer angefordert wurden.";i:1;s:183:"Die technische Speicherung oder der Zugriff ist für den rechtmäßigen Zweck der Speicherung von Präferenzen erforderlich, die nicht vom Abonnenten oder Benutzer angefordert wurden.";}}]]></wp:meta_value>
 		</wp:termmeta>
 	</wp:term>
 		<wp:term>
@@ -1625,8 +1629,8 @@ admin]]></content:encoded>
 		<wp:post_id>2</wp:post_id>
 		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-18 19:21:53]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-18 17:21:53]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-18 22:32:16]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-18 20:32:16]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[beispiel-seite]]></wp:post_name>
@@ -1652,7 +1656,7 @@ admin]]></content:encoded>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[page_intro_headline]]></wp:meta_key>
-		<wp:meta_value><![CDATA[Goodbye fast-fashion – erlebe Kreativität und Freude mit nachhaltigem Modekonsum!]]></wp:meta_value>
+		<wp:meta_value><![CDATA[Goodbye fast-fashion –erlebe Kreativität und Freude mit nachhaltigem Modekonsum!]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_page_intro_headline]]></wp:meta_key>
@@ -1698,6 +1702,14 @@ admin]]></content:encoded>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_page_contact_teaser_text]]></wp:meta_key>
 		<wp:meta_value><![CDATA[page_contact_teaser_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_contact_job_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Personal sustainable stylist]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_contact_job_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_contact_job_title]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1852,8 +1864,8 @@ admin]]></content:encoded>
 		<wp:post_id>65</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-10 17:44:46]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-10 15:44:46]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-18 19:22:47]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-18 17:22:47]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-18 22:32:06]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-18 20:32:06]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[homepage]]></wp:post_name>
@@ -1883,7 +1895,7 @@ admin]]></content:encoded>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[page_intro_headline]]></wp:meta_key>
-		<wp:meta_value><![CDATA[Say goodbye to fast fashion – and say hello to the creativity and joy of sustainable wear!]]></wp:meta_value>
+		<wp:meta_value><![CDATA[Say goodbye to fast fashion –and say hello to the creativity and joy of sustainable wear!]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_page_intro_headline]]></wp:meta_key>
@@ -1935,6 +1947,14 @@ Your clothes can help make a statement, express your charisma, or show off your 
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_page_contact_teaser_text]]></wp:meta_key>
 		<wp:meta_value><![CDATA[page_contact_teaser_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_contact_job_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Personal sustainable stylist]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_contact_job_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_contact_job_title]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -4267,5 +4287,5 @@ nicht Teil des Posts
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-07-18 19:22:58 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-07-18 22:33:27 by W3 Total Cache
 -->

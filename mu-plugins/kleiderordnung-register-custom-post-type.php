@@ -298,7 +298,7 @@ function kleiderordnung_register_custom_page_fields() {
       array(
         'key'   => 'page_intro_headline',
         'name'  => 'page_intro_headline',
-        'type'  => 'wysiwyg',
+        'type'  => 'text',
         'label' => 'Intro Überschrift (Zeilenumbruch möglich)',
       ),
       array(

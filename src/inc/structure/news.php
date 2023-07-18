@@ -16,7 +16,7 @@ $the_query = new WP_Query( $args ); ?>
 
 <?php if ( $the_query->have_posts() ) : ?>
 <section id="news" class="news target-offset"><!-- post-type post -->
-  <h2 class="news__headline">News</h2>
+  <h2 class="news__headline"><?php _e( 'News', 'kleiderordnung' ) ?></h2>
   <div class="news__wrapper">
 
   <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
@@ -48,7 +48,7 @@ $the_query = new WP_Query( $args ); ?>
 
   <div class="news__footer">
     <!-- TODO disable "all news" link in single page mode: -->
-    <a class="news__link news__link--more" href="#" tabindex="0">alle Neuigkeiten</a>
+    <a class="news__link news__link--more" href="#" tabindex="0"><?php _e( 'alle Neuigkeiten', 'kleiderordnung' ) ?></a>
   </div>
 
 </section>

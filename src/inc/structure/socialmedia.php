@@ -9,7 +9,7 @@
 ?>
 <div class="socialmedia target-offset">
   <div class="socialmedia__links__wrapper">
-    <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung auf Instagram" class="socialmedia__link socialmedia__link--instagram"><figure class="socialmedia__icon socialmedia__icon--primary socialmedia__icon--primary--instagram" tabindex="0"></figure> Kleiderordnung auf instagram</a>
+    <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung <?php _e( 'auf Instagram', 'kleiderordnung' ) ?>" class="socialmedia__link socialmedia__link--instagram"><figure class="socialmedia__icon socialmedia__icon--primary socialmedia__icon--primary--instagram" tabindex="0"></figure> <?php _e( 'Kleiderordnung auf instagram', 'kleiderordnung' ) ?></a>
   </div>
 
 
@@ -33,27 +33,27 @@ Weiteres TODO: wenn Insta Platzhalter durch aktuellen Inhalt ersetzt
           <div class="j-stacker socialmedia__feed__embed__table">
             <div class="j-stack galcolumn socialmedia__feed__embed__column column-0">
               <div class="feed-item socialmedia__feed__embed__cell">
-                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/463702903.jpg" width="480" height="600" alt="Instagram Picture" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/463702903.jpg" width="480" height="600" alt="<?php esc_attr_e( 'Instagram Picture', 'kleiderordnung' ) ?>" loading="lazy">
               </div>
             </div>
             <div class="j-stack galcolumn socialmedia__feed__embed__column column-1">
               <div class="feed-item socialmedia__feed__embed__cell">
-                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/463645330.jpg" width="480" height="600" alt="Instagram Picture" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/463645330.jpg" width="480" height="600" alt="<?php esc_attr_e( 'Instagram Picture', 'kleiderordnung' ) ?>" loading="lazy">
               </div>
             </div>
             <div class="j-stack galcolumn socialmedia__feed__embed__column column-2">
               <div class="feed-item socialmedia__feed__embed__cell">
-                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/463598174.jpg" width="480" height="600" alt="Instagram Picture" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/463598174.jpg" width="480" height="600" alt="<?php esc_attr_e( 'Instagram Picture', 'kleiderordnung' ) ?>" loading="lazy">
               </div>
             </div>
             <div class="j-stack galcolumn socialmedia__feed__embed__column column-3">
               <div class="feed-item socialmedia__feed__embed__cell">
-                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/462380797.jpg" width="480" height="600" alt="Instagram Picture" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/462380797.jpg" width="480" height="600" alt="<?php esc_attr_e( 'Instagram Picture', 'kleiderordnung' ) ?>" loading="lazy">
               </div>
             </div>
             <div class="j-stack galcolumn socialmedia__feed__embed__column column-4">
               <div class="feed-item socialmedia__feed__embed__cell">
-                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/462341945.jpg" width="480" height="600" alt="Instagram Picture" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/462341945.jpg" width="480" height="600" alt="<?php esc_attr_e( 'Instagram Picture', 'kleiderordnung' ) ?>" loading="lazy">
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ Weiteres TODO: wenn Insta Platzhalter durch aktuellen Inhalt ersetzt
     </div>
 
     <div id="juicer-feed-container"
-         label="Instagram Galerie"
+         label="<?php _e( 'Instagram Galerie', 'kleiderordnung' ) ?>"
          class="socialmedia__feed__container socialmedia__feed__container--juicer feed__container allowable--on-visibility"
          data-allowable="allowable"
          data-styleurl="<?php echo get_template_directory_uri() ?>/css/juicer-embed-min.css"
@@ -77,9 +77,9 @@ Weiteres TODO: wenn Insta Platzhalter durch aktuellen Inhalt ersetzt
 
 
     <div class="socialmedia__feed__consent feed__consent socialmedia__feed__consent--juicer">
-      <p>Dürfen externe Inhalte von Instagram geladen werden?</p>
-      <button class="button__allow button__allow--once" data-allow="once" tabindex="0">Einmal erlauben</button>
-      <button class="button__allow button__allow--always" data-allow="always" tabindex="0">Immer erlauben</button>
+      <p><?php _e( 'Dürfen externe Inhalte von Instagram geladen werden?', 'kleiderordnung' ) ?></p>
+      <button class="button__allow button__allow--once" data-allow="once" tabindex="0"><?php _e( 'Einmal erlauben', 'kleiderordnung' ) ?></button>
+      <button class="button__allow button__allow--always" data-allow="always" tabindex="0"><?php _e( 'Immer erlauben', 'kleiderordnung' ) ?></button>
     </div>
   </aside>
 </div>

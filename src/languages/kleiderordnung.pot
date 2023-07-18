@@ -1,0 +1,272 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: "
+"Blank WordPress Pot "
+"v1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example."
+"com>\n"
+"POT-Creation-Date: "
+"2023-07-18 23:02+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your "
+"Name <you@example.com>\n"
+"Language-Team: Your Team "
+"<translations@example."
+"com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/"
+"plain; charset=UTF-8\n"
+"Content-Transfer-"
+"Encoding: 8bit\n"
+"Plural-Forms: "
+"nplurals=2; plural=n != "
+"1;\n"
+"X-Textdomain-Support: "
+"yesX-Generator: Poedit "
+"1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;"
+"esc_html_x:1,2c;"
+"esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;"
+"esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;"
+"_n:1,2;_n_noop:1,2;"
+"__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit "
+"3.3.2\n"
+"X-Poedit-"
+"SearchPath-0: .\n"
+"X-Poedit-"
+"SearchPath-1: .\n"
+"X-Poedit-SearchPath-2: "
+"inc/structure\n"
+
+#: front-page.php:3
+msgid ""
+"KleiderOrdnung Berlin: "
+"nachhaltige Modeberatung "
+"von Tina Steinke"
+msgstr ""
+
+#: header.php:19
+#: inc/structure/header.php:10
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:26
+msgid "Header image"
+msgstr ""
+
+#: inc/structure/calltoaction.php:15
+#: inc/structure/contact.php:11
+#: inc/structure/navigation.php:26
+msgid "Kontakt"
+msgstr ""
+
+#: inc/structure/contact.php:22
+msgid "Kleiderordnung"
+msgstr ""
+
+#: inc/structure/contact.php:32
+msgid "Folge mir"
+msgstr ""
+
+#: inc/structure/contact.php:35
+#: inc/structure/socialmedia.php:12
+msgid "auf Instagram"
+msgstr ""
+
+#: inc/structure/contact.php:36
+msgid ""
+"Martina Steinke auf "
+"LinkedIn"
+msgstr ""
+
+#: inc/structure/contact.php:37
+msgid ""
+"Tina Steinke auf "
+"Pinterest"
+msgstr ""
+
+#: inc/structure/footer.php:13
+msgid ""
+"2023 © Kleiderordnung "
+"Martina Steinke"
+msgstr ""
+
+#: inc/structure/footer.php:15
+msgid "All rights reserved"
+msgstr ""
+
+#: inc/structure/footer.php:23
+msgid "Impressum"
+msgstr ""
+
+#: inc/structure/footer.php:24
+msgid "Datenschutz"
+msgstr ""
+
+#: inc/structure/footer.php:25
+msgid "AGB"
+msgstr ""
+
+#: inc/structure/footer.php:30
+msgid "Mitglied bei"
+msgstr ""
+
+#: inc/structure/footer.php:38
+msgid ""
+"Sustainable Stylists"
+msgstr ""
+
+#: inc/structure/footer.php:46
+msgid "Fashion Changers"
+msgstr ""
+
+#: inc/structure/footer.php:54
+msgid "reflecta network"
+msgstr ""
+
+#: inc/structure/footer.php:62
+msgid "Impact Hub Berlin"
+msgstr ""
+
+#: inc/structure/html-head.php:43
+msgid ""
+"Stilberatung, "
+"Shoppingbegleitung und "
+"Kleiderschrank-Check in "
+"Berlin (Meta Description "
+"frei übersetzen)"
+msgstr ""
+
+#: inc/structure/html-head.php:44
+msgid ""
+"Slow Fashion,Circular "
+"Fashion,nachhaltige "
+"Mode, Nachhaltigkeit "
+"(Meta Keywords frei "
+"übersetzen)"
+msgstr ""
+
+#: inc/structure/html-head.php:53
+msgid ""
+"Kleiderordnung Berlin: "
+"nachhaltige Modeberatung "
+"von Tina Steinke"
+msgstr ""
+
+#: inc/structure/html-head.php:54
+msgid ""
+"Stilberatung, "
+"Shoppingbegleitung und "
+"Kleiderschrank-Check in "
+"Berlin"
+msgstr ""
+
+#: inc/structure/intro.php:28
+msgid ""
+"Portrait von Tina Steinke"
+msgstr ""
+
+#: inc/structure/navigation.php:11
+msgid "Menü öffnen"
+msgstr ""
+
+#: inc/structure/navigation.php:13
+msgid "Menü"
+msgstr ""
+
+#: inc/structure/navigation.php:17
+#: inc/structure/navigation.php:19
+msgid "Menü schließen"
+msgstr ""
+
+#: inc/structure/navigation.php:22
+msgid "Angebot"
+msgstr ""
+
+#: inc/structure/navigation.php:23
+msgid "Mission"
+msgstr ""
+
+#: inc/structure/navigation.php:24
+#: inc/structure/stories.php:20
+msgid "Stories"
+msgstr ""
+
+#: inc/structure/navigation.php:25
+#: inc/structure/news.php:19
+msgid "News"
+msgstr ""
+
+#: inc/structure/news.php:51
+msgid "alle Neuigkeiten"
+msgstr ""
+
+#: inc/structure/offers.php:33
+msgid "Meine Angebote"
+msgstr ""
+
+#: inc/structure/offers.php:87
+msgid "Termin buchen"
+msgstr ""
+
+#: inc/structure/offers.php:114
+msgid "Weitere Angebote"
+msgstr ""
+
+#: inc/structure/socialmedia.php:12
+msgid ""
+"Kleiderordnung auf "
+"instagram"
+msgstr ""
+
+#: inc/structure/socialmedia.php:36
+#: inc/structure/socialmedia.php:41
+#: inc/structure/socialmedia.php:46
+#: inc/structure/socialmedia.php:51
+#: inc/structure/socialmedia.php:56
+msgid "Instagram Picture"
+msgstr ""
+
+#: inc/structure/socialmedia.php:65
+msgid "Instagram Galerie"
+msgstr ""
+
+#: inc/structure/socialmedia.php:80
+msgid ""
+"Dürfen externe Inhalte "
+"von Instagram geladen "
+"werden?"
+msgstr ""
+
+#: inc/structure/socialmedia.php:81
+msgid "Einmal erlauben"
+msgstr ""
+
+#: inc/structure/socialmedia.php:82
+msgid "Immer erlauben"
+msgstr ""
+
+#: inc/structure/stories.php:62
+msgid "zurück"
+msgstr ""
+
+#: inc/structure/stories.php:70
+msgid "vor"
+msgstr ""

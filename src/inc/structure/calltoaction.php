@@ -7,12 +7,12 @@
  */
 ?>
 <div class="calltoaction">
-  <p class="calltoaction__text">
+  <div class="calltoaction__text">
     <?php echo get_field('page_contact_teaser_text', KLEIDERORDNUNG_FRONT_PAGE_ID) ?>
-  </p>
+  </div>
   <div class="calltoaction__buttonwrapper">
     <a class="button button--primary" href="#kontakt" tabindex="0">
-      <?php _e( 'Kontakt') ?>
+      <?php _e( 'Kontakt', 'kleiderordnung' ) ?>
     </a>
   </div>
 </div>

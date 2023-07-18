@@ -266,7 +266,31 @@ Alternative 2: provide some mechanism to scrape the images, not from Instagram (
 
 ### Localization
 
-The site is provided in a German and an English language version using the Polylang plugin.
+The site is provided in a German and an English language version using the Polylang plugin. Multilingual content has been described in the content section above. Theme-specific language strings can be created (or updated) using PO(T)/MO files [as explained in the WordPress codex](https://developer.wordpress.org/apis/internationalization/localization/):
+
+
+So we would either 
+
+#### use wp-cli:
+
+enter the `wp_cli` or `wordpress` container:
+```
+docker-exec -it kleiderordnung-berlin_wordpress_1 bash
+```
+
+then, inside the container, (install and) run `wp` cli to create language files:
+
+```
+wp i18n make-pot wp-content/themes/kleiderordnung
+```
+
+or
+
+#### use the free graphical Poedit application
+
+which is an open source tool for all major OS.  If you don’t have the pro version you can easily get the [Blank POT](https://github.com/fxbenard/Blank-WordPress-Pot) by Fx Bénard and use that as the base of your POT file. Once you have placed the blank POT in the languages folder you can click “Update” in Poedit to update the POT file with your strings.
+
+Source: https://developer.wordpress.org/apis/internationalization/localization/
 
 ## Theme and Design
 

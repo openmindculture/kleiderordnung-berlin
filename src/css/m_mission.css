@@ -39,7 +39,8 @@
   text-align: center;
 }
 
-.mission__text {
+.mission__text,
+.mission__text p {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-24);

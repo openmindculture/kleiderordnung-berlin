@@ -12,7 +12,7 @@
 <?php
 $args = array(
   'post_type'      => 'offer',
-  'lang'           => 'de', /* TODO use current language */
+  'lang'           => pll_current_language(),
   'posts_per_page' => -1,
   'tax_query' => array(
     array(
@@ -30,7 +30,7 @@ $resorted_post_ids = array();
    but don't overengineer workarounds for what should have been core function calls
   */
 if ( $the_query->have_posts() ) : ?>
-    <h2 class="offers__headline">Meine Angebote</h2>
+    <h2 class="offers__headline"><?php _e( 'Meine Angebote', 'kleiderordnung' ) ?></h2>
     <nav class="offers__navigation">
       <ul>
   <?php
@@ -84,7 +84,7 @@ if ( $the_query->have_posts() ) : ?>
                 <?php echo get_field('offer_price_annotation', $resorted_post_id); ?>
               </div>
               <div class="offers__offer__buttonwrapper">
-                <a class="button button--primary" href="#kontakt" tabindex="0">Termin buchen</a>
+                <a class="button button--primary" href="#kontakt" tabindex="0"><?php _e( 'Termin buchen', 'kleiderordnung' ) ?></a>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ if ( $the_query->have_posts() ) : ?>
     $resorted_additional_post_ids = array();
     if ( $the_additional_query->have_posts() ) : ?>
       <div class="offers__additional">
-        <h2 class="offers__additional__headline">Weitere Angebote</h2>
+        <h2 class="offers__additional__headline"><?php _e( 'Weitere Angebote', 'kleiderordnung' ) ?></h2>
         <div class="offers__additional__articles">
     <?php
       $loop_index = 0;
