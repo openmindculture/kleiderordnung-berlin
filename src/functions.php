@@ -42,12 +42,20 @@ add_action( 'admin_init', function () {
   if (is_admin()) {
     wp_enqueue_style(
       'kleiderordnung_admin_style',
-      'admin-style.css', array(),
+      'admin-style.css',
+      array(),
       KLEIDERORDNUNG_THEME_VERSION,
       'all'
     );
   }
 });
+
+if (is_admin()) {
+  add_action('acf/input/admin_footer', function(){
+    ?><script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/admin-scripts.js?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>"></script>
+    <?php
+  });
+}
 
 // reminder that actions wrap filter calls
 // so there is any order preference despite the declarative approach

@@ -288,5 +288,62 @@ function kleiderordnung_register_post_type_offer() {
   }
 }
 
+function kleiderordnung_register_custom_page_fields() {
+  if( !function_exists('acf_add_local_field_group') ) return;
+  acf_add_local_field_group( array(
+    'key'      => 'page_field_group_frontpage',
+    'title'    => 'Homepage-Inhalte',
+    'position' => 'normal',
+    'fields'   => array(
+      array(
+        'key'   => 'page_intro_headline',
+        'name'  => 'page_intro_headline',
+        'type'  => 'text',
+        'label' => 'Intro Überschrift',
+      ),
+      array(
+        'key'   => 'page_intro_text',
+        'name'  => 'page_intro_text',
+        'type'  => 'wysiwyg',
+        'label' => 'Intro Text (Absätze und Formatierung möglich)',
+      ),
+      array(
+        'key'   => 'page_mission_headline',
+        'name'  => 'page_mission_headline',
+        'type'  => 'text',
+        'label' => 'Mission Überschrift',
+      ),
+      array(
+        'key'   => 'page_mission_text',
+        'name'  => 'page_mission_text',
+        'type'  => 'wysiwyg',
+        'label' => 'Mission Text',
+      ),
+      array(
+        'key'   => 'page_cta_text',
+        'name'  => 'page_cta_text',
+        'type'  => 'wysiwyg',
+        'label' => 'Call to Action (CTA) Text',
+      ),
+      array(
+        'key'   => 'page_contact_teaser_text',
+        'name'  => 'page_contact_teaser_text',
+        'type'  => 'wysiwyg',
+        'label' => 'Kontakt Teaser Text',
+      ),
+    ),
+    'location' => array(
+      array(
+        array(
+          'param'    => 'post_type',
+          'operator' => '==',
+          'value'    => 'page',
+        ),
+      ),
+    ),
+  ) );
+}
+
 add_action( 'init', 'kleiderordnung_register_post_type_story' );
 add_action( 'init', 'kleiderordnung_register_post_type_offer' );
+add_action( 'init', 'kleiderordnung_register_custom_page_fields' );

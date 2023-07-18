@@ -86,13 +86,14 @@ non-destructive editing limited to the intended content type (plain text or rich
 
 - **page** (front / home / landing page, imprint, privacy, about me)
   - The main index landing page (front page / home page), defined in `front-page.php` according to the class [template hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/), contains most of the content and links / teasers to additional posts and pages.
-  - Any other regular static page, like **privacy**, **imprint**, **tos** (AGB), is handled by `page.php`
   - Text lines and paragraphs must be editable, probably as **custom fields**, using either plain text or very limited styling like bold, italic, underline, marker, link:
-    - intro headline
-    - intro text
-    - mission headline
-    - mission text
-    - contact teaser text and content next to contact form
+    - page_intro_headline
+    - page_intro_text
+    - page_mission_headline
+    - page_mission_text
+    - page_cta_text
+    - page_contact_teaser_text and content next to contact form
+  - Any other regular static page, like **privacy**, **imprint**, **TOS** (AGB), is displayed by `page.php` and edited in the block editor.
 - **post** (**News** blog posts / teasers)
   - category title = over headline
   - post title = teaser headline / text

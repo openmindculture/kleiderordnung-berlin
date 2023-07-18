@@ -36,3 +36,35 @@ body#tinymce.wp-editor.post-type-story::before {
   background-repeat: no-repeat;
   background-size: 90% 90%;
 }
+
+body#tinymce.wp-editor.post-type-page:not(.acf_content) {
+  /* only applies to front pages (homepage),
+   * other pages are edited in the block editor
+   */
+  background-image: url("img/keyvisual-kleiderordnung.jpg");
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-position: center 1rem;
+}
+
+body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-mission-headline,
+body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-mission-text,
+body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-contact-teaser {
+  background-color: var(--color-inverted-background);
+  color: var(--color-inverted-foreground);
+}
+
+body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-intro-text {
+  font-family: var(--font-family-heading); /* Ivy Mode */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-48);
+  line-height: 140%;
+  letter-spacing: 0.05em;
+}
+
+body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-mission-text,
+body#tinymce.wp-editor.post-type-page.acf_content_acf-field-page-contact-teaser {
+  font-family: var(--font-family-heading); /* Ivy Mode */
+  font-size: var(--font-size-24);
+  line-height: 160%;
+}
