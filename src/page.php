@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php echo get_language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
 <?php define('KLEIDERORDNUNG_PAGE_TITLE', esc_html(get_the_title())) ?>
 <?php include( KLEIDERORDNUNG_DIR . '/inc/structure/html-head.php') ?>
 <body <?php body_class(); ?> itemtype="https://schema.org/WebPage" itemscope>

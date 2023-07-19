@@ -262,7 +262,7 @@ TODO: alternatively:
 
 Alternative 1: These are simply images taken from the WordPress media library. Is there a simple way (besides image titles) to tag / categorize images so that we can just grab the N latest images matching this criteria?
 
-Alternative 2: provide some mechanism to scrape the images, not from Instagram (which might be hard, illegal, and due to break at a site or API update) but rather from our own front page after opt-in and completed loading. Might be done as a side-effect of frontend screenshot testing?
+Alternative 2: provide some mechanism to scrape the images, not from Instagram (which might be hard, illegal, and due to break at a site or API update) but rather from our own front page after opt-in and completed loading. Might be done as a side effect of frontend screenshot testing?
 
 ### Localization
 
@@ -290,7 +290,44 @@ or
 
 which is an open source tool for all major OS.  If you don’t have the pro version you can easily get the [Blank POT](https://github.com/fxbenard/Blank-WordPress-Pot) by Fx Bénard and use that as the base of your POT file. Once you have placed the blank POT in the languages folder you can click “Update” in Poedit to update the POT file with your strings.
 
-Source: https://developer.wordpress.org/apis/internationalization/localization/
+#### POT to PO to MO
+
+POT files contain the original strings (usually in English, but here German is the default language). "Very long strings" are split into multiple lines (by PoEdit and/or [gettext](https://en.wikipedia.org/wiki/Gettext), often starting with an empty string "for better alignment", but that's equivalent to using long one-line strings.
+
+**Translation / internationalization (i10n):** take the `.pot` file and translate the `msgstr` sections into the respective language(s). The result is a `.po` file for each langauge with the same format as a `.pot`, but with translations and some specific headers.
+
+#### Polylang Pro
+
+Editing, importing and exporting string translations from one site to another is possible using the paid Polylang Pro version. When you export your strings translations, a "Site-Reference" attribute is created in the translation file like in the following example:
+
+```
+msgid ""
+"Language-Source: de-DE\n"
+"Language-Target: en-US\n"
+"Site-Reference: http://bs-local.com:1234\n"
+"Source-Reference: strings-translations\n"
+"Content-type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: POLYLANG_EXPORT\n"
+"POT-Creation-Date: 2023-07-01 10:00+0000\n"
+"PO-Revision-Date: 2023-07-01 10:00+0000\n"
+"Last-Translator: @openmindculture\n"
+"MIME-Version: 1.0\n"
+msgstr ""
+```
+
+### Don't Prevent Caching!
+
+Polylang settings offer automatic redirection to page content based on browser language and preventing caching the front page. As we absolutely want to cache static content to prevent costly and redundant recreation of content on the server side and speed up loading time for clients, this option must not be used!
+
+Automatic detection and redirection can be done alternatively using client-side JavaScript or relying on matching search engine results etc.
+
+Sources:
+
+- https://developer.wordpress.org/apis/internationalization/localization/
+- https://polylang.pro/doc/theme-internationalization-and-localization/
+- https://polylang.pro/doc/import-and-export-strings-translations/
+- https://github.com/izimobil/polib/issues/96
 
 ## Theme and Design
 

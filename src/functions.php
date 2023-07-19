@@ -81,9 +81,9 @@ add_action( 'wp_enqueue_scripts', function() {
 } );
 
 add_action('after_setup_theme', function() {
+  load_theme_textdomain( 'kleiderordnung', get_template_directory() . '/languages' );
   remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
   remove_action( 'in_admin_header', 'wp_global_styles_render_svg_filters' );
-  load_theme_textdomain( 'kleiderordnung', get_template_directory() . '/languages' );
 }, 10, 0);
 
 // if still necessary:
