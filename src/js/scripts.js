@@ -252,7 +252,7 @@ kleiderordnung.keepAnchorTargetInLanguageSwitcher = function() {
   }
 }
 
-/** Spam Protection */
+/** Revert Initial Spam Protection */
 kleiderordnung.activateLazyLoadedMailtoLinks = function() {
   kleiderordnung.lazyLoadableLinkElements = document.querySelectorAll('a[data-mailing="lazy"]');
   for (var i = 0; i < kleiderordnung.lazyLoadableLinkElements.length; i++) {
@@ -266,6 +266,10 @@ kleiderordnung.activateLazyLoadedMailtoLinks = function() {
       + kleiderordnung.lazyLoadableLinkElements[i].dataset.user
       + '@'
       + kleiderordnung.lazyLoadableLinkElements[i].dataset.domain;
+  }
+  kleiderordnung.hiddenSpamProtectionElements = document.querySelectorAll('#kontakt .blockspam');
+  for (var j = 0; j < kleiderordnung.hiddenSpamProtectionElements.length; j++) {
+    kleiderordnung.hiddenSpamProtectionElements[j].remove();
   }
 }
 
@@ -478,5 +482,5 @@ document.addEventListener('DOMContentLoaded', function() {
   kleiderordnung.decoratedParagraphsHeightAdjustment();
   kleiderordnung.activateAnalyticsTracking();
   kleiderordnung.keepAnchorTargetInLanguageSwitcher();
-  kleiderordnung.activateLazyLoadedMailtoLinks(); // TODO defer by timeout
+  window.setTimeout(kleiderordnung.activateLazyLoadedMailtoLinks, 9000);
 });
