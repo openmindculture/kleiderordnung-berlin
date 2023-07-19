@@ -324,8 +324,13 @@ load_theme_textdomain( 'kleiderordnung', get_template_directory() . '/languages'
 **Generate / update `.mo` files** from `.po` files: the program `msgfmt` (part of the `gettext` package) can be used on the command line to create the MO file. A typical `msgfmt` command looks like this:
 
 ```
+msgfmt -o src/languages/en_US.mo src/languages/en_US.po
 msgfmt -o src/languages/de_DE.mo src/languages/de_DE.po
 ```
+
+You can use the prepared build target `build:translations` to update the `.mo` files.
+
+`npm run build:translations`
 
 Sources:
 

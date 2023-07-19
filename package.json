@@ -13,6 +13,7 @@
     "build:core": "copyfiles -u 1 -e src/* src/**/* src/fonts/* src/img/* src/img/**/* src/*.php src/**/**/*.php src/*.png src/*.json src/style.css src/screenshot.png src/lottie/images/*  themes/kleiderordnung",
     "build:postcss": "postcss src/style.css --config . --no-map --verbose --o themes/kleiderordnung/style.css",
     "build:zip": "zip-build themes/kleiderordnung dist --name kleiderordnung --template %NAME%.%EXT%",
+    "build:translations": "msgfmt -o src/languages/en_US.mo src/languages/en_US.po && msgfmt -o src/languages/de_DE.mo src/languages/de_DE.po",
     "watch": "watch \"npm run build:postscss\" src/css",
     "test": "npm run stylelint && npm run eslint && npm run codeceptjs",
     "eslint": "eslint --ext .js src",
