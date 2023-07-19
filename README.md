@@ -296,31 +296,32 @@ POT files contain the original strings (usually in English, but here German is t
 
 **Translation / internationalization (i10n):** take the `.pot` file and translate the `msgstr` sections into the respective language(s). The result is a `.po` file for each langauge with the same format as a `.pot`, but with translations and some specific headers.
 
-#### Polylang Pro
+Use the official WordPress locale strings (with **underscores**, not hyphens). For example, the locale for German is `de_DE`, and our theme's text domain is `kleiderordnung`, therefore the German MO and PO files could be named `kleiderordnung-de_DE.mo` and `kleiderordnung-de_DE.po`, but that's misleading. When placed inside the **theme's language folder** (not the WordPress instance's language folder) we must omit the (redundant) theme name (text domain) in the file name.
 
-Editing, importing and exporting string translations from one site to another is possible using the paid Polylang Pro version. When you export your strings translations, a "Site-Reference" attribute is created in the translation file like in the following example:
+So we will have:
+- `src/languages/en_US.mo` -> `themes/kleiderordnung/languages/en_US.mo`
+- `src/languages/en_US.po` -> `themes/kleiderordnung/languages/en_US.po`
+- `src/languages/de_DE.mo` -> `themes/kleiderordnung/languages/de_DE.mo`
+- `src/languages/de_DE.po` -> `themes/kleiderordnung/languages/de_DE.po`
+
+This will match the content language in the `<html lang` attribute where a hyphen is used instead of the underscore.
 
 ```
-msgid ""
-"Language-Source: de-DE\n"
-"Language-Target: en-US\n"
-"Site-Reference: http://bs-local.com:1234\n"
-"Source-Reference: strings-translations\n"
-"Content-type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: POLYLANG_EXPORT\n"
-"POT-Creation-Date: 2023-07-01 10:00+0000\n"
-"PO-Revision-Date: 2023-07-01 10:00+0000\n"
-"Last-Translator: @openmindculture\n"
-"MIME-Version: 1.0\n"
-msgstr ""
+<html lang="en-US"
 ```
 
-### Don't Prevent Caching!
+This will also match the necessary explicit loading command in `functions.php`:
 
-Polylang settings offer automatic redirection to page content based on browser language and preventing caching the front page. As we absolutely want to cache static content to prevent costly and redundant recreation of content on the server side and speed up loading time for clients, this option must not be used!
+```php
+add_action('after_setup_theme', function() {
+load_theme_textdomain( 'kleiderordnung', get_template_directory() . '/languages' );
+```
 
-Automatic detection and redirection can be done alternatively using client-side JavaScript or relying on matching search engine results etc.
+**Generate / update `.mo` files** from `.po` files: the program `msgfmt` (part of the `gettext` package) can be used on the command line to create the MO file. A typical `msgfmt` command looks like this:
+
+```
+msgfmt -o src/languages/de_DE.mo src/languages/de_DE.po
+```
 
 Sources:
 
@@ -328,6 +329,12 @@ Sources:
 - https://polylang.pro/doc/theme-internationalization-and-localization/
 - https://polylang.pro/doc/import-and-export-strings-translations/
 - https://github.com/izimobil/polib/issues/96
+
+### Don't Prevent Caching!
+
+Polylang settings offer automatic redirection to page content based on browser language and preventing caching the front page. As we absolutely want to cache static content to prevent costly and redundant recreation of content on the server side and speed up loading time for clients, this option must not be used!
+
+Automatic detection and redirection can be done alternatively using client-side JavaScript or relying on matching search engine results etc.
 
 ## Theme and Design
 
