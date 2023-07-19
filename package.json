@@ -17,7 +17,7 @@
     "watch": "watch \"npm run build:postscss\" src/css",
     "test": "npm run stylelint && npm run eslint && npm run codeceptjs",
     "eslint": "eslint --ext .js src",
-    "stylelint": "stylelint --verbose src/style.css src/css/*.css",
+    "stylelint": "stylelint src/style.css src/css/*.css",
     "codeceptjs": "npm run codeceptjs:default && npm run codeceptjs:mobile",
     "codeceptjs:default": "codeceptjs run --steps",
     "codeceptjs:mobile": "MOBILE=true codeceptjs run --steps",

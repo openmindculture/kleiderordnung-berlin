@@ -170,7 +170,7 @@
   position: absolute !important;
   bottom: 0 !important;
 }
-.juicer-feed h1.referral a:after {
+.juicer-feed h1.referral a::after {
   background-size: 100% 100%;
   background-position: 0 0;
 }

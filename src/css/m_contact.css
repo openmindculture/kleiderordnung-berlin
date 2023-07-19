@@ -103,8 +103,6 @@
 }
 
 .contact__fieldset,
-.contact__fieldset--from,
-.contact__fieldset--message,
 .contact__fieldset--checkboxes,
 .contact__fieldset--message,
 .contact__fieldset--message textarea,
@@ -116,10 +114,9 @@
   padding: 0;
 }
 
-
-.contact__fieldset--from,
+.contact__fieldset--checkboxes,
 .contact__fieldset--message,
-.contact__fieldset--checkboxes {
+.contact__fieldset--from {
   margin-bottom: 1.8125rem;
 }
 
@@ -213,6 +210,7 @@ textarea[name="Nachricht"]::placeholder {
   position: relative;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .contact__checkboxline span,
 .contact__checkboxline label,
 .contact__checkboxline input {
