@@ -233,14 +233,31 @@ kleiderordnung.activateAnalyticsTracking = function() {
   s.parentNode.insertBefore(g,s);
 }
 
+/** progressive enhancement for language switcher links */
+kleiderordnung.keepAnchorTargetInLanguageSwitcher = function() {
+  kleiderordnung.languageLinkElements = document.querySelectorAll('#menu-main-item-language a[hreflang]');
+  for (var i = 0; i < kleiderordnung.languageLinkElements.length; i++) {
+    if (!kleiderordnung.languageLinkElements[i]) { return;     }
+    kleiderordnung.languageLinkElements[i].addEventListener('click', function (e) {
+      if (!e.currentTarget || !e.currentTarget.href) { return; }
+      var currentTargetHref = e.currentTarget.href;
+      if (currentTargetHref.includes('#')) {
+        currentTargetHref = currentTargetHref.split('#')[0];
+      }
+      if (window.location.hash.startsWith('#')) {
+        currentTargetHref += window.location.hash;
+        e.currentTarget.href = currentTargetHref;
+      }
+    });
+  }
+}
+
 /** Spam Protection */
 kleiderordnung.activateLazyLoadedMailtoLinks = function() {
   kleiderordnung.lazyLoadableLinkElements = document.querySelectorAll('a[data-mailing="lazy"]');
   for (var i = 0; i < kleiderordnung.lazyLoadableLinkElements.length; i++) {
-    if (!kleiderordnung.lazyLoadableLinkElements[i]) {
-      return;
-    }
-    if (!kleiderordnung.lazyLoadableLinkElements[i].dataset
+    if (!kleiderordnung.lazyLoadableLinkElements[i]
+      || !kleiderordnung.lazyLoadableLinkElements[i].dataset
       || !kleiderordnung.lazyLoadableLinkElements[i].dataset.user
       || !kleiderordnung.lazyLoadableLinkElements[i].dataset.domain) {
       return;
@@ -460,5 +477,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   kleiderordnung.decoratedParagraphsHeightAdjustment();
   kleiderordnung.activateAnalyticsTracking();
-  kleiderordnung.activateLazyLoadedMailtoLinks();
+  kleiderordnung.keepAnchorTargetInLanguageSwitcher();
+  kleiderordnung.activateLazyLoadedMailtoLinks(); // TODO defer by timeout
 });
