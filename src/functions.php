@@ -1,5 +1,5 @@
 <?php
-
+/* todo refactor to inc module files and consistent PSR-compliant syntax wherever possible */
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 if ( ! defined ( 'KLEIDERORDNUNG_DIR' ) ){
@@ -11,7 +11,7 @@ if ( ! defined ( 'KLEIDERORDNUNG_URI' ) ){
 }
 
 if ( ! defined ( 'KLEIDERORDNUNG_THEME_VERSION' ) ){
-  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.5.2' );
+  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.5.3' );
 }
 
 add_theme_support('post-thumbnails', array(
@@ -59,7 +59,7 @@ add_action( 'admin_init', function () {
     add_editor_style( 'editor-style.css');
     wp_enqueue_style(
       'kleiderordnung_admin_style',
-      'admin-style.css',
+      get_template_directory() . '/admin-style.css',
       array(),
       KLEIDERORDNUNG_THEME_VERSION,
       'all'
