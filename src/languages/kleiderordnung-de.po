@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-07-19 07:42+0200\n"
+"PO-Revision-Date: 2023-07-19 07:54+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -19,86 +19,83 @@ msgstr ""
 msgid ""
 "KleiderOrdnung Berlin: nachhaltige Modeberatung von Tina Steinke"
 msgstr ""
+"KleiderOrdnung Berlin: nachhaltige Modeberatung von Tina Steinke"
 
 #: header.php:19
 #: inc/structure/header.php:10
 msgid "Skip to content"
-msgstr ""
+msgstr "Zum Inhalt"
 
 #: header.php:26
 msgid "Header image"
-msgstr ""
+msgstr "Header-Bild"
 
 #: inc/structure/calltoaction.php:15
 #: inc/structure/contact.php:11
 #: inc/structure/navigation.php:26
 msgid "Kontakt"
-msgstr ""
+msgstr "Kontakt"
 
 #: inc/structure/contact.php:22
 msgid "Kleiderordnung"
-msgstr ""
+msgstr "Kleiderordnung"
 
 #: inc/structure/contact.php:32
 msgid "Folge mir"
-msgstr ""
+msgstr "Folge mir"
 
 #: inc/structure/contact.php:35
 #: inc/structure/socialmedia.php:12
 msgid "auf Instagram"
-msgstr ""
+msgstr "auf Instagram"
 
 #: inc/structure/contact.php:36
-msgid ""
-"Martina Steinke auf LinkedIn"
-msgstr ""
+msgid "Martina Steinke auf LinkedIn"
+msgstr "Martina Steinke auf LinkedIn"
 
 #: inc/structure/contact.php:37
-msgid ""
-"Tina Steinke auf Pinterest"
-msgstr ""
+msgid "Tina Steinke auf Pinterest"
+msgstr "Tina Steinke auf Pinterest"
 
 #: inc/structure/footer.php:13
-msgid ""
-"2023 © Kleiderordnung Martina Steinke"
-msgstr ""
+msgid "2023 © Kleiderordnung Martina Steinke"
+msgstr "2023 © Kleiderordnung Martina Steinke"
 
 #: inc/structure/footer.php:15
 msgid "All rights reserved"
-msgstr ""
+msgstr "All rights reserved"
 
 #: inc/structure/footer.php:23
 msgid "Impressum"
-msgstr ""
+msgstr "Impressum"
 
 #: inc/structure/footer.php:24
 msgid "Datenschutz"
-msgstr ""
+msgstr "Datenschutz"
 
 #: inc/structure/footer.php:25
 msgid "AGB"
-msgstr ""
+msgstr "AGB"
 
 #: inc/structure/footer.php:30
 msgid "Mitglied bei"
-msgstr ""
+msgstr "Mitglied bei"
 
 #: inc/structure/footer.php:38
-msgid ""
-"Sustainable Stylists"
-msgstr ""
+msgid "Sustainable Stylists"
+msgstr "Sustainable Stylists"
 
 #: inc/structure/footer.php:46
 msgid "Fashion Changers"
-msgstr ""
+msgstr "Fashion Changers"
 
 #: inc/structure/footer.php:54
 msgid "reflecta network"
-msgstr ""
+msgstr "reflecta network"
 
 #: inc/structure/footer.php:62
 msgid "Impact Hub Berlin"
-msgstr ""
+msgstr "Impact Hub Berlin"
 
 #: inc/structure/html-head.php:43
 # (Meta Description frei übersetzen, ohne den Text in Klammern!)
@@ -109,6 +106,10 @@ msgid ""
 "Berlin (Meta Description "
 "frei übersetzen)"
 msgstr ""
+"Stilberatung, "
+"Shoppingbegleitung und "
+"Kleiderschrank-Check in "
+"Berlin"
 
 #: inc/structure/html-head.php:44
 # (Meta Keywords frei übersetzen, ohne den Text in Klammern!)
@@ -119,11 +120,15 @@ msgid ""
 "(Meta Keywords frei "
 "übersetzen)"
 msgstr ""
+"Slow Fashion,Circular "
+"Fashion,nachhaltige "
+"Mode, Nachhaltigkeit"
 
 #: inc/structure/html-head.php:53
 msgid ""
 "Kleiderordnung Berlin: nachhaltige Modeberatung von Tina Steinke"
 msgstr ""
+"Kleiderordnung Berlin: nachhaltige Modeberatung von Tina Steinke"
 
 #: inc/structure/html-head.php:54
 msgid ""
@@ -132,64 +137,65 @@ msgid ""
 "Kleiderschrank-Check in "
 "Berlin"
 msgstr ""
+"Stilberatung, "
+"Shoppingbegleitung und "
+"Kleiderschrank-Check in "
+"Berlin"
 
 #: inc/structure/intro.php:28
-msgid ""
-"Portrait von Tina Steinke"
-msgstr ""
+msgid "Portrait von Tina Steinke"
+msgstr "Portrait von Tina Steinke"
 
 #: inc/structure/navigation.php:11
 msgid "Menü öffnen"
-msgstr ""
+msgstr "Menü öffnen"
 
 #: inc/structure/navigation.php:13
 msgid "Menü"
-msgstr ""
+msgstr "Menü"
 
 #: inc/structure/navigation.php:17
 #: inc/structure/navigation.php:19
 msgid "Menü schließen"
-msgstr ""
+msgstr "Menü schließen"
 
 #: inc/structure/navigation.php:22
 msgid "Angebot"
-msgstr ""
+msgstr "Angebot"
 
 #: inc/structure/navigation.php:23
 msgid "Mission"
-msgstr ""
+msgstr "Mission"
 
 #: inc/structure/navigation.php:24
 #: inc/structure/stories.php:20
 msgid "Stories"
-msgstr ""
+msgstr "Stories"
 
 #: inc/structure/navigation.php:25
 #: inc/structure/news.php:19
 msgid "News"
-msgstr ""
+msgstr "News"
 
 #: inc/structure/news.php:51
 msgid "alle Neuigkeiten"
-msgstr ""
+msgstr "alle Neuigkeiten"
 
 #: inc/structure/offers.php:33
 msgid "Meine Angebote"
-msgstr ""
+msgstr "Meine Angebote"
 
 #: inc/structure/offers.php:87
 msgid "Termin buchen"
-msgstr ""
+msgstr "Termin buchen"
 
 #: inc/structure/offers.php:114
 msgid "Weitere Angebote"
-msgstr ""
+msgstr "Weitere Angebote"
 
 #: inc/structure/socialmedia.php:12
-msgid ""
-"Kleiderordnung auf "
-"instagram"
-msgstr ""
+msgid "Kleiderordnung auf instagram"
+msgstr "Kleiderordnung auf instagram"
 
 #: inc/structure/socialmedia.php:36
 #: inc/structure/socialmedia.php:41
@@ -197,11 +203,11 @@ msgstr ""
 #: inc/structure/socialmedia.php:51
 #: inc/structure/socialmedia.php:56
 msgid "Instagram Picture"
-msgstr ""
+msgstr "Instagram-Bild"
 
 #: inc/structure/socialmedia.php:65
 msgid "Instagram Galerie"
-msgstr ""
+msgstr "Instagram-Galerie"
 
 #: inc/structure/socialmedia.php:80
 msgid ""
@@ -209,19 +215,22 @@ msgid ""
 "von Instagram geladen "
 "werden?"
 msgstr ""
+"Dürfen externe Inhalte "
+"von Instagram geladen "
+"werden?"
 
 #: inc/structure/socialmedia.php:81
 msgid "Einmal erlauben"
-msgstr ""
+msgstr "Einmal erlauben"
 
 #: inc/structure/socialmedia.php:82
 msgid "Immer erlauben"
-msgstr ""
+msgstr "Immer erlauben"
 
 #: inc/structure/stories.php:62
 msgid "zurück"
-msgstr ""
+msgstr "zurück"
 
 #: inc/structure/stories.php:70
 msgid "vor"
-msgstr ""
+msgstr "vor"
