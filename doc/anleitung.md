@@ -96,6 +96,8 @@ Neue Seiten erscheinen **nicht** automatisch im Menü oder in der Fußzeile, sin
 
 Unter dem Menüpunkt **Sprachen** -> **Übersetzungen** können allgemeingültige oder mehrfach vorkommende Textteile geändert werden, wie beispielsweise die Beschriftung der Kontakt-Buttons.
 
+Übersetzungen, die nicht im Menü verfügbar sind, müssen in der Sprachdatei geändert werden (durch Webentwickler:innen).
+
 <a name="socialmedia" id="socialmedia"></a>
 #### Social Media (Instagram)
 
@@ -119,6 +121,8 @@ Beschriftung und ankreuzbare Anfrage-Interessen können unter **Formulare** -> *
 ![Screenshot: Kontaktformulare bearbeiten](anleitung-kontaktformular.png)
 
 Im Reiter **Meldungen** können Bestätigungssätze und Fehlermeldungen umformuliert werden.
+
+Für jede Sprache muss genau 1 aktives Kontaktformular vorhanden sein. Im Titel des Formulars muss jeweils das Sprachkürzel "de_DE" bzw. "en_US" vorkommen. Das ist nötig, weil die Formulare nicht so wie andere Inhalte übersetzt werden können.
 
 <a name="exportieren" id="exportieren"></a>
 ### Daten sichern (exportieren)

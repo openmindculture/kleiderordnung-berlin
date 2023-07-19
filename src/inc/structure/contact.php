@@ -41,9 +41,30 @@
     </div>
 
     <div class="contact__columns__column contact__columns__column--50">
-      <!-- contact 7 form using fixed shortcode (TODO: dynamic first available by language? -->
-      <?php echo do_shortcode( '[contact-form-7 id="16" title="Kontaktformular deutsch"]' ); ?>
-
+      <?php
+      $kleiderordnung_contact_form_id = 16;
+      $kleiderordnung_contact_form_title = __('Kontaktformular deutsch (de_DE)' , 'kleiderordnung');
+      $args = array(
+        'post_type' => 'wpcf7_contact_form',
+        'posts_per_page' => -1
+      );
+      $the_query = new WP_Query( $args );
+      if ( $the_query->have_posts() ) {
+        while ( $the_query->have_posts() ) {
+          $the_query->the_post();
+          if (str_contains(get_the_title(), pll_current_language()) ) {
+            $kleiderordnung_contact_form_id = get_the_ID();
+          }
+        }
+      }
+      echo do_shortcode(
+        '[contact-form-7 id="'
+        . $kleiderordnung_contact_form_id
+        . '" title="'
+        . $kleiderordnung_contact_form_title
+        . '"]'
+      );
+      ?>
     </div>
   </div>
 </div>

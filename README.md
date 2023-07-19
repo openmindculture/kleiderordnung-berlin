@@ -126,6 +126,10 @@ non-destructive editing limited to the intended content type (plain text or rich
   - contact form (widget shortcode)
   - carbon badge (external content)
 
+##### Contact Forms
+
+There must be exactly 1 active contact form for each language. The form titles must contain the language string ("en_US" or "de_DE"), so the theme can display the correct contact form dynamically without hard-coded form IDs, to work around the problem that contact form 7 posts won't be translated by the current Polylang plugin.
+
 ##### Polylang Localization Settings for Custom Post Types
 
 Localization / translation needs to be enabled explicitly in Polylang **Languages** -> **Settings** -> Custom Post Types and Taxonomies:
