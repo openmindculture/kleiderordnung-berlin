@@ -20,7 +20,6 @@
     <h2 class="stories__headline"><?php _e( 'Stories', 'kleiderordnung' ) ?></h2>
     <div class="stories__wrapper carousel__wrapper">
       <div class="stories__viewport carousel__viewport">
-
 <?php
     $loop_index = 0;
     while ( $the_query->have_posts() ) {
@@ -38,7 +37,7 @@
     $loop_index = 0;
     foreach ($resorted_post_ids as $resorted_post_position_number => $resorted_post_id) {
       ?>
-        <div class="stories__story carousel__item carousel__item--index-<?php echo $loop_index?>"<?php if ($loop_index == 0) { echo 'id="stories-items-first"';} elseif ($loop_index == $last_index) { echo 'id="stories-items-last"'; } ?>>
+        <div class="stories__story carousel__item carousel__item--index-<?php echo $loop_index?>"<?php if ($loop_index == 0) { echo ' id="stories-items-first"';} elseif ($loop_index == $last_index) { echo ' id="stories-items-last"'; } ?> tabindex="0">
           <figure class="stories__story__image">
             <?php echo get_the_post_thumbnail($resorted_post_id) ?>
           </figure>

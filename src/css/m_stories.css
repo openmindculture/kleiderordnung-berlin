@@ -39,6 +39,13 @@
   }
 }
 
+.stories__viewport:focus,
+.stories__viewport:focus-visible,
+.stories__story:focus,
+.stories__story:focus-visible {
+  outline-color: var(--color-custom-focus-outline);
+}
+
 .stories__story__image {
   flex: 0 0 auto;
   padding: 0;
