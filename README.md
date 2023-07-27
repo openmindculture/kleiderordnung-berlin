@@ -382,6 +382,14 @@ The local development setup has been tested on Ubuntu Linux and _should_ work on
 
 Code style follows modern recommendations for HTML, CSS, PHP, and ECMAScript, ignoring the divergent WordPress community guidelines.
 
+## Customize Users and Dashboard Widgets
+
+Create a new user as an author or a more appropriate [WordPress admin role](https://wordpress.org/documentation/article/roles-and-capabilities/)) (permission).
+
+Log in to your Dashboard as the new user. On the screen showing the "Site Health" widget, click the "Screen Options" ("Ansicht anpassen") menu item at the top right of your screen and move the custom theme widget to the top position. You can turn off "Site Health" and any other widgets you don't want to see.
+
+This is a per-user function, therefore turning it off only removes it for you and not other users.
+
 ## WordPress-Plugins
 
 - Advanced Custom Fields

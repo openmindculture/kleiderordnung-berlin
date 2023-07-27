@@ -219,7 +219,7 @@ function kleiderordnung_register_post_type_offer() {
       'fields'   => array(
         array(
           'key'   => 'offer_features',
-          'label' => 'Was du erhältst (als Aufzählungsliste formatieren)',
+          'label' => 'Was du erhältst / What you get (als Aufzählungsliste formatieren)',
           'name'  => 'offer_features',
           'type'  => 'wysiwyg',
         ),
