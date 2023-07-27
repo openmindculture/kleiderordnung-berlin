@@ -53,6 +53,17 @@
   }
 }
 
+@define-mixin typography-copy-bold $className {
+$(className) {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-15);
+  line-height: 160%;
+  letter-spacing: -0.03125rem;
+  @mixin-content;
+}
+}
+
 @define-mixin typography-heading-h1 $className {
   $(className) {
     font-family: var(--font-family-heading);

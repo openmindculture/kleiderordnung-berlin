@@ -10,9 +10,11 @@
   margin: 0 auto 12.3125rem auto;
 }
 
-.calltoaction__text {
+@mixin typography-copy-bold .calltoaction__text {
   padding: 7.9375rem 0 3rem 0;
 }
+
+@mixin typography-copy-bold .calltoaction__text > p {}
 
 @media (min-width: 768px) {
   .calltoaction {
