@@ -8,8 +8,8 @@
  */
 
 class KleiderOrdnung_Customize {
-
-  public static function register ( $wp_customize ) {}
+  public static function register( $wp_customize ) {
+  }
 }
 
-add_action( 'customize_register' , 		array( 'KleiderOrdnung_Customize' , 'register' ) );
+add_action( 'customize_register', array( 'KleiderOrdnung_Customize', 'register' ) );
