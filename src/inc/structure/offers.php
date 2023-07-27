@@ -73,9 +73,7 @@ if ( $the_query->have_posts() ) : ?>
               <?php echo get_the_content($resorted_post_id) ?>
             </p>
             <strong class="offers__offer__features__headline">Was Du erhältst:</strong>
-            <ul class="offers__offer__features__list">
-              <?php echo get_field('offer_features', $resorted_post_id); ?>
-            </ul>
+            <?php echo get_field('offer_features', $resorted_post_id); ?>
             <div class="offers__offer__card__footer">
               <div class="offers__offer__pricingwrapper">
                 <div class="offers__offer__price">
