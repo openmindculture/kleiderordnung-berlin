@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-07-27 10:25" -->
+	<!-- generator="WordPress/6.2.2" created="2023-07-27 13:57" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,13 +29,14 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Thu, 27 Jul 2023 10:25:13 +0000</pubDate>
+	<pubDate>Thu, 27 Jul 2023 13:57:23 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
 	<wp:base_blog_url>https://preview.kleiderordnung-berlin.de</wp:base_blog_url>
 
 		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[kontakt@ingo-steinke.de]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>2</wp:author_id><wp:author_login><![CDATA[tina]]></wp:author_login><wp:author_email><![CDATA[martinasteinke@posteo.de]]></wp:author_email><wp:author_display_name><![CDATA[Tina Steinke]]></wp:author_display_name><wp:author_first_name><![CDATA[Tina]]></wp:author_first_name><wp:author_last_name><![CDATA[Steinke]]></wp:author_last_name></wp:author>
 
 		<wp:category>
 		<wp:term_id>1</wp:term_id>
@@ -62,14 +63,14 @@
 		<wp:cat_name><![CDATA[Nicht kategorisiert]]></wp:cat_name>
 	</wp:category>
 		<wp:category>
-		<wp:term_id>18</wp:term_id>
-		<wp:category_nicename><![CDATA[workshops-events]]></wp:category_nicename>
+		<wp:term_id>22</wp:term_id>
+		<wp:category_nicename><![CDATA[workshops-events-en]]></wp:category_nicename>
 		<wp:category_parent><![CDATA[]]></wp:category_parent>
 		<wp:cat_name><![CDATA[Workshops &amp; Events]]></wp:cat_name>
 	</wp:category>
 		<wp:category>
-		<wp:term_id>22</wp:term_id>
-		<wp:category_nicename><![CDATA[workshops-events-en]]></wp:category_nicename>
+		<wp:term_id>18</wp:term_id>
+		<wp:category_nicename><![CDATA[workshops-events]]></wp:category_nicename>
 		<wp:category_parent><![CDATA[]]></wp:category_parent>
 		<wp:cat_name><![CDATA[Workshops &amp; Events]]></wp:cat_name>
 	</wp:category>
@@ -1015,145 +1016,6 @@ admin]]></content:encoded>
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[[your-subject]]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=51</link>
-		<pubDate>Tue, 30 May 2023 15:58:10 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=51</guid>
-		<description></description>
-		<content:encoded><![CDATA[Test
-akismet-guaranteed-spam@example.com
-dsfasdfsafasdf
-5
-217.9.48.50
-Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
-https://preview.kleiderordnung-berlin.de/
-30. Mai 2023
-17:58
-KleiderOrdnung Berlin
-https://preview.kleiderordnung-berlin.de
-kontakt@ingo-steinke.de
-admin
-kontakt@ingo-steinke.de
-admin]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>51</wp:post_id>
-		<wp:post_date><![CDATA[2023-05-30 17:58:10]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-05-30 15:58:10]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-01 04:18:52]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-01 02:18:52]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[your-subject-4__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[flamingo_inbound]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="flamingo_inbound_channel" nicename="kontaktformular-1"><![CDATA[Kontaktformular deutsch (de_DE)]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_submission_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[spam]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_subject]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[your-subject]]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_from]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[your-name] <[your-email]>]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_from_name]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[your-name]]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_from_email]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[your-email]]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_name]]></wp:meta_key>
-		<wp:meta_value><![CDATA[Test]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_email]]></wp:meta_key>
-		<wp:meta_value><![CDATA[akismet-guaranteed-spam@example.com]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_nachricht]]></wp:meta_key>
-		<wp:meta_value><![CDATA[dsfasdfsafasdf]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-style-visit]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-shopping-tour]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-online-style-beratung]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-start-up-consulting]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-gutschein]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-ordnung-im-schrank]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-styling-abo]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_fields]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:10:{s:4:"Name";N;s:5:"Email";N;s:9:"Nachricht";N;s:19:"anfrage-style-visit";N;s:21:"anfrage-shopping-tour";N;s:29:"anfrage-online-style-beratung";N;s:27:"anfrage-start-up-consulting";N;s:17:"anfrage-gutschein";N;s:26:"anfrage-ordnung-im-schrank";N;s:19:"anfrage-styling-abo";N;}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_meta]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:19:{s:13:"serial_number";i:5;s:9:"remote_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36";s:3:"url";s:41:"https://preview.kleiderordnung-berlin.de/";s:4:"date";s:12:"30. Mai 2023";s:4:"time";s:5:"17:58";s:7:"post_id";s:0:"";s:9:"post_name";s:0:"";s:10:"post_title";s:0:"";s:8:"post_url";s:0:"";s:11:"post_author";s:0:"";s:17:"post_author_email";s:0:"";s:10:"site_title";s:21:"KleiderOrdnung Berlin";s:16:"site_description";s:0:"";s:8:"site_url";s:40:"https://preview.kleiderordnung-berlin.de";s:16:"site_admin_email";s:23:"kontakt@ingo-steinke.de";s:10:"user_login";s:5:"admin";s:10:"user_email";s:23:"kontakt@ingo-steinke.de";s:17:"user_display_name";s:5:"admin";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_akismet]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:2:{s:7:"comment";a:67:{s:14:"comment_author";s:4:"Test";s:20:"comment_author_email";s:35:"akismet-guaranteed-spam@example.com";s:18:"comment_author_url";s:0:"";s:15:"comment_content";s:14:"dsfasdfsafasdf";s:4:"blog";s:39:"http://preview.kleiderordnung-berlin.de";s:9:"blog_lang";s:5:"de_DE";s:12:"blog_charset";s:5:"UTF-8";s:7:"user_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36";s:8:"referrer";s:41:"https://preview.kleiderordnung-berlin.de/";s:12:"comment_type";s:12:"contact-form";s:16:"comment_date_gmt";s:25:"2023-05-30T15:58:10+00:00";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"REQUEST_URI";s:1:"/";s:18:"HTTP_AUTHORIZATION";s:0:"";s:5:"HTTPS";s:2:"on";s:11:"SSL_TLS_SNI";s:32:"preview.kleiderordnung-berlin.de";s:12:"OPENSSL_CONF";s:20:"/etc/ssl/openssl.cnf";s:21:"REDIRECT_OPENSSL_CONF";s:20:"/etc/ssl/openssl.cnf";s:24:"PHP_FCGID_MAX_REQUESTLEN";s:10:"4294967296";s:22:"PHP_FCGID_BUSY_TIMEOUT";s:5:"14400";s:20:"PHP_FCGID_IO_TIMEOUT";s:3:"600";s:9:"HTTP_HOST";s:32:"preview.kleiderordnung-berlin.de";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:3:"257";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:14:"HTTP_SEC_CH_UA";s:65:""Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"";s:21:"HTTP_SEC_CH_UA_MOBILE";s:2:"?0";s:23:"HTTP_SEC_CH_UA_PLATFORM";s:7:""Linux"";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:11:"HTTP_ORIGIN";s:40:"https://preview.kleiderordnung-berlin.de";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:15:"HTTP_USER_AGENT";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36";s:11:"HTTP_ACCEPT";s:135:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7";s:19:"HTTP_SEC_FETCH_SITE";s:11:"same-origin";s:19:"HTTP_SEC_FETCH_MODE";s:8:"navigate";s:19:"HTTP_SEC_FETCH_USER";s:2:"?1";s:19:"HTTP_SEC_FETCH_DEST";s:8:"document";s:12:"HTTP_REFERER";s:41:"https://preview.kleiderordnung-berlin.de/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip, deflate, br";s:20:"HTTP_ACCEPT_LANGUAGE";s:41:"en-US,en;q=0.9,de;q=0.8,pt;q=0.7,fr;q=0.6";s:4:"PATH";s:29:"/sbin:/bin:/usr/sbin:/usr/bin";s:15:"LD_LIBRARY_PATH";s:14:"/usr/local/lib";s:16:"SERVER_SIGNATURE";s:0:"";s:11:"SERVER_NAME";s:32:"preview.kleiderordnung-berlin.de";s:11:"SERVER_ADDR";s:14:"212.90.148.122";s:11:"SERVER_PORT";s:3:"443";s:11:"REMOTE_ADDR";s:11:"217.9.48.50";s:13:"DOCUMENT_ROOT";s:57:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp";s:14:"REQUEST_SCHEME";s:5:"https";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:57:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp";s:12:"SERVER_ADMIN";s:22:"kundenservice@goneo.de";s:15:"SCRIPT_FILENAME";s:67:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp/index.php";s:11:"REMOTE_PORT";s:5:"45832";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1685462290.19285297393798828125;s:12:"REQUEST_TIME";i:1685462290;s:4:"argv";a:0:{}s:4:"argc";i:0;s:19:"POST_ak_hp_textarea";s:0:"";s:10:"POST_ak_js";s:13:"1685462266319";}s:4:"spam";b:1;}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_recaptcha]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_spam_log]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;a:2:{s:5:"agent";s:7:"akismet";s:6:"reason";s:39:"Akismet gibt eine Spam-Antwort zurück.";}}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_consent]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
-		<wp:meta_value><![CDATA[f8fb831b75e21977058b440694974422]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[flamingo-spam]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1688177932]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[your-subject-4]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
 		<title><![CDATA[news-example-3]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/neue-studie-zu-fast-fashion-schockiert/news-example-3/</link>
 		<pubDate>Thu, 01 Jun 2023 14:55:25 +0000</pubDate>
@@ -1708,6 +1570,49 @@ Ingo";s:4:"blog";s:39:"http://preview.kleiderordnung-berlin.de";s:9:"blog_lang";
 		</wp:postmeta>
 							</item>
 					<item>
+		<title><![CDATA[martinasteinke@posteo.de]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_contact&#038;p=168</link>
+		<pubDate>Thu, 27 Jul 2023 10:28:05 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=flamingo_contact&#038;p=168</guid>
+		<description></description>
+		<content:encoded><![CDATA[Tina
+Steinke
+martinasteinke@posteo.de
+Tina Steinke]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>168</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-27 12:28:05]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-27 10:28:05]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 12:28:05]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 10:28:05]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[martinasteinke-posteo-de]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[flamingo_contact]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[martinasteinke@posteo.de]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Tina Steinke]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_props]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:2:{s:10:"first_name";s:4:"Tina";s:9:"last_name";s:7:"Steinke";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_last_contacted]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023-07-27 12:28:05]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
 		<title><![CDATA[Homepage Deutsch]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/</link>
 		<pubDate>Thu, 30 Mar 2023 06:17:26 +0000</pubDate>
@@ -1943,6 +1848,145 @@ Ingo";s:4:"blog";s:39:"http://preview.kleiderordnung-berlin.de";s:9:"blog_lang";
 		</wp:postmeta>
 							</item>
 					<item>
+		<title><![CDATA[[your-subject]]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=51</link>
+		<pubDate>Tue, 30 May 2023 15:58:10 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=51</guid>
+		<description></description>
+		<content:encoded><![CDATA[Test
+akismet-guaranteed-spam@example.com
+dsfasdfsafasdf
+5
+217.9.48.50
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+https://preview.kleiderordnung-berlin.de/
+30. Mai 2023
+17:58
+KleiderOrdnung Berlin
+https://preview.kleiderordnung-berlin.de
+kontakt@ingo-steinke.de
+admin
+kontakt@ingo-steinke.de
+admin]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>51</wp:post_id>
+		<wp:post_date><![CDATA[2023-05-30 17:58:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-05-30 15:58:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-01 04:18:52]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-01 02:18:52]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[your-subject-4__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[flamingo_inbound]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="flamingo_inbound_channel" nicename="kontaktformular-1"><![CDATA[Kontaktformular deutsch (de_DE)]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_submission_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[spam]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_subject]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-subject]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-name] <[your-email]>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-name]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-email]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Test]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[akismet-guaranteed-spam@example.com]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_nachricht]]></wp:meta_key>
+		<wp:meta_value><![CDATA[dsfasdfsafasdf]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-style-visit]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-shopping-tour]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-online-style-beratung]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-start-up-consulting]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-gutschein]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-ordnung-im-schrank]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-styling-abo]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_fields]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:10:{s:4:"Name";N;s:5:"Email";N;s:9:"Nachricht";N;s:19:"anfrage-style-visit";N;s:21:"anfrage-shopping-tour";N;s:29:"anfrage-online-style-beratung";N;s:27:"anfrage-start-up-consulting";N;s:17:"anfrage-gutschein";N;s:26:"anfrage-ordnung-im-schrank";N;s:19:"anfrage-styling-abo";N;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:19:{s:13:"serial_number";i:5;s:9:"remote_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36";s:3:"url";s:41:"https://preview.kleiderordnung-berlin.de/";s:4:"date";s:12:"30. Mai 2023";s:4:"time";s:5:"17:58";s:7:"post_id";s:0:"";s:9:"post_name";s:0:"";s:10:"post_title";s:0:"";s:8:"post_url";s:0:"";s:11:"post_author";s:0:"";s:17:"post_author_email";s:0:"";s:10:"site_title";s:21:"KleiderOrdnung Berlin";s:16:"site_description";s:0:"";s:8:"site_url";s:40:"https://preview.kleiderordnung-berlin.de";s:16:"site_admin_email";s:23:"kontakt@ingo-steinke.de";s:10:"user_login";s:5:"admin";s:10:"user_email";s:23:"kontakt@ingo-steinke.de";s:17:"user_display_name";s:5:"admin";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_akismet]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:2:{s:7:"comment";a:67:{s:14:"comment_author";s:4:"Test";s:20:"comment_author_email";s:35:"akismet-guaranteed-spam@example.com";s:18:"comment_author_url";s:0:"";s:15:"comment_content";s:14:"dsfasdfsafasdf";s:4:"blog";s:39:"http://preview.kleiderordnung-berlin.de";s:9:"blog_lang";s:5:"de_DE";s:12:"blog_charset";s:5:"UTF-8";s:7:"user_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36";s:8:"referrer";s:41:"https://preview.kleiderordnung-berlin.de/";s:12:"comment_type";s:12:"contact-form";s:16:"comment_date_gmt";s:25:"2023-05-30T15:58:10+00:00";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"REQUEST_URI";s:1:"/";s:18:"HTTP_AUTHORIZATION";s:0:"";s:5:"HTTPS";s:2:"on";s:11:"SSL_TLS_SNI";s:32:"preview.kleiderordnung-berlin.de";s:12:"OPENSSL_CONF";s:20:"/etc/ssl/openssl.cnf";s:21:"REDIRECT_OPENSSL_CONF";s:20:"/etc/ssl/openssl.cnf";s:24:"PHP_FCGID_MAX_REQUESTLEN";s:10:"4294967296";s:22:"PHP_FCGID_BUSY_TIMEOUT";s:5:"14400";s:20:"PHP_FCGID_IO_TIMEOUT";s:3:"600";s:9:"HTTP_HOST";s:32:"preview.kleiderordnung-berlin.de";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:3:"257";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:14:"HTTP_SEC_CH_UA";s:65:""Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"";s:21:"HTTP_SEC_CH_UA_MOBILE";s:2:"?0";s:23:"HTTP_SEC_CH_UA_PLATFORM";s:7:""Linux"";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:11:"HTTP_ORIGIN";s:40:"https://preview.kleiderordnung-berlin.de";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:15:"HTTP_USER_AGENT";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36";s:11:"HTTP_ACCEPT";s:135:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7";s:19:"HTTP_SEC_FETCH_SITE";s:11:"same-origin";s:19:"HTTP_SEC_FETCH_MODE";s:8:"navigate";s:19:"HTTP_SEC_FETCH_USER";s:2:"?1";s:19:"HTTP_SEC_FETCH_DEST";s:8:"document";s:12:"HTTP_REFERER";s:41:"https://preview.kleiderordnung-berlin.de/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip, deflate, br";s:20:"HTTP_ACCEPT_LANGUAGE";s:41:"en-US,en;q=0.9,de;q=0.8,pt;q=0.7,fr;q=0.6";s:4:"PATH";s:29:"/sbin:/bin:/usr/sbin:/usr/bin";s:15:"LD_LIBRARY_PATH";s:14:"/usr/local/lib";s:16:"SERVER_SIGNATURE";s:0:"";s:11:"SERVER_NAME";s:32:"preview.kleiderordnung-berlin.de";s:11:"SERVER_ADDR";s:14:"212.90.148.122";s:11:"SERVER_PORT";s:3:"443";s:11:"REMOTE_ADDR";s:11:"217.9.48.50";s:13:"DOCUMENT_ROOT";s:57:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp";s:14:"REQUEST_SCHEME";s:5:"https";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:57:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp";s:12:"SERVER_ADMIN";s:22:"kundenservice@goneo.de";s:15:"SCRIPT_FILENAME";s:67:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp/index.php";s:11:"REMOTE_PORT";s:5:"45832";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1685462290.19285297393798828125;s:12:"REQUEST_TIME";i:1685462290;s:4:"argv";a:0:{}s:4:"argc";i:0;s:19:"POST_ak_hp_textarea";s:0:"";s:10:"POST_ak_js";s:13:"1685462266319";}s:4:"spam";b:1;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_recaptcha]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_spam_log]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;a:2:{s:5:"agent";s:7:"akismet";s:6:"reason";s:39:"Akismet gibt eine Spam-Antwort zurück.";}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_consent]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[f8fb831b75e21977058b440694974422]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[flamingo-spam]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1688177932]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[your-subject-4]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
 		<title><![CDATA[Homepage]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/homepage/</link>
 		<pubDate>Mon, 10 Jul 2023 15:44:46 +0000</pubDate>
@@ -2052,52 +2096,10 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[Privacy Statement]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/en/privacy-statement/</link>
-		<pubDate>Mon, 10 Jul 2023 15:49:03 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?page_id=68</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>68</wp:post_id>
-		<wp:post_date><![CDATA[2023-07-10 17:49:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-07-10 15:49:03]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-10 17:49:03]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-10 15:49:03]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[privacy-statement]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="language" nicename="en"><![CDATA[English]]></category>
-		<category domain="post_translations" nicename="pll_64ac286fdbd71"><![CDATA[pll_64ac286fdbd71]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_cmplz_scanned_post]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
 		<title><![CDATA[Style Visit]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/offer/style-visit/</link>
 		<pubDate>Thu, 13 Jul 2023 15:49:38 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=130</guid>
 		<description></description>
 		<content:encoded><![CDATA[Wir treffen uns bei Dir zu Hause und wir gehen gemeinsam Deine Garderobe entsprechend nach Deinen Zielen und Anforderungen durch und mit viel Spaß und Ideenreichtum betrachte ich jedes Stück als Chance und wertvolle Ressource und füge sie zu überraschenden Kombinationen zusammen! Als Ergebnis kannst Du Dich auf eine neue Kollektion im Schrank erfreuen und dies ganz ohne Konsum!]]></content:encoded>
@@ -2105,8 +2107,8 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:post_id>130</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 17:49:38]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 15:49:38]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-13 17:51:39]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-13 15:51:39]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:56]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:56]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[style-visit]]></wp:post_name>
@@ -2188,7 +2190,7 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<title><![CDATA[In-home Styling Session]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/offer/in-home-styling-session/</link>
 		<pubDate>Thu, 13 Jul 2023 15:51:05 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=131</guid>
 		<description></description>
 		<content:encoded><![CDATA[In the comfort of your home, we’ll take the time to go through your wardrobe based on your styling goals. I can help you appreciate your clothes more, find other uses for existing pieces, suggest alterations, or upcycle/sell pieces that don’t match your needs.]]></content:encoded>
@@ -2196,8 +2198,8 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:post_id>131</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 17:51:05]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 15:51:05]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 12:17:20]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 10:17:20]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:52]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:52]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[in-home-styling-session]]></wp:post_name>
@@ -2281,7 +2283,7 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<title><![CDATA[Shopping-Tour]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/offer/shopping-tour/</link>
 		<pubDate>Thu, 13 Jul 2023 16:16:56 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=132</guid>
 		<description></description>
 		<content:encoded><![CDATA[In 3-4 ausgesuchten Läden suchen wir gezielt nach den fehlenden Puzzlestücken, die aus deiner Garderobe ein stimmiges Ganzes machen! Im Fokus stehen Fair-Fashion Boutiquen, Second Hand &amp; Vintage-Stores. Die Berliner Designer-Szene bietet zudem zahlreiche unabhängige Brands mit ausdrucksstarken Kollektionen und Einzelstücken ebenso wie puristischen Schnitten. Ich werde das Richtige für Dich finden, denn viel Erfahrung und Kreativität lässt mich das Potential eines Kleidungsstücks und dessen Einsatzfähigkeit schnell erkennen!]]></content:encoded>
@@ -2289,8 +2291,8 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:post_id>132</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 18:16:56]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 16:16:56]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-13 18:16:56]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-13 16:16:56]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:48]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:48]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[shopping-tour]]></wp:post_name>
@@ -2363,7 +2365,7 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<title><![CDATA[Shopping Tour]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/offer/shopping-tour-2/</link>
 		<pubDate>Thu, 13 Jul 2023 16:17:36 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=133</guid>
 		<description></description>
 		<content:encoded><![CDATA[Do you want to sustainably add to your wardrobe, but don’t know where to start? Let’s go on a shopping tour of some of Berlin’s best fair fashion, second-hand, and vintage boutiques. With my experience and creative eye, I’ll find pieces with the best potential and fit for you.]]></content:encoded>
@@ -2371,8 +2373,8 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:post_id>133</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 18:17:36]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 16:17:36]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 12:22:04]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 10:22:04]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:44]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:44]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[shopping-tour-2]]></wp:post_name>
@@ -2452,7 +2454,7 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<title><![CDATA[Styling-Abo]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/offer/styling-abo/</link>
 		<pubDate>Thu, 13 Jul 2023 16:19:06 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=134</guid>
 		<description></description>
 		<content:encoded><![CDATA[Du wünscht Dir regelmäßigen Support in Stylingfragen oder nachhaltigen Kaufentscheidungen? Dann sichere Dir meine Aufmerksamkeit durch Dein monatliches Styling-Abo! Beinhaltet sind 5-6 individuelle Anfragen online pro Monat.]]></content:encoded>
@@ -2460,8 +2462,8 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:post_id>134</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 18:19:06]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 16:19:06]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-13 18:19:06]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-13 16:19:06]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:40]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:40]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[styling-abo]]></wp:post_name>
@@ -2527,7 +2529,7 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<title><![CDATA[Styling Subscription]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/offer/styling-subscription/</link>
 		<pubDate>Thu, 13 Jul 2023 16:19:52 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=135</guid>
 		<description></description>
 		<content:encoded><![CDATA[Would you like quick advice with sustainable styling or shopping? Get up to 5 individual brief online sessions with me per month.]]></content:encoded>
@@ -2535,8 +2537,8 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:post_id>135</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 18:19:52]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 16:19:52]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 12:23:52]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 10:23:52]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:35]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:35]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[styling-subscription]]></wp:post_name>
@@ -2606,7 +2608,7 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<title><![CDATA[Online Styling Beratung]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/offer/online-styling-beratung/</link>
 		<pubDate>Thu, 13 Jul 2023 17:20:59 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=136</guid>
 		<description></description>
 		<content:encoded><![CDATA[Deine zeitlichen Kapazitäten sind begrenzt? Du brauchst kurzfristig Rat? Du wohnst nicht in der Region Berlin? Als follow-up nach einer bereits erfolgten Styling-Session? Keine Sorge, ich stehe Dir mit meiner Erfahrungen und Ideenreichtum auch online zur Verfügung! Nach einer Vorbesprechung Deines Anliegens treffen wir uns virtuell und Du zeigst mir via Kamera die Kleidungsstücke, zu denen Du Fragen hast: sei es generell zu Farbe und Schnitt, ein Event, oder für eine finale Kaufentscheidung bei online gekauften Kleidungsstücken.]]></content:encoded>
@@ -2614,8 +2616,8 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:post_id>136</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 19:20:59]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 17:20:59]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-13 19:20:59]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-13 17:20:59]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:31]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:31]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[online-styling-beratung]]></wp:post_name>
@@ -2692,7 +2694,7 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<title><![CDATA[Online Styling Consultation]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/offer/online-styling-consultation/</link>
 		<pubDate>Thu, 13 Jul 2023 17:21:55 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=138</guid>
 		<description></description>
 		<content:encoded><![CDATA[<p class="offers__offer__paragraph">Don’t have much time? Need quick advice? Don’t live in the Berlin area? Or would you like a follow-up for a past styling session? No worries. My experience and creativity are at your service online!</p>]]></content:encoded>
@@ -2700,8 +2702,8 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:post_id>138</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 19:21:55]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 17:21:55]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 12:20:33]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 10:20:33]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:26]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:26]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[online-styling-consultation]]></wp:post_name>
@@ -2781,7 +2783,7 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<title><![CDATA[Outfit Consulting für Start-ups mit nachhaltigem Fokus]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/offer/outfit-consulting-fuer-start-ups-mit-nachhaltigem-fokus/</link>
 		<pubDate>Thu, 13 Jul 2023 17:28:39 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=139</guid>
 		<description></description>
 		<content:encoded><![CDATA[Kleider machen Leute, auch im nachhaltigen Sektor. Das Erscheinungsbild beeinflusst den ersten Eindruck, den Betrachter:innen von Dir haben. Überlasse dies nicht dem Zufall und lass uns zusammenarbeiten, denn Präsentationen und Treffen mit Entscheidern, Sponsoren und Businessangeln sind enorm wichtige Auftritte zum Erreichen Deiner Ziele.
@@ -2790,8 +2792,8 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:post_id>139</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 19:28:39]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 17:28:39]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-13 19:28:39]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-13 17:28:39]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:18]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:18]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[outfit-consulting-fuer-start-ups-mit-nachhaltigem-fokus]]></wp:post_name>
@@ -2869,7 +2871,7 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<title><![CDATA[Professional Outfit Consultation for Sustainability-focused Startups]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/offer/professional-outfit-consultation-for-sustainability-focused-startups/</link>
 		<pubDate>Thu, 13 Jul 2023 17:29:19 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=141</guid>
 		<description></description>
 		<content:encoded><![CDATA[Style also matters in the sustainability business! A well-selected outfit radiates competence and authenticity, and gives you the emotional and mental boost you need for your meetings.]]></content:encoded>
@@ -2877,8 +2879,8 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:post_id>141</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 19:29:19]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 17:29:19]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 12:21:43]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 10:21:43]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:13]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:13]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[professional-outfit-consultation-for-sustainability-focused-startups]]></wp:post_name>
@@ -2960,7 +2962,7 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<title><![CDATA[Kleiderordnung]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/offer/kleiderordnung/</link>
 		<pubDate>Thu, 13 Jul 2023 17:31:24 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=142</guid>
 		<description></description>
 		<content:encoded><![CDATA[Schluss mit Chaos in Deinem Schrank, Kommode oder Kleiderstange und dem ewigen „Struggle“ der Outfit-Zusammenstellung am Morgen! Durch eine sinnvolle Struktur und Sortierung Deiner Kleidung, Schuhe und Accessoires gewinnst Du nicht nur mehr Übersicht Deiner schönen Stücke, sondern auch mehr Wertschätzung, Freude und Kreativität für neue Looks!]]></content:encoded>
@@ -2968,8 +2970,8 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:post_id>142</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 19:31:24]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 17:31:24]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-13 19:31:32]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-13 17:31:32]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:56:01]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:01]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[kleiderordnung]]></wp:post_name>
@@ -3048,7 +3050,7 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<title><![CDATA[Wardrobe Organising]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/offer/wardrobe-organising/</link>
 		<pubDate>Thu, 13 Jul 2023 17:32:13 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=145</guid>
 		<description></description>
 		<content:encoded><![CDATA[Chaos in your closet, drawers, or clothes rail? Struggling every morning with what to wear? I’ll help you bring some order. You’ll also feel more appreciation, joy, and awareness of what’s possible with your wardrobe.]]></content:encoded>
@@ -3056,8 +3058,8 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:post_id>145</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 19:32:13]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 17:32:13]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 12:23:03]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 10:23:03]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:57]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:57]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[wardrobe-organising]]></wp:post_name>
@@ -3139,7 +3141,7 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<title><![CDATA[Meet the Special-Places]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/offer/meet-the-special-places/</link>
 		<pubDate>Wed, 19 Jul 2023 17:11:41 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=160</guid>
 		<description></description>
 		<content:encoded><![CDATA[Du möchtest gezielt besondere Fashion-Locations kennenlernen? Vintage-Stores, Designerateliers, Fairfashion-Boutiquen? Ich biete Gruppen-Walks zu Berlins besten Adressen in Sachen Mode!]]></content:encoded>
@@ -3147,8 +3149,8 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:post_id>160</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-19 19:11:41]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-19 17:11:41]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-19 19:18:47]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-19 17:18:47]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:53]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:53]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[meet-the-special-places]]></wp:post_name>
@@ -3214,7 +3216,7 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<title><![CDATA[Discover Sustainability Hotspots]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/offer/discover-sustainability-hotspots/</link>
 		<pubDate>Wed, 19 Jul 2023 17:12:14 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=161</guid>
 		<description></description>
 		<content:encoded><![CDATA[Join me on a group walking tour of Berlin’s best places to shop sustainably.]]></content:encoded>
@@ -3222,8 +3224,8 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:post_id>161</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-19 19:12:14]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-19 17:12:14]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 12:24:38]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 10:24:38]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:49]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:49]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[discover-sustainability-hotspots]]></wp:post_name>
@@ -3293,7 +3295,7 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<title><![CDATA[Gutscheine]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/offer/gutscheine/</link>
 		<pubDate>Wed, 19 Jul 2023 17:16:41 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=162</guid>
 		<description></description>
 		<content:encoded><![CDATA[Mach Dir und Deinen Herzensmenschen
@@ -3302,8 +3304,8 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 		<wp:post_id>162</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-19 19:16:41]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-19 17:16:41]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-19 19:16:41]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-19 17:16:41]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:45]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:45]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[gutscheine]]></wp:post_name>
@@ -3369,7 +3371,7 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 		<title><![CDATA[Gift Vouchers]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/offer/gift-vouchers/</link>
 		<pubDate>Wed, 19 Jul 2023 17:17:26 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=offer&#038;p=163</guid>
 		<description></description>
 		<content:encoded><![CDATA[Give the gift of sustainable, creative fashion styling to those you care about!]]></content:encoded>
@@ -3377,8 +3379,8 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 		<wp:post_id>163</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-19 19:17:26]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-19 17:17:26]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-19 19:17:26]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-19 17:17:26]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:41]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:41]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[gift-vouchers]]></wp:post_name>
@@ -3441,30 +3443,47 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[Custom Styles]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/wp-global-styles-twentytwentythree/</link>
-		<pubDate>Thu, 30 Mar 2023 06:17:26 +0000</pubDate>
+		<title><![CDATA[Privacy Statement]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/en/privacy-statement/</link>
+		<pubDate>Mon, 10 Jul 2023 15:49:03 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">/2022/11/09/wp-global-styles-twentytwentythree/</guid>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?page_id=68</guid>
 		<description></description>
-		<content:encoded><![CDATA[{"styles":[],"settings":[],"isGlobalStylesUserThemeJSON":true,"version":2}]]></content:encoded>
+		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>5</wp:post_id>
-		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-03-30 08:17:26]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_modified_gmt>
+		<wp:post_id>68</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-10 17:49:03]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-10 15:49:03]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-10 17:49:03]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-10 15:49:03]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[wp-global-styles-twentytwentythree]]></wp:post_name>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[privacy-statement]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[wp_global_styles]]></wp:post_type>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="wp_theme" nicename="twentytwentythree"><![CDATA[twentytwentythree]]></category>
-						</item>
+										<category domain="language" nicename="en"><![CDATA[English]]></category>
+		<category domain="post_translations" nicename="pll_64ac286fdbd71"><![CDATA[pll_64ac286fdbd71]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_cmplz_scanned_post]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
 					<item>
 		<title><![CDATA[Impressum]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/impressum/</link>
@@ -3833,7 +3852,7 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 		<title><![CDATA[Neue Studie zu Fast Fashion schockiert]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/neue-studie-zu-fast-fashion-schockiert/</link>
 		<pubDate>Wed, 12 Jul 2023 07:12:50 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?p=94</guid>
 		<description></description>
 		<content:encoded><![CDATA[Hier käme noch mehr Text, (Vorschau-Styles?!?!?! = <strong>TODO</strong>)
@@ -3847,8 +3866,8 @@ nicht Teil des Posts
 		<wp:post_id>94</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 09:12:50]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 07:12:50]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 15:09:08]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 13:09:08]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:48:13]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:48:13]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[neue-studie-zu-fast-fashion-schockiert]]></wp:post_name>
@@ -3907,7 +3926,7 @@ nicht Teil des Posts
 		<title><![CDATA[Second Hand Shopping am 12. Mai auf dem Flowmarkt Nowkoelln]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/second-hand-shopping-am-12-mai-auf-dem-flowmarkt-nowkoelln/</link>
 		<pubDate>Wed, 12 Jul 2023 12:55:34 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?p=99</guid>
 		<description></description>
 		<content:encoded><![CDATA[Second Hand Shopping am 12. Mai auf dem Flowmarkt Nowkoelln]]></content:encoded>
@@ -3915,8 +3934,8 @@ nicht Teil des Posts
 		<wp:post_id>99</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 14:55:34]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 12:55:34]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 15:10:01]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 13:10:01]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:48:09]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:48:09]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[second-hand-shopping-am-12-mai-auf-dem-flowmarkt-nowkoelln]]></wp:post_name>
@@ -3946,7 +3965,7 @@ nicht Teil des Posts
 		<title><![CDATA[Gute Gespräche und viel zu sehen – unterwegs auf der Green Fashion Fair Berlin]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/gute-gespraeche-und-viel-zu-sehen-unterwegs-auf-der-green-fashion-fair-berlin/</link>
 		<pubDate>Wed, 12 Jul 2023 12:55:50 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?p=101</guid>
 		<description></description>
 		<content:encoded><![CDATA[Gute Gespräche und viel zu sehen – unterwegs auf der Green Fashion Fair Berlin]]></content:encoded>
@@ -3954,8 +3973,8 @@ nicht Teil des Posts
 		<wp:post_id>101</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 14:55:50]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 12:55:50]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 15:10:30]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 13:10:30]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:48:05]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:48:05]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[gute-gespraeche-und-viel-zu-sehen-unterwegs-auf-der-green-fashion-fair-berlin]]></wp:post_name>
@@ -3985,7 +4004,7 @@ nicht Teil des Posts
 		<title><![CDATA[Shocking Fast Fashion Study]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/shocking-fast-fashion-study/</link>
 		<pubDate>Wed, 12 Jul 2023 13:15:15 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?p=106</guid>
 		<description></description>
 		<content:encoded><![CDATA[english text]]></content:encoded>
@@ -3993,8 +4012,8 @@ nicht Teil des Posts
 		<wp:post_id>106</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 15:15:15]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 13:15:15]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 15:15:24]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 13:15:24]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:48:00]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:48:00]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[shocking-fast-fashion-study]]></wp:post_name>
@@ -4024,7 +4043,7 @@ nicht Teil des Posts
 		<title><![CDATA[Second Hand Shopping 12. May at Flowmarkt Nowkoelln]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/second-hand-shopping-12-may-at-flowmarkt-nowkoelln/</link>
 		<pubDate>Wed, 12 Jul 2023 13:15:53 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?p=108</guid>
 		<description></description>
 		<content:encoded><![CDATA[Second Hand Shopping 12. May at Flowmarkt Nowkoelln]]></content:encoded>
@@ -4032,8 +4051,8 @@ nicht Teil des Posts
 		<wp:post_id>108</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 15:15:53]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 13:15:53]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 15:15:53]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 13:15:53]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:47:56]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:47:56]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[second-hand-shopping-12-may-at-flowmarkt-nowkoelln]]></wp:post_name>
@@ -4063,7 +4082,7 @@ nicht Teil des Posts
 		<title><![CDATA[Talks and Inspiration at Green Fashion Fair Berlin]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/talks-and-inspiration-at-green-fashion-fair-berlin/</link>
 		<pubDate>Wed, 12 Jul 2023 13:16:35 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?p=110</guid>
 		<description></description>
 		<content:encoded><![CDATA[Talks and Inspiration at Green Fashion Fair Berlin (english placeholder)]]></content:encoded>
@@ -4071,8 +4090,8 @@ nicht Teil des Posts
 		<wp:post_id>110</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 15:16:35]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 13:16:35]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 15:16:35]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 13:16:35]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:47:49]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:47:49]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[talks-and-inspiration-at-green-fashion-fair-berlin]]></wp:post_name>
@@ -4102,7 +4121,7 @@ nicht Teil des Posts
 		<title><![CDATA[Jackie, Marketing Lead @ Impact Hub Berlin]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/story/jackie-marketing-lead-impact-hub-berlin/</link>
 		<pubDate>Wed, 12 Jul 2023 16:57:17 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=116</guid>
 		<description></description>
 		<content:encoded><![CDATA[I really enjoyed doing a tour of my closet with Tina. She helped me see my clothes with fresh eyes and provided practical tips on how to come up with combinations and accessories that enhance my style and personality. I recommend her services if you are looking to refine your fashion style. Thank you so much, Tina!]]></content:encoded>
@@ -4110,8 +4129,8 @@ nicht Teil des Posts
 		<wp:post_id>116</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 18:57:17]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 16:57:17]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 19:14:52]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 17:14:52]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:32]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:32]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[jackie-marketing-lead-impact-hub-berlin]]></wp:post_name>
@@ -4148,7 +4167,7 @@ nicht Teil des Posts
 		<title><![CDATA[Mike, Freelance Translator, Berlin]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/story/mike-freelance-translator-berlin/</link>
 		<pubDate>Wed, 12 Jul 2023 16:58:10 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=118</guid>
 		<description></description>
 		<content:encoded><![CDATA[Tina brings enthusiasm and positive energy to fashion and styling. It's clear that she's good at what she does, and loves it too. She's given me clear advice on how to make the most of my existing wardrobe, and also how to make small changes that can make a big difference for my appearance. I look forward to working with Tina more!]]></content:encoded>
@@ -4156,8 +4175,8 @@ nicht Teil des Posts
 		<wp:post_id>118</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 18:58:10]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 16:58:10]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 19:15:46]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 17:15:46]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:27]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:27]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[mike-freelance-translator-berlin]]></wp:post_name>
@@ -4194,7 +4213,7 @@ nicht Teil des Posts
 		<title><![CDATA[Someone, without a picture]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/story/someone-without-a-picture/</link>
 		<pubDate>Wed, 12 Jul 2023 16:58:31 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=120</guid>
 		<description></description>
 		<content:encoded><![CDATA[Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
@@ -4202,8 +4221,8 @@ nicht Teil des Posts
 		<wp:post_id>120</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 18:58:31]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 16:58:31]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 19:16:15]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 17:16:15]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:22]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:22]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[someone-without-a-picture]]></wp:post_name>
@@ -4236,7 +4255,7 @@ nicht Teil des Posts
 		<title><![CDATA[Maxi, Artist, Berlin]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/story/maxi-artist-berlin/</link>
 		<pubDate>Wed, 12 Jul 2023 17:13:21 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=121</guid>
 		<description></description>
 		<content:encoded><![CDATA[Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.]]></content:encoded>
@@ -4244,8 +4263,8 @@ nicht Teil des Posts
 		<wp:post_id>121</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 19:13:21]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 17:13:21]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 19:13:21]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 17:13:21]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:18]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:18]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[maxi-artist-berlin]]></wp:post_name>
@@ -4282,7 +4301,7 @@ nicht Teil des Posts
 		<title><![CDATA[Maxi, Künstlerin, Berlin]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/story/maxi-kuenstlerin-berlin-2/</link>
 		<pubDate>Wed, 12 Jul 2023 17:13:45 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=122</guid>
 		<description></description>
 		<content:encoded><![CDATA[Die Styling-Session mit Tina hat mir gezeigt, wie wandelbar ich bin und in mir große Lust ausgelöst, mich durch Mode mehr auszudrücken. Auf meiner Vernissage fühlte ich mich mutig und stark.]]></content:encoded>
@@ -4290,8 +4309,8 @@ nicht Teil des Posts
 		<wp:post_id>122</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 19:13:45]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 17:13:45]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 19:13:45]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 17:13:45]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:13]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:13]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[maxi-kuenstlerin-berlin-2]]></wp:post_name>
@@ -4328,7 +4347,7 @@ nicht Teil des Posts
 		<title><![CDATA[Jackie, Marketing Lead @ Impact Hub Berlin]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/story/jackie-marketing-lead-impact-hub-berlin-2/</link>
 		<pubDate>Wed, 12 Jul 2023 17:15:27 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=123</guid>
 		<description></description>
 		<content:encoded><![CDATA[I really enjoyed doing a tour of my closet with Tina. She helped me see my clothes with fresh eyes and provided practical tips on how to come up with combinations and accessories that enhance my style and personality. I recommend her services if you are looking to refine your fashion style. Thank you so much, Tina!]]></content:encoded>
@@ -4336,8 +4355,8 @@ nicht Teil des Posts
 		<wp:post_id>123</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 19:15:27]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 17:15:27]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 19:15:27]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 17:15:27]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:07]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:07]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[jackie-marketing-lead-impact-hub-berlin-2]]></wp:post_name>
@@ -4374,7 +4393,7 @@ nicht Teil des Posts
 		<title><![CDATA[Mike, Freelance Translator, Berlin]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/story/mike-freelance-translator-berlin-2/</link>
 		<pubDate>Wed, 12 Jul 2023 17:16:00 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=124</guid>
 		<description></description>
 		<content:encoded><![CDATA[Tina brings enthusiasm and positive energy to fashion and styling. It's clear that she's good at what she does, and loves it too. She's given me clear advice on how to make the most of my existing wardrobe, and also how to make small changes that can make a big difference for my appearance. I look forward to working with Tina more!]]></content:encoded>
@@ -4382,8 +4401,8 @@ nicht Teil des Posts
 		<wp:post_id>124</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 19:16:00]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 17:16:00]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 19:16:00]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 17:16:00]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:55:03]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:55:03]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[mike-freelance-translator-berlin-2]]></wp:post_name>
@@ -4420,7 +4439,7 @@ nicht Teil des Posts
 		<title><![CDATA[Someone, without a picture]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/en/story/someone-without-a-picture-2/</link>
 		<pubDate>Wed, 12 Jul 2023 17:16:27 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
+		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=story&#038;p=125</guid>
 		<description></description>
 		<content:encoded><![CDATA[Ut denim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
@@ -4428,8 +4447,8 @@ nicht Teil des Posts
 		<wp:post_id>125</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-12 19:16:27]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-12 17:16:27]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-12 19:16:27]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-12 17:16:27]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 15:54:59]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 13:54:59]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[someone-without-a-picture-2]]></wp:post_name>
@@ -4458,6 +4477,31 @@ nicht Teil des Posts
 		<wp:meta_value><![CDATA[position_number]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
+					<item>
+		<title><![CDATA[Custom Styles]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/wp-global-styles-twentytwentythree/</link>
+		<pubDate>Thu, 30 Mar 2023 06:17:26 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/2022/11/09/wp-global-styles-twentytwentythree/</guid>
+		<description></description>
+		<content:encoded><![CDATA[{"styles":[],"settings":[],"isGlobalStylesUserThemeJSON":true,"version":2}]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5</wp:post_id>
+		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-03-30 08:17:26]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[wp-global-styles-twentytwentythree]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[wp_global_styles]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="wp_theme" nicename="twentytwentythree"><![CDATA[twentytwentythree]]></category>
+						</item>
 					<item>
 		<title><![CDATA[Kontaktformular deutsch (de_DE)]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=16</link>
@@ -4803,5 +4847,5 @@ Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) ges
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-07-27 12:25:14 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-07-27 15:57:23 by W3 Total Cache
 -->

@@ -395,7 +395,7 @@ This is a per-user function, therefore turning it off only removes it for you an
 
 ### Make sure the website owner can actually edit their content!
 
-If the content has been prepared or edited before adding the new user, make sure that they are able to edit their website content! This could be done by changing ownership and transferring all existing content to the new author.
+If the content has been prepared or edited before adding the new user, make sure that they are able to edit their website content! This could be done by changing ownership and transferring all existing content to the new author (e.g. by using QuickEdit on the overview page). 
 
 Don't give the website owner administration rights unless they are a technically experienced person who know how to use WordPress without accidentally destroying, deleting, or misplacing anything.
 
