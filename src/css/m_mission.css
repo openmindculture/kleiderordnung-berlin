@@ -29,6 +29,8 @@
     50% 50%;
 }
 
+@mixin typography-heading-h2-mission .mission__headline {}
+
 .mission__card {
   width: var(--width-spaced);
   max-width: var(--width-max);
