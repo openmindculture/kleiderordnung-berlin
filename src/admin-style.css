@@ -1,6 +1,9 @@
 /**
  * Styles for WP-Admin
  *
+ * update/copy this file manually if you experience problems with automatic build!
+ * TODO: fix npm copyfiles silently ignoring this file (but not editor-style.css in the same directory)
+ *
  * @package KleiderOrdnung
  * @author openmindculture
  */
@@ -8,10 +11,18 @@
 @import url("css/1_colors-design-settings.css");
 
 body {
-  background-color: var(--color-primary-background);
-  border: solid 3px green !important;
-  /* TODO *
-   * use colors depending on URL to indicate and make it easier to disambiguate installations
-   */
-  /
+  background-color: var(--color-admin-default-background);
+}
+
+/* colors depending on URL to indicate and make it easier to disambiguate installations */
+body.url-is-production { /* anything else not matching above criteria */
+  background-color: var(--color-admin-default-background);
+}
+
+body.url-is-preview { /* e.g. (stage. preview. qa.) */
+  background-color: var(--color-admin-preview-background);
+}
+
+body.url-is-local { /* e.g. (localhost bs-local.com) */
+  background-color: var(--color-admin-localhost-background);
 }

@@ -8,16 +8,16 @@ if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 
+if ( ! defined( 'KLEIDERORDNUNG_THEME_VERSION' ) ) {
+  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.5.4' );
+}
+
 if ( ! defined( 'KLEIDERORDNUNG_DIR' ) ) {
   define( 'KLEIDERORDNUNG_DIR', get_template_directory() );
 }
 
 if ( ! defined( 'KLEIDERORDNUNG_URI' ) ) {
   define( 'KLEIDERORDNUNG_URI', get_template_directory_uri() );
-}
-
-if ( ! defined( 'KLEIDERORDNUNG_THEME_VERSION' ) ) {
-  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.5.3' );
 }
 
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/add-theme-support.php' );

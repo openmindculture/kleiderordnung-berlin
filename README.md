@@ -58,6 +58,9 @@ Update WordPress / plugins:
 Clear cache:
 ![Screenshot: clear W3TC cache](doc/anleitung-cache-leeren.png)
 
+Colors to distinguish between local host, preview and production servers:
+![Screenshot: Server unterscheiden](doc/anleitung-farbcode-umgebungen.png)
+
 ## Data Flow, Backups, Updates
 
 Design and behavior is controlled by the theme and plugins which can be deployed to production after testing. Content (data) is edited on the production server and synchronized back to test and development systems.
@@ -382,13 +385,19 @@ The local development setup has been tested on Ubuntu Linux and _should_ work on
 
 Code style follows modern recommendations for HTML, CSS, PHP, and ECMAScript, ignoring the divergent WordPress community guidelines.
 
-## Customize Users and Dashboard Widgets
+## Verify and Customize Users and Dashboard Widgets
 
-Create a new user as an author or a more appropriate [WordPress admin role](https://wordpress.org/documentation/article/roles-and-capabilities/)) (permission).
+Create a new user as an author or a more appropriate [WordPress admin role](https://wordpress.org/documentation/article/roles-and-capabilities/)) (permission group).
 
 Log in to your Dashboard as the new user. On the screen showing the "Site Health" widget, click the "Screen Options" ("Ansicht anpassen") menu item at the top right of your screen and move the custom theme widget to the top position. You can turn off "Site Health" and any other widgets you don't want to see.
 
 This is a per-user function, therefore turning it off only removes it for you and not other users.
+
+### Make sure the website owner can actually edit their content!
+
+If the content has been prepared or edited before adding the new user, make sure that they are able to edit their website content! This could be done by changing ownership and transferring all existing content to the new author.
+
+Don't give the website owner administration rights unless they are a technically experienced person who know how to use WordPress without accidentally destroying, deleting, or misplacing anything.
 
 ## WordPress-Plugins
 

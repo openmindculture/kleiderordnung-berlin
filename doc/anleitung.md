@@ -15,6 +15,7 @@
 <li><a href="#exportieren">Daten sichern (exportieren)</a></li>
 <li><a href="#loeschen">Daten löschen (DSGVO)</a></li>
 <li><a href="#updaten">WordPress aktualisieren</a></li>
+<li><a href="#unterscheiden">Server unterscheiden (Website vs. Vorschau- / Testsystem)</a></li>
 </ul>
 
 <a name="aktualisieren" id="aktualisieren"></a>
@@ -162,3 +163,12 @@ Sicherheitshalber sollten wir zusätzlich folgende Stellen prüfen und ggf. manu
 ![Screenshot: Cache leeren](anleitung-cache-leeren.png)
 
 Der Zwischenspeicher wird nach der Leerung automatisch wieder gefüllt, sobald die jeweiligen Seiten erneut aufgerufen wurden. Messungen von Ladezeit und Verfügbarkeit können dadurch kurzzeitig beeinträchtigt werden.
+
+<a name="updaten" id="unterscheiden"></a>
+### Server unterscheiden (Website vs. Vorschau- / Testsystem)
+
+Um zu verhindern, dass wir die falschen Inhalte bearbeiten, hat der Administrationsbereich unterschiedliche Hintergrundfarben. Unterschieden werden Vorschausysteme, lokale Entwicklungssysteme und die eigentliche Website, auch Produktivsystem ("production") genannt.
+
+![Screenshot: Server unterscheiden](anleitung-farbcode-umgebungen.png)
+
+Testsysteme haben im Administrationsbereich einen geblichen Hintergrund, lokale Entwicklungsserver einen grünlichen, alle anderen (somit auch die eigentliche Website) den üblichen hellgrauen Hintergrund. Die eigentliche Website wird nicht farblich markiert.

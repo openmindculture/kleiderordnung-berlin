@@ -57,7 +57,7 @@ add_action( 'admin_init', function () {
     add_editor_style( 'editor-style.css' );
     wp_enqueue_style(
       'kleiderordnung_admin_style',
-      get_template_directory() . '/admin-style.css',
+      get_template_directory_uri() . '/admin-style.css',
       array(),
       KLEIDERORDNUNG_THEME_VERSION,
       'all'
@@ -66,10 +66,12 @@ add_action( 'admin_init', function () {
 } );
 
 if ( is_admin() ) {
-  add_action( 'acf/input/admin_footer', function () {
-    ?>
-    <script type="text/javascript"
-            src="<?php echo get_template_directory_uri() ?>/js/admin-scripts.js?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>"></script>
-    <?php
+  add_action( 'admin_enqueue_scripts', function () {
+    wp_enqueue_script(
+      'kleiderordnung_admin_script',
+      get_template_directory_uri() . '/js/admin-scripts.js',
+      array(),
+      KLEIDERORDNUNG_THEME_VERSION
+    );
   } );
 }
