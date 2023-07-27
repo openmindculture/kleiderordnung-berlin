@@ -34,10 +34,11 @@
     }
 
     ksort($resorted_post_ids);
+    $last_index = count($resorted_post_ids) - 1;
     $loop_index = 0;
     foreach ($resorted_post_ids as $resorted_post_position_number => $resorted_post_id) {
       ?>
-        <div class="stories__story carousel__item carousel__item--index-<?php echo $loop_index?>"<?php if ($loop_index == 0) : echo 'id="stories-items-first"'; endif ?>>
+        <div class="stories__story carousel__item carousel__item--index-<?php echo $loop_index?>"<?php if ($loop_index == 0) { echo 'id="stories-items-first"';} elseif ($loop_index == $last_index) { echo 'id="stories-items-last"'; } ?>>
           <figure class="stories__story__image">
             <?php echo get_the_post_thumbnail($resorted_post_id) ?>
           </figure>
