@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
       (loc.indexOf('//qa.') > -1)
     )
   {
-    document.body.classList.add('url-is-local');
+    document.body.classList.add('url-is-preview');
   } else {
     document.body.classList.add('url-is-production');
   }
