@@ -83,7 +83,6 @@
   display: none;
 }
 
-/* TODO add feature detection for clients failing to activate Lottie player, like Safari 10.1 on MacOS Sierra */
 @media (prefers-reduced-motion: reduce) {
   .intro__keyvisual__animation {
     display: none;

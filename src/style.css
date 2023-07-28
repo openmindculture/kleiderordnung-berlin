@@ -15,7 +15,6 @@
 /* @import url("css/0_typography.css"); */
 
 /* import css component files (will be combined into single style.css file by postCSS */
-/* TODO PostCSS soll die Importe zusammenfassen!!!  */
 /* -- global settings -- */
 @import url("css/1_colors-design-settings.css");
 @import url("css/1_globals.css");
@@ -51,16 +50,10 @@
  * minify all files
  * include content from imported files
  * replace root variables (custom properties) in subsequent style definitions
+ * convert to color definitions for better backwards compatibility
  */
 
-/* TODO use PostCSS to convert to color definitions for better backwards compatibility */
-/* TODO minify CSS and HTML files */
-
-/* TODO move specific combination classes out of :root and use proper BEMIT name and/or elements */
-/* keep utility classes, and add specific alternatives and global elements */
-
-/* TODO obsolete? */
-/* TODO what is all this here?????? nothing like that should exist outside module files or critical css */
+/* TODO obsolete? nothing like that should exist outside module files or critical css */
 
 .main-menu__nav-wrapper {
   text-align: center;
@@ -140,42 +133,11 @@ a.main-menu__button--close:link {
   }
 }
 
-/* TODO animated color link hover, TODO define marked text color */
-/*
-@supports (background-image:linear-gradient(#222b40,#222b40)) and (transition:all 2s linear) {
-  a, a:link, a:visited, a:active {
-    background-image: linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#f5df4d,#f5df4d);
-    background-size: 100% 100%,50% 100%,100% 100%;
-    transition: background-size .25s ease-in,color .25s ease-in;
-  }
-
-  a:focus, a:hover {
-    background-position: 0 0,100% 0,0 0;
-    background-repeat: no-repeat;
-    background-size: 100% 100%,50% 100%,100% 100%;
-    transition: background-size .25s ease-in,color .25s ease-in;
-    background-image: linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#bbbfc2,#bbbfc2),linear-gradient(#f5df4d,#f5df4d);
-    text-decoration-style: dotted;
-    text-decoration-thickness: 0.1em;
-  }
-} */
-
 /* TODO technical SEO and content SEM:
-  - [ ] meaningful, unique heading content (not just "about me" or "imprint")
-  - [ ] printable as pdf
-  - [ ] mobile-friendly
-  - [ ] accessible / screen reader friendly / tab navigateable
   - [ ] vcard download option?
-  - [ ] ...
   - [ ] configure additional performance and security headers using .htaccess only if necessary
   - [ ] configure colors that provide necessary contrast to comply with WCAG 2.0 (might as well customize theme for the client?)
   - [ ] ^ this would be OK to be specific for the chosen font(s) for Kleiderordnung
- */
-/* TODO possible decoration ideas
-  - [ ] no centered column layout
-  - [ ] pieces of cloth
-  - [ ] micro animations
-  - [ ] subtle text effects / gradients (see below)
  */
 /* TODO use some cutting edge modern CSS and web dev features, just because, and with fallbacks of course:
  - [ ] content-visibility as potential visibility query and upgrade to intersection observer? thanks to schepp!
@@ -191,12 +153,3 @@ a.main-menu__button--close:link {
  - [ ] use git based deployment (with or without netlify)
  - [ ] deployment should possibly also cover tests
  */
-
-
-
-
-/** TODO: review and remove unnecessary code above;
- *  TODO: review and refactor ad-hoc demo code below;
- *        move component code like .columns* to distinct files;
- */
-
