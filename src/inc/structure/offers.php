@@ -122,6 +122,7 @@ if ( $the_query->have_posts() ) : ?>
         $resorted_additional_post_ids[$unique_additional_post_position_number] = get_the_ID();
         $loop_index++;
       }
+      wp_reset_query();
 
       ksort($resorted_additional_post_ids);
       $loop_index = 0;
