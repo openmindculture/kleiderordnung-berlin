@@ -357,6 +357,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 var currentCorrespondingNavigationItem = document.querySelector('#menu-main-item-' + targetId + ' a');
                 if  (currentCorrespondingNavigationItem && currentCorrespondingNavigationItem.classList) {
                   currentCorrespondingNavigationItem.classList.add('active');
+                  if(history.pushState) {
+                    history.pushState(null, null, '#' + targetId);
+                  }
+                  else {
+                    window.location.hash = '#' + targetId;
+                  }
                 }
               }
             }
