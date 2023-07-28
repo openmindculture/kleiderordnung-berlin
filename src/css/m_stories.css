@@ -86,12 +86,12 @@
   }
 }
 
-.stories__story__quote__author {
+@mixin typography-copy .stories__story__quote__author {
   display: block;
   margin-bottom: 1rem;
 }
 
-.stories__story__quote__text {
+@mixin typography-quote-text .stories__story__quote__text {
   display: block;
   margin: 0;
 }

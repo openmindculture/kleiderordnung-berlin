@@ -144,6 +144,18 @@ $(className) {
   }
 }
 
+@define-mixin typography-quote-text $className {
+$(className) {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-20);
+  line-height: 160%;
+  letter-spacing: 0.0625rem;
+  font-style: normal;
+  @mixin-content;
+}
+}
+
 @define-mixin typography-weight-semibold $className {
   $(className) {
     font-weight: var(--font-weight-semibold);
