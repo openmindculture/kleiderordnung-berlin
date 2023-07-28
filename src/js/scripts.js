@@ -344,7 +344,6 @@ document.addEventListener('DOMContentLoaded', function() {
     kleiderordnung.waypointObserver = new IntersectionObserver(
       function(intersectingEntries) {
         for (var j = 0; j < intersectingEntries.length; j++) {
-
           var intersectingEntry = intersectingEntries[j];
           if (intersectingEntry.isIntersecting && intersectingEntry.intersectionRatio > kleiderordnung.observerOptions.threshold) {
             var targetElement = /** @type {HTMLElement} */ intersectingEntry.target;
@@ -366,7 +365,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       kleiderordnung.observerOptions
     );
-    var correnspodingNavigationItems = document.querySelectorAll('#menu-main a[href^="#"]');
+    var correnspodingNavigationItems = document.querySelectorAll('#menu-main a.menu-item-link-waypoint');
     if (correnspodingNavigationItems) {
       for (var cni=0; cni < correnspodingNavigationItems.length; cni++) {
         if (correnspodingNavigationItems[cni] && correnspodingNavigationItems[cni].href) {

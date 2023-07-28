@@ -19,11 +19,11 @@
         <span class="sr-only"><?php _e( 'Menü schließen', 'kleiderordnung' ) ?></span>
       </a>
       <ul id="menu-main" class="navigation__list navigation__list--main">
-        <li id="menu-main-item-angebot" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-angebot"><a href="<?php echo get_home_url() ?>/#angebot"  tabindex="0"><?php _e( 'Angebot', 'kleiderordnung' ) ?></a></li>
-        <li id="menu-main-item-mission" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-mission"><a href="<?php echo get_home_url() ?>/#mission"  tabindex="0"><?php _e( 'Mission', 'kleiderordnung' ) ?></a></li>
-        <li id="menu-main-item-stories" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-stories"><a href="<?php echo get_home_url() ?>/#stories"  tabindex="0"><?php _e( 'Stories', 'kleiderordnung' ) ?></a></li>
-        <li id="menu-main-item-news" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-news"><a href="<?php echo get_home_url() ?>/#news"  tabindex="0"><?php _e( 'News', 'kleiderordnung' ) ?></a></li>
-        <li id="menu-main-item-kontakt" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-kontakt"><a class="button button--primary" href="<?php echo get_home_url() ?>/#kontakt" tabindex="0"><?php _e( 'Kontakt', 'kleiderordnung' ) ?></a></li>
+        <li id="menu-main-item-angebot" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-angebot"><a href="<?php echo get_home_url() ?>/#angebot" class="menu-item-link-waypoint" tabindex="0"><?php _e( 'Angebot', 'kleiderordnung' ) ?></a></li>
+        <li id="menu-main-item-mission" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-mission"><a href="<?php echo get_home_url() ?>/#mission" class="menu-item-link-waypoint" tabindex="0"><?php _e( 'Mission', 'kleiderordnung' ) ?></a></li>
+        <li id="menu-main-item-stories" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-stories"><a href="<?php echo get_home_url() ?>/#stories" class="menu-item-link-waypoint" tabindex="0"><?php _e( 'Stories', 'kleiderordnung' ) ?></a></li>
+        <li id="menu-main-item-news" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-news"><a href="<?php echo get_home_url() ?>/#news" class="menu-item-link-waypoint" tabindex="0"><?php _e( 'News', 'kleiderordnung' ) ?></a></li>
+        <li id="menu-main-item-kontakt" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-kontakt"><a href="<?php echo get_home_url() ?>/#kontakt" class="menu-item-link-waypoint button button--primary" tabindex="0"><?php _e( 'Kontakt', 'kleiderordnung' ) ?></a></li>
         <li id="menu-main-item-language" class="menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-language"><?php
             if (is_front_page()) {
               ?>
