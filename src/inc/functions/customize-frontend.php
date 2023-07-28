@@ -6,6 +6,7 @@
 
 add_filter( 'body_class', function ( $classes = '' ) {
   $classes[] = 'theme-kleiderordnung';
+  $classes[] = 'no-js'; /* workaround against missing default fallback class on custom front page */
   return $classes;
 } );
 

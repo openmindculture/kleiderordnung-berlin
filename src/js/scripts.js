@@ -276,6 +276,9 @@ kleiderordnung.activateLazyLoadedMailtoLinks = function() {
 document.addEventListener('DOMContentLoaded', function() {
 
   /* body.no-js is handled by WordPress core in php body_class() */
+  /* workaround against unreliable default fallback class on custom front page */
+  document.body.classList.remove('no-js');
+  document.body.classList.add('js');
 
   /* Lottie player has no fallback / polyfill for missing globalThis object */
   /* which seems hard to polyfill so let's activate our no-JS fallback instead */
