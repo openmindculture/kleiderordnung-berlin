@@ -7,7 +7,6 @@
 
 .carousel__wrapper {
   position: relative;
-  max-height: calc(100vh - 2rem);
 }
 
 .carousel__viewport {
