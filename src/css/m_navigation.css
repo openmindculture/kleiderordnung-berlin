@@ -154,6 +154,24 @@
     padding-top: 1rem;
   }
 
+  .navigation__list li.menu-item-language ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation__list li.menu-item-language ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation__list li.menu-item-language ul li:not(:first-child) a::before {
+    content: "/";
+    font-size: var(--font-size-16);
+    line-height: 140%;
+    height: 1.4rem;
+  }
+
   .navigation__list-wrapper--main a.button {
     background-color: var(--color-primary-foreground);
     color: var(--color-primary-background);

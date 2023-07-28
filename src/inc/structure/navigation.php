@@ -19,13 +19,24 @@
         <span class="sr-only"><?php _e( 'Menü schließen', 'kleiderordnung' ) ?></span>
       </a>
       <ul id="menu-main" class="navigation__list navigation__list--main">
-        <li id="menu-main-item-angebot" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1857"><a href="<?php echo get_home_url() ?>/#angebot"  tabindex="0"><?php _e( 'Angebot', 'kleiderordnung' ) ?></a></li>
-        <li id="menu-main-item-mission" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"><a href="<?php echo get_home_url() ?>/#mission"  tabindex="0"><?php _e( 'Mission', 'kleiderordnung' ) ?></a></li>
-        <li id="menu-main-item-stories" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1855"><a href="<?php echo get_home_url() ?>/#stories"  tabindex="0"><?php _e( 'Stories', 'kleiderordnung' ) ?></a></li>
-        <li id="menu-main-item-news" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1854"><a href="<?php echo get_home_url() ?>/#news"  tabindex="0"><?php _e( 'News', 'kleiderordnung' ) ?></a></li>
-        <li id="menu-main-item-kontakt" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-1853"><a class="button button--primary" href="<?php echo get_home_url() ?>/#kontakt" tabindex="0"><?php _e( 'Kontakt', 'kleiderordnung' ) ?></a></li>
-        <li id="menu-main-item-language" class="lang-item lang-item-8 lang-item-de current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-1859-de">
-          <a href="/" hreflang="de" lang="de" title="Deutsch" tabindex="0">DE</a>/<a href="/en" hreflang="en" lang="en" title="English" tabindex="0">EN</a>
+        <li id="menu-main-item-angebot" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-angebot"><a href="<?php echo get_home_url() ?>/#angebot"  tabindex="0"><?php _e( 'Angebot', 'kleiderordnung' ) ?></a></li>
+        <li id="menu-main-item-mission" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-mission"><a href="<?php echo get_home_url() ?>/#mission"  tabindex="0"><?php _e( 'Mission', 'kleiderordnung' ) ?></a></li>
+        <li id="menu-main-item-stories" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-stories"><a href="<?php echo get_home_url() ?>/#stories"  tabindex="0"><?php _e( 'Stories', 'kleiderordnung' ) ?></a></li>
+        <li id="menu-main-item-news" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-news"><a href="<?php echo get_home_url() ?>/#news"  tabindex="0"><?php _e( 'News', 'kleiderordnung' ) ?></a></li>
+        <li id="menu-main-item-kontakt" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-kontakt"><a class="button button--primary" href="<?php echo get_home_url() ?>/#kontakt" tabindex="0"><?php _e( 'Kontakt', 'kleiderordnung' ) ?></a></li>
+        <li id="menu-main-item-language" class="menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-language"><?php
+            if (is_front_page()) {
+              ?>
+              <a href="/" hreflang="de-DE" lang="de-DE" title="Deutsch" tabindex="0">DE</a>/<a href="/en" hreflang="en-US" lang="en-US" title="English" tabindex="0">EN</a>
+              <?php
+            } else {
+              ?><ul><?php
+              pll_the_languages( array(
+                'display_names_as' => 'slug',
+              ));
+              ?></ul><?php
+            }
+          ?>
         </li>
       </ul>
     </div>
