@@ -50,19 +50,20 @@
   flex: 0 0 auto;
   padding: 0;
   margin: 0 2rem 0 0;
-  /* set both max-width AND max-height
-   * --image-ratio can be overridden by inline style, e.g.
-   * <picture style="---img-ratio: 0.562610229">
-   */
-  width: 19.9375; /* 319px original image */
-  max-width: min(100%, calc(var(--height-stories-max, 12.5rem) * var(--img-ratio, 0.562610229)));
-  height: auto;
   float: left;
+}
+
+.stories__story__image,
+.stories__story__image img {
+  height: 35.625rem;
+  width: auto;
+  max-width: unset;
 }
 
 .stories__story__quote {
   flex: 0 0 auto;
-  width: 20.3125rem; /* 325px; */
+  width: 20.3125rem;
+  min-height: 35.625rem;
   margin: 0 2.5rem 2.5rem 0;
   display: flex;
   flex-direction: column;
