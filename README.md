@@ -2,6 +2,7 @@
 
 A portfolio website for sustainable stylist Tina Steinke in Berlin,
 following up on a previous sustainable style consultancy in Düsseldorf.
+Visual design by Ina Nixdorf, technical concept and development by Ingo Steinke.
 
 - https://kleiderordnung.berlin/ (upcoming)
 - https://www.kleiderordnung-berlin.de/ (classic alternative)
@@ -9,6 +10,23 @@ following up on a previous sustainable style consultancy in Düsseldorf.
 Local development: http://localhost:1234/
 Backend: http://localhost:1234/wp-admin (default credentials: admin:secret).
 Make sure to that the theme KleiderOrdnung got activated or activate it manually after installation.
+
+Features:
+- accessible: WCAG 2.0 compliant, tab-navigateable, high contrast
+- animated using subtle micro-animations and scrolling effects
+- beautiful: web design based on the visual corporate identity
+- classic: hybrid theme with custom post types, custom fields, and block editor support
+- documented: README for developers and an additional manual for website owners
+- editable: content, images, and translations can be edited by the site owner
+- international: localized by a professional translator and proofreader
+- minimal: all important content at a glance on one landing page
+- portable: theme, plugins, and content can be moved from server to server
+- printable: distinct style sheet to ensure print / PDF layout
+- quick: cacheable and without loading unnecessary data
+- responsive: designed and tested to work on any device and browser
+- semantic: meaningful markup to ensure technical search engine optimization
+- tested: automated and manual frontend tests plus static code analysis
+- versioned: open source development on GitHub
 
 ![KleiderOrdnung theme screenshot](src/screenshot.png)
 
@@ -26,7 +44,8 @@ To setup / deploy KleiderOrdnung on a website,
 - copy all icons and manifest files (`*.ico`, `*.png`, `*.svg`, `*.json`, `*.xml`, `robots.txt`) to the web root directory
 - configure server and caching by editing `.htaccess` / `nginx.conf` / hosting backend or by using appropriate plugins,
 - use additional reverse proxy and/or CDN servers if necessary,
-- test everything and backup your data regularly!
+- run automated tests (`npm run test`) and update the baseline screenshots if necessary (see [Testing...](#testing]))
+- test everything and back up your data regularly! (Werkzeuge -> Export or use a plugin like [Updraft Plus](https://wordpress.org/plugins/updraftplus/)
 
 ## User Manual for the Site Owner(s)
 
@@ -361,6 +380,7 @@ Support and code review: tbd.
 - Henderson Sans by [Sudtipos](https://www.sudtipos.com/)
 - Ivy Mode by Jan Maack from [Ivy Foundry](https://typenetwork.com/type-foundries/ivy-foundry).
 
+<a name="testing" id="testing"></a>
 ## Development, Performance, Accessibility, and Testing
 
 Edit source code in `src` files, rebuild and test the theme using `npm run build` and `npm run build:zip`, then start http://localhost:1234/
