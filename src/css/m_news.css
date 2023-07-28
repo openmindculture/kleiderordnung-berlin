@@ -100,8 +100,8 @@
   font-family: var(--font-family-ivymode);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-20);
-  line-height: 1.4;
-  letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
+  line-height: 140%;
+  letter-spacing: 0.0625rem;
   font-style: normal;
 }
 

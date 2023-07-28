@@ -24,12 +24,10 @@
 
 @define-mixin typography-button-label $className {
   $(className) {
-    font-family: var(--font-family-default); /* TODO default ist nicht 700 */
-    /* oder die Gewichte müssten jeweils gleich heißen,
-     * was aber deren CSS-Beispielen widerspricht.
-     */
+    font-family: var(--font-family-default);
     font-weight: var(--font-weight-bold);
-    line-height: 14px; /* "identical to box height, or 108%" */
+    font-size: var(--font-size-13);
+    line-height: 107%;
     font-style: normal;
     text-transform: uppercase;
     @mixin-content;
@@ -40,8 +38,8 @@
   $(className) {
     font-family: var(--font-family-default);
     font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-15); /* property names matching pixel definitions in Figma */
-    line-height: 160%; /* "identical to box height, or 24px" */
+    font-size: var(--font-size-15);
+    line-height: 160%;
     @mixin-content;
   }
 }
@@ -69,9 +67,9 @@ $(className) {
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-48);
-    line-height: 140%; /* "or 67px" */
-    letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
     font-style: normal;
+    line-height: 140%;
+    letter-spacing: 0.15rem;
     @mixin-content;
   }
 }
@@ -93,10 +91,10 @@ $(className) {
 @define-mixin typography-heading-h2 $className {
   $(className) {
     font-family: var(--font-family-default);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     font-size: var(--font-size-17);
-    line-height: 160%; /* "or 27px" */
-    letter-spacing: -0.5px;
+    line-height: 160%;
+    letter-spacing: -0.03125rem;
     text-transform: uppercase;
     font-style: normal;
     @mixin-content;
@@ -106,7 +104,7 @@ $(className) {
 @define-mixin typography-heading-h2-mission $className {
 $(className) {
   font-family: var(--font-family-default);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-18);
   line-height: 150%;
   text-transform: uppercase;
@@ -118,11 +116,11 @@ $(className) {
 @define-mixin typography-heading-h3 $className {
   $(className) {
     font-family: var(--font-family-heading);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     font-size: var(--font-size-32);
-    line-height: 130%; /* "identical to box height or 42px" */
-    letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
     font-style: normal;
+    line-height: 130%;
+    letter-spacing: 0.1rem;
     @mixin-content;
   }
 }
@@ -136,31 +134,12 @@ $(className) {
 
 @define-mixin typography-heading-h4 $className {
   $(className) {
-    font-family: var(--font-family-default); /* TODO dto. common family names?! */
-    font-weight: 700;
+    font-family: var(--font-family-default);
+    font-weight: var(--font-weight-bold);
     font-size: var(--font-size-17);
-    line-height: 160%; /* "or 27px" */
-    letter-spacing: -0.5px;
+    line-height: 160%;
+    letter-spacing: -0.03125rem;
     font-style: normal;
-    @mixin-content;
-  }
-}
-
-@define-mixin typography-quote $className {
-  $(className) {
-    font-family: var(--font-family-heading);
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-20);
-    line-height: 160%; /* "identical to box height or 32px" */
-    letter-spacing: 0.05em; /* nun plötzlich em! TODO verify - using screenshots? */
-    font-style: normal;
-    @mixin-content;
-  }
-}
-
-@define-mixin typography-quote-sm $className {  /* mobile / tablet < 768px */
-  $(className) {
-    font-size: var(--font-size-16);
     @mixin-content;
   }
 }
@@ -175,7 +154,7 @@ $(className) {
 @define-mixin typography-weight-bold $className {
   $(className) {
     font-weight: var(--font-weight-bold);
-    letter-spacing: -0.5px;
+  letter-spacing: -0.03125rem;
     @mixin-content;
   }
 }

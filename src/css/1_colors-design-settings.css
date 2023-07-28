@@ -41,7 +41,7 @@
   --font-family-default: var(--font-family-henderson);
   --font-family-heading: var(--font-family-ivymode);
 
-  /* Font sizes with pixel names to make it easier to use and verify with Figma designs */
+  /* Font sizes with pixel names to make it easier to use and verify with Figma designs (before dev mode) */
   --font-size-48: 3rem;
   --font-size-40: 2.5rem;
   --font-size-32: 2rem;
