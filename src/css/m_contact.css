@@ -295,6 +295,16 @@ textarea[name="Nachricht"]::placeholder {
   background-color: var(--color-default-white);
   color: var(--color-blue-dark-purpleish);
   display: inline-block;
+  cursor: pointer;
+}
+
+.contact__socialmedia__links__wrapper a {
+  display: flex;
+  margin-right: 1.5rem;
+}
+
+.contact__socialmedia__links__wrapper .socialmedia__icon {
+  margin: 0
 }
 
 .contact a,
@@ -314,4 +324,14 @@ textarea[name="Nachricht"]::placeholder {
 .contact a:hover,
 .contact a:focus {
   color: var(--color-inverted-background);
+}
+
+.wpcf7-not-valid-tip {
+  padding-top: 0.5rem;
+  display: inline-block;
+}
+
+.wpcf7-response-output {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
 }
