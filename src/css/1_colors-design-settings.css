@@ -87,6 +87,7 @@
   --color-neutral-background: transparent;
   --color-hover-background: var(--color-pink-pastel-orangeish);
   --color-custom-focus-outline: var(--color-pink-reddish);
+  --color-unimportant-focus-outline: var(--color-sandy-light-pinkish);
   --color-admin-default-background: var(--color-primary-background);
   --color-admin-preview-background: var(--color-yellow-preview);
   --color-admin-localhost-background: var(--color-turquoise-pastel);

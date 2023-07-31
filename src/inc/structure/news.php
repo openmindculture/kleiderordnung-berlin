@@ -47,7 +47,7 @@ $the_query = new WP_Query( $args ); ?>
   </div>
 
   <div class="news__footer">
-    <!-- TODO disable "all news" link in single page mode: -->
+    <!-- "all news" link is hidden in default single page / custom front page view -->
     <a class="news__link news__link--more" href="#" tabindex="0"><?php _e( 'alle Neuigkeiten', 'kleiderordnung' ) ?></a>
   </div>
 
