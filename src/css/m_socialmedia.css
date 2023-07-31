@@ -5,7 +5,14 @@
  * @author openmindculture
  */
 
-.socialmedia {}
+.socialmedia {
+  /* space for following section's target offset negative top margin + 0.25rem spacer line */
+  margin-bottom: 10.25rem;
+}
+
+.socialmedia__feed__section {
+  position: relative;
+}
 
 .socialmedia__feed__container--juicer {}
 
@@ -110,11 +117,30 @@
 .socialmedia__feed__consent--juicer {
   z-index: 3;
   position: relative;
-  top: -10rem;
   background-color: var(--color-primary-background);
   padding: 1rem;
-  margin-left: 1rem;
+  margin-left: 1.25rem;
   display: inline-block;
+  box-shadow: var(--effect-box-shadow-dialogbox);
+  border: solid 1px var(--color-border-dialogbox);
+  border-radius: 0.125rem;
+}
+
+@media (min-width: 768px) {
+  .socialmedia__feed__consent--juicer {
+    margin-top: 0;
+    position: absolute;
+    top: 30%;
+  }
+}
+
+.socialmedia__feed__consent__question {
+  margin-bottom: 1rem;
+}
+
+.socialmedia__feed__consent__answers {
+  display: flex;
+  justify-content: space-around;
 }
 
 .socialmedia__feed__section--active .socialmedia__feed__placeholder,
@@ -123,6 +149,10 @@
 }
 
 .socialmedia__feed__embed__table {
+  display: flex;
+}
+
+.socialmedia__feed__embed__row--preview {
   display: flex;
 }
 

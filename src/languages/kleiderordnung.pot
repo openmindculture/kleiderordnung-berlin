@@ -195,31 +195,44 @@ msgid ""
 "instagram"
 msgstr ""
 
-#: inc/structure/socialmedia.php:36
-#: inc/structure/socialmedia.php:41
-#: inc/structure/socialmedia.php:46
-#: inc/structure/socialmedia.php:51
-#: inc/structure/socialmedia.php:56
+#: inc/structure/socialmedia.php
 msgid "Instagram Picture"
 msgstr ""
 
-#: inc/structure/socialmedia.php:65
+#: inc/structure/socialmedia.php
+msgid "Instagram Picture Preview"
+msgstr ""
+
+#: inc/structure/socialmedia.php
 msgid "Instagram Galerie"
 msgstr ""
 
-#: inc/structure/socialmedia.php:80
+#: inc/structure/socialmedia.php
 msgid ""
 "Dürfen externe Inhalte "
 "von Instagram geladen "
 "werden?"
 msgstr ""
 
-#: inc/structure/socialmedia.php:81
+#: inc/structure/socialmedia.php
 msgid "Einmal erlauben"
 msgstr ""
 
-#: inc/structure/socialmedia.php:82
+#: inc/structure/socialmedia.php
 msgid "Immer erlauben"
+msgstr ""
+
+#: inc/structure/socialmedia.php
+msgid "nein, danke!"
+msgstr ""
+
+
+#: inc/structure/socialmedia.php
+msgid "nur diesmal"
+msgstr ""
+
+#: inc/structure/socialmedia.php
+msgid "ja, immer!"
 msgstr ""
 
 #: inc/structure/stories.php:62

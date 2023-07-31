@@ -90,9 +90,11 @@
   --color-admin-default-background: var(--color-primary-background);
   --color-admin-preview-background: var(--color-yellow-preview);
   --color-admin-localhost-background: var(--color-turquoise-pastel);
+  --color-border-dialogbox: var(--color-anthracite-dark-purpleish);
 
   /* Effect Styles */
   --effect-box-shadow-dropshadow: 3.75rem 4rem 4.625rem rgba(0, 0, 0, 0.12);
+  --effect-box-shadow-dialogbox: 2rem 2rem 4.625rem rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 768px) {

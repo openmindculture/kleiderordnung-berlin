@@ -201,19 +201,19 @@ msgstr "Weitere Angebote"
 msgid "Kleiderordnung auf instagram"
 msgstr "Kleiderordnung auf instagram"
 
-#: inc/structure/socialmedia.php:36
-#: inc/structure/socialmedia.php:41
-#: inc/structure/socialmedia.php:46
-#: inc/structure/socialmedia.php:51
-#: inc/structure/socialmedia.php:56
+#: inc/structure/socialmedia.php
 msgid "Instagram Picture"
 msgstr "Instagram-Bild"
 
-#: inc/structure/socialmedia.php:65
+#: inc/structure/socialmedia.php
+msgid "Instagram Picture Preview"
+msgstr "Instagram-Bilder-Vorschau"
+
+#: inc/structure/socialmedia.php
 msgid "Instagram Galerie"
 msgstr "Instagram-Galerie"
 
-#: inc/structure/socialmedia.php:80
+#: inc/structure/socialmedia.php
 msgid ""
 "Dürfen externe Inhalte "
 "von Instagram geladen "
@@ -223,15 +223,31 @@ msgstr ""
 "von Instagram geladen "
 "werden?"
 
-#: inc/structure/socialmedia.php:81
+#: inc/structure/socialmedia.php
 msgid "Einmal erlauben"
 msgstr "Einmal erlauben"
 
-#: inc/structure/socialmedia.php:82
+#: inc/structure/socialmedia.php
 msgid "Immer erlauben"
 msgstr "Immer erlauben"
 
-#: inc/structure/stories.php:62
+#: inc/structure/socialmedia.php
+msgid "Dialogfeld schließen"
+msgstr "Dialogfeld schließen"
+
+#: inc/structure/socialmedia.php
+msgid "nein, danke!"
+msgstr "nein, danke!"
+
+#: inc/structure/socialmedia.php
+msgid "nur diesmal"
+msgstr "nur diesmal"
+
+#: inc/structure/socialmedia.php
+msgid "ja, immer!"
+msgstr "ja, bitte!"
+
+#: inc/structure/stories.php
 msgid "zurück"
 msgstr "zurück"
 

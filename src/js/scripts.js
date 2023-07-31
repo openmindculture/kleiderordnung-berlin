@@ -446,6 +446,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+kleiderordnung.removeButtonElements = document.getElementsByClassName('button__remove');
+var removeButtonElementsCount = kleiderordnung.removeButtonElements.length;
+for (var icbe = 0; icbe < removeButtonElementsCount; icbe++) {
+  var removingElement = kleiderordnung.removeButtonElements[icbe];
+  if (removingElement.dataset.removes) {
+    removingElement.addEventListener('click', function(event) {
+      event.preventDefault();
+      var removeableElement = document.getElementById(removingElement.dataset.removes);
+      if (removeableElement) {
+        removeableElement.remove();
+      }
+    });
+  }
+}
+
   /**
    * @param {HTMLElement} eventTarget DOM welement inside carousel wrapper
    * @param {Number} carouselSlideStep pixels to scroll by
