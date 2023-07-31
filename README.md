@@ -278,17 +278,25 @@ Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) ges
 
 #### Instagram Feed via Juicer
 
-- Known issues: occasional "juicer error" when using on localhost instead of configured domain or pseduo-public domain like browserstack's bs-local.com
-- account / API at juicer.io
+- Known issues:
+  - "juicer error" when using on localhost instead of configured domain or pseduo-public domain like browserstack's bs-local.com
+  - expired API connection prevents updating new Instagram content
+- account / API:
+  - Tina's Google account logs into juicer.io
+  - which has been connected to her Instagram account
+    while logged in to juicer, Google, and Instagram on the same browser
+
 - placholder content:
 
-Unless a new page visitor has given consent to loading Instagram data by clicking on "allow once" or "allow always", placeholder images will be shown.
+Unless a new page visitor has given consent to loading Instagram data by clicking on "allow once" or "allow always", placeholder images will be shown. This is currently 1 single image, consisting of a cropped region of the 5 latest feed images shown by juicer in the context of the production or preview page.
+
+If the placeholder image does not update automatically, replace the placeholder image by overwriting
+`/img/instagram/preview5xinsta-20230601.jpg`
+with an updated image file in the following aspect ratio: width="1857" height="463"
 
 TODO: alternatively:
 
-Alternative 1: These are simply images taken from the WordPress media library. Is there a simple way (besides image titles) to tag / categorize images so that we can just grab the N latest images matching this criteria?
-
-Alternative 2: provide some mechanism to scrape the images, not from Instagram (which might be hard, illegal, and due to break at a site or API update) but rather from our own front page after opt-in and completed loading. Might be done as a side effect of frontend screenshot testing?
+The update process might be (partially) automated or facilitated using the [Screen Capture API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API).
 
 ### Localization
 
