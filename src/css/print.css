@@ -5,49 +5,112 @@
  * @author openmindculture
  */
 
+@media print {
+  body,
+  html,
+  #site-header,
+  .header__site-logo,
+  a,
+  a:link,
+  a:visited {
+    background: #fff !important;
+    color: #000;
+    color: var(--color-primary-foreground);
+    font-size: 12pt
+  }
 
-body,html{
-  background:#fff;
-  color:#000;
-  font-size:12pt
+  .mission__card,
+  .mission__headline,
+  .mission__text,
+  .contact,
+  .contact__vcard,
+  .contact__vcard__address,
+  .contact__socialmedia__links__wrapper,
+  .contact a,
+  .contact a:link,
+  .contact a:visited  {
+    background: #fff !important;
+    color: #000;
+    color: var(--color-primary-foreground);
+  }
+
+  .calltoaction__text,
+  .calltoaction__text p {
+    font-size: 16pt;
+  }
+
+  .contact__calltoactiontext--secondary {
+    margin-bottom: 0;
+  }
+
+  .no-print,
+  .hidden,
+  .visually-hidden,
+  .sr-only,
+  .screen-reader-text,
+  .toplink,
+  nav,
+  #site-navigation,
+  #animation,
+  .intro__keyvisual__mousetrap,
+  .intro__keyvisual__animation,
+  .mission__layer--decoration,
+  .offers__layer--decoration,
+  .offers__offer__buttonwrapper,
+  .calltoaction__buttonwrapper,
+  .socialmedia__feed__consent,
+  .contact form,
+  .wpcf7,
+  .footer__column__row__link {
+    display: none !important;
+  }
+
+  .offers__layer--content,
+  .mission__layer--content {
+    top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* workaround unreliable cross browser support for print media source set */
+  .intro__keyvisual__animation--motionless-fallback {
+    aspect-ratio: 1160/581;
+    background-image: url("../img/keyvisual-kleiderordnung-print.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    height: auto;
+    max-width: 90vw;
+    display: block !important;
+  }
+
+  .intro__keyvisual__animation--motionless-fallback img {
+    display: none;
+  }
+
+  .initially-hidden {
+    display: block;
+  }
+
+  .stories__viewport {
+    flex-wrap: wrap;
+  }
+
+  .contact__columns__column-wrapper {
+    display: block;
+  }
+
+  .contact__columns__column--50 {
+   width: 100%;
+  }
+
+  .intro,
+  #angebot .offers__cards article,
+  #mission,
+  #calltoaction,
+  .stories__story,
+  #kontakt {
+    page-break-inside: avoid;
+  }
+
 }
 
-.no-print,
-.hidden,
-.toplink,
-nav {
-  display: none;
-}
-.initially-hidden {
-  display: block;
-}
-.header h1 {
-  font-size: 150%;
-}
-/* change item order to display intro text below first image */
-.main .main__images {
-  display: grid;
-}
-.main .main__intro {
-  grid-row: 2;
-  padding-top: 1em;
-  padding-bottom: 2em;
-  max-width: 96%;
-  width: 96%;
-}
-.main img.main__image--beside,
-.main img.main__image--below {
-  max-width: unset;
-  width: 33vw;
-  height: auto;
-  margin: auto;
-}
-.main img.main__image--beside {
-  grid-row: 3;
-  grid-column: 1;
-}
-.main img.main__image--below {
-  margin-top: 1em;
-  grid-row: 3;
-  grid-column: 2;
-}
