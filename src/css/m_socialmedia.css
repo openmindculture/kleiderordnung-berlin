@@ -34,6 +34,10 @@
   color: var(--color-primary-foreground);
 }
 
+.socialmedia a.socialmedia__link--instagram {
+  padding: 0.125rem 1rem 0.125rem 0.125rem;
+}
+
 .socialmedia__icon {
   display: inline-block;
   width: 2.75rem;

@@ -343,7 +343,8 @@ document.addEventListener('DOMContentLoaded', function() {
     /* Waypoint effect: visible link target (section) adds .active to matching main navigation item */
     kleiderordnung.waypointObserver = new IntersectionObserver(
       function(intersectingEntries) {
-        for (var j = 0; j < intersectingEntries.length; j++) {
+        var intersectingEntriesCount = intersectingEntries.length;
+        for (var j = 0; j < intersectingEntriesCount; j++) {
           var intersectingEntry = intersectingEntries[j];
           if (intersectingEntry.isIntersecting && intersectingEntry.intersectionRatio > kleiderordnung.observerOptions.threshold) {
             var targetElement = /** @type {HTMLElement} */ intersectingEntry.target;
@@ -373,7 +374,8 @@ document.addEventListener('DOMContentLoaded', function() {
     );
     var correnspodingNavigationItems = document.querySelectorAll('#menu-main a.menu-item-link-waypoint');
     if (correnspodingNavigationItems) {
-      for (var cni=0; cni < correnspodingNavigationItems.length; cni++) {
+      var correnspodingNavigationItemsCount = correnspodingNavigationItems.length;
+      for (var cni=0; cni < correnspodingNavigationItemsCount; cni++) {
         if (correnspodingNavigationItems[cni] && correnspodingNavigationItems[cni].href) {
           var correspondingWayPointUrl = new URL(correnspodingNavigationItems[cni].href);
           var correspondingWayPointId = correspondingWayPointUrl.hash.substring(1);
@@ -388,6 +390,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var topItem = document.getElementById(kleiderordnung.introKeyvisualMousetrapId);
     if (topItem)  {
       kleiderordnung.waypointObserver.observe(topItem);
+    }
+    /* observe social media section (not linked from the menu) as a waypoint for more consistent waypoint effect */
+    var socialMediaSection = document.getElementById('socialmedia');
+    if (socialMediaSection)  {
+      kleiderordnung.waypointObserver.observe(socialMediaSection);
     }
   }
 

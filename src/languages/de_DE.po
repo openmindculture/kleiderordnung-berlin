@@ -219,7 +219,7 @@ msgid ""
 "von Instagram geladen "
 "werden?"
 msgstr ""
-"Dürfen externe Inhalte "
+"Dürfen Inhalte "
 "von Instagram geladen "
 "werden?"
 

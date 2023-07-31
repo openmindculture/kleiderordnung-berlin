@@ -219,7 +219,7 @@ msgid ""
 "von Instagram geladen "
 "werden?"
 msgstr ""
-"May we load external content from Instagram?"
+"May we load content from Instagram?"
 
 #: inc/structure/socialmedia.php
 msgid "Einmal erlauben"
