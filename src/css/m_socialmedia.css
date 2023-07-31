@@ -118,15 +118,16 @@
   z-index: 3;
   position: relative;
   background-color: var(--color-primary-background);
-  padding: 1rem;
+  margin-top: 1rem;
   margin-left: 1.25rem;
+  padding: 1rem;
   display: inline-block;
   box-shadow: var(--effect-box-shadow-dialogbox);
   border: solid 1px var(--color-border-dialogbox);
   border-radius: 0.125rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 555px) {
   .socialmedia__feed__consent--juicer {
     margin-top: 0;
     position: absolute;

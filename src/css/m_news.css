@@ -8,7 +8,7 @@
 .news {
   width: var(--width-full);
   max-width: var(--width-max);
-  margin: 0 auto 14.25rem auto;
+  margin: 0 auto 7rem auto;
 }
 
 @mixin typography-heading-h2 .news__headline {
@@ -17,11 +17,9 @@
 
 .news__wrapper {
   display: flex;
-  display: grid;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  grid-template-columns: 30% 30% 30%;
 }
 
 .news__post {
@@ -42,15 +40,23 @@
   margin-bottom: 2.5rem;
 }
 
+@media (min-width: 555px) {
+  .news {
+    margin: 0 auto 14.25rem auto;
+  }
+  .news__wrapper {
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+
 @media (min-width: 1440px) {
   .news__post {
     max-width: unset;
   }
   .news__post + .news__post {
     margin-left: 2.5rem;
-  }
-  .news__wrapper {
-    flex-wrap: nowrap;
   }
 }
 
