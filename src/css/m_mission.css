@@ -7,7 +7,7 @@
 
 
 @mixin decoration-parallax-group .mission {
-
+  max-width: calc(100% - 1rem);
 }
 
 @mixin decoration-parallax-layer .mission__layer {}
