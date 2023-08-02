@@ -2,7 +2,7 @@
 
 A portfolio website for sustainable stylist Tina Steinke in Berlin,
 following up on a previous sustainable style consultancy in Düsseldorf.
-Visual design by Ina Nixdorf, technical concept and development by Ingo Steinke.
+Visual design by [Ina Nixdorf](https://www.inanixdorf.de/), technical concept and development by [Ingo Steinke](https://www.ingo-steinke.de/).
 
 - https://kleiderordnung.berlin/ (upcoming)
 - https://www.kleiderordnung-berlin.de/ (classic alternative)
