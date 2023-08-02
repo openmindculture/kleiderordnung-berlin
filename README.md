@@ -443,6 +443,7 @@ Don't give the website owner administration rights unless they are a technically
 - SVG Support
   Tinify – TinyPNG – JPEG, PNG & WebP image compression (tiny-compress-images)
 - W3 Total Cache (production site only)
+- Yoast SEO (for sitemaps etc. - preview / production site only)
 
 ## WordPress Theme
 
