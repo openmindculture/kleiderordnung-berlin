@@ -136,6 +136,10 @@
   }
 }
 
+body.no-js .socialmedia__feed__consent--juicer {
+  display: none;
+}
+
 .socialmedia__feed__consent__question {
   margin-bottom: 1rem;
 }
