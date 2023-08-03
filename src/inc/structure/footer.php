@@ -30,7 +30,7 @@
         <?php _e( 'Mitglied bei', 'kleiderordnung' ) ?>
       </div>
       <div class="footer__partners">
-        <a href=https://www.sustainable-stylists.com/tina-steinke target="_blank" rel="me noopener" tabindex="0">
+        <a href=https://www.sustainable-stylists.com/stylistin-tina-steinke/" target="_blank" rel="me noopener" tabindex="0">
           <img
             src="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.png" width="203" height="61"
             srcset="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists@2x.png 2x"
