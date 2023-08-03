@@ -116,7 +116,7 @@
   max-width: calc(100% - 1rem);
 }
 
-/* override default websitecarbon badge colors */
+/* override default websitecarbon badge colors and font family */
 #wcb.carbonbadge {
   --b2: var(--color-border-carbonbadge) !important;
 }
@@ -139,3 +139,10 @@
   border-color: var(--color-primary-foreground);
 }
 
+@mixin typography-copy #wcb #wcb_2 {
+  font-family: var(--font-family-default) !important;
+}
+
+@mixin typography-copy #wcb #wcb_g {
+  font-family: var(--font-family-default) !important;
+}
