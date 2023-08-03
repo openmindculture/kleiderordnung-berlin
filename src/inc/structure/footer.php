@@ -70,7 +70,9 @@
       <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
     </div>
     <div class="footer__ecofriendly__detail--greenhosting">
-      <img src="https://api.thegreenwebfoundation.org/greencheckimage/kleiderordnung.berlin" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+      <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=https%3A%2F%2Fkleiderordnung.berlin%2F" target="_blank">
+        <img src="https://api.thegreenwebfoundation.org/greencheckimage/kleiderordnung.berlin" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+      </a>
     </div>
     <div class="footer__ecofriendly__detail--ecograder">
       <a href="https://ecograder.com/report/nelSPuhV7x13D5K2TSSS7lXJ" target="_blank" title="In August 2023, this page scored better than 80% of all URLs crawled by Ecograder.">Ecograder Score: <b>94</b>/100 <small>(0.21 g CO₂e)</small></a><!-- TODO renew -->

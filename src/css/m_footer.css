@@ -116,6 +116,11 @@
   max-width: calc(100% - 1rem);
 }
 
+/* adjust padding inside external logo for better visual alignment */
+.footer__ecofriendly__detail--greenhosting img {
+  margin-left: -0.25rem;
+}
+
 /* override default websitecarbon badge colors and font family */
 #wcb.carbonbadge {
   --b2: var(--color-border-carbonbadge) !important;
