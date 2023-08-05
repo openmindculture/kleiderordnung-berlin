@@ -12,7 +12,10 @@
   padding: 3.875rem 0 3.5rem 0;
 }
 
-.footer a {
+.footer a,
+.footer a:link,
+.footer a:visited {
+  color: var(--color-primary-foreground);
   text-decoration: none;
 }
 
@@ -107,4 +110,44 @@
   .footer__columns__column--50:last-child {
     flex: 0 0 calc(50% - 0.5rem);
   }
+}
+
+.footer__ecofriendly {
+  max-width: calc(100% - 1rem);
+}
+
+/* adjust padding inside external logo for better visual alignment */
+.footer__ecofriendly__detail--greenhosting img {
+  margin-left: -0.25rem;
+}
+
+/* override default websitecarbon badge colors and font family */
+#wcb.carbonbadge {
+  --b2: var(--color-border-carbonbadge) !important;
+}
+
+.footer__ecofriendly #wcb_g {
+  border-color: var(--color-border-carbonbadge);
+}
+
+.footer__ecofriendly #wcb.carbonbadge {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.footer__ecofriendly #wcb_a,
+.footer__ecofriendly #wcb_b {
+  border-radius: 0;
+}
+
+.footer__ecofriendly #wcb_a {
+  border-color: var(--color-primary-foreground);
+}
+
+@mixin typography-copy #wcb #wcb_2 {
+  font-family: var(--font-family-default) !important;
+}
+
+@mixin typography-copy #wcb #wcb_g {
+  font-family: var(--font-family-default) !important;
 }

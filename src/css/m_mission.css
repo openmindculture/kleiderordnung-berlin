@@ -34,11 +34,18 @@
 .mission__card {
   width: var(--width-spaced);
   max-width: var(--width-max);
-  margin: 0 auto;
   background-color: var(--color-primary-foreground);
   color: var(--color-primary-background);
-  padding: 7.3125rem 5rem 5rem 5rem;
+  margin: 0 1.25rem 0 1.25rem;
+  padding: 3.5rem 1.5rem;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .mission__card {
+    padding: 7.3125rem 5rem 5rem 5rem;
+    margin: 0 auto;
+  }
 }
 
 .mission__text,

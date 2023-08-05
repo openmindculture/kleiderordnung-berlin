@@ -30,7 +30,7 @@
         <?php _e( 'Mitglied bei', 'kleiderordnung' ) ?>
       </div>
       <div class="footer__partners">
-        <a href=https://www.sustainable-stylists.com/tina-steinke target="_blank" rel="me noopener" tabindex="0">
+        <a href=https://www.sustainable-stylists.com/stylistin-tina-steinke/" target="_blank" rel="me noopener" tabindex="0">
           <img
             src="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.png" width="203" height="61"
             srcset="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists@2x.png 2x"
@@ -65,5 +65,17 @@
       </div>
     </div>
   </div>
-  <!-- TODO website carbon badge -->
+  <aside class="footer__ecofriendly">
+    <div class="footer__ecofriendly__detail--websitecarbon carbonbadge" id="wcb">
+      <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+    </div>
+    <div class="footer__ecofriendly__detail--greenhosting">
+      <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=https%3A%2F%2Fkleiderordnung.berlin%2F" target="_blank">
+        <img src="https://api.thegreenwebfoundation.org/greencheckimage/kleiderordnung.berlin" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+      </a>
+    </div>
+    <div class="footer__ecofriendly__detail--ecograder">
+      <a href="https://ecograder.com/report/nelSPuhV7x13D5K2TSSS7lXJ" target="_blank" title="In August 2023, this page scored better than 80% of all URLs crawled by Ecograder.">Ecograder Score: <b>94</b>/100 <small>(0.21 g CO₂e)</small></a><!-- TODO renew -->
+    </div>
+  </aside>
 </footer>
