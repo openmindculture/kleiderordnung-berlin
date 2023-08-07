@@ -6,5 +6,10 @@
     ".postcss.config.js",
     "node_modules/**/*.js",
     "**/lottie-player.js"
-  ]
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": "impliedStrict",
+    "sourceType": "module"
+  }
 }

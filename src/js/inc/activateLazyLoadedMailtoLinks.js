@@ -1,6 +1,6 @@
 /** Revert Initial Spam Protection */
-export default function activateLazyLoadedMailtoLinks() {
-  console.log('activateLazyLoadedMailtoLinks');
+export function kleiderordnung_activateLazyLoadedMailtoLinks() {
+  /* global document */
   var lazyLoadableLinkElements = document.querySelectorAll('a[data-mailing="lazy"]');
   for (var i = 0; i < lazyLoadableLinkElements.length; i++) {
     if (!lazyLoadableLinkElements[i]
@@ -18,5 +18,4 @@ export default function activateLazyLoadedMailtoLinks() {
   for (var j = 0; j < hiddenSpamProtectionElements.length; j++) {
     hiddenSpamProtectionElements[j].remove();
   }
-  console.log('finished activateLazyLoadedMailtoLinks on lazyLoadableLinkElements: ', lazyLoadableLinkElements);
 }

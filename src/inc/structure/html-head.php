@@ -35,8 +35,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/animate.min.css?v=4.1.1">
   </noscript>
   <script type="text/javascript">
-    var kleiderordnung_wpurl = '<?php echo get_bloginfo("wpurl"); ?>';
-    var kleiderordnung_template_url = '<?php echo get_bloginfo("template_url"); ?>';
+    window.kleiderordnung_wpurl = '<?php echo get_bloginfo("wpurl"); ?>';
+    window.kleiderordnung_template_url = '<?php echo get_bloginfo("template_url"); ?>';
   </script>
   <script defer src="<?php echo get_template_directory_uri() ?>/js/scripts.js?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>"></script>
   <script defer src="<?php echo get_template_directory_uri() ?>/js/lottie-player.js?v=1.7.1" id="lottie-player-script"></script>
