@@ -1,7 +1,10 @@
 'use strict';
-var kleiderordnung = {}; /* TODO prefix all functions and variables with theme prefix ?! */
+import kleiderordnung_activateLazyLoadedMailtoLinks from './inc/activateLazyLoadedMailtoLinks';
 /* TODO remove unused optional components like contrast-adaption, intersection observer, ... */
 
+var kleiderordnung = {
+  activateLazyLoadedMailtoLinks: kleiderordnung_activateLazyLoadedMailtoLinks,
+};
 kleiderordnung.animateableClassName = 'animate--on-visibility'; // triggers micro animations
 kleiderordnung.animatingClassName = 'animate__animated'; // will be added to animateable elements
 kleiderordnung.animationClassDataKey = 'animationclass'; // data key to hold animation class name
@@ -249,27 +252,6 @@ kleiderordnung.keepAnchorTargetInLanguageSwitcher = function() {
         e.currentTarget.href = currentTargetHref;
       }
     });
-  }
-}
-
-/** Revert Initial Spam Protection */
-kleiderordnung.activateLazyLoadedMailtoLinks = function() {
-  kleiderordnung.lazyLoadableLinkElements = document.querySelectorAll('a[data-mailing="lazy"]');
-  for (var i = 0; i < kleiderordnung.lazyLoadableLinkElements.length; i++) {
-    if (!kleiderordnung.lazyLoadableLinkElements[i]
-      || !kleiderordnung.lazyLoadableLinkElements[i].dataset
-      || !kleiderordnung.lazyLoadableLinkElements[i].dataset.user
-      || !kleiderordnung.lazyLoadableLinkElements[i].dataset.domain) {
-      return;
-    }
-    kleiderordnung.lazyLoadableLinkElements[i].href = 'mailto:'
-      + kleiderordnung.lazyLoadableLinkElements[i].dataset.user
-      + '@'
-      + kleiderordnung.lazyLoadableLinkElements[i].dataset.domain;
-  }
-  kleiderordnung.hiddenSpamProtectionElements = document.querySelectorAll('#kontakt .blockspam');
-  for (var j = 0; j < kleiderordnung.hiddenSpamProtectionElements.length; j++) {
-    kleiderordnung.hiddenSpamProtectionElements[j].remove();
   }
 }
 
