@@ -63,11 +63,12 @@
     </div>
     <aside class="footer__ecofriendly">
       <div class="footer__ecofriendly__detail--websitecarbon carbonbadge" id="wcb">
-        <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-      </div>
+        <?php /* script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer=""></script> */ ?>
+        <style>#wcb.carbonbadge{--b1:#0e11a8;--b2:#00ffbc;font-size:15px;text-align:center;color:var(--b1);line-height:1.15}#wcb.carbonbadge sub{vertical-align:middle;position:relative;top:.3em;font-size:.7em}#wcb #wcb_2,#wcb #wcb_a,#wcb #wcb_g{display:inline-flex;justify-content:center;align-items:center;text-align:center;font-size:1em;line-height:1.15;font-family:-apple-system,BlinkMacSystemFont,sans-serif;text-decoration:none;margin:.2em 0}#wcb #wcb_a,#wcb #wcb_g{padding:.3em .5em;border:.13em solid var(--b2)}#wcb #wcb_g{border-radius:.3em 0 0 .3em;background:#fff;border-right:0;min-width:8.2em}#wcb #wcb_a{border-radius:0 .3em .3em 0;border-left:0;background:var(--b1);color:#fff;font-weight:700;border-color:var(--b1)}#wcb.wcb-d #wcb_a{color:var(--b1);background:var(--b2);border-color:var(--b2)}#wcb.wcb-d #wcb_2{color:#fff}</style>
+        <div id="wcb_p"><span id="wcb_g">0.16g of CO<sub>2</sub>/view</span><a id="wcb_a" target="_blank" rel="noopener" href="https://www.websitecarbon.com/website/kleiderordnung-berlin/">Website Carbon</a></div><span id="wcb_2">&nbsp;Cleaner than 84% of pages tested</span></div>
       <div class="footer__ecofriendly__detail--greenhosting">
         <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=https%3A%2F%2Fkleiderordnung.berlin%2F" target="_blank">
-          <img src="https://api.thegreenwebfoundation.org/greencheckimage/kleiderordnung.berlin" width="300" height="135" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+          <img src="https://api.thegreenwebfoundation.org/greencheckimage/kleiderordnung.berlin" width="300" height="135" loading="lazy" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
         </a>
       </div>
       <div class="footer__ecofriendly__detail--ecograder">
