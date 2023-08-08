@@ -4,7 +4,6 @@ import {kleiderordnung_activateAnalyticsTracking} from './inc/activateAnalyticsT
 import {kleiderordnung_activateIntroAnimation} from './inc/activateIntroAnimation';
 import {kleiderordnung_activateLazyLoadedMailtoLinks} from './inc/activateLazyLoadedMailtoLinks';
 import {kleiderordnung_carouselSetup} from './inc/carouselSetup';
-import {kleiderordnung_decoratedParagraphsHeightAdjustment} from './inc/decoratedParagraphsHeightAdjustment';
 import {kleiderordnung_enhanceNavigationMenu} from './inc/enhanceNavigationMenu';
 import {
     kleiderordnung_intersectionCallback,
@@ -108,7 +107,6 @@ document.addEventListener('DOMContentLoaded', function () {
   );
   kleiderordnung_carouselSetup();
   kleiderordnung_keepAnchorTargetInLanguageSwitcher();
-  kleiderordnung_decoratedParagraphsHeightAdjustment(kleiderordnung.rootElement);
   kleiderordnung_activateAnalyticsTracking();
 
   window.setTimeout(kleiderordnung_activateLazyLoadedMailtoLinks, 9000);
