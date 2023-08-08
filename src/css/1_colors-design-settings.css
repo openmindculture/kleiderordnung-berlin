@@ -19,6 +19,7 @@
   /* Width / Height Standards */
   --width-full: 87.5rem; /* anything smaller than actual full width */
   --width-spaced: 57.5rem; /* 920px Mission, Key Visual Text etc. maximal */
+  --width-spaced-larger: 83rem; /* footer on :not(.home) pages  */
   --width-max: calc(100% - 2.5rem); /* full (mobile) viewport minus horinzontal margins */
   /* thus a potential mixin would look like
    * width: var(--width-full | --width-constrained);
