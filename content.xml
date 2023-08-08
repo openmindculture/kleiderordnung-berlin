@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-08-08 09:16" -->
+	<!-- generator="WordPress/6.2.2" created="2023-08-08 16:28" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Tue, 08 Aug 2023 09:16:48 +0000</pubDate>
+	<pubDate>Tue, 08 Aug 2023 16:28:48 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -1664,7 +1664,11 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Daten von Social Media Diensten, wie beispielsweise Instagram, werden ausschließlich nach Zustimmung unser Besucher:innen angezeigt. Dies erfolgt mithilfe des Dienstleisters Juicer. In diesem Zuge werden möglicherweise persönliche Daten in die USA übertragen. Vorbehaltlich gesetzlicher oder vertraglicher Erlaubnisse, verarbeiten oder lassen wir die Daten in einem Drittland nur beim Vorliegen der besonderen Voraussetzungen der Art. 44 ff. DSGVO verarbeiten. D.h. die Verarbeitung erfolgt z.B. auf Grundlage besonderer Garantien, wie der offiziell anerkannten Feststellung eines der EU entsprechenden Datenschutzniveaus (z.B. für die USA durch das „Privacy Shield“) oder Beachtung offiziell anerkannter spezieller vertraglicher Verpflichtungen (so genannte „Standardvertragsklauseln“).</p>
+<p>Daten von Social Media Diensten, wie beispielsweise Instagram, werden ausschließlich nach Zustimmung unser Besucher:innen angezeigt. Dies erfolgt mithilfe des Dienstleisters Juicer. In diesem Zuge werden möglicherweise persönliche Daten in die USA übertragen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Die Datenschutzerklärung von Juicer ist hier nachzulesen: <br><a href="https://www.juicer.io/eu-privacy" target="_blank" rel="noreferrer noopener nofollow">https://www.juicer.io/eu-privacy</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -1673,14 +1677,6 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 
 <!-- wp:paragraph -->
 <p>Wenn Sie uns über das Kontaktformular, per E-Mail oder auf anderem elektronischen Wege (z.B. Messenger) kontaktieren, speichern wir die von dir gemachten Angaben, um Ihre Anfrage beantworten und mögliche Anschlussfragen stellen zu können. Im Falle eines konkreten Beratungswunsches oder einer Terminvereinbarung werden deine Angaben zur Durchführung vorvertraglicher Maßnahmen und ggf. zur Vertragserfüllung verwendet.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Über ein Kontaktformular (falls vorhanden) kannst du deinen Namen, deine E-Mail-Adresse, deine Telefonnummer und eine frei formulierte Nachricht übermitteln. Zudem werden Datum und Uhrzeit der Kontaktaufnahme sowie deine IP-Adresse gespeichert. Dies wird im folgenden Abschnitt „Bereitstellung der Website und Auswertung technischer Daten“ näher erläutert.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Wir weisen darauf hin, dass jegliche Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Bitte achte daher auch bei deinen eigenen Kommunikation stets auf Datensparsamkeit und verwende möglichst aktuelle Software mit aktuellen Sicherheitsupdates!</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -1696,10 +1692,6 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Wir verwenden anonyme bzw. anonymisierte technische Informationen für statistische Zwecke. Sie helfen uns bei der Optimierung des Angebots und der Technik. Für die statistische Auswertung wird ggf. die Open-Source-Software Matomo (ehemals Piwik) eingesetzt. Dabei werden die erfassten IP-Adressen anonymisiert, indem die letzten beiden Bytes jeder IP-Adresse verworfen werden. Die Software läuft dabei ausschließlich auf den Servern unserer Webseite. Eine Speicherung findet nur dort statt.&nbsp;<strong>Es werden keine Daten an Dritte weitergegeben.</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 <p>Wir behalten uns zudem das Recht vor, die Server-Logfiles bei Verdacht auf eine rechtswidrige Nutzung unseres Angebotes nachträglich zu kontrollieren.</p>
 <!-- /wp:paragraph -->
 
@@ -1708,14 +1700,14 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Um zu gewährleisten, dass unsere Datenschutzerklärung stets den aktuellen gesetzlichen Vorgaben entspricht, behalten wir uns jederzeit Änderungen vor. Das gilt auch für den Fall, dass die Datenschutzerklärung aufgrund neuer oder überarbeiteter Leistungen, zum Beispiel neuer Serviceleistungen, angepasst werden muss. Die neue Datenschutzerklärung greift dann bei Ihrem nächsten Besuch auf unserem Angebot.</p>
+<p>Um zu gewährleisten, dass unsere Datenschutzerklärung stets den aktuellen gesetzlichen Vorgaben entspricht, behalten wir uns jederzeit Änderungen vor. Das gilt auch für den Fall, dass die Datenschutzerklärung aufgrund neuer oder überarbeiteter Leistungen, zum Beispiel neuer Serviceleistungen, angepasst werden muss. Die neue Datenschutzerklärung greift dann bei deinem nächsten Besuch auf unserem Angebot.</p>
 <!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>3</wp:post_id>
 		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-08-08 09:50:49]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-08-08 07:50:49]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 17:15:39]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 15:15:39]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[datenschutzerklaerung]]></wp:post_name>
@@ -1801,7 +1793,7 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
-		<wp:meta_value><![CDATA[5]]></wp:meta_value>
+		<wp:meta_value><![CDATA[4]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
@@ -3501,13 +3493,91 @@ Ingo";s:4:"blog";s:39:"http://preview.kleiderordnung-berlin.de";s:9:"blog_lang";
 		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?page_id=68</guid>
 		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>This privacy statement informs you how we protect your data, and which kind of data is used for which purpose, conforming to the regulations of the German Federal Data Protection Act (BDSG) and the European General Data Protection Regulation (GDPR).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Responsbile content provider:</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Martina Steinke<br>Donaustr. 83<br>12043 Berlin<br>Germany<br>Phone: <a href="tel:+491636823820">+49 (0) 163 682 382 0</a><br>Email: <a href="mailto:martinasteinke@posteo.de">martinasteinke@posteo.de</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Your legal rights: access, rectification, erasure, objection</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You have the right to object to the processing of your personal data, the right to request copies of your personal data, and the right to request that we erase or rectify your personal data, unless this data is necessary for complying with a statutory retention obligation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">What data is collected and processed?</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Personal identification information will only be collected as far as this is necessary for accounting, customer services and fulfilment of a contract. Personal data will not be processed prior to the users' consent unless this is impossible for legal reasons or reasons of technological impracticability.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Legal basis for processing personal data</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Processing of personal data for the fulfilment of a contract is based on Article 6(1)(b) of the GDPR.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Personal data will only be stored as long as necessary in compliance with statutory storage periods. Once this time period has expired, the data will be blocked or erased accordingly.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Our own servers provide web fonts, images, and scripts without making a request to Google or other third-party service providers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Social Media</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Social media data, for example, images and videos from Instagram, will only be shown after explicit consent by the website visitors. This data will be provided by the service provider Juicer. This might include the transfer of personal data to the USA. Juicer's privacy statement can be found at <br><a href="https://www.juicer.io/eu-privacy" target="_blank" rel="noreferrer noopener nofollow">https://www.juicer.io/eu-privacy</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Contact form and electronic communication</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>When you contact us using the contact form, email or any other electronic channel (e.g. messenger), your message and contact data will be saved for the purpose of getting an answer or further inquiries. In case of a specific consultation or appointment request, your data will be used for pre-contractual measures and fulfilment of contracts. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Website provision and analysis of technical data (logfiles)</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Accessing this website will result in logging data necessary for this service's technical provision: the website address, date and time, amount of transferred data, web browser version, IP address, and possible referrers from other websites linking to the current website. This data will not be stored together with personal data. This data will not be processed for marketing purposes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Processing and temporarily storing this kind of data is based on Article 6(1)(f) of the GDPR. Apart from providing technological functionality, this data might be used to prevent and prosecute illegal use of this service.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Changes to this privacy policy</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This privacy policy is kept under regular review. Updates will be placed on this place and will become valid on the next visit of this website.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>68</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-10 17:49:03]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-10 15:49:03]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 21:57:14]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 19:57:14]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 17:16:15]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 15:16:15]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[privacy-statement]]></wp:post_name>
@@ -3590,6 +3660,18 @@ Ingo";s:4:"blog";s:39:"http://preview.kleiderordnung-berlin.de";s:9:"blog_lang";
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_page_contact_job_title]]></wp:meta_key>
 		<wp:meta_value><![CDATA[page_contact_job_title]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -5256,5 +5338,5 @@ Lazy Loading (WP_ADMIN)
 Minified using disk (wp-admin)
 Database Caching using disk (Request-wide modification query)
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-08-08 11:16:49 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-08-08 18:28:48 by W3 Total Cache
 -->
