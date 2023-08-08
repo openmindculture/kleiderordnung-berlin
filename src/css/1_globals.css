@@ -24,7 +24,7 @@ html, body, main, .main, p {
   font-weight: var(--font-weight-regular);
   text-rendering: optimizespeed;
   font-size: var(--font-size-16);
-  line-height: 140%; /* would that be 1.4 ? is there a best-practice notation? "or 22px" */
+  line-height: 140%;
 }
 
 main {
