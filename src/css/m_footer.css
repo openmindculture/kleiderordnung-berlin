@@ -6,10 +6,19 @@
  */
 
 .footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__content {
   width: var(--width-full);
   max-width: var(--width-max);
   margin: 0 auto;
   padding: 3.875rem 0 3.5rem 0;
+}
+
+body.page:not(.home) .footer__content {
+  width: var(--width-spaced);
 }
 
 .footer a,
@@ -43,6 +52,10 @@
 
 .footer__partners {
   margin-top: 1rem;
+}
+
+body.page.home .footer__partners {
+  text-align: right;
 }
 
 .footer__partners img {
@@ -88,7 +101,7 @@
 }
 
 @media (min-width: 1235px) {
-  .footer__columns__column--50:last-child {
+  body.page.home .footer__columns__column--50:last-child {
     max-width: 56%;
   }
   .footer__columns__column + .footer__columns__column {
