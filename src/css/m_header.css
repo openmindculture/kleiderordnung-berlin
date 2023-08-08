@@ -7,7 +7,6 @@
  * @author openmindculture
  */
 
-/* TODO verify and adapt sticky header wrapper styles and behavior, add optional JavaScript observer */
 .header--site-header {
   height: auto;
   margin: 0;
@@ -33,10 +32,6 @@
 :target::before {
   display: block;
   content: " ";
-  /* TODO adjust defaults to actual height, considering responsive multi lines, navigation and shrinking stuck header */
-  /* there are only two different heights for each viewport width */
-  /* those will be updated on document load and/or when adjusting element sizes */
-  /* TODO pseudo element offset height shows up correctly, but page scrolls below anyway still */
   height: var(--header-height);
   margin-top: var(--header-height-negative);
   margin-top: calc(-1 * var(--header-height));

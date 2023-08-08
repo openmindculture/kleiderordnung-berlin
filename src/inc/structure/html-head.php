@@ -42,7 +42,6 @@
   <script defer src="<?php echo get_template_directory_uri() ?>/js/lottie-player.js?v=1.7.1" id="lottie-player-script"></script>
   <meta name="description" content="<?php _e( 'Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin (Meta Description frei übersetzen)', 'kleiderordnung' ) ?>">
   <meta name="keywords" content="<?php _e( 'Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit (Meta Keywords frei übersetzen)', 'kleiderordnung' ) ?>">
-  <!-- TODO check and adapt all header and social attribute values! -->
   <meta name="robots" content="index,follow">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="HandheldFriendly" content="true">
@@ -56,7 +55,6 @@
   <meta property="og:site_name" content="">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#f3ebde">
-  <!-- TODO HTML with JSON-LD & schema.org schema markup -->
   <script type="application/ld+json">
     {
       "@context" : "http://schema.org",

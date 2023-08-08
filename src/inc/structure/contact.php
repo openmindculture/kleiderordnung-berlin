@@ -13,7 +13,6 @@
   <div class="contact__columns__column-wrapper contact__columns__column-wrapper--lg">
 
     <div class="contact__columns__column contact__columns__column--50">
-      <!-- BEGIN vcard imprint contact information - TODO: update using rel=me etc. -->
       <div class="contact__calltoactiontext contact__calltoactiontext--primary">
         <?php echo get_field('page_contact_teaser_text', KLEIDERORDNUNG_FRONT_PAGE_ID) ?>
       </div>

@@ -15,8 +15,7 @@
           <span class="footer__column__row__softhyphen">–</span>
           <span class="footer__column__row__allrights"><?php _e( 'All rights reserved', 'kleiderordnung' ) ?></span>
         </div>
-        <!-- TODO
-          * TODO footer links generischer möglich?
+        <!-- TODO footer links generischer möglich?
           => get_the_privacy_policy_link() | Function
              aber auch mehrsprachig mit Polylang?
           -->
