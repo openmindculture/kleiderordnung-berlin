@@ -1,9 +1,29 @@
-/**
- * Critical CSS to be imported in HTML header to avoid Layout Shift
- * apart from web fonts / typography which is handled in typography.css.php
- * TODO can this be auto-generated successfully?
- * otherwise add important styles manually
+/*
+ * Critical CSS to be imported in HTML header to avoid layout shift
  *
  * @package KleiderOrdnung
  * @author openmindculture
  */
+
+:root {
+  --color-blue-dark-purpleish: #0014d1;
+  --color-sandy-light-grayish: #f5f1ed;
+  --color-primary-background: var(--color-sandy-light-grayish);
+  --color-primary-foreground: var(--color-blue-dark-purpleish);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, main, .main, p {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--color-primary-background);
+  color: var(--color-primary-foreground);
+}
