@@ -28,6 +28,15 @@ body.page:not(.home) .footer__content {
   text-decoration: none;
 }
 
+@media (hover: none) {
+  .footer a,
+  .footer a:link,
+  .footer a:visited {
+    display: inline-block;
+    padding: 1rem 1rem 1.5rem 0;
+  }
+}
+
 @mixin layout-column-wrapper .footer__columns__column-wrapper {}
 
 @mixin layout-column-50 .footer__columns__column--50 {}
@@ -54,7 +63,7 @@ body.page:not(.home) .footer__content {
   margin-top: 1rem;
 }
 
-body.page.home .footer__partners {
+body.page:not(.home) .footer__partners {
   text-align: right;
 }
 
