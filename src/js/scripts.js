@@ -51,6 +51,9 @@ window.kleiderordnung = {
         menuLinksSelector: '#primary-menu a[href]', // links inside the menu
         mainMenuNavWrapperSelector: 'navigation--main-navigation', // select parent menu from descendant button handler
 
+        waypointsQuerySelector: '#menu-main a.menu-item-link-waypoint',
+        socialMediaSectionId: 'socialmedia',
+
         stickyHeaderId: 'site-header',
         stuckClassName: 'stuck', // emulate ::stuck pseudo class for sticky header styling
 
@@ -99,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     kleiderordnung_activateIntroAnimation(window.kleiderordnung.config);
     kleiderordnung_observeStickyHeader();
-    kleiderordnung_observeWaypointAnchors(config);
+    kleiderordnung_observeWaypointAnchors(window.kleiderordnung.config);
 
     kleiderordnung_enhanceNavigationMenu(window.kleiderordnung.config);
 
