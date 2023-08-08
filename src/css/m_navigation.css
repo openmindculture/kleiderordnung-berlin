@@ -213,3 +213,9 @@
     color: var(--color-primary-foreground);
   }
 }
+
+@media (min-width: 992px) {
+  .navigation__list {
+    flex-wrap: nowrap;
+  }
+}
