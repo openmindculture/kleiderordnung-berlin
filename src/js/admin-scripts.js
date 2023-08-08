@@ -1,7 +1,3 @@
-console.log('admin-scripts.js');
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
   var loc = window.location.href;
   if (
@@ -31,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
           var myClassName = myClassesArray.find( function(className) {
             return className.startsWith('acf-field-page')
           });
-          console.log('undestroyed mceInit object ', mceInit);
           mceInit.body_class += ' acf_content_' + myClassName;
         }
       } catch (e) {} /* no catch: END optional backend styles */

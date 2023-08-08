@@ -15,7 +15,6 @@ import {kleiderordnung_observeWaypointAnchorCallback} from './observeWaypointAnc
  *  @property {number} introKeyvisualTimeoutMilliseconds 30000
  */
 export function kleiderordnung_observeWaypointAnchors(config) {
-  console.log('kleiderordnung_observeWaypointAnchors');
   if (!config.supportsIntersectionObserver) { return; }
   window.kleiderordnung.observers.waypointObserver = new IntersectionObserver(
     kleiderordnung_observeWaypointAnchorCallback,
@@ -23,7 +22,6 @@ export function kleiderordnung_observeWaypointAnchors(config) {
   );
   var correnspodingNavigationItems = document.querySelectorAll(config.waypointsQuerySelector);
   if (correnspodingNavigationItems) {
-    console.log('ready to observe correnspodingNavigationItems:', correnspodingNavigationItems);
     for (var i = 0; i < correnspodingNavigationItems.length; i++) {
       if (!correnspodingNavigationItems[i].href) { continue; }
       var correspondingWayPointUrl = new URL(correnspodingNavigationItems[i].href);
