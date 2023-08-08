@@ -1,6 +1,9 @@
 /** handle various interactive effects */
-/* global window, document */
 
+import {kleiderordnung_fetchAndAppendStyleFromFile} from './fetchAndAppendStyleFromFile';
+import {kleiderordnung_verifyAllowedUrl} from './verifyAllowedUrl';
+
+/* global window, document */
 /** @param {HTMLElement} targetElement */
 var kleiderordnung_handleAppearedElement = function(targetElement) {
   if (targetElement.dataset.allowable) {
@@ -60,20 +63,9 @@ var kleiderordnung_allowAndActivateExternalFeed = function(buttonElement) {
 var kleiderordnung_activateExternalFeed = function(feedContainerElement) {
   if (!feedContainerElement) { return; }
   var styleFileUrl = feedContainerElement.dataset[window.kleiderordnung.config.feedStyleUrlDataKey];
-  if (styleFileUrl) { /* TODO sanitize !? */
-    fetch(styleFileUrl)
-      .then(function(response) {
-        return response.text();
-      })
-      .then(function(text) {
-        var style = document.head.appendChild(document.createElement('style'));
-        style.textContent = text;
-      }).catch(function(err) {
-      // TODO schedule retry? or rather insert <style> element instead of fetching?
-    });
-  }
+  kleiderordnung_fetchAndAppendStyleFromFile(styleFileUrl, window.kleiderordnung.config);
   var scriptFileUrl = feedContainerElement.dataset[window.kleiderordnung.config.feedScriptUrlDataKey];
-  if (scriptFileUrl) { /* TODO sanitize! */
+  if (scriptFileUrl && kleiderordnung_verifyAllowedUrl(scriptFileUrl)) {
     var scriptElement = document.createElement('script');
     scriptElement.src = scriptFileUrl;
     document.head.append(scriptElement);

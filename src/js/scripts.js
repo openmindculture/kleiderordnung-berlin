@@ -18,6 +18,7 @@ import {kleiderordnung_observeWaypointAnchors} from './inc/observeWaypointAnchor
 window.kleiderordnung = {
   state: {
     /** @type {number} */                    currentAnimationReplayTimeoutIdNr: 0,
+    /** @type {number} */                    feedStyleFetchRetryCount: 0,
     /** @type {number} */                    genericIdCounter: 0,
     /** @type {object|null} LottiePlayer */  introAnimation: null,
     /** @type {boolean} */                   isHeaderStuck: false,
@@ -33,16 +34,18 @@ window.kleiderordnung = {
   config: {
     allowableElementsClassName: 'allowable--on-visibility', // triggers consent before loading external content
     feedCookieKey: 'instafeed', // name of the cookie set to remember consent
-    feedCookieValue: 'allow', // default value
+    feedCookieValue: 'allow',   // default value
     feedCookieMaxAgeSeconds: 31536000, // 1 year
     feedSectionClassName: 'socialmedia__feed__section',
     feedSectionActiveClassName: 'socialmedia__feed__section--active',
     feedContainerClassName: 'socialmedia__feed__container',
     feedContainerActiveClassName: 'socialmedia__feed__container--active', // set to feed container when allowed
-    feedDataKey: 'allow',                // data key to control the expiry / validity when clicking allow
+    feedDataKey: 'allow',               // data key to control the expiry / validity when clicking allow
     feedDataValueAlways: 'always',      // data value to always allow (as opposed to the session default)
-    feedScriptUrlDataKey: 'scripturl', // data key which JavaScript to load (absolute or relative to project)
-    feedStyleUrlDataKey: 'styleurl', // data key which stylesheet to load (absolute or relative to project)
+    feedScriptUrlDataKey: 'scripturl',  // data key which JavaScript to load (absolute or relative to project)
+    feedStyleFetchRetryTimeoutMilliseconds: 2000,
+    feedStyleMaxFetchRetries: 3,      // max. numbers of retries for loading styles for external feed
+    feedStyleUrlDataKey: 'styleurl',  // data key which stylesheet to load (absolute or relative to project)
     introKeyvisualAnimationId: 'intro-keyvisual-animation',
     introKeyvisualMousetrapId: 'intro-keyvisual-mousetrap',
     introKeyvisualTimeoutMilliseconds: 30000,
@@ -53,8 +56,8 @@ window.kleiderordnung = {
     menuCloseButtonClassName: 'navigation__toggle--close',
     menuOpenButtonClassName: 'navigation__toggle--open',
     menuOpenedClassName: 'navigation__menu-opened', // .target for progressive enhancement of :target
-    menuLinksSelector: '#primary-menu a[href]',    // links inside the menu
-    noGlobalThisClassName: 'no-globalthis',       // set if special intro animation fallback necessary
+    menuLinksSelector: '#primary-menu a[href]',     // links inside the menu
+    noGlobalThisClassName: 'no-globalthis',         // set if special intro animation fallback necessary
     /** @object IntersectionObserver options */
     observerOptions: {
       root: null,
