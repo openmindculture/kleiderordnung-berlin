@@ -34,11 +34,8 @@
     >
 
       <ul class="socialmedia__feed__embed socialmedia__feed__embed--juicer juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="5" data-columns="5" pages="1">
-        <!-- TODO insert (hidden) h1 only before activating external content -->
-        <!-- <h1 class="referral"><a href="https://www.juicer.io">Social Media Feed von Juicer.io</a></h1> -->
       </ul>
     </div>
-
 
     <div id="socialmedia-feed-consent-juicer" class="socialmedia__feed__consent feed__consent socialmedia__feed__consent--juicer">
       <p class="socialmedia__feed__consent__question"><?php _e( 'Dürfen externe Inhalte von Instagram geladen werden?', 'kleiderordnung' ) ?></p>

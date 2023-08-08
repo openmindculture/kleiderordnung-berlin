@@ -30,7 +30,6 @@
 @import url("css/a_post.css");
 @import url("css/a_table.css");
 /* -- page sections in alphabetical order -- */
-/* -- TODO move or copy page and header layout rules to critical.css to prevent layout shift */
 @import url("css/m_calltoaction.css");
 @import url("css/m_contact.css");
 @import url("css/m_cookie-consent.css");
@@ -43,83 +42,3 @@
 @import url("css/m_offers.css");
 @import url("css/m_socialmedia.css");
 @import url("css/m_stories.css");
-
-/* TODO obsolete? nothing like that should exist outside module files or critical css */
-
-.main-menu__nav-wrapper {
-  text-align: center;
-  position: relative
-}
-
-.main-menu__navigation {
-  display: inline-block;
-  margin: 0 auto;
-}
-
-.main-menu__navigation ul {
-  display: flex;
-  list-style: none;
-}
-
-.main-menu__navigation ul li {
-  margin-bottom: 0;
-}
-
-.main-menu__navigation ul li + li {
-  margin-left: 1em;
-}
-
-a.main-menu__button--open:link,
-a.main-menu__button--close:link {
-  display: none;
-}
-
-@media (max-width: 824px) {
-
-  .main-menu__nav-wrapper {
-    display: none;
-  }
-
-  a.main-menu__button--open:link {
-    display: block;
-    position: absolute;
-    bottom: 0.5em;
-    right: 1em;
-  }
-
-  a.main-menu__button--close:link {
-    display: block;
-    position: absolute;
-    top: -1.5em;
-    right: 0;
-  }
-
-  a.main-menu__button--open:link, a.main-menu__button--close:link {
-    text-decoration: none;
-  }
-
-  .main-menu__nav-wrapper.target ~ a.main-menu__button--open {
-    display: none;
-  }
-
-  .header.stuck .main-menu__nav-wrapper:not(:target):not(.target) {
-    display: none;
-  }
-
-  /* stylelint-disable-next-line no-descending-specificity */
-  .main-menu__nav-wrapper:target,
-  .main-menu__nav-wrapper.target {
-    display: block;
-  }
-
-  .header.stuck h1 {
-    font-size: 100%;
-  }
-
-  .main-menu__nav-wrapper ul {
-    flex-direction: column;
-  }
-  .main-menu__nav-wrapper ul li {
-    margin-bottom: 1em;
-  }
-}

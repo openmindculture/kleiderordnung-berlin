@@ -24,11 +24,6 @@ $args = array(
 );
 $the_query = new WP_Query( $args );
 $resorted_post_ids = array();
-/* TODO code style: avoid spaghetti code (hard to read even with alternative syntax)
-   and use conditional includes, subsequent short if-blocks etc.
-   TODO refactor redundant code for stories, offers:angebot, offers:weitere
-   but don't overengineer workarounds for what should have been core function calls
-  */
 if ( $the_query->have_posts() ) : ?>
     <h2 class="offers__headline"><?php _e( 'Meine Angebote', 'kleiderordnung' ) ?></h2>
     <nav class="offers__navigation">
