@@ -118,6 +118,7 @@
 
 /* adjust padding inside external logo for better visual alignment */
 .footer__ecofriendly__detail--greenhosting img {
+  display: block; /* prevent descenders margin below image */
   margin-left: -0.25rem;
 }
 

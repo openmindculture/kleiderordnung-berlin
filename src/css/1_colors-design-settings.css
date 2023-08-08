@@ -67,7 +67,7 @@
   --color-pink-neon: #ff5baa;
   --color-pink-reddish: #ff5454;
   --color-turquoise-pastel: #bad2d7;
-  --color-turquoisish-green: #5dc0bd; /* derived color only used for footer carbon badge */
+  --color-green-web-foundation: #60bb43; /* only used in footer carbon badges */
   --color-purple-pastel-pinkish: #cbc3f6; /* decoration color, currently not used for text content */
   --color-pink-pastel-orangeish: #ffc7b0;
   --color-pink-pastel-pinkish: #ffb1ce;
@@ -93,7 +93,7 @@
   --color-admin-preview-background: var(--color-yellow-preview);
   --color-admin-localhost-background: var(--color-turquoise-pastel);
   --color-border-dialogbox: var(--color-anthracite-dark-purpleish);
-  --color-border-carbonbadge: var(--color-turquoisish-green);
+  --color-border-carbonbadge: var(--color-green-web-foundation);
 
   /* Effect Styles */
   --effect-box-shadow-dropshadow: 3.75rem 4rem 4.625rem rgba(0, 0, 0, 0.12);

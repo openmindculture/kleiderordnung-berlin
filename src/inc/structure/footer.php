@@ -71,7 +71,7 @@
     </div>
     <div class="footer__ecofriendly__detail--greenhosting">
       <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=https%3A%2F%2Fkleiderordnung.berlin%2F" target="_blank">
-        <img src="https://api.thegreenwebfoundation.org/greencheckimage/kleiderordnung.berlin" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+        <img src="https://api.thegreenwebfoundation.org/greencheckimage/kleiderordnung.berlin" width="300" height="135" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
       </a>
     </div>
     <div class="footer__ecofriendly__detail--ecograder">
