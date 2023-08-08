@@ -61,6 +61,7 @@ body.page:not(.home) .footer__content {
 
 .footer__partners {
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 body.page:not(.home) .footer__partners {
@@ -69,12 +70,13 @@ body.page:not(.home) .footer__partners {
 
 .footer__partners img {
   width: auto;
-  height: 1.875rem;
+  height: 3.5rem;
 }
 
 @media (min-width: 768px) {
   .footer__partners {
     margin-top: 0;
+    margin-bottom: 0;
   }
   .footer__partners img {
     width: initial;
