@@ -2,10 +2,10 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 2.6.0
+ * @version 2.7.0
  *
  * @wordpress-plugin
- * Version: 2.6.0
+ * Version: 2.7.0
  * Tested up to: 6.3
  * Plugin Name: Kleiderordnung Register Custom Post Types
  * Text Domain: kleiderordnung-register-custom-post-types
@@ -217,6 +217,12 @@ function kleiderordnung_register_post_type_offer() {
       'title'    => 'Was du erhältst, Preis und weitere Inhalte',
       'position' => 'normal',
       'fields'   => array(
+        array(
+          'key'   => 'offer_short_title',
+          'label' => 'Kurztitel für Subnavigation (optional)',
+          'name'  => 'offer_short_title',
+          'type'  => 'text',
+        ),
         array(
           'key'   => 'offer_features',
           'label' => 'Was du erhältst / What you get (als Aufzählungsliste formatieren)',

@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-08-07 21:01" -->
+	<!-- generator="WordPress/6.2.2" created="2023-08-08 09:16" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Mon, 07 Aug 2023 21:01:42 +0000</pubDate>
+	<pubDate>Tue, 08 Aug 2023 09:16:48 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -331,7 +331,7 @@
 		<item>
 		<title><![CDATA[kontakt@ingo-steinke.de]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_contact&#038;p=17</link>
-		<pubDate>Tue, 11 Jul 2023 08:47:23 +0000</pubDate>
+		<pubDate>Tue, 08 Aug 2023 07:50:31 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?p=17</guid>
 		<description></description>
@@ -339,10 +339,10 @@
 admin]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>17</wp:post_id>
-		<wp:post_date><![CDATA[2023-07-11 10:47:23]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-07-11 08:47:23]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-11 10:47:23]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-11 08:47:23]]></wp:post_modified_gmt>
+		<wp:post_date><![CDATA[2023-08-08 09:50:31]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-08-08 07:50:31]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 09:50:31]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 07:50:31]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[kontakt-ingo-steinke-de]]></wp:post_name>
@@ -366,7 +366,7 @@ admin]]></content:encoded>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_last_contacted]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2023-07-11 10:47:23]]></wp:meta_value>
+		<wp:meta_value><![CDATA[2023-08-08 09:50:31]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
@@ -375,6 +375,10 @@ admin]]></content:encoded>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2023-06-01]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023-07-11]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1604,7 +1608,7 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 		<guid isPermaLink="false">/?page_id=3</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>Diese Datenschutzerklärung klärt darüber auf, wie Ihre Daten geschützt und zu welchen Zwecken sie vearbeitet werden. Wir befolgen dabei die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO).</p>
+<p>Diese Datenschutzerklärung klärt darüber auf, wie deine Daten geschützt und zu welchen Zwecken sie vearbeitet werden. Wir befolgen dabei die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO).</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -1710,8 +1714,8 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 		<wp:post_id>3</wp:post_id>
 		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 21:57:05]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 19:57:05]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 09:50:49]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 07:50:49]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[datenschutzerklaerung]]></wp:post_name>
@@ -1790,6 +1794,18 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_page_contact_job_title]]></wp:meta_key>
 		<wp:meta_value><![CDATA[page_contact_job_title]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[5]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -2626,8 +2642,8 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:post_id>139</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 19:28:39]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 17:28:39]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 15:56:18]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:18]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 11:15:51]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 09:15:51]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[outfit-consulting-fuer-start-ups-mit-nachhaltigem-fokus]]></wp:post_name>
@@ -2700,6 +2716,30 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
 		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[offer_short_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Startups]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_offer_short_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[offer_short_title]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[inline_featured_image]]></wp:meta_key>
+		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Professional Outfit Consultation for Sustainability-focused Startups]]></title>
@@ -2713,8 +2753,8 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:post_id>141</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 19:29:19]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 17:29:19]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 15:56:13]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:13]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 11:16:04]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 09:16:04]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[professional-outfit-consultation-for-sustainability-focused-startups]]></wp:post_name>
@@ -2790,6 +2830,26 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[inline_featured_image]]></wp:meta_key>
 		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[offer_short_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Startups]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_offer_short_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[offer_short_title]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -5196,5 +5256,5 @@ Lazy Loading (WP_ADMIN)
 Minified using disk (wp-admin)
 Database Caching using disk (Request-wide modification query)
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-08-07 23:01:42 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-08-08 11:16:49 by W3 Total Cache
 -->

@@ -50,7 +50,13 @@ if ( $the_query->have_posts() ) : ?>
   foreach ($resorted_post_ids as $resorted_post_position_number => $resorted_post_id) {
   ?>
         <li>
-          <a href="#<?php echo get_field('offer_id', $resorted_post_id); ?>" tabindex="0"><?php echo get_the_title($resorted_post_id) ?></a>
+          <a href="#<?php echo get_field('offer_id', $resorted_post_id); ?>" tabindex="0"><?php
+            if (!empty(get_field('offer_short_title', $resorted_post_id))) {
+              echo get_field('offer_short_title', $resorted_post_id);
+            } else {
+              echo get_the_title($resorted_post_id);
+            }
+          ?></a>
         </li>
     <?php
   }
