@@ -57,6 +57,9 @@ window.kleiderordnung = {
         introKeyvisualAnimationId: 'intro-keyvisual-animation',
         introKeyvisualMousetrapId: 'intro-keyvisual-mousetrap',
         introKeyvisualTimeoutMilliseconds: 30000,
+        introKeyvisualScriptId: 'lottie-player-script',
+        introKeyvisualComponentTagName: 'lottie-player',
+        noGlobalThisClassName: 'no-globalthis',
 
         supportsIntersectionObserver: (typeof IntersectionObserver === 'function'),
         supportsGlobalThis: (typeof globalThis === 'object'),
@@ -96,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     kleiderordnung_activateIntroAnimation(window.kleiderordnung.config);
     kleiderordnung_observeStickyHeader();
-    kleiderordnung_observeWaypointAnchors();
+    kleiderordnung_observeWaypointAnchors(config);
 
     kleiderordnung_enhanceNavigationMenu(window.kleiderordnung.config);
 
