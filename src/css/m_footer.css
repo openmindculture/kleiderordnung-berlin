@@ -60,6 +60,9 @@ body.page:not(.home) .footer__content {
 }
 
 .footer__partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -77,6 +80,9 @@ body.page:not(.home) .footer__partners {
   .footer__partners {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  body.page:not(.home) .footer__partners {
+    text-align: right;
   }
   .footer__partners img {
     width: initial;
