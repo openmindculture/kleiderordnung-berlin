@@ -101,8 +101,12 @@ body.no-js .intro__keyvisual__animation {
   display: none;
 }
 
+body.no-js .intro__keyvisual__animation--noscript-fallback {
+  display: block;
+}
+
+/* DON'T add body.no-js here as that's temporarily visible before JS detection thus flashing would occur */
 body.no-webcomponents .intro__keyvisual__animation--motionless-fallback,
-body.no-globalthis .intro__keyvisual__animation--motionless-fallback,
-body.no-js .intro__keyvisual__animation--motionless-fallback {
+body.no-globalthis .intro__keyvisual__animation--motionless-fallback {
   display: block;
 }
