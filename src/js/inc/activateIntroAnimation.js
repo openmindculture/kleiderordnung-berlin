@@ -31,20 +31,24 @@ export function kleiderordnung_activateIntroAnimation(config) {
     window.kleiderordnung.state.introAnimation = document.getElementById(config.introKeyvisualAnimationId);
     if (window.kleiderordnung.state.introAnimation) {
       window.kleiderordnung.state.introAnimation.addEventListener('ready', function() {
-        window.kleiderordnung.state.introAnimation.play();
-        window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr = window.setTimeout(function(){
+        if (typeof window.kleiderordnung.state.introAnimation.play === 'function') {
           window.kleiderordnung.state.introAnimation.play();
-        }, config.introKeyvisualTimeoutMilliseconds);
+          window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr = window.setTimeout(function(){
+            window.kleiderordnung.state.introAnimation.play();
+          }, config.introKeyvisualTimeoutMilliseconds);
+        }
       });
       /** @var {HTMLElement|null} */
       var introAnimationMousetrap = document.getElementById(config.introKeyvisualMousetrapId);
       if (introAnimationMousetrap) {
         introAnimationMousetrap.addEventListener('mouseenter', function() {
           window.clearTimeout(window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr);
-          window.kleiderordnung.state.introAnimation.play();
-          window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr = window.setTimeout(function(){
+          if (typeof window.kleiderordnung.state.introAnimation.play === 'function') {
             window.kleiderordnung.state.introAnimation.play();
-          }, config.introKeyvisualTimeoutMilliseconds);
+            window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr = window.setTimeout(function(){
+              window.kleiderordnung.state.introAnimation.play();
+            }, config.introKeyvisualTimeoutMilliseconds);
+          }
         });
       }
     }
