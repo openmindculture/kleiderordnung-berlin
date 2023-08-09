@@ -24,7 +24,6 @@
 /* -- common elements -- */
 @import url("css/a_buttons-links.css");
 @import url("css/a_carousel.css");
-@import url("css/a_decoration.css");
 @import url("css/a_list.css");
 @import url("css/a_page.css");
 @import url("css/a_post.css");
@@ -42,3 +41,4 @@
 @import url("css/m_offers.css");
 @import url("css/m_socialmedia.css");
 @import url("css/m_stories.css");
+@import url("css/z_decoration.css");

@@ -7,7 +7,6 @@
  */
 ?>
 <section id="angebot" class="offers target-offset">
-  <div class="offers__layer offers__layer--decoration"></div>
   <div class="offers__layer offers__layer--content">
 <?php
 $args = array(

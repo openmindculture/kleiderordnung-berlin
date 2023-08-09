@@ -2,96 +2,17 @@
  * Offers Section with Sinlge Offer Articles
  * - main offers section
  * - further offers section
+ * - decoration background, possibly overflowing behind subsequent content
  *
  * @package KleiderOrdnung
  * @author openmindculture
  */
 
-@media (prefers-reduced-motion) {
-  :root {
-    --parallax-scale-offers: 0;
-  }
-}
-
-@mixin decoration-parallax-group .offers {
+.offers {
   width: var(--width-full);
   max-width: var(--width-max);
   margin-left: auto;
   margin-right: auto;
-}
-
-@mixin decoration-parallax-layer .offers__layer {}
-
-@mixin decoration-parallax-layer-foreground .offers__layer--content {}
-
-@mixin decoration-parallax-layer-background .offers__layer--decoration {
-  border: solid 2px mediumpurple;
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat;
-  background-image:
-    var(--background-image-pita),
-    var(--background-image-salmon),
-    var(--background-image-lilac),
-    var(--background-image-bluedots),
-    var(--background-image-apricot),
-    var(--background-image-salmon2);
-  background-position:
-    100% 0%,
-      0% 400px,
-    120% 1000px,
-     20% 1000px,
-      0% 1200px,
-    120% 1400px;
-  background-size:
-    500px auto,
-    40% 40%,
-    40% 40%,
-    100px auto,
-    30% 30%,
-    30% 30%;
-}
-
-@media (min-width: 991400px) {
-  .offers__layer--decoration {
-    background-position:
-      120% 10px,
-      -20% 200px,
-      120% 400px,
-      20% 600px,
-      -20% 610px,
-      120% 800px;
-    background-size:
-      40% 40%,
-      40% 40%,
-      40% 40%,
-      40% 40%,
-      40% 40%,
-      40% 40%;
-  }
-}
-
-@media (min-width: 992200px) {
-  .offers__layer--decoration {
-    background-position:
-      120% 10px,
-      -20% 200px,
-      120% 400px,
-      20% 600px,
-      -20% 610px,
-      120% 800px;
-    background-size:
-      40% 40%,
-      40% 40%,
-      40% 40%,
-      40% 40%,
-      40% 40%,
-      40% 40%;
-  }
 }
 
 @mixin typography-heading-h2 .offers__headline {
