@@ -16,20 +16,20 @@ body {
   perspective-origin: 0 0;
 }
 
-main { /* decoration-parallax-group */
+body.page.home main { /* decoration-parallax-group */
   position: relative;
   transform-style: inherit;
 }
 
 /* ensure foreground and following sections stay in front of the decoration layer */
-main > section,
-main > div,
-footer {
+body.page.home main > section,
+body.page.home main > div,
+body.page.home footer {
   position: relative;
   z-index: 2;
 }
 
-main::after { /* decoration-parallax-layer-background */
+body.page.home main::after { /* decoration-parallax-layer-background */
   /* border: solid 3px red; */ /* optional debug border */
   top: 180vh; /* todo adjust, and optionally fine-tune, using JS measurements */
   height: 3000px;  /* todo adjust, and optionally fine-tune, using JS measurements */
@@ -75,14 +75,14 @@ main::after { /* decoration-parallax-layer-background */
 }
 
 @media (prefers-reduced-motion) {
-  main::after {
+  body.page.home main::after {
     transform: translateZ(0);
   }
 }
 
 /* TODO adjust and re-activate (14000 => 1400, 20000 => 2200) if needed */
 @media (min-width: 14000px) {
-  main::after {
+  body.page.home main::after {
     width: auto;
     max-width: 100%;
     max-width: 100vw;
@@ -107,7 +107,7 @@ main::after { /* decoration-parallax-layer-background */
 }
 
 @media (min-width: 22000px) {
-  main::after {
+  body.page.home main::after {
     margin-left: -43.75rem;
     margin-right: -43.75rem;
     background-position:
