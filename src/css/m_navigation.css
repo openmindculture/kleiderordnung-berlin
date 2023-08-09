@@ -104,6 +104,34 @@
   background-color: var(--color-primary-background);
 }
 
+.navigation__list-wrapper--main.navigation__menu-opened .navigation__list li.menu-item-language,
+.navigation__list-wrapper--main:target .navigation__list li.menu-item-language {
+  /* backslash between DE / EN */
+  color: var(--color-primary-background);
+  font-size: var(--font-size-16);
+  line-height: 140%;
+  height: 1.4rem;
+}
+
+/* default polylang language switcher with additional nested list and missing slash */
+.navigation__list li.menu-item-language ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__list li.menu-item-language ul li {
+  display: inline-block;
+  width: auto;
+}
+
+.navigation__list li.menu-item-language ul li:not(:first-child) a::before {
+  content: "/";
+  font-size: var(--font-size-16);
+  line-height: 140%;
+  height: 1.4rem;
+}
+
 /* intermediate breakpoint: mobile menu no longer full width: */
 @media (min-width: 555px) {
   .navigation__list-wrapper--main.navigation__menu-opened,
@@ -165,13 +193,6 @@
     padding: 0;
   }
 
-  .navigation__list li.menu-item-language ul li:not(:first-child) a::before {
-    content: "/";
-    font-size: var(--font-size-16);
-    line-height: 140%;
-    height: 1.4rem;
-  }
-
   .navigation__list-wrapper--main a.button {
     background-color: var(--color-primary-foreground);
     color: var(--color-primary-background);
@@ -190,5 +211,11 @@
   .navigation__list-wrapper--main a:not(.button):not(.navigation__toggle):link,
   .navigation__list-wrapper--main a:not(.button):not(.navigation__toggle):visited {
     color: var(--color-primary-foreground);
+  }
+}
+
+@media (min-width: 992px) {
+  .navigation__list {
+    flex-wrap: nowrap;
   }
 }

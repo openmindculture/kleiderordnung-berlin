@@ -6,10 +6,20 @@
  */
 
 .footer {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-primary-background);
+}
+
+.footer__content {
   width: var(--width-full);
   max-width: var(--width-max);
   margin: 0 auto;
   padding: 3.875rem 0 3.5rem 0;
+}
+
+body.page:not(.home) .footer__content {
+  width: var(--width-spaced-larger);
 }
 
 .footer a,
@@ -17,6 +27,15 @@
 .footer a:visited {
   color: var(--color-primary-foreground);
   text-decoration: none;
+}
+
+@media (hover: none) {
+  .footer a,
+  .footer a:link,
+  .footer a:visited {
+    display: inline-block;
+    padding: 1rem 1rem 1.5rem 0;
+  }
 }
 
 @mixin layout-column-wrapper .footer__columns__column-wrapper {}
@@ -42,17 +61,29 @@
 }
 
 .footer__partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+body.page:not(.home) .footer__partners {
+  text-align: right;
 }
 
 .footer__partners img {
   width: auto;
-  height: 1.875rem;
+  height: 3.5rem;
 }
 
 @media (min-width: 768px) {
   .footer__partners {
     margin-top: 0;
+    margin-bottom: 0;
+  }
+  body.page:not(.home) .footer__partners {
+    text-align: right;
   }
   .footer__partners img {
     width: initial;
@@ -88,7 +119,7 @@
 }
 
 @media (min-width: 1235px) {
-  .footer__columns__column--50:last-child {
+  body.page.home .footer__columns__column--50:last-child {
     max-width: 56%;
   }
   .footer__columns__column + .footer__columns__column {
@@ -118,6 +149,7 @@
 
 /* adjust padding inside external logo for better visual alignment */
 .footer__ecofriendly__detail--greenhosting img {
+  display: block; /* prevent descenders margin below image */
   margin-left: -0.25rem;
 }
 

@@ -17,6 +17,14 @@
   }
 }
 
+body {
+  background-color: var(--color-primary-background);
+  color: var(--color-primary-foreground);
+  /* prepare voice settings according to CSS speech draft */
+  voice-family: female;
+  voice-pitch: medium;
+}
+
 html, body, main, .main, p {
   margin: 0;
   padding: 0;
@@ -24,23 +32,11 @@ html, body, main, .main, p {
   font-weight: var(--font-weight-regular);
   text-rendering: optimizespeed;
   font-size: var(--font-size-16);
-  line-height: 140%; /* would that be 1.4 ? is there a best-practice notation? "or 22px" */
+  line-height: 140%;
 }
 
 main {
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
-}
-
-html, body {
-  background-color: var(--color-primary-background);
-  color: var(--color-primary-foreground);
-  /* overflow-x: hidden; */
-  /* ^ TODO understand:
-          how can a HORIZONTAL modification
-          break the VERTICAL parall effect ?!?!?!?!
-          */
-  voice-family: female;
-  voice-pitch: medium;
 }
 
 ::selection { /* TODO propbably not exactly the same as links? or change link backgrounds instead? */

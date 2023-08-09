@@ -13,19 +13,6 @@
   </div>
 
   <aside class="socialmedia__feed__section">
-    <!-- show content skeleton to be replaced with actual content -->
-    <!-- always start with "skeleton" placeholder, allowed content will only replace on visibility -->
-    <!-- content skeleton will be valid markup, same visual layout, prevent layout shift by ensuring height -->
-    <!-- TODO update placeholder images before going live -->
-    <!--
-Weiteres TODO: wenn Insta Platzhalter durch aktuellen Inhalt ersetzt
-         wird, verschwinden die Bilder zu früh!
-         Solange Loading Platzhalter zu sehen ist,
-         möchte ich stattdessen die alten Platzhalterbilder sehen!
-         Falls das nicht praktikabel ist,
-         zumindest eine Mindesthöhe für den Bereich definieren
-         um Springen (Layout Shift) zu vermeiden.
-    -->
     <div class="socialmedia__feed__placeholder">
       <div class="socialmedia__feed__embed socialmedia__feed__embed--skeleton" data-per="5" data-columns="5" pages="1">
         <div class="j-stacker-wrapper">
@@ -47,11 +34,8 @@ Weiteres TODO: wenn Insta Platzhalter durch aktuellen Inhalt ersetzt
     >
 
       <ul class="socialmedia__feed__embed socialmedia__feed__embed--juicer juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="5" data-columns="5" pages="1">
-        <!-- TODO insert (hidden) h1 only before activating external content -->
-        <!-- <h1 class="referral"><a href="https://www.juicer.io">Social Media Feed von Juicer.io</a></h1> -->
       </ul>
     </div>
-
 
     <div id="socialmedia-feed-consent-juicer" class="socialmedia__feed__consent feed__consent socialmedia__feed__consent--juicer">
       <p class="socialmedia__feed__consent__question"><?php _e( 'Dürfen externe Inhalte von Instagram geladen werden?', 'kleiderordnung' ) ?></p>

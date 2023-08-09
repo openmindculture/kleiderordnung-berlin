@@ -1,6 +1,6 @@
 {
   "name": "kleiderordnung-berlin",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "scripts": {
     "install": "node install-local-environment.js",
@@ -9,9 +9,10 @@
     "stop": "docker-compose stop",
     "destroy": "docker-compose down -v",
     "prebuild": "rimraf build dist && make-dir dist",
-    "build": "run-s build:core build:postcss",
-    "build:core": "copyfiles -u 1 -e src/* src/**/* src/fonts/* src/img/* src/img/**/* src/*.css src/*.php src/**/**/*.php src/*.png src/*.json src/style.css src/screenshot.png src/lottie/images/*  themes/kleiderordnung",
+    "build": "run-s build:core build:postcss build:js",
+    "build:core": "copyfiles -u 1 -e src/* src/**/* src/fonts/* src/img/* src/img/**/* src/*.css src/*.php src/**/**/*.php src/*.png src/*.json src/style.css src/screenshot.png src/lottie/images/* themes/kleiderordnung",
     "build:postcss": "postcss src/style.css --config . --no-map --verbose --o themes/kleiderordnung/style.css",
+    "build:js": "esbuild src/js/scripts.js --bundle --sourcemap --target=es5 --outfile=themes/kleiderordnung/js/scripts.js",
     "build:zip": "zip-build themes/kleiderordnung dist --name kleiderordnung --template %NAME%.%EXT%",
     "build:translations": "msgfmt -o src/languages/en_US.mo src/languages/en_US.po && msgfmt -o src/languages/de_DE.mo src/languages/de_DE.po",
     "watch": "watch \"npm run build:postscss\" src/css",
@@ -43,6 +44,7 @@
     "codeceptjs-resemblehelper": "^1.9.6",
     "copyfiles": "^2.4.1",
     "docker-compose": "^0.24.0",
+    "esbuild": "^0.18.19",
     "eslint": "^8.36.0",
     "eslint-plugin-es5": "^1.5.0",
     "html-minifier-cli": "^0.1.0",

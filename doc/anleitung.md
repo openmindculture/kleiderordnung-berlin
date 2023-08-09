@@ -61,7 +61,7 @@ Stories und Angebote haben zusätzlich ein Feld **Positionsnummer** um ihre Plat
 
 ![Screenshot: Stories bearbeiten](anleitung-stories-bearbeiten.png)
 
-**Angebote** sind ein komplexer Beitragstyp. Außer den üblichen Elementen wie Überschrift, Beitragsbild und Freitext gibt es jeweils die Aufzählungsliste "Was Du erhältst" und einen Bereich mit Preisinformationen, außerdem eine Strichzeichnung (Icon) neben der Überschrift.
+**Angebote** sind ein komplexer Beitragstyp. Außer den üblichen Elementen wie Überschrift, Beitragsbild und Freitext gibt es jeweils die Aufzählungsliste "Was Du erhältst" und einen Bereich mit Preisinformationen, außerdem eine Strichzeichnung (Icon) neben der Überschrift. Falls der Titel sehr lang ist, sollte ein abweichender Kurztitel für die Subnavigation angegeben werden.
 
 Das Layout richtet sich nach dem grafischen Design, somit wechselt die seitliche Anordnung von Text und Bild immer ab und kann nicht abweichend bestimmt werden. Entsprechend benötigt es etwas mehr Fantasie oder einen Klick auf **Vorschau**, um sich das Endergebnis vorzustellen.
 

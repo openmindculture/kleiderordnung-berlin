@@ -4,7 +4,7 @@
  Description:  WordPress Classic Theme for KleiderOrdnung.Berlin by Ingo Steinke (web development), Ina Nixdorf (web design), Tina Steinke (requirements)
  Author:       openmindculture
  Author URI:   https://www.ingo-steinke.com/
- Version:      2.6.0
+ Version:      2.7.0
  Tested up to: 6.3
  License:      proprietary
  Tags:         Tags: wordpress-theme,wordpress-classic-theme,classic-theme,classic,fashion,sustainability,webperf
@@ -24,13 +24,11 @@
 /* -- common elements -- */
 @import url("css/a_buttons-links.css");
 @import url("css/a_carousel.css");
-@import url("css/a_decoration.css");
 @import url("css/a_list.css");
 @import url("css/a_page.css");
 @import url("css/a_post.css");
 @import url("css/a_table.css");
 /* -- page sections in alphabetical order -- */
-/* -- TODO move or copy page and header layout rules to critical.css to prevent layout shift */
 @import url("css/m_calltoaction.css");
 @import url("css/m_contact.css");
 @import url("css/m_cookie-consent.css");
@@ -43,114 +41,4 @@
 @import url("css/m_offers.css");
 @import url("css/m_socialmedia.css");
 @import url("css/m_stories.css");
-
-/* media specific styles for printer, PDF, etc. will be loaded on demand */
-/* @import url("css/print.css"); */
-
-/*! TODO postCSS configuration
- * minify all files
- * include content from imported files
- * replace root variables (custom properties) in subsequent style definitions
- * convert to color definitions for better backwards compatibility
- */
-
-/* TODO obsolete? nothing like that should exist outside module files or critical css */
-
-.main-menu__nav-wrapper {
-  text-align: center;
-  position: relative
-}
-
-.main-menu__navigation {
-  display: inline-block;
-  margin: 0 auto;
-}
-
-.main-menu__navigation ul {
-  display: flex;
-  list-style: none;
-}
-
-.main-menu__navigation ul li {
-  margin-bottom: 0;
-}
-
-.main-menu__navigation ul li + li {
-  margin-left: 1em;
-}
-
-a.main-menu__button--open:link,
-a.main-menu__button--close:link {
-  display: none;
-}
-
-@media (max-width: 824px) {
-
-  .main-menu__nav-wrapper {
-    display: none;
-  }
-
-  a.main-menu__button--open:link {
-    display: block;
-    position: absolute;
-    bottom: 0.5em;
-    right: 1em;
-  }
-
-  a.main-menu__button--close:link {
-    display: block;
-    position: absolute;
-    top: -1.5em;
-    right: 0;
-  }
-
-  a.main-menu__button--open:link, a.main-menu__button--close:link {
-    text-decoration: none;
-  }
-
-  .main-menu__nav-wrapper.target ~ a.main-menu__button--open {
-    display: none;
-  }
-
-  .header.stuck .main-menu__nav-wrapper:not(:target):not(.target) {
-    display: none;
-  }
-
-  /* stylelint-disable-next-line no-descending-specificity */
-  .main-menu__nav-wrapper:target,
-  .main-menu__nav-wrapper.target {
-    display: block;
-  }
-
-  .header.stuck h1 {
-    font-size: 100%;
-  }
-
-  .main-menu__nav-wrapper ul {
-    flex-direction: column;
-  }
-  .main-menu__nav-wrapper ul li {
-    margin-bottom: 1em;
-  }
-}
-
-/* TODO technical SEO and content SEM:
-  - [ ] vcard download option?
-  - [ ] configure additional performance and security headers using .htaccess only if necessary
-  - [ ] configure colors that provide necessary contrast to comply with WCAG 2.0 (might as well customize theme for the client?)
-  - [ ] ^ this would be OK to be specific for the chosen font(s) for Kleiderordnung
- */
-/* TODO use some cutting edge modern CSS and web dev features, just because, and with fallbacks of course:
- - [ ] content-visibility as potential visibility query and upgrade to intersection observer? thanks to schepp!
- - [ ] :has()
- - [ ] container-type / @container see [CSS Container Query Syntax Update 2022: container-type](https://dev.to/ingosteinke/css-container-query-syntax-update-5cg5)
- - [ ] advanced color space see [Taking colors to the next (CSS) level](https://dev.to/ingosteinke/ccs4-colors-5bj2)
- - [ ] mix-blend-mode see [Color blending with CSS blend-modes] => subtle text gradient effects like ISD / [Animated Gradient Text Color](https://dev.to/ingosteinke/animated-gradient-text-color-25hi)(https://dev.to/ingosteinke/color-blending-with-css-blend-modes-34h3)
- - [ ] aspect-ratio
- - [ ] calc()
- - [ ] clamp()
- - [ ] grid fr minmax || flex || float
- - [ ] image source set with sizes, formats (webp), and lazy loading => local library instead of manual tinkering?
- - [ ] use git based deployment (with or without netlify)
- - [ ] deployment should possibly also cover tests
- */
+@import url("css/z_decoration.css");

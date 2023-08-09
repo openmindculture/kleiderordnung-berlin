@@ -44,7 +44,7 @@ To setup / deploy KleiderOrdnung on a website,
 - copy all icons and manifest files (`*.ico`, `*.png`, `*.svg`, `*.json`, `*.xml`, `robots.txt`) to the web root directory
 - configure server and caching by editing `.htaccess` / `nginx.conf` / hosting backend or by using appropriate plugins,
 - use additional reverse proxy and/or CDN servers if necessary,
-- run automated tests (`npm run test`) and update the baseline screenshots if necessary (see [Testing...](#testing]))
+- run automated tests (`npm run test`) and update the baseline screenshots if necessary (see [Testing...](#testing) )
 - test everything and back up your data regularly! (Werkzeuge -> Export or use a plugin like [Updraft Plus](https://wordpress.org/plugins/updraftplus/)
 
 ## User Manual for the Site Owner(s)
@@ -217,7 +217,10 @@ Offer taxonomies currently serve to separate main offers, displayed with cards a
 
 ### Decoration / Parallax Perspective Effects
 
-Colorful shapes are placed behind content sections using mixins and custom properties defined in `a_decoration.css`. Scale and height adjustment property defaults can be overridden in a module / section scope, which might in turn be ajusted according to a JavaScript-based height measurement once after the document has been rendered.
+Colorful shapes are placed behind offers and subsequent sections.
+To make CSS perspective work, **global html and body style** is set to `height: 100%; overflow-y: scroll` as explained here: [pure CSS parallax perspective beyond landscape images](https://dev.to/ingosteinke/pure-css-parallax-perspective-beyond-landscape-images-24g2).
+
+Sections before and after should be set to `position: relative; z-index: 2` to make sure that they stay in front of the decoration layer.
 
 ### Contact Form, Social Media, Dynamic Menu
 

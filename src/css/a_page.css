@@ -12,4 +12,5 @@ body.page:not(.home) main {
   max-width: var(--width-max);
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 7rem;
 }

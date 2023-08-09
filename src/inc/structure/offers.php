@@ -7,7 +7,6 @@
  */
 ?>
 <section id="angebot" class="offers target-offset">
-  <div class="offers__layer offers__layer--decoration"></div>
   <div class="offers__layer offers__layer--content">
 <?php
 $args = array(
@@ -24,11 +23,6 @@ $args = array(
 );
 $the_query = new WP_Query( $args );
 $resorted_post_ids = array();
-/* TODO code style: avoid spaghetti code (hard to read even with alternative syntax)
-   and use conditional includes, subsequent short if-blocks etc.
-   TODO refactor redundant code for stories, offers:angebot, offers:weitere
-   but don't overengineer workarounds for what should have been core function calls
-  */
 if ( $the_query->have_posts() ) : ?>
     <h2 class="offers__headline"><?php _e( 'Meine Angebote', 'kleiderordnung' ) ?></h2>
     <nav class="offers__navigation">
@@ -50,7 +44,13 @@ if ( $the_query->have_posts() ) : ?>
   foreach ($resorted_post_ids as $resorted_post_position_number => $resorted_post_id) {
   ?>
         <li>
-          <a href="#<?php echo get_field('offer_id', $resorted_post_id); ?>" tabindex="0"><?php echo get_the_title($resorted_post_id) ?></a>
+          <a href="#<?php echo get_field('offer_id', $resorted_post_id); ?>" tabindex="0"><?php
+            if (!empty(get_field('offer_short_title', $resorted_post_id))) {
+              echo get_field('offer_short_title', $resorted_post_id);
+            } else {
+              echo get_the_title($resorted_post_id);
+            }
+          ?></a>
         </li>
     <?php
   }

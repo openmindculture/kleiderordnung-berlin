@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.2.2" created="2023-07-31 15:39" -->
+	<!-- generator="WordPress/6.2.2" created="2023-08-08 16:28" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Mon, 31 Jul 2023 15:39:45 +0000</pubDate>
+	<pubDate>Tue, 08 Aug 2023 16:28:48 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -63,14 +63,14 @@
 		<wp:cat_name><![CDATA[Nicht kategorisiert]]></wp:cat_name>
 	</wp:category>
 		<wp:category>
-		<wp:term_id>22</wp:term_id>
-		<wp:category_nicename><![CDATA[workshops-events-en]]></wp:category_nicename>
+		<wp:term_id>18</wp:term_id>
+		<wp:category_nicename><![CDATA[workshops-events]]></wp:category_nicename>
 		<wp:category_parent><![CDATA[]]></wp:category_parent>
 		<wp:cat_name><![CDATA[Workshops &amp; Events]]></wp:cat_name>
 	</wp:category>
 		<wp:category>
-		<wp:term_id>18</wp:term_id>
-		<wp:category_nicename><![CDATA[workshops-events]]></wp:category_nicename>
+		<wp:term_id>22</wp:term_id>
+		<wp:category_nicename><![CDATA[workshops-events-en]]></wp:category_nicename>
 		<wp:category_parent><![CDATA[]]></wp:category_parent>
 		<wp:cat_name><![CDATA[Workshops &amp; Events]]></wp:cat_name>
 	</wp:category>
@@ -331,7 +331,7 @@
 		<item>
 		<title><![CDATA[kontakt@ingo-steinke.de]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_contact&#038;p=17</link>
-		<pubDate>Tue, 11 Jul 2023 08:47:23 +0000</pubDate>
+		<pubDate>Tue, 08 Aug 2023 07:50:31 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?p=17</guid>
 		<description></description>
@@ -339,10 +339,10 @@
 admin]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>17</wp:post_id>
-		<wp:post_date><![CDATA[2023-07-11 10:47:23]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-07-11 08:47:23]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-11 10:47:23]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-11 08:47:23]]></wp:post_modified_gmt>
+		<wp:post_date><![CDATA[2023-08-08 09:50:31]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-08-08 07:50:31]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 09:50:31]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 07:50:31]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[kontakt-ingo-steinke-de]]></wp:post_name>
@@ -366,7 +366,7 @@ admin]]></content:encoded>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_last_contacted]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2023-07-11 10:47:23]]></wp:meta_value>
+		<wp:meta_value><![CDATA[2023-08-08 09:50:31]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
@@ -375,6 +375,10 @@ admin]]></content:encoded>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2023-06-01]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023-07-11]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1412,167 +1416,9 @@ admin]]></content:encoded>
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[[your-subject]]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=165</link>
-		<pubDate>Thu, 27 Jul 2023 09:44:25 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=165</guid>
-		<description></description>
-		<content:encoded><![CDATA[Ingo Otto
-fraktalisman@gmail.com
-Hallo liebes Team von Kleiderordnung,
-toll dass es jetzt endlich weiter geht!
-
-Das hier ist ein Test des Kontaktformulars aus Sicht eines legitimen Benutzers mit echter E-Mail-Adresse.
-
-Außerdem hätte ich gerne Infos zum Style Visitt, zur ONline Styling Beratung und zur Ordnung im Schrank.
-Vielen Dank!
-
-Liebe Grüße
-Ingo
-Style Visit
-Online Styling Beratung
-Ordnung im Schrank
-5
-217.9.48.50
-Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
-https://preview.kleiderordnung-berlin.de/
-27. Juli 2023
-11:44
-KleiderOrdnung Berlin
-https://preview.kleiderordnung-berlin.de
-kontakt@ingo-steinke.de]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>165</wp:post_id>
-		<wp:post_date><![CDATA[2023-07-27 11:44:25]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-07-27 09:44:25]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 11:44:25]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 09:44:25]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[your-subject-4]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[flamingo_inbound]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="flamingo_inbound_channel" nicename="kontaktformular-1"><![CDATA[Kontaktformular deutsch (de_DE)]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_submission_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[mail_sent]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_subject]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[your-subject]]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_from]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[your-name] <[your-email]>]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_from_name]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[your-name]]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_from_email]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[your-email]]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_name]]></wp:meta_key>
-		<wp:meta_value><![CDATA[Ingo Otto]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_email]]></wp:meta_key>
-		<wp:meta_value><![CDATA[fraktalisman@gmail.com]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_nachricht]]></wp:meta_key>
-		<wp:meta_value><![CDATA[Hallo liebes Team von Kleiderordnung,
-toll dass es jetzt endlich weiter geht!
-
-Das hier ist ein Test des Kontaktformulars aus Sicht eines legitimen Benutzers mit echter E-Mail-Adresse.
-
-Außerdem hätte ich gerne Infos zum Style Visitt, zur ONline Styling Beratung und zur Ordnung im Schrank.
-Vielen Dank!
-
-Liebe Grüße
-Ingo]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-style-visit]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:11:"Style Visit";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-online-style-beratung]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:23:"Online Styling Beratung";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-ordnung-im-schrank]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:18:"Ordnung im Schrank";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-shopping-tour]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-start-up-consulting]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-gutschein]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-styling-abo]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_field_anfrage-fashion-walking-tour]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_fields]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:11:{s:4:"Name";N;s:5:"Email";N;s:9:"Nachricht";N;s:19:"anfrage-style-visit";N;s:29:"anfrage-online-style-beratung";N;s:26:"anfrage-ordnung-im-schrank";N;s:21:"anfrage-shopping-tour";N;s:27:"anfrage-start-up-consulting";N;s:17:"anfrage-gutschein";N;s:19:"anfrage-styling-abo";N;s:28:"anfrage-fashion-walking-tour";N;}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_meta]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:19:{s:13:"serial_number";i:5;s:9:"remote_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36";s:3:"url";s:41:"https://preview.kleiderordnung-berlin.de/";s:4:"date";s:13:"27. Juli 2023";s:4:"time";s:5:"11:44";s:7:"post_id";s:0:"";s:9:"post_name";s:0:"";s:10:"post_title";s:0:"";s:8:"post_url";s:0:"";s:11:"post_author";s:0:"";s:17:"post_author_email";s:0:"";s:10:"site_title";s:21:"KleiderOrdnung Berlin";s:16:"site_description";s:0:"";s:8:"site_url";s:40:"https://preview.kleiderordnung-berlin.de";s:16:"site_admin_email";s:23:"kontakt@ingo-steinke.de";s:10:"user_login";s:0:"";s:10:"user_email";s:0:"";s:17:"user_display_name";s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_akismet]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:2:{s:7:"comment";a:67:{s:14:"comment_author";s:9:"Ingo Otto";s:20:"comment_author_email";s:22:"fraktalisman@gmail.com";s:18:"comment_author_url";s:0:"";s:15:"comment_content";s:334:"Hallo liebes Team von Kleiderordnung,
-toll dass es jetzt endlich weiter geht!
-
-Das hier ist ein Test des Kontaktformulars aus Sicht eines legitimen Benutzers mit echter E-Mail-Adresse.
-
-Außerdem hätte ich gerne Infos zum Style Visitt, zur ONline Styling Beratung und zur Ordnung im Schrank.
-Vielen Dank!
-
-Liebe Grüße
-Ingo";s:4:"blog";s:39:"http://preview.kleiderordnung-berlin.de";s:9:"blog_lang";s:5:"de_DE";s:12:"blog_charset";s:5:"UTF-8";s:7:"user_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36";s:8:"referrer";s:41:"https://preview.kleiderordnung-berlin.de/";s:12:"comment_type";s:12:"contact-form";s:16:"comment_date_gmt";s:25:"2023-07-27T09:44:25+00:00";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"REQUEST_URI";s:1:"/";s:18:"HTTP_AUTHORIZATION";s:0:"";s:5:"HTTPS";s:2:"on";s:11:"SSL_TLS_SNI";s:32:"preview.kleiderordnung-berlin.de";s:12:"OPENSSL_CONF";s:20:"/etc/ssl/openssl.cnf";s:21:"REDIRECT_OPENSSL_CONF";s:20:"/etc/ssl/openssl.cnf";s:24:"PHP_FCGID_MAX_REQUESTLEN";s:10:"4294967296";s:22:"PHP_FCGID_BUSY_TIMEOUT";s:5:"14400";s:20:"PHP_FCGID_IO_TIMEOUT";s:3:"600";s:9:"HTTP_HOST";s:32:"preview.kleiderordnung-berlin.de";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:3:"779";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:14:"HTTP_SEC_CH_UA";s:65:""Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"";s:21:"HTTP_SEC_CH_UA_MOBILE";s:2:"?0";s:23:"HTTP_SEC_CH_UA_PLATFORM";s:7:""Linux"";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:11:"HTTP_ORIGIN";s:40:"https://preview.kleiderordnung-berlin.de";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:15:"HTTP_USER_AGENT";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36";s:11:"HTTP_ACCEPT";s:135:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7";s:19:"HTTP_SEC_FETCH_SITE";s:11:"same-origin";s:19:"HTTP_SEC_FETCH_MODE";s:8:"navigate";s:19:"HTTP_SEC_FETCH_USER";s:2:"?1";s:19:"HTTP_SEC_FETCH_DEST";s:8:"document";s:12:"HTTP_REFERER";s:41:"https://preview.kleiderordnung-berlin.de/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip, deflate, br";s:20:"HTTP_ACCEPT_LANGUAGE";s:23:"en-US,en;q=0.9,de;q=0.8";s:4:"PATH";s:70:"/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin";s:15:"LD_LIBRARY_PATH";s:29:"/usr/local/lib:/usr/local/lib";s:16:"SERVER_SIGNATURE";s:0:"";s:11:"SERVER_NAME";s:32:"preview.kleiderordnung-berlin.de";s:11:"SERVER_ADDR";s:14:"212.90.148.122";s:11:"SERVER_PORT";s:3:"443";s:11:"REMOTE_ADDR";s:11:"217.9.48.50";s:13:"DOCUMENT_ROOT";s:57:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp";s:14:"REQUEST_SCHEME";s:5:"https";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:57:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp";s:12:"SERVER_ADMIN";s:22:"kundenservice@goneo.de";s:15:"SCRIPT_FILENAME";s:67:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp/index.php";s:11:"REMOTE_PORT";s:5:"39544";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1690451064.9440538883209228515625;s:12:"REQUEST_TIME";i:1690451064;s:4:"argv";a:0:{}s:4:"argc";i:0;s:19:"POST_ak_hp_textarea";s:0:"";s:10:"POST_ak_js";s:13:"1690450968866";}s:4:"spam";b:0;}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_recaptcha]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_spam_log]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_consent]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
-		<wp:meta_value><![CDATA[442c96a9040079cf9161df62553cdb96]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
 		<title><![CDATA[martinasteinke@posteo.de]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_contact&#038;p=168</link>
-		<pubDate>Thu, 27 Jul 2023 10:28:05 +0000</pubDate>
+		<pubDate>Wed, 02 Aug 2023 19:04:35 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=flamingo_contact&#038;p=168</guid>
 		<description></description>
@@ -1582,10 +1428,10 @@ martinasteinke@posteo.de
 Tina Steinke]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>168</wp:post_id>
-		<wp:post_date><![CDATA[2023-07-27 12:28:05]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-07-27 10:28:05]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 12:28:05]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 10:28:05]]></wp:post_modified_gmt>
+		<wp:post_date><![CDATA[2023-08-02 21:04:35]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-08-02 19:04:35]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-08-02 21:04:35]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-02 19:04:35]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[martinasteinke-posteo-de]]></wp:post_name>
@@ -1609,7 +1455,49 @@ Tina Steinke]]></content:encoded>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_last_contacted]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2023-07-27 12:28:05]]></wp:meta_value>
+		<wp:meta_value><![CDATA[2023-08-02 21:04:35]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023-07-27]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[img_0]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/img_0/</link>
+		<pubDate>Wed, 02 Aug 2023 19:02:30 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/08/img_0.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>190</wp:post_id>
+		<wp:post_date><![CDATA[2023-08-02 21:02:30]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-08-02 19:02:30]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-08-02 21:02:30]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-02 19:02:30]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[img_0]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+						<wp:attachment_url><![CDATA[http://preview.kleiderordnung-berlin.de/wp-content/uploads/2023/08/img_0.png]]></wp:attachment_url>
+							<category domain="language" nicename="de"><![CDATA[Deutsch]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023/08/img_0.png]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:938;s:6:"height";i:1028;s:4:"file";s:17:"2023/08/img_0.png";s:8:"filesize";i:180704;s:5:"sizes";a:5:{s:6:"medium";a:5:{s:4:"file";s:17:"img_0-274x300.png";s:5:"width";s:3:"274";s:6:"height";s:3:"300";s:9:"mime-type";s:9:"image/png";s:8:"filesize";s:5:"68349";}s:5:"large";a:5:{s:4:"file";s:18:"img_0-934x1024.png";s:5:"width";s:3:"934";s:6:"height";s:4:"1024";s:9:"mime-type";s:9:"image/png";s:8:"filesize";s:6:"622060";}s:9:"thumbnail";a:5:{s:4:"file";s:17:"img_0-150x150.png";s:5:"width";s:3:"150";s:6:"height";s:3:"150";s:9:"mime-type";s:9:"image/png";s:8:"filesize";s:5:"23125";}s:12:"medium_large";a:5:{s:4:"file";s:17:"img_0-768x842.png";s:5:"width";s:3:"768";s:6:"height";s:3:"842";s:9:"mime-type";s:9:"image/png";s:8:"filesize";s:6:"438040";}s:18:"cmplz_banner_image";a:5:{s:4:"file";s:17:"img_0-350x100.png";s:5:"width";s:3:"350";s:6:"height";s:3:"100";s:9:"mime-type";s:9:"image/png";s:8:"filesize";s:5:"25889";}}s:10:"image_meta";a:11:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[tiny_compress_images]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:6:{i:0;a:3:{s:5:"input";a:2:{s:4:"size";i:705340;s:4:"type";s:9:"image/png";}s:6:"output";a:5:{s:4:"size";i:180704;s:4:"type";s:9:"image/png";s:5:"width";i:938;s:6:"height";i:1028;s:5:"ratio";d:0.2561999999999999833022457096376456320285797119140625;}s:3:"end";i:1691002959;}s:6:"medium";a:3:{s:5:"input";a:2:{s:4:"size";i:68349;s:4:"type";s:9:"image/png";}s:6:"output";a:5:{s:4:"size";i:21754;s:4:"type";s:9:"image/png";s:5:"width";i:274;s:6:"height";i:300;s:5:"ratio";d:0.3183000000000000273558953267638571560382843017578125;}s:3:"end";i:1691002961;}s:5:"large";a:3:{s:5:"input";a:2:{s:4:"size";i:622060;s:4:"type";s:9:"image/png";}s:6:"output";a:5:{s:4:"size";i:164443;s:4:"type";s:9:"image/png";s:5:"width";i:934;s:6:"height";i:1024;s:5:"ratio";d:0.264400000000000023891999489933368749916553497314453125;}s:3:"end";i:1691002964;}s:9:"thumbnail";a:3:{s:5:"input";a:2:{s:4:"size";i:23125;s:4:"type";s:9:"image/png";}s:6:"output";a:5:{s:4:"size";i:8769;s:4:"type";s:9:"image/png";s:5:"width";i:150;s:6:"height";i:150;s:5:"ratio";d:0.37919999999999998152588887023739516735076904296875;}s:3:"end";i:1691002960;}s:12:"medium_large";a:3:{s:5:"input";a:2:{s:4:"size";i:438040;s:4:"type";s:9:"image/png";}s:6:"output";a:5:{s:4:"size";i:120035;s:4:"type";s:9:"image/png";s:5:"width";i:768;s:6:"height";i:842;s:5:"ratio";d:0.27400000000000002131628207280300557613372802734375;}s:3:"end";i:1691002962;}s:18:"cmplz_banner_image";a:0:{}}]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1720,7 +1608,7 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 		<guid isPermaLink="false">/?page_id=3</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>Diese Datenschutzerklärung klärt darüber auf, wie Ihre Daten geschützt und zu welchen Zwecken sie vearbeitet werden. Wir befolgen dabei die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO).</p>
+<p>Diese Datenschutzerklärung klärt darüber auf, wie deine Daten geschützt und zu welchen Zwecken sie vearbeitet werden. Wir befolgen dabei die Regeln des Bundesdatenschutzgesetzes (BDSG) und der europäischen Datenschutzgrundverordnung (DSGVO).</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -1776,7 +1664,11 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Daten von Social Media Diensten, wie beispielsweise Instagram, werden ausschließlich nach Zustimmung unser Besucher:innen angezeigt. Dies erfolgt mithilfe des Dienstleisters Juicer. In diesem Zuge werden möglicherweise persönliche Daten in die USA übertragen. Vorbehaltlich gesetzlicher oder vertraglicher Erlaubnisse, verarbeiten oder lassen wir die Daten in einem Drittland nur beim Vorliegen der besonderen Voraussetzungen der Art. 44 ff. DSGVO verarbeiten. D.h. die Verarbeitung erfolgt z.B. auf Grundlage besonderer Garantien, wie der offiziell anerkannten Feststellung eines der EU entsprechenden Datenschutzniveaus (z.B. für die USA durch das „Privacy Shield“) oder Beachtung offiziell anerkannter spezieller vertraglicher Verpflichtungen (so genannte „Standardvertragsklauseln“).</p>
+<p>Daten von Social Media Diensten, wie beispielsweise Instagram, werden ausschließlich nach Zustimmung unser Besucher:innen angezeigt. Dies erfolgt mithilfe des Dienstleisters Juicer. In diesem Zuge werden möglicherweise persönliche Daten in die USA übertragen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Die Datenschutzerklärung von Juicer ist hier nachzulesen: <br><a href="https://www.juicer.io/eu-privacy" target="_blank" rel="noreferrer noopener nofollow">https://www.juicer.io/eu-privacy</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -1785,14 +1677,6 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 
 <!-- wp:paragraph -->
 <p>Wenn Sie uns über das Kontaktformular, per E-Mail oder auf anderem elektronischen Wege (z.B. Messenger) kontaktieren, speichern wir die von dir gemachten Angaben, um Ihre Anfrage beantworten und mögliche Anschlussfragen stellen zu können. Im Falle eines konkreten Beratungswunsches oder einer Terminvereinbarung werden deine Angaben zur Durchführung vorvertraglicher Maßnahmen und ggf. zur Vertragserfüllung verwendet.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Über ein Kontaktformular (falls vorhanden) kannst du deinen Namen, deine E-Mail-Adresse, deine Telefonnummer und eine frei formulierte Nachricht übermitteln. Zudem werden Datum und Uhrzeit der Kontaktaufnahme sowie deine IP-Adresse gespeichert. Dies wird im folgenden Abschnitt „Bereitstellung der Website und Auswertung technischer Daten“ näher erläutert.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Wir weisen darauf hin, dass jegliche Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Bitte achte daher auch bei deinen eigenen Kommunikation stets auf Datensparsamkeit und verwende möglichst aktuelle Software mit aktuellen Sicherheitsupdates!</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":4} -->
@@ -1808,10 +1692,6 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Wir verwenden anonyme bzw. anonymisierte technische Informationen für statistische Zwecke. Sie helfen uns bei der Optimierung des Angebots und der Technik. Für die statistische Auswertung wird ggf. die Open-Source-Software Matomo (ehemals Piwik) eingesetzt. Dabei werden die erfassten IP-Adressen anonymisiert, indem die letzten beiden Bytes jeder IP-Adresse verworfen werden. Die Software läuft dabei ausschließlich auf den Servern unserer Webseite. Eine Speicherung findet nur dort statt.&nbsp;<strong>Es werden keine Daten an Dritte weitergegeben.</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
 <p>Wir behalten uns zudem das Recht vor, die Server-Logfiles bei Verdacht auf eine rechtswidrige Nutzung unseres Angebotes nachträglich zu kontrollieren.</p>
 <!-- /wp:paragraph -->
 
@@ -1820,14 +1700,14 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Um zu gewährleisten, dass unsere Datenschutzerklärung stets den aktuellen gesetzlichen Vorgaben entspricht, behalten wir uns jederzeit Änderungen vor. Das gilt auch für den Fall, dass die Datenschutzerklärung aufgrund neuer oder überarbeiteter Leistungen, zum Beispiel neuer Serviceleistungen, angepasst werden muss. Die neue Datenschutzerklärung greift dann bei Ihrem nächsten Besuch auf unserem Angebot.</p>
+<p>Um zu gewährleisten, dass unsere Datenschutzerklärung stets den aktuellen gesetzlichen Vorgaben entspricht, behalten wir uns jederzeit Änderungen vor. Das gilt auch für den Fall, dass die Datenschutzerklärung aufgrund neuer oder überarbeiteter Leistungen, zum Beispiel neuer Serviceleistungen, angepasst werden muss. Die neue Datenschutzerklärung greift dann bei deinem nächsten Besuch auf unserem Angebot.</p>
 <!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>3</wp:post_id>
 		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 21:57:05]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 19:57:05]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 17:15:39]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 15:15:39]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[datenschutzerklaerung]]></wp:post_name>
@@ -1906,6 +1786,18 @@ Dann buche gern einen kostenlosen Kennenlerntermin!]]></wp:meta_value>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_page_contact_job_title]]></wp:meta_key>
 		<wp:meta_value><![CDATA[page_contact_job_title]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[4]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -2015,104 +1907,6 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[inline_featured_image]]></wp:meta_key>
 		<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Privacy Statement]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/en/privacy-statement/</link>
-		<pubDate>Mon, 10 Jul 2023 15:49:03 +0000</pubDate>
-		<dc:creator><![CDATA[tina]]></dc:creator>
-		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?page_id=68</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>68</wp:post_id>
-		<wp:post_date><![CDATA[2023-07-10 17:49:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-07-10 15:49:03]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 21:57:14]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 19:57:14]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[privacy-statement]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="language" nicename="en"><![CDATA[English]]></category>
-		<category domain="post_translations" nicename="pll_64ac286fdbd71"><![CDATA[pll_64ac286fdbd71]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_cmplz_scanned_post]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[page_intro_headline]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_page_intro_headline]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page_intro_headline]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[page_intro_text]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_page_intro_text]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page_intro_text]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[page_mission_headline]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_page_mission_headline]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page_mission_headline]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[page_mission_text]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_page_mission_text]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page_mission_text]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[page_cta_text]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_page_cta_text]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page_cta_text]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[page_contact_teaser_text]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_page_contact_teaser_text]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page_contact_teaser_text]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[page_contact_job_title]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_page_contact_job_title]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page_contact_job_title]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -2311,8 +2105,8 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:post_id>132</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 18:16:56]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 16:16:56]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 15:56:48]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:48]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-07 23:01:12]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-07 21:01:12]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[shopping-tour]]></wp:post_name>
@@ -2339,7 +2133,7 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[offer_dom_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		<wp:meta_value><![CDATA[angebote-shopping-tour]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_offer_dom_id]]></wp:meta_key>
@@ -2380,6 +2174,22 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
 		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[inline_featured_image]]></wp:meta_key>
+		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Shopping Tour]]></title>
@@ -2393,8 +2203,8 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		<wp:post_id>133</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 18:17:36]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 16:17:36]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 15:56:44]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:44]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-07 23:01:27]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-07 21:01:27]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[shopping-tour-2]]></wp:post_name>
@@ -2414,7 +2224,7 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[offer_dom_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		<wp:meta_value><![CDATA[angebote-shopping-tour]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[offer_features]]></wp:meta_key>
@@ -2468,6 +2278,18 @@ Every piece of your clothing is a valuable part to complete your fashion puzzle.
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[inline_featured_image]]></wp:meta_key>
 		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -2812,8 +2634,8 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:post_id>139</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 19:28:39]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 17:28:39]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 15:56:18]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:18]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 11:15:51]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 09:15:51]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[outfit-consulting-fuer-start-ups-mit-nachhaltigem-fokus]]></wp:post_name>
@@ -2886,6 +2708,30 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
 		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[offer_short_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Startups]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_offer_short_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[offer_short_title]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[inline_featured_image]]></wp:meta_key>
+		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Professional Outfit Consultation for Sustainability-focused Startups]]></title>
@@ -2899,8 +2745,8 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 		<wp:post_id>141</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-13 19:29:19]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-13 17:29:19]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 15:56:13]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 13:56:13]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 11:16:04]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 09:16:04]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[professional-outfit-consultation-for-sustainability-focused-startups]]></wp:post_name>
@@ -2976,6 +2822,26 @@ Das richtige Outfit strahlt Kompetenz und Authentizität aus, macht Dich stark, 
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[inline_featured_image]]></wp:meta_key>
 		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[offer_short_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Startups]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_offer_short_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[offer_short_title]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -3463,30 +3329,351 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[Custom Styles]]></title>
-		<link>https://preview.kleiderordnung-berlin.de/wp-global-styles-twentytwentythree/</link>
-		<pubDate>Thu, 30 Mar 2023 06:17:26 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">/2022/11/09/wp-global-styles-twentytwentythree/</guid>
+		<title><![CDATA[[your-subject]]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=165</link>
+		<pubDate>Thu, 27 Jul 2023 09:44:25 +0000</pubDate>
+		<dc:creator><![CDATA[]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?post_type=flamingo_inbound&#038;p=165</guid>
 		<description></description>
-		<content:encoded><![CDATA[{"styles":[],"settings":[],"isGlobalStylesUserThemeJSON":true,"version":2}]]></content:encoded>
+		<content:encoded><![CDATA[Ingo Otto
+fraktalisman@gmail.com
+Hallo liebes Team von Kleiderordnung,
+toll dass es jetzt endlich weiter geht!
+
+Das hier ist ein Test des Kontaktformulars aus Sicht eines legitimen Benutzers mit echter E-Mail-Adresse.
+
+Außerdem hätte ich gerne Infos zum Style Visitt, zur ONline Styling Beratung und zur Ordnung im Schrank.
+Vielen Dank!
+
+Liebe Grüße
+Ingo
+Style Visit
+Online Styling Beratung
+Ordnung im Schrank
+5
+217.9.48.50
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+https://preview.kleiderordnung-berlin.de/
+27. Juli 2023
+11:44
+KleiderOrdnung Berlin
+https://preview.kleiderordnung-berlin.de
+kontakt@ingo-steinke.de]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>5</wp:post_id>
-		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-03-30 08:17:26]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_modified_gmt>
+		<wp:post_id>165</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-27 11:44:25]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-27 09:44:25]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-07-27 11:44:25]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-07-27 09:44:25]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[wp-global-styles-twentytwentythree]]></wp:post_name>
+		<wp:post_name><![CDATA[your-subject-4]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[wp_global_styles]]></wp:post_type>
+		<wp:post_type><![CDATA[flamingo_inbound]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="wp_theme" nicename="twentytwentythree"><![CDATA[twentytwentythree]]></category>
-						</item>
+										<category domain="flamingo_inbound_channel" nicename="kontaktformular-1"><![CDATA[Kontaktformular deutsch (de_DE)]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_submission_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[mail_sent]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_subject]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-subject]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-name] <[your-email]>]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-name]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_from_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[your-email]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_name]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Ingo Otto]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_email]]></wp:meta_key>
+		<wp:meta_value><![CDATA[fraktalisman@gmail.com]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_nachricht]]></wp:meta_key>
+		<wp:meta_value><![CDATA[Hallo liebes Team von Kleiderordnung,
+toll dass es jetzt endlich weiter geht!
+
+Das hier ist ein Test des Kontaktformulars aus Sicht eines legitimen Benutzers mit echter E-Mail-Adresse.
+
+Außerdem hätte ich gerne Infos zum Style Visitt, zur ONline Styling Beratung und zur Ordnung im Schrank.
+Vielen Dank!
+
+Liebe Grüße
+Ingo]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-style-visit]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:11:"Style Visit";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-online-style-beratung]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:23:"Online Styling Beratung";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-ordnung-im-schrank]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:18:"Ordnung im Schrank";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-shopping-tour]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-start-up-consulting]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-gutschein]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-styling-abo]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_field_anfrage-fashion-walking-tour]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_fields]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:11:{s:4:"Name";N;s:5:"Email";N;s:9:"Nachricht";N;s:19:"anfrage-style-visit";N;s:29:"anfrage-online-style-beratung";N;s:26:"anfrage-ordnung-im-schrank";N;s:21:"anfrage-shopping-tour";N;s:27:"anfrage-start-up-consulting";N;s:17:"anfrage-gutschein";N;s:19:"anfrage-styling-abo";N;s:28:"anfrage-fashion-walking-tour";N;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:19:{s:13:"serial_number";i:5;s:9:"remote_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36";s:3:"url";s:41:"https://preview.kleiderordnung-berlin.de/";s:4:"date";s:13:"27. Juli 2023";s:4:"time";s:5:"11:44";s:7:"post_id";s:0:"";s:9:"post_name";s:0:"";s:10:"post_title";s:0:"";s:8:"post_url";s:0:"";s:11:"post_author";s:0:"";s:17:"post_author_email";s:0:"";s:10:"site_title";s:21:"KleiderOrdnung Berlin";s:16:"site_description";s:0:"";s:8:"site_url";s:40:"https://preview.kleiderordnung-berlin.de";s:16:"site_admin_email";s:23:"kontakt@ingo-steinke.de";s:10:"user_login";s:0:"";s:10:"user_email";s:0:"";s:17:"user_display_name";s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_akismet]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:2:{s:7:"comment";a:67:{s:14:"comment_author";s:9:"Ingo Otto";s:20:"comment_author_email";s:22:"fraktalisman@gmail.com";s:18:"comment_author_url";s:0:"";s:15:"comment_content";s:334:"Hallo liebes Team von Kleiderordnung,
+toll dass es jetzt endlich weiter geht!
+
+Das hier ist ein Test des Kontaktformulars aus Sicht eines legitimen Benutzers mit echter E-Mail-Adresse.
+
+Außerdem hätte ich gerne Infos zum Style Visitt, zur ONline Styling Beratung und zur Ordnung im Schrank.
+Vielen Dank!
+
+Liebe Grüße
+Ingo";s:4:"blog";s:39:"http://preview.kleiderordnung-berlin.de";s:9:"blog_lang";s:5:"de_DE";s:12:"blog_charset";s:5:"UTF-8";s:7:"user_ip";s:11:"217.9.48.50";s:10:"user_agent";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36";s:8:"referrer";s:41:"https://preview.kleiderordnung-berlin.de/";s:12:"comment_type";s:12:"contact-form";s:16:"comment_date_gmt";s:25:"2023-07-27T09:44:25+00:00";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"REQUEST_URI";s:1:"/";s:18:"HTTP_AUTHORIZATION";s:0:"";s:5:"HTTPS";s:2:"on";s:11:"SSL_TLS_SNI";s:32:"preview.kleiderordnung-berlin.de";s:12:"OPENSSL_CONF";s:20:"/etc/ssl/openssl.cnf";s:21:"REDIRECT_OPENSSL_CONF";s:20:"/etc/ssl/openssl.cnf";s:24:"PHP_FCGID_MAX_REQUESTLEN";s:10:"4294967296";s:22:"PHP_FCGID_BUSY_TIMEOUT";s:5:"14400";s:20:"PHP_FCGID_IO_TIMEOUT";s:3:"600";s:9:"HTTP_HOST";s:32:"preview.kleiderordnung-berlin.de";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:3:"779";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:14:"HTTP_SEC_CH_UA";s:65:""Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"";s:21:"HTTP_SEC_CH_UA_MOBILE";s:2:"?0";s:23:"HTTP_SEC_CH_UA_PLATFORM";s:7:""Linux"";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:11:"HTTP_ORIGIN";s:40:"https://preview.kleiderordnung-berlin.de";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:15:"HTTP_USER_AGENT";s:101:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36";s:11:"HTTP_ACCEPT";s:135:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7";s:19:"HTTP_SEC_FETCH_SITE";s:11:"same-origin";s:19:"HTTP_SEC_FETCH_MODE";s:8:"navigate";s:19:"HTTP_SEC_FETCH_USER";s:2:"?1";s:19:"HTTP_SEC_FETCH_DEST";s:8:"document";s:12:"HTTP_REFERER";s:41:"https://preview.kleiderordnung-berlin.de/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip, deflate, br";s:20:"HTTP_ACCEPT_LANGUAGE";s:23:"en-US,en;q=0.9,de;q=0.8";s:4:"PATH";s:70:"/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin";s:15:"LD_LIBRARY_PATH";s:29:"/usr/local/lib:/usr/local/lib";s:16:"SERVER_SIGNATURE";s:0:"";s:11:"SERVER_NAME";s:32:"preview.kleiderordnung-berlin.de";s:11:"SERVER_ADDR";s:14:"212.90.148.122";s:11:"SERVER_PORT";s:3:"443";s:11:"REMOTE_ADDR";s:11:"217.9.48.50";s:13:"DOCUMENT_ROOT";s:57:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp";s:14:"REQUEST_SCHEME";s:5:"https";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:57:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp";s:12:"SERVER_ADMIN";s:22:"kundenservice@goneo.de";s:15:"SCRIPT_FILENAME";s:67:"/web/1/000/121/409/473066/htdocs/kleiderordnung.berlin/wp/index.php";s:11:"REMOTE_PORT";s:5:"39544";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1690451064.9440538883209228515625;s:12:"REQUEST_TIME";i:1690451064;s:4:"argv";a:0:{}s:4:"argc";i:0;s:19:"POST_ak_hp_textarea";s:0:"";s:10:"POST_ak_js";s:13:"1690450968866";}s:4:"spam";b:0;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_recaptcha]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_spam_log]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_consent]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[442c96a9040079cf9161df62553cdb96]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Privacy Statement]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/en/privacy-statement/</link>
+		<pubDate>Mon, 10 Jul 2023 15:49:03 +0000</pubDate>
+		<dc:creator><![CDATA[tina]]></dc:creator>
+		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?page_id=68</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>This privacy statement informs you how we protect your data, and which kind of data is used for which purpose, conforming to the regulations of the German Federal Data Protection Act (BDSG) and the European General Data Protection Regulation (GDPR).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Responsbile content provider:</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Martina Steinke<br>Donaustr. 83<br>12043 Berlin<br>Germany<br>Phone: <a href="tel:+491636823820">+49 (0) 163 682 382 0</a><br>Email: <a href="mailto:martinasteinke@posteo.de">martinasteinke@posteo.de</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Your legal rights: access, rectification, erasure, objection</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You have the right to object to the processing of your personal data, the right to request copies of your personal data, and the right to request that we erase or rectify your personal data, unless this data is necessary for complying with a statutory retention obligation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">What data is collected and processed?</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Personal identification information will only be collected as far as this is necessary for accounting, customer services and fulfilment of a contract. Personal data will not be processed prior to the users' consent unless this is impossible for legal reasons or reasons of technological impracticability.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Legal basis for processing personal data</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Processing of personal data for the fulfilment of a contract is based on Article 6(1)(b) of the GDPR.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Personal data will only be stored as long as necessary in compliance with statutory storage periods. Once this time period has expired, the data will be blocked or erased accordingly.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Our own servers provide web fonts, images, and scripts without making a request to Google or other third-party service providers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Social Media</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Social media data, for example, images and videos from Instagram, will only be shown after explicit consent by the website visitors. This data will be provided by the service provider Juicer. This might include the transfer of personal data to the USA. Juicer's privacy statement can be found at <br><a href="https://www.juicer.io/eu-privacy" target="_blank" rel="noreferrer noopener nofollow">https://www.juicer.io/eu-privacy</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Contact form and electronic communication</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>When you contact us using the contact form, email or any other electronic channel (e.g. messenger), your message and contact data will be saved for the purpose of getting an answer or further inquiries. In case of a specific consultation or appointment request, your data will be used for pre-contractual measures and fulfilment of contracts. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Website provision and analysis of technical data (logfiles)</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Accessing this website will result in logging data necessary for this service's technical provision: the website address, date and time, amount of transferred data, web browser version, IP address, and possible referrers from other websites linking to the current website. This data will not be stored together with personal data. This data will not be processed for marketing purposes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Processing and temporarily storing this kind of data is based on Article 6(1)(f) of the GDPR. Apart from providing technological functionality, this data might be used to prevent and prosecute illegal use of this service.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Changes to this privacy policy</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This privacy policy is kept under regular review. Updates will be placed on this place and will become valid on the next visit of this website.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>68</wp:post_id>
+		<wp:post_date><![CDATA[2023-07-10 17:49:03]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-07-10 15:49:03]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-08-08 17:16:15]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-08 15:16:15]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[privacy-statement]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="language" nicename="en"><![CDATA[English]]></category>
+		<category domain="post_translations" nicename="pll_64ac286fdbd71"><![CDATA[pll_64ac286fdbd71]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[cmplz_hide_cookiebanner]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_cmplz_scanned_post]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_intro_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_intro_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_intro_headline]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_intro_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_intro_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_intro_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_mission_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_mission_headline]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_mission_headline]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_mission_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_mission_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_mission_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_cta_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_cta_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_cta_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_contact_teaser_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_contact_teaser_text]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_contact_teaser_text]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[page_contact_job_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_page_contact_job_title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page_contact_job_title]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
 					<item>
 		<title><![CDATA[Impressum]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/impressum/</link>
@@ -4769,6 +4956,31 @@ nicht Teil des Posts
 		</wp:postmeta>
 							</item>
 					<item>
+		<title><![CDATA[Custom Styles]]></title>
+		<link>https://preview.kleiderordnung-berlin.de/wp-global-styles-twentytwentythree/</link>
+		<pubDate>Thu, 30 Mar 2023 06:17:26 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/2022/11/09/wp-global-styles-twentytwentythree/</guid>
+		<description></description>
+		<content:encoded><![CDATA[{"styles":[],"settings":[],"isGlobalStylesUserThemeJSON":true,"version":2}]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5</wp:post_id>
+		<wp:post_date><![CDATA[2023-03-30 08:17:26]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-03-30 08:17:26]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-03-30 06:17:26]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[wp-global-styles-twentytwentythree]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[wp_global_styles]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="wp_theme" nicename="twentytwentythree"><![CDATA[twentytwentythree]]></category>
+						</item>
+					<item>
 		<title><![CDATA[Kontaktformular deutsch (de_DE)]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/?post_type=wpcf7_contact_form&#038;p=16</link>
 		<pubDate>Mon, 08 May 2023 07:39:25 +0000</pubDate>
@@ -4936,6 +5148,10 @@ Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) ges
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_flamingo]]></wp:meta_key>
 		<wp:meta_value><![CDATA[a:1:{s:7:"channel";i:11;}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[03f509069db180d34be7adc158640ebb0da5f841]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -5105,6 +5321,10 @@ Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) ges
 		<wp:meta_key><![CDATA[_locale]]></wp:meta_key>
 		<wp:meta_value><![CDATA[de_DE]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_hash]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a756dca09ff1ffbfbbe5af9fee793656a4dbc935]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 				</channel>
 </rss>
@@ -5112,6 +5332,11 @@ Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) ges
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
+Object Caching 0/27 objects using disk
+Page Caching using disk: enhanced{w3tc_pagecache_reject_reason}
+Lazy Loading (WP_ADMIN)
+Minified using disk (wp-admin)
+Database Caching using disk (Request-wide modification query)
 
-Served from: preview.kleiderordnung-berlin.de @ 2023-07-31 17:39:45 by W3 Total Cache
+Served from: preview.kleiderordnung-berlin.de @ 2023-08-08 18:28:48 by W3 Total Cache
 -->

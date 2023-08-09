@@ -2,96 +2,17 @@
  * Offers Section with Sinlge Offer Articles
  * - main offers section
  * - further offers section
+ * - decoration background, possibly overflowing behind subsequent content
  *
  * @package KleiderOrdnung
  * @author openmindculture
  */
 
-:root {
-  --parallax-scale-offers: 0.1;
-  --parallax-min-height-offers: 255rem;
-  /* TODO inwiefern lässt sich folgendes generisch aus der obigen bzw. gemessenen Höhe ermitteln? */
-  --container-offset-adjustment-offers: 16rem;
-  /* TODO entsprechendes negative margin-bottom wäre eleganterweise auch generisch zu ermitteln? */
-  /* ^ wird es ja schon, aber das passt so nicht! bzw. müsste auch anhand der JS Messung angepasst werden! */
-}
-
-@media (prefers-reduced-motion) {
-  :root {
-    --parallax-scale-offers: 0;
-  }
-}
-
-/* TODO obsolet? */
-.offers, .offers__layer, .offers__layer--content, .offers__layer--decoration {
-  --parallax-scale: var(--parallax-scale-offers);
-  --parallax-min-height: var(--parallax-min-height-offers);
-  --container-offset-adjustment: var(--container-offset-adjustment-offers);
-}
-
-@mixin decoration-parallax-group .offers {
+.offers {
   width: var(--width-full);
   max-width: var(--width-max);
   margin-left: auto;
   margin-right: auto;
-}
-
-@mixin decoration-parallax-layer .offers__layer {}
-
-@mixin decoration-parallax-layer-foreground .offers__layer--content {}
-
-@mixin decoration-parallax-layer-background .offers__layer--decoration {
-  background-image:
-    var(--background-image-pita),
-    var(--background-image-salmon),
-    var(--background-image-lilac);
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat;
-  background-position:
-    120% 0%,
-    -20% 50%,
-    120% 70%;
-  background-size:
-    40% 40%,
-    40% 40%,
-    40% 40%;
-}
-
-/* TODO test, fine tune, clean up and refactor
-    using variables, rem, percentage where possible
-
-    bg height größer als 100vh damit dekos nicht überlappen,
-  aber deutluch kleiner als fg height damit noch Parallax Effekt
-  min-height: min(200vh, var(--parallax-min-height)
-  und dann ggf noch Background Position der unteren (u. ggf. mittleren) Deko höher damit unten nicht überragt
-    */
-
-@media (min-width: 1400px) {
-  .offers__layer--decoration {
-    background-position:
-      100% 0%,
-      0 50%,
-      100% 90%;
-    background-size:
-      45% 45%,
-      45% 45%,
-      45% 45%;
-  }
-}
-
-@media (min-width: 2200px) {
-  .offers__layer--decoration {
-    background-position:
-      110% 0%,
-      10% 50%,
-      100% 90%;
-    background-size:
-      45% 45%,
-      45% 45%,
-      40% 40%;
-  }
 }
 
 @mixin typography-heading-h2 .offers__headline {

@@ -2,10 +2,10 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 2.6.0
+ * @version 2.7.0
  *
  * @wordpress-plugin
- * Version: 2.6.0
+ * Version: 2.7.0
  * Tested up to: 6.3
  * Plugin Name: KleiderOrdnung Dashboard Widget
  * Text Domain: kleiderOrdnung-dashboard-widget
@@ -39,7 +39,7 @@ function kleiderordnung_add_dashboard_widget()
 
     $kleiderordnung_dashboardContentOutput.= '<b>Inhalte bearbeiten / aktualisieren</b>';
     $kleiderordnung_dashboardContentOutput.= '<ul>';
-    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php">News-Beiträge bearbeiten</a></li>'; // TODO use generic path url
+    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php">News-Beiträge bearbeiten</a></li>';
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=story">Stories (Testimonials) bearbeiten</a></li>';
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=offer">Angebote bearbeiten</a></li>';
     $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=page">Seiten bearbeiten</a> (Home, AGB, Impressum, Datenschutz, etc.)<br>';
@@ -58,7 +58,6 @@ function kleiderordnung_add_dashboard_widget()
 
     $kleiderordnung_dashboardContentOutput.= '<b>Daten sichern und wiederherstellen</b><br>';
 
-    // TODO installation type ==> add import/export direct link(s)
     $kleiderordnung_dashboardContentOutput.= '- <a href="/wp-admin/export.php">Inhalte exportieren</a> /';
     $kleiderordnung_dashboardContentOutput.= '<a href="/wp-admin/admin.php?import=wordpress">importieren</a> ...<br>';
     $kleiderordnung_dashboardContentOutput.= '<br>';
@@ -71,15 +70,6 @@ function kleiderordnung_add_dashboard_widget()
     $kleiderordnung_dashboardContentOutput.= 'Theme-Version: ' . $currentThemeName . ' ' . $currentThemeVersion . '<br>';
     $kleiderordnung_dashboardContentOutput.= 'WordPress-Version: ' . esc_html($wp_version) . '<br>';
     $kleiderordnung_dashboardContentOutput.= 'PHP-Version: ' . esc_html(phpversion()) . '<br>';
-
-    // TODO check and warn if required plugins are missing, like
-    // Advanced Custom Fields
-    // Contact Form 7
-    // Flamingo
-    // Polylang
-    // any performance / caching plugin like W3TC, Rocket, ...
-    // any image optimizer like Tinify TinyPNG webp
-
     echo $kleiderordnung_dashboardContentOutput;
   }
 
