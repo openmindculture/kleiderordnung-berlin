@@ -13,9 +13,9 @@ export function kleiderordnung_fetchAndAppendStyleFromFile(styleFileUrl, config)
       var style = document.head.appendChild(document.createElement('style'));
       style.textContent = text;
     }).catch(function(err) {
-    if (window.kleiderordnung.state.feedStyleFetchRetryCount < config.feedStyleMaxFetchRetries) {
-      window.kleiderordnung.state.feedStyleFetchRetryCount++;
-      window.setTimeout(config.feedStyleFetchRetryTimeoutMilliseconds, function(){
+      if (window.kleiderordnung.state.feedStyleFetchRetryCount < config.feedStyleMaxFetchRetries) {
+        window.kleiderordnung.state.feedStyleFetchRetryCount++;
+        window.setTimeout(config.feedStyleFetchRetryTimeoutMilliseconds, function(){
         kleiderordnung_fetchAndAppendStyleFromFile(styleFileUrl, config);
       });
     }
