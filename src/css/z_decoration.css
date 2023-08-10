@@ -30,11 +30,16 @@ body.page.home footer {
 }
 
 body.page.home main::after { /* decoration-parallax-layer-background */
-  /* border: solid 3px red; */ /* optional debug border */
+  border: solid 3px red; /* TODO remove debug style */ /* optional debug border */
   top: 180vh; /* todo adjust, and optionally fine-tune, using JS measurements */
+  top: 0;
   height: 3000px;  /* todo adjust, and optionally fine-tune, using JS measurements */
   width: auto;
   transform-origin: center left;
+  transform-origin: top left;
+  /* TODO
+      selbst top: 0; transform-origin: top left; garantiert nicht, dass die Dekoration ganz oben anfängt, sondern sie ragt über ihren Container hinaus!
+      */
   transform: translateZ(-1px) scale(2);
   content: "";
   position: absolute;
