@@ -15,10 +15,5 @@ export function kleiderordnung_observeWaypointAnchorCallback(intersectingEntries
     if (currentCorrespondingNavigationItem && currentCorrespondingNavigationItem.classList) {
       currentCorrespondingNavigationItem.classList.add('active');
     }
-    if (history.pushState) {
-      history.pushState(null, null, '#' + targetId);
-    } else {
-      window.location.hash = '#' + targetId;
-    }
   }
 }
