@@ -22,6 +22,7 @@
     "csstools/use-nesting": "ignore",
     "declaration-block-no-duplicate-properties": null,
     "declaration-block-no-redundant-longhand-properties": null,
+    "declaration-empty-line-before": null,
     "font-family-name-quotes": null,
     "keyframes-name-pattern": null,
     "media-feature-name-no-vendor-prefix": null,
