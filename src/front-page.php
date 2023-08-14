@@ -16,6 +16,7 @@
     include( KLEIDERORDNUNG_DIR . '/inc/structure/news.php');
     include( KLEIDERORDNUNG_DIR . '/inc/structure/socialmedia.php');
     include( KLEIDERORDNUNG_DIR . '/inc/structure/contact.php');
+    include( KLEIDERORDNUNG_DIR . '/inc/structure/z_decoration.php');
     echo '</main>';
     include( KLEIDERORDNUNG_DIR . '/inc/structure/footer.php');
   ?>

@@ -29,17 +29,17 @@ body.page.home footer {
   z-index: 2;
 }
 
-body.page.home main::after { /* decoration-parallax-layer-background */
-  border: solid 3px red; /* TODO remove debug style */ /* optional debug border */
-  margin: 0 auto;
+body.page.home .decoration__container { /* decoration-parallax-layer-background */
+  content: "";
+  position: absolute;
+  border: solid 3px yellow; /* TODO remove debug style */ /* optional debug border */
+  margin: 0;
+  transform-origin: top left;
+  transform: translateZ(-1px) scale(2);
   top: 1800px;
   height: 3000px;
   width: auto;
-  transform-origin: center left;
-  transform-origin: top left;
-  transform: translateZ(-1px) scale(2);
-  content: "";
-  position: absolute;
+  max-width: 99%; /* TODO remove debug style and replace with proper Safari hack if needed */
   bottom: 0;
   left: 0;
   right: 0;
@@ -77,34 +77,35 @@ body.page.home main::after { /* decoration-parallax-layer-background */
 }
 
 @media (min-width: 768px) {
-  body.page.home main::after {
+  body.page.home .decoration__container {
     top: 2000px;
     height: 3600px;
   }
 }
 
 @media (min-width: 824px) {
-  body.page.home main::after {
+  body.page.home .decoration__container {
     top: 2000px;
     height: 4000px;
   }
 }
 
 @media (min-width: 1024px) {
-  body.page.home main::after {
+  body.page.home .decoration__container {
     height: 3000px;
   }
 }
 
 
 @media (min-width: 1920px) {
-  body.page.home main::after {
+  body.page.home .decoration__container {
     max-width: 1920px;
+    margin: 0 auto;
   }
 }
 
 @media (prefers-reduced-motion) {
-  body.page.home main::after {
+  body.page.home .decoration__container {
     transform: translateZ(0);
   }
 }
