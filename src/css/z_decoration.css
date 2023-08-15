@@ -32,14 +32,13 @@ body.page.home footer {
 body.page.home .decoration__container { /* decoration-parallax-layer-background */
   content: "";
   position: absolute;
-  border: solid 3px yellow; /* TODO remove debug style */ /* optional debug border */
   margin: 0;
   transform-origin: top left;
   transform: translateZ(-1px) scale(2);
-  top: 1800px;
-  height: 3000px;
+  top: 112rem; /* 1800px; */
+  height: 187rem; /* 2992px */
   width: auto;
-  max-width: 99%; /* TODO remove debug style and replace with proper Safari hack if needed */
+  max-width: 100%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -61,45 +60,44 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
     var(--background-image-apricot),
     var(--background-image-salmon2);
   background-position:
-    100% 0%,      /* top right pita shape */
-    -20% 800px,   /* top left salon shape */
-    110% 900px,   /* middle right lilac shape */
-    20% 1999px,   /* blue dots */
-    0% 1800px,    /* lower left apricot shape */
-    120% 1900px;  /* lower right salmon shape */
+    100% 0%,       /* top right pita shape */
+    -20% 800px,    /* top left salon shape */
+    110% 900px,    /* middle right lilac shape */
+    20% 1999px,    /* blue dots */
+    0% 1800px,     /* lower left apricot shape */
+    120% 1900px;   /* lower right salmon shape */
   background-size:
-    500px auto,
+    31.25rem auto, /* 500px auto, */
     40% 40%,
     40% 40%,
-    100px auto,
+    6.25rem auto,  /* 100px auto, */
     30% 30%,
     30% 30%;
 }
 
 @media (min-width: 768px) {
   body.page.home .decoration__container {
-    top: 2000px;
-    height: 3600px;
+    top: 125rem;    /* 2000px; */
+    height: 225rem; /* 3600px; */
   }
 }
 
 @media (min-width: 824px) {
   body.page.home .decoration__container {
-    top: 2000px;
-    height: 4000px;
+    height: 250rem; /* 4000px; */
   }
 }
 
 @media (min-width: 1024px) {
   body.page.home .decoration__container {
-    height: 3000px;
+    height: 187.5rem /* 3000px; */
   }
 }
 
 
 @media (min-width: 1920px) {
   body.page.home .decoration__container {
-    max-width: 1920px;
+    max-width: 120rem; /* 1920px; */
     margin: 0 auto;
   }
 }
