@@ -45,13 +45,6 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
   overflow: hidden;
   pointer-events: none;
   z-index: 1;
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat;
   background-image:
     var(--background-image-pita),
     var(--background-image-salmon),
@@ -73,6 +66,13 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
     6.25rem auto,  /* 100px auto, */
     30% 30%,
     30% 30%;
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
 }
 
 @media (min-width: 768px) {
