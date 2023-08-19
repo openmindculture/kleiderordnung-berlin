@@ -433,18 +433,18 @@ Don't give the website owner administration rights unless they are a technically
 ## WordPress-Plugins
 
 - Advanced Custom Fields
-  - `mu-plugins/kleiderordnung-content-type` for custom fields and content types (if necessary)
+  - `mu-plugins/kleiderordnung-content-type` for custom fields and content types
 - Akismet Anti-Spam Protection (production site only)
-- Complianz | GDPR/CCPA Cookie Consent (if necessary - not automatically installed, database migration did not work with wp-cli)
+- Complianz | GDPR/CCPA Cookie Consent (if necessary)
 - Contact Form 7
-- Flamingo (save contact forms messages)
-- HTTP-Header zur Verbesserung der Webseiten-Sicherheit
+- eWWW image optimizer (alternative to TinyPNG which had caused media library problems with custom post types)
+- Flamingo (save contact forms messages
 - Incompatibility Status
-- Juicer Instagram Feed (if necessary)
+- Juicer Instagram Feed
 - Matomo Analytics (production site only)
 - Polylang
 - SVG Support
-  Tinify – TinyPNG – JPEG, PNG & WebP image compression (tiny-compress-images)
+- Updraft Plus (backup)
 - W3 Total Cache (production site only)
 - Yoast SEO (for sitemaps etc. - preview / production site only)
 
