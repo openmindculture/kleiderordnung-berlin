@@ -32,10 +32,12 @@ Features:
 
 ## Theme and Design
 
-The theme is a standalone theme not depending on any parent theme, but inspired by existing themes like
+The theme **kleiderordnung** is a standalone WordPress theme not depending on any parent theme, but inspired by existing themes like
 [Twenty-Twenty-Three](https://wordpress.org/themes/twentytwentythree/), [GeneratePress](https://wordpress.org/themes/generatepress/), and [Fasto](https://wordpress.org/themes/fasto/). This is a **classic theme with partial block editor support**. I have released a similar classic/hybrid WordPress theme development setup as [@openmindculture/wp_template_opinionated](https://github.com/openmindculture/wp_template_opinionated) on GitHub.
 
-KleiderOrdnung's graphic design has been conceived in collaboration with [Ina Nixdorf](https://www.inanixdorf.de/) and [Martina Steinke (KleiderOrdnung Berlin)](https://kleiderordnung.berlin/).
+Note that the theme' text domain (technical handle and directory name) is **kleiderordnung** (not `kleiderordnung-berlin` – which is the name of the project used to develop and maintain the theme).
+
+Kleiderordnung's graphic design has been conceived in collaboration with [Ina Nixdorf](https://www.inanixdorf.de/) and [Martina Steinke (KleiderOrdnung Berlin)](https://kleiderordnung.berlin/).
 Technical details and development: [Ingo Steinke](https://www.ingo-steinke.com/).
 Thanks to Andy Weisner ([RetinaFunk](https://www.retinafunk.com/about/)) and [Daniel Groner](https://www.danielgroner.com/) for support and (partial) code review! Thanks to [Jessica Lyschik](https://jessicalyschik.de/), Carolina Nymark ([FullSiteEditing.com](https://fullsiteediting.com/)), [Sara Soueidan](https://www.sarasoueidan.com/) and many other experts contributing to open source web development!
 
@@ -45,7 +47,7 @@ Thanks to Andy Weisner ([RetinaFunk](https://www.retinafunk.com/about/)) and [Da
 
 ## Installation / Deployment
 
-To setup / deploy KleiderOrdnung on a website,
+To setup / deploy **kleiderordnung** on a website,
 - install WordPress core and the required plugins,
 - copy all `wp-content/mu-plugins/*.php` files manually,
 - [setup Polylang](https://polylang.pro/doc/multilingual-custom-post-types-and-taxonomies/):

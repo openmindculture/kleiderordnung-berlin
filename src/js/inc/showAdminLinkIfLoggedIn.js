@@ -3,10 +3,6 @@
  */
 export function kleiderordnung_showAdminLinkIfLoggedIn() {
   /* global document */
-  if ( document.body.classList.contains( 'logged-in' ) && document.body.classList.contains( 'admin-bar' ) ) {
-    console.log( 'The user is logged in' );
-  }
-
   if (document.cookie.indexOf('wp-settings-time') !== -1) {
     document.body.classList.add('logged-in-cookie');
   } else {
