@@ -44,15 +44,17 @@
   }
 }
 
-body.admin-bar.logged-in .admin__editlink {
-  display: block;
-}
-
 .admin__editlink__icons,
 .admin__editlink__text {
   display: block;
   color: var(--color-default-black);
   text-align: right;
+}
+
+.admin__editlink:hover,
+.admin__editlink:focus,
+.admin__editlink:focus-within {
+  background-color: var(--color-hover-background);
 }
 
 .admin__editlink__link,
@@ -65,4 +67,8 @@ body.admin-bar.logged-in .admin__editlink {
   cursor: pointer;
   background-image: none;
   text-decoration: none;
+}
+
+body.admin-bar.logged-in .admin__editlink {
+  display: block;
 }

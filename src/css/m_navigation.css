@@ -38,7 +38,8 @@
   display: inline-block;
 }
 
-.navigation__list-wrapper--main a.button:hover {
+.navigation__list-wrapper--main a.button:hover,
+.navigation__list-wrapper--main a.button:focus {
   background-color: var(--color-hover-background-contrast);
 }
 
@@ -218,6 +219,10 @@
   .navigation__list-wrapper--main a:not(.button):hover,
   .navigation__list-wrapper--main a:not(.button):focus {
     background-size: 0 40%,0 40%,100% 40%;
+  }
+
+  .navigation__list-wrapper--main a:not(.button).active:focus {
+    background-size: 0 100%,0 100%,100% 100%;
   }
 
   .navigation__list-wrapper--main .menu-item-language a:not(.button):not(.navigation__toggle)  {
