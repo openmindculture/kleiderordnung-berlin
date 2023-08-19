@@ -8,7 +8,7 @@
 
 .intro {
   text-align: center;
-  margin: 0 auto 7.5rem auto;
+  margin: 0 auto 5rem auto;
   /* ensure to stay on top of subsequent special effects
    * (parallax scrolling decoration behind offers section)
    * while delibrately NOT setting an opaque background
