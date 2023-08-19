@@ -198,6 +198,8 @@
 
   .navigation__list-wrapper--main a.button {
     margin-top: 0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
   }
 
   .navigation__list-wrapper--main a:not(.button),
@@ -216,6 +218,10 @@
   .navigation__list-wrapper--main a:not(.button):hover,
   .navigation__list-wrapper--main a:not(.button):focus {
     background-size: 0 40%,0 40%,100% 40%;
+  }
+
+  .navigation__list-wrapper--main .menu-item-language a:not(.button):not(.navigation__toggle)  {
+    margin-right: 0;
   }
 
   .navigation__list-wrapper--main.navigation__menu-opened,
