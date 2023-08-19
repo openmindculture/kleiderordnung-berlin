@@ -440,9 +440,15 @@ WordPress can be run locally using the provided development server setup using D
 
 The theme bundle and client-side CSS will be built (without SCSS) using PostCSS. Supported upcoming CSS features include imports, custom properties, and native nesting.
 
-The local development setup has been tested on Ubuntu Linux and _should_ work on Windows and MacOS as well. If it doesn't, and the exported CSS and theme files are modified, or if any upcoming WordPress editing features override theme declarations or template parts, those changes should be ported back to the theme source code immediately!
+JavaScript imports are handled by `esbuild`. There is currently no transpilation, so be conservative when adding client-side JS. Instead of TypeScript, there are [JSDoc](https://jsdoc.app/) annotations.
 
-Code style follows modern recommendations for HTML, CSS, PHP, and ECMAScript, ignoring the divergent WordPress community guidelines.
+Unit tests are few, due to necessary DOM side effects, global window properties, and the focus on visual web design.
+
+Code style follows modern recommendations for HTML, CSS, PHP, and more backwards compatible ones for ECMAScript, ignoring the divergent WordPress and Gutenberg community guidelines.
+
+Note that this is a classic WordPress theme, despite block editor support for pages other than the frontpage, so there is **no theme.json** but **style.css**.
+
+The local development setup has been tested on Ubuntu Linux and _should_ work on Windows and MacOS as well. If it doesn't, and the exported CSS and theme files are modified, or if any upcoming WordPress editing features override theme declarations or template parts, those changes should be ported back to the theme source code immediately!
 
 ## Verify and Customize Users and Dashboard Widgets
 
@@ -478,7 +484,7 @@ Don't give the website owner administration rights unless they are a technically
 
 ## WordPress Theme
 
-- KleiderOrdnung (this theme)
+- KleiderOrdnung (`kleiderordnung`)
 
 ### Add-Ons / Libraries
 

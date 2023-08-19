@@ -1,5 +1,6 @@
 /**
  * @param {string} urlToVerify
+ * global window
  */
 export function kleiderordnung_verifyAllowedUrl(urlToVerify) {
   var feedResourcesAllowedAbsoluteUrls = [
@@ -16,3 +17,5 @@ export function kleiderordnung_verifyAllowedUrl(urlToVerify) {
   }
   return false;
 }
+
+// TODO add unit test
