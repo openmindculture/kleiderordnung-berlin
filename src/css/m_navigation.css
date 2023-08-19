@@ -34,9 +34,12 @@
 
 /* inverted colors inside mobile navigation wrapper */
 .navigation__list-wrapper--main a.button {
-  background-color: var(--color-primary-background);
-  color: var(--color-primary-foreground);
+  background-color: var(--color-inverted-background);
   display: inline-block;
+}
+
+.navigation__list-wrapper--main a.button:hover {
+  background-color: var(--color-hover-background-contrast);
 }
 
 .navigation__list-wrapper--main a:not(.button) {
@@ -194,9 +197,7 @@
   }
 
   .navigation__list-wrapper--main a.button {
-    background-color: var(--color-primary-foreground);
-    color: var(--color-primary-background);
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
   }
 
   .navigation__list-wrapper--main a:not(.button),

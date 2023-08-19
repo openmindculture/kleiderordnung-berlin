@@ -41,11 +41,11 @@ a:not(.button):focus {
 .button--primary:active,
 .button--primary:hover,
 .button--primary:focus {
-  color: var(--color-hover-background);
+  background-color: var(--color-hover-background-contrast);
 }
 
 .button--primary:focus {
-  outline: solid 3px var(--color-hover-background);
+  outline: solid 3px var(--color-hover-background-contrast);
 }
 
 .button__allow {
