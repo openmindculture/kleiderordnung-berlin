@@ -19,6 +19,7 @@
     include( KLEIDERORDNUNG_DIR . '/inc/structure/z_decoration.php');
     echo '</main>';
     include( KLEIDERORDNUNG_DIR . '/inc/structure/footer.php');
+    include( KLEIDERORDNUNG_DIR . '/inc/structure/admin-edit-link.php');
   ?>
   </body>
 </html>

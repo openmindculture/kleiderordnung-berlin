@@ -23,6 +23,7 @@
     the_content();
     echo '</main>';
     include( KLEIDERORDNUNG_DIR . '/inc/structure/footer.php');
+    include( KLEIDERORDNUNG_DIR . '/inc/structure/admin-edit-link.php');
   }
   endwhile;
   endif;

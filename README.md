@@ -47,11 +47,14 @@ To setup / deploy KleiderOrdnung on a website,
 - run automated tests (`npm run test`) and update the baseline screenshots if necessary (see [Testing...](#testing) )
 - test everything and back up your data regularly! (Werkzeuge -> Export or use a plugin like [Updraft Plus](https://wordpress.org/plugins/updraftplus/)
 
-## User Manual for the Site Owner(s)
+## User Manual for the Site Owners
 
 There is a (German) end-user manual aiming to show non-technical site owners how to edit and add content in the WordPress admin backend, available at [doc/anleitung.md](doc/anleitung.md) and linked from the custom admin dashboard widget which contains direct links to edit different custom content types and generate a content export file.
 
-### Manual Screenshots
+### Screenshots
+
+Enter WP-Admin by clicking on "edit page" ("**Seite bearbeiten**") if you have already logged in before:
+![Screenshot: edit page](doc/anleitung-seite-bearbeiten.png)
 
 Add, edit and preview news (blog posts):
 ![Screenshot: edit news](doc/anleitung-news-bearbeiten.png)
@@ -327,11 +330,11 @@ or
 
 which is an open source tool for all major OS.  If you don’t have the pro version you can easily get the [Blank POT](https://github.com/fxbenard/Blank-WordPress-Pot) by Fx Bénard and use that as the base of your POT file. Once you have placed the blank POT in the languages folder you can click “Update” in Poedit to update the POT file with your strings.
 
-#### POT to PO to MO
+#### Po-Strings: POT to PO to MO
 
 POT files contain the original strings (usually in English, but here German is the default language). "Very long strings" are split into multiple lines (by PoEdit and/or [gettext](https://en.wikipedia.org/wiki/Gettext), often starting with an empty string "for better alignment", but that's equivalent to using long one-line strings.
 
-**Translation / internationalization (i10n):** take the `.pot` file and translate the `msgstr` sections into the respective language(s). The result is a `.po` file for each langauge with the same format as a `.pot`, but with translations and some specific headers.
+**Translation / internationalization (i10n):** using **po strings**: take the `.pot` file and translate the `msgstr` sections into the respective language(s). The result is a `.po` file for each langauge with the same format as a `.pot`, but with translations and some specific headers.
 
 Use the official WordPress locale strings (with **underscores**, not hyphens). For example, the locale for German is `de_DE`, and our theme's text domain is `kleiderordnung`, therefore the German MO and PO files could be named `kleiderordnung-de_DE.mo` and `kleiderordnung-de_DE.po`, but that's misleading. When placed inside the **theme's language folder** (not the WordPress instance's language folder) we must omit the (redundant) theme name (text domain) in the file name.
 
@@ -352,6 +355,29 @@ This will also match the necessary explicit loading command in `functions.php`:
 ```php
 add_action('after_setup_theme', function() {
 load_theme_textdomain( 'kleiderordnung', get_template_directory() . '/languages' );
+```
+
+##### Use translateable markup, pdate po strings, and regenerate mo files
+
+Always **add new text** in PHP templates using the **translation function** and the **default language (German) text** as the key, e.g.
+
+```
+<?php _e( 'Seite bearbeiten', 'kleiderordnung' ) ?>
+```
+
+Regenerate the theme's `.pot` file or append the new text strings manually to all `.pot` and `.po` files, e.g.
+
+```
+#: inc/structure/admin-edit-link.php:11
+msgid "Seite bearbeiten"
+msgstr "Edit Page"
+```
+
+Set **PO-Revision-Date** to the current date and time in the `.po` files and update the **Last-Translator** (using your name or WordPress user handle) if necessary. 
+
+```
+"PO-Revision-Date: 2023-08-19 14:20+0200\n"
+"Last-Translator: @openmindculture\n"
 ```
 
 **Generate / update `.mo` files** from `.po` files: the program `msgfmt` (part of the `gettext` package) can be used on the command line to create the MO file. A typical `msgfmt` command looks like this:

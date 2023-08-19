@@ -7,13 +7,14 @@
 
 :root {
 
-  /* DON'T USE IN MEDIA QUERIES! Root properties can't be used in media queries! */
-  --breakpoint-s: 555px; /* custom instead of usual sm: 576 */
-  --breakpoint-md: 768px;
-  --breakpoint-m: 824px; /* custom */
+  /* DON'T USE AS IN MEDIA QUERIES! Custom properties can't be used in media queries! */
+  --breakpoint-s: 555px;    /* custom instead of usual sm: 576 */
+  --breakpoint-md: 768px;   /* end of mobile burger menu */
+  --breakpoint-m: 824px;    /* custom */
   --breakpoint-lg: 992px;
-  --breakpoint-l1: 1001px; /* custom */
-  --breakpoint-l2: 1024px; /* custom instead of xl 1200 */
+  --breakpoint-l1: 1001px;  /* custom */
+  --breakpoint-l2: 1024px;  /* custom instead of xl 1200 */
+  --breakpoint-l3: 1313px;  /* custom for admin links next to top menu */
   --breakpoint-xxl: 1440px;
 
   /* Width / Height Standards */

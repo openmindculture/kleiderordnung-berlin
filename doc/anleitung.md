@@ -29,6 +29,18 @@ Bestimmte Inhalte können im Administrationsbereichs (WP-Admin) bearbeitet werde
 - Instagram-Platzhalter aktualisieren
 - Fotos / Bilder (Mediathek)
 
+#### Seite bearbeiten => WordPress-Administration (WP-Admin)
+
+Angemeldeten Administrator:innen wird auf der Homepage **oben rechts** ein Link "**Seite bearbeiten**" angezeigt, der direkt in den Administrationbereich führt.
+
+![Screenshot: Anmeldelink Seite bearbeiten](anleitung-seite-bearbeiten.png)
+
+Dieser Link ist für alle anderen Besucher:innen unsichtbar.
+
+Der Administrationsbereich ist zudem jederzeit über den Link `/wp-admin` erreichbar, für eine Seite namens `kleiderordnung.berlin` entsprechend unter der Adresse:
+
+https://kleiderordnung.berlin/wp-admin/
+
 Auf der Startseite (Dashboard) des Administrationsbereichs sind die Links zum Bearbeiten, zum Aktualisieren und zu dieser Anleitung zusammengefasst.
 
 **Bilder** sollten grundsätzlich in möglichst hoher Qualität hochgeladen werden. Nach dem Hochladen werden sie automatisch in optimierte kleinere Bilddateien verwandelt. 

@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-08-19 11:33+0200\n"
+"PO-Revision-Date: 2023-08-19 14:20+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -256,3 +256,11 @@ msgstr "previous"
 #: inc/structure/stories.php:70
 msgid "vor"
 msgstr "next"
+
+#: inc/structure/admin-edit-link.php:11
+msgid "Seite bearbeiten"
+msgstr "Edit Page"
+
+#: inc/structure/admin-edit-link.php:11
+msgid "nur sichtbar für angemeldete Administrator:innen"
+msgstr "only visible to logged-in administrators"
