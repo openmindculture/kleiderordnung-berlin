@@ -1,6 +1,6 @@
 {
   "name": "kleiderordnung-berlin",
-  "version": "2.7.3",
+  "version": "2.7.4",
   "description": "portfolio website for sustainable stylist Tina Steinke",
   "scripts": {
     "install": "node install-local-environment.js",
@@ -44,7 +44,7 @@
     "codeceptjs-resemblehelper": "^1.9.6",
     "copyfiles": "^2.4.1",
     "docker-compose": "^0.24.0",
-    "esbuild": "^0.18.19",
+    "esbuild": "^0.19.2",
     "eslint": "^8.36.0",
     "eslint-plugin-es5": "^1.5.0",
     "html-minifier-cli": "^0.1.0",
@@ -59,7 +59,7 @@
     "postcss-minify": "^1.1.0",
     "postcss-mixins": "^9.0.4",
     "postcss-nesting": "^12.0.0",
-    "puppeteer": "^20.0.0",
+    "puppeteer": "^21.1.0",
     "rimraf": "^5.0.0",
     "stylelint": "^15.3.0",
     "stylelint-config-standard": "^34.0.0",
