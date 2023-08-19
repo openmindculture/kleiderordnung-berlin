@@ -38,6 +38,7 @@ if ( $the_query->have_posts() ) : ?>
     $resorted_post_ids[$unique_post_position_number] = get_the_ID();
     $loop_index++;
   }
+  wp_reset_query();
 
   ksort($resorted_post_ids);
   $loop_index = 0;
@@ -59,7 +60,9 @@ if ( $the_query->have_posts() ) : ?>
     </nav>
 
     <div class="offers__cards">
-      <?php foreach ($resorted_post_ids as $resorted_post_position_number => $resorted_post_id) { ?>
+      <?php foreach ($resorted_post_ids as $resorted_post_position_number => $resorted_post_id) {
+        setup_postdata($resorted_post_id);
+      ?>
         <article id="<?php echo get_field('offer_id', $resorted_post_id); ?>" class="offers__offer">
           <figure class="offers__offer__image">
             <picture>
@@ -127,6 +130,7 @@ if ( $the_query->have_posts() ) : ?>
       ksort($resorted_additional_post_ids);
       $loop_index = 0;
       foreach ($resorted_additional_post_ids as $resorted_post_position_number => $resorted_post_id) {
+        setup_postdata($resorted_post_id);
     ?>
         <article id="<?php echo get_field('offer_id', $resorted_post_id); ?>" class="offers__additional__articles__offer">
           <figure class="offers__offer__icon"></figure>
