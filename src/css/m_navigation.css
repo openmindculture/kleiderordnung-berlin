@@ -164,18 +164,15 @@
     flex-direction: row;
     padding-top: 0;
     margin: 0;
+    /* todo left -0.75rem; on parent element that has no background */
     background-color: var(--color-primary-background);
   }
 
   .navigation__list li {
-    margin: 0 0 1.5rem 0;
+    margin: 0;
     text-align: left;
     width: auto;
     float: left;
-  }
-
-  .navigation__list li + li {
-    margin: 0 0 1.5rem 1.5rem;
   }
 
   .navigation__list li:not(.menu-item--has-button) {
@@ -200,7 +197,8 @@
   }
 
   .navigation__list-wrapper--main a:not(.button) {
-    padding-top: 0.75rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    margin: 0.25rem 0 0.25rem 0;
   }
 
   .navigation__list-wrapper--main.navigation__menu-opened,
