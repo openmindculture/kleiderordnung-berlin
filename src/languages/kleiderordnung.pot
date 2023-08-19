@@ -181,6 +181,10 @@ msgstr ""
 msgid "Meine Angebote"
 msgstr ""
 
+#: inc/structure/offers.php:75
+msgid "Was Du erhältst"
+msgstr ""
+
 #: inc/structure/offers.php:87
 msgid "Termin buchen"
 msgstr ""
