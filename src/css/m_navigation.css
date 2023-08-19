@@ -164,7 +164,6 @@
     flex-direction: row;
     padding-top: 0;
     margin: 0;
-    /* todo left -0.75rem; on parent element that has no background */
     background-color: var(--color-primary-background);
   }
 
@@ -173,6 +172,10 @@
     text-align: left;
     width: auto;
     float: left;
+  }
+
+  .navigation__list li + li {
+    margin-left: 0.5rem;
   }
 
   .navigation__list li:not(.menu-item--has-button) {
@@ -196,9 +199,22 @@
     margin-top: 0.25rem;
   }
 
-  .navigation__list-wrapper--main a:not(.button) {
-    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-    margin: 0.25rem 0 0.25rem 0;
+  .navigation__list-wrapper--main a:not(.button),
+  .navigation__list-wrapper--main a:not(.button):link,
+  .navigation__list-wrapper--main a:not(.button):visited {
+    padding: 0.5rem 0 0.25rem 0;
+    margin: 0.25rem 0.75rem 0.5rem 0;
+    background-position-y: 90%,90%,90%;
+    background-size: 100% 40%,50% 40%,100% 40%;
+    background-color: transparent !important;
+    border-radius: 0;
+  }
+
+  .navigation__list-wrapper--main a:not(.button).active,
+  .navigation__list-wrapper--main a:not(.button):active,
+  .navigation__list-wrapper--main a:not(.button):hover,
+  .navigation__list-wrapper--main a:not(.button):focus {
+    background-size: 0 40%,0 40%,100% 40%;
   }
 
   .navigation__list-wrapper--main.navigation__menu-opened,
