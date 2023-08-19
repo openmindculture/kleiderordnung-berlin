@@ -15,9 +15,16 @@
   margin-right: auto;
 }
 
-@mixin typography-heading-h2 .offers__headline {
+.offers__headline {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-24);
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 160%;
   margin: 0 0 2rem 0;
-  text-align: left;
+  text-align: center;
+  text-transform: none;
 }
 
 .offers__cards {
@@ -41,6 +48,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
   max-width: 100%;
 }
 
