@@ -1,6 +1,6 @@
 # KleiderOrdnung Berlin
 
-A portfolio website for sustainable stylist Tina Steinke in Berlin,
+A portfolio website for sustainable stylist [Tina Steinke](https://kleiderordnung.berlin/) in Berlin,
 following up on a previous sustainable style consultancy in Düsseldorf.
 Visual design by [Ina Nixdorf](https://www.inanixdorf.de/), technical concept and development by [Ingo Steinke](https://www.ingo-steinke.de/).
 
@@ -12,23 +12,36 @@ Backend: http://localhost:1234/wp-admin (default credentials: admin:secret).
 Make sure to that the theme KleiderOrdnung got activated or activate it manually after installation.
 
 Features:
-- accessible: WCAG 2.0 compliant, tab-navigateable, high contrast
-- animated using subtle micro-animations and scrolling effects
-- beautiful: web design based on the visual corporate identity
-- classic: hybrid theme with custom post types, custom fields, and block editor support
-- documented: README for developers and an additional manual for website owners
-- editable: content, images, and translations can be edited by the site owner
-- international: localized by a professional translator and proofreader
-- minimal: all important content at a glance on one landing page
-- portable: theme, plugins, and content can be moved from server to server
-- printable: distinct style sheet to ensure print / PDF layout
-- quick: cacheable and without loading unnecessary data
-- responsive: designed and tested to work on any device and browser
-- semantic: meaningful markup to ensure technical search engine optimization
-- tested: automated and manual frontend tests plus static code analysis
-- versioned: open source development on GitHub
+- **accessible**: WCAG 2.0 compliant, tab-navigateable, high contrast
+- **animated** using subtle micro-animations and scrolling effects
+- **beautiful**: web design based on the visual corporate identity
+- **classic**: hybrid theme with custom post types, custom fields, and block editor support
+- **documented**: README for developers and an additional manual for website owners
+- **editable**: content, images, and translations can be edited by the site owner
+- **international**: localized by a professional translator and proofreader
+- **minimal**: all important content at a glance on one landing page
+- **portable**: theme, plugins, and content can be moved from server to server
+- **printable**: distinct style sheet to ensure print / PDF layout
+- **quick**: cacheable and without loading unnecessary data
+- **responsive**: designed and tested to work on any device and browser
+- **semantic**: meaningful markup to ensure technical search engine optimization
+- **tested**: automated and manual frontend tests plus static code analysis
+- **transparent** and **versioned** open source development on GitHub
 
 ![KleiderOrdnung theme screenshot](src/screenshot.png)
+
+## Theme and Design
+
+The theme is a standalone theme not depending on any parent theme, but inspired by existing themes like
+[Twenty-Twenty-Three](https://wordpress.org/themes/twentytwentythree/), [GeneratePress](https://wordpress.org/themes/generatepress/), and [Fasto](https://wordpress.org/themes/fasto/). This is a **classic theme with partial block editor support**. I have released a similar classic/hybrid WordPress theme development setup as [@openmindculture/wp_template_opinionated](https://github.com/openmindculture/wp_template_opinionated) on GitHub.
+
+KleiderOrdnung's graphic design has been conceived in collaboration with [Ina Nixdorf](https://www.inanixdorf.de/) and [Martina Steinke (KleiderOrdnung Berlin)](https://kleiderordnung.berlin/).
+Technical details and development: [Ingo Steinke](https://www.ingo-steinke.com/).
+Thanks to Andy Weisner ([RetinaFunk](https://www.retinafunk.com/about/)) and [Daniel Groner](https://www.danielgroner.com/) for support and (partial) code review! Thanks to [Jessica Lyschik](https://jessicalyschik.de/), Carolina Nymark ([FullSiteEditing.com](https://fullsiteediting.com/)), [Sara Soueidan](https://www.sarasoueidan.com/) and many other experts contributing to open source web development!
+
+### Web Fonts
+- Henderson Sans by [Sudtipos](https://www.sudtipos.com/)
+- Ivy Mode by Jan Maack from [Ivy Foundry](https://typenetwork.com/type-foundries/ivy-foundry)
 
 ## Installation / Deployment
 
@@ -39,13 +52,13 @@ To setup / deploy KleiderOrdnung on a website,
   - German (Deutsch) as default language
   - English (EN-US) as additional language
   - enable translation of custom post types (Languages/Sprachen -> Settings/Einstellungen -> Custom Post Types and Taxonomies / Benutzerdefinierte Inhaltstypen und Taxonomien -> check all checkboxes) _before_ adding (or importing) content!
-- install the lastest KleiderOrdnung theme by uploading it in WP-Admin,
+- install [the lastest KleiderOrdnung theme](https://github.com/openmindculture/kleiderordnung-berlin/releases) by uploading it in WP-Admin (or via (S)FTP),
 - activate the theme,
 - copy all icons and manifest files (`*.ico`, `*.png`, `*.svg`, `*.json`, `*.xml`, `robots.txt`) to the web root directory
 - configure server and caching by editing `.htaccess` / `nginx.conf` / hosting backend or by using appropriate plugins,
 - use additional reverse proxy and/or CDN servers if necessary,
 - run automated tests (`npm run test`) and update the baseline screenshots if necessary (see [Testing...](#testing) )
-- test everything and back up your data regularly! (Werkzeuge -> Export or use a plugin like [Updraft Plus](https://wordpress.org/plugins/updraftplus/)
+- test everything and back up your data regularly: use WP-Admin Tools / Werkzeuge -> Export or a plugin like [Updraft Plus](https://wordpress.org/plugins/updraftplus/).
 
 ## User Manual for the Site Owners
 
@@ -357,7 +370,7 @@ add_action('after_setup_theme', function() {
 load_theme_textdomain( 'kleiderordnung', get_template_directory() . '/languages' );
 ```
 
-##### Use translateable markup, pdate po strings, and regenerate mo files
+##### Use translateable markup, update po strings, and regenerate mo files
 
 Always **add new text** in PHP templates using the **translation function** and the **default language (German) text** as the key, e.g.
 
@@ -403,19 +416,6 @@ Sources:
 Polylang settings offer automatic redirection to page content based on browser language and preventing caching the front page. As we absolutely want to cache static content to prevent costly and redundant recreation of content on the server side and speed up loading time for clients, this option must not be used!
 
 Automatic detection and redirection can be done alternatively using client-side JavaScript or relying on matching search engine results etc.
-
-## Theme and Design
-
-The theme is a standalone theme not depending on any parent theme, but inspired by existing themes like
-Twenty-Twenty-Three, GeneratePress, and Fasto. This is a classic theme with partial block editor support.
-
-The graphic design has been conceived in collaboration with Ina Nixdorf and Martina Steinke.
-Technical details and development: Ingo Steinke.
-Support and code review: tbd.
-
-### Web Fonts
-- Henderson Sans by [Sudtipos](https://www.sudtipos.com/)
-- Ivy Mode by Jan Maack from [Ivy Foundry](https://typenetwork.com/type-foundries/ivy-foundry).
 
 <a name="testing" id="testing"></a>
 ## Development, Performance, Accessibility, and Testing
