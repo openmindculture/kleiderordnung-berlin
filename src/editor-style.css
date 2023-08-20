@@ -5,7 +5,7 @@
  * @author openmindculture
  */
 
-@import url("css/0_typography.css.php");
+@import url("css/0_typography.css");
 @import url("css/1_colors-design-settings.css");
 
 body#tinymce.wp-editor {
