@@ -1,5 +1,6 @@
 .env
 .secrets
+backup
 docker-compose.override.yml
 node_modules
 vendor
