@@ -117,6 +117,13 @@ DON'T commit any personal data (possibly included in a complete "all content" ex
 
 Review and synchronize settings manually, as far as you find useful. Make sure that all necessary plugins are installed.
 
+### Settings
+
+- address/**url**: **https**://...
+- reading: front page / home page shows a static page: home page German (language will be handled by theme and Polylang plugin)
+- **permalink** structure: post name + id: `/%postname%-/%post_id%/`
+- **media** library _not_ organized in year/month folders
+
 ## Setup, Structure, Editing
 
 The portfolio website content can be edited and extended using the WordPress admin backend. This is a classic WordPress theme, without full-page editing or full theme engine support, but allowing to use the block editor where it might be helfpul.
