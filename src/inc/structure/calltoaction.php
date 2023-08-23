@@ -11,7 +11,7 @@
     <?php echo get_field('page_cta_text', KLEIDERORDNUNG_FRONT_PAGE_ID) ?>
   </div>
   <div class="calltoaction__buttonwrapper">
-    <a class="button button--primary" href="#kontakt" tabindex="0">
+    <a class="button button--primary" href="<?php echo get_home_url() ?>/#kontakt" tabindex="0">
       <?php _e( 'Kontakt', 'kleiderordnung' ) ?>
     </a>
   </div>

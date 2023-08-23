@@ -124,6 +124,10 @@
   background-color: transparent;
 }
 
+body.single .offers__offer {
+  justify-content: space-around;
+}
+
 .offers__offer__card {
   padding: 2rem 1.5rem 2rem 1.5rem;
   background-color: var(--color-secondary-background);

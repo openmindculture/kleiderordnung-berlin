@@ -35,7 +35,7 @@ if (!isset($resorted_post_id) || empty($resorted_post_id)) {
         <?php echo get_field('offer_price_annotation', $resorted_post_id); ?>
       </div>
       <div class="offers__offer__buttonwrapper">
-        <a class="button button--primary" href="#kontakt" tabindex="0"><?php _e( 'Termin buchen', 'kleiderordnung' ) ?></a>
+        <a class="button button--primary" href="<?php echo get_home_url() ?>/#kontakt" tabindex="0"><?php _e( 'Termin buchen', 'kleiderordnung' ) ?></a>
       </div>
     </div>
   </div>
