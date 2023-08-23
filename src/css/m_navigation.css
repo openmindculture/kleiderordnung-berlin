@@ -212,6 +212,9 @@
     background-size: 100% 40%,50% 40%,100% 40%;
     background-color: transparent !important;
     border-radius: 0;
+    transition:
+      background-size 0.125s ease-in,
+      color 0.125s ease-in;
   }
 
   .navigation__list-wrapper--main a:not(.button).active,
