@@ -15,7 +15,6 @@
   if (have_posts()) :
     while (have_posts()) :
       the_post();
-      setup_postdata(get_the_ID());
       if (get_post_type()) :
         if (get_post_type() == 'offer') : ?>
           <section id="angebot">
@@ -48,6 +47,7 @@
     <?php
     echo '</main>';
     endwhile;
+    wp_reset_query();
     include( KLEIDERORDNUNG_DIR . '/inc/structure/footer.php');
     include( KLEIDERORDNUNG_DIR . '/inc/structure/admin-edit-link.php');
   endif;
