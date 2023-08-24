@@ -14,3 +14,17 @@ body.page:not(.home) main {
   margin-right: auto;
   padding-bottom: 7rem;
 }
+
+/* generic styles for archive, single, error, and fallback documents */
+.page__main__section {
+  width: var(--width-spaced);
+  max-width: var(--width-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 7rem;
+}
+
+.page__main__entry {
+  padding-top: 3rem;
+  text-align: center;
+}
