@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <?php
-  if (is_search()) :
-    define( 'KLEIDERORDNUNG_PAGE_TITLE', esc_html( get_the_title() ) );
-  else :
-    define( 'KLEIDERORDNUNG_PAGE_TITLE', esc_html( get_the_title() ) );
-  endif;
+  define( 'KLEIDERORDNUNG_PAGE_TITLE', esc_html( get_the_title() ) );
+  include( KLEIDERORDNUNG_DIR . '/inc/structure/html-head.php');
 ?>
-
-<?php include( KLEIDERORDNUNG_DIR . '/inc/structure/html-head.php') ?>
 <body <?php body_class(); ?> itemtype="https://schema.org/WebPage" itemscope>
 <!-- emitted by page.php
      which catches all post and archive types that are not handled by a more specific file like
@@ -26,13 +21,7 @@
   ?><main id="wp--skip-link--target">
     <section id="page__main__section">
       <div class="page__main__entry">
-        <h1><?php
-          if (is_search()) :
-            _e( 'Suchergebnis', 'kleiderordnung' );
-          else :
-            the_title();
-          endif;
-          ?></h1>
+        <h1><?php the_title() ?></h1>
   <?php
   if (have_posts()) :
     while (have_posts()) :

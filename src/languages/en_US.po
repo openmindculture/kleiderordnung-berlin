@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-08-24 10:26+0200\n"
+"PO-Revision-Date: 2023-08-24 14:08+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -276,3 +276,7 @@ msgstr "The page that you are looking for is not present at this adress."
 #: 404.php
 msgid "zur Startseite"
 msgstr "show homepage"
+
+#: page.php / search.php
+msgid "Suchergebnis"
+msgstr "Search Result"
