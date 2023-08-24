@@ -14,28 +14,21 @@
 -->
 <hr><pre>emitted by single.php</pre><hr><!-- TODO remove debug output -->
 <?php
-  if (have_posts()): while (have_posts()) : the_post();
-  if ( str_starts_with(parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY), 'en')  ) {
-    include( KLEIDERORDNUNG_DIR . '/inc/structure_en_tmp/header.php');
-    echo '<main id="wp--skip-link--target">';
-    ?>
-    <h1 class="page-title" id="content"><?php the_title(); ?> (page.php)</h1><!-- TODO remove debug output -->
-    <?php
-    the_content();
-    echo '</main>';
-    include( KLEIDERORDNUNG_DIR . '/inc/structure_en_tmp/footer.php');
-  } else {
-    include( KLEIDERORDNUNG_DIR . '/inc/structure/header.php');
-    echo '<main id="wp--skip-link--target">';
-    ?>
-    <h1 class="page-title" id="content"><?php the_title(); ?></h1>
-    <?php
-    the_content();
-    echo '</main>';
-    include( KLEIDERORDNUNG_DIR . '/inc/structure/footer.php');
-    include( KLEIDERORDNUNG_DIR . '/inc/structure/admin-edit-link.php');
-  }
-  endwhile;
+  if (have_posts()) :
+    while (have_posts()) :
+      the_post();
+
+      include( KLEIDERORDNUNG_DIR . '/inc/structure/header.php');
+      echo '<main id="wp--skip-link--target">';
+      ?>
+      <h1 class="page-title" id="content"><?php the_title(); ?></h1>
+      <?php
+      the_content();
+      echo '</main>';
+      include( KLEIDERORDNUNG_DIR . '/inc/structure/footer.php');
+      include( KLEIDERORDNUNG_DIR . '/inc/structure/admin-edit-link.php');
+
+    endwhile;
   endif;
 ?>
 </body>

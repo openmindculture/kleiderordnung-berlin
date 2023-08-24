@@ -8,7 +8,7 @@
 <!-- emitted by page.php
      which catches all post and archive types that are not handled by a more specific file like
      single.php                         (should handle new and any post type that has no own file)
-     single-offer.php
+     single-offer.php     TODO erstmal alle Post TYpes und Archive zuende, dann search dement sprechend
      single-story.php                   (currently not needed but probably better to define)
      category.php                       (default taxonomy archive, should handle news overview)
      taxonomy-offer_section.php         (we could discriminate based on if it has an image etc.)
@@ -19,7 +19,7 @@
 <?php
   include( KLEIDERORDNUNG_DIR . '/inc/structure/header.php');
   ?><main id="wp--skip-link--target">
-    <section id="page__main__section">
+    <section class="page__main__section">
       <div class="page__main__entry">
         <h1><?php the_title() ?></h1>
   <?php

@@ -8,11 +8,11 @@
     echo '<main id="wp--skip-link--target">';
     ?>
     <section id="angebot">
-    <div class="offers__cards">
-    <?php
-      include( KLEIDERORDNUNG_DIR . '/inc/structure/offers-single-angebot.php');
-    ?>
-    </div>
+      <div class="offers__cards">
+      <?php
+        include( KLEIDERORDNUNG_DIR . '/inc/structure/offers-angebot-item.php');
+      ?>
+      </div>
     </section>
     </main>
     <?php

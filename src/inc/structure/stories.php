@@ -38,21 +38,7 @@
     $loop_index = 0;
     foreach ($resorted_post_ids as $resorted_post_position_number => $resorted_post_id) {
       setup_postdata( $resorted_post_id );
-      ?>
-        <div class="stories__story carousel__item carousel__item--index-<?php echo $loop_index?>"<?php if ($loop_index == 0) { echo ' id="stories-items-first"';} elseif ($loop_index == $last_index) { echo ' id="stories-items-last"'; } ?> tabindex="0">
-          <figure class="stories__story__image">
-            <?php echo get_the_post_thumbnail($resorted_post_id) ?>
-          </figure>
-          <figure class="stories__story__quote">
-            <figcaption class="stories__story__quote__author">
-              <?php echo get_the_title($resorted_post_id) ?>
-            </figcaption>
-            <blockquote class="stories__story__quote__text">
-              <?php echo get_the_content($resorted_post_id) ?>
-            </blockquote>
-          </figure>
-        </div>
-      <?php
+      include( KLEIDERORDNUNG_DIR . '/inc/structure/stories-testimonial-item.php');
       $loop_index++;
     }
     ?>

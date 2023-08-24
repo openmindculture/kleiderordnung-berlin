@@ -62,7 +62,7 @@ if ( $the_query->have_posts() ) : ?>
     <div class="offers__cards">
       <?php foreach ($resorted_post_ids as $resorted_post_position_number => $resorted_post_id) {
         setup_postdata($resorted_post_id);
-        include( KLEIDERORDNUNG_DIR . '/inc/structure/offers-single-angebot.php');
+        include( KLEIDERORDNUNG_DIR . '/inc/structure/offers-angebot-item.php');
       }
       ?>
     </div>
