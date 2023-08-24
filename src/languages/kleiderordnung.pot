@@ -266,3 +266,7 @@ msgstr ""
 #: 404.php
 msgid "zur Startseite"
 msgstr ""
+
+#: page.php / search.php
+msgid "Suchergebnis"
+msgstr ""
