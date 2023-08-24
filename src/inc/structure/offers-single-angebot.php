@@ -25,8 +25,10 @@ if (!isset($resorted_post_id) || empty($resorted_post_id)) {
     <p class="offers__offer__paragraph">
       <?php echo get_the_content($resorted_post_id) ?>
     </p>
+    <?php if (!empty(get_field('offer_features', $resorted_post_id))): ?>
     <strong class="offers__offer__features__headline"><?php _e( 'Was Du erhältst', 'kleiderordnung' ) ?>:</strong>
     <?php echo get_field('offer_features', $resorted_post_id); ?>
+    <?php endif ?>
     <div class="offers__offer__card__footer">
       <div class="offers__offer__pricingwrapper">
         <div class="offers__offer__price">
