@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-08-19 14:20+0200\n"
+"PO-Revision-Date: 2023-08-24 10:26+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -264,3 +264,15 @@ msgstr "Edit Page"
 #: inc/structure/admin-edit-link.php:11
 msgid "nur sichtbar für angemeldete Administrator:innen"
 msgstr "only visible to logged-in administrators"
+
+#: 404.php
+msgid "Seite nicht vorhanden"
+msgstr "Page not present"
+
+#: 404.php
+msgid "Die gesuchte Seite ist an dieser Adresse leider nicht vorhanden."
+msgstr "The page that you are looking for is not present at this adress."
+
+#: 404.php
+msgid "zur Startseite"
+msgstr "show homepage"

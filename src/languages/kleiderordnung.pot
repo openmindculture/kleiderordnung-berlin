@@ -254,3 +254,15 @@ msgstr ""
 #: inc/structure/admin-edit-link.php:11
 msgid "nur sichtbar für angemeldete Administrator:innen"
 msgstr ""
+
+#: 404.php
+msgid "Seite nicht vorhanden"
+msgstr ""
+
+#: 404.php
+msgid "Die gesuchte Seite ist an dieser Adresse leider nicht vorhanden."
+msgstr ""
+
+#: 404.php
+msgid "zur Startseite"
+msgstr ""
