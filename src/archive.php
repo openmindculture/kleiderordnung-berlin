@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>><!-- archive should handle custom taxonomy -->
 <?php
-  define( 'KLEIDERORDNUNG_PAGE_TITLE', translate( 'Suchergebnis', 'kleiderordnung' ) );
+  if (is_category()) {
+    define( 'KLEIDERORDNUNG_PAGE_TITLE', translate( 'News', 'kleiderordnung' ) );
+  } else {
+    define( 'KLEIDERORDNUNG_PAGE_TITLE', translate( 'News', 'Übersicht' ) );
+  }
   include( KLEIDERORDNUNG_DIR . '/inc/structure/html-head.php');
 ?>
 <body <?php body_class(); ?> itemtype="https://schema.org/WebPage" itemscope>
@@ -10,7 +14,7 @@
   ?><main id="wp--skip-link--target">
     <section id="page__main__section">
       <div class="page__main__entry">
-        <h1><?php _e( 'Suchergebnis', 'kleiderordnung' ) ?></h1>
+        <h1><?php _e( 'Übersicht', 'kleiderordnung' ) ?></h1>
   <?php
   if (have_posts()) :
     while (have_posts()) :

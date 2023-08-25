@@ -11,7 +11,7 @@ if (isset($resorted_post_id)) {
   $currentItemPostId = get_the_ID();
 }
 ?>
-<article id="<?php echo get_field('offer_id', $currentItemPostId); ?>" class="offers__offer">
+<article id="<?php echo get_field('offer_id', $currentItemPostId); ?>" class="offers__offer<?php if (!has_post_thumbnail()) { echo ' offers__offer--has-no-image'; } ?>">
   <figure class="offers__offer__image">
     <picture>
       <?php if (isset($currentItemPostId)) { echo get_the_post_thumbnail($currentItemPostId); } else { the_post_thumbnail(); } ?>

@@ -150,6 +150,9 @@ body.single .offers__offer {
     position: relative;
     display: flex;
   }
+  .offers__offer--has-no-image {
+    justify-content: space-around;
+  }
   .offers__offer__image {
     width: 44%;
     position: absolute;
@@ -196,6 +199,7 @@ body.single .offers__offer {
   margin-bottom: 2rem;
 }
 
+.offers__offer__features__headline + p,
 .offers__offer__paragraph + p {
   margin-bottom: 2rem;
 }

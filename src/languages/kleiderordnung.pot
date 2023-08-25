@@ -267,6 +267,14 @@ msgstr ""
 msgid "zur Startseite"
 msgstr ""
 
+#: archive.php
+msgid "Übersicht"
+msgstr ""
+
+#: category.php
+msgid "News"
+msgstr ""
+
 #: page.php / search.php
 msgid "Suchergebnis"
 msgstr ""

@@ -8,7 +8,14 @@
 ?>
 <head>
   <meta charset="utf-8">
-  <title><?php echo KLEIDERORDNUNG_PAGE_TITLE ?></title>
+  <title><?php
+    if (defined('KLEIDERORDNUNG_PAGE_TITLE') && !empty(KLEIDERORDNUNG_PAGE_TITLE)) {
+      echo KLEIDERORDNUNG_PAGE_TITLE;
+      echo '-';
+      echo 'KleiderOrdnung Berlin';
+    } else {
+      wp_title('-');
+    } ?></title>
   <meta name=language content="<?php echo /** @var string */ pll_current_language() ?>">
   <link rel="canonical" href="https://kleiderordnung.berlin/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
