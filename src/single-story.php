@@ -3,7 +3,6 @@
 <?php define('KLEIDERORDNUNG_PAGE_TITLE', esc_html(get_the_title())) ?>
 <?php include( KLEIDERORDNUNG_DIR . '/inc/structure/html-head.php') ?>
 <body <?php body_class(); ?> itemtype="https://schema.org/WebPage" itemscope>
-<hr><pre>emitted by single-story.php</pre><hr><!-- TODO remove debug output -->
 <?php
   if (have_posts()) :
     while (have_posts()) :
