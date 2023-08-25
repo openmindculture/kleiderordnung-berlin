@@ -196,6 +196,10 @@ body.single .offers__offer {
   margin-bottom: 2rem;
 }
 
+.offers__offer__paragraph + p {
+  margin-bottom: 2rem;
+}
+
 .offers__offer ul, /* generic to simplify WYSIWYG editing */
 .offers__offer__features__list {
   text-align: left;

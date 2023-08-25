@@ -28,8 +28,8 @@ if (isset($resorted_post_id)) {
       <?php if (isset($resorted_post_id)) { echo get_the_content($currentItemPostId); } else { the_content(); } ?>
     </p>
     <?php if (!empty(get_field('offer_features', $currentItemPostId))): ?>
-    <strong class="offers__offer__features__headline"><?php _e( 'Was Du erhältst', 'kleiderordnung' ) ?>:</strong>
-    <?php echo get_field('offer_features', $currentItemPostId); ?>
+      <strong class="offers__offer__features__headline"><?php _e( 'Was Du erhältst', 'kleiderordnung' ) ?>:</strong>
+      <?php echo get_field('offer_features', $currentItemPostId); ?>
     <?php endif ?>
     <div class="offers__offer__card__footer">
       <div class="offers__offer__pricingwrapper">
