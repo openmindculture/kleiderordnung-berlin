@@ -22,26 +22,28 @@ $the_query = new WP_Query( $args ); ?>
   <div class="news__wrapper">
   <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
     <article class="news__post">
-      <a href="<?php the_permalink() ?>">
-        <figure class="news__post__image">
+      <figure class="news__post__image">
+        <a class="news__post__link" href="<?php the_permalink() ?>" tabindex="0">
           <picture>
             <?php the_post_thumbnail() ?>
           </picture>
+        </a>
         </figure>
         <div class="news__post__content">
-          <h3 class="news__post__title">
+          <a class="news__post__link" href="<?php the_permalink() ?>" tabindex="0">
+            <h3 class="news__post__title">
             <?php
-              $category = get_the_category();
-              if($category && $category[0]) {
-                echo $category[0]->cat_name;
-              }
-            ?>
-          </h3>
-          <p class="news__post__text">
-            <?php the_title() ?>
-          </p>
+                $category = get_the_category();
+                if($category && $category[0]) {
+                  echo $category[0]->cat_name;
+                }
+              ?>
+            </h3>
+            <p class="news__post__text">
+              <?php the_title() ?>
+            </p>
+          </a>
         </div>
-      </a>
     </article>
   <?php endwhile; ?>
 

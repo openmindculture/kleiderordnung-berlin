@@ -36,6 +36,23 @@
   background-color: var(--color-secondary-background);
 }
 
+a.news__post__link,
+a.news__post__link:link,
+a.news__post__link:visited,
+a.news__post__link:active,
+a.news__post__link:hover {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: var(--color-secondary-background);
+  color: var(--color-primary-foreground);
+  background-image:
+    linear-gradient(var(--color-secondary-background), var(--color-secondary-background)),
+    linear-gradient(var(--color-secondary-background), var(--color-secondary-background)),
+    linear-gradient(var(--color-hover-background), var(--color-hover-background));
+}
+
 .news__post + .news__post {
   margin-bottom: 2.5rem;
 }
