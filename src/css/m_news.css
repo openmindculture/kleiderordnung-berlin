@@ -154,3 +154,7 @@ a.news__post__link:hover {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+.news__post--single .news__post__image {
+  aspect-ratio: unset;
+}
