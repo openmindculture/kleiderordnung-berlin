@@ -9,6 +9,7 @@ import {
     kleiderordnung_intersectionCallback,
     kleiderordnung_handleElementsActivatedOnVisibilityAndConsent
 } from "./inc/handleElementsActivatedOnVisibilityAndConsent";
+import {kleiderordnung_handleFooterDetailLink} from './inc/handleFooterDetailLink';
 import {kleiderordnung_keepAnchorTargetInLanguageSwitcher} from './inc/keepAnchorTargetInLanguageSwitcher';
 import {kleiderordnung_observeStickyHeader} from './inc/observeStickyHeader';
 import {kleiderordnung_observeWaypointAnchors} from './inc/observeWaypointAnchors';
@@ -108,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
   );
   kleiderordnung_carouselSetup();
   kleiderordnung_keepAnchorTargetInLanguageSwitcher();
+  kleiderordnung_handleFooterDetailLink();
   kleiderordnung_activateAnalyticsTracking();
   kleiderordnung_showAdminLinkIfLoggedIn();
 

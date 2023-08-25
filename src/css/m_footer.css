@@ -91,7 +91,7 @@ body.page:not(.home) .footer__partners {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1313px) {
   .footer {
     padding-left: 0;
     padding-right: 0;
@@ -145,6 +145,12 @@ body.page:not(.home) .footer__partners {
 
 .footer__ecofriendly {
   max-width: calc(100% - 1rem);
+  display: none; /* initially hidden but ready for detail view */
+}
+
+.footer__ecofriendly--open,
+.footer__ecofriendly:target {
+  display: block;
 }
 
 /* adjust padding inside external logo for better visual alignment */

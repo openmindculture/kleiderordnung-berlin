@@ -83,6 +83,10 @@ msgstr ""
 msgid "AGB"
 msgstr ""
 
+#: inc/structure/footer.php
+msgid "Allgemeine Geschäftsbedingungen"
+msgstr ""
+
 #: inc/structure/footer.php:30
 msgid "Mitglied bei"
 msgstr ""
@@ -102,6 +106,34 @@ msgstr ""
 
 #: inc/structure/footer.php:62
 msgid "Impact Hub Berlin"
+msgstr ""
+
+#: inc/structure/footer.php:62
+msgid "Impact Hub Berlin"
+msgstr ""
+
+#: inc/structure/footer.php
+msgid "Umweltfreundlicher als"
+msgstr ""
+
+#: inc/structure/footer.php
+msgid "aller getesteten Websites"
+msgstr ""
+
+#: inc/structure/footer.php
+msgid "laut Messung von WebsiteCarbon und EcoGrader"
+msgstr ""
+
+#: inc/structure/footer.php
+msgid "im August 2023"
+msgstr ""
+
+#: inc/structure/footer.php
+msgid "Details"
+msgstr ""
+
+#: inc/structure/footer.php
+msgid "'Details der Messungen anzeigen"
 msgstr ""
 
 #: inc/structure/html-head.php:43

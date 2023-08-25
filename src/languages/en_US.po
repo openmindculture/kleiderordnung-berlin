@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-08-25 14:00+0200\n"
+"PO-Revision-Date: 2023-08-25 19:36+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -81,6 +81,10 @@ msgstr "Privacy"
 msgid "AGB"
 msgstr "TOS"
 
+#: inc/structure/footer.php
+msgid "Allgemeine Geschäftsbedingungen"
+msgstr "Terms of Service"
+
 #: inc/structure/footer.php:30
 msgid "Mitglied bei"
 msgstr "Member of"
@@ -100,6 +104,30 @@ msgstr "reflecta network"
 #: inc/structure/footer.php:62
 msgid "Impact Hub Berlin"
 msgstr "Impact Hub Berlin"
+
+#: inc/structure/footer.php
+msgid "Umweltfreundlicher als"
+msgstr "Cleaner than"
+
+#: inc/structure/footer.php
+msgid "aller getesteten Websites"
+msgstr "of pages tested"
+
+#: inc/structure/footer.php
+msgid "laut Messung von WebsiteCarbon und EcoGrader"
+msgstr "according to ratings by WebsiteCarbon and EcoGrader"
+
+#: inc/structure/footer.php
+msgid "im August 2023"
+msgstr "in August 2023"
+
+#: inc/structure/footer.php
+msgid "Details"
+msgstr "Details"
+
+#: inc/structure/footer.php
+msgid "Details der Messungen anzeigen"
+msgstr "Show rating details"
 
 #: inc/structure/html-head.php:43
 # (Meta Description frei übersetzen, ohne den Text in Klammern!)
