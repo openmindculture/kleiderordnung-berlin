@@ -278,3 +278,7 @@ msgstr ""
 #: page.php / search.php
 msgid "Suchergebnis"
 msgstr ""
+
+#: search.php
+msgid "Es wurden leider keine passenden Ergebnisse gefunden."
+msgstr ""

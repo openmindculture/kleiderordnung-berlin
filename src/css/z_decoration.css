@@ -16,12 +16,24 @@ body {
   perspective-origin: 0 0;
 }
 
+body.archive main,
+body.category main,
+body.search main,
 body.page.home main { /* decoration-parallax-group */
   position: relative;
   transform-style: inherit;
 }
 
 /* ensure foreground and following sections stay in front of the decoration layer */
+body.archive main > section,
+body.archive main > div,
+body.archive footer,
+body.category main > section,
+body.category main > div,
+body.category footer,
+body.search main > section,
+body.search main > div,
+body.search footer
 body.page.home main > section,
 body.page.home main > div,
 body.page.home footer {
@@ -29,6 +41,9 @@ body.page.home footer {
   z-index: 2;
 }
 
+body.archive .decoration__container,
+body.category .decoration__container,
+body.search .decoration__container,
 body.page.home .decoration__container { /* decoration-parallax-layer-background */
   content: "";
   position: absolute;
@@ -76,6 +91,9 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
 }
 
 @media (min-width: 768px) {
+  body.archive .decoration__container,
+  body.category .decoration__container,
+  body.search .decoration__container,
   body.page.home .decoration__container {
     top: 125rem;    /* 2000px; */
     height: 225rem; /* 3600px; */
@@ -83,19 +101,27 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
 }
 
 @media (min-width: 824px) {
+  body.archive .decoration__container,
+  body.category .decoration__container,
+  body.search .decoration__container,
   body.page.home .decoration__container {
     height: 250rem; /* 4000px; */
   }
 }
 
 @media (min-width: 1024px) {
-  body.page.home .decoration__container {
+  body.archive .decoration__container,
+  body.category .decoration__container,
+  body.search .decoration__container,
+  body.page.home .decoration__container{
     height: 187.5rem /* 3000px; */
   }
 }
 
-
 @media (min-width: 1920px) {
+  body.archive .decoration__container,
+  body.category .decoration__container,
+  body.search .decoration__container,
   body.page.home .decoration__container {
     max-width: 120rem; /* 1920px; */
     margin: 0 auto;
@@ -103,6 +129,9 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
 }
 
 @media (prefers-reduced-motion) {
+  body.archive .decoration__container,
+  body.category .decoration__container,
+  body.search .decoration__container,
   body.page.home .decoration__container {
     transform: translateZ(0);
   }

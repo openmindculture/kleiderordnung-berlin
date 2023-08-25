@@ -20,3 +20,10 @@ add_action( 'after_setup_theme', function () {
   remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
   remove_action( 'in_admin_header', 'wp_global_styles_render_svg_filters' );
 }, 10, 0 );
+
+add_filter('post_rewrite_rules', 'kleiderordnung_add_custom_redirect_rule');
+function kleiderordnung_add_custom_redirect_rule($post_rewrite) {
+  $post_rewrite['news$'] = 'index.php?post_type=post';
+  $post_rewrite['en/news$'] = 'en/index.php?post_type=post';
+  return $post_rewrite;
+}

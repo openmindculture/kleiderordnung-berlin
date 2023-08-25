@@ -178,11 +178,13 @@ body.single .offers__offer {
   }
 }
 
+.offers__offer--layout--left:not(.offers__offer--has-no-image) .offers__offer__image,
 .offers__offer:nth-child(even) .offers__offer__image {
   left: 3.5rem;
   right: auto;
 }
 
+.offers__offer--layout--left:not(.offers__offer--has-no-image) .offers__offer__card,
 .offers__offer:nth-child(even) .offers__offer__card {
   left: auto;
   margin-left: auto;

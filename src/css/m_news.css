@@ -113,9 +113,12 @@
 
 .news__footer {
   display: block;
-  display: none; /* disabled until we have more news to show or link to */
   text-align: right;
   margin-top: 2.8125rem;
+}
+
+.news--is-teaser .news__footer {
+  display: none;
 }
 
 .news__link--more,

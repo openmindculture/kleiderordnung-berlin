@@ -13,10 +13,13 @@
         <h1><?php _e( 'Suchergebnis', 'kleiderordnung' ) ?></h1>
   <?php
   if (have_posts()) :
+    $currentOfferItemIndex = 0;
     while (have_posts()) :
       the_post();
       if (get_post_type()) :
-        if (get_post_type() == 'offer') : ?>
+        if (get_post_type() == 'offer') :
+          $currentOfferItemIndex++;
+          ?>
           <section id="angebot-<?php echo get_the_ID() ?>">
             <div class="offers__cards">
               <?php
@@ -43,14 +46,19 @@
           the_content();
         endif;
       endif;
-    ?>
-    <?php
-    echo '</main>';
     endwhile;
     wp_reset_query();
-    include( KLEIDERORDNUNG_DIR . '/inc/structure/footer.php');
-    include( KLEIDERORDNUNG_DIR . '/inc/structure/admin-edit-link.php');
+    ?>
+      </div>
+    </section>
+    <div class="decoration__container"></div>
+  </main>
+  <?php
+  include( KLEIDERORDNUNG_DIR . '/inc/structure/footer.php');
+  include( KLEIDERORDNUNG_DIR . '/inc/structure/admin-edit-link.php');
+  else:
+    _e( 'Es wurden leider keine passenden Ergebnisse gefunden.', 'kleiderordnung' );
   endif;
-?>
+  ?>
 </body>
 </html>
