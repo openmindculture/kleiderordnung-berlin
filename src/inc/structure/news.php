@@ -22,24 +22,26 @@ $the_query = new WP_Query( $args ); ?>
   <div class="news__wrapper">
   <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
     <article class="news__post">
-      <figure class="news__post__image">
-        <picture>
-          <?php the_post_thumbnail() ?>
-        </picture>
-      </figure>
-      <div class="news__post__content">
-        <h3 class="news__post__title">
-          <?php
-            $category = get_the_category();
-            if($category && $category[0]) {
-              echo $category[0]->cat_name;
-            }
-          ?>
-        </h3>
-        <p class="news__post__text">
-          <?php the_title() ?>
-        </p>
-      </div>
+      <a href="<?php the_permalink() ?>">
+        <figure class="news__post__image">
+          <picture>
+            <?php the_post_thumbnail() ?>
+          </picture>
+        </figure>
+        <div class="news__post__content">
+          <h3 class="news__post__title">
+            <?php
+              $category = get_the_category();
+              if($category && $category[0]) {
+                echo $category[0]->cat_name;
+              }
+            ?>
+          </h3>
+          <p class="news__post__text">
+            <?php the_title() ?>
+          </p>
+        </div>
+      </a>
     </article>
   <?php endwhile; ?>
 
@@ -47,7 +49,7 @@ $the_query = new WP_Query( $args ); ?>
 
   </div>
 
-  <?php if (!isset($isNewsTeaser) || !$isNewsTeaser) : ?>
+  <?php if ((isset($isNewsTeaser) && $isNewsTeaser)) : ?>
     <div class="news__footer">
       <a class="news__link news__link--more" href="<?php
         echo pll_home_url('de');
