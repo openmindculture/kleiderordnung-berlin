@@ -134,10 +134,6 @@ a.news__post__link:hover {
   margin-top: 2.8125rem;
 }
 
-.news--is-teaser .news__footer {
-  display: none;
-}
-
 .news__link--more,
 .news__link--more:link,
 .news__link--more:visited,
@@ -147,4 +143,14 @@ a.news__post__link:hover {
   line-height: 1.6;
   text-decoration: none;
   color: var(--color-primary-foreground);
+}
+
+.news__post--single {;
+  margin-bottom: 8rem;
+  max-width: unset;
+}
+
+.news__post--single .news__post__content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
