@@ -7,6 +7,17 @@
  * @author openmindculture
  */
 
+body.archive main,
+body.archive > section,
+body.search main,
+body.search > section {
+  width: var(--width-full);
+  max-width: var(--width-max);
+  margin-left: auto;
+  margin-right: auto;
+  min-height: unset;
+}
+
 body.page:not(.home) main {
   width: var(--width-spaced);
   max-width: var(--width-max);

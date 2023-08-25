@@ -137,3 +137,41 @@ a.stories__navigation__link:visited {
 .stories__navigation__link:last-child {
   margin-left: 1.5rem;
 }
+
+/* single or archive view */
+
+body.archive .stories__story,
+body.search .stories__story,
+body.single-story .stories__story {
+  width: 100%;
+}
+
+body.archive .stories__story__quote,
+body.search .stories__story__quote,
+body.single-story .stories__story__quote {
+  width: 36rem;
+  max-width: calc(100% - 2rem);
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  body.archive .stories__story,
+  body.search .stories__story,
+  body.single-story .stories__story {
+    width: max-content;
+  }
+
+  body.archive .carousel__viewport,
+  body.search .carousel__viewport,
+  body.single-story .carousel__viewport {
+    justify-content: space-around;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  body.archive .stories__story__quote,
+  body.search .stories__story__quote,
+  body.single-story .stories__story__quote {
+    justify-content: flex-end;
+  }
+}
