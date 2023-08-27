@@ -24,7 +24,7 @@ function kleiderordnung_add_dashboard_widget()
 
   function kleiderordnung_echo_dashboard_content()
   {
-    $kleiderordnung_dashboardContentOutput = '';
+    $kleiderordnung_widget = '';
     global $wp_version;
     $currentTheme = wp_get_theme();
     $currentThemeName = esc_html($currentTheme['Name']);
@@ -32,45 +32,120 @@ function kleiderordnung_add_dashboard_widget()
     $currentThemeDirectory = get_template_directory_uri();
 
     if (str_starts_with(strtolower($currentThemeName), 'kleiderordnung')) {
-      $kleiderordnung_dashboardContentOutput.= '<img src="'.$currentThemeDirectory.'/screenshot.png" style="width:100%;height:auto;">';
+      $kleiderordnung_widget.= '<style>';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__image {';
+      $kleiderordnung_widget.= '  width:100%;';
+      $kleiderordnung_widget.= '  height:auto;';
+      $kleiderordnung_widget.= '  margin-bottom: 0.125rem;';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__image--faded {';
+      $kleiderordnung_widget.= '  opacity: 0.5;';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__button,';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__button:link,';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__button:visited,';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__button:active,';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__button:hover,';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__button {';
+      $kleiderordnung_widget.= '  background-color: #0014d1;';
+      $kleiderordnung_widget.= '  color: #ffffff;';
+      $kleiderordnung_widget.= '  display: block;';
+      $kleiderordnung_widget.= '  font-weight: bold;';
+      $kleiderordnung_widget.= '  line-height: 0.875rem;';
+      $kleiderordnung_widget.= '  margin-left: auto;';
+      $kleiderordnung_widget.= '  margin-right: auto;';
+      $kleiderordnung_widget.= '  text-transform: uppercase;';
+      $kleiderordnung_widget.= '  text-decoration: none;';
+      $kleiderordnung_widget.= '  text-align: center;';
+      $kleiderordnung_widget.= '  border-radius: 1.875rem;';
+      $kleiderordnung_widget.= '  padding: 1rem 1.5rem;';
+      $kleiderordnung_widget.= '  width: fit-content';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__button:hover,';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__button:focus {';
+      $kleiderordnung_widget.= '  background-color: #ffc7b0;';
+      $kleiderordnung_widget.= '  color: #000000;';
+      $kleiderordnung_widget.= '  border: none;';
+      $kleiderordnung_widget.= '  outline: none;';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__centered {';
+      $kleiderordnung_widget.= '  display: block;';
+      $kleiderordnung_widget.= '  text-align: center;';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__mt-3 {';
+      $kleiderordnung_widget.= '  position: relative;';
+      $kleiderordnung_widget.= '  margin-top: -3rem;';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__mb3 {';
+      $kleiderordnung_widget.= '  margin-bottom: 3rem;';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__mt-6 {';
+      $kleiderordnung_widget.= '  position: relative;';
+      $kleiderordnung_widget.= '  margin-top: -6rem;';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__mb6 {';
+      $kleiderordnung_widget.= '  margin-bottom: 6rem;';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__mt-9 {';
+      $kleiderordnung_widget.= '  position: relative;';
+      $kleiderordnung_widget.= '  margin-top: -9rem;';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__mb9 {';
+      $kleiderordnung_widget.= '  margin-bottom: 9rem;';
+      $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '</style>';
+
+      $kleiderordnung_frontpageIdGerman = url_to_postid(pll_home_url('de'));
+      $kleiderordnung_editHomeGerman = $kleiderordnung_frontpageIdGerman ? '/wp-admin/post.php?post=' . $kleiderordnung_frontpageIdGerman . '&action=edit' : '/wp-admin/edit.php?post_type=page';
+
+      $kleiderordnung_frontpageIdEnglish = url_to_postid(pll_home_url('en'));
+      $kleiderordnung_editHomeEnglish = $kleiderordnung_frontpageIdEnglish ? '/wp-admin/post.php?post=' . $kleiderordnung_frontpageIdEnglish . '&action=edit' : '/wp-admin/edit.php?post_type=page';
+
+      $kleiderordnung_widget.= '<img src="'.$currentThemeDirectory.'/img/admin-screenshot-intro.png" width="509" height="382" class="kleiderordnung__dashboard__image">';
+      $kleiderordnung_widget.= '<a href="' . $kleiderordnung_editHomeGerman . '" class="kleiderordnung__dashboard__button kleiderordnung__mt-9 kleiderordnung__mb9" title="Homepage bearbeiten (deutsch)">Homepage / Texte bearbeiten <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABLElEQVR4AY2QgUZEQRSGz9ydmzbYkBWABBJYABHEFhJ6m0WP0DMEQNIr9AKrN8ne2Tt3Zs7MOdOZmRBEv+v34Tvub9R6fdNlAzU+snSME/wdjbjbbJ6EiEg6BA8102QbjKNpoMzw8v6qD/sOALbbT2MC1NgaAWOKOgxf5czY+4dbAX2G/THzcozLrvPV85IQyqVz0rvg2p9Pei4HjzSsiFbV4JgyhhxCjpGdZ0RhdikLB9/b8Qig7MkpSovR7Cp59q6CazaNFiTt4J82o6uvdMVwTsztKTXZod4jgOJJuqNAjFyGrBR8gM6XwKfIC4KanBSTZ0rClKh08D9DFh3egW7ebH7NcRDQWrz9rM2Ne+mDOXB2mZJ8agL19nwxR2iZXGm1gDbQKhDjd4yHb2oW/KR8xHicAAAAAElFTkSuQmCC"></a>';
+      $kleiderordnung_widget.= '<br>';
+      $kleiderordnung_widget.= '<a href="' . $kleiderordnung_editHomeEnglish . '" class="kleiderordnung__dashboard__button kleiderordnung__mt-9 kleiderordnung__mb9" title="Homepage bearbeiten (englisch)">Homepage / Texte bearbeiten <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg=="></a>';
+
+      $kleiderordnung_widget.= '<img src="'.$currentThemeDirectory.'/img/admin-screenshot-offers.jpg" width="509" height="303" class="kleiderordnung__dashboard__image kleiderordnung__dashboard__image--faded kleiderordnung__mt-9">';
+      $kleiderordnung_widget.= '<a href="/wp-admin/edit.php?post_type=offer" class="kleiderordnung__dashboard__button kleiderordnung__mt-9 kleiderordnung__mb9">Angebote bearbeiten</a>';
+
+      $kleiderordnung_widget.= '<img src="'.$currentThemeDirectory.'/img/admin-screenshot-stories.jpg" width="509" height="224" class="kleiderordnung__dashboard__image kleiderordnung__dashboard__image--faded kleiderordnung__mt-3">';
+      $kleiderordnung_widget.= '<a href="/wp-admin/edit.php?post_type=story" class="kleiderordnung__dashboard__button kleiderordnung__mt-9 kleiderordnung__mb9">Stories (Testimonials) bearbeiten</a>';
+
+      $kleiderordnung_widget.= '<img src="'.$currentThemeDirectory.'/img/admin-screenshot-news.jpg" width="509" height="224" class="kleiderordnung__dashboard__image kleiderordnung__dashboard__image--faded kleiderordnung__mt-3">';
+      $kleiderordnung_widget.= '<a href="/wp-admin/edit.php" class="kleiderordnung__dashboard__button kleiderordnung__mt-9 kleiderordnung__mb9">News bearbeiten</a>';
+
+      $kleiderordnung_widget.= '<img src="'.$currentThemeDirectory.'/img/admin-screenshot-agb.jpg" width="509" height="146" class="kleiderordnung__dashboard__image kleiderordnung__dashboard__image--faded kleiderordnung__mt-3">';
+      $kleiderordnung_widget.= '<a href="/wp-admin/edit.php?post_type=page" class="kleiderordnung__dashboard__button kleiderordnung__mt-6 kleiderordnung__mb3">Seiten bearbeiten</a>';
+
+      $kleiderordnung_widget.= '<br>';
+      $kleiderordnung_widget.= '<a href="/wp-admin/admin.php?page=mlang_strings" class="kleiderordnung__dashboard__button">Sonstige Textteile und Übersetzungen bearbeiten</a>';
+      $kleiderordnung_widget.= '<br>';
+
+      $kleiderordnung_widget.= '<a href="/wp-admin/admin.php?page=w3tc_pgcache" class="kleiderordnung__dashboard__button">Zwischenspeicher (Cache) leeren...</a>';
+      $kleiderordnung_widget.= '<br>';
+
+      $kleiderordnung_widget.= '<b class="kleiderordnung__centered">Kontaktformular</b><br>';
+
+      $kleiderordnung_widget.= '<a href="/wp-admin/admin.php?page=flamingo_inbound" class="kleiderordnung__dashboard__button">Nachrichten lesen</a>';
+      $kleiderordnung_widget.= '<br>';
+
+      $kleiderordnung_widget.= '<a href="/wp-admin/admin.php?page=wpcf7" class="kleiderordnung__dashboard__button">Kontaktformular bearbeiten</a>';
+      $kleiderordnung_widget.= '<br>';
+
     } else {
-      $kleiderordnung_dashboardContentOutput.= 'Theme "KleiderOrdnung" muss unter <a href="/themes.php">&quot;Design&quot;</a> aktiviert werden';
+      $kleiderordnung_widget.= 'Theme "KleiderOrdnung" muss unter <a href="/themes.php">&quot;Design&quot;</a> aktiviert werden';
     }
 
-    $kleiderordnung_dashboardContentOutput.= '<b>Inhalte bearbeiten / aktualisieren</b>';
-    $kleiderordnung_dashboardContentOutput.= '<ul>';
-    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php">News-Beiträge bearbeiten</a></li>';
-    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=story">Stories (Testimonials) bearbeiten</a></li>';
-    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=offer">Angebote bearbeiten</a></li>';
-    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/edit.php?post_type=page">Seiten bearbeiten</a> (Home, AGB, Impressum, Datenschutz, etc.)<br>';
-    $kleiderordnung_dashboardContentOutput.= '&nbsp;&nbsp;(Intro, Mission, etc. bei Homepage DE/EN bearbeiten)';
-    $kleiderordnung_dashboardContentOutput.= '</li>';
-    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/admin.php?page=mlang_strings">Sonstige Textteile und Übersetzungen bearbeiten</a> (Buttons u.a.)</li>';
+    $kleiderordnung_widget.= '<b class="kleiderordnung__centered">Anleitung / Hilfe</b><br>';
+    $kleiderordnung_widget.= '<a href="https://github.com/openmindculture/kleiderordnung-berlin/blob/main/doc/anleitung.md" target="_blank" class="kleiderordnung__dashboard__button">Bedienungsanleitung lesen</a></b><br>';
 
-    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="#">Instagram-Platzhalterbilder aktualisieren</a> (TODO)</li>';
-    $kleiderordnung_dashboardContentOutput.= '<li>- <a href="/wp-admin/admin.php?page=w3tc_pgcache">Zwischenspeicher (Cache) leeren...</a></li>';
-    $kleiderordnung_dashboardContentOutput.= '</ul>';
+    $kleiderordnung_widget.= '<hr><b class="kleiderordnung__centered">Technische Daten</b><br>';
 
-    $kleiderordnung_dashboardContentOutput.= '<b>Posteingang / Kontaktformular</b><br>';
-    $kleiderordnung_dashboardContentOutput.= '- <a href="/wp-admin/admin.php?page=flamingo_inbound">Nachrichten lesen</a><br>';
-    $kleiderordnung_dashboardContentOutput.= '- <a href="/wp-admin/admin.php?page=wpcf7">Kontaktformular bearbeiten</a><br>';
-    $kleiderordnung_dashboardContentOutput.= '<br>';
-
-    $kleiderordnung_dashboardContentOutput.= '<b>Daten sichern und wiederherstellen</b><br>';
-
-    $kleiderordnung_dashboardContentOutput.= '- <a href="/wp-admin/export.php">Inhalte exportieren</a> /';
-    $kleiderordnung_dashboardContentOutput.= '<a href="/wp-admin/admin.php?import=wordpress">importieren</a> ...<br>';
-    $kleiderordnung_dashboardContentOutput.= '<br>';
-
-    $kleiderordnung_dashboardContentOutput.= '<b>Anleitung / Hilfe</b><br>';
-    $kleiderordnung_dashboardContentOutput.= '- <a href="https://github.com/openmindculture/kleiderordnung-berlin/blob/main/doc/anleitung.md" target="_blank">Bedienungsanleitung lesen</a></b><br>';
-
-    $kleiderordnung_dashboardContentOutput.= '<hr><b>Technische Daten</b><br>';
-
-    $kleiderordnung_dashboardContentOutput.= 'Theme-Version: ' . $currentThemeName . ' ' . $currentThemeVersion . '<br>';
-    $kleiderordnung_dashboardContentOutput.= 'WordPress-Version: ' . esc_html($wp_version) . '<br>';
-    $kleiderordnung_dashboardContentOutput.= 'PHP-Version: ' . esc_html(phpversion()) . '<br>';
-    echo $kleiderordnung_dashboardContentOutput;
+    $kleiderordnung_widget.= 'Theme-Version: ' . $currentThemeName . ' ' . $currentThemeVersion . '<br>';
+    $kleiderordnung_widget.= 'WordPress-Version: ' . esc_html($wp_version) . '<br>';
+    $kleiderordnung_widget.= 'PHP-Version: ' . esc_html(phpversion()) . '<br>';
+    echo $kleiderordnung_widget;
   }
 
   add_action('wp_dashboard_setup', 'kleiderordnung_add_dashboard_widget' );
