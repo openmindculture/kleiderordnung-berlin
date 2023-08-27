@@ -61,6 +61,7 @@ function kleiderordnung_add_dashboard_widget()
       $kleiderordnung_widget.= '  padding: 1rem 1.5rem;';
       $kleiderordnung_widget.= '  width: fit-content';
       $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__dashboard__button:active,';
       $kleiderordnung_widget.= '.kleiderordnung__dashboard__button:hover,';
       $kleiderordnung_widget.= '.kleiderordnung__dashboard__button:focus {';
       $kleiderordnung_widget.= '  background-color: #ffc7b0;';
@@ -125,6 +126,7 @@ function kleiderordnung_add_dashboard_widget()
       $kleiderordnung_widget.= '<a href="/wp-admin/admin.php?page=w3tc_pgcache" class="kleiderordnung__dashboard__button">Zwischenspeicher (Cache) leeren...</a>';
       $kleiderordnung_widget.= '<br>';
 
+      $kleiderordnung_widget.= '<hr>'; // ----------------------------------------------------
       $kleiderordnung_widget.= '<b class="kleiderordnung__centered">Kontaktformular</b><br>';
 
       $kleiderordnung_widget.= '<a href="/wp-admin/admin.php?page=flamingo_inbound" class="kleiderordnung__dashboard__button">Nachrichten lesen</a>';
@@ -137,14 +139,21 @@ function kleiderordnung_add_dashboard_widget()
       $kleiderordnung_widget.= 'Theme "KleiderOrdnung" muss unter <a href="/themes.php">&quot;Design&quot;</a> aktiviert werden';
     }
 
+    $kleiderordnung_widget.= '<hr>'; // ----------------------------------------------------
     $kleiderordnung_widget.= '<b class="kleiderordnung__centered">Anleitung / Hilfe</b><br>';
     $kleiderordnung_widget.= '<a href="https://github.com/openmindculture/kleiderordnung-berlin/blob/main/doc/anleitung.md" target="_blank" class="kleiderordnung__dashboard__button">Bedienungsanleitung lesen</a></b><br>';
 
-    $kleiderordnung_widget.= '<hr><b class="kleiderordnung__centered">Technische Daten</b><br>';
 
-    $kleiderordnung_widget.= 'Theme-Version: ' . $currentThemeName . ' ' . $currentThemeVersion . '<br>';
-    $kleiderordnung_widget.= 'WordPress-Version: ' . esc_html($wp_version) . '<br>';
-    $kleiderordnung_widget.= 'PHP-Version: ' . esc_html(phpversion()) . '<br>';
+    // if (is_plugin_active( 'updraftplus' )) {
+      $kleiderordnung_widget.= '<hr>'; // ----------------------------------------------------
+      $kleiderordnung_widget.= '<b class="kleiderordnung__centered">Datensicherung (Backup)</b><br>';
+      $kleiderordnung_widget.= '<a href="/wp-admin/options-general.php?page=updraftplus" class="kleiderordnung__dashboard__button">Backups</a>';
+      $kleiderordnung_widget.= '<br>';
+    // }
+
+    $kleiderordnung_widget.= '<hr>'; // ----------------------------------------------------
+    $kleiderordnung_widget.= '<span class="kleiderordnung_centered">Theme-Version: ' . $currentThemeName . ' ' . $currentThemeVersion . '</span><br>';
+
     echo $kleiderordnung_widget;
   }
 

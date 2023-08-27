@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.3" created="2023-08-25 17:00" -->
+	<!-- generator="WordPress/6.3" created="2023-08-27 20:13" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>KleiderOrdnung Berlin</title>
 	<link>https://preview.kleiderordnung-berlin.de</link>
 	<description></description>
-	<pubDate>Fri, 25 Aug 2023 17:00:51 +0000</pubDate>
+	<pubDate>Sun, 27 Aug 2023 20:13:53 +0000</pubDate>
 	<language>de-DE</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://preview.kleiderordnung-berlin.de</wp:base_site_url>
@@ -63,14 +63,14 @@
 		<wp:cat_name><![CDATA[Nicht kategorisiert]]></wp:cat_name>
 	</wp:category>
 		<wp:category>
-		<wp:term_id>18</wp:term_id>
-		<wp:category_nicename><![CDATA[workshops-events]]></wp:category_nicename>
+		<wp:term_id>22</wp:term_id>
+		<wp:category_nicename><![CDATA[workshops-events-en]]></wp:category_nicename>
 		<wp:category_parent><![CDATA[]]></wp:category_parent>
 		<wp:cat_name><![CDATA[Workshops &amp; Events]]></wp:cat_name>
 	</wp:category>
 		<wp:category>
-		<wp:term_id>22</wp:term_id>
-		<wp:category_nicename><![CDATA[workshops-events-en]]></wp:category_nicename>
+		<wp:term_id>18</wp:term_id>
+		<wp:category_nicename><![CDATA[workshops-events]]></wp:category_nicename>
 		<wp:category_parent><![CDATA[]]></wp:category_parent>
 		<wp:cat_name><![CDATA[Workshops &amp; Events]]></wp:cat_name>
 	</wp:category>
@@ -1167,7 +1167,7 @@
 					<item>
 		<title><![CDATA[kontakt@ingo-steinke.de]]></title>
 		<link>https://preview.kleiderordnung-berlin.de/?post_type=flamingo_contact&#038;p=17</link>
-		<pubDate>Tue, 08 Aug 2023 07:50:31 +0000</pubDate>
+		<pubDate>Sun, 27 Aug 2023 20:11:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?p=17</guid>
 		<description></description>
@@ -1175,10 +1175,10 @@
 admin]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>17</wp:post_id>
-		<wp:post_date><![CDATA[2023-08-08 09:50:31]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2023-08-08 07:50:31]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-08-08 09:50:31]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-08-08 07:50:31]]></wp:post_modified_gmt>
+		<wp:post_date><![CDATA[2023-08-27 22:11:49]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-08-27 20:11:49]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2023-08-27 22:11:49]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-27 20:11:49]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[kontakt-ingo-steinke-de]]></wp:post_name>
@@ -1202,7 +1202,7 @@ admin]]></content:encoded>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_last_contacted]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2023-08-08 09:50:31]]></wp:meta_value>
+		<wp:meta_value><![CDATA[2023-08-27 22:11:49]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
@@ -1215,6 +1215,10 @@ admin]]></content:encoded>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2023-07-11]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2023-08-08]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -4876,7 +4880,7 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>1. Die Angebote auf der Webseite www.kleiderordnung-berlin.de oder über andere Fernkommunikationsmittel wie Telefon, E-Mail oder Brief stellen eine unverbindliche Aufforderung dar, die Dienstleistungen von Kleiderordnung in Anspruch zu nehmen. Erst mit einer telefonischen, schriftlichen, oder per E-Mail erklärten Buchung gibt die Kundin ein verbindliches Angebot auf Abschluss eines Vertrages ab.</p>
+<p>1. Die Angebote auf der Webseite www.kleiderordnung-berlin.de bzw. kleiderordnung.berlin oder über andere Fernkommunikationsmittel wie Telefon, E-Mail oder Brief stellen eine unverbindliche Aufforderung dar, die Dienstleistungen von Kleiderordnung in Anspruch zu nehmen. Erst mit einer telefonischen, schriftlichen, oder per E-Mail erklärten Buchung gibt die Kundin ein verbindliches Angebot auf Abschluss eines Vertrages ab.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -5014,8 +5018,8 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 		<wp:post_id>78</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-11 10:22:23]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-11 08:22:23]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 21:55:52]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 19:55:52]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-27 22:10:10]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-27 20:10:10]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[allgemeine-geschaeftsbedingungen]]></wp:post_name>
@@ -5095,6 +5099,18 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 		<wp:meta_key><![CDATA[_page_contact_job_title]]></wp:meta_key>
 		<wp:meta_value><![CDATA[page_contact_job_title]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[5]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Terms of Service]]></title>
@@ -5103,15 +5119,183 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 		<dc:creator><![CDATA[tina]]></dc:creator>
 		<guid isPermaLink="false">https://preview.kleiderordnung-berlin.de/?page_id=80</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>Have we this not in English yet?</p>
+		<content:encoded><![CDATA[<!-- wp:heading -->
+<h2 class="wp-block-heading">§ 1 Geltungsbereich</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>1. Für das Vertragsverhältnis zwischen der Modeberatung „Kleiderordnung Berlin“, vertreten durch Frau Martina Steinke (nachfolgend „Kleiderordnung“ bzw. „Tina Steinke“) und Verbrauchern (nachfolgend „Kund:innen“ bzw. „Kundin“) sowie sämtliche weitere von Kleiderordnung angebotenen Leistungen gelten die nachfolgenden Allgemeinen Geschäftsbedingungen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Davon abweichende Bedingungen haben nur Gültigkeit, wenn sie durch Kleiderordnung schriftlich bestätigt werden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>3. Soweit in den individuellen Verträgen mit den Kund:innen schriftliche Bestimmungen enthalten sind, die von den nachfolgenden AGB abweichen, gehen diese Regelungen vor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">§ 2 Leistungsumfang und Preis</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>1. Der Leistungsumfang richtet sich nach der schriftlich festgehaltenen Absprache mit dem Kunden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Es gilt der jeweilige im Kundenangebot festgehaltene Preis. Dieser angegebene Preis ist verbindlich und versteht sich als Endpreis.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>3. Aufgrund des Kleinunternehmerstatus gemäß § 19 UstG erhebt Kleiderordnung keine Umsatzsteuer und weist diese daher auch nicht aus.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">§ 3 Zustandekommen des Vertrages</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>1. Die Angebote auf der Webseite www.kleiderordnung-berlin.de bzw. kleiderordnung.berlin oder über andere Fernkommunikationsmittel wie Telefon, E-Mail oder Brief stellen eine unverbindliche Aufforderung dar, die Dienstleistungen von Kleiderordnung in Anspruch zu nehmen. Erst mit einer telefonischen, schriftlichen, oder per E-Mail erklärten Buchung gibt die Kundin ein verbindliches Angebot auf Abschluss eines Vertrages ab.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Die Annahme des Angebots durch Kleiderordnung erfolgt durch ein Bestätigungsschreiben. In diesem Bestätigungsschreiben werden alle Leistungsbestandteile sowie die Preisangaben aufgeführt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">§ 4 Widerrufsrecht</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><strong>Widerrufsbelehrung</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt 14 Tage ab Vertragsschluss. Um Ihr Widerrufsrecht auszuüben, müssen Sie mir (Kleiderordnung Berlin, Frau Martina Steinke, Donaustr. 83, 12043 Berlin, martinasteinke@posteo.de) mittels einer eindeutigen Erklärung (z.B. einem mit der Post versandten Brief, einer E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das unten stehende Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist oder eine andere eindeutige Erklärung übermitteln. Machen Sie von dieser Möglichkeit Gebrauch, so werden wir Ihnen unverzüglich eine Bestätigung über den Eingang des Widerrufs übermitteln. Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Folgen des Widerrufs</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Wenn Sie diesen Vertrag widerrufen, habe ich Ihnen alle Zahlungen, die ich von Ihnen erhalten habe unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei mir eingegangen ist. Für diese Rückzahlung verwende ich dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><strong>Besondere Hinweise</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Das Widerrufsrecht ist ausgeschlossen, sofern Sie ausdrücklich verlangt haben, dass bereits vor Ablauf der Widerrufsfrist die Dienstleistung beginnen soll.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><strong>Muster-Widerrufsformular</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table {"hasFixedLayout":true,"className":"table\u002d\u002dtos"} -->
+<figure class="wp-block-table table--tos"><table class="has-fixed-layout"><tbody><tr><td colspan="2">Hiermit wiederrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung<br>der folgenden Dienstleistungen (*)</td></tr><tr><td colspan="2"></td></tr><tr><td>Bestellt am / bestätigt am (*)</td><td></td></tr><tr><td>(Ihr Name)</td><td></td></tr><tr><td>(Straße, Hausnummer)</td><td></td></tr><tr><td>(PLZ, Ort)</td><td></td></tr><tr><td>(Datum)</td><td></td></tr><tr><td colspan="2">Ihre Unterschrift (nur bei Mitteilung auf Papier) (*)</td></tr><tr><td colspan="2"><br></td></tr><tr><td colspan="2">(*) Unzutreffendes streichen</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">§ 5 Zahlungsbedingungen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>1. Die Zahlung der gebuchten Leistung erfolgt entweder als Vorauszahlung per Überweisung innerhalb von 14 Tagen nach Erhalt der Rechnung oder per Barzahlung direkt beim Termin. Eine Zahlung per Kreditkarte oder EC-Karte ist ausgeschlossen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Die Zurückhaltung von Zahlungen oder die Aufrechnung mit Gegenansprüchen des Kunden ist ausgeschlossen, sofern diese nicht unbestritten oder rechtskräftig festgestellt sind.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>3. Für den Fall eines Zahlungsverzuges des Kunden ist Kleiderordnung berechtigt, Verzugszinsen in Höhe von fünf Prozentpunkten über dem Basiszinssatz zu fordern.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">§ 6 Gutscheine</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>1. Kleiderordnung bietet Geschenkgutscheine über die angebotenen Leistungen an. Geschenkgutscheine sind nach Rechnungstellung innerhalb von 14 Tagen zu überweisen oder bar zu bezahlen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Eine Barauszahlung eines Geschenkgutscheins ist nicht möglich. Geschenkgutscheine sind innerhalb von drei Jahren einzulösen. Rückzahlungen aus Gutscheinen sind ausgeschlossen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>3. Für den Fall einer Geschäftsaufgabe verliert der Geschenkgutschein seine Gültigkeit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">§ 7 Absage von Terminen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>1. Termine und Fristen sind nur dann verbindlich, wenn sie verbindlich vereinbart sind oder im jeweiligen Angebot vorgegeben sind.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Ist eine Absage oder Verschiebung des Termins seitens des Kunden erforderlich, so muss diese Absage rechtzeitig, mindestens jedoch 7 Kalendertage vor dem Termin, mitgeteilt werden. Kleiderordnung ist ansonsten berechtigt, dem Kunden den entstehenden Verdienstausfall mit 25 % der Kosten der vereinbarten Dienstleistung in Rechnung stellen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>3. Erscheint die Kundin ohne Absage nicht zu einem vereinbarten Termin bzw. ist an einem vereinbarten Termin nicht anzutreffen, so gilt die Dienstleistung als erbracht und kann seitens Kleiderordnung vollständig in Rechnung gestellt werden. Dies gilt zudem für angefallene Fahrtkosten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>4. Für den Fall einer Terminabsage aufgrund höherer Gewalt oder außergewöhnlichen und unvorhersehbaren Ereignissen wie Krankheit, Unfall, Streik hat die Terminabsage unverzüglich schriftlich oder telefonisch zu erfolgen. Es besteht die Möglichkeit einen Ersatztermin zu vereinbaren.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">§ 8 Haftung</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>1. Die jeweilige Beratung wird nach dem derzeitig aktuellen Wissenstand sorgfältig vorbereitet und durchgeführt. Für die Erfahrungen, Kenntnisse und Ergebnisse der Beratung oder Veranstaltung sowie deren Auswirkungen wird keine Haftung übernommen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Die Inhalte der Webseite sowie des gedruckten Informationsmaterials werden mit größtmöglicher Sorgfalt erstellt. Kleiderordnung übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">§ 9 Urheberrecht</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>1. Soweit die Beratungsleistungen von Kleiderordnung urheberrechtsfähig sind, ist Kleiderordnung Urheber.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Beratungsunterlagen sowie Teile daraus dürfen ohne Genehmigung weder vervielfältigt, noch nachgedruckt, noch übersetzt oder an Dritte weitergegeben werden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">§ 10 Schlussbestimmungen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>1. Es gilt das Recht der Bundesrepublik Deutschland.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>2. Gerichtsstand für beide Parteien ist, soweit zulässig, Berlin.</p>
 <!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>80</wp:post_id>
 		<wp:post_date><![CDATA[2023-07-11 10:23:05]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2023-07-11 08:23:05]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2023-07-27 21:56:11]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2023-07-27 19:56:11]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2023-08-27 22:11:55]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2023-08-27 20:11:55]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[terms-of-service]]></wp:post_name>
@@ -5190,6 +5374,18 @@ eine Freude mit Sustainable Styling als Geschenk-Gutschein!]]></content:encoded>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_page_contact_job_title]]></wp:meta_key>
 		<wp:meta_value><![CDATA[page_contact_job_title]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_estimated-reading-time-minutes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[5]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_wordproof_timestamp]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+		<wp:meta_value><![CDATA[90]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
