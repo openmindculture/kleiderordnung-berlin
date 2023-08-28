@@ -17,5 +17,3 @@ export function kleiderordnung_verifyAllowedUrl(urlToVerify) {
   }
   return false;
 }
-
-// TODO add unit test
