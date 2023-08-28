@@ -451,7 +451,7 @@ As it seems hard to properly unit-test classic WordPress code, frontend testing 
 
 **TODO**: unit test tutorials advise to **refactor** our code so that it never interacts with the global `window` object directly. Instead, we should **inject `window`** (or rather the part that we are actually interested in) as a parameter into our functions wherever possible. But what about DOM API callbacks like event handling or IntersectionObserver?
 
-PHP test coverage is low for a similar reason: most code is mixed with HTML markup and heavily depends on WordPress core and plugin functionality which seems hard to properly abstract into testable code without overengineering away from the software's best practice.
+PHP unit test coverage is low or nonexistent for a similar reason: most code is mixed with HTML markup and heavily depends on WordPress core and plugin functionality which seems hard to properly abstract into testable code without overengineering away from the software's best practice. If we don't feel likely at all to achieve a high unit test coverage, we could rather invest the same effort in extending our frontend tests to verify the very same aspects like custom page titles, custom post types, correct paths to styles, fonts and libraries etc. 
 
 ### Build Tools
 
