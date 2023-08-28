@@ -449,6 +449,8 @@ As it seems hard to properly unit-test classic WordPress code, frontend testing 
 
 [Jasmine](https://jasmine.github.io/) is used for unit testing JavaScript. Test coverage is still low due to dependencies and side effects as most code directly interacts with the DOM API. I tried to use <strike>[jest](https://jestjs.io/)</strike> but it does not support ES(6) module syntax (import/export) properly without using <strike>[babel](https://babeljs.io/)</strike> as well.
 
+**TODO**: unit test tutorials advise to **refactor** our code so that it never interacts with the global `window` object directly. Instead, we should **inject `window`** (or rather the part that we are actually interested in) as a parameter into our functions wherever possible. But what about DOM API callbacks like event handling or IntersectionObserver?
+
 PHP test coverage is low for a similar reason: most code is mixed with HTML markup and heavily depends on WordPress core and plugin functionality which seems hard to properly abstract into testable code without overengineering away from the software's best practice.
 
 ### Build Tools
