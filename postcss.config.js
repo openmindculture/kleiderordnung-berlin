@@ -1,15 +1,17 @@
-const postcssCustomProperties = require(
-  'postcss-custom-properties'
-);
+import postcssCustomProperties from 'postcss-custom-properties';
+import postcssImport from 'postcss-import';
+import postcssMixins from 'postcss-mixins';
+import postcssNesting from 'postcss-nesting';
+import postcssMinify from 'postcss-minify';
 
-module.exports = {
+export default {
 	plugins: [
-		require('postcss-import'),
-    require('postcss-mixins'),
+    postcssImport,
+    postcssMixins,
 		postcssCustomProperties({
 			preserve: false,
 		}),
-		require('postcss-nesting'),
-		require('postcss-minify'),
+    postcssNesting,
+    postcssMinify,
 	],
 }
