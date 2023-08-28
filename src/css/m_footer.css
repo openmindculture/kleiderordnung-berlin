@@ -60,6 +60,10 @@ body.page:not(.home) .footer__content {
   display: none;
 }
 
+.footer__column__row--legal {
+  margin-bottom: 1rem;
+}
+
 .footer__partners {
   display: flex;
   flex-wrap: wrap;
