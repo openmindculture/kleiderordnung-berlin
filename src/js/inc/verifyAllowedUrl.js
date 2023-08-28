@@ -1,8 +1,10 @@
 /**
  * @param {string} urlToVerify
- * global window
+ * @param {object} windowLocation like window.location but we actually only use these:
+ * @property {string} protocol
+ * @property {string} host
  */
-export function kleiderordnung_verifyAllowedUrl(urlToVerify) {
+export function kleiderordnung_verifyAllowedUrl(urlToVerify, windowLocation) {
   var feedResourcesAllowedAbsoluteUrls = [
     'https://assets.juicer.io/embed.js'
   ];
@@ -11,7 +13,7 @@ export function kleiderordnung_verifyAllowedUrl(urlToVerify) {
       return true;
     }
   }
-  var sameUrlPrefix = window.location.protocol + '//' + window.location.host + '/wp-content/themes/kleiderordnung/';
+  var sameUrlPrefix = windowLocation.protocol + '//' + windowLocation.host + '/wp-content/themes/kleiderordnung/';
   if (urlToVerify.indexOf(sameUrlPrefix) === 0) {
     return true;
   }

@@ -4,7 +4,7 @@ import {kleiderordnung_verifyAllowedUrl} from './verifyAllowedUrl';
  *  @property {number} feedStyleFetchRetryTimeoutMilliseconds
  */
 export function kleiderordnung_fetchAndAppendStyleFromFile(styleFileUrl, config) {
-  if (!config || !styleFileUrl || !kleiderordnung_verifyAllowedUrl(styleFileUrl)) { return; }
+  if (!config || !styleFileUrl || !kleiderordnung_verifyAllowedUrl(styleFileUrl, window.location)) { return; }
   fetch(styleFileUrl)
     .then(function(response) {
       return response.text();
