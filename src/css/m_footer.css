@@ -109,6 +109,10 @@ body.page:not(.home) .footer__partners {
     display: block;
   }
 
+  .footer__column__row--legal {
+    margin-bottom: 1rem;
+  }
+
   .footer__column__row__softhyphen {
     display: inline;
   }

@@ -10,22 +10,22 @@
   <div class="footer__content">
     <div class="footer__columns__column-wrapper">
       <div class="footer__columns__column footer__columns__column--50">
-        <div class="footer__column__row">
+        <div class="footer__column__row footer__column__row--copyright">
           <span class="footer__column__row__copyright"><?php _e( '2023 © Kleiderordnung Martina Steinke', 'kleiderordnung' ) ?></span>
           <span class="footer__column__row__softhyphen">–</span>
           <span class="footer__column__row__allrights"><?php _e( 'All rights reserved', 'kleiderordnung' ) ?></span>
         </div>
-        <div class="footer__column__row">
+        <div class="footer__column__row footer__column__row--legal">
           <a class="footer__column__row__link footer__column__row__link--imprint" href="/impressum/" tabindex="0"><?php _e( 'Impressum', 'kleiderordnung' ) ?></a>
           <a class="footer__column__row__link footer__column__row__link--privacy" href="/datenschutzerklaerung/" tabindex="0"><?php _e( 'Datenschutz', 'kleiderordnung' ) ?></a>
           <a class="footer__column__row__link footer__column__row__link--tos" href="/allgemeine-geschaeftsbedingungen/" title="<?php _e('Allgemeine Geschäftsbedingungen', 'kleiderordnung'); ?>" tabindex="0"><?php _e( 'AGB', 'kleiderordnung' ) ?></a>
         </div>
-        <div class="footer__column__row">
+        <div class="footer__column__row footer__column__row--ecofriendly">
           <a href="#footer__ecofriendly" class="footer__link--ecofriendly" id="footer__link--ecofriendly" tabindex="0" title="<?php _e( 'laut Messung von WebsiteCarbon und EcoGrader', 'kleiderordnung' ); _e( 'im August 2023', 'kleiderordnung' ); echo '. ' ; _e( 'Details der Messungen anzeigen', 'kleiderordnung' );  ?>"><?php _e( 'Umweltfreundlicher als', 'kleiderordnung' ) ?> 84% <?php _e( 'aller getesteten Websites', 'kleiderordnung' ) ?> <small>(0.16g - 0.21 g CO₂e)</small>.</a>
         </div>
       </div>
       <div class="footer__columns__column footer__columns__column--50">
-        <div class="footer__column__row">
+        <div class="footer__column__row footer__column__row--partners">
           <?php _e( 'Mitglied bei', 'kleiderordnung' ) ?>
         </div>
         <div class="footer__partners">
