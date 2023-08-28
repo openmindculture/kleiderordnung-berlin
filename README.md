@@ -441,7 +441,17 @@ The web site's theme, plugin, and example content can be developed and testing u
 
 We can use exported (Figma) template graphics instead of screenshots to verify the initial visual expectations.
 
-[CodeceptJS](https://codecept.io/) is used for test automation.
+### Test Tools
+
+As it seems hard to properly unit-test classic WordPress code, frontend testing is very important to prevent errors and side effects when maintaining our theme.
+
+[CodeceptJS](https://codecept.io/) is used for frontend / end-to-end / regression test automation.
+
+[Jasmine](https://jasmine.github.io/) is used for unit testing JavaScript. Test coverage is still low due to dependencies and side effects as most code directly interacts with the DOM API. I tried to use <strike>[jest](https://jestjs.io/)</strike> but it does not support ES(6) module syntax (import/export) properly without using <strike>[babel](https://babeljs.io/)</strike> as well.
+
+PHP test coverage is low for a similar reason: most code is mixed with HTML markup and heavily depends on WordPress core and plugin functionality which seems hard to properly abstract into testable code without overengineering away from the software's best practice.
+
+### Build Tools
 
 WordPress can be run locally using the provided development server setup using Doker and docker-compose, based on [wp_template_opinionated](https://github.com/openmindculture/wp_template_opinionated/) by [Ingo Steinke](https://www.ingo-steinke.com/).
 
