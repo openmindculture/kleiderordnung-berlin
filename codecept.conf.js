@@ -1,5 +1,5 @@
-const { setHeadlessWhen, setWindowSize } = require('@codeceptjs/configure');
-exports.config = require ('./codecept.common.conf.js');
+import { setHeadlessWhen, setWindowSize } from '@codeceptjs/configure';
+import { exports } from './codecept.common.conf.js';
 exports.config.helpers.Puppeteer.url = 'http://bs-local.com:1234'; // or 'http://localhost:1234';
 
 // turn on headless mode when running with HEADLESS=true environment variable
