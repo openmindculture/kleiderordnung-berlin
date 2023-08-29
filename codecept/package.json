@@ -1,0 +1,11 @@
+{
+  "name": "kleiderordnung-berlin-codecept",
+  "description": "sub package using commonjs (require) instead of ESM import/export",
+  "type": "commonjs",
+  "author": "Ingo Steinke",
+  "scripts": {
+    "codeceptjs:default": "codeceptjs run --steps",
+    "codeceptjs:mobile": "MOBILE=true codeceptjs run --steps",
+    "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps"
+  }
+}

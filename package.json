@@ -20,16 +20,17 @@
     "stylelint": "stylelint src/style.css src/css/*.css",
     "eslint": "eslint --ext .js src/js src/js/inc src/js/tests",
     "jasmine": "jasmine",
-    "codeceptjs": "npm run codeceptjs:default && npm run codeceptjs:mobile",
+    "codeceptjs": "cd codecept && npm run codeceptjs:default && npm run codeceptjs:mobile && cd ..",
+    "codeceptjs-comment": "run in subdirectory as it does not support ESM type module import/export without babel yet",
     "codeceptjs:default": "codeceptjs run --steps",
     "codeceptjs:mobile": "MOBILE=true codeceptjs run --steps",
     "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openmindculture/kleiderordnung-berlin.git"
   },
-  "type": "module",
   "author": "Ingo Steinke",
   "license": "proprietary",
   "bugs": {
@@ -50,6 +51,7 @@
     "eslint": "^8.48.0",
     "eslint-plugin-es5": "^1.5.0",
     "html-minifier-cli": "^0.1.0",
+    "import-export": "^1.0.1",
     "jasmine": "^5.1.0",
     "make-dir-cli": "^3.0.0",
     "npm-run-all": "^4.1.5",
