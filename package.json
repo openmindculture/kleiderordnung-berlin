@@ -18,7 +18,7 @@
     "watch": "watch \"npm run build:postscss\" src/css",
     "test": "npm run stylelint && npm run eslint && npm run jasmine && npm run codeceptjs",
     "stylelint": "stylelint src/style.css src/css/*.css",
-    "eslint": "eslint --ext .js src/js src/js/inc src/js/tests",
+    "eslint": "eslint --ext .js src/js src/js/inc spec spec/helpers codecept",
     "jasmine": "jasmine",
     "codeceptjs": "cd codecept && npm run codeceptjs:default && npm run codeceptjs:mobile && cd ..",
     "codeceptjs-comment": "run in subdirectory as it does not support ESM type module import/export without babel yet",
