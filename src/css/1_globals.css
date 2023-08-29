@@ -21,8 +21,10 @@ body {
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);
   /* prepare voice settings according to CSS speech draft */
+  /* stylelint-disable property-no-unknown */
   voice-family: female;
   voice-pitch: medium;
+  /* stylelint-enable property-no-unknown */
 }
 
 html, body, main, .main, p {
