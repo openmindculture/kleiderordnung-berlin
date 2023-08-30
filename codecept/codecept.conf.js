@@ -7,9 +7,9 @@ exports.config.helpers.Puppeteer.url = 'http://bs-local.com:1234'; // or 'http:/
 setHeadlessWhen(process.env.HEADLESS);
 
 if (process.env.MOBILE) {
-  exports.config.output = './codecept/output/mobile/';
+  exports.config.output = './output/mobile/';
   exports.config.helpers.Puppeteer.windowSize = '375x667';
-  exports.config.helpers.ResembleHelper.screenshotFolder = './codecept/output/mobile/';
-  exports.config.helpers.ResembleHelper.baseFolder = './codecept/screenshots/base/mobile/';
-  exports.config.helpers.ResembleHelper.diffFolder = './codecept/screenshots/diff/mobile/';
+  exports.config.helpers.ResembleHelper.screenshotFolder = './output/mobile/';
+  exports.config.helpers.ResembleHelper.baseFolder = './screenshots/base/mobile/';
+  exports.config.helpers.ResembleHelper.diffFolder = './screenshots/diff/mobile/';
 }

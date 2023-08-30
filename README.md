@@ -441,7 +441,29 @@ The web site's theme, plugin, and example content can be developed and testing u
 
 We can use exported (Figma) template graphics instead of screenshots to verify the initial visual expectations.
 
-[CodeceptJS](https://codecept.io/) is used for test automation.
+### Recreate Base Screenshots for Regression Testing
+
+**TODO** this should be a build target in `package.json` passing an enviroment variable to codecept.
+
+- open `codecept/homepage_test.js`
+- set `const prepareBaseImages = true;`
+- run `npm run codeceptjs`
+- set `const prepareBaseImages = false;`
+- Look at the images in `codecept/screenshots` and verify their content manually.
+
+### Test Tools and Limitations
+
+As it seems hard to properly unit-test classic WordPress code, **frontend testing** is very important to prevent errors and side effects when maintaining our theme.
+
+[CodeceptJS](https://codecept.io/) is used for frontend / end-to-end / regression test automation using click paths to verify nagivation and legal pages like imprint and privacy information. **Full page screenshots** are compared to their prior base images respectively.
+
+[Jasmine](https://jasmine.github.io/) is used for unit testing JavaScript. Test coverage is still low due to dependencies and side effects as most code directly interacts with the DOM API. I tried to use <strike>[jest](https://jestjs.io/)</strike> but it does not support ES(6) module syntax (import/export) properly without using <strike>[babel](https://babeljs.io/)</strike> as well.
+
+**TODO**: unit test tutorials advise to **refactor** our code so that it never interacts with the global `window` object directly. Instead, we should **inject `window`** (or rather the part that we are actually interested in) as a parameter into our functions wherever possible. But what about DOM API callbacks like event handling or IntersectionObserver?
+
+PHP unit test coverage is low or nonexistent for a similar reason: most code is mixed with HTML markup and heavily depends on WordPress core and plugin functionality which seems hard to properly abstract into testable code without overengineering away from the software's best practice. If we don't feel likely at all to achieve a high unit test coverage, we could rather invest the same effort in extending our frontend tests to verify the very same aspects like custom page titles, custom post types, correct paths to styles, fonts and libraries etc. Likewise, computed styles also get **tested indirectly** when comparing full page screenshots in our frontend tests.
+
+### Build Tools
 
 WordPress can be run locally using the provided development server setup using Doker and docker-compose, based on [wp_template_opinionated](https://github.com/openmindculture/wp_template_opinionated/) by [Ingo Steinke](https://www.ingo-steinke.com/).
 
