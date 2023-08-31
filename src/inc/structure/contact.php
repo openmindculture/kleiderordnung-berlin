@@ -50,6 +50,23 @@
               </svg>
             </figure></a>
         </div>
+        <aside class="initially-hidden">
+          <div class="socialmedia__link--printable">
+            <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank">
+              https://www.instagram.com/tina_steinke_kleiderordnung
+            </a>
+          </div>
+          <div class="socialmedia__link--printable">
+            <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target="_blank">
+            </a>
+            https://www.linkedin.com/in/martina-steinke-6810aa111
+          </div>
+          <div class="socialmedia__link--printable">
+            <a href="https://www.pinterest.de/martinasteinke0050/" target="_blank">
+            </a>
+            https://www.pinterest.de/martinasteinke0050
+          </div>
+        </aside>
       </div>
       <!-- END vcard imprint contact information -->
     </div>

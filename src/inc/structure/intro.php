@@ -22,8 +22,15 @@
     <!-- Fallback for users without Lottie capabilities or prefers reduced motion: hero banner key visual image -->
     <div class="intro__keyvisual__animation--motionless-fallback">
       <img
+        class="no-print"
         src="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg" width="1160" height="581"
         srcset="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung.jpg 1x, <?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung@2x.jpg 2x"
+        loading="lazy"
+        alt="<?php _e( 'Portrait von Tina Steinke', 'kleiderordnung' ) ?>"
+      >
+      <img
+        class="initially-hidden"
+        src="<?php echo get_template_directory_uri() ?>/img/keyvisual-kleiderordnung-print.jpg" width="1160" height="581"
         loading="lazy"
         alt="<?php _e( 'Portrait von Tina Steinke', 'kleiderordnung' ) ?>"
       >

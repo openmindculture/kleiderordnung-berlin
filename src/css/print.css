@@ -34,13 +34,10 @@
     color: var(--color-primary-foreground);
   }
 
-  .calltoaction__text,
-  .calltoaction__text p {
-    font-size: 16pt;
-  }
+  /* gloabal no-print and only-print class names */
 
-  .contact__calltoactiontext--secondary {
-    margin-bottom: 0;
+  .initially-hidden {
+    display: block;
   }
 
   .no-print,
@@ -48,6 +45,8 @@
   .visually-hidden,
   .sr-only,
   .screen-reader-text,
+  .target-offset::before,
+  :target::before,
   .toplink,
   nav,
   #site-navigation,
@@ -58,11 +57,65 @@
   .offers__layer--decoration,
   .offers__offer__buttonwrapper,
   .calltoaction__buttonwrapper,
+  .stories__headline,
+  .news__footer,
   .socialmedia__feed__consent,
   .contact form,
   .wpcf7,
-  .footer__column__row__link {
+  .decoration__container,
+  .footer__column__row__link,
+  .footer__column__row--ecofriendly {
     display: none !important;
+  }
+
+  /* disable decoration pespective and reset to normal scrolling */
+
+  html {
+    height: auto;
+    overflow: auto;
+  }
+
+  body {
+    height: auto;
+    height: fit-content;
+    max-height: unset;
+    transform-style: flat;
+    overflow-y: auto;
+    perspective: none;
+  }
+
+  /* specific sections and elements */
+
+  .header--site-header {
+    margin-bottom: 2rem;
+  }
+
+  .intro  {
+    page-break-after: always;
+  }
+
+  /* workaround unreliable cross browser support for print media source set */
+  .intro__keyvisual__animation--motionless-fallback {
+    display: block !important;
+  }
+
+  .intro__keytext__headline {
+    margin-bottom: 4rem;
+  }
+
+  .intro__keytext__paragraphs p {
+    font-size: 1.125rem;
+  }
+
+  .intro__keytext__paragraphs p + p:empty {
+    display: none;
+  }
+
+  .offers__headline {
+    font-size: 1.75rem;
+    margin: 1rem auto -2rem 1.5rem;
+    page-break-after: avoid;
+    text-align:left;
   }
 
   .offers__layer--content,
@@ -71,28 +124,112 @@
     margin-bottom: 0 !important;
   }
 
-  /* workaround unreliable cross browser support for print media source set */
-  .intro__keyvisual__animation--motionless-fallback {
-    aspect-ratio: 1160/581;
-    background-image: url("../img/keyvisual-kleiderordnung-print.jpg");
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: cover;
-    height: auto;
-    max-width: 90vw;
-    display: block !important;
+  .offers__offer__image {
+    max-width: 40%;
+    margin: 0 0 -0.5rem auto;
   }
 
-  .intro__keyvisual__animation--motionless-fallback img {
-    display: none;
+  .stories {
+    margin-bottom: 0;
+    page-break-after: always;
   }
 
-  .initially-hidden {
-    display: block;
+  .intro,
+  .stories__viewport,
+  .socialmedia,
+  .footer {
+    background: #fff !important;
   }
 
   .stories__viewport {
-    flex-wrap: wrap;
+    display: block;
+  }
+
+  .stories__viewport,
+  .stories__story,
+  .stories__story__image,
+  .stories__story__quote {
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+  }
+
+  .stories__story {
+    flex-direction: row;
+    margin-bottom: 1rem;
+    width: fit-content;
+    height: auto;
+    min-height: unset;
+  }
+
+  .stories__story:nth-child(even) {
+    page-break-after: always;
+  }
+
+  .stories__story__image {
+    flex: 0 1 36%;
+    height: auto;
+  }
+
+  .stories__story__image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .stories__story__quote {
+    height: auto;
+    min-height: unset;
+    justify-content: flex-start;
+  }
+
+  .stories__story__quote::before {
+    content: "”";
+    height: auto;
+    width: auto;
+    font-size: 4rem;
+    background: none;
+    margin: 0;
+    padding: 1rem 0 0 0;
+  }
+
+  .stories__story__image.empty + .stories__story__quote {
+    width: auto;
+    flex-basis: 90%;
+  }
+
+  .stories__story__quote__text {
+    font-size: 1.125rem;
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  .calltoaction__text,
+  .calltoaction__text p {
+    font-size: 16pt;
+  }
+
+  .contact__calltoactiontext--secondary {
+    margin-bottom: 0;
+  }
+
+  .news {
+    display: block;
+    position: static;
+    padding-top: 0;
+    margin-top: 0;
+    page-break-before: always;
+  }
+
+  .socialmedia {
+    display: block;
+    position: static;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    page-break-after: always;
+  }
+
+  .contact  {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    page-break-before: always;
   }
 
   .contact__columns__column-wrapper {
@@ -103,11 +240,16 @@
    width: 100%;
   }
 
+  .contact__vcard__company,
+  .contact__calltoactiontext--secondary {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
   .intro,
   #angebot .offers__cards article,
   #mission,
   #calltoaction,
-  .stories__story,
   #kontakt {
     page-break-inside: avoid;
   }
