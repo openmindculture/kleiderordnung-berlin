@@ -29,6 +29,10 @@
 
 @mixin layout-column-50 .contact__columns__column--50 {}
 
+.contact__columns__column--50:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .contact__columns__column--50:last-child {
   max-width: min(42.5rem, calc(100% - 1rem));
 }
