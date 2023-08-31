@@ -27,6 +27,7 @@
 
 @mixin typography-heading-h1 .intro__keytext__headline {
   color: var(--color-primary-foreground);
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) { /* mobile / tablet < 768px */
@@ -49,22 +50,6 @@
   text-align: center;
   margin: 0 auto;
   position: relative;
-}
-
-/* try to ensure there is always visible text below
- * when viewing on a "normal" screen size
- * unless that make the key visual too small
- * TODO we might additionally adjust font size in smaller viewports
- * text defaults to 3 lines à 40px x 140% line height = 3 x 56px = 168px
- * header defaults to < 100px if its fits 1 line on a wide(r) screen
- * reserving about 15rem = 240px ensures at least 1 visible heading line in practice.
- * If we want at least about 400px height for the key visual,
- * we need at least 400px + 240px = 640px = 40rem height for this adjustment.
- */
-@media (min-height: 640px) {
-  .intro__keyvisual {
-    max-height: calc(100vh - 15rem);
-  }
 }
 
 .intro__keyvisual__mousetrap {
