@@ -9,7 +9,7 @@
       the_post();
 
       include( KLEIDERORDNUNG_DIR . '/inc/structure/header.php');
-      ?><main id="wp--skip-link--target">';
+      ?><main id="wp--skip-link--target">
       <section class="page__main__section">
         <div class="page__main__entry">
 

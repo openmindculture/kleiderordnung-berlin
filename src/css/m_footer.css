@@ -9,8 +9,6 @@
   margin: 0;
   padding: 0;
   background-color: var(--color-primary-background);
-  position: relative;
-  z-index: 2;
 }
 
 .footer__content {
