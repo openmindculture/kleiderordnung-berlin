@@ -298,6 +298,7 @@ textarea[name="Nachricht"]::placeholder {
   padding: 1rem 1.5rem;
   background-color: var(--color-default-white);
   color: var(--color-blue-dark-purpleish);
+  border-color: transparent;
   display: inline-block;
   cursor: pointer;
 }
