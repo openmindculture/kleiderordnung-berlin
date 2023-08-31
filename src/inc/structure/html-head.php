@@ -35,8 +35,7 @@
   </style>
 
   <link rel="stylesheet" media="all" href="<?php echo get_template_directory_uri() ?>/style.css?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>" type="text/css">
-  <!-- defer loading of optional components as shown on web.dev -->
-  <link rel="preload" media="print" href="<?php echo get_template_directory_uri() ?>/css/print.css?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" media="print" href="<?php echo get_template_directory_uri() ?>/css/print.css?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>" type="text/css">
   <noscript>
     <!-- TODO remove the following stylesheet when no longer needed -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/animate.min.css?v=4.1.1">
