@@ -59,7 +59,7 @@ a.news__post__link:hover {
 
 @media (min-width: 555px) {
   .news {
-    margin: 0 auto 14.25rem auto;
+    margin: 0 auto 10rem auto;
   }
   .news__wrapper {
     flex-wrap: nowrap;
