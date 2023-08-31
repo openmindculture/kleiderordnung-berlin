@@ -24,7 +24,6 @@
           <section id="angebot-<?php echo get_the_ID() ?>">
             <div class="offers__cards">
               <?php
-              /* TODO include displays wrong posts's content inside this loop despite setup_postdata */
               include( KLEIDERORDNUNG_DIR . '/inc/structure/offers-angebot-item.php');
               ?>
             </div>
