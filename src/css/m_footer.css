@@ -22,6 +22,11 @@ body.page:not(.home) .footer__content {
   width: var(--width-spaced-larger);
 }
 
+.footer__column__row--legal a {
+  display: inline-block;
+  width: min-content;
+}
+
 .footer a,
 .footer a:link,
 .footer a:visited {
@@ -34,7 +39,7 @@ body.page:not(.home) .footer__content {
   .footer a:link,
   .footer a:visited {
     display: inline-block;
-    padding: 1rem 1rem 1.5rem 0;
+    padding: 0.75rem 1rem 0.25rem 0;
   }
 }
 
@@ -44,6 +49,7 @@ body.page:not(.home) .footer__content {
 
 .footer__columns__column + .footer__columns__column {
   margin-top: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .footer__column__row {
