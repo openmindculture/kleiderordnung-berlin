@@ -72,11 +72,23 @@ msgid "All rights reserved"
 msgstr ""
 
 #: inc/structure/footer.php:23
+msgid "impressum-url"
+msgstr ""
+
+#: inc/structure/footer.php:23
 msgid "Impressum"
 msgstr ""
 
 #: inc/structure/footer.php:24
+msgid "datenschutzerklaerung-url"
+msgstr ""
+
+#: inc/structure/footer.php:24
 msgid "Datenschutz"
+msgstr ""
+
+#: inc/structure/footer.php:25
+msgid "allgemeine-geschaeftsbedingungen-url"
 msgstr ""
 
 #: inc/structure/footer.php:25

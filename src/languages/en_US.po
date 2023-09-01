@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-08-25 19:36+0200\n"
+"PO-Revision-Date: 2023-09-01 16:39+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -70,12 +70,24 @@ msgid "All rights reserved"
 msgstr "All rights reserved"
 
 #: inc/structure/footer.php:23
+msgid "impressum-url"
+msgstr "imprint"
+
+#: inc/structure/footer.php:23
 msgid "Impressum"
 msgstr "Imprint"
 
 #: inc/structure/footer.php:24
+msgid "datenschutzerklaerung-url"
+msgstr "privacy-statement"
+
+#: inc/structure/footer.php:24
 msgid "Datenschutz"
 msgstr "Privacy"
+
+#: inc/structure/footer.php:25
+msgid "allgemeine-geschaeftsbedingungen-url"
+msgstr "terms-of-service"
 
 #: inc/structure/footer.php:25
 msgid "AGB"
