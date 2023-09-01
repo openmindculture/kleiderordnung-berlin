@@ -8,7 +8,7 @@
 .admin__editlink {
   display: none;
   position: absolute;
-  top: 3.5rem;
+  top: 1rem;
   right: 3.5rem;
   width: fit-content;
   height: 3.5rem;
@@ -22,11 +22,24 @@
   height: 1.5rem;
 }
 
+.admin__editlink__text {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .admin__editlink {
-    top: 6.5rem;
-    right: 2rem;
-    height: 7rem;
+    top: 1.5rem;
+    right: 0.25rem;
+    min-height: 3rem;
+    height: auto;
+    transform: scale(0.75);
+  }
+  .admin__editlink a {
+    opacity: 0.25;
+    transition: opacity 0.2s;
+  }
+  .admin__editlink a:hover {
+    opacity: 1;
   }
   .admin__editlink__icon {
     width: 2.5rem;
@@ -37,18 +50,14 @@
   }
 }
 
-@media (min-width: 1313px) {
-  .admin__editlink {
-    top: 1rem;
-    right: 1rem;
-  }
-}
-
 .admin__editlink__icons,
 .admin__editlink__text {
-  display: block;
   color: var(--color-default-black);
   text-align: right;
+}
+
+.admin__editlink__icons {
+  display: block;
 }
 
 .admin__editlink:hover,
