@@ -500,13 +500,14 @@ Don't give the website owner administration rights unless they are a technically
 - Akismet Anti-Spam Protection (production site only)
 - Complianz | GDPR/CCPA Cookie Consent (if necessary)
 - Contact Form 7
-- eWWW image optimizer (alternative to TinyPNG which had caused media library problems with custom post types)
+- [Display Featured Image In Post List](https://de.wordpress.org/plugins/display-featured-image-in-post-list/)
 - Flamingo (save contact forms messages
 - Incompatibility Status
 - Juicer Instagram Feed
 - Matomo Analytics (production site only)
 - Polylang
 - SVG Support
+- TinyPNG
 - Updraft Plus (backup)
 - W3 Total Cache (production site only)
 - Yoast SEO (for sitemaps etc. - preview / production site only)
