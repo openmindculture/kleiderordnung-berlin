@@ -11,7 +11,6 @@ if (get_post_type() === 'post') :
 ?><main id="wp--skip-link--target">
   <section id="page__main__section">
     <div class="page__main__entry">
-      <h1><?php _e( 'News', 'kleiderordnung' ) ?></h1>
       <?php
       include( KLEIDERORDNUNG_DIR . '/inc/structure/news.php');
       ?>
