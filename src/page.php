@@ -8,6 +8,7 @@ include( KLEIDERORDNUNG_DIR . '/inc/structure/html-head.php');
 <?php
 include( KLEIDERORDNUNG_DIR . '/inc/structure/header.php');
 if (get_post_type() === 'post') :
+  define( 'KLEIDERORDNUNG_IS_NEWS_ARCHIVE', true);
 ?><main id="wp--skip-link--target">
   <section id="page__main__section">
     <div class="page__main__entry">
