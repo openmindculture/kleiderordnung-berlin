@@ -62,11 +62,10 @@
   cursor: default;
 }
 
-/* some more 2023 ad hoc styles */
-
 .intro__keyvisual__animation {
   text-align: center;
   margin: 0 auto;
+  width: 100% !important; /* override default Lottie player inline style width 90% */
 }
 
 .intro__keyvisual__animation--motionless-fallback {
