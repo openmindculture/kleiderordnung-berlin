@@ -180,7 +180,9 @@ a.news__post__link:focus {
   margin-top: 2.8125rem;
 }
 
-.news__post--single {;
+/* distinct page with one singular news entry */
+
+.news__post--single {
   margin-bottom: 8rem;
   max-width: unset;
 }
@@ -192,4 +194,15 @@ a.news__post__link:focus {
 
 .news__post--single .news__post__image {
   aspect-ratio: unset;
+}
+
+@supports (background-image:linear-gradient(#222b40,#222b40)) and (transition:all 2s linear) {
+  .news__post--single .news__post__content a:link,
+  .news__post--single .news__post__content a:active,
+  .news__post--single .news__post__content a:visited {
+    background-image: linear-gradient(var(--color-default-white), var(--color-default-white)),
+    linear-gradient(var(--color-default-white), var(--color-default-white)),
+    linear-gradient(var(--color-hover-background), var(--color-hover-background));
+    color: var(--color-primary-foreground);
+  }
 }
