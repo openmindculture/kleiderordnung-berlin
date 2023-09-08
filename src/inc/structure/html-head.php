@@ -27,8 +27,7 @@
   <link rel="preload" href="<?php echo get_template_directory_uri() ?>/fonts/17af_vdef_emp_883a.woff2?45711c4b8486ec30fae30fb185b8d8b9bb1d822f" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="<?php echo get_template_directory_uri() ?>/fonts/17ae_vdef_emp_8839.woff2?45711c4b8486ec30fae30fb185b8d8b9bb1d822f" as="font" type="font/woff2" crossorigin>
   <!-- load licensed font styles from TypeNetwork / Fastly CDN server -->
-  <!-- TODO remove the following stylesheet when no longer needed -->
-  <link href="https://fastly-cloud.typenetwork.com/projects/7215/fontface.css?64529db9" rel="stylesheet" type="text/css" media="all">
+  <!-- link href="https://fastly-cloud.typenetwork.com/projects/7215/fontface.css?64529db9" rel="stylesheet" type="text/css" media="all" -->
   <style>
     <?php include( KLEIDERORDNUNG_DIR . '/css/0_critical.css') ?>
     <?php include( KLEIDERORDNUNG_DIR . '/css/0_typography.css.php') ?>
