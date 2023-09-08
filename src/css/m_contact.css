@@ -92,8 +92,12 @@
   margin-bottom: 2.125rem;
 }
 
-@mixin typography-weight-bold .contact__calltoactiontext--fieldset {
+.contact__calltoactiontext--fieldset {
   margin-bottom: 0.6875rem;
+}
+
+.contact__calltoactiontext--fieldset p:first-child {
+  font-size: var(--font-size-20);
 }
 
 .contact__socialmedia__links__wrapper {

@@ -166,7 +166,6 @@ $(className) {
 @define-mixin typography-weight-bold $className {
   $(className) {
     font-weight: var(--font-weight-bold);
-  letter-spacing: -0.03125rem;
     @mixin-content;
   }
 }
