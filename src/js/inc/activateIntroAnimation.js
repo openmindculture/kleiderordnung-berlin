@@ -28,12 +28,18 @@ export function kleiderordnung_activateIntroAnimation(config) {
 
   /* Key Visual Lottie Animation Control */
   if (!config.prefersReducedMotion) {
+    console.log('initialize key visual lottie animation control');
     window.kleiderordnung.state.introAnimation = document.getElementById(config.introKeyvisualAnimationId);
     if (window.kleiderordnung.state.introAnimation) {
+      console.log('add event listener');
       window.kleiderordnung.state.introAnimation.addEventListener('ready', function() {
+        console.log('animation event ready triggered');
         if (typeof window.kleiderordnung.state.introAnimation.play === 'function') {
+          console.log('introAnimation.play()');
           window.kleiderordnung.state.introAnimation.play();
+          console.log('set timeout for another play');
           window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr = window.setTimeout(function(){
+            console.log('timeout handler function');
             window.kleiderordnung.state.introAnimation.play();
           }, config.introKeyvisualTimeoutMilliseconds);
         }
@@ -41,10 +47,15 @@ export function kleiderordnung_activateIntroAnimation(config) {
       /** @var {HTMLElement|null} */
       var introAnimationMousetrap = document.getElementById(config.introKeyvisualMousetrapId);
       if (introAnimationMousetrap) {
+        console.log('add introAnimationMousetrap listener mouseenter');
+        // does not trigger replay once it has been over?!
         introAnimationMousetrap.addEventListener('mouseenter', function() {
+          console.log('handle introAnimationMousetrap mouseenter: clear replay timeout');
           window.clearTimeout(window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr);
           if (typeof window.kleiderordnung.state.introAnimation.play === 'function') {
+            console.log('handle introAnimationMousetrap mouseenter: introAnimation.play()');
             window.kleiderordnung.state.introAnimation.play();
+            console.log('handle introAnimationMousetrap mouseenter: set replay timeout');
             window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr = window.setTimeout(function(){
               window.kleiderordnung.state.introAnimation.play();
             }, config.introKeyvisualTimeoutMilliseconds);
