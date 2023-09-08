@@ -27,7 +27,7 @@
 }
 
 .navigation__list li {
-  margin: 0 0 1.25rem 0;
+  margin: 1rem 0 2rem 0;
   text-align: center;
   width: 100%;
 }
@@ -36,6 +36,7 @@
 .navigation__list-wrapper--main a.button {
   background-color: var(--color-inverted-background);
   display: inline-block;
+  font-size: 1rem;
 }
 
 .navigation__list-wrapper--main a.button:hover,
@@ -47,7 +48,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: var(--font-size-13);
+  font-size: 1rem;
 }
 
 /* inverted colors inside mobile navigation wrapper */
@@ -201,6 +202,7 @@
     margin-top: 0.5rem;
     margin-left: 0.25rem;
     margin-right: 0.5rem;
+    font-size: var(--font-size-13);
   }
 
   .navigation__list-wrapper--main a:not(.button),
@@ -208,6 +210,7 @@
   .navigation__list-wrapper--main a:not(.button):visited {
     padding: 0.5rem 0 0.25rem 0;
     margin: 0.25rem 0.75rem 0.5rem 0;
+    font-size: var(--font-size-13);
     background-position-y: 90%,90%,90%;
     background-size: 100% 40%,50% 40%,100% 40%;
     background-color: transparent !important;
