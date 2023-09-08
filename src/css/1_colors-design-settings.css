@@ -74,6 +74,7 @@
   --color-green-web-foundation: #60bb43; /* only used in footer carbon badges */
   --color-purple-pastel-pinkish: #cbc3f6; /* decoration color, currently not used for text content */
   --color-pink-pastel-orangeish: #ffc7b0;
+  --color-pink-pastel-semitransparent: rgba(255, 199, 176, 0.5);
   --color-pink-contrast-orangeish: #ff7d61;
   --color-pink-pastel-pinkish: #ffb1ce;
   --color-pink-pastel-salmon: #ffa6a6;
@@ -92,6 +93,7 @@
   --color-inverted-foreground: var(--color-default-white);
   --color-neutral-background: transparent;
   --color-hover-background: var(--color-pink-pastel-orangeish);
+  --color-hover-background-semitransparent: var(--color-pink-pastel-semitransparent);
   --color-hover-background-contrast: var(--color-pink-contrast-orangeish);
   --color-custom-focus-outline: var(--color-pink-reddish);
   --color-unimportant-focus-outline: var(--color-sandy-light-pinkish);
