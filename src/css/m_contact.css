@@ -38,6 +38,7 @@
 }
 
 @media (min-width: 992px) {
+
   .contact__columns__column-wrapper {
     flex-direction: row;
   }
@@ -47,7 +48,7 @@
   }
 
   .contact__columns__column--50:first-child {
-    flex-basis: 28rem;
+    flex-basis: 30rem;
   }
 
   .contact__columns__column--50:last-child {
@@ -176,6 +177,16 @@ input[name="Email"] {
   input[name="Name"],
   input[name="Email"]  {
     max-width: 100%;
+  }
+
+  .contact {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .contact {
+    padding-right: 0;
   }
 }
 

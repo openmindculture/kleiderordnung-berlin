@@ -16,6 +16,7 @@
   --breakpoint-l2: 1024px;  /* custom instead of xl 1200 */
   --breakpoint-l3: 1313px;  /* custom for admin links next to top menu */
   --breakpoint-xxl: 1440px;
+  --breakpoint-xxxl: 1500px; /* custom extra breakpoint for contact form margin adjustments */
 
   /* Width / Height Standards */
   --width-full: 87.5rem; /* anything smaller than actual full width */
