@@ -24,9 +24,21 @@
 
 @media (min-width: 768px) {
   .mission__card {
-    padding: 7.3125rem 5rem 5rem 5rem;
+    padding: 5rem;
     margin: 0 auto;
   }
+}
+
+.mission__headline {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-24);
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 160%;
+  margin: 0 0 2rem 0;
+  text-align: center;
+  text-transform: none;
 }
 
 .mission__text,

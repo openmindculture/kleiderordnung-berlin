@@ -38,6 +38,11 @@
   @mixin typography-heading-h1-xs .intro__keytext__headline {}
 }
 
+.intro__keytext__paragraphs,
+.intro__keytext__paragraphs p {
+  font-size: var(--font-size-24);
+}
+
 .intro__keytext__paragraphs p + p {
   margin-top: 1.5rem;
 }
