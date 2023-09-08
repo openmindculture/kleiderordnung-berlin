@@ -20,7 +20,7 @@
 }
 
 .intro__keytext {
-  width: var(--width-spaced);
+  width: var(--width-spaced-slightly-larger);
   max-width: var(--width-max);
   margin: 0 auto;
 }
@@ -40,7 +40,14 @@
 
 .intro__keytext__paragraphs,
 .intro__keytext__paragraphs p {
-  font-size: var(--font-size-24);
+  font-size: var(--font-size-18);
+}
+
+@media (min-width: 768px) {
+  .intro__keytext__paragraphs,
+  .intro__keytext__paragraphs p {
+    font-size: var(--font-size-24);
+  }
 }
 
 .intro__keytext__paragraphs p + p {
