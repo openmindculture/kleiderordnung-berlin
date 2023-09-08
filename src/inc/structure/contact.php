@@ -21,7 +21,7 @@
           <div class="contact__vcard__company" itemprop="company"><?php _e( 'Kleiderordnung', 'kleiderordnung' ) ?></div>
           <div class="contact__vcard__fullname fn" itemprop="name">Tina Steinke</div>
           <div class="contact__vcard__jobtitle jobtitle role" itemprop="jobTitle"><?php echo get_field('page_contact_job_title', KLEIDERORDNUNG_FRONT_PAGE_ID) ?></div>
-          <div class="contact__vcard__phone">Tel. <a class=telephone itemprop=telephone href=tel:+491636823820><span class=visually-spaced>0</span><span class="visually-spaced dot-after">163</span><span class=visually-spaced>682</span><span class=visually-spaced>382</span><span class=visually-spaced>0</span></a>
+          <div class="contact__vcard__phone">Tel. <a class=telephone itemprop=telephone href=tel:+491636823820><span class="visually-spaced dot-after">0163</span><span class=visually-spaced>682</span><span class=visually-spaced>382</span><span class=visually-spaced>0</span></a>
           </div>
           <div class="contact__vcard__email">
             <a class="contact__vcard__email__mailto email" itemprop="email" itemscope href="#" data-mailing="lazy" data-user="martinasteinke" data-domain="posteo.de"><span class="spamprotected">mar</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">tinasteinke</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">@</span><span class="spamprotected">posteo</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">.</span><span class="spamprotected">de</span></a>
