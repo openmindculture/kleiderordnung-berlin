@@ -24,6 +24,7 @@
   --width-spaced-slightly-larger: 62rem; /* 992 Intro Text maximal */
   --width-spaced-larger: 83rem; /* footer on :not(.home) pages  */
   --width-max: calc(100% - 2.5rem); /* full (mobile) viewport minus horinzontal margins */
+  --width-max-larger: calc(100% - 2rem); /* full (mobile) viewport minus horinzontal margins */
   /* thus a potential mixin would look like
    * width: var(--width-full | --width-constrained);
    * max-width: var(--width-max);
