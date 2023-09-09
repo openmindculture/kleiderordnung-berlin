@@ -225,6 +225,7 @@ body.single .offers__offer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .offers__offer__pricingwrapper {
@@ -271,9 +272,14 @@ body.single .offers__offer {
   }
   .offers__offer__card__footer {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
   .offers__offer__pricingwrapper {
     margin-bottom: 0;
+    max-width: calc(100% - 14rem);
+  }
+  .offers__offer__buttonwrapper {
+    white-space: nowrap;
   }
 }
 
