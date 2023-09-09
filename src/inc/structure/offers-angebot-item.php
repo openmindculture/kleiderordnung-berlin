@@ -5,6 +5,7 @@
  * @package KleiderOrdnung
  * @author openmindculture
  */
+include_once( KLEIDERORDNUNG_DIR . '/inc/functions/insert-soft-hyphenation.php');
 if (isset($resorted_post_id)) {
   $currentItemPostId = $resorted_post_id;
 } else {
@@ -30,9 +31,21 @@ if (isset($resorted_post_id)) {
   <div class="offers__offer__card">
     <figure class="offers__offer__icon"></figure>
     <?php if (is_single()): ?>
-      <h1 class="offers__offer__headline"><?php if (isset($resorted_post_id)) { echo get_the_title($currentItemPostId); } else { the_title(); } ?></h1>
+      <h1 class="offers__offer__headline"><?php
+        if (isset($resorted_post_id)):
+          echo kleiderordnung_insert_soft_hyphenation(get_the_title($currentItemPostId));
+        else:
+          echo kleiderordnung_insert_soft_hyphenation(get_the_title());
+        endif;
+        ?></h1>
     <?php else: ?>
-      <h3 class="offers__offer__headline"><?php if (isset($resorted_post_id)) { echo get_the_title($currentItemPostId); } else { the_title(); } ?></h3>
+      <h3 class="offers__offer__headline"><?php
+        if (isset($resorted_post_id)):
+          echo kleiderordnung_insert_soft_hyphenation(get_the_title($currentItemPostId));
+        else:
+          echo kleiderordnung_insert_soft_hyphenation(get_the_title());
+        endif;
+        ?></h3>
     <?php endif ?>
     <p class="offers__offer__paragraph">
       <?php if (isset($resorted_post_id)) { echo get_the_content($currentItemPostId); } else { the_content(); } ?>
@@ -44,9 +57,9 @@ if (isset($resorted_post_id)) {
     <div class="offers__offer__card__footer">
       <div class="offers__offer__pricingwrapper">
         <div class="offers__offer__price">
-          <?php echo get_field('offer_price', $currentItemPostId); ?>
+          <?php echo kleiderordnung_insert_soft_hyphenation(get_field('offer_price', $currentItemPostId)); ?>
         </div>
-        <?php echo get_field('offer_price_annotation', $currentItemPostId); ?>
+        <?php echo kleiderordnung_insert_soft_hyphenation(get_field('offer_price_annotation', $currentItemPostId)); ?>
       </div>
       <div class="offers__offer__buttonwrapper">
         <a class="button button--primary" href="<?php echo get_home_url() ?>/#kontakt" tabindex="0"><?php _e( 'Termin buchen', 'kleiderordnung' ) ?></a>
