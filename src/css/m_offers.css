@@ -145,9 +145,8 @@ body.single .offers__offer {
 }
 
 /* overlapping 2 columns layout */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .offers__offer {
-    position: relative;
     display: flex;
   }
   .offers__offer--has-no-image {
