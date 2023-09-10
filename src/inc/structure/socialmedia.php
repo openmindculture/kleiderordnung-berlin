@@ -33,7 +33,7 @@
          data-scripturl="https://assets.juicer.io/embed.js"
     >
 
-      <ul class="socialmedia__feed__embed socialmedia__feed__embed--juicer juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="5" data-columns="5" pages="1">
+      <ul class="socialmedia__feed__embed socialmedia__feed__embed--juicer juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="5" data-columns="5" data-overlay="false" pages="1">
       </ul>
     </div>
 

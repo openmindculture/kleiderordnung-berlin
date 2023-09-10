@@ -9,7 +9,7 @@
 
 .stories {
   width: var(--width-full);
-  max-width: var(--width-max);
+  max-width: var(--width-max-larger);
   margin: 0 auto 5rem auto;
 }
 

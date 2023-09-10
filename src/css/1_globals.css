@@ -32,7 +32,8 @@ html, body, main, .main, p {
   padding: 0;
   font-family: var(--font-family-default);
   font-weight: var(--font-weight-regular);
-  text-rendering: optimizespeed;
+  /* stylelint-disable-next-line value-keyword-case */
+  text-rendering: optimizeLegibility;
   font-size: var(--font-size-16);
   line-height: 140%;
 }

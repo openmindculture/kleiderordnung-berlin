@@ -38,6 +38,7 @@
 }
 
 @media (min-width: 992px) {
+
   .contact__columns__column-wrapper {
     flex-direction: row;
   }
@@ -47,7 +48,7 @@
   }
 
   .contact__columns__column--50:first-child {
-    flex-basis: 28rem;
+    flex-basis: 30rem;
   }
 
   .contact__columns__column--50:last-child {
@@ -91,8 +92,12 @@
   margin-bottom: 2.125rem;
 }
 
-@mixin typography-weight-bold .contact__calltoactiontext--fieldset {
+.contact__calltoactiontext--fieldset {
   margin-bottom: 0.6875rem;
+}
+
+.contact__calltoactiontext--fieldset p:first-child {
+  font-size: var(--font-size-20);
 }
 
 .contact__socialmedia__links__wrapper {
@@ -177,6 +182,16 @@ input[name="Email"] {
   input[name="Email"]  {
     max-width: 100%;
   }
+
+  .contact {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .contact {
+    padding-right: 0;
+  }
 }
 
 input[name="Nachricht"],
@@ -226,28 +241,25 @@ textarea[name="Nachricht"]::placeholder {
   line-height: 1.6;
 }
 
-.contact__checkboxline:focus > *,
-.contact__checkboxline:focus-within > *,
-.contact__checkboxline:hover > *,
-.contact__checkboxline > *:focus,
-.contact__checkboxline > *:hover {
+.contact__checkboxline label:focus,
+.contact__checkboxline label:hover {
   padding-top: 0.125rem;
   padding-right: 0.25rem;
-  border-radius: 0.25rem;
-  background-color: var(--color-hover-background);
+  background-image: linear-gradient(var(--color-hover-background), var(--color-hover-background));
+  background-position: right bottom;
+  background-size: calc(100% - 2rem) 100%;
+  background-repeat: no-repeat;
   color: var(--color-primary-foreground);
 }
 
-.contact__checkboxline:focus label,
-.contact__checkboxline:focus-within label,
-.contact__checkboxline:hover label,
-.contact__checkboxline label:hover,
-.contact__checkboxline:focus label span,
-.contact__checkboxline:focus-within label span,
-.contact__checkboxline:hover label span,
+.contact__checkboxline label:focus span,
 .contact__checkboxline label:hover span {
-  background-color: var(--color-hover-background);
   color: var(--color-primary-foreground);
+}
+
+.contact__checkboxline label:focus span::before,
+.contact__checkboxline label:hover span::before {
+  background-color: var(--color-hover-background-semitransparent);
 }
 
 .contact__checkboxline input[type="checkbox"] {
