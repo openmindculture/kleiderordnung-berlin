@@ -21,7 +21,7 @@
           <a class="footer__column__row__link footer__column__row__link--tos" href="/<?php _e('allgemeine-geschaeftsbedingungen-url', 'kleiderordnung'); ?>"/" title="<?php _e('Allgemeine Geschäftsbedingungen', 'kleiderordnung'); ?>" tabindex="0"><?php _e( 'AGB', 'kleiderordnung' ) ?></a>
         </div>
         <div class="footer__column__row footer__column__row--ecofriendly">
-          <a href="#footer__ecofriendly" class="footer__link--ecofriendly" id="footer__link--ecofriendly" tabindex="0" title="<?php _e( 'laut Messung von WebsiteCarbon und EcoGrader', 'kleiderordnung' ); _e( 'im September 2023', 'kleiderordnung' ); echo '. ' ; _e( 'Details der Messungen anzeigen', 'kleiderordnung' );  ?>"><?php _e( 'Umweltfreundlicher als', 'kleiderordnung' ) ?> 79% <?php _e( 'aller getesteten Websites', 'kleiderordnung' ) ?> <small>(0.16g CO₂e)</small>.</a>
+          <a href="#footer__ecofriendly" class="footer__link--ecofriendly" id="footer__link--ecofriendly" tabindex="0" title="<?php _e( 'laut Messung von WebsiteCarbon und EcoGrader', 'kleiderordnung' ); echo ' '; _e( 'im September 2023', 'kleiderordnung' ); echo '. ' ; _e( 'Details der Messungen anzeigen', 'kleiderordnung' );  ?>"><?php _e( 'Umweltfreundlicher als', 'kleiderordnung' ) ?> 79% <?php _e( 'aller getesteten Websites', 'kleiderordnung' ) ?> <small>(0.11g CO₂e)</small>.</a>
         </div>
       </div>
       <div class="footer__columns__column footer__columns__column--50">
