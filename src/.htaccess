@@ -1,39 +1,23 @@
-# BEGIN Cache-Control Headers (5184000s=60d, 86400s=1d)
-<FilesMatch "\\.(jpg|png|ico|svg|woff|woff2|webp|avif)$">
-	Header set Cache-Control "max-age=5184000, public"
-</FilesMatch>
-<FilesMatch "\\.(css|js)$">
-	Header set Cache-Control "max-age=5184000, public"
-</FilesMatch>
-<FilesMatch "\\.(html|xml|txt)$">
-	Header set Cache-Control "max-age=86400, public, must-revalidate"
-</FilesMatch>
+# BEGIN workaround against preview domain
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^preview.kleiderordnung-berlin.de$
+  RewriteRule (.*)$ https://kleiderordnung.berlin/$1 [R=301,L]
+</IfModule>
+# END workaround
 
-# activate gzip
-SetOutputFilter DEFLATE
-AddOutputFilterByType DEFLATE text/css text/html text/plain text/xml text/js application/x-javascript application/javascript
-
-# HTML 5 appcache
-AddType text/cache-manifest .appcache
-ExpiresByType text/cache-manifest "access plus 0 seconds"
-
-# add security headers
-Header set X-Frame-Options "SAMEORIGIN"
-Header set X-Content-Type-Options  "nosniff"
-Header set X-Xss-Protection "1; mode=block"
-Header set Referrer-Policy "no-referrer-when-downgrade"
-
-# allow strict browsers to actually send ajax requests
-Header set Access-Control-Allow-Origin "*"
-Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
-
+# BEGIN WordPress
+# Die Anweisungen (Zeilen) zwischen „BEGIN WordPress“ und „END WordPress“ sind
+# dynamisch generiert und sollten nur über WordPress-Filter geändert werden.
+# Alle Änderungen an den Anweisungen zwischen diesen Markierungen werden überschrieben.
+<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{HTTPS} off
-# First rewrite to HTTPS:
-# Don't put www. here. If it is already there it will be included, if not
-# the subsequent rule will catch it.
-RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-# Now, rewrite any request to the wrong domain to use www.
-# [NC] is a case-insensitive match
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
