@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-09-01 16:39+0200\n"
+"PO-Revision-Date: 2023-09-11 08:26+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -132,6 +132,10 @@ msgstr "laut Messung von WebsiteCarbon und EcoGrader"
 #: inc/structure/footer.php
 msgid "im August 2023"
 msgstr "im August 2023"
+
+#: inc/structure/footer.php
+msgid "im September 2023"
+msgstr "im September 2023"
 
 #: inc/structure/footer.php
 msgid "Details"

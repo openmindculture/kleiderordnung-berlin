@@ -21,7 +21,7 @@
           <a class="footer__column__row__link footer__column__row__link--tos" href="/<?php _e('allgemeine-geschaeftsbedingungen-url', 'kleiderordnung'); ?>"/" title="<?php _e('Allgemeine Geschäftsbedingungen', 'kleiderordnung'); ?>" tabindex="0"><?php _e( 'AGB', 'kleiderordnung' ) ?></a>
         </div>
         <div class="footer__column__row footer__column__row--ecofriendly">
-          <a href="#footer__ecofriendly" class="footer__link--ecofriendly" id="footer__link--ecofriendly" tabindex="0" title="<?php _e( 'laut Messung von WebsiteCarbon und EcoGrader', 'kleiderordnung' ); _e( 'im August 2023', 'kleiderordnung' ); echo '. ' ; _e( 'Details der Messungen anzeigen', 'kleiderordnung' );  ?>"><?php _e( 'Umweltfreundlicher als', 'kleiderordnung' ) ?> 84% <?php _e( 'aller getesteten Websites', 'kleiderordnung' ) ?> <small>(0.16g - 0.21 g CO₂e)</small>.</a>
+          <a href="#footer__ecofriendly" class="footer__link--ecofriendly" id="footer__link--ecofriendly" tabindex="0" title="<?php _e( 'laut Messung von WebsiteCarbon und EcoGrader', 'kleiderordnung' ); _e( 'im September 2023', 'kleiderordnung' ); echo '. ' ; _e( 'Details der Messungen anzeigen', 'kleiderordnung' );  ?>"><?php _e( 'Umweltfreundlicher als', 'kleiderordnung' ) ?> 79% <?php _e( 'aller getesteten Websites', 'kleiderordnung' ) ?> <small>(0.11g - 0.16g CO₂e)</small>.</a>
         </div>
       </div>
       <div class="footer__columns__column footer__columns__column--50">
@@ -68,14 +68,14 @@
       <div class="footer__ecofriendly__detail--websitecarbon carbonbadge" id="wcb">
         <?php /* script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer=""></script> */ ?>
         <style>#wcb.carbonbadge{--b1:#0e11a8;--b2:#00ffbc;font-size:15px;text-align:center;color:var(--b1);line-height:1.15}#wcb.carbonbadge sub{vertical-align:middle;position:relative;top:.3em;font-size:.7em}#wcb #wcb_2,#wcb #wcb_a,#wcb #wcb_g{display:inline-flex;justify-content:center;align-items:center;text-align:center;font-size:1em;line-height:1.15;font-family:-apple-system,BlinkMacSystemFont,sans-serif;text-decoration:none;margin:.2em 0}#wcb #wcb_a,#wcb #wcb_g{padding:.3em .5em;border:.13em solid var(--b2)}#wcb #wcb_g{border-radius:.3em 0 0 .3em;background:#fff;border-right:0;min-width:8.2em}#wcb #wcb_a{border-radius:0 .3em .3em 0;border-left:0;background:var(--b1);color:#fff;font-weight:700;border-color:var(--b1)}#wcb.wcb-d #wcb_a{color:var(--b1);background:var(--b2);border-color:var(--b2)}#wcb.wcb-d #wcb_2{color:#fff}</style>
-        <div id="wcb_p"><span id="wcb_g">0.16g of CO<sub>2</sub>/view</span><a id="wcb_a" target="_blank" rel="noopener" href="https://www.websitecarbon.com/website/kleiderordnung-berlin/">Website Carbon</a></div><span id="wcb_2">&nbsp;Cleaner than 84% of pages tested</span></div>
+        <div id="wcb_p"><span id="wcb_g">0.11g of CO<sub>2</sub>/view</span><a id="wcb_a" target="_blank" rel="noopener" href="https://www.websitecarbon.com/website/kleiderordnung-berlin/">Website Carbon</a></div><span id="wcb_2">&nbsp;Cleaner than 89% of pages tested</span></div>
       <div class="footer__ecofriendly__detail--greenhosting">
         <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=https%3A%2F%2Fkleiderordnung.berlin%2F" target="_blank">
           <img src="<?php echo get_template_directory_uri() ?>/img/logos/kleiderordnung.berlin.greenwebfoundation.png" data-original-src="https://api.thegreenwebfoundation.org/greencheckimage/kleiderordnung.berlin" width="300" height="135" alt="This website is hosted Green - checked by thegreenwebfoundation.org" loading="eager"><!-- lazy loading did not work well inside initally hidden details container -->
         </a>
       </div>
       <div class="footer__ecofriendly__detail--ecograder">
-        <a href="https://ecograder.com/report/nelSPuhV7x13D5K2TSSS7lXJ" target="_blank" title="In August 2023, this page scored better than 80% of all URLs crawled by Ecograder.">Ecograder Score: <b>94</b>/100 <small>(0.21 g CO₂e)</small></a><!-- TODO renew -->
+        <a href="https://ecograder.com/report/S5dl1sSUy5YKbRzT7FsXcJIl" target="_blank" title="In September 2023, this page scored better than 79% of all URLs crawled by Ecograder.">Ecograder Score: <b>93</b>/100 <small>(0.16 g CO₂e)</small></a>
       </div>
     </aside>
   </div>

@@ -141,6 +141,10 @@ msgid "im August 2023"
 msgstr ""
 
 #: inc/structure/footer.php
+msgid "im September 2023"
+msgstr ""
+
+#: inc/structure/footer.php
 msgid "Details"
 msgstr ""
 
