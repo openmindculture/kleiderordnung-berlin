@@ -175,3 +175,31 @@ body.single-story .stories__story__quote {
     justify-content: flex-end;
   }
 }
+
+/* "mobile mode" fixes to improve swipeable UX */
+
+@media (max-width: 555px) {
+  .stories__story__image, .stories__story__image img, .stories__story__quote {
+    height: auto;
+    min-height: unset;
+    width: 70vw;
+  }
+
+  .stories__story__quote__text {
+    font-size: var(--font-size-18);
+    line-height: 170%;
+    letter-spacing: 0.1rem;
+    font-style: normal;
+  }
+
+  .stories__story__quote::before {
+    background-size: 2rem;
+    margin: 1rem 0 0 0;
+  }
+
+  @media (hover: none) {
+      .stories__navigation {
+        display: none;
+      }
+    }
+}
