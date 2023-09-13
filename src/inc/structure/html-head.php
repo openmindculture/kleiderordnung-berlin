@@ -60,7 +60,7 @@
   <meta property="og:site_name" content="">
   <meta property="og:type" content="website">
   <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/preview.png"
-  <meta name="theme-color" content="#f3ebde">
+  <meta name="theme-color" content="#f5f1ed">
   <script type="application/ld+json">
     {
       "@context" : "http://schema.org",
