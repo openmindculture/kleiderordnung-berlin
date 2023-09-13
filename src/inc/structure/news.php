@@ -22,7 +22,7 @@ $the_query = new WP_Query( $args ); ?>
   <div class="news__wrapper">
   <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
     <article class="news__post">
-      <figure class="news__post__image">
+      <figure class="news__post__image<?php if (str_contains(get_the_post_thumbnail(),'.gif"')) { echo ' news__post__image--has-gif'; } ?>">
         <a class="news__post__link" href="<?php the_permalink() ?>" tabindex="0">
           <picture>
             <?php the_post_thumbnail() ?>

@@ -147,6 +147,12 @@ a.news__post__link:focus {
   padding: 0;
 }
 
+@media (prefers-reduced-motion) {
+  .news__post__image--has-gif img {
+    visibility: hidden;
+  }
+}
+
 .news__post__content {
   padding: 0.5rem 2rem 0.5rem 2rem;
   min-height: 10.5rem;
