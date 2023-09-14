@@ -19,9 +19,45 @@
   <meta name=language content="<?php echo /** @var string */ pll_current_language() ?>">
   <link rel="canonical" <?php
     echo 'href="';
-    echo 'https://kleiderordnung.berlin/';
-    echo '">';
+    if (is_front_page()):
+      if (pll_current_language() === 'en'):
+        echo 'https://kleiderordnung.berlin/en/';
+      else:
+        echo 'https://kleiderordnung.berlin/';
+      endif;
+    else:
+      echo get_permalink();
+    endif;
+    echo '"';
     ?>
+  >
+  <?php
+    /** @var Array */
+    if (is_front_page()):
+      if (pll_current_language() === 'en'):
+        echo '<link rel="alternate" hreflang="de-DE" href="' . get_site_url() . '/">';
+      else:
+        echo '<link rel="alternate" hreflang="en-US" href="' . get_site_url() . '/en">';
+      endif;
+    elseif (!is_single() && get_post_type() === 'post'):
+      if (pll_current_language() === 'en'):
+        echo '<link rel="alternate" hreflang="de-DE" href="' . get_site_url() . '/news">';
+      else:
+        echo '<link rel="alternate" hreflang="en-US" href="' . get_site_url() . '/en/news">';
+      endif;
+    elseif (isset($post_id)):
+      $post_translations = pll_get_post_translations($post_id);
+      if (pll_current_language() === 'en'):
+        echo '<link rel="alternate" hreflang="de-DE" href="';
+        echo get_permalink($post_translations['de']);
+        echo '" />';
+      else:
+        echo '<link rel="alternate" hreflang="en-US" href="';
+        echo get_permalink($post_translations['en']);
+        echo '" />';
+      endif;
+    endif;
+  ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Henderson webfonts -->
   <link rel="preload" href="<?php echo get_template_directory_uri() ?>/fonts/1be57243-bc0a-482e-a7f4-0c95f5fd6930.woff2" as="font" type="font/woff2" crossorigin>
