@@ -93,7 +93,6 @@
   <meta name="google" content="notranslate">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/img/kleider-ordnung-logo.png">
   <meta property="og:title" content="<?php _e( 'Kleiderordnung Berlin: nachhaltige Modeberatung von Tina Steinke', 'kleiderordnung' ) ?>">
   <meta property="og:description" content="<?php _e( 'Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin', 'kleiderordnung' ) ?>">
   <meta property="og:url" content="https://kleiderordnung.berlin/">
