@@ -25,17 +25,27 @@
         <li id="menu-main-item-news" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-news"><a href="<?php echo get_home_url() ?>/#news" class="menu-item-link-waypoint" tabindex="0"><?php _e( 'News', 'kleiderordnung' ) ?></a></li>
         <li id="menu-main-item-kontakt" class="menu-item menu-item--has-button menu-item-type-post_type menu-item-object-page menu-item-kontakt"><a href="<?php echo get_home_url() ?>/#kontakt" class="menu-item-link-waypoint button button--primary" tabindex="0"><?php _e( 'Kontakt', 'kleiderordnung' ) ?></a></li>
         <li id="menu-main-item-language" class="menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-language"><?php
-            if (is_front_page()) {
+            if (is_front_page()):
               ?>
-              <a href="/" hreflang="de-DE" lang="de-DE" title="Deutsch" tabindex="0">DE</a>/<a href="/en" hreflang="en-US" lang="en-US" title="English" tabindex="0">EN</a>
+              <a href="<?php echo get_site_url() ?>/" hreflang="de-DE" lang="de-DE" title="Deutsch" tabindex="0">DE</a>/<a href="<?php echo get_site_url() ?>/en" hreflang="en-US" lang="en-US" title="English" tabindex="0">EN</a>
               <?php
-            } else {
+            elseif (!is_single() && get_post_type() === 'post'):
+              ?>
+              <a href="<?php echo get_site_url() ?>/news" hreflang="de-DE" lang="de-DE" title="Deutsch" tabindex="0">DE</a>/<a href="<?php echo get_site_url() ?>/en/news" hreflang="en-US" lang="en-US" title="English" tabindex="0">EN</a>
+            <?php
+            elseif (isset($post_id)):
+              /* Returns an associative array of translations with language code as key and translation post_id as value */
+              /** @var Array */ $post_translations = pll_get_post_translations($post_id);
+              ?>
+              <a href="<?php get_permalink($post_translations['de']) ?>" hreflang="de-DE" lang="de-DE" title="Deutsch" tabindex="0">DE</a>/<a href="<?php get_permalink($post_translations['en']) ?>" hreflang="en-US" lang="en-US" title="English" tabindex="0">EN</a>
+              <?php
+            else:
               ?><ul><?php
               pll_the_languages( array(
                 'display_names_as' => 'slug',
               ));
               ?></ul><?php
-            }
+            endif;
           ?>
         </li>
       </ul>

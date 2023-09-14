@@ -17,7 +17,11 @@
       wp_title('-');
     } ?></title>
   <meta name=language content="<?php echo /** @var string */ pll_current_language() ?>">
-  <link rel="canonical" href="https://kleiderordnung.berlin/">
+  <link rel="canonical" <?php
+    echo 'href="';
+    echo 'https://kleiderordnung.berlin/';
+    echo '">';
+    ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Henderson webfonts -->
   <link rel="preload" href="<?php echo get_template_directory_uri() ?>/fonts/1be57243-bc0a-482e-a7f4-0c95f5fd6930.woff2" as="font" type="font/woff2" crossorigin>
