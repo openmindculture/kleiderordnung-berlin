@@ -177,6 +177,14 @@ non-destructive editing limited to the intended content type (plain text or rich
 
 There must be exactly 1 active contact form for each language. The form titles must contain the language string ("en_US" or "de_DE"), so the theme can display the correct contact form dynamically without hard-coded form IDs, to work around the problem that contact form 7 posts won't be translated by the current Polylang plugin.
 
+Form field names must be defined explicitly so that name and email/phone can show up correctly in the saved flamingo inbox list view. In each form settings "additional settings" tab, add
+
+```
+flamingo_email: "[Email]"
+flamingo_name: "[Name]"
+flamingo_subject: "Contact Form"
+```
+
 ##### Polylang Localization Settings for Custom Post Types
 
 Localization / translation needs to be enabled explicitly in Polylang **Languages** -> **Settings** -> Custom Post Types and Taxonomies:
