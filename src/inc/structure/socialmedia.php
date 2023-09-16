@@ -18,7 +18,11 @@
         <div class="j-stacker-wrapper">
           <div class="j-stacker socialmedia__feed__embed__table">
             <div class="j-stack socialmedia__feed__embed__row socialmedia__feed__embed__row--preview">
-              <img src="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230831.jpg" width="1857" height="463" alt="<?php esc_attr_e( 'Instagram Picture Preview', 'kleiderordnung' ) ?>" loading="lazy">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230916.webp" type="image/webp">
+                <source srcset="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230916.jpg" type="image/jpeg">
+                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230916.jpg" width="1857" height="463" alt="<?php esc_attr_e( 'Instagram Picture Preview', 'kleiderordnung' ) ?>" loading="lazy">
+              </picture>
             </div>
           </div>
         </div>
