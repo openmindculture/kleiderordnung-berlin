@@ -148,6 +148,10 @@ body.no-js .socialmedia__feed__consent--juicer {
   overflow-x: hidden;
 }
 
+.socialmedia__feed__placeholder__image--5x {
+  display: block;
+}
+
 .socialmedia__feed__section--active .socialmedia__feed__placeholder,
 .socialmedia__feed__section--active .socialmedia__feed__consent {
   display: none;
