@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'KLEIDERORDNUNG_THEME_VERSION' ) ) {
-  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.9.9' );
+  define( 'KLEIDERORDNUNG_THEME_VERSION', '2.9.10' );
 }
 
 if ( ! defined( 'KLEIDERORDNUNG_DIR' ) ) {
