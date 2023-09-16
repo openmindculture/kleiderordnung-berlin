@@ -21,7 +21,7 @@
               <picture>
                 <source srcset="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230916.webp" type="image/webp">
                 <source srcset="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230916.jpg" type="image/jpeg">
-                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230916.jpg" width="1857" height="463" alt="<?php esc_attr_e( 'Instagram Picture Preview', 'kleiderordnung' ) ?>" class="socialmedia__feed__placeholder__image socialmedia__feed__placeholder__image--5x" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230916.jpg" width="1857" height="463" alt="<?php esc_attr_e( 'Instagram Picture Preview', 'kleiderordnung' ) ?>: doubt kills more dreams than failure ever will" class="socialmedia__feed__placeholder__image socialmedia__feed__placeholder__image--5x" loading="lazy">
               </picture>
             </div>
           </div>
