@@ -19,6 +19,7 @@ import {kleiderordnung_showAdminLinkIfLoggedIn} from './inc/showAdminLinkIfLogge
 window.kleiderordnung = {
   state: {
     /** @type {number} */                    currentAnimationReplayTimeoutIdNr: 0,
+    /** @type {string} */                    currentWaypointTargetId: '',
     /** @type {number} */                    feedStyleFetchRetryCount: 0,
     /** @type {number} */                    genericIdCounter: 0,
     /** @type {object|null} LottiePlayer */  introAnimation: null,

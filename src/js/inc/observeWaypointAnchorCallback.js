@@ -15,5 +15,9 @@ export function kleiderordnung_observeWaypointAnchorCallback(intersectingEntries
     if (currentCorrespondingNavigationItem && currentCorrespondingNavigationItem.classList) {
       currentCorrespondingNavigationItem.classList.add('active');
     }
+    /* save to global state so that it can be used by language switcher */
+    if (window.kleiderordnung && window.kleiderordnung.state) {
+      window.kleiderordnung.state.currentWaypointTargetId = targetId;
+    }
   }
 }

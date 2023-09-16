@@ -13,7 +13,10 @@ export function kleiderordnung_keepAnchorTargetInLanguageSwitcher() {
       if (currentTargetHref.includes('#')) {
         currentTargetHref = currentTargetHref.split('#')[0];
       }
-      if (window.location.hash.startsWith('#')) {
+      if (window.kleiderordnung && window.kleiderordnung.state && window.kleiderordnung.state.currentWaypointTargetId) {
+        currentTargetHref += '#' + window.kleiderordnung.state.currentWaypointTargetId;
+        e.currentTarget.href = currentTargetHref;
+      } else if (window.location.hash.startsWith('#')) {
         currentTargetHref += window.location.hash;
         e.currentTarget.href = currentTargetHref;
       }
