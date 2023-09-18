@@ -35,7 +35,14 @@
   /* mobile:65px; desktop: 48 + 57 = 105px; tablet 48 + 104 = 152px */
   --header-height: 10rem;
   --header-height-negative: -10rem;
+  --header-height-mobile: 4rem;
+  --header-height-mobile-negative: -4rem;
   --header-height-stuck: 0;
+
+  @media (max-width: 555px) {
+    --header-height: var(--header-height-mobile);
+    --header-height-negative: var(--header-height-mobile-negative);
+  }
 
   /* header + (min) footer height to set a min height for main content */
   --footer-height: 13rem;

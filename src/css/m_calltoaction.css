@@ -14,10 +14,16 @@
   padding: 7.9375rem 0 3rem 0;
 }
 
-@mixin typography-copy-bold .calltoaction__text > p {}
+@mixin typography-copy-bold .calltoaction__text > p {
+  font-size: var(--font-size-18);
+  max-width: calc(100% - 1rem);
+}
 
 @media (min-width: 768px) {
   .calltoaction {
     margin-bottom: 7.5rem;
+  }
+  .calltoaction__text > p {
+    font-size: var(--font-size-16);
   }
 }

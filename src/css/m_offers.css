@@ -18,22 +18,29 @@
 .offers__headline {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-24);
+  font-size: var(--font-size-28);
   font-style: normal;
-  letter-spacing: 0;
+  letter-spacing: 0.125rem;
   line-height: 160%;
-  margin: 0 0 2rem 0;
+  margin: 0 0 3rem 0;
   text-align: center;
   text-transform: none;
+}
+
+@media (min-width: 768px) {
+  .offers__headline {
+    font-size: var(--font-size-24);
+    letter-spacing: 0;
+    margin: 0 0 2rem 0;
+  }
+  .offers__additional {
+    margin-bottom: 8.87rem;
+  }
 }
 
 .offers__cards {
   margin: 0 0 8.87rem 0;
   clear: left;
-}
-
-.offers__additional {
-  margin-bottom: 8.87rem;
 }
 
 @mixin typography-heading-h2 .offers__additional__headline {

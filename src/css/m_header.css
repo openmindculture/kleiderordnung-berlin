@@ -39,6 +39,15 @@
   pointer-events: none;
 }
 
+@media (max-width: 555px) {
+  .target-offset::before,
+  :target::before {
+    height: var(--header-height-mobile);
+    margin-top: var(--header-height-mobile-negative);
+    margin-top: calc(-1 * var(--header-height-mobile));
+  }
+}
+
 .header--site-header.stuck ~ .target-offset::before {
   height: var(--header-height-stuck);
   margin-top: var(--header-height-negative);

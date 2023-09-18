@@ -101,18 +101,6 @@ $(className) {
   }
 }
 
-@define-mixin typography-heading-h2-mission $className {
-$(className) {
-  font-family: var(--font-family-default);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-18);
-  line-height: 150%;
-  text-transform: uppercase;
-  font-style: normal;
-  @mixin-content;
-}
-}
-
 @define-mixin typography-heading-h3 $className {
   $(className) {
     font-family: var(--font-family-heading);
