@@ -66,12 +66,19 @@
 .contact__calltoactiontext--primary p {
   font-family: var(--font-family-ivymode);
   font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-32);
+  font-size: var(--font-size-24);
   font-style: normal;
   line-height: 150%;
   letter-spacing: 0.1rem;
   text-align: left;
   margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact__calltoactiontext--primary,
+  .contact__calltoactiontext--primary p {
+    font-size: var(--font-size-32);
+  }
 }
 
 @mixin typography-copy .contact__vcard {}
@@ -98,7 +105,15 @@
 }
 
 .contact__calltoactiontext--fieldset p:first-child {
-  font-size: var(--font-size-20);
+  font-size: var(--font-size-18);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact__calltoactiontext--fieldset p:first-child {
+    font-size: var(--font-size-20);
+    margin-bottom: 0;
+  }
 }
 
 .contact__socialmedia__links__wrapper {
@@ -133,8 +148,11 @@
 }
 
 @media (hover: none) {
-  .contact__fieldset--checkboxes > p + p {
+  .contact__fieldset--checkboxes > p {
     margin-bottom: 0.75rem;
+  }
+  .contact__fieldset--checkboxes {
+    margin-bottom: 3rem;
   }
 }
 

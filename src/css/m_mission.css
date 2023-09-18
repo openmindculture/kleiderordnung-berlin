@@ -18,9 +18,9 @@
 .mission__headline {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-32);
+  font-size: var(--font-size-24);
   font-style: normal;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0;
   line-height: 160%;
   margin: 0 0 2rem 0;
   text-align: center;
@@ -31,9 +31,9 @@
 .mission__text p {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-24);
+  font-size: var(--font-size-20);
   line-height: 1.6;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.07em;
   text-align: center;
 }
 
@@ -45,12 +45,9 @@
     padding: 5rem;
     margin: 0 auto;
   }
-  .mission__headline {
-    font-size: var(--font-size-24);
-    letter-spacing: 0;
-  }
   .mission__text,
   .mission__text p {
+    font-size: var(--font-size-24);
     letter-spacing: 0.07em;
   }
 }

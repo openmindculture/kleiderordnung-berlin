@@ -40,7 +40,7 @@
 
 .intro__keytext__paragraphs,
 .intro__keytext__paragraphs p {
-  font-size: var(--font-size-18);
+  font-size: var(--font-size-16);
 }
 
 @media (min-width: 768px) {

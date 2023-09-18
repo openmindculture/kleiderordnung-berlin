@@ -21,6 +21,7 @@ body {
   accent-color: var( --color-primary-foreground);
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);
+  font-size: 16px;
   /* prepare voice settings according to CSS speech draft */
   /* stylelint-disable property-no-unknown */
   voice-family: female;
@@ -35,8 +36,17 @@ html, body, main, .main, p {
   font-weight: var(--font-weight-regular);
   /* stylelint-disable-next-line value-keyword-case */
   text-rendering: optimizeLegibility;
-  font-size: var(--font-size-16);
   line-height: 140%;
+}
+
+main, .main, p {
+  font-size: var(--font-size-16);
+}
+
+@media (max-width: 767.767px) {
+  main, .main, p {
+    font-size: var(--font-size-14);
+  }
 }
 
 main {
@@ -78,11 +88,5 @@ select {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-}
-
-@media (max-width: 767.767px) {
-  html, body, main, .main, p {
-    font-size: var(--font-size-14);
   }
 }

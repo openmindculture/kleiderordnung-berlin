@@ -105,11 +105,16 @@ $(className) {
   $(className) {
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-32);
+    font-size: var(--font-size-24);
     font-style: normal;
     line-height: 130%;
     letter-spacing: 0.1rem;
     @mixin-content;
+  }
+  @media (min-width: 768px) {
+    $(className) {
+      font-size: var(--font-size-32);
+    }
   }
 }
 
