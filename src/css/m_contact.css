@@ -112,6 +112,8 @@
   margin:0;
 }
 
+/* stylelint-disable no-descending-specificity */
+
 .contact__fieldset,
 .contact__fieldset--checkboxes,
 .contact__fieldset--message,
@@ -128,6 +130,12 @@
 .contact__fieldset--message,
 .contact__fieldset--from {
   margin-bottom: 1.8125rem;
+}
+
+@media (hover: none) {
+  .contact__fieldset--checkboxes > p + p {
+    margin-bottom: 0.75rem;
+  }
 }
 
 .contact__fieldset--message,
@@ -230,7 +238,6 @@ textarea[name="Nachricht"]::placeholder {
   position: relative;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .contact__checkboxline span,
 .contact__checkboxline label,
 .contact__checkboxline input {
@@ -353,3 +360,5 @@ textarea[name="Nachricht"]::placeholder {
   margin-top: 1rem;
   margin-bottom: -1rem;
 }
+
+/* stylelint-enable no-descending-specificity */
