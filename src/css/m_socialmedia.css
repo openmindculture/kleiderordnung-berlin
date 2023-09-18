@@ -8,7 +8,12 @@
 .socialmedia {
   /* space for following section's target offset negative top margin + 0.25rem spacer line */
   margin-bottom: 10.25rem;
-  background-color: var(--color-primary-background);
+}
+
+@media (min-width: 768px) {
+  .socialmedia {
+    background-color: var(--color-primary-background);
+  }
 }
 
 .socialmedia__feed__section {
