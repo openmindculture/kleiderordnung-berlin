@@ -245,8 +245,16 @@ textarea[name="Nachricht"]::placeholder {
   color: var(--color-default-white);
   font-family: var(--font-family-henderson);
   font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-15);
+  font-size: var(--font-size-16);
   line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .contact__checkboxline span,
+  .contact__checkboxline label,
+  .contact__checkboxline input {
+    font-size: var(--font-size-15);
+  }
 }
 
 .contact__checkboxline label:focus,
@@ -321,6 +329,7 @@ textarea[name="Nachricht"]::placeholder {
   border-color: transparent;
   display: inline-block;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .contact__socialmedia__links__wrapper a {
