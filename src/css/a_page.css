@@ -39,3 +39,7 @@ body.page:not(.home) main {
   padding-top: 3rem;
   text-align: center;
 }
+
+h1.page-title {
+  line-height: 1.25;
+}
