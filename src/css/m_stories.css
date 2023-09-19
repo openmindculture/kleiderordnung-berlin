@@ -64,11 +64,16 @@
 .stories__story__quote {
   flex: 0 0 auto;
   width: 20.3125rem;
-  min-height: 35.625rem;
+  height: 35.625rem; /* match image height */
+  overflow-y: visible;
   margin: 0 2.5rem 2.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.stories__story__image.empty + .stories__story__quote.long {
+  width: 35.625rem;
 }
 
 .stories__story__quote::before {
