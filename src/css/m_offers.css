@@ -222,6 +222,21 @@ body.single .offers__offer {
 .offers__offer ul li,
 .offers__offer__features__list li {
   padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .offers__offer ul li,
+  .offers__offer__features__list li {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .offers__offer ul li,
+  .offers__offer__features__list li {
+    margin-bottom: 0.125rem;
+  }
 }
 
 .offers__offer__card__footer {
