@@ -31,10 +31,10 @@ $current_content = isset($resorted_post_id) ? get_the_content($resorted_post_id)
   }
   ?>">
     <figcaption class="stories__story__quote__author">
-      <?php if (isset($resorted_post_id)) { echo $current_content; ?>
+      <?php echo $current_title; ?>
     </figcaption>
     <blockquote class="stories__story__quote__text">
-      <?php if (isset($resorted_post_id)) { echo $current_content; ?>
+      <?php echo $current_content; ?>
     </blockquote>
   </figure>
 </div>
