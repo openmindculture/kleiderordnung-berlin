@@ -4,6 +4,7 @@ import {kleiderordnung_activateAnalyticsTracking} from './inc/activateAnalyticsT
 import {kleiderordnung_activateIntroAnimation} from './inc/activateIntroAnimation';
 import {kleiderordnung_activateLazyLoadedMailtoLinks} from './inc/activateLazyLoadedMailtoLinks';
 import {kleiderordnung_carouselSetup} from './inc/carouselSetup';
+import {kleiderordnung_enhanceDecorationEffect} from './inc/enhanceDecorationEffect.js';
 import {kleiderordnung_enhanceNavigationMenu} from './inc/enhanceNavigationMenu';
 import {
     kleiderordnung_intersectionCallback,
@@ -27,14 +28,18 @@ window.kleiderordnung = {
     /** @type {HTMLElement|null} */          menu: null,
     /** @type {HTMLElement|null} */          menuOpenButton: null,
     /** type {number[]} */                   observableTimeoutsByTargetElementId: [],
+    /** type {number[]}   */                 resetEnhancedDecorationTimeoutsByElementId: [],
     /** @type {HTMLElement|null} */          rootElement: null,
   },
   observers: {
+    /** @type {IntersectionObserver|null} */ decorationObserver: null,
     /** @type {IntersectionObserver|null} */ stickyHeaderObserver: null,
     /** @type {IntersectionObserver|null} */ waypointObserver: null,
   },
   config: {
     allowableElementsClassName: 'allowable--on-visibility', // triggers consent before loading external content
+    decoratedForegroundElementsClassName: 'offers__offer',
+    decoratedForegroundContainerClassName: 'offers__layer--content',
     feedCookieKey: 'instafeed', // name of the cookie set to remember consent
     feedCookieValue: 'allow',   // default value
     feedCookieMaxAgeSeconds: 31536000, // 1 year
@@ -54,6 +59,7 @@ window.kleiderordnung = {
     introKeyvisualScriptId: 'lottie-player-script',
     introKeyvisualComponentTagName: 'lottie-player',
     mainMenuNavWrapperSelector: 'navigation--main-navigation', // select parent menu from descendant button handler
+    mediaMatchMobile: '(max-width: 767px)',
     menuId: 'primary-menu',
     menuCloseButtonClassName: 'navigation__toggle--close',
     menuOpenButtonClassName: 'navigation__toggle--open',
@@ -67,6 +73,8 @@ window.kleiderordnung = {
       threshold: 0.1
     },
     removableButtonsClassName: 'button__remove', // elements to be removed by consent handling
+    scrollingClassName: 'scrolling',
+    scrollingClassTimeout: 2000,
     socialMediaSectionId: 'socialmedia',
     stickyHeaderId: 'site-header',
     stuckClassName: 'stuck', // emulate ::stuck pseudo class for sticky header styling
@@ -108,8 +116,9 @@ document.addEventListener('DOMContentLoaded', function () {
     kleiderordnung_intersectionCallback,
     window.kleiderordnung.config
   );
-  kleiderordnung_carouselSetup();
   kleiderordnung_keepAnchorTargetInLanguageSwitcher();
+  kleiderordnung_carouselSetup();
+  kleiderordnung_enhanceDecorationEffect(window.kleiderordnung.config);
   kleiderordnung_handleFooterDetailLink();
   kleiderordnung_activateAnalyticsTracking();
   kleiderordnung_showAdminLinkIfLoggedIn();
