@@ -97,6 +97,7 @@
   --color-primary-background: var(--color-sandy-light-grayish);
   --color-primary-foreground: var(--color-blue-dark-purpleish);
   --color-secondary-background: var(--color-default-white);
+  --color-secondary-background-semitransparent: rgba(255, 255, 255, 0.5);
   --color-inverted-background: var(--color-blue-dark-purpleish);
   --color-inverted-foreground: var(--color-default-white);
   --color-neutral-background: transparent;

@@ -9,6 +9,8 @@ body {
   color: var(--color-primary-foreground);
   /* parallax perspective effects */
   height: 100%;
+  height: 100vh;
+  height: 100dvh;
   overflow-x: hidden;
   overflow-y: scroll;
   transform-style: preserve-3d;

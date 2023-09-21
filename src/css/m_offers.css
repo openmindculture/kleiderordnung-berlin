@@ -135,27 +135,23 @@ body.single .offers__offer {
 .offers__offer__card {
   padding: 2rem 1.5rem 2rem 1.5rem;
   background-color: var(--color-secondary-background);
+  width: 100%;
+  max-width: 100%;
+  transition: background-color 0.75s ease-out;
 }
 
-.offers__offer .offers__offer__card {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
-  border: solid 2px green;
-}
-
-.offers__offer.scrolling .offers__offer__card {
-  opacity: 0.75;
-  border: solid 2px orange;
+@media not (prefers-contrast: more) {
+  @media (max-width: 767px) {
+    body.scrolling .offers__offer__card {
+      background-color: var(--color-secondary-background-semitransparent);
+    }
+  }
 }
 
 /* mobile-first width starting with 1 column images above cards */
-.offers__offer__image,
-.offers__offer__card {
+.offers__offer__image {
   width: 100%;
   max-width: 100%;
-}
-
-.offers__offer__image {
   margin: 0;
 }
 
