@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /beispiel-seite/
+Sitemap: https://kleiderordnung.berlin/sitemap.xml
