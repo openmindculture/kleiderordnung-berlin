@@ -153,10 +153,6 @@ body.no-js .socialmedia__feed__consent--juicer {
   justify-content: space-around;
 }
 
-.socialmedia__feed__placeholder {
-  overflow-x: hidden;
-}
-
 .socialmedia__feed__placeholder__image--5x {
   display: block;
 }
