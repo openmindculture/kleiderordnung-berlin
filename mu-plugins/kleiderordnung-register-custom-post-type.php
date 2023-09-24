@@ -2,10 +2,10 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 2.9.0
+ * @version 3.0.0
  *
  * @wordpress-plugin
- * Version: 2.9.0
+ * Version: 3.0.0
  * Tested up to: 6.3
  * Plugin Name: Kleiderordnung Register Custom Post Types
  * Text Domain: kleiderordnung-register-custom-post-types
