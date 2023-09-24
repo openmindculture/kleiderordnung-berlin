@@ -25,6 +25,7 @@ window.kleiderordnung = {
     /** @type {number} */                    feedStyleFetchRetryCount: 0,
     /** @type {number} */                    genericIdCounter: 0,
     /** @type {object|null} LottiePlayer */  introAnimation: null,
+    /** @type {boolean} */                   isintroAnimationPlaying: false,
     /** @type {boolean} */                   isHeaderStuck: false,
     /** @type {boolean} */                   isScrolling: false,
     /** @type {HTMLElement|null} */          menu: null,
