@@ -361,6 +361,13 @@ textarea[name="Nachricht"]::placeholder {
   display: inline-block;
   cursor: pointer;
   -webkit-appearance: none;
+  transition: background-color 0.325s ease-out;
+}
+
+.contact__buttonwrapper--submit button:hover,
+.contact__buttonwrapper--submit input[type="submit"]:hover {
+  background-color: var(--color-hover-background-contrast);
+  color: var(--color-inverted-foreground);
 }
 
 .contact__socialmedia__links__wrapper a {
