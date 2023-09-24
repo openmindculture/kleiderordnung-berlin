@@ -24,6 +24,7 @@
   background-color: var(--color-blue-dark-purpleish);
   color: var(--color-default-white);
   display: inline-block;
+  transition: background-color 0.325s ease-out;
 }
 
 a:not(.button).active, /* .active class might be set by JavaScript on waypoint (target) observation */
