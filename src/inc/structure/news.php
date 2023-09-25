@@ -56,9 +56,9 @@ $the_query = new WP_Query( $args ); ?>
       <a class="news__link news__link--more" href="<?php
         echo pll_home_url('de');
         if (!empty(pll_current_language('slug')) && pll_current_language('slug') !== pll_default_language('slug')) {
-          echo '/' . pll_current_language('slug');
+          echo '' . pll_current_language('slug') . '/';
         }
-        echo '/news';
+        echo 'news';
       ?>" tabindex="0"><?php _e( 'alle Neuigkeiten', 'kleiderordnung' ) ?></a>
     </div>
   <?php endif; ?>
