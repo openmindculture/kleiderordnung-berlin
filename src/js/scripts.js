@@ -3,6 +3,7 @@
 import {kleiderordnung_activateAnalyticsTracking} from './inc/activateAnalyticsTracking';
 import {kleiderordnung_activateIntroAnimation} from './inc/activateIntroAnimation';
 import {kleiderordnung_activateLazyLoadedMailtoLinks} from './inc/activateLazyLoadedMailtoLinks';
+import {kleiderordnung_activateLazyLoadingWebfonts} from './inc/activateLazyLoadingWebfonts.js';
 import {kleiderordnung_carouselSetup} from './inc/carouselSetup';
 import {kleiderordnung_enhanceDecorationEffect} from './inc/enhanceDecorationEffect.js';
 import {kleiderordnung_enhanceNavigationMenu} from './inc/enhanceNavigationMenu';
@@ -24,6 +25,7 @@ window.kleiderordnung = {
     /** @type {number} */                    feedStyleFetchRetryCount: 0,
     /** @type {number} */                    genericIdCounter: 0,
     /** @type {object|null} LottiePlayer */  introAnimation: null,
+    /** @type {boolean} */                   isintroAnimationPlaying: false,
     /** @type {boolean} */                   isHeaderStuck: false,
     /** @type {boolean} */                   isScrolling: false,
     /** @type {HTMLElement|null} */          menu: null,
@@ -125,5 +127,8 @@ document.addEventListener('DOMContentLoaded', function () {
   kleiderordnung_activateAnalyticsTracking();
   kleiderordnung_showAdminLinkIfLoggedIn();
 
-  window.setTimeout(kleiderordnung_activateLazyLoadedMailtoLinks, 9000);
+  window.setTimeout(function() {
+    kleiderordnung_activateLazyLoadedMailtoLinks();
+    kleiderordnung_activateLazyLoadingWebfonts();
+  }, 2048);
 });

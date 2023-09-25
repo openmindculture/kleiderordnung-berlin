@@ -11,7 +11,6 @@ import {kleiderordnung_observeWaypointAnchorCallback} from "./observeWaypointAnc
  */
 export function kleiderordnung_enhanceDecorationEffect(config) {
   /* global window, document */
-  console.log('enhance decoration effect function start');
   if (config.prefersReducedMotion) { return; }
   if (!window.matchMedia(config.mediaMatchMobile).matches) { return; }
 

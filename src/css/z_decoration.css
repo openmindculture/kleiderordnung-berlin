@@ -127,6 +127,21 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
   body.page.home .decoration__container {
     max-width: 120rem; /* 1920px; */
     margin: 0 auto;
+    background-position: 100% 0%, 0% 800px,100% 900px,20% 1999px,2% 1800px,100% 1900px;
+    background-position:
+      100% 0%,
+      0% 800px,     /* top left salon shape starts at left margin */
+      100% 900px,   /* middle right lilac shape ends at right margin */
+      20% 1999px,
+      0% 1800px,
+      100% 1900px;  /* lower right salmon shape ends at right margin */
+    background-size:
+      31.25rem auto,
+      30% 30%,      /* top left salon shape: smaller size to adjust to new position */
+      35% 35%,      /* middle right lilac shape: dto. */
+      6.25rem auto,
+      30% 30%,
+      30% 30%;      /* lower right salmon shape: dto. */
   }
 }
 

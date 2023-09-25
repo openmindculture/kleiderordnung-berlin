@@ -361,6 +361,13 @@ textarea[name="Nachricht"]::placeholder {
   display: inline-block;
   cursor: pointer;
   -webkit-appearance: none;
+  transition: background-color 0.325s ease-out;
+}
+
+.contact__buttonwrapper--submit button:hover,
+.contact__buttonwrapper--submit input[type="submit"]:hover {
+  background-color: var(--color-hover-background-contrast);
+  color: var(--color-inverted-foreground);
 }
 
 .contact__socialmedia__links__wrapper a {
@@ -402,3 +409,42 @@ textarea[name="Nachricht"]::placeholder {
 }
 
 /* stylelint-enable no-descending-specificity */
+
+@supports (background-image: linear-gradient(#222b40, #222b40)) and (transition: all 2s linear) {
+  .contact__vcard__address a:not(.button),
+  .contact__vcard__address a:not(.button):link,
+  .contact__vcard__address a:not(.button):visited,
+  .contact__vcard__address a:not(.button).active,
+  .contact__vcard__address a:not(.button):active,
+  .contact__vcard__address a:not(.button):hover,
+  .contact__vcard__address a:not(.button):focus {
+    background-color: var(--color-inverted-background);
+    color: var(--color-inverted-foreground);
+    background-image: linear-gradient(var(--color-inverted-background), var(--color-inverted-background)),
+    linear-gradient(var(--color-inverted-background), var(--color-inverted-background)),
+    linear-gradient(var(--color-hover-background), var(--color-hover-background));
+    background-position:
+      left top,
+      right top,
+      center top;
+    background-size:
+      100% 100%,
+      50% 100%,
+      100% 100%;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.25s ease-in,
+      color 0.25s ease-in;
+  }
+
+  .contact__vcard__address a:not(.button).active,
+  .contact__vcard__address a:not(.button):active,
+  .contact__vcard__address a:not(.button):hover,
+  .contact__vcard__address a:not(.button):focus {
+    color: var(--color-primary-foreground);
+    background-size: 0 100%,
+    0 100%,
+    100% 100%;
+  }
+}
+

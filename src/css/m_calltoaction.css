@@ -16,6 +16,7 @@
 
 @mixin typography-copy-bold .calltoaction__text > p {
   font-size: var(--font-size-18);
+  margin: 0 auto;
   max-width: calc(100% - 1rem);
 }
 
