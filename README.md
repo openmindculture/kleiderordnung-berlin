@@ -2,10 +2,14 @@
 
 A portfolio website for sustainable stylist [Tina Steinke](https://kleiderordnung.berlin/) in Berlin,
 following up on a previous sustainable style consultancy in Düsseldorf.
-Visual design by [Ina Nixdorf](https://www.inanixdorf.de/), technical concept and development by [Ingo Steinke](https://www.ingo-steinke.de/).
+Visual design by [Ina Nixdorf](https://www.inanixdorf.de/), technical concept and development by [Ingo Steinke](https://www.ingo-steinke.de/), 
+announced and described as [an exceptional portfolio project](https://dev.to/ingosteinke/a-beautiful-portfolio-website-for-a-sustainable-fashion-consultant-3807) after going live in September 2023.
 
-- https://kleiderordnung.berlin/ (upcoming)
-- https://www.kleiderordnung-berlin.de/ (classic alternative)
+- canonical domain:
+  - https://kleiderordnung.berlin/
+- alternative domains
+  - https://www.kleiderordnung.berlin/
+  - https://www.kleiderordnung-berlin.de/
 
 Local development: http://localhost:1234/
 Backend: http://localhost:1234/wp-admin (default credentials: admin:secret).
