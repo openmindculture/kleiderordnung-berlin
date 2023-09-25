@@ -59,7 +59,7 @@ To setup / deploy **kleiderordnung** on a website,
 - copy all icons and manifest files (`*.ico`, `*.png`, `*.svg`, `*.json`, `*.xml`, `robots.txt`) to the web root directory
 - configure server and caching by editing `.htaccess` / `nginx.conf` / hosting backend or by using appropriate plugins,
 - use additional reverse proxy and/or CDN servers if necessary,
-- run automated tests (`npm run test`) and update the baseline screenshots if necessary (see [Testing...](#testing) )
+- run automated tests (`npm run test`) and update the baseline screenshots if necessary (see <a href="#testing">Testing...</a>)
 - test everything and back up your data regularly: use WP-Admin Tools / Werkzeuge -> Export or a plugin like [Updraft Plus](https://wordpress.org/plugins/updraftplus/).
 
 ## User Manual for the Site Owners
@@ -185,6 +185,20 @@ flamingo_name: "[Name]"
 flamingo_subject: "Contact Form"
 ```
 
+To enable an alternative email or phone field, we define it as `text` type and don't validate its input. But we could still use email autocompletion. Akismet spam protection can recognize email, but no phone, so we could mark it as `akismet:author_email` but that might compromise legitimate submissions that provide a phone number. That leaves us with `akismet:author` as the only explicit [anti-spam markup](https://contactform7.com/spam-filtering-with-akismet/) in our form. 
+
+```
+<div class="contact__fieldset contact__fieldset--from">
+  <label class="contact__label contact__label--name">
+   <span class="screen-reader-text">Name</span> 
+   [text* Name autocomplete:name akismet:author placeholder "Name"] 
+   </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> 
+   <span class="screen-reader-text">Email address </span> 
+   [text Email autocomplete:email placeholder "Phone or email address"] 
+   </label>
+</div>
+```
+
 ##### Polylang Localization Settings for Custom Post Types
 
 Localization / translation needs to be enabled explicitly in Polylang **Languages** -> **Settings** -> Custom Post Types and Taxonomies:
@@ -251,7 +265,34 @@ Offer taxonomies currently serve to separate main offers, displayed with cards a
 ### Decoration / Parallax Perspective Effects
 
 Colorful shapes are placed behind offers and subsequent sections.
-To make CSS perspective work, **global html and body style** is set to `height: 100%; overflow-y: scroll` as explained here: [pure CSS parallax perspective beyond landscape images](https://dev.to/ingosteinke/pure-css-parallax-perspective-beyond-landscape-images-24g2).
+To make CSS perspective work, **global html and body style** is tweaked as explained here: [pure CSS parallax perspective beyond landscape images](https://dev.to/ingosteinke/pure-css-parallax-perspective-beyond-landscape-images-24g2). This might alter circumstances for subsequent styling and scroll events.
+
+```css
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  height: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform-style: preserve-3d;
+  perspective: 1px;
+  perspective-origin: 0 0;
+}
+
+.decoration__container { /* decoration-parallax-layer-background */
+  content: "";
+  position: absolute;
+  margin: 0;
+  transform-origin: top left;
+  transform: translateZ(-1px) scale(2);
+  top: 112rem; /* adjust to fit */
+  height: 187rem; /* adjust to fit */
+}
+```
 
 Sections before and after should be set to `position: relative; z-index: 2` to make sure that they stay in front of the decoration layer.
 
@@ -267,7 +308,7 @@ Form markup:
 
 ``` 
 <div class="contact__fieldset contact__fieldset--from">
-  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine E-Mail-Adresse </span> [email* Email autocomplete:email akismet:author_email placeholder "E-Mail"] </label>
+  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine Telefonnummer oder E-Mail-Adresse </span>[text Email placeholder "Telefon oder E-Mail"] </label>
 </div>
 
 <div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
@@ -330,7 +371,7 @@ If the placeholder image does not update automatically, replace the placeholder 
 `/img/instagram/preview5xinsta-20230601.jpg`
 with an updated image file in the following aspect ratio: width="1857" height="463"
 
-TODO: alternatively:
+**TODO**: alternatively:
 
 The update process might be (partially) automated or facilitated using the [Screen Capture API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API).
 
