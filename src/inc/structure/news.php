@@ -21,16 +21,14 @@ $the_query = new WP_Query( $args ); ?>
   <?php endif ?>
   <div class="news__wrapper">
   <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+    <a class="news__post__link" href="<?php the_permalink() ?>" tabindex="0">
     <article class="news__post">
       <figure class="news__post__image<?php if (str_contains(get_the_post_thumbnail(),'.gif"')) { echo ' news__post__image--has-gif'; } ?>">
-        <a class="news__post__link" href="<?php the_permalink() ?>" tabindex="0">
           <picture>
             <?php the_post_thumbnail() ?>
           </picture>
-        </a>
         </figure>
         <div class="news__post__content">
-          <a class="news__post__link" href="<?php the_permalink() ?>" tabindex="0">
             <h3 class="news__post__title">
             <?php
                 $category = get_the_category();
@@ -42,9 +40,9 @@ $the_query = new WP_Query( $args ); ?>
             <p class="news__post__text">
               <?php the_title() ?>
             </p>
-          </a>
         </div>
     </article>
+    </a>
   <?php endwhile; ?>
 
   <?php wp_reset_postdata(); ?>

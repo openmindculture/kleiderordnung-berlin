@@ -113,7 +113,7 @@
   --color-border-carbonbadge: var(--color-green-web-foundation);
 
   /* Effect Styles */
-  --effect-box-shadow-dropshadow: 3.75rem 4rem 4.625rem rgba(0, 0, 0, 0.12);
+  --effect-box-shadow-dropshadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.05);
   --effect-box-shadow-dialogbox: 2rem 2rem 4.625rem rgba(0, 0, 0, 0.5);
 
   /* Decoration Elements */

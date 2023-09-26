@@ -253,3 +253,22 @@ body.page:not(.home) .footer__partners {
 @mixin typography-copy #wcb #wcb_g {
   font-family: var(--font-family-default) !important;
 }
+
+.footer__partners a:link,
+.footer__partners a:visited,
+.footer__partners a:active,
+.footer__partners a:hover,
+.footer__partners a:focus {
+  transition: transform 0.25s, background-color 0.25s;
+}
+
+.footer__parnters a:active,
+.footer__partners a:hover,
+.footer__partners a:focus {
+  background: none;
+  transform: scale(1.25);
+}
+
+.footer__partners a:focus {
+  background-color: var(--color-pink-pastel-semitransparent);
+}

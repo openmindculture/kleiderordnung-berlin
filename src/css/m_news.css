@@ -45,33 +45,18 @@ a.news__post__link:hover {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  background-image: none;
   background-color: var(--color-secondary-background);
   color: var(--color-primary-foreground);
   border-radius: 0;
-  background-image:
-    linear-gradient(var(--color-secondary-background), var(--color-secondary-background)),
-    linear-gradient(var(--color-secondary-background), var(--color-secondary-background)),
-    linear-gradient(var(--color-hover-background), var(--color-hover-background));
-  background-position-y:
-    102%,
-    102%,
-    102%;
-  background-size:
-    100% 1.25rem,
-    50% 1.25rem,
-    100% 1.25rem;
-  transition:
-    background-size 0.125s ease-in,
-    color 0.125s ease-in;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
 
 a.news__post__link:active,
 a.news__post__link:hover,
 a.news__post__link:focus {
-  background-size:
-    0 1.25rem,
-    0 1.25rem,
-    100% 1.25rem;
+  transform: scale(1.05);
+  box-shadow: var(--effect-box-shadow-dropshadow);
 }
 
 .news__link--more,
