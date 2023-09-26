@@ -25,6 +25,27 @@
         </div>
       </div>
       <div class="footer__columns__column footer__columns__column--50">
+        <div class="footer__column__row footer__column__row--partners footer__column__row--partners-coop">
+          <?php _e( 'Kooperationen', 'kleiderordnung' ) ?>
+        </div>
+        <div class="footer__partners footer__partners--coop">
+          <a href=https://moeon.de/" target="_blank" rel="noopener" tabindex="0">
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/logos/moeon-blue.svg" width="558" height="119"
+              loading="lazy"
+              alt="MOEON"
+              class="footer__partners__image footer__partners__image--moeon"
+            >
+          </a>
+          <a href="https://loveco-shop.de/" target="_blank" rel="noopener" tabindex="0">
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/logos/loveco-blue.svg" width="485" height="190"
+              loading="lazy"
+              alt="LOVECO"
+              class="footer__partners__image footer__partners__image--loveco"
+            >
+          </a>
+        </div>
         <div class="footer__column__row footer__column__row--partners">
           <?php _e( 'Mitglied bei', 'kleiderordnung' ) ?>
         </div>
@@ -35,6 +56,7 @@
               srcset="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists@2x.png 2x"
               loading="lazy"
               alt="<?php esc_attr_e( 'Sustainable Stylists', 'kleiderordnung' ) ?>"
+              class="footer__partners__image footer__partners__image--sustainable-stylists"
             >
           </a>
           <a href="https://fashionchangers.de/" target="_blank" rel="noopener" tabindex="0">
@@ -43,6 +65,7 @@
               srcset="<?php echo get_template_directory_uri() ?>/img/logos/fashion-changers.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/fashion-changers@2x.png 2x"
               loading="lazy"
               alt="<?php esc_attr_e( 'Fashion Changers', 'kleiderordnung' ) ?>"
+              class="footer__partners__image footer__partners__image--fashionchangers"
             >
           </a>
           <a href="https://www.reflecta.network/changemaker/martina-steinke" target=_blank rel=noopener" tabindex="0">
@@ -51,6 +74,7 @@
               srcset="<?php echo get_template_directory_uri() ?>/img/logos/reflecta.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/reflecta@2x.png 2x"
               loading="lazy"
               alt="<?php esc_attr_e( 'reflecta network', 'kleiderordnung' ) ?>"
+              class="footer__partners__image footer__partners__image--reflecta"
             >
           </a>
           <a href="https://berlin.impacthub.net/" target="_blank" rel="noopener" tabindex="0">
@@ -59,6 +83,7 @@
               srcset="<?php echo get_template_directory_uri() ?>/img/logos/impact-hub.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/impact-hub@2x.png 2x"
               loading="lazy"
               alt="<?php esc_attr_e( 'Impact Hub Berlin', 'kleiderordnung' ) ?>"
+              class="footer__partners__image footer__partners__image--impact-hub"
             >
           </a>
         </div>

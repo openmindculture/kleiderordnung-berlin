@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-09-14 20:40+0200\n"
+"PO-Revision-Date: 2023-09-26 12:54+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -116,6 +116,10 @@ msgstr "reflecta network"
 #: inc/structure/footer.php:62
 msgid "Impact Hub Berlin"
 msgstr "Impact Hub Berlin"
+
+#: inc/structure/footer.php
+msgid "Kooperationen"
+msgstr "Kooperationen"
 
 #: inc/structure/footer.php
 msgid "Umweltfreundlicher als"
