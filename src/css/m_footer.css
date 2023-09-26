@@ -128,16 +128,18 @@ body.page:not(.home) .footer__partners {
 
   .footer__partners .footer__partners__image--moeon {
     width: auto;
-    height: 2.25rem;
+    height: 2rem;
     margin-top: 1rem;
   }
 
   .footer__partners .footer__partners__image--loveco {
     width: auto;
     height: 5rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
   }
 
-  .footer__partners__image--sustainable-stylists {
+  .footer__partners .footer__partners__image--sustainable-stylists {
     height: 5rem;
   }
 
