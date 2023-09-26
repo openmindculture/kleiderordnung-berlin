@@ -88,6 +88,17 @@ body.page:not(.home) .footer__content {
   margin-bottom: 2rem;
 }
 
+.footer__partners .footer__partners__image--moeon {
+  width: auto;
+  height: 1.125rem;
+  margin-top: 1rem;
+}
+
+.footer__partners .footer__partners__image--loveco {
+  width: auto;
+  height: 3.75rem;
+}
+
 body.page:not(.home) .footer__partners {
   text-align: right;
 }
@@ -102,12 +113,32 @@ body.page:not(.home) .footer__partners {
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .footer__partners--coop {
+    justify-content: space-evenly
+  }
+
   body.page:not(.home) .footer__partners {
     text-align: right;
   }
   .footer__partners img {
     width: initial;
     height: auto;
+  }
+
+  .footer__partners .footer__partners__image--moeon {
+    width: auto;
+    height: 2.25rem;
+    margin-top: 1rem;
+  }
+
+  .footer__partners .footer__partners__image--loveco {
+    width: auto;
+    height: 5rem;
+  }
+
+  .footer__partners__image--sustainable-stylists {
+    height: 5rem;
   }
 
   .footer {

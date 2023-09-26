@@ -125,6 +125,10 @@ msgid "Impact Hub Berlin"
 msgstr ""
 
 #: inc/structure/footer.php
+msgid "Kooperationen"
+msgstr ""
+
+#: inc/structure/footer.php
 msgid "Umweltfreundlicher als"
 msgstr ""
 
