@@ -169,7 +169,7 @@ $(className) {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    width: 88.5rem;
+    width: 90rem;
     max-width: calc(100% - 1rem);
     margin: 0 auto;
     @mixin-content;

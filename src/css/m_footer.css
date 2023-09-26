@@ -266,7 +266,7 @@ body.page:not(.home) .footer__partners {
 .footer__partners a:hover,
 .footer__partners a:focus {
   background: none;
-  transform: scale(1.25);
+  transform: scale(1.125);
 }
 
 .footer__partners a:focus {
