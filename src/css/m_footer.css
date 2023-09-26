@@ -151,7 +151,7 @@ body.page:not(.home) .footer__partners {
     flex-direction: row;
   }
   .footer__columns__column--50:first-child {
-    flex: 0 0 32rem;
+    flex: 0 0 30rem;
   }
   .footer__columns__column--50:last-child {
     flex: 1 0 42.5rem;
@@ -180,7 +180,7 @@ body.page:not(.home) .footer__partners {
 
 @media (min-width: 1235px) {
   body.page.home .footer__columns__column--50:last-child {
-    max-width: 56%;
+    max-width: 60%;
   }
   .footer__columns__column + .footer__columns__column {
     margin-top: 0;
