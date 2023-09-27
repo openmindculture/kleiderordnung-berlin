@@ -1,5 +1,5 @@
 <div class="contact__fieldset contact__fieldset--from">
-  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine Telefonnummer oder E-Mail-Adresse </span>[text Email akismet:author_email placeholder "Telefon oder E-Mail"] </label>
+  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Dein Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Deine Telefonnummer oder E-Mail-Adresse </span>[text Email placeholder "Telefon oder E-Mail"] </label>
 </div>
 
 <div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Deine Nachricht (optional)</span> [textarea Nachricht placeholder "Deine Nachricht"] </label></div>
@@ -7,7 +7,7 @@
 <div class="contact__fieldset contact__fieldset--checkboxes">
   <div class="contact__calltoactiontext--fieldset">Unverbindliche Anfrage für</div>
 
-  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "Style Visit"]
+  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "Kleiderschrank Deep-Dive"]
 
   [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping Tour"]
 

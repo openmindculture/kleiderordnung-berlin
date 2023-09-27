@@ -1,5 +1,5 @@
 <div class="contact__fieldset contact__fieldset--from">
-  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Email address </span> [text Email autocomplete:email akismet:author_email placeholder "Phone or email address"] </label>
+  <label class="contact__label contact__label--name"> <span class="screen-reader-text">Name</span> [text* Name autocomplete:name akismet:author placeholder "Name"] </label><!-- NO LINE-BREAK HERE ! --><label class="contact__label contact__label--email"> <span class="screen-reader-text">Email address </span> [text Email autocomplete:email placeholder "Phone or email address"] </label>
 </div>
 
 <div class="contact__fieldset contact__fieldset--message"><label class="contact__label contact__label--nachricht"> <span class="screen-reader-text">Your message</span> [textarea Nachricht placeholder "Your message"] </label></div>
@@ -7,7 +7,7 @@
 <div class="contact__fieldset contact__fieldset--checkboxes">
   <div class="contact__calltoactiontext--fieldset">I have a question about:</div>
 
-  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "In-home styling session"]
+  [checkbox anfrage-style-visit id:anfrage-style-visit class:contact__checkboxline class:contact__checkboxline--style-visit use_label_element "Wardrobe deep dive"]
 
   [checkbox anfrage-shopping-tour id:anfrage-shopping-tour class:contact__checkboxline class:contact__checkboxline--shopping-tour use_label_element "Shopping tour"]
 
