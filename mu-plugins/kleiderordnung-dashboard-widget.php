@@ -103,8 +103,14 @@ function kleiderordnung_add_dashboard_widget()
 
       $kleiderordnung_frontpageIdGerman = url_to_postid(pll_home_url('de'));
       $kleiderordnung_editHomeGerman = $kleiderordnung_frontpageIdGerman ? '/wp-admin/post.php?post=' . $kleiderordnung_frontpageIdGerman . '&action=edit' : '/wp-admin/edit.php?post_type=page';
-
       $kleiderordnung_frontpageIdEnglish = url_to_postid(pll_home_url('en'));
+
+      // fallback for custom homepage /en/ instead of default /en/homepage
+      if (($kleiderordnung_frontpageIdEnglish == 0) && (strpos(pll_home_url('en'),'homepage') === false)) {
+        $kleiderordnung_homeUrlEnglish = pll_home_url('en') . 'homepage/';
+        $kleiderordnung_frontpageIdEnglish = url_to_postid($kleiderordnung_homeUrlEnglish);
+      }
+
       $kleiderordnung_editHomeEnglish = $kleiderordnung_frontpageIdEnglish ? '/wp-admin/post.php?post=' . $kleiderordnung_frontpageIdEnglish . '&action=edit' : '/wp-admin/edit.php?post_type=page';
 
       $kleiderordnung_widget.= '<img src="'.$currentThemeDirectory.'/img/admin-screenshot-intro.png" width="509" height="382" class="kleiderordnung__dashboard__image">';
