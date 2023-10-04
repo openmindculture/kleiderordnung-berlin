@@ -58,13 +58,13 @@
           </div>
           <div class="socialmedia__link--printable">
             <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target="_blank">
+              https://www.linkedin.com/in/martina-steinke-6810aa111
             </a>
-            https://www.linkedin.com/in/martina-steinke-6810aa111
           </div>
           <div class="socialmedia__link--printable">
             <a href="https://www.pinterest.de/martinasteinke0050/" target="_blank">
+              https://www.pinterest.de/martinasteinke0050
             </a>
-            https://www.pinterest.de/martinasteinke0050
           </div>
         </aside>
       </div>
