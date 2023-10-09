@@ -76,13 +76,19 @@
   color: var(--color-inverted-foreground);
 }
 
+
+.contact .socialmedia__icon--inverted:focus,
 .contact .socialmedia__icon--inverted:hover,
-.contact .socialmedia__icon--inverted:focus {
+.contact .socialmedia__link:focus .socialmedia__icon--inverted,
+.contact .socialmedia__link:hover .socialmedia__icon--inverted {
   background-color: transparent;
   color: var(--color-hover-background-contrast);
 }
 
-.contact .socialmedia__icon--inverted:hover svg path {
+.contact .socialmedia__icon--inverted:focus svg path,
+.contact .socialmedia__icon--inverted:hover svg path,
+.contact .socialmedia__link:focus .socialmedia__icon--inverted svg path,
+.contact .socialmedia__link:hover .socialmedia__icon--inverted svg path {
   fill: var(--color-inverted-foreground);
 }
 
@@ -90,8 +96,8 @@
 .contact .socialmedia__link:link,
 .contact .socialmedia__link:visited,
 .contact .socialmedia__link:active,
-.contact .socialmedia__link:hover,
-.contact .socialmedia__link:focus {
+.contact .socialmedia__link:focus,
+.contact .socialmedia__link:hover {
   background-color: transparent;
   background-image: none;
 }
