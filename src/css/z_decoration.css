@@ -145,6 +145,8 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
   }
 }
 
+
+
 @media (prefers-reduced-motion) {
   body.archive .decoration__container,
   body.category .decoration__container,
@@ -152,4 +154,9 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
   body.page.home .decoration__container {
     transform: translateZ(0);
   }
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+body.prefers-reduced-motion .decoration__container {
+  transform: translateZ(0);
 }
