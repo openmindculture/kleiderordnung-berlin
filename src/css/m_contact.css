@@ -289,7 +289,9 @@ textarea[name="Nachricht"]::placeholder {
 }
 
 .contact__checkboxline label:focus,
-.contact__checkboxline label:hover {
+.contact__checkboxline label:focus-within,
+.contact__checkboxline label:hover,
+.contact__checkboxline label:has(input:focus) {
   padding-top: 0.125rem;
   padding-right: 0.25rem;
   background-image: linear-gradient(var(--color-hover-background), var(--color-hover-background));
@@ -300,12 +302,16 @@ textarea[name="Nachricht"]::placeholder {
 }
 
 .contact__checkboxline label:focus span,
-.contact__checkboxline label:hover span {
+.contact__checkboxline label:focus-within span,
+.contact__checkboxline label:hover span,
+.contact__checkboxline label:has(input:focus) span {
   color: var(--color-primary-foreground);
 }
 
 .contact__checkboxline label:focus span::before,
-.contact__checkboxline label:hover span::before {
+.contact__checkboxline label:focus-within span::before,
+.contact__checkboxline label:hover span::before,
+.contact__checkboxline label:has(input:focus) span::before {
   background-color: var(--color-hover-background-semitransparent);
 }
 
@@ -364,7 +370,9 @@ textarea[name="Nachricht"]::placeholder {
   transition: background-color 0.325s ease-out;
 }
 
+.contact__buttonwrapper--submit button:focus,
 .contact__buttonwrapper--submit button:hover,
+.contact__buttonwrapper--submit input[type="submit"]:focus,
 .contact__buttonwrapper--submit input[type="submit"]:hover {
   background-color: var(--color-hover-background-contrast);
   color: var(--color-inverted-foreground);
