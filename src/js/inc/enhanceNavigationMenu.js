@@ -21,6 +21,16 @@ export function kleiderordnung_enhanceNavigationMenu(config) {
             window.kleiderordnung.state.menu.classList.remove(config.menuOpenedClassName);
             window.kleiderordnung.state.menuOpenButton.classList.remove(config.menuOpenedClassName);
         });
+        if (typeof(menuCloseButton.closest)==='function') {
+            var menuWrapper = menuCloseButton.closest(config.menuWrapperSelector);
+            if (menuWrapper) {
+                menuWrapper.addEventListener('click', function (event) {
+                    if (event.target instanceof HTMLAnchorElement) { return; }
+                    window.kleiderordnung.state.menu.classList.remove(config.menuOpenedClassName);
+                    window.kleiderordnung.state.menuOpenButton.classList.remove(config.menuOpenedClassName);
+                });
+            }
+        }
     }
 
     var navLinks = document.querySelectorAll(config.menuLinksSelector);

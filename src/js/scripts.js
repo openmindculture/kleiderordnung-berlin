@@ -67,9 +67,10 @@ window.kleiderordnung = {
     menuId: 'primary-menu',
     menuCloseButtonClassName: 'navigation__toggle--close',
     menuOpenButtonClassName: 'navigation__toggle--open',
-    menuOpenedClassName: 'navigation__menu-opened', // .target for progressive enhancement of :target
-    menuLinksSelector: '#primary-menu a[href]',     // links inside the menu
-    noGlobalThisClassName: 'no-globalthis',         // set if special intro animation fallback necessary
+    menuOpenedClassName: 'navigation__menu-opened',  // .target for progressive enhancement of :target
+    menuLinksSelector: '#primary-menu a[href]',      // links inside the menu
+    menuWrapperSelector: '.navigation__list-wrapper',// div around the menu items
+    noGlobalThisClassName: 'no-globalthis',          // set if special intro animation fallback necessary
     /** @object IntersectionObserver options */
     observerOptions: {
       root: null,
