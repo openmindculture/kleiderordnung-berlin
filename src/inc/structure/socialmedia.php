@@ -13,22 +13,6 @@
   </div>
 
   <aside class="socialmedia__feed__section">
-    <div class="socialmedia__feed__placeholder">
-      <div class="socialmedia__feed__embed socialmedia__feed__embed--skeleton" data-per="5" data-columns="5" pages="1">
-        <div class="j-stacker-wrapper">
-          <div class="j-stacker socialmedia__feed__embed__table">
-            <div class="j-stack socialmedia__feed__embed__row socialmedia__feed__embed__row--preview">
-              <picture>
-                <source srcset="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230916.webp" type="image/webp">
-                <source srcset="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230916.jpg" type="image/jpeg">
-                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20230916.jpg" width="1857" height="463" alt="<?php esc_attr_e( 'Instagram Picture Preview', 'kleiderordnung' ) ?>: doubt kills more dreams than failure ever will" class="socialmedia__feed__placeholder__image socialmedia__feed__placeholder__image--5x" loading="lazy">
-              </picture>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div id="juicer-feed-container"
          label="<?php _e( 'Instagram Galerie', 'kleiderordnung' ) ?>"
          class="socialmedia__feed__container socialmedia__feed__container--juicer feed__container allowable--on-visibility"
@@ -39,6 +23,22 @@
 
       <ul class="socialmedia__feed__embed socialmedia__feed__embed--juicer juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="5" data-columns="5" data-overlay="false" pages="1">
       </ul>
+    </div>
+
+    <div class="socialmedia__feed__placeholder">
+      <div class="socialmedia__feed__embed socialmedia__feed__embed--skeleton" data-per="5" data-columns="5" pages="1">
+        <div class="j-stacker-wrapper">
+          <div class="j-stacker socialmedia__feed__embed__table">
+            <div class="j-stack socialmedia__feed__embed__row socialmedia__feed__embed__row--preview">
+              <picture>
+                <source srcset="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20231019.webp" type="image/webp">
+                <source srcset="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20231019.jpg" type="image/jpeg">
+                <img src="<?php echo get_template_directory_uri() ?>/img/instagram/preview5xinsta-20231019.jpg" width="1857" height="463" alt="<?php esc_attr_e( 'Instagram Picture Preview', 'kleiderordnung' ) ?>: doubt kills more dreams than failure ever will" class="socialmedia__feed__placeholder__image socialmedia__feed__placeholder__image--5x" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="socialmedia-feed-consent-juicer" class="socialmedia__feed__consent feed__consent socialmedia__feed__consent--juicer">

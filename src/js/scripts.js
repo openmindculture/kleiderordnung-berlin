@@ -77,6 +77,9 @@ window.kleiderordnung = {
       rootMargin: '0px',
       threshold: 0.1
     },
+    /** @type {boolean} */ supportsSuppportsColorSchemeQuery: false,
+    /** @type {boolean} */ prefersMoreContrast: false,
+    /** @type {boolean} */ prefersReducedMotion: false,
     removableButtonsClassName: 'button__remove', // elements to be removed by consent handling
     scrollingClassName: 'scrolling',
     scrollingClassTimeout: 2000,
@@ -111,6 +114,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
     window.kleiderordnung.config.prefersMoreContrast = (prefersMoreContrastQuery.matches);
+
+    var supportsColorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    window.kleiderordnung.config.supportsSuppportsColorSchemeQuery = (supportsColorSchemeQuery.matches);
+  }
+
+  // explicitly disable progressive enhancements to prevent bugs in outdated Apple browsers
+  // the following query / hack should target mobile Safari up to version 12
+  if (/iPhone/.test(navigator.userAgent) && window.kleiderordnung.config.supportsSuppportsColorSchemeQuery) {
+    window.kleiderordnung.config.prefersReducedMotion = true;
+    if (document.body.classList && typeof(document.body.classList.add === 'function')) {
+      document.body.classList.add('prefers-reduced-motion');
+    }
   }
 
   kleiderordnung_activateIntroAnimation(window.kleiderordnung.config);

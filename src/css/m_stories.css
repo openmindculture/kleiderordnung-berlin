@@ -202,8 +202,10 @@ body.single-story .stories__story__quote {
   }
 
   @media (hover: none) {
-      .stories__navigation {
+    @media not (prefers-reduced-motion) {
+      body:not(.prefers-reduced-motion) .stories__navigation {
         display: none;
       }
     }
+  }
 }
