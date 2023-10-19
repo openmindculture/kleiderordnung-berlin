@@ -120,15 +120,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // explicitly disable progressive enhancements to prevent bugs in outdated Apple browsers
   // the following query / hack should target mobile Safari up to version 12
-  try {
-    if (/iPhone/.test(navigator.userAgent) && window.kleiderordnung.config.supportsSuppportsColorSchemeQuery) {
-      window.kleiderordnung.config.prefersReducedMotion = true;
-      if (document.body.classList && typeof(document.body.classList.add === 'function')) {
-        document.body.classList.add('prefers-reduced-motion');
-      }
+  if (/iPhone/.test(navigator.userAgent) && window.kleiderordnung.config.supportsSuppportsColorSchemeQuery) {
+    window.kleiderordnung.config.prefersReducedMotion = true;
+    if (document.body.classList && typeof(document.body.classList.add === 'function')) {
+      document.body.classList.add('prefers-reduced-motion');
     }
-  } catch(e) {}
-
+  }
 
   kleiderordnung_activateIntroAnimation(window.kleiderordnung.config);
   kleiderordnung_observeStickyHeader(window.kleiderordnung.config);
