@@ -45,6 +45,14 @@
               class="footer__partners__image footer__partners__image--loveco"
             >
           </a>
+          <a href="https://lillimendelssohn.de/" target="_blank" rel="noopener" tabindex="0">
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/logos/lilli.svg" width="407" height="41"
+              loading="lazy"
+              alt="lilli mendelssohn"
+              class="footer__partners__image footer__partners__image--lilli"
+            >
+          </a>
         </div>
         <div class="footer__column__row footer__column__row--partners">
           <?php _e( 'Mitglied bei', 'kleiderordnung' ) ?>
