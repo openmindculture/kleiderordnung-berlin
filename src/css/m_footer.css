@@ -90,8 +90,8 @@ body.page:not(.home) .footer__content {
 
 .footer__partners .footer__partners__image--moeon {
   width: auto;
-  height: 1.8rem;
-  margin-top: 1rem;
+  height: 1.325rem;
+  margin-top: 1.35rem;
 }
 
 .footer__partners .footer__partners__image--loveco {
@@ -135,8 +135,8 @@ body.page:not(.home) .footer__partners {
 
   .footer__partners .footer__partners__image--moeon {
     width: auto;
-    height: 2rem;
-    margin-top: 1rem;
+    height: 1.5rem;
+    margin-top: 1.325rem;
   }
 
   .footer__partners .footer__partners__image--loveco {
