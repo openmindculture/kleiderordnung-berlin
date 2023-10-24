@@ -2,10 +2,10 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 3.1.6
+ * @version 3.2.0
  *
  * @wordpress-plugin
- * Version: 3.1.6
+ * Version: 3.2.0
  * Tested up to: 6.4
  * Plugin Name: Kleiderordnung Register Custom Post Types
  * Text Domain: kleiderordnung-register-custom-post-types
@@ -302,10 +302,16 @@ function kleiderordnung_register_custom_page_fields() {
     'position' => 'normal',
     'fields'   => array(
       array(
+        'key'   => 'page_intro_overline',
+        'name'  => 'page_intro_overline',
+        'type'  => 'text',
+        'label' => 'Intro Overline H1 (einzeilig, kleine Schriftgröße)',
+      ),
+      array(
         'key'   => 'page_intro_headline',
         'name'  => 'page_intro_headline',
         'type'  => 'text',
-        'label' => 'Intro Überschrift (Zeilenumbruch möglich)',
+        'label' => 'Intro Überschrift H2 (Zeilenumbruch möglich)',
       ),
       array(
         'key'   => 'page_intro_text',
