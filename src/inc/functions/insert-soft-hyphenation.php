@@ -21,6 +21,7 @@ function kleiderordnung_insert_soft_hyphenation(string $phrase) {
     'Subscription',
     'individuell',
     'buchbar',
+    'Datenschutzerklärung',
   );
   $replacements = array(
     'Kleider&shy;ordnung',
@@ -36,6 +37,7 @@ function kleiderordnung_insert_soft_hyphenation(string $phrase) {
     'Sub&shy;scription',
     'in&shy;di&shy;vi&shy;du&shy;ell',
     'buch&shy;bar',
+    'Daten&shy;schutz&shy;er&shy;klä&shy;rung,'
   );
   return str_replace($dictionary, $replacements, $phrase);
 }

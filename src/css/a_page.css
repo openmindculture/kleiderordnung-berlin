@@ -42,4 +42,5 @@ body.page:not(.home) main {
 
 h1.page-title {
   line-height: 1.25;
+  overflow-wrap: break-word;
 }
