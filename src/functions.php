@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'KLEIDERORDNUNG_THEME_VERSION' ) ) {
-  define( 'KLEIDERORDNUNG_THEME_VERSION', '3.2.0' );
+  define( 'KLEIDERORDNUNG_THEME_VERSION', '3.2.2' );
 }
 
 if ( ! defined( 'KLEIDERORDNUNG_DIR' ) ) {
@@ -18,6 +18,10 @@ if ( ! defined( 'KLEIDERORDNUNG_DIR' ) ) {
 
 if ( ! defined( 'KLEIDERORDNUNG_URI' ) ) {
   define( 'KLEIDERORDNUNG_URI', get_template_directory_uri() );
+}
+
+if ( ! defined( 'KLEIDERORDNUNG_is_stage' ) ) {
+  define( 'KLEIDERORDNUNG_is_stage', str_contains(KLEIDERORDNUNG_URI, 'stage') );
 }
 
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/add-theme-support.php' );

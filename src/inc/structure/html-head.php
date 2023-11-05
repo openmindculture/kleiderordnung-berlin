@@ -85,7 +85,11 @@
   <script defer src="<?php echo get_template_directory_uri() ?>/js/lottie-player.js?v=1.7.1" id="lottie-player-script"></script>
   <meta name="description" content="<?php _e( 'Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin (Meta Description frei übersetzen)', 'kleiderordnung' ) ?>">
   <meta name="keywords" content="<?php _e( 'Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit (Meta Keywords frei übersetzen)', 'kleiderordnung' ) ?>">
+<?php if (KLEIDERORDNUNG_is_stage) { ?>
+  <meta name="robots" content="noindex,nofollow">
+<?php } else { ?>
   <meta name="robots" content="index,follow">
+<?php } ?>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="HandheldFriendly" content="true">
   <meta name="google" content="notranslate">
