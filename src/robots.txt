@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /?s=
+Disallow: /page/*/?s=
+Disallow: /search/
+Disallow: /wp-json/
+Disallow: /?rest_route=
 Disallow: /beispiel-seite/
 Sitemap: https://kleiderordnung.berlin/sitemap.xml
