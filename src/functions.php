@@ -24,6 +24,13 @@ if ( ! defined( 'KLEIDERORDNUNG_is_stage' ) ) {
   define( 'KLEIDERORDNUNG_is_stage', str_contains(KLEIDERORDNUNG_URI, 'stage') );
 }
 
+if ( ! defined( 'KLEIDERORDNUNG_is_localhost' ) ) {
+  define( 'KLEIDERORDNUNG_is_localhost',
+    str_contains(KLEIDERORDNUNG_URI, '/localhost') ||
+    str_contains(KLEIDERORDNUNG_URI, '/bs-local.com')
+  );
+}
+
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/add-theme-support.php' );
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/customize-admin-ui.php' );
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/customize-frontend.php' );

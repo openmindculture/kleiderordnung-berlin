@@ -10,6 +10,9 @@ add_filter( 'body_class', function ( $classes = '' ) {
   if (KLEIDERORDNUNG_is_stage) {
     $classes[] = 'stage';
   }
+  if (KLEIDERORDNUNG_is_localhost) {
+    $classes[] = 'localhost';
+  }
   return $classes;
 } );
 
