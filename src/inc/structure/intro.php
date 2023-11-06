@@ -56,4 +56,8 @@
       <?php echo get_field('page_intro_text', KLEIDERORDNUNG_FRONT_PAGE_ID) ?>
     </p>
   </div>
+  <?php
+  $kleiderordnung_currentPageId = KLEIDERORDNUNG_FRONT_PAGE_ID;
+  include( KLEIDERORDNUNG_DIR . '/inc/structure/video-from-page-fields.php');
+  ?>
 </section>
