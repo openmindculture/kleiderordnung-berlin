@@ -22,8 +22,6 @@ $kleiderordnung_currentPageHasVideoPosterImage =
   !empty(get_field('page_intro_video_poster_image', $kleiderordnung_currentPageId)) &&
   !empty(get_field('page_intro_video_poster_image', $kleiderordnung_currentPageId)['url']);
 
-echo var_export(get_field('page_intro_video_mp4', $kleiderordnung_currentPageId), true);
-
 if ($kleiderordnung_currentPageHasVideoWebm || $kleiderordnung_currentPageHasVideoMp4) : ?>
 
   <video
