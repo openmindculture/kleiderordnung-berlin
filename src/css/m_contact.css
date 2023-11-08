@@ -127,6 +127,15 @@
   margin:0;
 }
 
+.contact__ctaalternatives {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.contact__ctaalternatives__button {
+  margin-right: 1rem;
+}
+
 /* stylelint-disable no-descending-specificity */
 
 .contact__fieldset,
@@ -387,12 +396,12 @@ textarea[name="Nachricht"]::placeholder {
   margin: 0
 }
 
-.contact a,
-.contact a:link,
-.contact a:visited,
-.contact a:active,
-.contact a:hover,
-.contact a:focus {
+.contact a:not(.button),
+.contact a:not(.button):link,
+.contact a:not(.button):visited,
+.contact a:not(.button):active,
+.contact a:not(.button):hover,
+.contact a:not(.button):focus {
   background-color: var(--color-inverted-background);
   color: var(--color-inverted-foreground);
   background-image: linear-gradient(var(--color-inverted-background), var(--color-inverted-background)),
@@ -401,8 +410,8 @@ textarea[name="Nachricht"]::placeholder {
   text-decoration: none;
 }
 
-.contact a:hover,
-.contact a:focus {
+.contact a:not(.button):hover,
+.contact a:not(.button):focus {
   color: var(--color-inverted-background);
 }
 

@@ -27,6 +27,17 @@
   transition: background-color 0.325s ease-out;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
+.button--inverted,
+.button--inverted a,
+.button--inverted a:link,
+.button--inverted a:visited {
+  background-color: var(--color-default-white);
+  color: var(--color-blue-dark-purpleish);
+  display: inline-block;
+  transition: background-color 0.325s ease-out;
+}
+
 a:not(.button).active, /* .active class might be set by JavaScript on waypoint (target) observation */
 a:not(.button):active,
 a:not(.button):hover,
@@ -44,6 +55,14 @@ a:not(.button):focus {
 .button--primary:focus {
   background-color: var(--color-hover-background-contrast);
   outline: none;
+}
+
+.button--inverted.active,
+.button--inverted:active,
+.button--inverted:hover,
+.button--inverted:focus {
+  background-color: var(--color-hover-background-contrast);
+  color: var(--color-default-white);
 }
 
 .button__allow {
