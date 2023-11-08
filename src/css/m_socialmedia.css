@@ -102,6 +102,21 @@
   background-image: none;
 }
 
+.socialmedia__icon--inverted--calendly {
+  background-color: #ffffff;
+}
+
+.socialmedia__icon--inverted--calendly img {
+  width: 90%;
+  height: 90%;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.contact .socialmedia__link:hover .socialmedia__icon--inverted--calendly {
+  background-color: var(--color-orange-dark);
+}
+
 /* replicate, override, extend third party styles */
 .socialmedia__feed_section,
 .socialmedia__feed__embed--skeleton,

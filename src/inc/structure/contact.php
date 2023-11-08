@@ -45,25 +45,35 @@
             </figure></a>
           <a class="socialmedia__link" href="https://www.pinterest.de/martinasteinke0050/" target="_blank" rel="me noopener" title="<?php _e( 'Tina Steinke auf Pinterest', 'kleiderordnung' ) ?>"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--pinterest" tabindex="0">
               <svg viewBox="0 0 44 44" fill="none" width="44" height="44">
-                <title>LinkedIn icon</title>
+                <title>Pinterest icon</title>
                 <rect x="0.400391" width="43.2" height="43.2" rx="21.6" fill="currentColor"/><path fill="#0014d1" fill-rule="evenodd" clip-rule="evenodd" d="M17.3544 35.75C17.2937 35.4625 17.2449 35.2914 17.2217 35.1167C16.9238 32.9153 16.9855 30.743 17.5342 28.5733C18.1429 26.1655 18.66 23.733 19.1986 21.3076C19.2491 21.0774 19.2148 20.8013 19.1429 20.572C18.7037 19.1794 18.6395 17.792 19.1866 16.4197C19.5239 15.5712 20.0632 14.8938 20.9262 14.5569C22.2275 14.0489 23.4998 14.7465 23.6744 16.1612C23.76 16.8509 23.6693 17.5944 23.5109 18.2771C23.1993 19.6186 22.7446 20.9239 22.4236 22.2628C22.0084 23.9932 23.1436 25.4547 24.8738 25.3744C25.4894 25.3462 26.1829 25.1548 26.6777 24.7976C27.3087 24.3416 27.8917 23.7154 28.2864 23.0336C29.5774 20.8013 29.9593 18.3318 29.6177 15.7855C29.3283 13.6352 28.0955 12.1597 26.1127 11.395C22.8919 10.1523 19.1232 11.2266 17.1841 13.9686C15.9555 15.7052 15.4855 17.6659 15.9264 19.7782C16.06 20.4177 16.4452 21.0165 16.7843 21.5916C16.9709 21.9082 17.0796 22.1825 16.9795 22.5415C16.8793 22.9022 16.8065 23.2709 16.7046 23.6298C16.5591 24.1405 16.322 24.256 15.8485 24.0426C15.0532 23.6836 14.4136 23.1227 13.9522 22.3704C13.0507 20.8983 12.6346 19.249 12.8178 17.553C13.102 14.9097 14.2227 12.6457 16.2363 10.9073C17.8416 9.52081 19.7088 8.77554 21.761 8.42627C24.5006 7.96059 27.0758 8.39981 29.4002 9.95651C32.026 11.7152 33.4257 14.2438 33.4 17.508C33.3769 20.3409 32.7237 22.993 30.9344 25.2236C29.3351 27.216 27.2633 28.2108 24.7343 28.023C23.4073 27.9233 22.2935 27.3244 21.3971 26.0659C20.63 29.6052 19.9066 33.0203 17.3544 35.75Z"/>
               </svg>
             </figure></a>
+          <a class="socialmedia__link" href="https://calendly.com/ingo-steinke" target="_blank" rel="me noopener" title="<?php _e('Tina Steinke bei Calendly', 'kleiderordnung') ?>"><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--calendly" tabindex="0"
+            >
+              <img src="<?php echo get_template_directory_uri() ?>/img/icons/calendar.png" width="150" height="150" alt="calendar icon" loading="lazy">
+            </figure>
+          </a>
         </div>
         <aside class="initially-hidden">
           <div class="socialmedia__link--printable">
-            <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank">
+            <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="noopener">
               https://www.instagram.com/tina_steinke_kleiderordnung
             </a>
           </div>
           <div class="socialmedia__link--printable">
-            <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target="_blank">
+            <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target="_blank" rel="noopener">
               https://www.linkedin.com/in/martina-steinke-6810aa111
             </a>
           </div>
           <div class="socialmedia__link--printable">
-            <a href="https://www.pinterest.de/martinasteinke0050/" target="_blank">
+            <a href="https://www.pinterest.de/martinasteinke0050/" target="_blank" rel="noopener">
               https://www.pinterest.de/martinasteinke0050
+            </a>
+          </div>
+          <div class="socialmedia__link--printable">
+            <a href="https://www.calendly/TODO" target="_blank" rel="noopener">
+              https://www.calendly-link-TODO-!!!!!!!!!!!!!!!!!!!!!!!!!!!
             </a>
           </div>
         </aside>
@@ -72,6 +82,16 @@
     </div>
 
     <div class="contact__columns__column contact__columns__column--50">
+      <div class="contact__ctaalternatives">
+        <a
+          href="https://calendly.com/ingo-steinke"
+          target="_blank"
+          rel="noopener"
+          class="button button--inverted contact__ctaalternatives__button"
+        >
+          <?php _e('Buche einen Termin', 'kleiderordnung'); ?>
+        </a> <?php _e('oder schreibe mir eine Nachricht:', 'kleiderordnung'); ?>
+      </div>
       <?php
       $kleiderordnung_contact_form_id = 16;
       $kleiderordnung_contact_form_title = __('Kontaktformular deutsch (de_DE)' , 'kleiderordnung');
