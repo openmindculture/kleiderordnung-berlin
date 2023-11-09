@@ -6,7 +6,9 @@
  */
 export function kleiderordnung_verifyAllowedUrl(urlToVerify, windowLocation) {
   var feedResourcesAllowedAbsoluteUrls = [
-    'https://assets.juicer.io/embed.js'
+    'https://assets.juicer.io/embed.js',
+    'https://assets.calendly.com/assets/external/widget.js',
+    'https://assets.calendly.com/assets/external/widget.css',
   ];
   for (var i=0; i < feedResourcesAllowedAbsoluteUrls.length; i++) {
     if (urlToVerify === feedResourcesAllowedAbsoluteUrls[i]) {

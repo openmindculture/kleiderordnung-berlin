@@ -59,8 +59,13 @@ var kleiderordnung_allowAndActivateExternalFeed = function(buttonElement) {
   }
 }
 
-/** @param {HTMLElement} feedContainerElement */
-var kleiderordnung_activateExternalFeed = function(feedContainerElement) {
+/** @param {HTMLElement} feedContainerElement
+ *  @param {function|null} onLoadCallback
+ * */
+var kleiderordnung_activateExternalFeed = function(
+  feedContainerElement,
+  onLoadCallback,
+) {
   if (!feedContainerElement) { return; }
   var styleFileUrl = feedContainerElement.dataset[window.kleiderordnung.config.feedStyleUrlDataKey];
   kleiderordnung_fetchAndAppendStyleFromFile(styleFileUrl, window.kleiderordnung.config);
@@ -69,6 +74,13 @@ var kleiderordnung_activateExternalFeed = function(feedContainerElement) {
     var scriptElement = document.createElement('script');
     scriptElement.src = scriptFileUrl;
     document.head.append(scriptElement);
+    if (typeof onLoadCallback === 'function') {
+      console.log('time to attach onLoadCallback');
+      scriptElement.onload = function(){
+        onLoadCallback();
+      }
+
+    } else { console.log('no onLoadCallback'); }
   }
   if (feedContainerElement && feedContainerElement.classList) {
     feedContainerElement.classList.add(window.kleiderordnung.config.feedContainerActiveClassName);
@@ -167,4 +179,8 @@ var kleiderordnung_handleElementsActivatedOnVisibilityAndConsent = function(klei
   }
 }
 
-export { kleiderordnung_intersectionCallback, kleiderordnung_handleElementsActivatedOnVisibilityAndConsent };
+export {
+  kleiderordnung_activateExternalFeed,
+  kleiderordnung_intersectionCallback,
+  kleiderordnung_handleElementsActivatedOnVisibilityAndConsent,
+};
