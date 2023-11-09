@@ -354,6 +354,14 @@ textarea[name="Nachricht"]::placeholder {
   url("data:image/svg+xml,%0A%3Csvg height='512' viewBox='0 0 520 520' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cg %3E%3Cpath d='m239.987 460.841a10 10 0 0 1 -7.343-3.213l-197.987-214.165a10 10 0 0 1 7.343-16.788h95.3a10.006 10.006 0 0 1 7.548 3.439l66.168 76.124c7.151-15.286 20.994-40.738 45.286-71.752 35.912-45.85 102.71-113.281 216.994-174.153a10 10 0 0 1 10.85 16.712c-.436.341-44.5 35.041-95.212 98.6-46.672 58.49-108.714 154.13-139.243 277.6a10 10 0 0 1 -9.707 7.6z' fill='white' /%3E%3C/g%3E%3C/svg%3E");
 }
 
+.contact__selectline {
+  background-color: var(--color-primary-background);
+  border-color: var(--color-primary-foreground);
+  color: var(--color-primary-foreground);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
 .contact__buttonwrapper--submit {
   display: block;
   text-align: right;

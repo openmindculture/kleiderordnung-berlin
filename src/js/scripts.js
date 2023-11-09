@@ -16,6 +16,7 @@ import {kleiderordnung_keepAnchorTargetInLanguageSwitcher} from './inc/keepAncho
 import {kleiderordnung_observeStickyHeader} from './inc/observeStickyHeader';
 import {kleiderordnung_observeWaypointAnchors} from './inc/observeWaypointAnchors';
 import {kleiderordnung_showAdminLinkIfLoggedIn} from './inc/showAdminLinkIfLoggedIn';
+import {kleiderordnung_updateContactFormTopicOnOfferContactClick} from './inc/updateContactFormTopicOnOfferContactClick.js';
 
 /* global document, window */
 window.kleiderordnung = {
@@ -132,6 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
   kleiderordnung_observeStickyHeader(window.kleiderordnung.config);
   kleiderordnung_observeWaypointAnchors(window.kleiderordnung.config);
   kleiderordnung_enhanceNavigationMenu(window.kleiderordnung.config);
+  kleiderordnung_updateContactFormTopicOnOfferContactClick();
   kleiderordnung_handleElementsActivatedOnVisibilityAndConsent(
     kleiderordnung_intersectionCallback,
     window.kleiderordnung.config
