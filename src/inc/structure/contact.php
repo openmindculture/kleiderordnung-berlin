@@ -90,7 +90,7 @@
           class="button button--inverted contact__ctaalternatives__button button--calendly"
         >
           <?php _e('Buche einen Termin', 'kleiderordnung'); ?>
-          <small>
+          <small class="contact__ctaalternatives__button__subline">
             <?php _e('über Calendly *', 'kleiderordnung'); ?>
           </small>
         </a> <?php _e('oder schreibe mir eine Nachricht:', 'kleiderordnung'); ?>

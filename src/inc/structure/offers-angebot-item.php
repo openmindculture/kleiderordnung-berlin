@@ -65,7 +65,7 @@ $wordsOnlyTitle = preg_replace("/[^A-Za-z0-9 ]/", '', $strippedTitle);
           tabindex="0"
           data-parent-id="<?php echo get_field('offer_id', $currentItemPostId); ?>"
           data-unreplaced-parent-name="<?php echo esc_html($currentItemTitle) ?>"
-          data-singlequoted-parent-name-boo="<?php echo esc_html(preg_replace('/[^A-Za-z0-9 ]/', '', $currentItemTitle)) ?>"
+          data-unquoted-parent-name="<?php echo esc_html(preg_replace('/"/', '', $currentItemTitle)) ?>"
           data-parent-name="<?php echo esc_html($wordsOnlyTitle) ?>"
         ><?php _e( 'Termin buchen', 'kleiderordnung' ) ?></a>
       </div>

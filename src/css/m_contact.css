@@ -136,6 +136,12 @@
   margin-right: 1rem;
 }
 
+.contact__ctaalternatives__button__subline {
+  display: block;
+  font-size: 0.6125rem;
+  margin: 0.5rem 0 -0.5rem 0;
+}
+
 /* stylelint-disable no-descending-specificity */
 
 .contact__fieldset,

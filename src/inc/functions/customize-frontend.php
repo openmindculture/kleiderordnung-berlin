@@ -16,7 +16,7 @@ add_filter( 'body_class', function ( $classes = '' ) {
   return $classes;
 } );
 
-// remove svg filters above page header
+// remove unused WP core svg filters above page header
 add_action( 'wp_enqueue_scripts', function () {
   wp_dequeue_style( 'global-styles' );
 } );
