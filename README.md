@@ -1,4 +1,4 @@
-# KleiderOrdnung Berlin
+# Kleiderordnung Berlin
 
 A portfolio website for sustainable stylist [Tina Steinke](https://kleiderordnung.berlin/) in Berlin,
 following up on a previous sustainable style consultancy in Düsseldorf.
@@ -13,7 +13,7 @@ announced and described as [an exceptional portfolio project](https://dev.to/ing
 
 Local development: http://localhost:1234/
 Backend: http://localhost:1234/wp-admin (default credentials: admin:secret).
-Make sure to that the theme KleiderOrdnung got activated or activate it manually after installation.
+Make sure to that the theme Kleiderordnung got activated or activate it manually after installation.
 
 Features:
 - **accessible**: mostly WCAG compliant, tab-navigateable, high contrast
@@ -32,7 +32,7 @@ Features:
 - **tested**: automated and manual frontend tests plus static code analysis
 - **transparent** and **versioned** open source development on GitHub
 
-![KleiderOrdnung theme screenshot](src/screenshot.png)
+![Kleiderordnung theme screenshot](src/screenshot.png)
 
 ## Theme and Design
 
@@ -43,7 +43,7 @@ The theme **does not call `wp_head()`** but emits a custom minimal head element 
 
 Note that the theme' text domain (technical handle and directory name) is **kleiderordnung** (not `kleiderordnung-berlin` – which is the name of the project used to develop and maintain the theme).
 
-Kleiderordnung's graphic design has been conceived in collaboration with [Ina Nixdorf](https://www.inanixdorf.de/) and [Martina Steinke (KleiderOrdnung Berlin)](https://kleiderordnung.berlin/).
+Kleiderordnung's graphic design has been conceived in collaboration with [Ina Nixdorf](https://www.inanixdorf.de/) and [Martina Steinke (Kleiderordnung Berlin)](https://kleiderordnung.berlin/).
 Technical details and development: [Ingo Steinke](https://www.ingo-steinke.com/).
 Thanks to Andy Weisner ([RetinaFunk](https://www.retinafunk.com/about/)) and [Daniel Groner](https://www.danielgroner.com/) for support and (partial) code review! Thanks to [Jessica Lyschik](https://jessicalyschik.de/), Carolina Nymark ([FullSiteEditing.com](https://fullsiteediting.com/)), [Sara Soueidan](https://www.sarasoueidan.com/) and many other experts contributing to open source web development!
 
@@ -60,7 +60,7 @@ To setup / deploy **kleiderordnung** on a website,
   - German (Deutsch) as default language
   - English (EN-US) as additional language
   - enable translation of custom post types (Languages/Sprachen -> Settings/Einstellungen -> Custom Post Types and Taxonomies / Benutzerdefinierte Inhaltstypen und Taxonomien -> check all checkboxes) _before_ adding (or importing) content!
-- install [the lastest KleiderOrdnung theme](https://github.com/openmindculture/kleiderordnung-berlin/releases) by uploading it in WP-Admin (or via (S)FTP),
+- install [the lastest Kleiderordnung theme](https://github.com/openmindculture/kleiderordnung-berlin/releases) by uploading it in WP-Admin (or via (S)FTP),
 - activate the theme,
 - copy all icons and manifest files (`*.ico`, `*.png`, `*.svg`, `*.json`, `*.xml`, `robots.txt`) to the web root directory
 - configure server and caching by editing `.htaccess` / `nginx.conf` / hosting backend or by using appropriate plugins,
@@ -571,7 +571,7 @@ Don't give the website owner administration rights unless they are a technically
 
 ## WordPress Theme
 
-- KleiderOrdnung (`kleiderordnung`)
+- Kleiderordnung (`kleiderordnung`)
 
 ### Add-Ons / Libraries
 

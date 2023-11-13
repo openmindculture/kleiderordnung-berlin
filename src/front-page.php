@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-  <?php define('KLEIDERORDNUNG_PAGE_TITLE', __('KleiderOrdnung Berlin: nachhaltige Modeberatung von Tina Steinke', 'kleiderordnung' )) ?>
+  <?php define('KLEIDERORDNUNG_PAGE_TITLE', __('Kleiderordnung Berlin: nachhaltige Modeberatung von Tina Steinke', 'kleiderordnung' )) ?>
   <?php include( KLEIDERORDNUNG_DIR . '/inc/structure/html-head.php') ?>
   <body <?php body_class(); ?> itemtype="https://schema.org/WebPage" itemscope>
   <?php
