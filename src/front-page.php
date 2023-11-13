@@ -4,6 +4,7 @@
   <?php include( KLEIDERORDNUNG_DIR . '/inc/structure/html-head.php') ?>
   <body <?php body_class(); ?> itemtype="https://schema.org/WebPage" itemscope>
   <?php
+    include( KLEIDERORDNUNG_DIR . '/inc/structure/contact-calendar-popup.php');
     $kleiderordnung_option_page_on_front_id = /** @var int */ get_option('page_on_front');
     define('KLEIDERORDNUNG_FRONT_PAGE_ID', /** @var int */ pll_get_post( $kleiderordnung_option_page_on_front_id ));
     include( KLEIDERORDNUNG_DIR . '/inc/structure/header.php');

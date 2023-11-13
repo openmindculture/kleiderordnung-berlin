@@ -101,24 +101,6 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/preview.png"
   <meta name="theme-color" content="#f5f1ed">
-  <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "name" : "KleiderOrdnung Berlin",
-      "image": "https://kleiderordnung.berlin/img/keyvisual-kleiderordnung.jpg",
-      "logo": "https://kleiderordnung.berlin/img/kleiderordnung-logo-square-blue.png",
-      "description": "<?php _e( 'Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin', 'kleiderordnung' ) ?>",
-      "url" : "https://kleiderordnung.berlin/",
-      "sameAs" : [
-        "https://kleiderordnung-berlin.de/",
-        "https://www.instagram.com/tina_steinke_kleiderordnung/",
-        "https://www.linkedin.com/in/martina-steinke-6810aa111/",
-        "https://www.pinterest.de/martinasteinke0050/",
-        "https://www.reflecta.network/changemaker/martina-steinke"
-      ]
-    }
-  </script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">

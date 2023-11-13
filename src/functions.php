@@ -47,11 +47,6 @@ function kleiderordnung_enqueue_localized_scripts(){
     ));
 
   require_once( KLEIDERORDNUNG_DIR . '/inc/functions/localize-js.php' );
-
-  wp_localize_script( 'scripts',
-    'kleiderordnung_translations',
-    $kleiderordnung_localize_js
-  );
 }
 
 add_action( 'wp_enqueue_scripts', 'kleiderordnung_enqueue_localized_scripts' );

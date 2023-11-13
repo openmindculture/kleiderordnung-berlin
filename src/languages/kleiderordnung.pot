@@ -29,6 +29,17 @@ msgstr ""
 msgid "Header image"
 msgstr ""
 
+#: inc/structure/contact-calendar-popup.php
+msgid ""
+"Dürfen externe Inhalte "
+"von Calendly geladen "
+"werden?"
+msgstr ""
+
+#: inc/structure/contact-calendar-popup.php
+msgid "erlauben"
+msgstr ""
+
 #: inc/structure/calltoaction.php:15
 #: inc/structure/contact.php:11
 #: inc/structure/navigation.php:26

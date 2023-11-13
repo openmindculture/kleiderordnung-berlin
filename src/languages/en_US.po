@@ -30,6 +30,18 @@ msgstr "Skip to content"
 msgid "Header image"
 msgstr "Header image"
 
+#: inc/structure/contact-calendar-popup.php
+msgid ""
+"Dürfen externe Inhalte "
+"von Calendly geladen "
+"werden?"
+msgstr ""
+"May we load content from Calendly?"
+
+#: inc/structure/contact-calendar-popup.php
+msgid "erlauben"
+msgstr "allow"
+
 #: inc/structure/calltoaction.php:15
 #: inc/structure/contact.php:11
 #: inc/structure/navigation.php:26

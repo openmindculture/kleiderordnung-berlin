@@ -75,12 +75,11 @@ var kleiderordnung_activateExternalFeed = function(
     scriptElement.src = scriptFileUrl;
     document.head.append(scriptElement);
     if (typeof onLoadCallback === 'function') {
-      console.log('time to attach onLoadCallback');
       scriptElement.onload = function(){
         onLoadCallback();
       }
 
-    } else { console.log('no onLoadCallback'); }
+    }
   }
   if (feedContainerElement && feedContainerElement.classList) {
     feedContainerElement.classList.add(window.kleiderordnung.config.feedContainerActiveClassName);
