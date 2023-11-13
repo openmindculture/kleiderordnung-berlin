@@ -77,7 +77,10 @@
     window.kleiderordnung_wpurl = '<?php echo get_bloginfo("wpurl"); ?>';
     window.kleiderordnung_template_url = '<?php echo get_bloginfo("template_url"); ?>';
   </script>
-  <script defer src="<?php echo get_template_directory_uri() ?>/js/scripts.js?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>"></script>
+  <?php
+    wp_enqueue_scripts();
+    wp_print_head_scripts(); // including scripts.js and translations
+  ?>
   <script defer src="<?php echo get_template_directory_uri() ?>/js/lottie-player.js?v=1.7.1" id="lottie-player-script"></script>
   <meta name="description" content="<?php _e( 'Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin (Meta Description frei übersetzen)', 'kleiderordnung' ) ?>">
   <meta name="keywords" content="<?php _e( 'Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit (Meta Keywords frei übersetzen)', 'kleiderordnung' ) ?>">

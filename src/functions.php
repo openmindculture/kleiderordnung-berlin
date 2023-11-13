@@ -35,3 +35,23 @@ require_once( KLEIDERORDNUNG_DIR . '/inc/functions/add-theme-support.php' );
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/customize-admin-ui.php' );
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/customize-frontend.php' );
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/customizer.php' );
+
+function kleiderordnung_enqueue_localized_scripts(){
+  wp_enqueue_script(
+    'scripts',
+    get_template_directory_uri() . '/js/scripts.js',
+    array(),
+    KLEIDERORDNUNG_THEME_VERSION,
+    array(
+      'strategy'=> 'defer',
+    ));
+
+  require_once( KLEIDERORDNUNG_DIR . '/inc/functions/localize-js.php' );
+
+  wp_localize_script( 'scripts',
+    'kleiderordnung_translations',
+    $kleiderordnung_localize_js
+  );
+}
+
+add_action( 'wp_enqueue_scripts', 'kleiderordnung_enqueue_localized_scripts' );

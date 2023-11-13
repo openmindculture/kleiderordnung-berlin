@@ -16,11 +16,6 @@ add_filter( 'body_class', function ( $classes = '' ) {
   return $classes;
 } );
 
-// remove unused WP core svg filters above page header
-add_action( 'wp_enqueue_scripts', function () {
-  wp_dequeue_style( 'global-styles' );
-} );
-
 add_action( 'after_setup_theme', function () {
   load_theme_textdomain( 'kleiderordnung', get_template_directory() . '/languages' );
   remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );

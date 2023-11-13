@@ -16,8 +16,8 @@ Backend: http://localhost:1234/wp-admin (default credentials: admin:secret).
 Make sure to that the theme KleiderOrdnung got activated or activate it manually after installation.
 
 Features:
-- **accessible**: WCAG 2.0 compliant, tab-navigateable, high contrast
-- **animated** using subtle micro-animations and scrolling effects
+- **accessible**: mostly WCAG compliant, tab-navigateable, high contrast
+- **animated** using animations and scrolling effects unless user prefers reduced motion
 - **beautiful**: web design based on the visual corporate identity
 - **classic**: hybrid theme with custom post types, custom fields, and block editor support
 - **documented**: README for developers and an additional manual for website owners
@@ -38,6 +38,8 @@ Features:
 
 The theme **kleiderordnung** is a standalone WordPress theme not depending on any parent theme, but inspired by existing themes like
 [Twenty-Twenty-Three](https://wordpress.org/themes/twentytwentythree/), [GeneratePress](https://wordpress.org/themes/generatepress/), and [Fasto](https://wordpress.org/themes/fasto/). This is a **classic theme with partial block editor support**. I have released a similar classic/hybrid WordPress theme development setup as [@openmindculture/wp_template_opinionated](https://github.com/openmindculture/wp_template_opinionated) on GitHub.
+
+The theme **does not call `wp_head()`** but emits a custom minimal head element instead.
 
 Note that the theme' text domain (technical handle and directory name) is **kleiderordnung** (not `kleiderordnung-berlin` – which is the name of the project used to develop and maintain the theme).
 
@@ -439,6 +441,8 @@ Always **add new text** in PHP templates using the **translation function** and 
 ```
 <?php _e( 'Seite bearbeiten', 'kleiderordnung' ) ?>
 ```
+
+Localization in JavaScript needs an additional registration in the localization array in `/inc/functions/localize-js.php` to become available in the translations object, e.g. `kleiderordnung_translations['über']`. Any string used in JS must be defined **both** in the `.pot` files **and** in `localize-js.php`! 
 
 Regenerate the theme's `.pot` file or append the new text strings manually to all `.pot` and `.po` files, e.g.
 

@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-07-19 07:42+0200\n"
+"PO-Revision-Date: 2023-11-13 17:38+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -333,4 +333,11 @@ msgstr ""
 
 #: search.php
 msgid "Es wurden leider keine passenden Ergebnisse gefunden."
+msgstr ""
+
+#: js/localization.js
+msgid "für"
+msgstr ""
+
+msgid "über"
 msgstr ""
