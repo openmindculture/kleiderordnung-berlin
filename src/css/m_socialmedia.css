@@ -174,11 +174,6 @@ body.no-js .socialmedia__feed__consent--juicer {
   display: block;
 }
 
-.socialmedia__feed__section--active .socialmedia__feed__container--active:has(.j-initialized:not(.loaded)),
-.socialmedia__feed__section--active .socialmedia__feed__container--active:not(:has(.j-initialized.loaded)) {
-  display: none;
-}
-
 .socialmedia__feed__embed__table {
   display: flex;
 }
