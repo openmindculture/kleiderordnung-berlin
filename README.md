@@ -16,7 +16,7 @@ Backend: http://localhost:1234/wp-admin (default credentials: admin:secret).
 Make sure to that the theme Kleiderordnung got activated or activate it manually after installation.
 
 Features:
-- **accessible**: mostly WCAG compliant, tab-navigateable, high contrast
+- **accessible**: tab-navigateable, high contrast, respecting reduced motion preference,
 - **animated** using animations and scrolling effects unless user prefers reduced motion
 - **beautiful**: web design based on the visual corporate identity
 - **classic**: hybrid theme with custom post types, custom fields, and block editor support
