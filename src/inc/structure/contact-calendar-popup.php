@@ -17,10 +17,21 @@
           id="socialmedia-feed-consent-calendly"
           class="socialmedia__feed__consent feed__consent socialmedia__feed__consent--calendly"
         >
-          <p class="socialmedia__feed__consent__question"><?php _e( 'Dürfen externe Inhalte von Calendly geladen werden?', 'kleiderordnung' ) ?></p>
+          <p class="socialmedia__feed__consent__question">
+            <?php _e( 'Dürfen externe Inhalte von Calendly geladen werden?', 'kleiderordnung' ) ?>
+          </p>
           <div class="socialmedia__feed__consent__answers">
-            <button class="button__remove button__allow button__allow--cancel" data-removes="socialmedia-feed-consent-juicer" tabindex="0" title="<?php _e( 'Dialogfeld schließen', 'kleiderordnung' ) ?>"><?php _e( 'nein, danke!', 'kleiderordnung' ) ?></button>
-            <button class="button__allow button__allow--calendly-once" data-allow="once" tabindex="0" title="<?php _e( 'erlauben', 'kleiderordnung' ) ?>"><?php _e( 'erlauben', 'kleiderordnung' ) ?></button>
+            <button
+              class="button__allow button__allow--calendly-once"
+              tabindex="0"
+              title="<?php _e( 'erlauben', 'kleiderordnung' ) ?>"
+            ><?php _e( 'ja, gerne!', 'kleiderordnung' ) ?>
+            </button>
+            <button
+              class="button__remove button__allow button__allow--cancel button__allow--cancel-calendly "
+              tabindex="0"
+              title="<?php _e( 'Dialogfeld schließen', 'kleiderordnung' ) ?>"
+            ><?php _e( 'nein, ich möchte zurück zum Kontaktformular!', 'kleiderordnung' ) ?></button>
           </div>
         </div>
         <div class="calendly-spinner calendly-spinner--animated">
@@ -28,8 +39,8 @@
           <div class="calendly-bounce2"></div>
           <div class="calendly-bounce3"></div>
         </div>
-        <div class="calendly-spinner calendly-spinner--static">
-          loading...
+        <div class="calendly-spinner calendly-spinner--static" id="socialmedia-feed-spinner-calendly">
+          <?php _e( 'lade Kalender...', 'kleiderordnung' ) ?>
         </div>
         <iframe
           src="about:blank"

@@ -17,13 +17,28 @@ export function kleiderordnung_activateCalendlyWidget(event) {
   calendlyAllowButton.addEventListener('click', kleiderordnung_initializeCalendlyWidgetCallback);
 }
 
-export function kleiderordnung_initializeCalendlyWidgetCallback() {
+export function kleiderordnung_initializeCalendlyWidgetCallback(event) {
+  // event.preventDefault(); // the button has no default action anyway
+  event.stopPropagation(); // prevent bubbling triggering close click handler
+  console.log('kleiderordnung_initializeCalendlyWidgetCallback.');
   var calendlyFrame = document.getElementById('calendlyFrame');
   if (!calendlyFrame) { return; }
+  var consentSection = document.getElementById('socialmedia-feed-consent-calendly');
+  if (consentSection) {
+    consentSection.classList.add('dismissed');
+  }
   calendlyFrame.src = calendlyFrame.dataset.src;
+  var loadingSpinner = document.getElementById('socialmedia-feed-spinner-calendly');
+  if (loadingSpinner) {
+    loadingSpinner.classList.add('loading');
+    calendlyFrame.onload = function() {
+      loadingSpinner.classList.remove('loading');
+    }
+  }
 }
 
 export function kleiderordnung_closeCalendlyWidget() {
+  console.log('kleiderordnung_closeCalendlyWidget.');
   var calendlyWidgetContainer = document.querySelector('.calendly-overlay');
   if (!calendlyWidgetContainer) { return; }
   calendlyWidgetContainer.classList.remove('active');

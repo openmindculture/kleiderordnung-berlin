@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-11-13 17:38+0200\n"
+"PO-Revision-Date: 2023-11-17 17:37+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -294,6 +294,18 @@ msgstr "close dialog"
 #: inc/structure/socialmedia.php
 msgid "nein, danke!"
 msgstr "no, thanks!"
+
+#: inc/structure/contact-calendar-popup.php
+msgid "ja, gerne!"
+msgstr "yes"
+
+#: inc/structure/contact-calendar-popup.php
+msgid "nein, ich möchte zurück zum Kontaktformular!"
+msgstr "no, go back to the contact form"
+
+#: inc/structure/contact-calendar-popup.php
+msgid "lade Kalender..."
+msgstr "loading calendar..."
 
 #: inc/structure/socialmedia.php
 msgid "nur diesmal"

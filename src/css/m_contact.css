@@ -500,9 +500,97 @@ textarea[name="Nachricht"]::placeholder {
   z-index: 10000000;
   border: solid 2px orange;
 }
-.calendly-popup-content {
-  width: 40rem;
-  /* text-align: center; */
+
+.calendly-popup {
+  background-color: var(--color-inverted-background);
+  color: var(--color-inverted-foreground);
+  border-radius: 0.5rem;
+  padding: 1rem;
   max-width: calc(100% - 2rem);
-  background: white;
+  width: calc(100% - 2rem);
+  height: 99%;
+}
+
+@media (min-width: 1229px) {
+  max-width: 1200px;
+  max-height: 786px;
+}
+
+.calendly-popup h2 {
+  text-align: center;
+}
+
+.calendly-popup-content {
+  height: calc(100% - 4rem);
+}
+
+.calendly-popup-content iframe {
+  height: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-top: -2rem;
+}
+
+.calendly-popup-close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.calendly-popup-close button {
+  background: transparent;
+  border: none;
+  color: var(--color-default-white);
+  cursor: pointer;
+}
+
+.socialmedia__feed__consent--calendly {
+  display: block;
+  margin: 4rem auto 0 auto;
+  max-width: min(27.75rem, 100%);
+}
+
+.socialmedia__feed__consent--calendly.dismissed {
+  display: none;
+}
+
+.socialmedia__feed__consent--calendly .socialmedia__feed__consent__answers {
+  flex-direction: column;
+}
+
+.calendly-popup-content .button__allow,
+.calendly-popup-content .button__allow:not(.button--primary) {
+  background-color: var(--color-default-white);
+  border-radius: 2rem;
+  margin-top: 0.5rem;
+  min-width: 10rem;
+  padding: 1rem;
+}
+
+.calendly-popup-content .button__allow--calendly-once {
+  display: inline-block;
+  margin: 0 auto;
+  width: auto;
+  width: fit-content;
+  min-width: unset;
+}
+
+.calendly-popup-content .button__allow.button__allow--cancel-calendly {
+  background: transparent;
+  color: var(--color-default-white);
+  text-transform: none;
+  font-size: 100%;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.calendly-spinner {
+  display: none;
+  text-align: center;
+}
+
+.calendly-spinner.loading {
+  display: block;
 }
