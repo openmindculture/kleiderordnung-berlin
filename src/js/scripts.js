@@ -82,6 +82,7 @@ window.kleiderordnung = {
     /** @type {boolean} */ supportsSuppportsColorSchemeQuery: false,
     /** @type {boolean} */ prefersMoreContrast: false,
     /** @type {boolean} */ prefersReducedMotion: false,
+    /** @type {boolean} */ prefersReducedTransparency: false,
     removableButtonsClassName: 'button__remove', // elements to be removed by consent handling
     scrollingClassName: 'scrolling',
     scrollingClassTimeout: 2000,
@@ -113,6 +114,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     window.kleiderordnung.config.prefersReducedMotion = (prefersReducedMotionQuery.matches);
+
+    var prefersReducedTransparencyQuery = window.matchMedia('(prefers-reduced-transparency)');
+    window.kleiderordnung.config.prefersReducedTransparency = (prefersReducedTransparencyQuery.matches);
 
     var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
     window.kleiderordnung.config.prefersMoreContrast = (prefersMoreContrastQuery.matches);
