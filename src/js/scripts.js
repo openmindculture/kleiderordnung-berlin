@@ -7,6 +7,7 @@ import {kleiderordnung_activateLazyLoadingWebfonts} from './inc/activateLazyLoad
 import {kleiderordnung_carouselSetup} from './inc/carouselSetup';
 import {kleiderordnung_enhanceDecorationEffect} from './inc/enhanceDecorationEffect.js';
 import {kleiderordnung_enhanceNavigationMenu} from './inc/enhanceNavigationMenu';
+import {kleiderordnung_initializeReadMoreSections} from "./inc/initializeReadMoreSections.js";
 import {
     kleiderordnung_intersectionCallback,
     kleiderordnung_handleElementsActivatedOnVisibilityAndConsent
@@ -138,6 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
   kleiderordnung_observeStickyHeader(window.kleiderordnung.config);
   kleiderordnung_observeWaypointAnchors(window.kleiderordnung.config);
   kleiderordnung_enhanceNavigationMenu(window.kleiderordnung.config);
+  kleiderordnung_initializeReadMoreSections();
   kleiderordnung_updateContactFormTopicOnOfferContactClick();
   kleiderordnung_handleElementsActivatedOnVisibilityAndConsent(
     kleiderordnung_intersectionCallback,
