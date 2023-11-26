@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-09-26 12:54+0200\n"
+"PO-Revision-Date: 2023-11-26 12:09+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -242,6 +242,10 @@ msgstr "Book now"
 #: inc/structure/offers.php:114
 msgid "Weitere Angebote"
 msgstr "My Other Services"
+
+#: inc/structure/offers.php
+msgid "mehr anzeigen"
+msgstr "show more"
 
 #: inc/structure/socialmedia.php:12
 msgid "Kleiderordnung auf instagram"

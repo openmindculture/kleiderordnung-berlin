@@ -246,6 +246,37 @@ body.single .offers__offer {
   }
 }
 
+.offers__offer__features__list__readmore {
+  display: none;
+  list-style-image: url("img/icons/caret-down.svg");
+  padding-top: 0.75rem;
+}
+
+.offers__offer__features__list__readmore button {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  color: var(--color-primary-foreground);
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  pointer-events: all;
+}
+
+.offers__offer__features__list__readmore.visible {
+  display: list-item;
+}
+
+.offers__offer__features__list__readmore.visible button,
+.offers__offer__features__list__readmore.visible button.initially-hidden {
+  display: inline;
+}
+
+.offers__offer__features__list__more.hidden {
+  display: none;
+}
+
 .offers__offer__card__footer {
   display: flex;
   flex-direction: column;

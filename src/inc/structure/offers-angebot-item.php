@@ -50,9 +50,29 @@ if (isset($resorted_post_id)) {
     <p class="offers__offer__paragraph">
       <?php if (isset($resorted_post_id)) { echo get_the_content($currentItemPostId); } else { the_content(); } ?>
     </p>
-    <?php if (!empty(get_field('offer_features', $currentItemPostId))): ?>
+    <?php
+      $currentOfferFeatures = get_field('offer_features', $currentItemPostId);
+      if (!empty($currentOfferFeatures)): ?>
       <strong class="offers__offer__features__headline"><?php _e( 'Was Du erhältst', 'kleiderordnung' ) ?>:</strong>
-      <?php echo get_field('offer_features', $currentItemPostId); ?>
+      <?php
+        // if (get_option('show_more') &&
+        if (substr_count($currentOfferFeatures,'<li>') > 3) {
+          $currentOfferFeaturesItems = explode('<li>', $currentOfferFeatures);
+          // add +1 length to compensate the empty item before first li
+          $currentOfferFeaturesExcerpt = join ('<li>', array_slice( $currentOfferFeaturesItems, 0, 4));
+          // likewise, we need an additional opening li tag
+          $currentOfferFeaturesMore = '<li class="offers__offer__features__list__more">';
+          $currentOfferFeaturesMore .= join ('<li class="offers__offer__features__list__more">', array_slice( $currentOfferFeaturesItems, 3 ));
+          echo $currentOfferFeaturesExcerpt;
+          echo '<li class="offers__offer__features__list__readmore">';
+          echo '<button class="initially-hidden">';
+          echo _e('mehr lesen', 'kleiderordnung');
+          echo ' ...</button></li>';
+          echo $currentOfferFeaturesMore;
+        } else {
+          echo $currentOfferFeatures;
+        }
+      ?>
     <?php endif ?>
     <div class="offers__offer__card__footer">
       <div class="offers__offer__pricingwrapper">
