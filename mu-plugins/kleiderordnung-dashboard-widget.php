@@ -2,13 +2,13 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 3.2.4
+ * @version 3.3.0
  *
  * @wordpress-plugin
- * Version: 3.2.4
+ * Version: 3.3.0
  * Tested up to: 6.4
- * Plugin Name: KleiderOrdnung Dashboard Widget
- * Text Domain: kleiderOrdnung-dashboard-widget
+ * Plugin Name: Kleiderordnung Dashboard Widget
+ * Text Domain: kleiderordnung-dashboard-widget
  * Author: openmindculture
  * Author URI: https://wordpress.org/support/users/openmindculture/
  * Plugin URI: https://github.com/openmindculture/kleiderordnung-berlin
