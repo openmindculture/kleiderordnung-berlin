@@ -151,12 +151,21 @@
         </aside>
       </div>
       <!-- END vcard imprint contact information -->
+      <aside class="contact__scannable">
+        <img
+          src="<?php echo get_template_directory_uri() ?>/img/vcard/tina-steinke-vcard-qr.svg"
+          width="2534"
+          height="2534"
+          loading="lazy"
+          alt="QR-Code: Tina Steinke Contact"
+          class="contact__scannable__image"
+      </aside>
     </div>
 
     <div class="contact__columns__column contact__columns__column--50">
       <div class="contact__ctaalternatives">
         <a
-          href="<?php echo KLEIDERORDNUNG_CALENDY_URI ?>"
+          href="<?php echo KLEIDERORDNUNG_CALENDY_URI ?>/15-minute-meeting"
           target="_blank"
           rel="noopener"
           class="button button--inverted contact__ctaalternatives__button button--calendly"
@@ -193,22 +202,4 @@
       ?>
     </div>
   </div>
-
-  <aside class="socialmedia__feed__section">
-    <div id="calendly-widget-container"
-         label="<?php _e( 'Calendly Terminbuchung', 'kleiderordnung' ) ?>"
-         class="contact__calendar__container contact__calendar__container--calendly calendly allowable--on-click"
-         data-allowable="allowable"
-         data-styleurl="<?php echo get_template_directory_uri() ?>/css/calendly-widget-min.css"
-         data-scripturl="https://assets.calendly.com/assets/external/widget.js"
-    >
-      <!-- Calendly link widget begin -->
-      <!-- This is not necessary! Container could be anywhere (near button),
-           div.calendly-overlay will be created before closing /body tag
-           but styles must be adapted! Calendly interferes with global body scroll and positioning,
-           it isn't visible, and the close button asset could not be loaded.
-           Maybe we swap the css for our own CSS completely.
-      <!-- Calendly link widget end -->
-    </div>
-  </aside>
 </div>
