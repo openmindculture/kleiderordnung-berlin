@@ -2,10 +2,10 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 3.2.2
+ * @version 3.3.0
  *
  * @wordpress-plugin
- * Version: 3.2.2
+ * Version: 3.3.0
  * Tested up to: 6.4
  * Plugin Name: Kleiderordnung Register Custom Post Types
  * Text Domain: kleiderordnung-register-custom-post-types
@@ -359,7 +359,42 @@ function kleiderordnung_register_custom_page_fields() {
         ),
       ),
     ),
-  ) );
+  ));
+  acf_add_local_field_group( array(
+    'key'      => 'page_field_group_video',
+    'title'    => 'Intro-Video (optional)',
+    'position' => 'normal',
+    'fields'   => array(
+      array(
+        'key'   => 'page_intro_video_webm',
+        'name'  => 'page_intro_video_webm',
+        'type'  => 'image',
+        'label' => 'Video: WEBM-Datei aus Mediathek auswählen/hochladen ("Bild hinzufügen")',
+      ),
+      array(
+        'key'   => 'page_intro_video_url_mp4',
+        'name'  => 'page_intro_video_url_mp4',
+        'type'  => 'image',
+        'label' => 'Video: MP4-Datei aus Mediathek auswählen/hochladen ("Bild hinzufügen")',
+      ),
+      array(
+        'key'   => 'page_intro_video_poster_image_url',
+        'name'  => 'page_intro_video_poster_image_url',
+        'type'  => 'image',
+        'label' => 'Intro Video Standbild (aus Mediathek auswählen/hochladen)',
+        ),
+      ),
+      'location' => array(
+        array(
+          array(
+            'param'    => 'post_type',
+            'operator' => '==',
+            'value'    => 'page',
+          ),
+        ),
+      ),
+    ),
+  );
 }
 
 add_action( 'init', 'kleiderordnung_register_post_type_story' );

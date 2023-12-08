@@ -7,6 +7,7 @@ import {kleiderordnung_activateLazyLoadingWebfonts} from './inc/activateLazyLoad
 import {kleiderordnung_carouselSetup} from './inc/carouselSetup';
 import {kleiderordnung_enhanceDecorationEffect} from './inc/enhanceDecorationEffect.js';
 import {kleiderordnung_enhanceNavigationMenu} from './inc/enhanceNavigationMenu';
+import {kleiderordnung_initializeReadMoreSections} from "./inc/initializeReadMoreSections.js";
 import {
     kleiderordnung_intersectionCallback,
     kleiderordnung_handleElementsActivatedOnVisibilityAndConsent
@@ -16,6 +17,7 @@ import {kleiderordnung_keepAnchorTargetInLanguageSwitcher} from './inc/keepAncho
 import {kleiderordnung_observeStickyHeader} from './inc/observeStickyHeader';
 import {kleiderordnung_observeWaypointAnchors} from './inc/observeWaypointAnchors';
 import {kleiderordnung_showAdminLinkIfLoggedIn} from './inc/showAdminLinkIfLoggedIn';
+import {kleiderordnung_updateContactFormTopicOnOfferContactClick} from './inc/updateContactFormTopicOnOfferContactClick.js';
 
 /* global document, window */
 window.kleiderordnung = {
@@ -80,6 +82,7 @@ window.kleiderordnung = {
     /** @type {boolean} */ supportsSuppportsColorSchemeQuery: false,
     /** @type {boolean} */ prefersMoreContrast: false,
     /** @type {boolean} */ prefersReducedMotion: false,
+    /** @type {boolean} */ prefersReducedTransparency: false,
     removableButtonsClassName: 'button__remove', // elements to be removed by consent handling
     scrollingClassName: 'scrolling',
     scrollingClassTimeout: 2000,
@@ -112,6 +115,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     window.kleiderordnung.config.prefersReducedMotion = (prefersReducedMotionQuery.matches);
 
+    var prefersReducedTransparencyQuery = window.matchMedia('(prefers-reduced-transparency)');
+    window.kleiderordnung.config.prefersReducedTransparency = (prefersReducedTransparencyQuery.matches);
+
     var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
     window.kleiderordnung.config.prefersMoreContrast = (prefersMoreContrastQuery.matches);
 
@@ -132,6 +138,8 @@ document.addEventListener('DOMContentLoaded', function () {
   kleiderordnung_observeStickyHeader(window.kleiderordnung.config);
   kleiderordnung_observeWaypointAnchors(window.kleiderordnung.config);
   kleiderordnung_enhanceNavigationMenu(window.kleiderordnung.config);
+  kleiderordnung_initializeReadMoreSections();
+  kleiderordnung_updateContactFormTopicOnOfferContactClick();
   kleiderordnung_handleElementsActivatedOnVisibilityAndConsent(
     kleiderordnung_intersectionCallback,
     window.kleiderordnung.config

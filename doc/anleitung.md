@@ -1,4 +1,4 @@
-# KleiderOrdnung.Berlin
+# Kleiderordnung.Berlin
 
 ## Bedienungsanleitung für Webmaster
 

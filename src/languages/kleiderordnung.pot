@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-07-19 07:42+0200\n"
+"PO-Revision-Date: 2023-12-08 14:35+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -27,6 +27,17 @@ msgstr ""
 
 #: header.php:26
 msgid "Header image"
+msgstr ""
+
+#: inc/structure/contact-calendar-popup.php
+msgid ""
+"Dürfen externe Inhalte "
+"von Calendly geladen "
+"werden?"
+msgstr ""
+
+#: inc/structure/contact-calendar-popup.php
+msgid "erlauben"
 msgstr ""
 
 #: inc/structure/calltoaction.php:15
@@ -245,6 +256,10 @@ msgstr ""
 msgid "Weitere Angebote"
 msgstr ""
 
+#: inc/structure/offers.php
+msgid "mehr anzeigen"
+msgstr ""
+
 #: inc/structure/socialmedia.php:12
 msgid ""
 "Kleiderordnung auf "
@@ -282,6 +297,17 @@ msgstr ""
 msgid "nein, danke!"
 msgstr ""
 
+#: inc/structure/contact-calendar-popup.php
+msgid "ja, gerne!"
+msgstr ""
+
+#: inc/structure/contact-calendar-popup.php
+msgid "nein, ich möchte zurück zum Kontaktformular!"
+msgstr ""
+
+#: inc/structure/contact-calendar-popup.php
+msgid "lade Kalender..."
+msgstr ""
 
 #: inc/structure/socialmedia.php
 msgid "nur diesmal"
@@ -334,3 +360,13 @@ msgstr ""
 #: search.php
 msgid "Es wurden leider keine passenden Ergebnisse gefunden."
 msgstr ""
+
+#: js/localization.js
+msgid "für"
+msgstr ""
+
+msgid "über"
+msgstr ""
+
+msgid "Featureliste kürzen und Mehr-lesen Button anzeigen"
+msgstr "Shorten feature lists and show read-more buttons"

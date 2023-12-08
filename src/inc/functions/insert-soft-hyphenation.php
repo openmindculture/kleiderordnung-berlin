@@ -22,6 +22,15 @@ function kleiderordnung_insert_soft_hyphenation(string $phrase) {
     'individuell',
     'buchbar',
     'Datenschutzerklärung',
+    'Kleiderschrank',
+    'Shopping',
+    'individuelles',
+    'Consulting',
+    'Business',
+    'Beratung',
+    'Styling',
+    'Online',
+    'Organising',
   );
   $replacements = array(
     'Kleider&shy;ordnung',
@@ -37,7 +46,16 @@ function kleiderordnung_insert_soft_hyphenation(string $phrase) {
     'Sub&shy;scription',
     'in&shy;di&shy;vi&shy;du&shy;ell',
     'buch&shy;bar',
-    'Daten&shy;schutz&shy;er&shy;klä&shy;rung,'
+    'Daten&shy;schutz&shy;er&shy;klä&shy;rung,',
+    'Klei&shy;der&shy;schrank',
+    'Shop&shy;ping',
+    'in&shy;di&shy;vi&shy;du&shy;el&shy;les',
+    'Con&shy;sul&shy;ting',
+    'Bu&shy;si&shy;ness',
+    'Be&shy;ra&shy;tung',
+    'Sty&shy;ling',
+    'On&shy;li&shy;ne',
+    'Or&shy;ga&shy;ni&shy;sing',
   );
   return str_replace($dictionary, $replacements, $phrase);
 }

@@ -26,7 +26,7 @@
 >
 
 <channel>
-	<title>KleiderOrdnung Berlin</title>
+	<title>Kleiderordnung Berlin</title>
 	<link>https://kleiderordnung.berlin</link>
 	<description></description>
 	<pubDate>Wed, 27 Sep 2023 08:57:21 +0000</pubDate>
@@ -393,7 +393,7 @@
 		<wp:term_name><![CDATA[Weiteres Angebot]]></wp:term_name>
 		<wp:term_description><![CDATA[Weitere Angebote (kleinere Minimaldarstellung ohne Bild)]]></wp:term_description>
 	</wp:term>
-		
+
 	<generator>https://wordpress.org/?v=6.3.1</generator>
 
 		<item>
@@ -3643,7 +3643,7 @@ Tina Steinke]]></content:encoded>
 021292609
 Hallo allerseits,
 ich teste das Kontaktformualr
-nachdem wir die Flamingo-Kopfzeilen 
+nachdem wir die Flamingo-Kopfzeilen
 explizit definiert haben.
 
 Ich hoffe nun funktioniert alles bestens1
@@ -3708,7 +3708,7 @@ kontakt@ingo-steinke.de]]></content:encoded>
 		<wp:meta_key><![CDATA[_field_nachricht]]></wp:meta_key>
 		<wp:meta_value><![CDATA[Hallo allerseits,
 ich teste das Kontaktformualr
-nachdem wir die Flamingo-Kopfzeilen 
+nachdem wir die Flamingo-Kopfzeilen
 explizit definiert haben.
 
 Ich hoffe nun funktioniert alles bestens1
@@ -3761,7 +3761,7 @@ Ogni Ekniets
 		<wp:meta_key><![CDATA[_akismet]]></wp:meta_key>
 		<wp:meta_value><![CDATA[a:2:{s:7:"comment";a:67:{s:12:"comment_type";s:12:"contact-form";s:14:"comment_author";s:12:"Ogni Ekniets";s:20:"comment_author_email";s:9:"021292609";s:18:"comment_author_url";s:0:"";s:15:"comment_content";s:202:"Hallo allerseits,
 ich teste das Kontaktformualr
-nachdem wir die Flamingo-Kopfzeilen 
+nachdem wir die Flamingo-Kopfzeilen
 explizit definiert haben.
 
 Ich hoffe nun funktioniert alles bestens1
@@ -4634,7 +4634,7 @@ kontakt@ingo-steinke.de]]></content:encoded>
 		<description></description>
 		<content:encoded><![CDATA[Theo Tester
 ´4916346484080
-Testnachrichtg nun bers 
+Testnachrichtg nun bers
 deutsche Kontaktformular
 vom amerkikansischen EServer aus.
 
@@ -4722,7 +4722,7 @@ kontakt@ingo-steinke.de]]></content:encoded>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_field_nachricht]]></wp:meta_key>
-		<wp:meta_value><![CDATA[Testnachrichtg nun bers 
+		<wp:meta_value><![CDATA[Testnachrichtg nun bers
 deutsche Kontaktformular
 vom amerkikansischen EServer aus.
 
@@ -4792,7 +4792,7 @@ Ingo]]></wp:meta_value>
 		<wp:meta_key><![CDATA[_akismet]]></wp:meta_key>
 		<wp:meta_value><![CDATA[a:2:{s:7:"comment";a:67:{s:12:"comment_type";s:12:"contact-form";s:14:"comment_author";s:11:"Theo Tester";s:20:"comment_author_email";s:0:"";s:18:"comment_author_url";s:0:"";s:15:"comment_content";s:388:"´4916346484080
 
-Testnachrichtg nun bers 
+Testnachrichtg nun bers
 deutsche Kontaktformular
 vom amerkikansischen EServer aus.
 
@@ -4972,7 +4972,7 @@ kontakt@ingo-steinke.de]]></content:encoded>
 		<description></description>
 		<content:encoded><![CDATA[Lars but not Least
 0815/4711
-Hi Tina, 
+Hi Tina,
 
 I am interested in doing a fashion walking tour!
 
@@ -5046,7 +5046,7 @@ admin]]></content:encoded>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_field_nachricht]]></wp:meta_key>
-		<wp:meta_value><![CDATA[Hi Tina, 
+		<wp:meta_value><![CDATA[Hi Tina,
 
 I am interested in doing a fashion walking tour!
 
@@ -5099,7 +5099,7 @@ Lars]]></wp:meta_value>
 		<wp:meta_key><![CDATA[_akismet]]></wp:meta_key>
 		<wp:meta_value><![CDATA[a:2:{s:7:"comment";a:83:{s:12:"comment_type";s:12:"contact-form";s:14:"comment_author";s:18:"Lars but not Least";s:20:"comment_author_email";s:0:"";s:18:"comment_author_url";s:0:"";s:15:"comment_content";s:241:"0815/4711
 
-Hi Tina, 
+Hi Tina,
 
 I am interested in doing a fashion walking tour!
 
@@ -9278,7 +9278,7 @@ Unverbindliche Anfrage für: [anfrage-style-visit] [anfrage-shopping-tour] [anfr
 Nachricht:
 [Nachricht]
 
--- 
+--
 Diese E-Mail wurde vom deutschen Kontaktformular auf [_site_title] ([_site_url]) gesendet
 Reply-To: [Name] <[Email]>
 
@@ -9291,7 +9291,7 @@ Reply-To: [Name] <[Email]>
 Nachrichtentext:
 [your-message]
 
--- 
+--
 Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
 Reply-To: [_site_admin_email]
 
@@ -9377,7 +9377,7 @@ Unverbindliche Anfrage für: [anfrage-style-visit] [anfrage-shopping-tour] [anfr
 Nachricht:
 [Nachricht]
 
--- 
+--
 Diese E-Mail wurde vom deutschen Kontaktformular auf [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:26:"Reply-To: [Name] <[Email]>";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
@@ -9385,7 +9385,7 @@ Diese E-Mail wurde vom deutschen Kontaktformular auf [_site_title] ([_site_url])
 		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:122:"Nachrichtentext:
 [your-message]
 
--- 
+--
 Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
@@ -9462,7 +9462,7 @@ I have a question about: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-
 Message:
 [Nachricht]
 
--- 
+--
 This email was sent from the English contact form at [_site_title] ([_site_url])
 Reply-To: [Name] <[Email]>
 
@@ -9475,7 +9475,7 @@ Reply-To: [Name] <[Email]>
 Nachrichtentext:
 [your-message]
 
--- 
+--
 Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet
 Reply-To: [_site_admin_email]
 
@@ -9562,7 +9562,7 @@ I have a question about: [anfrage-style-visit] [anfrage-shopping-tour] [anfrage-
 Message:
 [Nachricht]
 
--- 
+--
 This email was sent from the English contact form at [_site_title] ([_site_url])";s:18:"additional_headers";s:26:"Reply-To: [Name] <[Email]>";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
@@ -9570,7 +9570,7 @@ This email was sent from the English contact form at [_site_title] ([_site_url])
 		<wp:meta_value><![CDATA[a:9:{s:6:"active";b:0;s:7:"subject";s:34:"[_site_title] „[your-subject]“";s:6:"sender";s:58:"[_site_title] <wordpress@preview.kleiderordnung-berlin.de>";s:9:"recipient";s:12:"[your-email]";s:4:"body";s:122:"Nachrichtentext:
 [your-message]
 
--- 
+--
 Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) gesendet";s:18:"additional_headers";s:29:"Reply-To: [_site_admin_email]";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
@@ -9870,7 +9870,7 @@ flamingo_subject: "Contact Form"]]></wp:meta_value>
 							</item>
 				</channel>
 </rss>
-	
+
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 

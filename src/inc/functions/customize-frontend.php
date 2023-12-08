@@ -10,12 +10,10 @@ add_filter( 'body_class', function ( $classes = '' ) {
   if (KLEIDERORDNUNG_is_stage) {
     $classes[] = 'stage';
   }
+  if (KLEIDERORDNUNG_is_localhost) {
+    $classes[] = 'localhost';
+  }
   return $classes;
-} );
-
-// remove svg filters above page header
-add_action( 'wp_enqueue_scripts', function () {
-  wp_dequeue_style( 'global-styles' );
 } );
 
 add_action( 'after_setup_theme', function () {

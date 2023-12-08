@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-09-26 12:54+0200\n"
+"PO-Revision-Date: 2023-12-08 14:35+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -29,6 +29,18 @@ msgstr "Skip to content"
 #: header.php:26
 msgid "Header image"
 msgstr "Header image"
+
+#: inc/structure/contact-calendar-popup.php
+msgid ""
+"Dürfen externe Inhalte "
+"von Calendly geladen "
+"werden?"
+msgstr ""
+"May we load content from Calendly?"
+
+#: inc/structure/contact-calendar-popup.php
+msgid "erlauben"
+msgstr "allow"
 
 #: inc/structure/calltoaction.php:15
 #: inc/structure/contact.php:11
@@ -243,6 +255,10 @@ msgstr "Book now"
 msgid "Weitere Angebote"
 msgstr "My Other Services"
 
+#: inc/structure/offers.php
+msgid "mehr anzeigen"
+msgstr "show more"
+
 #: inc/structure/socialmedia.php:12
 msgid "Kleiderordnung auf instagram"
 msgstr "Kleiderordnung on instagram"
@@ -282,6 +298,18 @@ msgstr "close dialog"
 #: inc/structure/socialmedia.php
 msgid "nein, danke!"
 msgstr "no, thanks!"
+
+#: inc/structure/contact-calendar-popup.php
+msgid "ja, gerne!"
+msgstr "yes"
+
+#: inc/structure/contact-calendar-popup.php
+msgid "nein, ich möchte zurück zum Kontaktformular!"
+msgstr "no, go back to the contact form"
+
+#: inc/structure/contact-calendar-popup.php
+msgid "lade Kalender..."
+msgstr "loading calendar..."
 
 #: inc/structure/socialmedia.php
 msgid "nur diesmal"
@@ -330,3 +358,13 @@ msgstr "Search Result"
 #: search.php
 msgid "Es wurden leider keine passenden Ergebnisse gefunden."
 msgstr "There is no content matching your query."
+
+#: js/localization.js
+msgid "für"
+msgstr "for"
+
+msgid "about"
+msgstr ""
+
+msgid "Featureliste kürzen und Mehr-lesen Button anzeigen"
+msgstr "Shorten feature lists and show read-more buttons"

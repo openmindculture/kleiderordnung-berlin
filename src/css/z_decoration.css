@@ -18,6 +18,12 @@ body {
   perspective-origin: 0 0;
 }
 
+body.popup-visible {
+  overflow: hidden;
+  perspective: none;
+  transform-style: flat;
+}
+
 body.archive main,
 body.category main,
 body.search main,

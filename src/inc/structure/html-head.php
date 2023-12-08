@@ -73,19 +73,18 @@
 
   <link rel="stylesheet" media="all" href="<?php echo get_template_directory_uri() ?>/style.css?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>" type="text/css">
   <link rel="stylesheet" media="print" href="<?php echo get_template_directory_uri() ?>/css/print.css?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>" type="text/css">
-  <noscript>
-    <!-- TODO remove the following stylesheet when no longer needed -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/animate.min.css?v=4.1.1">
-  </noscript>
   <script type="text/javascript">
     window.kleiderordnung_wpurl = '<?php echo get_bloginfo("wpurl"); ?>';
     window.kleiderordnung_template_url = '<?php echo get_bloginfo("template_url"); ?>';
   </script>
-  <script defer src="<?php echo get_template_directory_uri() ?>/js/scripts.js?v=<?php echo KLEIDERORDNUNG_THEME_VERSION ?>"></script>
+  <?php
+    wp_enqueue_scripts();
+    wp_print_head_scripts(); // including scripts.js and translations
+  ?>
   <script defer src="<?php echo get_template_directory_uri() ?>/js/lottie-player.js?v=1.7.1" id="lottie-player-script"></script>
   <meta name="description" content="<?php _e( 'Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin (Meta Description frei übersetzen)', 'kleiderordnung' ) ?>">
   <meta name="keywords" content="<?php _e( 'Slow Fashion,Circular Fashion,nachhaltige Mode, Nachhaltigkeit (Meta Keywords frei übersetzen)', 'kleiderordnung' ) ?>">
-<?php if (KLEIDERORDNUNG_is_stage) { ?>
+<?php if (KLEIDERORDNUNG_is_stage || KLEIDERORDNUNG_is_localhost) { ?>
   <meta name="robots" content="noindex,nofollow">
 <?php } else { ?>
   <meta name="robots" content="index,follow">
@@ -102,24 +101,6 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/preview.png"
   <meta name="theme-color" content="#f5f1ed">
-  <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "name" : "KleiderOrdnung Berlin",
-      "image": "https://kleiderordnung.berlin/img/keyvisual-kleiderordnung.jpg",
-      "logo": "https://kleiderordnung.berlin/img/kleiderordnung-logo-square-blue.png",
-      "description": "<?php _e( 'Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin', 'kleiderordnung' ) ?>",
-      "url" : "https://kleiderordnung.berlin/",
-      "sameAs" : [
-        "https://kleiderordnung-berlin.de/",
-        "https://www.instagram.com/tina_steinke_kleiderordnung/",
-        "https://www.linkedin.com/in/martina-steinke-6810aa111/",
-        "https://www.pinterest.de/martinasteinke0050/",
-        "https://www.reflecta.network/changemaker/martina-steinke"
-      ]
-    }
-  </script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
