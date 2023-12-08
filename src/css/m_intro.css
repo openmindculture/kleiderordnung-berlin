@@ -56,12 +56,16 @@
 
 .intro__keyvisual {
   aspect-ratio: 2; /* 2 / 1 rounded from the fallback image size 1160 x 581 px */
-  width: 90%;
+  width: 100%;
   max-width: 1160px;
   height: auto;
   text-align: center;
   margin: 0 auto;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  width: 90%;
 }
 
 .intro__keyvisual__mousetrap {
