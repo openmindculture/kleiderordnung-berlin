@@ -32,13 +32,50 @@
 
 .contact__columns__column--50:not(:last-child) {
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .contact__columns__column--50:last-child {
   max-width: min(42.5rem, calc(100% - 1rem));
 }
 
+@media (min-width: 555px) {}
+
+.contact__scannable {
+  position: absolute;
+  display: block;
+  top: 12rem;
+  right: 0.25rem;
+  text-align: right;
+}
+
+.contact__scannable__image {
+  width: 30%;
+  max-width: 90vw;
+}
+
+@media (min-width: 320px) {
+  .contact__scannable {
+    top: 9rem;
+  }
+}
+
+@media (min-width: 555px) {
+  .contact__scannable {
+    top: 7rem;
+    right: 1rem;
+  }
+
+  .contact__scannable__image {
+    width: 11rem;
+  }
+}
+
 @media (min-width: 992px) {
+
+  .contact__scannable {
+    top: 11.5rem;
+  }
 
   .contact__columns__column-wrapper {
     flex-direction: row;
@@ -130,16 +167,28 @@
 .contact__ctaalternatives {
   margin-bottom: 2rem;
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contact__ctaalternatives__button {
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .contact__ctaalternatives__button__subline {
   display: block;
   font-size: 0.6125rem;
   margin: 0.5rem 0 -0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .contact__ctaalternatives {
+    display: block;
+  }
+  .contact__ctaalternatives__button {
+    margin-bottom: 0;
+  }
 }
 
 /* stylelint-disable no-descending-specificity */
