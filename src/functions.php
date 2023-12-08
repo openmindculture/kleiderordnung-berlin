@@ -31,6 +31,10 @@ if ( ! defined( 'KLEIDERORDNUNG_is_localhost' ) ) {
   );
 }
 
+if ( ! defined( 'KLEIDERORDNUNG_CALENDY_URI' ) ) {
+  define( 'KLEIDERORDNUNG_CALENDY_URI', 'https://calendly.com/tina-steinke-kleiderordnung' );
+}
+
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/add-theme-support.php' );
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/customize-admin-ui.php' );
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/customize-frontend.php' );

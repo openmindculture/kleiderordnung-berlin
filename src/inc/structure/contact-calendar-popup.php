@@ -12,7 +12,7 @@
     <div class="calendly-close-overlay"></div>
     <div class="calendly-popup">
       <h2><?php _e( 'Buche einen Termin', 'kleiderordnung' ) ?></h2>
-      <div class="calendly-popup-content" data-url="https://calendly.com/ingo-steinke/30min">
+      <div class="calendly-popup-content" data-url="?><?php echo KLEIDERORDNUNG_CALENDY_URI ?>/30min">
         <div
           id="socialmedia-feed-consent-calendly"
           class="socialmedia__feed__consent feed__consent socialmedia__feed__consent--calendly"
@@ -44,7 +44,7 @@
         </div>
         <iframe
           src="about:blank"
-          data-src="https://calendly.com/ingo-steinke/30min?embed_domain=<?php
+          data-src="<?php echo KLEIDERORDNUNG_CALENDY_URI ?>/30min?embed_domain=<?php
           $urlparts = explode('/', get_site_url());
           echo urlencode($urlparts[2]);
 ?>&amp;embed_type=PopupText"

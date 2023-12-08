@@ -37,9 +37,9 @@
               itemscope
               href="#"
               data-mailing="lazy"
-              data-user="martinasteinke"
-              data-domain="posteo.de"
-            ><span class="spamprotected">mar</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">tinasteinke</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">@</span><span class="spamprotected">posteo</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">.</span><span class="spamprotected">de</span></a>
+              data-user="tina"
+              data-domain="kleiderordnung.berlin"
+            ><span class="spamprotected">ti</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">na</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">@</span><span class="spamprotected">kleiderordnung</span><span class="blockspam" aria-hidden="true">[...]</span><span class="spamprotected">.</span><span class="spamprotected">berlin</span></a>
           </div>
         </address>
         <div class="contact__calltoactiontext contact__calltoactiontext--secondary">
@@ -109,7 +109,7 @@
           </a>
           <a
             class="socialmedia__link"
-            href="https://calendly.com/ingo-steinke"
+            href="<?php echo KLEIDERORDNUNG_CALENDY_URI ?>"
             target="_blank"
             rel="me noopener"
             title="<?php _e('Tina Steinke bei Calendly', 'kleiderordnung') ?>">
@@ -144,8 +144,8 @@
             </a>
           </div>
           <div class="socialmedia__link--printable">
-            <a href="https://www.calendly/TODO" target="_blank" rel="noopener">
-              https://www.calendly-link-TODO-!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            <a href="<?php echo KLEIDERORDNUNG_CALENDY_URI ?>" target="_blank" rel="noopener">
+            <?php echo KLEIDERORDNUNG_CALENDY_URI ?>
             </a>
           </div>
         </aside>
@@ -156,7 +156,7 @@
     <div class="contact__columns__column contact__columns__column--50">
       <div class="contact__ctaalternatives">
         <a
-          href="https://calendly.com/ingo-steinke"
+          href="<?php echo KLEIDERORDNUNG_CALENDY_URI ?>"
           target="_blank"
           rel="noopener"
           class="button button--inverted contact__ctaalternatives__button button--calendly"
