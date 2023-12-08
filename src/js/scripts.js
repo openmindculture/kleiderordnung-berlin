@@ -12,7 +12,6 @@ import {
     kleiderordnung_intersectionCallback,
     kleiderordnung_handleElementsActivatedOnVisibilityAndConsent
 } from "./inc/handleElementsActivatedOnVisibilityAndConsent";
-import {kleiderordnung_handleActivateCalendlyWidget} from './inc/handleActivateCalendyWidget';
 import {kleiderordnung_handleFooterDetailLink} from './inc/handleFooterDetailLink';
 import {kleiderordnung_keepAnchorTargetInLanguageSwitcher} from './inc/keepAnchorTargetInLanguageSwitcher';
 import {kleiderordnung_observeStickyHeader} from './inc/observeStickyHeader';
@@ -148,7 +147,6 @@ document.addEventListener('DOMContentLoaded', function () {
   kleiderordnung_keepAnchorTargetInLanguageSwitcher();
   kleiderordnung_carouselSetup();
   kleiderordnung_enhanceDecorationEffect(window.kleiderordnung.config);
-  kleiderordnung_handleActivateCalendlyWidget();
   kleiderordnung_handleFooterDetailLink();
   kleiderordnung_activateAnalyticsTracking();
   kleiderordnung_showAdminLinkIfLoggedIn();
