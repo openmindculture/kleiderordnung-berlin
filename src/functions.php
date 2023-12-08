@@ -39,6 +39,7 @@ require_once( KLEIDERORDNUNG_DIR . '/inc/functions/add-theme-support.php' );
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/customize-admin-ui.php' );
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/customize-frontend.php' );
 require_once( KLEIDERORDNUNG_DIR . '/inc/functions/customizer.php' );
+require_once( KLEIDERORDNUNG_DIR . '/inc/functions/settings.php' );
 
 function kleiderordnung_enqueue_localized_scripts(){
   wp_enqueue_script(

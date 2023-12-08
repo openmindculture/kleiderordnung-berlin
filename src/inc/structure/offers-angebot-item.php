@@ -52,8 +52,7 @@ $wordsOnlyTitle = preg_replace("/[^A-Za-z0-9 ]/", '', $strippedTitle);
       if (!empty($currentOfferFeatures)): ?>
       <strong class="offers__offer__features__headline"><?php _e( 'Was Du erhältst', 'kleiderordnung' ) ?>:</strong>
       <?php
-        // if (get_option('show_more') &&
-        if (substr_count($currentOfferFeatures,'<li>') > 3) {
+        if (get_option('kleiderordnung_show_more') && substr_count($currentOfferFeatures,'<li>') > 3) {
           $currentOfferFeaturesItems = explode('<li>', $currentOfferFeatures);
           // add +1 length to compensate the empty item before first li
           $currentOfferFeaturesExcerpt = join ('<li>', array_slice( $currentOfferFeaturesItems, 0, 4));
