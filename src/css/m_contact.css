@@ -39,8 +39,6 @@
   max-width: min(42.5rem, calc(100% - 1rem));
 }
 
-@media (min-width: 555px) {}
-
 .contact__scannable {
   position: absolute;
   display: block;
@@ -50,24 +48,31 @@
 }
 
 .contact__scannable__image {
-  width: 30%;
+  width: 40%;
   max-width: 90vw;
 }
 
 @media (min-width: 320px) {
   .contact__scannable {
-    top: 9rem;
+    top: 7rem;
   }
 }
 
 @media (min-width: 555px) {
   .contact__scannable {
-    top: 7rem;
+    top: 5rem;
     right: 1rem;
   }
 
   .contact__scannable__image {
     width: 11rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact__scannable {
+    top: 7rem;
+    right: 1rem;
   }
 }
 
@@ -129,6 +134,7 @@
 
 .contact__vcard__address {
   margin-bottom: 1.5rem;
+  padding-top: 1rem;
 }
 
 @mixin typography-weight-bold .contact__vcard__company {}
@@ -188,6 +194,9 @@
   }
   .contact__ctaalternatives__button {
     margin-bottom: 0;
+  }
+  .contact__vcard__address {
+    padding-top: 0;
   }
 }
 

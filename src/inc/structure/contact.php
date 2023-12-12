@@ -153,9 +153,9 @@
       <!-- END vcard imprint contact information -->
       <aside class="contact__scannable">
         <img
-          src="<?php echo get_template_directory_uri() ?>/img/vcard/tina-steinke-vcard-qr.svg"
-          width="2534"
-          height="2534"
+          src="<?php echo get_template_directory_uri() ?>/img/vcard/tina-steinke-vcard-qr-stitched-leaf-logo.svg"
+          width="500"
+          height="500"
           loading="lazy"
           alt="QR-Code: Tina Steinke Contact"
           class="contact__scannable__image"
