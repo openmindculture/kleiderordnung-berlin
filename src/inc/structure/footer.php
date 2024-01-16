@@ -29,7 +29,7 @@
           <?php _e( 'Kooperationen', 'kleiderordnung' ) ?>
         </div>
         <div class="footer__partners footer__partners--coop">
-          <a href=https://moeon.de/" target="_blank" rel="noopener" tabindex="0">
+          <a href="https://moeon.de/" target="_blank" rel="noopener" tabindex="0">
             <img
               src="<?php echo get_template_directory_uri() ?>/img/logos/moeon-blue.svg" width="558" height="119"
               loading="lazy"
