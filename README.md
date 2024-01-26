@@ -375,7 +375,11 @@ Unless a new page visitor has given consent to loading Instagram data by clickin
 
 If the placeholder image does not update automatically, replace the placeholder image by overwriting
 `/img/instagram/preview5xinsta-20230601.jpg`
-with an updated image file in the following aspect ratio: width="1857" height="463"
+with an updated image file in the following aspect ratio: `width="1857" height="463"`.
+
+To generate a webp alternative on the command line using [cwebp](https://developers.google.com/speed/webp/docs/cwebp):
+
+`cwebp `
 
 **TODO**: alternatively:
 
