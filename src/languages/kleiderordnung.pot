@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2023-12-08 14:35+0200\n"
+"PO-Revision-Date: 2024-01-31 12:06+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -27,6 +27,18 @@ msgstr ""
 
 #: header.php:26
 msgid "Header image"
+msgstr ""
+
+#: inc/structure/contact.php
+msgid "Buche einen Termin"
+msgstr ""
+
+#: inc/structure/contact.php
+msgid "über Calendly"
+msgstr ""
+
+#: inc/structure/contact.php
+msgid "oder schreibe mir eine Nachricht"
 msgstr ""
 
 #: inc/structure/contact-calendar-popup.php

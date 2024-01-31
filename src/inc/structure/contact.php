@@ -172,9 +172,9 @@
         >
           <?php _e('Buche einen Termin', 'kleiderordnung'); ?>
           <small class="contact__ctaalternatives__button__subline">
-            <?php _e('über Calendly *', 'kleiderordnung'); ?>
+            <?php _e('über Calendly', 'kleiderordnung'); ?> *
           </small>
-        </a> <?php _e('oder schreibe mir eine Nachricht:', 'kleiderordnung'); ?>
+        </a> <?php _e('oder schreibe mir eine Nachricht', 'kleiderordnung'); ?>:
       </div>
       <?php
       $kleiderordnung_contact_form_id = 16;
