@@ -58,7 +58,7 @@ $wordsOnlyTitle = preg_replace("/[^A-Za-z0-9 ]/", '', $strippedTitle);
           $currentOfferFeaturesExcerpt = join ('<li>', array_slice( $currentOfferFeaturesItems, 0, 4));
           // likewise, we need an additional opening li tag
           $currentOfferFeaturesMore = '<li class="offers__offer__features__list__more">';
-          $currentOfferFeaturesMore .= join ('<li class="offers__offer__features__list__more">', array_slice( $currentOfferFeaturesItems, 3 ));
+          $currentOfferFeaturesMore .= join ('<li class="offers__offer__features__list__more">', array_slice( $currentOfferFeaturesItems, 4 ));
           echo $currentOfferFeaturesExcerpt;
           echo '<li class="offers__offer__features__list__readmore">';
           echo '<button class="initially-hidden">';
