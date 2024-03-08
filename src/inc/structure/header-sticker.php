@@ -18,13 +18,13 @@ if (pll_current_language() === 'en') {
 }
 ?>"
         tabindex="0"
-      ><?php
+      ><span><?php
 if (pll_current_language() === 'en') {
   echo get_option('kleiderordnung_sticker_title_en', '');
 } else {
   echo get_option( 'kleiderordnung_sticker_title_de', '' );
 }
-?></a>
+?></span></a>
     </div>
 <?php
 }

@@ -75,6 +75,7 @@
   /* Color Styles */
   /* PREFERABLY USE generic semantic names below like --color-primary-background ! */
   --color-blue-dark-purpleish: #0014d1;
+  --color-purple-sticker: #6217b0;
   --color-orange-dark: #ff9052; /* do we have better names for those colors? */
   --color-pink-neon: #ff5baa;
   --color-pink-reddish: #ff5454;

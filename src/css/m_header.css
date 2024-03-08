@@ -56,20 +56,34 @@
 
 .header__sticker {
   background-color: var(--color-dark-red-pinkish);
-  color: var(--color-default-white);
+  color: var(--color-pink-neon);
+  border: solid 4px var(--color-purple-sticker);
+  box-shadow: var(--effect-box-shadow-dropshadow);
   position: absolute;
   top: 6rem;
   right: 1rem;
-  padding: 1rem;
+  padding: 0;
   z-index: 12;
   transform: rotate(20deg);
 
   a, a:link, a:visited, a:active {
+    display: inline-block;
+    padding: 1rem;
     background: transparent;
     background-image: none;
-    background-color: var(--color-dark-red-pinkish);
-    color: var(--color-default-white);
+    background-color: var(--color-pink-neon);
+    color: var(--color-purple-sticker);
+    font-weight: bold;
     text-decoration: none;
+  }
+
+  a span {
+    font-size: 1.75rem;
+    text-shadow:
+      2px 2px 2px var(--color-default-white),
+      -2px 2px 2px var(--color-default-white),
+      2px -2px 2px var(--color-default-white),
+      -2px -2px 2px var(--color-default-white);
   }
 }
 
