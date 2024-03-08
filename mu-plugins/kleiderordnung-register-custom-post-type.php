@@ -294,66 +294,6 @@ function kleiderordnung_register_post_type_offer() {
   }
 }
 
-function kleiderordnung_register_post_type_sticker() {
-  $labels = array(
-    'name'                  => 'Sticker',
-    'singular_name'         => 'Sticker',
-    'menu_name'             => 'Sticker',
-    'name_admin_bar'        => 'Sticker',
-    'all_items'             => 'Sticker',
-    'add_new_item'          => 'Neuen Sticker erstellen',
-    'add_new'               => 'Erstellen',
-    'new_item'              => 'Neuer Sticker',
-    'edit_item'             => 'Sticker bearbeiten',
-    'update_item'           => 'Sticker aktualisieren'
-  );
-  $args = array(
-    'label'                 => 'Sticker',
-    'description'           => 'Sticker Type Description',
-    'labels'                => $labels,
-    'supports'              => array( 'title', 'author'),
-    'taxonomies'            => array( 'sticker' ),
-    'hierarchical'          => false,
-    'public'                => true,
-    'show_ui'               => true,
-    'show_in_menu'          => true,
-    'menu_position'         => 7,
-    'show_in_admin_bar'     => true,
-    'show_in_nav_menus'     => true,
-    'can_export'            => true,
-    'has_archive'           => true,
-    'exclude_from_search'   => false,
-    'publicly_queryable'    => true,
-    'capability_type'       => 'post',
-  );
-  register_post_type( 'sticker', $args );
-
-  if( function_exists('acf_add_local_field_group') ) {
-    acf_add_local_field_group( array(
-      'key'      => 'sticker_field_group_main',
-      'title'    => 'Link-Ziel',
-      'position' => 'normal',
-      'fields'   => array(
-        array(
-          'key'   => 'sticker_url',
-          'label' => 'Komplette Adresse, z.B. https://kleiderordnung.berlin/news-beitrag-123/',
-          'name'  => 'sticker_url',
-          'type'  => 'text',
-        ),
-      ),
-      'location' => array(
-        array(
-          array(
-            'param'    => 'post_type',
-            'operator' => '==',
-            'value'    => 'sticker',
-          ),
-        ),
-      ),
-    ));
-  }
-}
-
 function kleiderordnung_register_custom_page_fields() {
   if( !function_exists('acf_add_local_field_group') ) return;
   acf_add_local_field_group( array(
@@ -459,5 +399,4 @@ function kleiderordnung_register_custom_page_fields() {
 
 add_action( 'init', 'kleiderordnung_register_post_type_story' );
 add_action( 'init', 'kleiderordnung_register_post_type_offer' );
-add_action( 'init', 'kleiderordnung_register_post_type_sticker' );
 add_action( 'init', 'kleiderordnung_register_custom_page_fields' );

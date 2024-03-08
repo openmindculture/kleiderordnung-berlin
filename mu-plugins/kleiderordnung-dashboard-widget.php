@@ -124,7 +124,7 @@ function kleiderordnung_add_dashboard_widget()
 
       $kleiderordnung_widget.= '<img src="'.$currentThemeDirectory.'/img/admin-screenshot-intro.png" width="509" height="382" class="kleiderordnung__dashboard__image">';
 
-      $kleiderordnung_widget.= '<a href="/wp-admin/edit.php?post_type=sticker" class="kleiderordnung__dashboard__button kleiderordnung__dashboard__button--primary kleiderordnung__sticker kleiderordnung__mt-9 kleiderordnung__mb9" title="Sticker bearbeiten">Sticker bearbeiten</a>';
+      $kleiderordnung_widget.= '<a href="/wp-admin/options-general.php#kleiderordnung-settings" class="kleiderordnung__dashboard__button kleiderordnung__dashboard__button--primary kleiderordnung__sticker kleiderordnung__mt-9 kleiderordnung__mb9" title="Sticker bearbeiten">Sticker bearbeiten</a>';
 
       $kleiderordnung_widget.= '<a href="' . $kleiderordnung_editHomeGerman . '" class="kleiderordnung__dashboard__button kleiderordnung__dashboard__button--primary kleiderordnung__mt-9 kleiderordnung__mb9" title="Homepage bearbeiten (deutsch)">Homepage / Texte bearbeiten <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABLElEQVR4AY2QgUZEQRSGz9ydmzbYkBWABBJYABHEFhJ6m0WP0DMEQNIr9AKrN8ne2Tt3Zs7MOdOZmRBEv+v34Tvub9R6fdNlAzU+snSME/wdjbjbbJ6EiEg6BA8102QbjKNpoMzw8v6qD/sOALbbT2MC1NgaAWOKOgxf5czY+4dbAX2G/THzcozLrvPV85IQyqVz0rvg2p9Pei4HjzSsiFbV4JgyhhxCjpGdZ0RhdikLB9/b8Qig7MkpSovR7Cp59q6CazaNFiTt4J82o6uvdMVwTsztKTXZod4jgOJJuqNAjFyGrBR8gM6XwKfIC4KanBSTZ0rClKh08D9DFh3egW7ebH7NcRDQWrz9rM2Ne+mDOXB2mZJ8agL19nwxR2iZXGm1gDbQKhDjd4yHb2oW/KR8xHicAAAAAElFTkSuQmCC"></a>';
       $kleiderordnung_widget.= '<br>';
