@@ -336,7 +336,7 @@ function kleiderordnung_register_post_type_sticker() {
       'fields'   => array(
         array(
           'key'   => 'sticker_url',
-          'label' => 'Vollständige Adresse, z.B. https://kleiderordnung.berlin/news-beitrag-123/',
+          'label' => 'Komplette Adresse, z.B. https://kleiderordnung.berlin/news-beitrag-123/',
           'name'  => 'sticker_url',
           'type'  => 'text',
         ),
