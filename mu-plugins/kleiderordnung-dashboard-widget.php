@@ -144,7 +144,7 @@ function kleiderordnung_add_dashboard_widget()
       $kleiderordnung_widget.= '<br>';
 
     } else {
-      $kleiderordnung_widget.= 'Theme "KleiderOrdnung" muss unter <a href="/themes.php">&quot;Design&quot;</a> aktiviert werden';
+      $kleiderordnung_widget.= 'Theme "Kleiderordnung" muss unter <a href="/themes.php">&quot;Design&quot;</a> aktiviert werden';
     }
 
     $kleiderordnung_widget.= '<hr>'; // ----------------------------------------------------
