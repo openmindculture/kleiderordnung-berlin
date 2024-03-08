@@ -9,6 +9,9 @@
 <div id="cmplz-cookiebanner-container"></div>
 <a class="skip-link screen-reader-text" href="#wp--skip-link--target"><?php esc_html_e( 'Skip to content', 'kleiderordnung' ); ?></a>
 <header id="site-header" class="header header--site-header has-inline-mobile-toggle" aria-label="Site" itemtype="https://schema.org/WPHeader" itemscope>
+  <?php if (1 === 1): ?>
+    <div class="header__sticker"><a href="" target="_blank">8% Rabatt</a></div>
+  <?php endif ?>
   <div class="header__contentwrapper">
     <div class="header__site-logo">
       <a href="<?php echo get_home_url() ?>/" rel="home" tabindex="0">

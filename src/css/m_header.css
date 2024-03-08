@@ -54,6 +54,25 @@
   margin-top: calc(-1 * var(--header-height-stuck));
 }
 
+.header__sticker {
+  background-color: var(--color-dark-red-pinkish);
+  color: var(--color-default-white);
+  position: absolute;
+  top: 6rem;
+  right: 1rem;
+  padding: 1rem;
+  z-index: 12;
+  transform: rotate(20deg);
+
+  a, a:link, a:visited, a:active {
+    background: transparent;
+    background-image: none;
+    background-color: var(--color-dark-red-pinkish);
+    color: var(--color-default-white);
+    text-decoration: none;
+  }
+}
+
 .header__contentwrapper { /* wrapper around logo, navigation, and navigation toggle buttons */
   display: flex;
   max-width: calc(100% - 1rem);
@@ -88,7 +107,6 @@
   margin: 0;
   padding: 0;
 }
-
 
 /* sticky navigation fallback for mobile Safari < 13 */
 @supports (-webkit-marquee-repetition:infinite) and (object-fit:fill) {
