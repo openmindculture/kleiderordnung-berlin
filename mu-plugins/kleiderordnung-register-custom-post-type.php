@@ -317,7 +317,7 @@ function kleiderordnung_register_post_type_sticker() {
     'public'                => true,
     'show_ui'               => true,
     'show_in_menu'          => true,
-    'menu_position'         => 6,
+    'menu_position'         => 7,
     'show_in_admin_bar'     => true,
     'show_in_nav_menus'     => true,
     'can_export'            => true,
@@ -330,13 +330,13 @@ function kleiderordnung_register_post_type_sticker() {
 
   if( function_exists('acf_add_local_field_group') ) {
     acf_add_local_field_group( array(
-      'key'      => 'sticker_field_group_sidebar',
-      'title'    => 'Weitere Einstellungen',
-      'position' => 'side',
+      'key'      => 'sticker_field_group_main',
+      'title'    => 'Link-Ziel',
+      'position' => 'normal',
       'fields'   => array(
         array(
           'key'   => 'sticker_url',
-          'label' => 'Link-Ziel (z.B. https://kleiderordnung.berlin/news-beitrag-123/)',
+          'label' => 'Vollständige Adresse, z.B. https://kleiderordnung.berlin/news-beitrag-123/',
           'name'  => 'sticker_url',
           'type'  => 'text',
         ),
