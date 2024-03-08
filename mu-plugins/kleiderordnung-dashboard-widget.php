@@ -2,10 +2,10 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 3.3.0
+ * @version 3.4.0
  *
  * @wordpress-plugin
- * Version: 3.3.0
+ * Version: 3.4.0
  * Tested up to: 6.4
  * Plugin Name: Kleiderordnung Dashboard Widget
  * Text Domain: kleiderordnung-dashboard-widget
