@@ -56,8 +56,9 @@
 
 .header__sticker {
   background-color: var(--color-dark-red-pinkish);
-  color: var(--color-pink-neon);
+  color: var(--color-pink-pastel-salmon);
   border: solid 4px var(--color-purple-sticker);
+  border-radius: 0.5rem;
   box-shadow: var(--effect-box-shadow-dropshadow);
   position: absolute;
   top: 6rem;
@@ -71,8 +72,9 @@
     padding: 1rem;
     background: transparent;
     background-image: none;
-    background-color: var(--color-pink-neon);
+    background-color: var(--color-pink-pastel-salmon);
     color: var(--color-purple-sticker);
+    border-radius: 0.5rem;
     font-weight: bold;
     text-decoration: none;
   }

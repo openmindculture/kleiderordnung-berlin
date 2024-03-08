@@ -79,7 +79,7 @@ function kleiderordnung_settings_init() {
 
   add_settings_field(
     'kleiderordnung_sticker_url_de', // option field ID
-    'Sticker Text (deutsch)', // display title (default englisch)
+    'Sticker Link (deutsch)', // display title (default englisch)
     'kleiderordnung_render_input_callback_sticker_url_de', // generic input field renderer
     'general', // settings page ID (where to render: default general settings page)
     'kleiderordnung_settings_section', // section inside settings page
