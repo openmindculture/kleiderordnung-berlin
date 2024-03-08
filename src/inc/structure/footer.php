@@ -117,7 +117,7 @@
   {
     "@context" : "http://schema.org",
     "@type" : "Organization",
-    "name" : "KleiderOrdnung Berlin",
+    "name" : "Kleiderordnung Berlin",
     "image": "https://kleiderordnung.berlin/img/keyvisual-kleiderordnung.jpg",
     "logo": "https://kleiderordnung.berlin/img/kleiderordnung-logo-square-blue.png",
     "description": "<?php _e( 'Stilberatung, Shoppingbegleitung und Kleiderschrank-Check in Berlin', 'kleiderordnung' ) ?>",

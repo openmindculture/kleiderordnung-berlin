@@ -14,7 +14,7 @@
       echo '-';
       echo 'KleiderOrdnung Berlin';
     } else {
-      wp_title('-');
+      wp_title(' - ');
     } ?></title>
   <meta name=language content="<?php echo /** @var string */ pll_current_language() ?>">
   <link rel="canonical" <?php

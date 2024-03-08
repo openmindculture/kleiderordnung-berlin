@@ -2,10 +2,10 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 3.3.0
+ * @version 3.4.0
  *
  * @wordpress-plugin
- * Version: 3.3.0
+ * Version: 3.4.0
  * Tested up to: 6.4
  * Plugin Name: Kleiderordnung Dashboard Widget
  * Text Domain: kleiderordnung-dashboard-widget
@@ -99,6 +99,15 @@ function kleiderordnung_add_dashboard_widget()
       $kleiderordnung_widget.= '.kleiderordnung__mb9 {';
       $kleiderordnung_widget.= '  margin-bottom: 9rem;';
       $kleiderordnung_widget.= '}';
+      $kleiderordnung_widget.= '.kleiderordnung__sticker {';
+      $kleiderordnung_widget.= '  background-color: #b42222;';
+      $kleiderordnung_widget.= '  color: #ffffff;';
+      $kleiderordnung_widget.= '  position: absolute;';
+      $kleiderordnung_widget.= '  top: 10rem;';
+      $kleiderordnung_widget.= '  right: 0;';
+      $kleiderordnung_widget.= '  z-index: 2;';
+      $kleiderordnung_widget.= '  transform: rotate(45deg);';
+      $kleiderordnung_widget.= '}';
       $kleiderordnung_widget.= '</style>';
 
       $kleiderordnung_frontpageIdGerman = url_to_postid(pll_home_url('de'));
@@ -114,6 +123,9 @@ function kleiderordnung_add_dashboard_widget()
       $kleiderordnung_editHomeEnglish = $kleiderordnung_frontpageIdEnglish ? '/wp-admin/post.php?post=' . $kleiderordnung_frontpageIdEnglish . '&action=edit' : '/wp-admin/edit.php?post_type=page';
 
       $kleiderordnung_widget.= '<img src="'.$currentThemeDirectory.'/img/admin-screenshot-intro.png" width="509" height="382" class="kleiderordnung__dashboard__image">';
+
+      $kleiderordnung_widget.= '<a href="/wp-admin/options-general.php#kleiderordnung-settings" class="kleiderordnung__dashboard__button kleiderordnung__dashboard__button--primary kleiderordnung__sticker kleiderordnung__mt-9 kleiderordnung__mb9" title="Sticker bearbeiten">Sticker bearbeiten</a>';
+
       $kleiderordnung_widget.= '<a href="' . $kleiderordnung_editHomeGerman . '" class="kleiderordnung__dashboard__button kleiderordnung__dashboard__button--primary kleiderordnung__mt-9 kleiderordnung__mb9" title="Homepage bearbeiten (deutsch)">Homepage / Texte bearbeiten <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABLElEQVR4AY2QgUZEQRSGz9ydmzbYkBWABBJYABHEFhJ6m0WP0DMEQNIr9AKrN8ne2Tt3Zs7MOdOZmRBEv+v34Tvub9R6fdNlAzU+snSME/wdjbjbbJ6EiEg6BA8102QbjKNpoMzw8v6qD/sOALbbT2MC1NgaAWOKOgxf5czY+4dbAX2G/THzcozLrvPV85IQyqVz0rvg2p9Pei4HjzSsiFbV4JgyhhxCjpGdZ0RhdikLB9/b8Qig7MkpSovR7Cp59q6CazaNFiTt4J82o6uvdMVwTsztKTXZod4jgOJJuqNAjFyGrBR8gM6XwKfIC4KanBSTZ0rClKh08D9DFh3egW7ebH7NcRDQWrz9rM2Ne+mDOXB2mZJ8agL19nwxR2iZXGm1gDbQKhDjd4yHb2oW/KR8xHicAAAAAElFTkSuQmCC"></a>';
       $kleiderordnung_widget.= '<br>';
       $kleiderordnung_widget.= '<a href="' . $kleiderordnung_editHomeEnglish . '" class="kleiderordnung__dashboard__button kleiderordnung__dashboard__button--primary kleiderordnung__mt-9 kleiderordnung__mb9" title="Homepage bearbeiten (englisch)">Homepage / Texte bearbeiten <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg=="></a>';
@@ -144,7 +156,7 @@ function kleiderordnung_add_dashboard_widget()
       $kleiderordnung_widget.= '<br>';
 
     } else {
-      $kleiderordnung_widget.= 'Theme "KleiderOrdnung" muss unter <a href="/themes.php">&quot;Design&quot;</a> aktiviert werden';
+      $kleiderordnung_widget.= 'Theme "Kleiderordnung" muss unter <a href="/themes.php">&quot;Design&quot;</a> aktiviert werden';
     }
 
     $kleiderordnung_widget.= '<hr>'; // ----------------------------------------------------

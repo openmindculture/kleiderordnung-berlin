@@ -379,9 +379,13 @@ with an updated image file in the following aspect ratio: `width="1857" height="
 
 To generate a webp alternative on the command line using [cwebp](https://developers.google.com/speed/webp/docs/cwebp):
 
-`cwebp `
+`cwebp /img/instagram/preview5xinsta-20230601.jpg -o /img/instagram/preview5xinsta-20230601.webp`
 
-**TODO**: alternatively:
+To optimize an existing JPEG file:
+
+
+
+**TODO**: alternatively in the future:
 
 The update process might be (partially) automated or facilitated using the [Screen Capture API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API).
 

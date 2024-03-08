@@ -19,7 +19,7 @@ msgstr ""
 msgid ""
 "KleiderOrdnung Berlin: nachhaltige Modeberatung von Tina Steinke"
 msgstr ""
-"KleiderOrdnung Berlin: personal sustainable stylist Tina Steinke"
+"Kleiderordnung Berlin: personal sustainable stylist Tina Steinke"
 
 #: header.php:19
 #: inc/structure/header.php:10
