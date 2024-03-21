@@ -189,6 +189,11 @@ body.single-story .stories__story__quote {
     min-height: 30.75rem; /* ensure layout requirements */
   }
 
+  .stories__story__image.empty {
+    height: 0;
+    min-height: 0;
+  }
+
   .stories__story__quote__text {
     font-size: var(--font-size-18);
     line-height: 170%;
