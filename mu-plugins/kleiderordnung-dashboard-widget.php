@@ -6,7 +6,7 @@
  *
  * @wordpress-plugin
  * Version: 3.4.0
- * Tested up to: 6.4
+ * Tested up to: 6.5
  * Plugin Name: Kleiderordnung Dashboard Widget
  * Text Domain: kleiderordnung-dashboard-widget
  * Author: openmindculture
