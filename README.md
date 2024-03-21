@@ -381,7 +381,7 @@ To generate a webp alternative on the command line using [cwebp](https://develop
 
 `cwebp /img/instagram/preview5xinsta-20230601.jpg -o /img/instagram/preview5xinsta-20230601.webp`
 
-To optimize an existing JPEG file:
+To optimize an existing JPEG file, we can use mozjpeg.
 
 
 
