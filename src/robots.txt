@@ -6,4 +6,8 @@ Disallow: /search/
 Disallow: /wp-json/
 Disallow: /?rest_route=
 Disallow: /beispiel-seite/
+Disallow: /wp-content/themes/kleiderordnung/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /neue-studie-zu-fast-fashion-schockiert-94/
 Sitemap: https://kleiderordnung.berlin/sitemap.xml

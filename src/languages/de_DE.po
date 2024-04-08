@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2024-01-31 12:06+0200\n"
+"PO-Revision-Date: 2024-04-08 09:25+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -88,8 +88,8 @@ msgid "Kontaktformular deutsch (de_DE)"
 msgstr "Kontaktformular deutsch (de_DE)"
 
 #: inc/structure/footer.php:13
-msgid "2023 © Kleiderordnung Martina Steinke"
-msgstr "2023 © Kleiderordnung Martina Steinke"
+msgid "2024 © Kleiderordnung Martina Steinke"
+msgstr "2024 © Kleiderordnung Martina Steinke"
 
 #: inc/structure/footer.php:15
 msgid "All rights reserved"

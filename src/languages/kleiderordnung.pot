@@ -87,7 +87,7 @@ msgstr ""
 
 #: inc/structure/footer.php:13
 msgid ""
-"2023 © Kleiderordnung Martina Steinke"
+"2024 © Kleiderordnung Martina Steinke"
 msgstr ""
 
 #: inc/structure/footer.php:15

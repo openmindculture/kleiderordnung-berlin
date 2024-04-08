@@ -1,19 +1,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kleiderordnung.berlin/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2024-04-08</lastmod>
   </url>
   <url>
     <loc>https://kleiderordnung.berlin/en/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2024-04-08</lastmod>
   </url>
   <url>
     <loc>https://kleiderordnung.berlin/news/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2024-04-08</lastmod>
   </url>
   <url>
     <loc>https://kleiderordnung.berlin/en/news/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2024-04-08</lastmod>
+  </url>
+  <url>
+    <loc>https://kleiderordnung.berlin/category/allgemein/</loc>
+    <lastmod>2024-04-08</lastmod>
   </url>
   <url>
     <loc>https://kleiderordnung.berlin/impressum/</loc>
@@ -70,5 +74,30 @@
   <url>
     <loc>https://kleiderordnung.berlin/en/second-hand-shopping-12-may-at-flowmarkt-nowkoelln-108/</loc>
     <lastmod>2023-09-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://kleiderordnung.berlin/en/second-hand-shopping-12-may-at-flowmarkt-nowkoelln-108/</loc>
+    <lastmod>2023-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://kleiderordnung.berlin/en/second-hand-shopping-12-may-at-flowmarkt-nowkoelln-108/</loc>
+    <lastmod>2023-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://kleiderordnung.berlin/sustainable-fashion-workshop-im-impact-hub-503/</loc>
+    <lastmod>2024-01-01</lastmod>
+  </url>
+  <url>
+    <loc>https://kleiderordnung.berlin/en/sustainable-fashion-workshop-at-impact-hub-511/</loc>
+    <lastmod>2024-01-01</lastmod>
+  </url>
+  <url>
+    <loc>https://kleiderordnung.berlin/en/newsletter-the-circular-regular-interview-626/</loc>
+    <lastmod>2024-08-03</lastmod>
+  </url>
+  <url>
+    <loc>https://kleiderordnung.berlin/interview-eunice-braeunlich-mit-mir-im-gespraech-ueber-nachhaltiges-styling-631/</loc>
+    <lastmod>2024-08-03</lastmod>
   </url>
 </urlset>
