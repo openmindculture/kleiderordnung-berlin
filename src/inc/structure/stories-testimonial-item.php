@@ -27,7 +27,7 @@ $current_content = isset($resorted_post_id) ? get_the_content($resorted_post_id)
   </figure>
   <figure class="stories__story__quote<?php
   if (strlen($current_content) > 360) {
-    echo ' long';
+    echo ' long grow-x';
   }
   ?>">
     <figcaption class="stories__story__quote__author">

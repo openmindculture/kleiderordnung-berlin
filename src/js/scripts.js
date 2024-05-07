@@ -18,6 +18,7 @@ import {kleiderordnung_observeStickyHeader} from './inc/observeStickyHeader';
 import {kleiderordnung_observeWaypointAnchors} from './inc/observeWaypointAnchors';
 import {kleiderordnung_showAdminLinkIfLoggedIn} from './inc/showAdminLinkIfLoggedIn';
 import {kleiderordnung_updateContactFormTopicOnOfferContactClick} from './inc/updateContactFormTopicOnOfferContactClick.js';
+import {kleiderordnung_growWidthToPreventOverflow} from "./inc/growWidthToPreventOverflow.js";
 
 /* global document, window */
 window.kleiderordnung = {
@@ -146,6 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
   );
   kleiderordnung_keepAnchorTargetInLanguageSwitcher();
   kleiderordnung_carouselSetup();
+  kleiderordnung_growWidthToPreventOverflow();
   kleiderordnung_enhanceDecorationEffect(window.kleiderordnung.config);
   kleiderordnung_handleFooterDetailLink();
   kleiderordnung_activateAnalyticsTracking();

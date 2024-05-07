@@ -302,6 +302,19 @@ body {
 
 Sections before and after should be set to `position: relative; z-index: 2` to make sure that they stay in front of the decoration layer.
 
+### Stories (Testimonials) Carousel, Height to Width Adjustment
+
+The carousel is a scrollable section with a flexbox of flexboxes, initially capped to a specific height and width.
+To compensate unexpected content, we adjust the designed styles:
+
+- If a story has no image, its width is also used for the text.
+- Text longer than a certain word count gets an additional style class name `long` so we can make it slightly wider.
+- An additional JavaScript-based adjustment detects overflowing text and increases the width accordingly.
+
+The latter adjustment can be used anywhere in the document.
+The function `growWidthToPreventOverflow` works an any element with a `grow-x` class name.
+It is called when the document has been rendered.
+
 ### Contact Form, Social Media, Dynamic Menu
 
 A contact form is provided using the popular Contact Form 7 plugin and the Flamingo add-on to save messages in the database. For localized content, a new form needs to be created for each language.
