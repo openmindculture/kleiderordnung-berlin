@@ -53,6 +53,14 @@
               class="footer__partners__image footer__partners__image--lilli"
             >
           </a>
+          <a href="https://www.1-9-7-9.com/" target="_blank" rel="noopener" tabindex="0">
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/logos/1979.png" width="148" height="233"
+              loading="lazy"
+              alt="1979 - nachhaltige Bademode aus Berlin"
+              class="footer__partners__image footer__partners__image--1979"
+            >
+          </a>
         </div>
         <div class="footer__column__row footer__column__row--partners">
           <?php _e( 'Mitglied bei', 'kleiderordnung' ) ?>

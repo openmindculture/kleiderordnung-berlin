@@ -106,6 +106,13 @@ body.page:not(.home) .footer__content {
   margin-left: 0.5rem;
 }
 
+.footer__partners .footer__partners__image--1979 {
+  width: auto;
+  height: 3.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 body.page:not(.home) .footer__partners {
   text-align: right;
 }
@@ -144,6 +151,10 @@ body.page:not(.home) .footer__partners {
     height: 5rem;
     margin-top: -1rem;
     margin-bottom: 1rem;
+  }
+
+  .footer__partners .footer__partners__image--1979 {
+    margin-top: 0;
   }
 
   .footer__partners .footer__partners__image--sustainable-stylists {
