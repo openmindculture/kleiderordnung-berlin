@@ -579,7 +579,8 @@ Don't give the website owner administration rights unless they are a technically
 - Complianz | GDPR/CCPA Cookie Consent (if necessary)
 - Contact Form 7
 - [Display Featured Image In Post List](https://de.wordpress.org/plugins/display-featured-image-in-post-list/)
-- Flamingo (save contact forms messages
+- Flamingo (save contact forms messages)
+- [Contact Form Inbox Report Mailer](https://github.com/openmindculture/wp-contact-form-inbox-report-mailer-plugin)
 - Incompatibility Status
 - Juicer Instagram Feed
 - Matomo Analytics (production site only)

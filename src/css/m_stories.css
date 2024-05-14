@@ -185,8 +185,9 @@ body.single-story .stories__story__quote {
 
 @media (max-width: 555px) {
   .stories__story__image, .stories__story__image img, .stories__story__quote {
-    height: calc(70vw * 1.775700935); /* inverse default ratio (190/107) */
-    min-height: 30.75rem; /* ensure layout requirements */
+    height: auto;
+    min-height: 30.75rem; /* fallback */
+    min-height: max(30.75rem, calc(70vw * 1.775700935)); /* designed layout or inverse default ratio (190/107) */
   }
 
   .stories__story__image.empty {
