@@ -47,10 +47,27 @@
           </a>
           <a href="https://lillimendelssohn.de/" target="_blank" rel="noopener" tabindex="0">
             <img
-              src="<?php echo get_template_directory_uri() ?>/img/logos/lilli.svg" width="407" height="41"
+              src="<?php echo get_template_directory_uri() ?>/img/logos/lilli.svg" width="369" height="157"
               loading="lazy"
               alt="lilli mendelssohn"
               class="footer__partners__image footer__partners__image--lilli"
+            >
+          </a>
+          <a href="https://kleiderei.com/" target="_blank" rel="noopener" tabindex="0">
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/logos/kleiderei.svg" width="369" height="157"
+              loading="lazy"
+              alt="Kleiderei"
+              class="footer__partners__image footer__partners__image--kleiderei"
+            >
+          </a>
+          <a href="https://fashionchangers.de/" target="_blank" rel="noopener" tabindex="0">
+            <img
+              src="<?php echo get_template_directory_uri() ?>/img/logos/fashion-changers.png" width="178" height="65"
+              srcset="<?php echo get_template_directory_uri() ?>/img/logos/fashion-changers.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/fashion-changers@2x.png 2x"
+              loading="lazy"
+              alt="<?php esc_attr_e( 'Fashion Changers', 'kleiderordnung' ) ?>"
+              class="footer__partners__image footer__partners__image--fashionchangers"
             >
           </a>
           <a href="https://www.1-9-7-9.com/" target="_blank" rel="noopener" tabindex="0">
@@ -68,20 +85,10 @@
         <div class="footer__partners">
           <a href=https://www.sustainable-stylists.com/stylistin-tina-steinke/" target="_blank" rel="me noopener" tabindex="0">
             <img
-              src="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.png" width="203" height="61"
-              srcset="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists@2x.png 2x"
+              src="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.svg" width="203" height="16"
               loading="lazy"
               alt="<?php esc_attr_e( 'Sustainable Stylists', 'kleiderordnung' ) ?>"
               class="footer__partners__image footer__partners__image--sustainable-stylists"
-            >
-          </a>
-          <a href="https://fashionchangers.de/" target="_blank" rel="noopener" tabindex="0">
-            <img
-              src="<?php echo get_template_directory_uri() ?>/img/logos/fashion-changers.png" width="178" height="65"
-              srcset="<?php echo get_template_directory_uri() ?>/img/logos/fashion-changers.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/fashion-changers@2x.png 2x"
-              loading="lazy"
-              alt="<?php esc_attr_e( 'Fashion Changers', 'kleiderordnung' ) ?>"
-              class="footer__partners__image footer__partners__image--fashionchangers"
             >
           </a>
           <a href="https://www.reflecta.network/changemaker/martina-steinke" target=_blank rel=noopener" tabindex="0">

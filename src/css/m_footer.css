@@ -86,6 +86,12 @@ body.page:not(.home) .footer__content {
   justify-content: space-around;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.footer__partners img {
+  width: auto;
+  height: 3.5rem;
 }
 
 .footer__partners .footer__partners__image--moeon {
@@ -106,6 +112,13 @@ body.page:not(.home) .footer__content {
   margin-left: 0.5rem;
 }
 
+.footer__partners .footer__partners__image--kleiderei {
+  width: auto;
+  height: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .footer__partners .footer__partners__image--1979 {
   width: auto;
   height: 3.5rem;
@@ -117,19 +130,17 @@ body.page:not(.home) .footer__partners {
   text-align: right;
 }
 
-.footer__partners img {
-  width: auto;
-  height: 3.5rem;
+.footer__partners .footer__partners__image--sustainable-stylists {
+  height: 1.5rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
   .footer__partners {
     margin-top: 0;
     margin-bottom: 0;
-  }
-
-  .footer__partners--coop {
-    justify-content: space-evenly
+    justify-content: space-between;
+    gap: 0;
   }
 
   body.page:not(.home) .footer__partners {
@@ -158,7 +169,8 @@ body.page:not(.home) .footer__partners {
   }
 
   .footer__partners .footer__partners__image--sustainable-stylists {
-    height: 5rem;
+    height: 2rem;
+    margin-top: 1rem;
   }
 
   .footer {
