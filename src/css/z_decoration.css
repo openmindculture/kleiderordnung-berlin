@@ -33,6 +33,7 @@ body.page.home main { /* decoration-parallax-group */
 }
 
 /* ensure foreground and following sections stay in front of the decoration layer */
+.offers__offer__image picture img,
 body.archive main > section,
 body.archive main > div,
 body.archive footer,
