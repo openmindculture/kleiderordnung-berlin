@@ -162,14 +162,7 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
   }
 }
 
-@supports (not (prefers-color-scheme: dark)) {
-  body.archive .decoration__container,
-  body.category .decoration__container,
-  body.search .decoration__container,
-  body.page.home .decoration__container {
-    transform: translateZ(0);
-  }
-}
+/* iPhone <13 CSS workaround obsoleted by more stable JS, setting body.prefers-reduced-motion */
 
 /* stylelint-disable-next-line no-descending-specificity */
 body.prefers-reduced-motion .decoration__container {
