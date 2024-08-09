@@ -33,6 +33,7 @@ body.page.home main { /* decoration-parallax-group */
 }
 
 /* ensure foreground and following sections stay in front of the decoration layer */
+.offers__offer__image picture img,
 body.archive main > section,
 body.archive main > div,
 body.archive footer,
@@ -162,14 +163,7 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
   }
 }
 
-@supports (not (prefers-color-scheme: dark)) {
-  body.archive .decoration__container,
-  body.category .decoration__container,
-  body.search .decoration__container,
-  body.page.home .decoration__container {
-    transform: translateZ(0);
-  }
-}
+/* iPhone <13 CSS workaround obsoleted by more stable JS, setting body.prefers-reduced-motion */
 
 /* stylelint-disable-next-line no-descending-specificity */
 body.prefers-reduced-motion .decoration__container {
