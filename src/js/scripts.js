@@ -80,7 +80,7 @@ window.kleiderordnung = {
       rootMargin: '0px',
       threshold: 0.1
     },
-    /** @type {boolean} */ supportsSuppportsColorSchemeQuery: false,
+    /** @type {boolean} */ supportsColorScheme: false,
     /** @type {boolean} */ prefersMoreContrast: false,
     /** @type {boolean} */ prefersReducedMotion: false,
     /** @type {boolean} */ prefersReducedTransparency: false,
@@ -122,15 +122,16 @@ document.addEventListener('DOMContentLoaded', function () {
     var prefersMoreContrastQuery = window.matchMedia('(prefers-contrast: more)');
     window.kleiderordnung.config.prefersMoreContrast = (prefersMoreContrastQuery.matches);
 
-    var supportsColorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    window.kleiderordnung.config.supportsSuppportsColorSchemeQuery = (supportsColorSchemeQuery.matches);
+    window.kleiderordnung.config.supportsColorScheme = CSS.supports(
+      'prefers-color-scheme: dark'
+    );
   }
 
   // explicitly disable progressive enhancements to prevent bugs in outdated Apple browsers
-  // the following query / hack should target mobile Safari up to version 12
-  if (/iPhone/.test(navigator.userAgent) && window.kleiderordnung.config.supportsSuppportsColorSchemeQuery) {
+  // the following query / hack should target mobile Safari versions up to 12 that don't support CSS.supports in JS
+  if (/iPhone/.test(navigator.userAgent) && !window.kleiderordnung.config.supportsColorScheme) {
     window.kleiderordnung.config.prefersReducedMotion = true;
-    if (document.body.classList && typeof(document.body.classList.add === 'function')) {
+    if (document.body.classList && (typeof document.body.classList.add) === 'function') {
       document.body.classList.add('prefers-reduced-motion');
     }
   }
