@@ -26,6 +26,11 @@
   text-transform: none;
 }
 
+.offers__cards {
+  margin: 0 0 6rem 0;
+  clear: left;
+}
+
 @media (min-width: 768px) {
   .offers__headline {
     margin: 0 0 2rem 0;
@@ -33,16 +38,20 @@
   .offers__additional {
     margin-bottom: 8.87rem;
   }
-}
-
-.offers__cards {
-  margin: 0 0 8.87rem 0;
-  clear: left;
+  .offers__cards {
+    margin-bottom: 8.87rem;
+  }
 }
 
 @mixin typography-heading-h2 .offers__additional__headline {
   margin-top: 0;
   margin-bottom: 5.25rem;
+}
+
+@media (max-width: 768px) {
+  .offers__additional__headline {
+    text-align: center;
+  }
 }
 
 .offers__navigation ul {
@@ -348,6 +357,12 @@ body.single .offers__offer {
 
 @mixin typography-heading-h3 .offers__additional__articles__headline {
   margin: 0 auto 1rem auto;
+}
+
+@media (max-width: 767.767px) {
+  .offers__additional__articles__headline {
+    text-align: center;
+  }
 }
 
 .offers__additional__articles .offers__offer__icon {

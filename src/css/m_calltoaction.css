@@ -7,7 +7,7 @@
 
 .calltoaction {
   text-align: center;
-  margin: 0 auto 12.3125rem auto;
+  margin: 0 auto 7.5rem auto;
 }
 
 @mixin typography-copy-bold .calltoaction__text {
@@ -21,9 +21,6 @@
 }
 
 @media (min-width: 768px) {
-  .calltoaction {
-    margin-bottom: 7.5rem;
-  }
   .calltoaction__text > p {
     font-size: var(--font-size-16);
   }

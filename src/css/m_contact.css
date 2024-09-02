@@ -492,6 +492,16 @@ textarea[name="Nachricht"]::placeholder {
   display: inline-block;
 }
 
+@media (max-width: 768px) {
+  .wpcf7-not-valid-tip {
+    display: block;
+    position: relative;
+    top: -2rem;
+    right: 0.5rem;
+    text-align: right;
+  }
+}
+
 .wpcf7-response-output {
   margin-top: 1rem;
   margin-bottom: -1rem;

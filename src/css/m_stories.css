@@ -184,6 +184,12 @@ body.single-story .stories__story__quote {
 /* "mobile mode" fixes to improve swipeable UX */
 
 @media (max-width: 555px) {
+  .stories__navigation {
+    position: absolute;
+    right: 0;
+    top: -3.25rem;
+  }
+
   .stories__story__image, .stories__story__image img, .stories__story__quote {
     height: auto;
     min-height: 30.75rem; /* fallback */
