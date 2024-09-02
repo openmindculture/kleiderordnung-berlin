@@ -47,6 +47,10 @@ main, .main, p {
   main, .main, p {
     font-size: var(--font-size-14);
   }
+  body.single-post main,
+  body.single-post .main, p {
+    font-size: var(--font-size-16);
+  }
 }
 
 main {
