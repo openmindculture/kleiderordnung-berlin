@@ -76,8 +76,9 @@ function kleiderordnung_register_post_type_story() {
 
     /* admin column headers */
     add_filter( "manage_story_posts_columns", function ( $defaults ) {
-      $defaults['position_number'] = 'Position';
-
+      if (!is_plugin_active('post-types-order')) {
+        $defaults['position_number'] = 'Position';
+      }
       return $defaults;
     } );
 

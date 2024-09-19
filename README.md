@@ -16,7 +16,7 @@ Backend: http://localhost:1234/wp-admin (default credentials: admin:secret).
 Make sure to that the theme Kleiderordnung got activated or activate it manually after installation.
 
 Features:
-- **accessible**: tab-navigateable, high contrast, respecting reduced motion preference,
+- **accessibility**: tab-navigateable, high contrast, respecting reduced motion preferences etc., still not 100% WCAG-compliant yet,
 - **animated** using animations and scrolling effects unless user prefers reduced motion
 - **beautiful**: web design based on the visual corporate identity
 - **classic**: hybrid theme with custom post types, custom fields, and block editor support
@@ -215,7 +215,7 @@ Localization / translation needs to be enabled explicitly in Polylang **Language
 
 ##### Post and Field Types, Sorting Order
 
-Pragmatically working around Meta Query issues when using custom post types, custom ACF fields, and polylang translation in the same theme, all custom fields are text fields. Custom **position number** fields are simple tools to let site owners control the display order of items that are not sorted by date.
+Pragmatically working around Meta Query issues when using custom post types, custom ACF fields, and polylang translation in the same theme, all custom fields are text fields. Custom **position number** fields are simple tools to let site owners control the display order of items that are not sorted by date. If the optional plugin [Post Types Order](https://wordpress.org/plugins/post-types-order/) is active, custom position numbers are ignored in the frontend and hidden in the backend. 
 
 ##### Offer ID and Taxonomy
 
