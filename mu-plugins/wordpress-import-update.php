@@ -6,7 +6,7 @@
  * Description: update existing posts when using the WordPress Importer
  * Plugin URI: https://gist.github.com/balbuf/d232769f1e7d66fe91b8ecd7795ef3cb
  * Author URI: https://github.com/balbuf
- * Tested up to: 6.5
+ * Tested up to: 6.6.2
  *
  * When using the WordPress Importer, update existing
  * posts instead of skipping them. Updates content according

@@ -2,11 +2,11 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 3.4.0
+ * @version 3.9.2
  *
  * @wordpress-plugin
- * Version: 3.4.0
- * Tested up to: 6.5
+ * Version: 3.9.2
+ * Tested up to: 6.6.2
  * Plugin Name: Kleiderordnung Dashboard Widget
  * Text Domain: kleiderordnung-dashboard-widget
  * Author: openmindculture
@@ -164,7 +164,7 @@ function kleiderordnung_add_dashboard_widget()
     $kleiderordnung_widget.= '<a href="https://github.com/openmindculture/kleiderordnung-berlin/blob/main/doc/anleitung.md" target="_blank" class="kleiderordnung__dashboard__button">Bedienungsanleitung lesen</a></b><br>';
 
 
-    // if (is_plugin_active( 'updraftplus' )) {
+    if (is_plugin_active( 'updraftplus/updraftplus.php' )) {
       $kleiderordnung_widget.= '<hr>'; // ----------------------------------------------------
       $kleiderordnung_widget.= '<b class="kleiderordnung__centered">Wartung</b><br>';
 
@@ -173,7 +173,7 @@ function kleiderordnung_add_dashboard_widget()
 
       $kleiderordnung_widget.= '<a href="/wp-admin/options-general.php?page=updraftplus" class="kleiderordnung__dashboard__button">Daten sichern (Backup)</a>';
       $kleiderordnung_widget.= '<br>';
-    // }
+    }
 
     $kleiderordnung_widget.= '<hr>'; // ----------------------------------------------------
     $kleiderordnung_widget.= '<span class="kleiderordnung_centered">Theme-Version: ' . $currentThemeName . ' ' . $currentThemeVersion . '</span><br>';

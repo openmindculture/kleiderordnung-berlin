@@ -14,6 +14,12 @@
   );
   $the_query = new WP_Query( $args );
   $resorted_post_ids = array();
+  $is_presorted = is_plugin_active('post-types-order/post-types-order.php');
+  if ($is_presorted) {
+    echo '*** post_types_order plugin is active, ignore position_number ***';
+  } else {
+    echo '*** use position_number ***';
+  }
   if ( $the_query->have_posts() ) : ?>
 
   <section id="stories" class="stories target-offset">
@@ -24,11 +30,15 @@
     $loop_index = 0;
     while ( $the_query->have_posts() ) {
       $the_query->the_post();
-      $unique_post_position_number = get_field('position_number', get_the_ID());
-      if (isset($resorted_post_ids[$unique_post_position_number])) {
-        $unique_post_position_number .= $loop_index; // random order is better than losing data
+      if ($is_presorted) {
+        $resorted_post_ids[$loop_index] = get_the_ID();
+      } else {
+        $unique_post_position_number = get_field('position_number', get_the_ID());
+        if (isset($resorted_post_ids[$unique_post_position_number])) {
+          $unique_post_position_number .= $loop_index; // random order is better than losing data
+        }
+        $resorted_post_ids[$unique_post_position_number] = get_the_ID();
       }
-      $resorted_post_ids[$unique_post_position_number] = get_the_ID();
       $loop_index++;
     }
     wp_reset_query();
