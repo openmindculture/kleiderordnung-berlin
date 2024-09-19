@@ -7,19 +7,16 @@
  */
 ?>
 <?php
+  $is_presorted = is_plugin_active('post-types-order/post-types-order.php');
+  $orderby = $is_presorted ? 'menu_order' : null;
   $args = array(
     'post_type'      => 'story',
     'lang'           => pll_current_language(),
-    'posts_per_page' => -1
+    'posts_per_page' => -1,
+    'orderby'        => $orderby,
   );
   $the_query = new WP_Query( $args );
   $resorted_post_ids = array();
-  $is_presorted = is_plugin_active('post-types-order/post-types-order.php');
-  if ($is_presorted) {
-    echo '*** post_types_order plugin is active, ignore position_number ***';
-  } else {
-    echo '*** use position_number ***';
-  }
   if ( $the_query->have_posts() ) : ?>
 
   <section id="stories" class="stories target-offset">
