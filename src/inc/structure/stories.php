@@ -9,13 +9,13 @@
 <?php
   $is_presorted = is_plugin_active('post-types-order/post-types-order.php');
   $orderby = $is_presorted ? 'menu_order' : null;
-  $order = $is_presorted ? 'DESC' : 'ASC';
+  // $order = $is_presorted ? 'DESC' : 'ASC';
   $args = array(
     'post_type'      => 'story',
     'lang'           => pll_current_language(),
     'posts_per_page' => -1,
     'orderby'        => $orderby,
-    'order'          => $order,
+    'order'          => 'ASC',
   );
   $the_query = new WP_Query( $args );
   $resorted_post_ids = array();
