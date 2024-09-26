@@ -11,10 +11,12 @@
   <title><?php
     if (defined('KLEIDERORDNUNG_PAGE_TITLE') && !empty(KLEIDERORDNUNG_PAGE_TITLE)) {
       echo KLEIDERORDNUNG_PAGE_TITLE;
-      echo '-';
-      echo 'KleiderOrdnung Berlin';
+      if (!str_contains(KLEIDERORDNUNG_PAGE_TITLE,'Kleiderordnung')) {
+        echo ' – ';
+        echo 'Kleiderordnung Berlin';
+      }
     } else {
-      wp_title(' - ');
+      wp_title('–');
     } ?></title>
   <meta name=language content="<?php echo /** @var string */ pll_current_language() ?>">
   <link rel="canonical" <?php

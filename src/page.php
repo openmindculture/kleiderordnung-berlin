@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <?php
-define( 'KLEIDERORDNUNG_PAGE_TITLE', translate( 'News', 'kleiderordnung' ) );
+if (get_post_type() === 'post') {
+  define( 'KLEIDERORDNUNG_PAGE_TITLE', translate( 'News', 'kleiderordnung' ) );
+}
 include( KLEIDERORDNUNG_DIR . '/inc/structure/html-head.php');
 ?>
 <body <?php body_class(); ?> itemtype="https://schema.org/WebPage" itemscope>
