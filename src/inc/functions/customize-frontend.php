@@ -28,3 +28,5 @@ function kleiderordnung_add_custom_redirect_rule($post_rewrite) {
   $post_rewrite['en/news$'] = 'en/index.php?post_type=post';
   return $post_rewrite;
 }
+
+remove_filter('the_content', 'wpautop');

@@ -108,7 +108,7 @@ if ( $the_query->have_posts() ) : ?>
           <figure class="offers__offer__icon"></figure>
           <h3 class="offers__additional__articles__headline"><?php echo get_the_title($resorted_post_id) ?></h3>
           <p class="offers__offer__paragraph">
-            <?php echo get_the_content($resorted_post_id) ?>
+            <?php echo get_the_content($resorted_post_id); ?>
           </p>
           <div class="offers__offer__price offers__additional__articles__price">
             <?php echo get_field('offer_price', $resorted_post_id); ?>
