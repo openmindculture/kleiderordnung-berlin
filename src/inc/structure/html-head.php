@@ -99,8 +99,7 @@
   <meta property="og:url" content="https://kleiderordnung.berlin/">
   <meta property="og:site_name" content="">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/preview.png"
-  <meta name="theme-color" content="#f5f1ed">
+  <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/preview.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">

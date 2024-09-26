@@ -18,7 +18,7 @@
         <div class="footer__column__row footer__column__row--legal">
           <a class="footer__column__row__link footer__column__row__link--imprint" href="/<?php _e('impressum-url', 'kleiderordnung'); ?>/" tabindex="0"><?php _e( 'Impressum', 'kleiderordnung' ) ?></a>
           <a class="footer__column__row__link footer__column__row__link--privacy" href="/<?php _e('datenschutzerklaerung-url', 'kleiderordnung'); ?>/" tabindex="0"><?php _e( 'Datenschutz', 'kleiderordnung' ) ?></a>
-          <a class="footer__column__row__link footer__column__row__link--tos" href="/<?php _e('allgemeine-geschaeftsbedingungen-url', 'kleiderordnung'); ?>"/" title="<?php _e('Allgemeine Geschäftsbedingungen', 'kleiderordnung'); ?>" tabindex="0"><?php _e( 'AGB', 'kleiderordnung' ) ?></a>
+          <a class="footer__column__row__link footer__column__row__link--tos" href="/<?php _e('allgemeine-geschaeftsbedingungen-url', 'kleiderordnung'); ?>/" title="<?php _e('Allgemeine Geschäftsbedingungen', 'kleiderordnung'); ?>" tabindex="0"><?php _e( 'AGB', 'kleiderordnung' ) ?></a>
         </div>
         <div class="footer__column__row footer__column__row--ecofriendly">
           <a href="#footer__ecofriendly" class="footer__link--ecofriendly" id="footer__link--ecofriendly" tabindex="0" title="<?php _e( 'laut Messung von WebsiteCarbon und EcoGrader', 'kleiderordnung' ); echo ' '; _e( 'im September 2023', 'kleiderordnung' ); echo '. ' ; _e( 'Details der Messungen anzeigen', 'kleiderordnung' );  ?>"><?php _e( 'Umweltfreundlicher als', 'kleiderordnung' ) ?> 79% <?php _e( 'aller getesteten Websites', 'kleiderordnung' ) ?> <small>(0.11g CO₂e)</small>.</a>
@@ -83,7 +83,7 @@
           <?php _e( 'Mitglied bei', 'kleiderordnung' ) ?>
         </div>
         <div class="footer__partners">
-          <a href=https://www.sustainable-stylists.com/stylistin-tina-steinke/" target="_blank" rel="me noopener" tabindex="0">
+          <a href="https://www.sustainable-stylists.com/stylistin-tina-steinke/" target="_blank" rel="me noopener" tabindex="0">
             <img
               src="<?php echo get_template_directory_uri() ?>/img/logos/sustainable-stylists.svg" width="203" height="16"
               loading="lazy"
@@ -91,7 +91,7 @@
               class="footer__partners__image footer__partners__image--sustainable-stylists"
             >
           </a>
-          <a href="https://www.reflecta.network/changemaker/martina-steinke" target=_blank rel=noopener" tabindex="0">
+          <a href="https://www.reflecta.network/changemaker/martina-steinke" target="_blank" rel="noopener" tabindex="0">
             <img
               src="<?php echo get_template_directory_uri() ?>/img/logos/reflecta.png" width="127" height="61"
               srcset="<?php echo get_template_directory_uri() ?>/img/logos/reflecta.png 1x, <?php echo get_template_directory_uri() ?>/img/logos/reflecta@2x.png 2x"

@@ -72,8 +72,9 @@
             href="https://www.linkedin.com/in/martina-steinke-6810aa111/"
             target="_blank"
             rel="me noopener"
+            tabindex="0"
             title="<?php _e( 'Martina Steinke auf LinkedIn', 'kleiderordnung' ) ?>"
-          ><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--linkedin" tabindex="0">
+          ><figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--linkedin">
               <svg viewBox="0 0 44 44" fill="none" width="44" height="44">
                 <title>LinkedIn icon</title>
                 <rect x="0.200195" width="43.2" height="43.2" rx="21.6" fill="currentColor"/>
@@ -90,10 +91,10 @@
             href="https://www.pinterest.de/martinasteinke0050/"
             target="_blank"
             rel="me noopener"
+            tabindex="0"
             title="<?php _e( 'Tina Steinke auf Pinterest', 'kleiderordnung' ) ?>"
           ><figure
               class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--pinterest"
-              tabindex="0"
             >
               <svg viewBox="0 0 44 44" fill="none" width="44" height="44">
                 <title>Pinterest icon</title>
@@ -112,10 +113,10 @@
             href="<?php echo KLEIDERORDNUNG_CALENDY_URI ?>"
             target="_blank"
             rel="me noopener"
+            tabindex="0"
             title="<?php _e('Tina Steinke bei Calendly', 'kleiderordnung') ?>">
             <figure
               class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--calendly"
-              tabindex="0"
             >
               <img
                 src="<?php echo get_template_directory_uri() ?>/img/icons/calendar.png"
@@ -159,6 +160,7 @@
           loading="lazy"
           alt="QR-Code: Tina Steinke Contact"
           class="contact__scannable__image"
+        >
       </aside>
     </div>
 

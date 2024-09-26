@@ -9,7 +9,7 @@
 ?>
 <div class="socialmedia target-offset">
   <div class="socialmedia__links__wrapper">
-    <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung <?php _e( 'auf Instagram', 'kleiderordnung' ) ?>" class="socialmedia__link socialmedia__link--instagram"><figure class="socialmedia__icon socialmedia__icon--primary socialmedia__icon--primary--instagram" tabindex="0"></figure> <?php _e( 'Kleiderordnung auf instagram', 'kleiderordnung' ) ?></a>
+    <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener" title="@tina_steinke_kleiderordnung <?php _e( 'auf Instagram', 'kleiderordnung' ) ?>" class="socialmedia__link socialmedia__link--instagram" tabindex="0"><figure class="socialmedia__icon socialmedia__icon--primary socialmedia__icon--primary--instagram"></figure> <?php _e( 'Kleiderordnung auf instagram', 'kleiderordnung' ) ?></a>
   </div>
 
   <aside class="socialmedia__feed__section">

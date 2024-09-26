@@ -45,7 +45,6 @@
           alt="<?php _e( 'Portrait von Tina Steinke', 'kleiderordnung' ) ?>"
         >
       </div>
-      </div>
     </noscript>
   </div>
 
@@ -54,7 +53,6 @@
     <h2 class="intro__keytext__headline"><?php echo get_field('page_intro_headline', KLEIDERORDNUNG_FRONT_PAGE_ID) ?></h2>
     <div class="intro__keytext__paragraphs">
       <?php echo get_field('page_intro_text', KLEIDERORDNUNG_FRONT_PAGE_ID) ?>
-    </p>
   </div>
   <?php
   $kleiderordnung_currentPageId = KLEIDERORDNUNG_FRONT_PAGE_ID;
