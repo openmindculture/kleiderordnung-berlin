@@ -160,13 +160,11 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
   }
 }
 
-
-
 @media (prefers-reduced-motion) {
-  body.archive .decoration__container,
-  body.category .decoration__container,
-  body.search .decoration__container,
-  body.page.home .decoration__container {
+  body.archive .decoration__container.decoration__container,
+  body.category .decoration__container.decoration__container,
+  body.search .decoration__container.decoration__container,
+  body.page.home .decoration__container.decoration__container {
     transform: translateZ(0);
   }
 }
@@ -174,6 +172,6 @@ body.page.home .decoration__container { /* decoration-parallax-layer-background 
 /* iPhone <13 CSS workaround obsoleted by more stable JS, setting body.prefers-reduced-motion */
 
 /* stylelint-disable-next-line no-descending-specificity */
-body.prefers-reduced-motion .decoration__container {
+body.prefers-reduced-motion .decoration__container.decoration__container {
   transform: translateZ(0);
 }

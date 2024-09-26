@@ -53,6 +53,7 @@ export function kleiderordnung_activateIntroAnimation(config) {
         introAnimationMousetrap.addEventListener('mouseenter', function() {
           window.clearTimeout(window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr);
           if (
+            !window.kleiderordnung.config.prefersReducedMotion &&
             typeof window.kleiderordnung.state.introAnimation.play === 'function'
             && !window.kleiderordnung.state.isintroAnimationPlaying
           ) {

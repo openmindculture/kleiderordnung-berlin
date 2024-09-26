@@ -73,6 +73,8 @@ window.kleiderordnung = {
     menuOpenedClassName: 'navigation__menu-opened',  // .target for progressive enhancement of :target
     menuLinksSelector: '#primary-menu a[href]',      // links inside the menu
     menuWrapperSelector: '.navigation__list-wrapper',// div around the menu items
+    animationToggleSelector: '.animation-toggle',    // stop animation button ("Animation aus")
+    prefersReducedMotionClassName: 'prefers-reduced-motion',
     noGlobalThisClassName: 'no-globalthis',          // set if special intro animation fallback necessary
     /** @object IntersectionObserver options */
     observerOptions: {

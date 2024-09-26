@@ -40,4 +40,19 @@ export function kleiderordnung_enhanceNavigationMenu(config) {
             window.kleiderordnung.state.menuOpenButton.classList.remove(config.menuOpenedClassName);
         });
     }
+
+  var animationToggles = document.querySelectorAll(config.animationToggleSelector);
+  for (var t = 0; t < animationToggles.length; t++) {
+    animationToggles[t].addEventListener('click', function (event) {
+      window.kleiderordnung.config.prefersReducedTransparency = true;
+      window.kleiderordnung.config.prefersReducedMotion = true;
+      document.body.classList.add(config.prefersReducedMotionClassName);
+      if (window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr) {
+        window.clearTimeout(window.kleiderordnung.state.currentAnimationReplayTimeoutIdNr);
+      }
+      if (window.kleiderordnung.state.introAnimation) {
+        window.kleiderordnung.state.introAnimation.stop();
+      }
+    });
+  }
 }

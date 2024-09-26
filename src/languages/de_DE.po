@@ -10,7 +10,7 @@ msgid ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: kleiderordnung\n"
 "POT-Creation-Date: 2023-07-18 23:02+0200\n"
-"PO-Revision-Date: 2024-04-08 09:25+0200\n"
+"PO-Revision-Date: 2024-09-26 16:03+0200\n"
 "Last-Translator: @openmindculture\n"
 "MIME-Version: 1.0\n"
 msgstr ""
@@ -384,3 +384,7 @@ msgstr "über"
 
 msgid "Featureliste kürzen und Mehr-lesen Button anzeigen"
 msgstr "Featureliste kürzen und Mehr-lesen Button anzeigen"
+
+#: navigation.php
+msgid "Animation aus"
+msgstr "Animation aus"
