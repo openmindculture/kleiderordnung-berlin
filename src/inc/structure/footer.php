@@ -123,7 +123,7 @@
         </a>
       </div>
       <div class="footer__ecofriendly__detail--ecograder">
-        <a href="https://ecograder.com/report/S5dl1sSUy5YKbRzT7FsXcJIl" target="_blank" title="In September 2023, this page scored better than 79% of all URLs crawled by Ecograder.">Ecograder Score: <b>93</b>/100 <small>(0.16 g CO₂e)</small></a>
+        <a href="https://ecograder.com/report/uOpeUztPIAradx17IqdJMLOS" target="_blank" title="In September 2024, this page scored better than 77% of all URLs crawled by Ecograder.">Ecograder Score: <b>87</b>/100 <small>(0.16 g CO₂e)</small></a>
       </div>
     </aside>
   </div>
