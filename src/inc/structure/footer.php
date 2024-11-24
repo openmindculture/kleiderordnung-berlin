@@ -140,7 +140,7 @@
       "sameAs" : [
         "https://kleiderordnung-berlin.de/",
         "https://www.instagram.com/tina_steinke_kleiderordnung/",
-        "https://www.linkedin.com/in/martina-steinke-6810aa111/",
+        "https://www.linkedin.com/in/tina-steinke-kleiderordnung/",
         "https://www.pinterest.de/martinasteinke0050/",
         "https://www.reflecta.network/changemaker/martina-steinke"
       ]

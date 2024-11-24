@@ -69,7 +69,7 @@
           </a>
           <a
             class="socialmedia__link"
-            href="https://www.linkedin.com/in/martina-steinke-6810aa111/"
+            href="https://www.linkedin.com/in/tina-steinke-kleiderordnung/"
             target="_blank"
             rel="me noopener"
             tabindex="0"
@@ -135,8 +135,8 @@
             </a>
           </div>
           <div class="socialmedia__link--printable">
-            <a href="https://www.linkedin.com/in/martina-steinke-6810aa111/" target="_blank" rel="noopener">
-              https://www.linkedin.com/in/martina-steinke-6810aa111
+            <a href="https://www.linkedin.com/in/tina-steinke-kleiderordnung/" target="_blank" rel="noopener">
+              https://www.linkedin.com/in/tina-steinke-kleiderordnung/
             </a>
           </div>
           <div class="socialmedia__link--printable">
