@@ -29,4 +29,14 @@ function kleiderordnung_add_custom_redirect_rule($post_rewrite) {
   return $post_rewrite;
 }
 
-remove_filter('the_content', 'wpautop');
+function kleiderordnung_remove_autop_by_posttype( $content )
+{
+  # keep autop behavior for news posts to prevent unintended concatenation
+  if (get_post_type() != 'post') {
+    remove_filter('the_content', 'wpautop');
+  }
+  return $content;
+}
+
+add_filter( 'the_content', 'kleiderordnung_remove_autop_by_posttype', 0 );
+
