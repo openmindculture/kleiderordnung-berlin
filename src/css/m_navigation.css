@@ -191,6 +191,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: max-content;
   }
 
   .navigation__list li.menu-item-language ul li {
