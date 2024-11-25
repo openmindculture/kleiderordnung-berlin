@@ -165,6 +165,10 @@ a.news__post__link:focus {
   font-style: normal;
 }
 
+.news__post__text ul {
+  list-style-position: inside;
+}
+
 .news__footer {
   display: block;
   text-align: right;
