@@ -132,6 +132,10 @@
   text-align: left;
 }
 
+.contact__vcard {
+  max-width: 60%;
+}
+
 .contact__vcard__address {
   margin-bottom: 1.5rem;
   padding-top: 1rem;
@@ -152,7 +156,14 @@
   margin-bottom: 1rem;
 }
 
+.contact__vcard .telephone {
+  white-space: nowrap;
+}
+
 @media (min-width: 768px) {
+  .contact__vcard {
+    max-width: unset;
+  }
   .contact__calltoactiontext--fieldset p:first-child {
     font-size: var(--font-size-20);
     margin-bottom: 0;
