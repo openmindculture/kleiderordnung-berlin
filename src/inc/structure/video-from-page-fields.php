@@ -16,23 +16,31 @@ if (!$kleiderordnung_currentPageId || empty($kleiderordnung_currentPageId)) {
  *
  * @param string $fieldKey
  * @param int $pageId
- *
- * @return String[]
  */
 function kleiderordnung_getMediaMeta($fieldKey, $pageId) {
   $currentWidth = '';
   $currentHeight = '';
+  $currentLength = '';
+  $currentCreatedIsoTimestamp = '';
   $currentUrl = '';
+  $currentTitle = '';
+  $currentCaption = '';
   $currentMedia = get_field($fieldKey, $pageId);
   if ($currentMedia) {
     $currentMediaId = $currentMedia['ID'];
     if ($currentMediaId) {
       $currentUrl = wp_get_attachment_url($currentMediaId);
+      $currentTitle = get_the_title($currentMediaId);
+      $currentCaption = wp_get_attachment_caption($currentMediaId);
+      $currentCreatedIsoTimestamp = get_the_time('c', $currentMediaId);
       $currentMediaMetadata = wp_get_attachment_metadata($currentMediaId);
       if ($currentMediaMetadata) {
         if (array_key_exists('width', $currentMediaMetadata) && array_key_exists('height', $currentMediaMetadata)) {
           $currentWidth = $currentMediaMetadata['width'];
           $currentHeight = $currentMediaMetadata['height'];
+        }
+        if (array_key_exists('length_formatted', $currentMediaMetadata)) {
+          $currentLength = $currentMediaMetadata['length_formatted'];
         }
       }
     }
@@ -40,8 +48,37 @@ function kleiderordnung_getMediaMeta($fieldKey, $pageId) {
   return array(
     'width' => $currentWidth,
     'height' => $currentHeight,
+    'length' => $currentLength,
+    'createdIsoTimestamp' => $currentCreatedIsoTimestamp,
+    'title' => $currentTitle,
+    'caption' => $currentCaption,
     'url' => $currentUrl,
   );
+}
+
+/**
+ * reformat metadata
+ * @param string $length
+ * @return string
+ */
+function kleiderordnung_formatLengthToDuration($length) {
+  $duration = 'PT';
+  $lengthParts = explode(':', $length);
+  $durationSeconds = array_pop($lengthParts);
+  $durationMinutes = array_pop($lengthParts);
+  $durationHours = array_pop($lengthParts);
+  if (!empty($durationHours)) {
+    $duration.=$durationHours.'H';
+  }
+  if (!empty($durationMinutes)) {
+    $duration.=$durationMinutes.'M';
+  } else {
+    $duration.= '0M';
+  }
+  if (!empty($durationSeconds)) {
+    $duration.=$durationSeconds.'S';
+  }
+  return $duration;
 }
 
 $videoMetaWebm = kleiderordnung_getMediaMeta('page_intro_video_webm', $kleiderordnung_currentPageId);
@@ -145,12 +182,52 @@ if ($kleiderordnung_currentPageHasVideoWebm || $kleiderordnung_currentPageHasVid
     <?php if ($kleiderordnung_currentPageHasVideoWebm): ?>
       <a href="<?php echo esc_html($videoMetaWebm['url']) ?>">webm</a>
     <?php endif ?>
-    <?php if ($kleiderordnung_currentPageHasVideoWebm || $kleiderordnung_currentPageHasVideoMp4): ?>
+    <?php if ($kleiderordnung_currentPageHasVideoWebm && $kleiderordnung_currentPageHasVideoMp4): ?>
       <?php _e( 'or', 'kleiderordnung' ) ?>
     <?php endif ?>
     <?php if ($kleiderordnung_currentPageHasVideoMp4): ?>
       <a href="<?php echo esc_html($videoMetaMp4['url']) ?>">mp4</a>
     <?php endif; ?>
   </video>
+
+  <?php
+    $schemaDuration = '';
+    $schemaCreated = '';
+    $schemaTitle = '';
+    $schemaCaption = '';
+    $schemaUrl = '';
+    if ($kleiderordnung_currentPageHasVideoWebm) {
+      $schemaDuration = kleiderordnung_formatLengthToDuration($videoMetaWebm['length']);
+      $schemaCreated = $videoMetaWebm['createdIsoTimestamp'];
+      $schemaTitle = $videoMetaWebm['title'];
+      $schemaCaption = $videoMetaWebm['caption'];
+      $schemaUrl = $videoMetaWebm['url'];
+    } elseif ($kleiderordnung_currentPageHasVideoMp4) {
+      $schemaDuration = kleiderordnung_formatLengthToDuration($videoMetaMp4['length']);
+      $schemaCreated = $videoMetaMp4['createdIsoTimestamp'];
+      $schemaTitle = $videoMetaMp4['title'];
+      $schemaCaption = $videoMetaMp4['caption'];
+      $schemaUrl = $videoMetaMp4['url'];
+    }
+  ?>
+
+  <?php if ($kleiderordnung_currentPageHasVideoWebm || $kleiderordnung_currentPageHasVideoMp4): ?>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "<?php echo esc_html($schemaTitle) ?>",
+        "description": "<?php echo esc_html($schemaCaption) ?>",
+        "thumbnailUrl": "<?php echo $posterImageMeta['url'] ?>",
+        "uploadDate": "<?php echo esc_html($schemaCreated) ?>",
+        "duration": "<?php echo esc_html($schemaDuration) ?>",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Kleiderordnung Berlin"
+        },
+        "contentUrl": "<?php echo esc_html($schemaUrl) ?>"
+      }
+    </script>
+  <?php endif ?>
 </section>
 <?php endif ?>
