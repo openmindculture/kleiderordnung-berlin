@@ -7,18 +7,18 @@ import {kleiderordnung_activateLazyLoadingWebfonts} from './inc/activateLazyLoad
 import {kleiderordnung_carouselSetup} from './inc/carouselSetup';
 import {kleiderordnung_enhanceDecorationEffect} from './inc/enhanceDecorationEffect.js';
 import {kleiderordnung_enhanceNavigationMenu} from './inc/enhanceNavigationMenu';
+import {kleiderordnung_growWidthToPreventOverflow} from "./inc/growWidthToPreventOverflow.js";
+import {kleiderordnung_handleFooterDetailLink} from './inc/handleFooterDetailLink';
 import {kleiderordnung_initializeReadMoreSections} from "./inc/initializeReadMoreSections.js";
 import {
     kleiderordnung_intersectionCallback,
     kleiderordnung_handleElementsActivatedOnVisibilityAndConsent
 } from "./inc/handleElementsActivatedOnVisibilityAndConsent";
-import {kleiderordnung_handleFooterDetailLink} from './inc/handleFooterDetailLink';
 import {kleiderordnung_keepAnchorTargetInLanguageSwitcher} from './inc/keepAnchorTargetInLanguageSwitcher';
 import {kleiderordnung_observeStickyHeader} from './inc/observeStickyHeader';
 import {kleiderordnung_observeWaypointAnchors} from './inc/observeWaypointAnchors';
 import {kleiderordnung_showAdminLinkIfLoggedIn} from './inc/showAdminLinkIfLoggedIn';
 import {kleiderordnung_updateContactFormTopicOnOfferContactClick} from './inc/updateContactFormTopicOnOfferContactClick.js';
-import {kleiderordnung_growWidthToPreventOverflow} from "./inc/growWidthToPreventOverflow.js";
 
 /* global document, window */
 window.kleiderordnung = {

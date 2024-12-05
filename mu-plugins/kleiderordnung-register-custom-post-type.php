@@ -419,10 +419,10 @@ function kleiderordnung_register_custom_page_fields() {
         'label' => 'Englische Captions Datei für Hörgeschädigte (.vtt aus Mediathek auswählen/hochladen)',
       ),
       array(
-        'key'   => 'page_intro_video_autoplay',
-        'name'  => 'page_intro_video_autoplay',
+        'key'   => 'page_intro_video_loop',
+        'name'  => 'page_intro_video_loop',
         'type'  => 'true_false',
-        'label' => 'Video automatisch starten? (nicht barrierefrei)',
+        'label' => 'Video am Ende automatisch wiederholen?',
         'default_value' => 0,
         'ui' => 1,
         'ui_on_text' => 'ja',

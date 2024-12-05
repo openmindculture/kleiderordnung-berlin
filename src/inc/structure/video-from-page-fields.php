@@ -56,6 +56,7 @@ $kleiderordnung_currentPageHasVideoWebm = !empty($videoMetaWebm['url']);
 $kleiderordnung_currentPageHasVideoMp4 = !empty($videoMetaMp4['url']);
 $kleiderordnung_currentPageHasVideoPosterImage = !empty($posterImageMeta['url']);
 $kleiderordnung_currentPageVideoAutoplay = !empty(get_field('page_intro_video_autoplay', $kleiderordnung_currentPageId));
+$kleiderordnung_currentPageVideoLoop = !empty(get_field('page_intro_video_loop', $kleiderordnung_currentPageId));
 $kleiderordnung_showDefaultSubtitlesDe = false;
 $kleiderordnung_showDefaultSubtitlesEn = false;
 if (!empty(get_field('page_intro_video_showsubtitles', $kleiderordnung_currentPageId))) {
@@ -70,12 +71,10 @@ if ($kleiderordnung_currentPageHasVideoWebm || $kleiderordnung_currentPageHasVid
 <section class="video__wrapper">
   <video
     controls
+    preload="metadata"
 
-    <?php if ($kleiderordnung_currentPageVideoAutoplay): ?>
-      autoplay
-      preload="auto"
-    <?php else: ?>
-      preload="metadata"
+    <?php if ($kleiderordnung_currentPageVideoLoop): ?>
+      loop
     <?php endif ?>
 
     class="video__player"
