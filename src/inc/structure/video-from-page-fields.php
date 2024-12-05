@@ -47,18 +47,37 @@ function kleiderordnung_getMediaMeta($fieldKey, $pageId) {
 $videoMetaWebm = kleiderordnung_getMediaMeta('page_intro_video_webm', $kleiderordnung_currentPageId);
 $videoMetaMp4 = kleiderordnung_getMediaMeta('page_intro_video_mp4', $kleiderordnung_currentPageId);
 $posterImageMeta = kleiderordnung_getMediaMeta('page_intro_video_poster_image', $kleiderordnung_currentPageId);
-$defaultSubtitlesMeta = kleiderordnung_getMediaMeta('page_intro_video_subtitles_file', $kleiderordnung_currentPageId);
+$subtitlesMetaDe = kleiderordnung_getMediaMeta('page_intro_video_subtitles_file_de', $kleiderordnung_currentPageId);
+$subtitlesMetaEn = kleiderordnung_getMediaMeta('page_intro_video_subtitles_file_en', $kleiderordnung_currentPageId);
+$captionsMetaDe = kleiderordnung_getMediaMeta('page_intro_video_captions_file_de', $kleiderordnung_currentPageId);
+$captionsMetaEn = kleiderordnung_getMediaMeta('page_intro_video_captions_file_en', $kleiderordnung_currentPageId);
 
 $kleiderordnung_currentPageHasVideoWebm = !empty($videoMetaWebm['url']);
 $kleiderordnung_currentPageHasVideoMp4 = !empty($videoMetaMp4['url']);
 $kleiderordnung_currentPageHasVideoPosterImage = !empty($posterImageMeta['url']);
-$kleiderordnung_currentPageHasVideoSubtitles = !empty($defaultSubtitlesMeta['url']);
+$kleiderordnung_currentPageVideoAutoplay = !empty(get_field('page_intro_video_autoplay', $kleiderordnung_currentPageId));
+$kleiderordnung_showDefaultSubtitlesDe = false;
+$kleiderordnung_showDefaultSubtitlesEn = false;
+if (!empty(get_field('page_intro_video_showsubtitles', $kleiderordnung_currentPageId))) {
+  if (pll_current_language() == 'de') {
+    $kleiderordnung_showDefaultSubtitlesDe = true;
+  } elseif (pll_current_language() == 'en') {
+    $kleiderordnung_showDefaultSubtitlesEn = true;
+  }
+}
 
 if ($kleiderordnung_currentPageHasVideoWebm || $kleiderordnung_currentPageHasVideoMp4) : ?>
 <section class="video__wrapper">
   <video
     controls
-    preload="metadata"
+
+    <?php if ($kleiderordnung_currentPageVideoAutoplay): ?>
+      autoplay
+      preload="auto"
+    <?php else: ?>
+      preload="metadata"
+    <?php endif ?>
+
     class="video__player"
       <?php if (!empty($videoMetaWebm['width']) && !empty($videoMetaWebm['height'])) : ?>
           width="<?php echo esc_html($videoMetaWebm['width']) ?>"
@@ -80,13 +99,45 @@ if ($kleiderordnung_currentPageHasVideoWebm || $kleiderordnung_currentPageHasVid
       <source src="<?php echo esc_html($videoMetaMp4['url']) ?>" type="video/mp4" />
     <?php endif ?>
 
-    <?php if ($kleiderordnung_currentPageHasVideoSubtitles): ?>
+    <?php if (!empty($subtitlesMetaEn['url'])): ?>
       <track
-        label="English"
+        label="<?php _e( 'English subtitles', 'kleiderordnung' ) ?> "
         kind="subtitles"
         srclang="en"
-        src="<?php echo esc_html($defaultSubtitlesMeta['url']) ?>"
-        default
+        src="<?php echo esc_html($subtitlesMetaEn['url']) ?>"
+        <?php if ($kleiderordnung_showDefaultSubtitlesEn): ?>
+          default
+        <?php endif ?>
+      />
+    <?php endif ?>
+
+    <?php if (!empty($subtitlesMetaDe['url'])): ?>
+      <track
+        label="<?php _e( 'Deutsche Untertitel', 'kleiderordnung' ) ?> "
+        kind="subtitles"
+        srclang="de"
+        src="<?php echo esc_html($subtitlesMetaDe['url']) ?>"
+        <?php if ($kleiderordnung_showDefaultSubtitlesDe): ?>
+          default
+        <?php endif ?>
+      />
+    <?php endif ?>
+
+    <?php if (!empty($captionsMetaEn['url'])): ?>
+      <track
+        label="<?php _e( 'English captions', 'kleiderordnung' ) ?> "
+        kind="captions"
+        srclang="en"
+        src="<?php echo esc_html($captionsMetaEn['url']) ?>"
+      />
+    <?php endif ?>
+
+    <?php if (!empty($captionsMetaDe['url'])): ?>
+      <track
+        label="<?php _e( 'Deutsche Captions', 'kleiderordnung' ) ?> "
+        kind="captions"
+        srclang="de"
+        src="<?php echo esc_html($captionsMetaDe['url']) ?>"
       />
     <?php endif ?>
 

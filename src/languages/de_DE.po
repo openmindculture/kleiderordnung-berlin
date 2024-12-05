@@ -388,3 +388,7 @@ msgstr "Featureliste kürzen und Mehr-lesen Button anzeigen"
 #: navigation.php
 msgid "Animation aus"
 msgstr "Animation aus"
+
+#: mu-plugins/kleiderordnung-register-custom-post-type.php
+msgid ""
+msgstr ""
