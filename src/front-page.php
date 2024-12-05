@@ -7,9 +7,11 @@
     // include( KLEIDERORDNUNG_DIR . '/inc/structure/contact-calendar-popup.php');
     $kleiderordnung_option_page_on_front_id = /** @var int */ get_option('page_on_front');
     define('KLEIDERORDNUNG_FRONT_PAGE_ID', /** @var int */ pll_get_post( $kleiderordnung_option_page_on_front_id ));
+    $kleiderordnung_currentPageId = KLEIDERORDNUNG_FRONT_PAGE_ID;
     include( KLEIDERORDNUNG_DIR . '/inc/structure/header.php');
     echo '<main id="wp--skip-link--target">';
     include( KLEIDERORDNUNG_DIR . '/inc/structure/intro.php');
+    include( KLEIDERORDNUNG_DIR . '/inc/structure/video-from-page-fields.php');
     include( KLEIDERORDNUNG_DIR . '/inc/structure/offers.php');
     include( KLEIDERORDNUNG_DIR . '/inc/structure/mission.php');
     include( KLEIDERORDNUNG_DIR . '/inc/structure/calltoaction.php');

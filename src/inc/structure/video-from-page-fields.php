@@ -55,10 +55,11 @@ $kleiderordnung_currentPageHasVideoPosterImage = !empty($posterImageMeta['url'])
 $kleiderordnung_currentPageHasVideoSubtitles = !empty($defaultSubtitlesMeta['url']);
 
 if ($kleiderordnung_currentPageHasVideoWebm || $kleiderordnung_currentPageHasVideoMp4) : ?>
+<section class="video__wrapper">
   <video
     controls
     preload="metadata"
-    class="intro__video"
+    class="video__player"
       <?php if (!empty($videoMetaWebm['width']) && !empty($videoMetaWebm['height'])) : ?>
           width="<?php echo esc_html($videoMetaWebm['width']) ?>"
           height="<?php echo esc_html($videoMetaWebm['height']) ?>"
@@ -101,4 +102,5 @@ if ($kleiderordnung_currentPageHasVideoWebm || $kleiderordnung_currentPageHasVid
       <a href="<?php echo esc_html($videoMetaMp4['url']) ?>">mp4</a>
     <?php endif; ?>
   </video>
+</section>
 <?php endif ?>
