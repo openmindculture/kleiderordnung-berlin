@@ -132,7 +132,7 @@ Converting mp4 to webm on the command-line using ffmpeg:
 
 Videos should only play automatically if necessary and if users did not state they prefer reduced motion or saving data. Videos that started automatically must not repeat more than 3 times. Videos must always be stoppable. Autoplay and preloading should not start unless the video approaches the visible region (lazy loading).
 
-To minimize unnecessary traffic, but allow for early optimization, the browser is advised to preload metadata initially. To ensure accessibility (WCAG criteria), auto-started looping videos will automatically be paused after they have looped 3 times.
+To minimize unnecessary traffic, but allow for early optimization, the browser is advised to preload metadata initially.
 
 ![screenshot of a captioned video example and the subtitle file upload section in the admin settings](doc/anleitung-video-untertitel.png)
 
@@ -140,6 +140,7 @@ We can provide subtitles (for hearing users, containing transcriptions of the or
 
 Further reading:
 
+- https://www.w3.org/WAI/media/av/captions/
 - https://www.smashingmagazine.com/2021/02/optimizing-video-size-quality/
 - https://developer.mozilla.org/en-US/docs/Web/Media/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
 - https://imagekit.io/blog/lazy-loading-html-videos/
