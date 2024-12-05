@@ -64,7 +64,7 @@ var kleiderordnung_allowAndActivateExternalFeed = function(buttonElement) {
  * */
 var kleiderordnung_activateExternalFeed = function(
   feedContainerElement,
-  onLoadCallback,
+  onLoadCallback
 ) {
   if (!feedContainerElement) { return; }
   var styleFileUrl = feedContainerElement.dataset[window.kleiderordnung.config.feedStyleUrlDataKey];

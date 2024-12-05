@@ -5,7 +5,8 @@
   "ignorePatterns": [
     ".postcss.config.js",
     "node_modules/**/*.js",
-    "**/lottie-player.js"
+    "**/lottie-player.js",
+    "**/calendly-widget-min.js"
   ],
   "parserOptions": {
     "ecmaVersion": 6,
