@@ -104,6 +104,48 @@ Clear cache:
 Colors to distinguish between local host, preview and production servers:
 ![Screenshot: Server unterscheiden](doc/anleitung-farbcode-umgebungen.png)
 
+## Show an Intro Video
+
+- Upload video files (mp4, webm) to media library and select them in the home page options
+- Upload subtitle text files
+- Upload a preview image
+- repeat for every language version
+
+![Screenshot WordPress admin dashboard and video upload](doc/anleitung-video-upload.png)
+
+### Video Formats
+
+- pixel size geometry should be between
+  - x (minimum)
+  - x (maximum)
+- provide an MP4 and a WEBM version
+
+- Prefer the lowest data rate that provides the desired quality.
+
+- Video files must support partial loading (streaming).
+
+Converting mp4 to webm on the command-line using ffmpeg:
+
+- `ffmpeg -i original.mp4 -c:v libvpx -c:a libvorbis optimized.webm`
+
+### Video Performance Accessibility Settings and Subtitles
+
+Videos should only play automatically if necessary and if users did not state they prefer reduced motion or saving data. Videos that started automatically must not repeat more than 3 times. Videos must always be stoppable. Autoplay and preloading should not start unless the video approaches the visible region (lazy loading).
+
+To minimize unnecessary traffic, but allow for early optimization, the browser is advised to preload metadata initially.
+
+![screenshot of a captioned video example and the subtitle file upload section in the admin settings](doc/anleitung-video-untertitel.png)
+
+We can provide subtitles (for hearing users, containing transcriptions of the original text or its translations) and captions (including descriptions of sounds and content) by uploading `.vtt` files.
+
+Further reading:
+
+- https://www.w3.org/WAI/media/av/captions/
+- https://www.smashingmagazine.com/2021/02/optimizing-video-size-quality/
+- https://developer.mozilla.org/en-US/docs/Web/Media/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
+- https://imagekit.io/blog/lazy-loading-html-videos/
+- https://www.speechpad.com/captions/webvtt
+
 ## Data Flow, Backups, Updates
 
 Design and behavior is controlled by the theme and plugins which can be deployed to production after testing. Content (data) is edited on the production server and synchronized back to test and development systems.

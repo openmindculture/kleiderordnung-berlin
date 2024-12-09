@@ -1,0 +1,37 @@
+.video__wrapper {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.video__player {
+  width: 62rem;
+  max-width: calc(100% - 2.5rem);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+/* Chrome */
+.video__player::cue {
+  background-color: var(--color-inverted-background) !important;
+  color: var(--color-inverted-foreground) !important;
+  font-family: var(--font-family-default);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Safari */
+.video__player::-webkit-media-text-track-display-backdrop,
+.video__player::-webkit-media-text-track-background {
+  background-color: var(--color-inverted-background) !important;
+}
+
+.video__player::-webkit-media-text-track-display {
+  color: var(--color-inverted-foreground) !important;
+  font-family: var(--font-family-default);
+}
+
+.video__player::-webkit-media-text-track-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

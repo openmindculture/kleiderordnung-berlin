@@ -4,5 +4,6 @@ vendor/**/*.css
 src/css/tiny-slider.css
 src/css/juicer.io/**/*.css
 src/css/juicer-embed-min.css
+src/css/calendly-widget-min.css
 node_modules/**/*.*
 dist/**/*.*

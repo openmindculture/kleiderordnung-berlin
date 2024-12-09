@@ -2,11 +2,11 @@
 /**
  * @package KleiderOrdnung
  * @author openmindculture
- * @version 4.0.0
+ * @version 4.4.0
  *
  * @wordpress-plugin
- * Version: 4.0.0
- * Tested up to: 6.6.2
+ * Version: 4.4.0
+ * Tested up to: 6.7
  * Plugin Name: Kleiderordnung Register Custom Post Types
  * Text Domain: kleiderordnung-register-custom-post-types
  * Author: openmindculture
@@ -369,33 +369,76 @@ function kleiderordnung_register_custom_page_fields() {
       array(
         'key'   => 'page_intro_video_webm',
         'name'  => 'page_intro_video_webm',
-        'type'  => 'image',
+        'type'  => 'file',
         'label' => 'Video: WEBM-Datei aus Mediathek auswählen/hochladen ("Bild hinzufügen")',
       ),
       array(
-        'key'   => 'page_intro_video_url_mp4',
-        'name'  => 'page_intro_video_url_mp4',
-        'type'  => 'image',
+        'key'   => 'page_intro_video_mp4',
+        'name'  => 'page_intro_video_mp4',
+        'type'  => 'file',
         'label' => 'Video: MP4-Datei aus Mediathek auswählen/hochladen ("Bild hinzufügen")',
       ),
       array(
-        'key'   => 'page_intro_video_poster_image_url',
-        'name'  => 'page_intro_video_poster_image_url',
+        'key'   => 'page_intro_video_poster_image',
+        'name'  => 'page_intro_video_poster_image',
         'type'  => 'image',
         'label' => 'Intro Video Standbild (aus Mediathek auswählen/hochladen)',
-        ),
       ),
-      'location' => array(
+      array(
+        'key'   => 'page_intro_video_subtitles_file_de',
+        'name'  => 'page_intro_video_subtitles_file_de',
+        'type'  => 'file',
+        'label' => 'Deutsche Untertiteldatei (.vtt aus Mediathek auswählen/hochladen)',
+      ),
+      array(
+        'key'   => 'page_intro_video_subtitles_file_en',
+        'name'  => 'page_intro_video_subtitles_file_en',
+        'type'  => 'file',
+        'label' => 'Englische Untertiteldatei (.vtt aus Mediathek auswählen/hochladen)',
+      ),
+      array(
+        'key'   => 'page_intro_video_showsubtitles',
+        'name'  => 'page_intro_video_showsubtitles',
+        'type'  => 'true_false',
+        'label' => 'Untertitel in aktueller Sprache standardmäßig einblenden?',
+        'default_value' => 0,
+        'ui' => 1,
+        'ui_on_text' => 'ja',
+        'ui_off_text' => 'nein',
+      ),
+      array(
+        'key'   => 'page_intro_video_captions_file_de',
+        'name'  => 'page_intro_video_captions_file_de',
+        'type'  => 'file',
+        'label' => 'Deutsche Captions Datei für Hörgeschädigte (.vtt aus Mediathek auswählen/hochladen)',
+      ),
+      array(
+        'key'   => 'page_intro_video_captions_file_en',
+        'name'  => 'page_intro_video_captions_file_en',
+        'type'  => 'file',
+        'label' => 'Englische Captions Datei für Hörgeschädigte (.vtt aus Mediathek auswählen/hochladen)',
+      ),
+      array(
+        'key'   => 'page_intro_video_loop',
+        'name'  => 'page_intro_video_loop',
+        'type'  => 'true_false',
+        'label' => 'Video am Ende automatisch wiederholen?',
+        'default_value' => 0,
+        'ui' => 1,
+        'ui_on_text' => 'ja',
+        'ui_off_text' => 'nein',
+      ),
+    ),
+    'location' => array(
+      array(
         array(
-          array(
-            'param'    => 'post_type',
-            'operator' => '==',
-            'value'    => 'page',
-          ),
+          'param'    => 'post_type',
+          'operator' => '==',
+          'value'    => 'page',
         ),
       ),
     ),
-  );
+  ));
 }
 
 add_action( 'init', 'kleiderordnung_register_post_type_story' );
