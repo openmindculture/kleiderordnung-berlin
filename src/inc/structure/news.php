@@ -18,6 +18,15 @@ $the_query = new WP_Query( $args ); ?>
   <h2 class="news__headline"><?php _e( 'News', 'kleiderordnung' ) ?></h2>
   <?php else : ?>
     <h1 class="news__headline"><?php _e( 'News', 'kleiderordnung' ) ?></h1>
+    <div class="news__subline">
+      <a
+        class="news__link news__link--more"
+        href="https://kleiderordnung.substack.com/"
+        target="_blank"
+        tabindex="0"
+        title="<?php _e( 'Susbstack-Newsletter (neues Fenster)', 'kleiderordnung' ) ?>"
+      ><?php _e( 'Newsletter abonnieren', 'kleiderordnung' ) ?></a>
+    </div>
   <?php endif ?>
   <div class="news__wrapper">
   <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

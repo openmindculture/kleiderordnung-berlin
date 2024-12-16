@@ -15,6 +15,11 @@
   text-align: left;
 }
 
+.news__subline:not(:empty) {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
 .news__wrapper {
   display: flex;
   flex-wrap: wrap;
