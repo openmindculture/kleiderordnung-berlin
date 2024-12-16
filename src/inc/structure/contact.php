@@ -110,6 +110,31 @@
           </a>
           <a
             class="socialmedia__link"
+            href="https://kleiderordnung.substack.com/"
+            target="_blank"
+            rel="me noopener"
+            tabindex="0"
+            title="<?php _e('Substack Newsletter', 'kleiderordnung') ?>">
+            <figure class="socialmedia__icon socialmedia__icon--inverted socialmedia__icon--inverted--substack">
+              <svg viewBox="0 0 44 44" fill="non" width="44" height="44">
+                <title>Substack icon</title>
+                <rect
+                  x="0.40039101"
+                  y="0"
+                  width="43.200001"
+                  height="43.200001"
+                  rx="21.6"
+                  fill="currentColor"
+                />
+                <path
+                  fill="#0014d1"
+                  d="M 10.845745,8.3990815 H 33.941357 V 11.636798 H 10.845745 Z m 0,11.8098495 H 33.941357 V 34.766795 L 22.39118,28.288528 10.845745,34.766795 Z m 0,-5.904951 h 23.095612 v 3.237716 H 10.845745 Z"
+                />
+              </svg>
+            </figure>
+          </a>
+          <a
+            class="socialmedia__link"
             href="<?php echo KLEIDERORDNUNG_CALENDY_URI ?>"
             target="_blank"
             rel="me noopener"
@@ -142,6 +167,11 @@
           <div class="socialmedia__link--printable">
             <a href="https://www.pinterest.de/martinasteinke0050/" target="_blank" rel="noopener">
               https://www.pinterest.de/martinasteinke0050
+            </a>
+          </div>
+          <div class="socialmedia__link--printable">
+            <a href="https://kleiderordnung.substack.com/" target="_blank" rel="noopener">
+              https://kleiderordnung.substack.com/
             </a>
           </div>
           <div class="socialmedia__link--printable">

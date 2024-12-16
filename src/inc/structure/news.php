@@ -52,12 +52,19 @@ $the_query = new WP_Query( $args ); ?>
   <?php if ((isset($isNewsTeaser) && $isNewsTeaser)) : ?>
     <div class="news__footer">
       <a class="news__link news__link--more" href="<?php
-        echo pll_home_url('de');
-        if (!empty(pll_current_language('slug')) && pll_current_language('slug') !== pll_default_language('slug')) {
-          echo '' . pll_current_language('slug') . '/';
-        }
-        echo 'news';
+      echo pll_home_url('de');
+      if (!empty(pll_current_language('slug')) && pll_current_language('slug') !== pll_default_language('slug')) {
+        echo '' . pll_current_language('slug') . '/';
+      }
+      echo 'news';
       ?>" tabindex="0"><?php _e( 'alle Neuigkeiten', 'kleiderordnung' ) ?></a>
+      <a
+        class="news__link news__link--more"
+        href="https://kleiderordnung.substack.com/"
+        target="_blank"
+        tabindex="0"
+        title="<?php _e( 'Susbstack-Newsletter (neues Fenster)', 'kleiderordnung' ) ?>"
+      ><?php _e( 'Newsletter abonnieren', 'kleiderordnung' ) ?></a>
     </div>
   <?php endif; ?>
 

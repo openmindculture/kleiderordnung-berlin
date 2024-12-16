@@ -170,9 +170,18 @@ a.news__post__link:focus {
 }
 
 .news__footer {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
   text-align: right;
   margin-top: 2.8125rem;
+}
+
+@media (min-width: 768px) {
+  .news__footer {
+    gap: 2rem;
+  }
 }
 
 /* distinct page with one singular news entry */
