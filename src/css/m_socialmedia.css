@@ -266,7 +266,6 @@ body.no-js .socialmedia__feed__consent--juicer {
 
   .j-image img {
     width: 100% !important;
-    height: auto !important;
   }
 
   .socialmedia__feed__embed__table {
@@ -354,4 +353,11 @@ body.no-js .socialmedia__feed__consent--juicer {
   width: 1rem;
   height: 1rem;
   color: var(--color-default-black);
+}
+
+.j-text,
+.j-gallery-nav {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
 }
