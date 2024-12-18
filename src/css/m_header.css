@@ -57,7 +57,7 @@
 .header__sticker {
   background-color: var(--color-dark-red-pinkish);
   color: var(--color-pink-pastel-salmon);
-  border: solid 4px var(--color-purple-sticker);
+  border: solid 1px var(--color-purple-sticker);
   border-radius: 0.5rem;
   box-shadow: var(--effect-box-shadow-dropshadow);
   position: absolute;
@@ -65,7 +65,7 @@
   right: 1rem;
   padding: 0;
   z-index: 12;
-  transform: rotate(20deg);
+  transform: rotate(20deg) scale(0.9);
 
   a, a:link, a:visited, a:active {
     display: inline-block;
