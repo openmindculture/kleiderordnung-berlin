@@ -417,7 +417,7 @@ Diese E-Mail wurde von einem Kontaktformular von [_site_title] ([_site_url]) ges
 #### Instagram Feed via Juicer
 
 - Known issues:
-  - "juicer error" when using on localhost instead of configured domain or pseduo-public domain like browserstack's bs-local.com
+  - "juicer error" when using on localhost instead of configured domain or pseudo-public domain like browserstack's bs-local.com
   - expired API connection prevents updating new Instagram content
 - account / API:
   - Tina's Google account logs into juicer.io
