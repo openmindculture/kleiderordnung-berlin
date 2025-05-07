@@ -205,6 +205,10 @@ a.news__post__link:focus {
   aspect-ratio: unset;
 }
 
+.news__post--single .news__post__content p {
+  margin-bottom: 1rem !important;
+}
+
 @supports (background-image:linear-gradient(#222b40,#222b40)) and (transition:all 2s linear) {
   .news__post--single .news__post__content a:not(.button--primary):link,
   .news__post--single .news__post__content a:not(.button--primary):active,
