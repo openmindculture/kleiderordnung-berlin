@@ -11,7 +11,7 @@
     <div class="footer__columns__column-wrapper">
       <div class="footer__columns__column footer__columns__column--50">
         <div class="footer__column__row footer__column__row--copyright">
-          <span class="footer__column__row__copyright"><?php _e( '2024 © Kleiderordnung Martina Steinke', 'kleiderordnung' ) ?></span>
+          <span class="footer__column__row__copyright">© <?php echo date("Y") . ' '; _e( 'Kleiderordnung Martina Steinke', 'kleiderordnung' ) ?></span>
           <span class="footer__column__row__softhyphen">–</span>
           <span class="footer__column__row__allrights"><?php _e( 'All rights reserved', 'kleiderordnung' ) ?></span>
         </div>
