@@ -6,6 +6,7 @@
  * @author openmindculture
  */
 
+$newsPostsShown = 0;
 $args = array(
   'post_type' => 'post',
   'posts_per_page' => isset($isNewsTeaser) ? 3 : -1
@@ -29,7 +30,10 @@ $the_query = new WP_Query( $args ); ?>
     </div>
   <?php endif ?>
   <div class="news__wrapper">
-  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post();
+    $newsPostsShown++;
+    if (isset($isNewsTeaser) && $newsPostsShown > 3) { break; }
+  ?>
     <a class="news__post__link" href="<?php the_permalink() ?>" tabindex="0">
     <article class="news__post">
       <figure class="news__post__image<?php if (str_contains(get_the_post_thumbnail(),'.gif"')) { echo ' news__post__image--has-gif'; } ?>">
