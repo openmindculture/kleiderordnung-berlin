@@ -58,7 +58,7 @@ async function installCore() {
 	log('Installing and configuring Wordpress core and admin...');
 	return await compose.run(
 		'wordpress-cli',
-		'wp core install --path=/var/www/html --url=http://localhost:1234" --title=TestSetup --admin_user=admin --admin_password=secret --admin_email=foo@bar.com',
+		'wp core install --path=/var/www/html --url="http://localhost:1234" --title=TestSetup --admin_user=admin --admin_password=secret --admin_email=foo@bar.com',
 		{ cwd: path.join(__dirname), commandOptions: ['--rm'] })
 }
 async function installPlugins() {
