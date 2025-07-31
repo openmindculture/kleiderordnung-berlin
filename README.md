@@ -115,18 +115,18 @@ Colors to distinguish between local host, preview and production servers:
 
 ### Video Formats
 
-- pixel size geometry should be between
-  - x (minimum)
-  - x (maximum)
+- pixel size geometry should be in 16:9 ratio
+  - 992 x 558
 - provide an MP4 and a WEBM version
+- provide a preview (poster) image in the same dimensions
 
-- Prefer the lowest data rate that provides the desired quality.
+- Convert videos using Handbrake, ffmpeg or another suitable software.
+
+- Prefer the lowest data rate that provides the desired quality, e.g.
+  - 24 fps CQ 30 VP9 MKV `.webm`
+  - 24 fps RF 23 x264 `.mp4`
 
 - Video files must support partial loading (streaming).
-
-Converting mp4 to webm on the command-line using ffmpeg:
-
-- `ffmpeg -i original.mp4 -c:v libvpx -c:a libvorbis optimized.webm`
 
 ### Video Performance Accessibility Settings and Subtitles
 
@@ -545,6 +545,10 @@ Sources:
 Polylang settings offer automatic redirection to page content based on browser language and preventing caching the front page. As we absolutely want to cache static content to prevent costly and redundant recreation of content on the server side and speed up loading time for clients, this option must not be used!
 
 Automatic detection and redirection can be done alternatively using client-side JavaScript or relying on matching search engine results etc.
+
+### Localize Media
+
+If an image or a video is not available in the secondary language after uploading, open the media library (Mediathek) in WP-Admin, switch to list view, and click on the plus sign (+) icons to add a missing language version. This will add a translation without duplicating the media file.
 
 <a name="testing" id="testing"></a>
 ## Development, Performance, Accessibility, and Testing
