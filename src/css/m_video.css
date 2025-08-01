@@ -9,6 +9,7 @@
   height: auto;
   margin: 0 auto;
   border-radius: 1rem;
+  font-size: 1rem;
 }
 
 /* Chrome */
@@ -16,6 +17,7 @@
   background-color: var(--color-inverted-background) !important;
   color: var(--color-inverted-foreground) !important;
   font-family: var(--font-family-default);
+  font-size: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -29,6 +31,7 @@
 .video__player::-webkit-media-text-track-display {
   color: var(--color-inverted-foreground) !important;
   font-family: var(--font-family-default);
+  font-size: 1rem;
 }
 
 .video__player::-webkit-media-text-track-container {
