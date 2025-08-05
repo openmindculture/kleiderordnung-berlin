@@ -145,6 +145,7 @@ Further reading:
 - https://developer.mozilla.org/en-US/docs/Web/Media/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
 - https://imagekit.io/blog/lazy-loading-html-videos/
 - https://www.speechpad.com/captions/webvtt
+- https://dev.to/ingosteinke/adding-optional-subtitles-closed-captions-to-web-videos-1d46
 
 ## Data Flow, Backups, Updates
 
