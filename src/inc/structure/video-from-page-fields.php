@@ -109,7 +109,8 @@ if ($kleiderordnung_currentPageHasVideoWebm || $kleiderordnung_currentPageHasVid
   <video
     controls
     preload="metadata"
-
+    playsinline
+    allowfullscreen
     <?php if ($kleiderordnung_currentPageVideoLoop): ?>
       loop
     <?php endif ?>
