@@ -19,6 +19,11 @@
   background-color: var(--color-primary-background);
 }
 
+.intro__overline {
+  font-size: var(--font-size-32);
+  line-height: 130%;
+}
+
 .intro__keytext {
   width: var(--width-spaced-slightly-larger);
   max-width: var(--width-max);

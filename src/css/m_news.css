@@ -75,20 +75,6 @@ a.news__post__link:focus {
   color: var(--color-primary-foreground);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .news__post + .news__post {
   margin-bottom: 2.5rem;
 }
@@ -168,6 +154,11 @@ a.news__post__link:focus {
   line-height: 140%;
   letter-spacing: 0.0625rem;
   font-style: normal;
+}
+
+.news__post__text h1 {
+  line-height: 140%;
+  font-size: var(--font-size-32);
 }
 
 .news__post__text ul {
