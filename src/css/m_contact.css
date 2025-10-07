@@ -639,6 +639,11 @@ textarea[name="Nachricht"]::placeholder {
   flex-direction: column;
 }
 
+.hidden-fields-container,
+.wpcf7 .hidden-fields-container {
+  display: none;
+}
+
 .calendly-popup-content .button__allow,
 .calendly-popup-content .button__allow:not(.button--primary) {
   background-color: var(--color-default-white);
