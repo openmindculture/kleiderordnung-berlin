@@ -13,17 +13,19 @@
   </div>
 
   <aside class="socialmedia__feed__section">
-    <div id="juicer-feed-container"
-         label="<?php _e( 'Instagram Galerie', 'kleiderordnung' ) ?>"
-         class="socialmedia__feed__container socialmedia__feed__container--juicer feed__container allowable--on-visibility"
-         data-allowable="allowable"
-         data-styleurl="<?php echo get_template_directory_uri() ?>/css/juicer-embed-min.css"
-         data-scripturl="https://assets.juicer.io/embed.js"
-    >
+    <a href="https://www.instagram.com/tina_steinke_kleiderordnung/" target="_blank" rel="me noopener">
+      <div id="juicer-feed-container"
+           label="<?php _e( 'Instagram Galerie', 'kleiderordnung' ) ?>"
+           class="socialmedia__feed__container socialmedia__feed__container--juicer feed__container allowable--on-visibility"
+           data-allowable="allowable"
+           data-styleurl="<?php echo get_template_directory_uri() ?>/css/juicer-embed-min.css"
+           data-scripturl="https://assets.juicer.io/embed.js"
+      >
 
-      <ul class="socialmedia__feed__embed socialmedia__feed__embed--juicer juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="5" data-columns="5" data-overlay="false" pages="1">
-      </ul>
-    </div>
+        <ul class="socialmedia__feed__embed socialmedia__feed__embed--juicer juicer-feed" data-feed-id="kleider-ordnung" data-origin="embed-code" data-per="5" data-columns="5" data-overlay="false" pages="1">
+        </ul>
+      </div>
+    </a>
 
     <div class="socialmedia__feed__placeholder">
       <div class="socialmedia__feed__embed socialmedia__feed__embed--skeleton" data-per="5" data-columns="5" pages="1">

@@ -356,7 +356,9 @@ body.no-js .socialmedia__feed__consent--juicer {
 }
 
 .j-text,
-.j-gallery-nav {
+.juicer-about,
+.j-gallery-nav,
+h1.referral{
   position: absolute;
   top: 0;
   visibility: hidden;
