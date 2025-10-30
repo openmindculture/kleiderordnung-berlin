@@ -21,7 +21,7 @@
           <a class="footer__column__row__link footer__column__row__link--tos" href="/<?php _e('allgemeine-geschaeftsbedingungen-url', 'kleiderordnung'); ?>/" title="<?php _e('Allgemeine Geschäftsbedingungen', 'kleiderordnung'); ?>" tabindex="0"><?php _e( 'AGB', 'kleiderordnung' ) ?></a>
         </div>
         <div class="footer__column__row footer__column__row--ecofriendly">
-          <a href="#footer__ecofriendly" class="footer__link--ecofriendly" id="footer__link--ecofriendly" tabindex="0" title="<?php _e( 'laut Messung von WebsiteCarbon und EcoGrader', 'kleiderordnung' ); echo ' '; _e( 'im September 2023', 'kleiderordnung' ); echo '. ' ; _e( 'Details der Messungen anzeigen', 'kleiderordnung' );  ?>"><?php _e( 'Umweltfreundlicher als', 'kleiderordnung' ) ?> 79% <?php _e( 'aller getesteten Websites', 'kleiderordnung' ) ?> <small>(0.11g CO₂e)</small>.</a>
+          <a href="#footer__ecofriendly" class="footer__link--ecofriendly" id="footer__link--ecofriendly" tabindex="0" title="<?php _e( 'laut Messung von WebsiteCarbon und EcoGrader', 'kleiderordnung' ); echo ' '; _e( 'im Oktober 2025', 'kleiderordnung' ); echo '. ' ; _e( 'Details der Messungen anzeigen', 'kleiderordnung' );  ?>"><?php _e( 'Umweltfreundlicher als', 'kleiderordnung' ) ?> 79% <?php _e( 'aller getesteten Websites', 'kleiderordnung' ) ?> <small>(0.11g CO₂e)</small>.</a>
         </div>
       </div>
       <div class="footer__columns__column footer__columns__column--50">
@@ -123,7 +123,7 @@
         </a>
       </div>
       <div class="footer__ecofriendly__detail--ecograder">
-        <a href="https://ecograder.com/report/uOpeUztPIAradx17IqdJMLOS" target="_blank" title="In September 2024, this page scored better than 77% of all URLs crawled by Ecograder.">Ecograder Score: <b>87</b>/100 <small>(0.16 g CO₂e)</small></a>
+        <a href="https://ecograder.com/report/xKTZXw6FQgerO9iwogH3S2QA" target="_blank" title="In October 2025, this page scored better than 72% of all URLs crawled by Ecograder.">Ecograder Score: <b>82</b>/100 <small>(0.20 g CO₂e)</small></a>
       </div>
     </aside>
   </div>
