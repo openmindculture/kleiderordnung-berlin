@@ -309,7 +309,15 @@ Offer taxonomies currently serve to separate main offers, displayed with cards a
 - **contact form**
 - **page footer**
 
+### Lottie Animation
 
+The header image is a Lottie animation.
+
+It can be edited online in the free lottiefiles web app at https://creator.lottiefiles.com/
+
+![Lottiefiles editor screenshot](doc/lottiefiles-editor-screenshot.png)
+
+The photo inside the animation is a responsive image source set output by the PHP script inside the `images` directory. Image files can be replaced in the images directory.
 
 ### Decoration / Parallax Perspective Effects
 
