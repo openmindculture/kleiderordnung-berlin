@@ -22,8 +22,11 @@ if (str_contains($current_domain, 'stage') || str_contains($current_domain, 'loc
   // TODO  You should convert your SVG path geometry (d="...") into a Lottie Layer Mask.
   $target_width = 848;
   if (file_exists($filename)) {
-    // header('content-type: image/png');
-    // echo file_get_contents('../../../../uploads/intro-foto-vorschau.png');
+    header('content-type: image/png');
+    echo file_get_contents('../../../../uploads/intro-foto-vorschau.png');
+    exit(0);
+
+    // dead code on purpose - TODO delete when no longer needed
     $size = getimagesize($filename);
     $width  = $size[0];
     $height = $size[1];
