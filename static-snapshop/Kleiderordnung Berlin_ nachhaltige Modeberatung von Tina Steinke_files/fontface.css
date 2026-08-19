@@ -1,0 +1,47 @@
+/* This CSS resource incorporates links to font software which is the
+   valuable copyrighted property of Type Network, Inc. and/or their
+   suppliers. You may not attempt to copy, install, redistribute,
+   convert, modify or reverse engineer this font software. Please
+   contact Type Network with any questions: www.typenetwork.com */
+
+  
+@font-face {
+font-family: "IvyMode Reg";
+font-weight: normal; 
+font-style: normal; 
+font-display: swap; 
+
+
+src: url("//web.archive.org/web/20250930142436im_/https://fastly-cloud.typenetwork.com/projects/7215/17af_vdef_emp_883a.woff2?45711c4b8486ec30fae30fb185b8d8b9bb1d822f") format("woff2"),
+     url("//web.archive.org/web/20250930142436im_/https://fastly-cloud.typenetwork.com/projects/7215/17af_vdef_emp_883a.woff?45711c4b8486ec30fae30fb185b8d8b9bb1d822f") format("woff");
+
+}
+		
+	 
+@font-face {
+font-family: "IvyMode Bd";
+font-weight: normal; 
+font-style: normal; 
+font-display: swap; 
+
+
+src: url("//web.archive.org/web/20250930142436im_/https://fastly-cloud.typenetwork.com/projects/7215/17ae_vdef_emp_8839.woff2?45711c4b8486ec30fae30fb185b8d8b9bb1d822f") format("woff2"),
+     url("//web.archive.org/web/20250930142436im_/https://fastly-cloud.typenetwork.com/projects/7215/17ae_vdef_emp_8839.woff?45711c4b8486ec30fae30fb185b8d8b9bb1d822f") format("woff");
+
+}
+
+/*
+     FILE ARCHIVED ON 14:24:36 Sep 30, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:26:18 Aug 19, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.617
+  load_resource: 189.768 (2)
+  PetaboxLoader3.resolve: 117.008 (2)
+  PetaboxLoader3.datanode: 36.467 (2)
+*/
