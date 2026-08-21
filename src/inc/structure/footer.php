@@ -70,12 +70,12 @@
               class="footer__partners__image footer__partners__image--fashionchangers"
             >
           </a>
-          <a href="https://www.1-9-7-9.com/" target="_blank" rel="noopener" tabindex="0">
+          <a href="https://cosh.eco/" target="_blank" rel="noopener" tabindex="0">
             <img
-              src="<?php echo get_template_directory_uri() ?>/img/logos/1979.png" width="148" height="233"
+              src="<?php echo get_template_directory_uri() ?>/img/logos/cosh-blue.svg" width="76" height="33"
               loading="lazy"
-              alt="1979 - nachhaltige Bademode aus Berlin"
-              class="footer__partners__image footer__partners__image--1979"
+              alt="COSH!"
+              class="footer__partners__image footer__partners__image--cosh"
             >
           </a>
         </div>

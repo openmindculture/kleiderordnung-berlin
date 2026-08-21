@@ -126,6 +126,10 @@ body.page:not(.home) .footer__content {
   margin-bottom: 0;
 }
 
+.footer__partners .footer__partners__image--cosh {
+  margin-top: 1rem;
+}
+
 body.page:not(.home) .footer__partners {
   text-align: right;
 }
